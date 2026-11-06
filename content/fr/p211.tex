@@ -1,0 +1,93 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0211}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-2-1-complex-x}
+\noindent a) Le complexe $X$ dont le seul composant non nul est l'objet $X$
+en degré zéro.
+
+\VerdierSemanticAnchor{ch3d-3-2-1-complex-z}
+\noindent b) Le complexe :
+\[
+Z^\bullet=\cdots\longrightarrow0\longrightarrow Y
+\longrightarrow Z_{n-1}\longrightarrow\cdots\longrightarrow Z_0
+\longrightarrow0\longrightarrow0\longrightarrow\cdots
+\]
+($Y$ est le composant de degré $-n$ et les $Z_i$ sont les composants de
+degré $-i$).
+
+\VerdierSemanticAnchor{ch3d-3-2-1-complex-y-shift}
+\noindent c) Le complexe $Y[n]$ dont le seul composant non nul est l'objet
+$Y$ en degré $-n$.
+
+\VerdierSemanticAnchor{ch3d-3-2-1-morphisms}
+Désignons alors par
+$u(S^n(X,Y))\colon Z^\bullet\longrightarrow X$ le morphisme dont le seul
+composant non nul est $u_0$ en degré $0$, et par
+$v(S^n(X,Y))\colon Z^\bullet\longrightarrow Y[n]$ le morphisme dont le seul
+composant non nul est $\operatorname{id}_Y$ en degré $-n$. Le morphisme
+$u(S^n(X,Y))$ est un quasi-isomorphisme, d'où un morphisme dans
+$D(\mathcal A)$ (avec les notations de (1.3.2)) :
+
+\VerdierSemanticAnchor{ch3d-3-2-1-1}
+\begin{equation}
+\delta_{\mathcal A}^{n}(S^n(X,Y))=
+[v(S^n(X,Y))][u(S^n(X,Y))]^{-1}\colon X\longrightarrow Y[n].
+\tag{3.2.1.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-2-1-2}
+On définit ainsi une application :
+\begin{equation}
+\delta_{\mathcal A}^{n}\colon E_{\mathcal A}^{n}(X,Y)
+\longrightarrow\operatorname{Ext}_{\mathcal A}^{n}(X,Y),
+\tag{3.2.1.2}
+\end{equation}
+qu'on note simplement $\delta^n$ lorsqu'aucune confusion n'en résulte.
+
+\VerdierSemanticAnchor{ch3d-3-2-2}
+\medskip\noindent\textbf{Proposition 3.2.2.}\quad
+\textit{a) L'application $\delta^n$ est surjective.}
+
+\VerdierSemanticAnchor{ch3d-3-2-2-b-sequences}
+\noindent\textit{b) Deux éléments :}
+\[
+S^n(X,Y)=0\longrightarrow Y\longrightarrow Z_{n-1}
+\longrightarrow\cdots\longrightarrow Z_0\longrightarrow X
+\longrightarrow0
+\]
+\noindent\textit{et :}
+\[
+{S'}^n(X,Y)=0\longrightarrow Y\longrightarrow Z'_{n-1}
+\longrightarrow\cdots\longrightarrow Z'_0\longrightarrow X
+\longrightarrow0
+\]
+\noindent\textit{ont la même image par $\delta^n$ si et seulement s'il
+existe un élément :}
+\[
+{S''}^n(X,Y)=0\longrightarrow Y\longrightarrow Z''_{n-1}
+\longrightarrow\cdots\longrightarrow Z''_0\longrightarrow X
+\longrightarrow0
+\]
+\noindent\textit{et un diagramme commutatif :}
+
+\VerdierSemanticAnchor{ch3d-3-2-2-b-diagram}
+\begin{center}
+\resizebox{\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=2.25em,row sep=2.5em]
+0 \arrow[r] \& Y \arrow[r] \& Z_{n-1} \arrow[r] \& \cdots
+  \arrow[r] \& Z_0 \arrow[r] \& X \arrow[r] \& 0 \\
+0 \arrow[r] \& Y \arrow[r] \arrow[u,"{\operatorname{id}}"]
+  \arrow[d,"{\operatorname{id}}"']
+\& Z''_{n-1} \arrow[r] \arrow[u] \arrow[d]
+\& \cdots \arrow[r]
+\& Z''_0 \arrow[r] \arrow[u] \arrow[d]
+\& X \arrow[r] \arrow[u,"{\operatorname{id}}"']
+  \arrow[d,"{\operatorname{id}}"] \& 0 \\
+0 \arrow[r] \& Y \arrow[r] \& Z'_{n-1} \arrow[r] \& \cdots
+  \arrow[r] \& Z'_0 \arrow[r] \& X \arrow[r] \& 0
+\end{tikzcd}$}
+\end{center}
+\endgroup

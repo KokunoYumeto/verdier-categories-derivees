@@ -1,0 +1,71 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0045}%
+\VerdierSemanticAnchor{ch1-1-4-2}
+\noindent\textbf{1.4.2.}\quad
+$e\to K\xrightarrow{n}H\xrightarrow{f}G\to e$
+を群の完全列とし、$n$ によって $K$ を $H$ の正規部分群と同一視する。また
+$(\mathcal C,G,T,c)$ と $(\mathcal C',G,T',c')$ を二つの $G$-圏とする。
+$H\xrightarrow{f}G$ に沿う群の変更によって得られる $H$-圏を
+$(\mathcal C,H,T_f,c_f)$ と $(\mathcal C',H,T'_f,c'_f)$ とする。最後に
+
+\VerdierSemanticAnchor{ch1-1-4-2-eq1}
+\begin{equation}
+  (F,m)\colon(\mathcal C,H,T_f,c_f)
+  \longrightarrow(\mathcal C',H,T'_f,c'_f)
+  \tag{1.4.2.1}
+\end{equation}
+を $H$-関手とする。このとき図式 (1.2.3.2) は、各 $k,k'\in K$ に対して
+可換図式
+
+\VerdierSemanticAnchor{ch1-1-4-2-eq2}
+\begin{center}
+  $\begin{tikzcd}[ampersand replacement=\&,column sep=5em,row sep=3.5em]
+    F \arrow[rr,"{m(kk')}"] \arrow[dr,"{m(k)}"']
+      \& \& F \\
+      \& F \arrow[ur,"{m(k')}"'] \&
+  \end{tikzcd}$,
+  \hfill\textup{(1.4.2.2)}
+\end{center}
+を与える。
+
+\VerdierSemanticAnchor{ch1-1-4-2-representation}
+したがって $F$ の自己同型群における $K^\circ$ の表現が得られる。関手
+$(F,m)$ が $G$-関手から来るとき、この表現は自明である。逆にこの表現が
+自明なら、図式 (1.2.3.2) から、各 $h\in H$, $k\in K$ に対して直ちに
+
+\VerdierSemanticAnchor{ch1-1-4-2-eq3}
+\begin{equation}
+  m(hk)=m(kh)=m(h)
+  \tag{1.4.2.3}
+\end{equation}
+が従う。ゆえに $H$-関手 $(F,m)$ は、群の変更 $f^*$ によってある $G$-関手
+から得られる。以下では、非常に特殊な場合に、$F$ の自己同型群における
+$K^\circ$ のあらかじめ指定された表現を誘導する $H$-関手 $(F,m)$ を調べる。
+
+\VerdierSemanticAnchor{ch1-1-4-3}
+\noindent\textbf{1.4.3.}\quad
+(1.4.2) の記法を用いる。圏 $\mathcal C'$ は加法圏であり、
+$K=\mathbb Z/2\mathbb Z$ と仮定する。符号群
+$\{-1,+1\}\simeq\mathbb Z/2\mathbb Z$
+は圏 $\mathcal C'$ の恒等関手に作用し、$\mathcal C'$ の各対象 $X$ に対して
+射
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq1}
+\begin{equation}
+  \varepsilon(X)\colon
+  X\xrightarrow{\,\varepsilon\cdot\operatorname{id}_X\,}X,
+  \qquad \varepsilon\in\{-1,+1\}
+  \tag{1.4.3.1}
+\end{equation}
+を対応させる。したがって符号群は各関手
+$F\colon\mathcal C\to\mathcal C'$ に作用し、$\mathcal C$ の各対象 $Y$ に
+対して射
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq2}
+\begin{equation}
+  \varepsilon(Y)\colon
+  F(Y)\xrightarrow{\,\varepsilon\cdot\operatorname{id}_{F(Y)}\,}F(Y),
+  \qquad \varepsilon\in\{-1,+1\}
+  \tag{1.4.3.2}
+\end{equation}
+を対応させる。

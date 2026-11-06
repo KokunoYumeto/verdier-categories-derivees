@@ -1,0 +1,92 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0199}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-2-exact-sequences}
+et des suites exactes :
+\[
+0\longrightarrow H^{-q}(X_{q-1})\longrightarrow
+\frac{Z^{-q}}{\operatorname{Im}(Y^{-q-1}\longrightarrow Z^{-q})}
+\longrightarrow
+\frac{Z^{-q}}{\operatorname{Ker}(Z^{-q}\longrightarrow L^{-q+1})}
+\longrightarrow0,
+\]
+\[
+0\longrightarrow
+\frac{Z^{-q}}{\operatorname{Ker}(Z^{-q}\longrightarrow L^{-q+1})}
+\longrightarrow L^{-q+1}\longrightarrow
+\frac{L^{-q+1}}{\operatorname{Im}(Z^{-q}\longrightarrow L^{-q+1})}
+\longrightarrow0,
+\]
+\[
+0\longrightarrow H^{-q+1}(X_{q-1})\longrightarrow
+\frac{L^{-q+1}}{\operatorname{Im}(Z^{-q}\longrightarrow L^{-q+1})}
+\longrightarrow
+\frac{L^{-q+1}}{\operatorname{Ker}(L^{-q+1}\longrightarrow L^{-q+2})}
+\longrightarrow0.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-2-mq-object}
+Le complexe $X_{q-1}$ étant quasi-isomorphe au complexe $Y$, les objets
+$H^i(X_{q-1})$ sont des éléments de $M$. Il résulte alors des suites exactes
+écrites ci-dessus, de l'hypothèse de récurrence 2), et des propriétés
+d'exactitude de l'ensemble $M^\wedge$ (2.2.4), que l'objet
+\[
+Z^{-q}/\operatorname{Im}(Y^{-q-1}\longrightarrow Z^{-q})
+\]
+est un élément de $M^\wedge$. Par suite, il existe un morphisme :
+
+\VerdierSemanticAnchor{ch3d-2-3-2-v}
+\[
+v\colon L^{-q}\longrightarrow Z^{-q}
+\]
+tel que $L^{-q}$ soit un élément de $M$ et que le morphisme composé :
+
+\VerdierSemanticAnchor{ch3d-2-3-2-composite}
+\[
+L^{-q}\xrightarrow{v}Z^{-q}\longrightarrow
+Z^{-q}/\operatorname{Im}(Y^{-q-1}\longrightarrow Z^{-q})
+\]
+soit un épimorphisme. Posons alors :
+
+\VerdierSemanticAnchor{ch3d-2-3-2-xq}
+\[
+X_q=X_{q-1}(v,-q),
+\qquad
+\dot u_q=p(v,-q)\quad(2.1.1).
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-2-verify}
+Il résulte de (2.1.2) que $u_q$ est un quasi-isomorphisme, d'où la propriété
+3). Il reste à vérifier la propriété 2), i.e. à vérifier que le noyau et
+l'image du morphisme $L^{-q}\longrightarrow L^{-q+1}$ sont des éléments de
+$M^\wedge$ ; ce qui résulte immédiatement des suites exactes :
+
+\VerdierSemanticAnchor{ch3d-2-3-2-exact-sequences-2}
+\[
+0\longrightarrow\operatorname{Im}(L^{-q}\longrightarrow L^{-q+1})
+\longrightarrow\operatorname{Ker}(L^{-q+1}\longrightarrow L^{-q+2})
+\longrightarrow H^{-q+1}(X_q)\longrightarrow0,
+\]
+\[
+0\longrightarrow\operatorname{Ker}(L^{-q}\longrightarrow L^{-q+1})
+\longrightarrow L^{-q}\longrightarrow
+\operatorname{Im}(L^{-q}\longrightarrow L^{-q+1})\longrightarrow0.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-2-conclusion}
+Ceci achève la preuve de la proposition.
+
+\VerdierSemanticAnchor{ch3d-2-3-3}
+\medskip\noindent\textbf{Proposition 2.3.3.}
+\textit{Soient $M\subset M'$ deux ensembles d'objets de $\mathcal A$ tels que
+$M$ possède les propriétés $(E_4)$ et $(E_5)$, que $M'$ possède les
+propriétés $(E_1)$ et $(E_4)$ et que tout objet de $M'$ soit quotient d'un
+objet de $M$. Soit $Y\in\operatorname{Ob}\operatorname{comp}(\mathcal A)$ un
+complexe tel que :}
+
+\noindent\textit{1) Les composants $Y^i$, $i\in\mathbf Z$, de $Y$ soient
+des éléments de $M'$.}
+\endgroup

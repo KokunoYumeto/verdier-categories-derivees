@@ -1,0 +1,97 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0084}%
+\VerdierSemanticAnchor{ch1-3-1-2-phi-definition-continuation}
+morphisme suivant de $\operatorname{tr}_1(C)$ :
+
+\VerdierSemanticAnchor{ch1-3-1-2-phi-diagram}
+\begin{equation*}
+  \Phi(f)=(0,p(f),a(f))
+  \qquad
+  \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center)]
+    \node (X)  at (0,1.45) {$X$};
+    \node (Y)  at (3.5,1.45) {$Y$};
+    \node (Z)  at (0,0) {$0$};
+    \node (Cf) at (3.5,0) {$c(f)\mathpunct{,}$};
+    \draw[->] (X) -- node[above] {$f$} (Y);
+    \draw[->] (X) -- (Z);
+    \draw[->] (Y) -- node[right] {$p(f)$} (Cf);
+    \draw[->] (Z) -- (Cf);
+    \draw[decorate,decoration={snake,amplitude=0.8pt,segment length=3.3pt}]
+      (1.75,0.03) -- (2.35,0.20);
+    \draw[->] (2.35,0.20) -- node[above left] {$a(f)$} (3.27,0.52);
+  \end{tikzpicture}
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-3-1-2-eq4}
+\begin{equation}
+  \begin{aligned}
+    p(f)^i&=
+      \begin{pmatrix}
+        \operatorname{id}_{Y^i}\\[1mm]
+        0
+      \end{pmatrix}
+      \colon Y^i\longrightarrow Y^i\oplus X^{i+1},\\[2mm]
+    a(f)^i&=
+      \begin{pmatrix}
+        0\\[1mm]
+        \operatorname{id}_{X^{i+1}}
+      \end{pmatrix}
+      \colon X^{i+1}\longrightarrow Y^i\oplus X^{i+1}.
+  \end{aligned}
+  \tag{3.1.2.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-1-2-phi-naturality}
+Un calcul immédiat montre que $\Phi$ est un morphisme du foncteur identique
+de la catégorie $\operatorname{tr}_1(C)$ dans le foncteur $sc$.
+
+\VerdierSemanticAnchor{ch1-3-1-3}
+\noindent\textbf{Proposition 3.1.3.}\quad
+\emph{Le morphisme $\Phi$ fait du foncteur cône un adjoint à gauche du
+foncteur $s$, i.e. pour tout objet $X\xrightarrow{f}Y$ de
+$\operatorname{tr}_1(C)$ et pour tout objet $W$ de $\operatorname{comp}(C)$,
+l'application canonique définie par le morphisme $\Phi$ :}
+
+\VerdierSemanticAnchor{ch1-3-1-3-hom-isomorphism}
+\begin{equation*}
+  \operatorname{Hom}_{\operatorname{comp}(C)}(c(f),W)
+  \longrightarrow
+  \operatorname{Hom}_{\operatorname{tr}_1(C)}
+    \bigl((X\xrightarrow{f}Y),sW\bigr)
+\end{equation*}
+\emph{est un isomorphisme.}
+
+\VerdierSemanticAnchor{ch1-3-1-3-verification}
+La vérification est laissée au lecteur.
+\VerdierSemanticAnchor{ch1-3-1-3-s-fully-faithful}
+On notera que le foncteur $s$ est pleinement fidèle et que par suite le
+foncteur $cs$ est canoniquement isomorphe au foncteur identique.
+\VerdierSemanticAnchor{ch1-3-1-3-cs-identity}
+En fait, avec la construction choisie du foncteur $c$, le foncteur $cs$ est
+égal au foncteur identique.
+\VerdierSemanticAnchor{ch1-3-1-3-adjunction-reformulation}
+La propriété d'adjonction de (3.1.3) peut encore se traduire comme suit :
+l'application définie par le foncteur :
+
+\VerdierSemanticAnchor{ch1-3-1-3-c-hom-isomorphism}
+\begin{equation*}
+  c\colon
+  \operatorname{Hom}_{\operatorname{tr}_1(C)}
+    \bigl((X\xrightarrow{f}Y),sW\bigr)
+  \longrightarrow
+  \operatorname{Hom}_{\operatorname{comp}(C)}(c(f),W)
+\end{equation*}
+est un isomorphisme.
+
+\VerdierSemanticAnchor{ch1-3-1-4}
+\noindent\textbf{3.1.4.}\quad
+Nous allons définir dans $\operatorname{tr}_1(C)$ une notion d'homotopie.
+Soient :
+
+\VerdierSemanticAnchor{ch1-3-1-4-homotopy-setup}
+\begin{equation*}
+  (g,h,a),(g',h',a')\colon
+  (X\xrightarrow{f}Y)
+  \rightrightarrows
+  (X'\xrightarrow{f'}Y')
+\end{equation*}

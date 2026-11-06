@@ -1,0 +1,77 @@
+\VerdierPhysicalPageAnchor{0069}%
+\VerdierSemanticAnchor{ch1-2-2-2-continuation}%
+form an $m$-fold complex in $C$.
+
+\VerdierSemanticAnchor{ch1-2-2-2-morphism}
+Now let $f\colon Y\longrightarrow Y'$ be a morphism of
+$\varphi$-summable $n$-fold complexes in $C$. Set:
+
+\VerdierSemanticAnchor{ch1-2-2-2-eq6}
+\begin{equation}
+  \left(\int_\varphi f\right)^\tau
+  =\bigoplus_{\varphi(\sigma)=\tau}f^\sigma\colon
+  \left(\int_\varphi Y\right)^\tau
+  \longrightarrow
+  \left(\int_\varphi Y'\right)^\tau.
+  \tag{2.2.2.6}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-2-2-functoriality}
+It is clear that the $\left(\int_\varphi f\right)^\tau$ commute with the
+differentials of $\int_\varphi Y$ and $\int_\varphi Y'$ and that,
+consequently, such a family defines a morphism of $m$-fold complexes
+$\int_\varphi f\colon\int_\varphi Y\longrightarrow\int_\varphi Y'$.
+It is clear that
+$\int_\varphi fg=\int_\varphi f\,\int_\varphi g$ and that
+$\int_\varphi\operatorname{id}_Y
+=\operatorname{id}_{\int_\varphi Y}$. Consequently $\int_\varphi$ is a
+functor from the category of $\varphi$-summable $n$-fold complexes to the
+category of $m$-fold complexes. This functor is additive.
+
+\VerdierSemanticAnchor{ch1-2-2-3}
+\noindent\textbf{2.2.3.}\quad
+Let $\varphi\colon[n]\longrightarrow[m]$ be a map, let $\tau$ be an
+element of $\mathbb Z[m]$, and let $i$ be an element of $[m]$. Let $E_1$
+(resp. $E_2$) be the sets:
+
+\VerdierSemanticAnchor{ch1-2-2-3-fibers}
+\[
+  \begin{aligned}
+    E_1&=\{\sigma_1\in\mathbb Z[n]\mid\varphi(\sigma_1)=\tau\},\\
+    \text{(resp. }E_2
+      &=\{\sigma_2\in\mathbb Z[n]\mid
+          \varphi(\sigma_2)=\tau+e_i\}\text{)}.
+  \end{aligned}
+\]
+Finally, let $Y$ be an $n$-fold complex in $C$. Set, for
+$\sigma_1\in E_1$, $\sigma_2\in E_2$:
+
+\VerdierSemanticAnchor{ch1-2-2-3-eq1}
+\begin{equation}
+  u_{\sigma_2,\sigma_1}(Y)
+  =\begin{cases}
+    \varepsilon(\tau,i)\varepsilon(\sigma_1,j)d_Y^{\sigma_1,j},
+      &\text{if }\sigma_2-\sigma_1=e_j,\\
+    0,&\text{otherwise},
+  \end{cases}
+  \tag{2.2.3.1}
+\end{equation}
+whence a matrix of type $E_2\times E_1$:
+
+\VerdierSemanticAnchor{ch1-2-2-3-eq2}
+\begin{equation}
+  M(\tau,i,Y)
+  =\bigl(u_{\sigma_2,\sigma_1}(Y)\bigr)_
+    {\sigma_2\in E_2,\,\sigma_1\in E_1}.
+  \tag{2.2.3.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-2-3-matrix-identification}
+When $Y$ is $\varphi$-summable, this matrix is the matrix of the morphism
+$d_{\int_\varphi Y}^{\tau,i}$.
+
+\VerdierSemanticAnchor{ch1-2-2-3-extensions}
+Observe that in general this matrix has only finitely many nonzero entries
+in each row and in each column. There are therefore \emph{a priori} at
+least two possible extensions of the functor $\int_\varphi$ to arbitrary
+complexes when, in $C$, countable products and direct sums

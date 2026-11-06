@@ -1,0 +1,80 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0079}%
+\VerdierSemanticAnchor{ch1-2-5-7-morphisms}
+\noindent\hspace*{2em}--\ $X$ と $Y$ を $K(C)$ の二つの対象、
+$f,g\colon X\rightrightarrows Y$ を $\operatorname{comp}(C)$ の二つの射とする。
+「$f$ と $g$ はホモトピックである」という関係は
+$\operatorname{Hom}_{\operatorname{comp}(C)}(X,Y)$ 上の同値関係であり、
+$\operatorname{Hom}_{K(C)}(X,Y)$ を
+$\operatorname{Hom}_{\operatorname{comp}(C)}(X,Y)$ のこの同値関係による
+商として定める。
+
+\VerdierSemanticAnchor{ch1-2-5-7-composition}
+\noindent\hspace*{2em}--\ (2.5.5) から直ちに、
+$\operatorname{comp}(C)$ の射の合成則は商に移り、
+$K(C)$ の射の合成則を定めることが分かる。
+
+\VerdierSemanticAnchor{ch1-2-5-7-additive-category}
+(2.5.5) から直ちに、以上により確かに圏が定まり、
+しかもこの圏が加法圏であることが分かる。
+
+\VerdierSemanticAnchor{ch1-2-5-7-quotient-functor}
+標準関手 $\operatorname{comp}(C)\xrightarrow{Q}K(C)$ は対象上恒等であり、
+$\operatorname{comp}(C)$ の各射 $f$ にその同値類 $\dot f$ を対応させる。
+この関手は加法的である。
+
+\VerdierSemanticAnchor{ch1-2-5-7-homotopy-class}
+$\operatorname{comp}(C)$ の射 $f$ の標準関手による像である
+$K(C)$ の射 $\dot f$ を、$f$ の\emph{ホモトピー類}と呼ぶ。
+
+\VerdierSemanticAnchor{ch1-2-5-7-name}
+圏 $K(C)$ を $C$ の\emph{複体のホモトピー圏}と呼ぶ。
+
+\VerdierSemanticAnchor{ch1-2-5-8}
+\noindent\textbf{2.5.8.}\quad
+標準関手 $\operatorname{comp}(C)\xrightarrow{Q}K(C)$ は次の性質をもつ：
+$K(C)$ から圏 $A$ への任意の関手は、$Q$ との合成により
+$\operatorname{comp}(C)$ から $A$ への関手を与える。したがって、
+任意の圏 $A$ に対して関手
+
+\VerdierSemanticAnchor{ch1-2-5-8-hom-functor}
+\begin{equation*}
+  \mathcal H\!om(Q,A)\colon
+  \mathcal H\!om(K(C),A)
+  \longrightarrow
+  \mathcal H\!om(\operatorname{comp}(C),A)
+\end{equation*}
+を得る（$\mathcal H\!om$ は関手圏を表す）。
+
+\VerdierSemanticAnchor{ch1-2-5-8-fully-faithful}
+この関手は充満忠実であり、対象上単射である。その像は次の圏の充満部分圏である：
+
+\VerdierSemanticAnchor{ch1-2-5-8-essential-image}
+\begin{equation*}
+  \mathcal H\!om(\operatorname{comp}(C),A).
+\end{equation*}
+この充満部分圏は、$\operatorname{comp}(C)$ のホモトピックな射の各対を
+等しい射へ送る関手 $\operatorname{comp}(C)\longrightarrow A$ によって定まる。
+
+\VerdierSemanticAnchor{ch1-2-5-8-uniqueness}
+標準関手 $\operatorname{comp}(C)\xrightarrow{Q}K(C)$ を備えた圏 $K(C)$ は、
+この性質によって一意な同型を除いて決まる。
+
+\VerdierSemanticAnchor{ch1-2-5-9}
+\noindent\textbf{2.5.9.}\quad
+(2.5.5) と (2.5.8) から直ちに、$K(C)$ 上に唯一のシフト関手が存在し、
+標準関手
+
+\VerdierSemanticAnchor{ch1-2-5-9-translation}
+\begin{equation*}
+  \operatorname{comp}(C)\longrightarrow K(C)
+\end{equation*}
+はシフトと厳密に可換であることが分かる。
+
+\VerdierSemanticAnchor{ch1-2-5-9-strict-z-category}
+このシフト関手は $K(C)$ の自己同型であり、したがって $K(C)$ 上に
+厳密な $\mathbb Z$-圏構造を定める。
+
+\VerdierSemanticAnchor{ch1-2-5-9-strict-z-functor}
+標準関手 $\operatorname{comp}(C)\longrightarrow K(C)$ は厳密な
+$\mathbb Z$-関手である。

@@ -1,0 +1,112 @@
+\VerdierPhysicalPageAnchor{0114}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2}
+\medskip
+\noindent\textbf{1.2. Premières propriétés des catégories triangulées.}
+
+\VerdierSemanticAnchor{ch2-1-2-1}
+\medskip
+\noindent\textbf{Proposition 1.2.1.}\quad
+Soit $\mathcal D$ une catégorie triangulée. Pour tout objet $X$ de
+$\mathcal D$, les foncteurs $\operatorname{Hom}_{\mathcal D}(X,\mathord\cdot)$
+et $\operatorname{Hom}_{\mathcal D}(\mathord\cdot,X)$ sont des foncteurs
+cohomologiques à valeurs dans la catégorie des groupes abéliens.
+
+\VerdierSemanticAnchor{ch2-1-2-1-hom-functors}
+\noindent\emph{Démonstration.}\quad
+Il suffit tout d'abord de montrer que le foncteur
+$\operatorname{Hom}_{\mathcal D}(X,\mathord\cdot)$ est un foncteur
+cohomologique. L'autre assertion s'obtiendra alors en passant à la catégorie
+opposée $\mathcal D^\circ$ (1.1.7). Soit donc
+
+\VerdierSemanticAnchor{ch2-1-2-1-source-triangle}
+\[
+  X'\xrightarrow{u'}Y'\xrightarrow{v'}Z'\xrightarrow{w'}X'[1]
+\]
+un triangle distingué. Il suffit de montrer que dans le diagramme :
+
+\VerdierSemanticAnchor{ch2-1-2-1-1}
+\begin{equation}
+  \resizebox{0.98\linewidth}{!}{$
+    \operatorname{Hom}_{\mathcal D}(X,X')
+    \xrightarrow{\operatorname{Hom}_{\mathcal D}(X,u')}
+    \operatorname{Hom}_{\mathcal D}(X,Y')
+    \xrightarrow{\operatorname{Hom}_{\mathcal D}(X,v')}
+    \operatorname{Hom}_{\mathcal D}(X,Z')
+    \xrightarrow{\operatorname{Hom}_{\mathcal D}(X,w')}
+    \operatorname{Hom}_{\mathcal D}(X,X'[1])
+  $}
+  \tag{1.2.1.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch2-1-2-1-exactness-reduction}
+on a :
+\[
+  \operatorname{Hom}_{\mathcal D}(X,v')
+  \operatorname{Hom}_{\mathcal D}(X,u')=0
+\]
+et que ce diagramme est exact en $\operatorname{Hom}_{\mathcal D}(X,Y')$.
+En effet, l'axiome TRII permettra alors d'obtenir le même résultat en
+$\operatorname{Hom}_{\mathcal D}(X,Z')$. Soit donc $f\colon X\longrightarrow X'$.
+D'après TRI, le triangle
+
+\VerdierSemanticAnchor{ch2-1-2-1-identity-triangle}
+\[
+  X\xrightarrow{\operatorname{id}_X}X\longrightarrow0\longrightarrow X[1]
+\]
+est distingué et d'après TRII et TRIII, il existe un morphisme
+$g\colon X\longrightarrow Y'$ tel que le diagramme ci-après soit commutatif :
+
+\VerdierSemanticAnchor{ch2-1-2-1-2}
+\begin{equation}
+  \begin{tikzcd}[column sep=3.2em,row sep=2.5em]
+    X \arrow[r,"{\operatorname{id}_X}"] \arrow[d,"f"']
+      & X \arrow[r] \arrow[d,"g"']
+      & 0 \arrow[r] \arrow[d]
+      & X[1] \arrow[d,"{f[1]}"] \\
+    X' \arrow[r,"u'"']
+      & Y' \arrow[r,"v'"']
+      & Z' \arrow[r,"w'"']
+      & X'[1]
+  \end{tikzcd}
+  \tag{1.2.1.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch2-1-2-1-zero-composite}
+On en déduit que $u'f=g$ et que $v'u'f=v'g=0$, ce qui démontre que
+$\operatorname{Hom}_{\mathcal D}(X,v')
+\operatorname{Hom}_{\mathcal D}(X,u')=0$.
+
+\VerdierSemanticAnchor{ch2-1-2-1-lifting}
+Soit maintenant $g\colon X\longrightarrow Y'$ un morphisme tel que
+$v'g=0$. D'après TRII et TRIII, il existe un morphisme
+$f\colon X\longrightarrow X'$ tel que le diagramme (1.2.1.2) soit
+commutatif. On en déduit que $g=u'f$ et que par conséquent la suite
+(1.2.1.1) est exacte en $\operatorname{Hom}_{\mathcal D}(X,Y')$.
+
+\VerdierSemanticAnchor{ch2-1-2-2}
+\medskip
+\noindent\textbf{Corollaire 1.2.2.}\quad
+Dans un triangle distingué
+$X'\xrightarrow{u'}Y'\xrightarrow{v'}Z'\xrightarrow{w'}X'[1]$, le composé
+de deux morphismes consécutifs est nul.
+
+\VerdierSemanticAnchor{ch2-1-2-2-proof}
+\noindent\emph{Démonstration.}\quad
+En vertu de TRII, il suffit de montrer que $v'u'=0$. Pour cela, il suffit de
+prendre $X=X'$ dans la suite exacte (1.2.1.1) et de considérer les images
+successives de
+$\operatorname{id}_{X'}\in\operatorname{Hom}_{\mathcal D}(X',X')$.
+
+\VerdierSemanticAnchor{ch2-1-2-3}
+\medskip
+\noindent\textbf{Corollaire 1.2.3.}\quad
+Soient $(X,Y,Z,u,v,w)$ et $(X',Y',Z',u',v',w')$ deux triangles distingués
+de $\mathcal D$ et $(f_1,f_2,f_3)$ un morphisme de triangles. Si deux des
+$f_i$, $1\leq i\leq3$, sont des isomorphismes, le troisième l'est aussi.
+\endgroup
+

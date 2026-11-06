@@ -1,0 +1,65 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0020}
+茎都是无挠阿贝尔群（即一个\emph{平坦}分解）。容易验证以下事实：
+
+\VerdierSemanticAnchor{intro-1-flat-common-refinement}
+\noindent\emph{a)} 给定两个平坦分解
+$L_i^{\bullet}\xrightarrow{\varepsilon_i}G$，$i=1,2$，存在第三个平坦分解
+$L_3^{\bullet}\xrightarrow{\varepsilon_3}G$，以及一个在同伦意义下交换的
+分解图：
+
+\VerdierSemanticAnchor{intro-1-flat-common-refinement-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+  & L_1^{\bullet} \arrow[dr,"\varepsilon_1"] & \\
+L_3^{\bullet} \arrow[ur,"\rho_1"] \arrow[rr,"\varepsilon_3"]
+  \arrow[dr,"\rho_2"'] && G \\
+  & L_2^{\bullet} \arrow[ur,"\varepsilon_2"'] &
+\end{tikzcd}
+\qquad\text{.}
+\]
+
+\VerdierSemanticAnchor{intro-1-flat-homotopy-equalizer}
+\noindent\emph{b)} 给定两个平坦分解之间的态射：
+
+\VerdierSemanticAnchor{intro-1-flat-parallel-morphisms-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+L_1^{\bullet}
+  \arrow[d,bend right=12,"\rho"']
+  \arrow[d,bend left=12,"\rho'"]
+  \arrow[dr,"\varepsilon_1"] & \\
+L_2^{\bullet} \arrow[r,"\varepsilon_2"'] & G
+\end{tikzcd}
+\qquad\text{,}
+\]
+存在第三个平坦分解
+
+\VerdierSemanticAnchor{intro-1-flat-third-resolution}
+\[
+L_3^{\bullet}\xrightarrow{\varepsilon_3}G
+\qquad\text{,}
+\]
+以及一个分解态射
+
+\VerdierSemanticAnchor{intro-1-flat-sigma-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+L_3^{\bullet} \arrow[d,"\sigma"'] \arrow[dr,"\varepsilon_3"] & \\
+L_1^{\bullet} \arrow[r,"\varepsilon_1"'] & G
+\end{tikzcd}
+\qquad\text{,}
+\]
+使复形态射 $\rho\sigma$ 与 $\rho'\sigma$ 同伦。
+
+\VerdierSemanticAnchor{intro-1-flat-morphism}
+\noindent\emph{c)} 对每个平坦分解之间的态射
+
+\VerdierSemanticAnchor{intro-1-flat-morphism-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+L_1^{\bullet} \arrow[d,"\rho"'] \arrow[dr,"\varepsilon_1"] & \\
+L_2^{\bullet} \arrow[r,"\varepsilon_2"'] & G
+\end{tikzcd}
+\qquad\text{,}
+\]

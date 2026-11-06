@@ -1,0 +1,68 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0045}%
+\VerdierSemanticAnchor{ch1-1-4-2}
+\noindent\textbf{1.4.2.}\quad
+设
+$e\to K\xrightarrow{n}H\xrightarrow{f}G\to e$
+为群的一个正合列，其中 $n$ 把 $K$ 等同于 $H$ 的一个正规子群；又设
+$(\mathcal C,G,T,c)$ 与 $(\mathcal C',G,T',c')$ 为两个 $G$-范畴。
+令 $(\mathcal C,H,T_f,c_f)$ 与 $(\mathcal C',H,T'_f,c'_f)$ 为沿
+$H\xrightarrow{f}G$ 换群所得的 $H$-范畴。最后，设
+
+\VerdierSemanticAnchor{ch1-1-4-2-eq1}
+\begin{equation}
+  (F,m)\colon(\mathcal C,H,T_f,c_f)
+  \longrightarrow(\mathcal C',H,T'_f,c'_f)
+  \tag{1.4.2.1}
+\end{equation}
+为一个 $H$-函子。于是对每一对元素 $k,k'\in K$，图 (1.2.3.2) 给出交换图
+
+\VerdierSemanticAnchor{ch1-1-4-2-eq2}
+\begin{center}
+  $\begin{tikzcd}[ampersand replacement=\&,column sep=5em,row sep=3.5em]
+    F \arrow[rr,"{m(kk')}"] \arrow[dr,"{m(k)}"']
+      \& \& F \\
+      \& F \arrow[ur,"{m(k')}"'] \&
+  \end{tikzcd}$,
+  \hfill\textup{(1.4.2.2)}
+\end{center}
+
+\VerdierSemanticAnchor{ch1-1-4-2-representation}
+从而得到 $K^\circ$ 在 $F$ 的自同构群中的一个表示。当函子 $(F,m)$ 来自一个
+$G$-函子时，这个表示是平凡的。反之，当这个表示平凡时，由图 (1.2.3.2)
+立即推出：对每个 $h\in H$ 与每个 $k\in K$，都有
+
+\VerdierSemanticAnchor{ch1-1-4-2-eq3}
+\begin{equation}
+  m(hk)=m(kh)=m(h),
+  \tag{1.4.2.3}
+\end{equation}
+因而 $H$-函子 $(F,m)$ 是由一个 $G$-函子经换群 $f^*$ 得到的。在本段余下
+部分，我们将在一个非常特殊的情形中研究那些 $H$-函子 $(F,m)$：它们在
+$F$ 的自同构群中诱导 $K^\circ$ 的一个预先指定的表示。
+
+\VerdierSemanticAnchor{ch1-1-4-3}
+\noindent\textbf{1.4.3.}\quad
+沿用 (1.4.2) 的记号。设范畴 $\mathcal C'$ 是加性范畴，且
+$K=\mathbb Z/2\mathbb Z$。符号群
+$\{-1,+1\}\simeq\mathbb Z/2\mathbb Z$
+作用于范畴 $\mathcal C'$ 的恒等函子：对 $\mathcal C'$ 的每个对象 $X$，
+它把 $\varepsilon$ 对应到态射
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq1}
+\begin{equation}
+  \varepsilon(X)\colon
+  X\xrightarrow{\,\varepsilon\cdot\operatorname{id}_X\,}X,
+  \qquad \varepsilon\in\{-1,+1\}.
+  \tag{1.4.3.1}
+\end{equation}
+因此，符号群作用于每个函子 $F\colon\mathcal C\to\mathcal C'$：对
+$\mathcal C$ 的每个对象 $Y$，它把 $\varepsilon$ 对应到态射
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq2}
+\begin{equation}
+  \varepsilon(Y)\colon
+  F(Y)\xrightarrow{\,\varepsilon\cdot\operatorname{id}_{F(Y)}\,}F(Y),
+  \qquad \varepsilon\in\{-1,+1\}.
+  \tag{1.4.3.2}
+\end{equation}

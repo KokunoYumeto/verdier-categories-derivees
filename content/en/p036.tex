@@ -1,0 +1,95 @@
+\VerdierPhysicalPageAnchor{0036}%
+\VerdierSemanticAnchor{ch1-1-1-2-degree-e-morphism-cont}
+of degree $e$ satisfying the usual compatibility properties.
+
+\VerdierSemanticAnchor{ch1-1-1-3}
+\noindent\textbf{Definition 1.1.3.}\quad
+A $G$-graded category is called \emph{additive} if its fiber category
+$\mathcal C_e$ is additive [20].
+\VerdierSemanticAnchor{ch1-1-1-3-additive-functor}
+A graded functor between additive graded categories is called
+\emph{additive} if its restriction to the fibers is additive.
+
+\VerdierSemanticAnchor{ch1-1-1-3-cadd}
+Let $\mathcal C$ be an additive $G$-graded category. The category
+$\mathcal C$ with its fibered structure forgotten \emph{is not additive}
+when $G\neq\{e\}$. One can nevertheless associate an additive category to
+$\mathcal C$ as follows: for every pair $X,Y$ of objects of $\mathcal C$
+and every element $g$ of $G$, the set
+$\operatorname{Hom}_{\mathcal C}^{g}(X,Y)$ is naturally endowed with the
+structure of an abelian group. Define a new category
+$\mathcal C_{\mathrm{add}}$ by taking the objects of $\mathcal C$ as its
+set of objects, and by taking as the set of morphisms between two objects
+$X$ and $Y$:
+
+\VerdierSemanticAnchor{ch1-1-1-3-eq1}
+\begingroup
+\makeatletter
+\tagsleft@true
+\let\veqno\@@leqno
+\makeatother
+\begin{equation}
+  \operatorname{Hom}_{\mathcal C_{\mathrm{add}}}(X,Y)
+  =\bigoplus_{g\in G}\operatorname{Hom}_{\mathcal C}^{g}(X,Y).
+  \tag{1.1.3.1}
+\end{equation}
+\endgroup
+
+\VerdierSemanticAnchor{ch1-1-1-3-cadd-composition}
+Composition of morphisms in $\mathcal C_{\mathrm{add}}$ is defined in the
+evident way, and one checks that $\mathcal C_{\mathrm{add}}$ is an
+additive category.
+\VerdierSemanticAnchor{ch1-1-1-3-fadd}
+Likewise, given an additive cartesian functor
+$F\colon\mathcal C\to\mathcal C'$ between two additive graded categories,
+the same method constructs an additive functor
+$F_{\mathrm{add}}\colon\mathcal C_{\mathrm{add}}\to
+\mathcal C'_{\mathrm{add}}$. We shall never use this construction.
+
+\VerdierSemanticAnchor{ch1-1-1-3-restrictive}
+Observe that the definition of graded categories adopted here is more
+restrictive than the one that naturally comes to mind. In addition to the
+evident structures (1.1.2.1) and (1.1.2.2), we impose property (1.1.2.3).
+
+\VerdierSemanticAnchor{ch1-1-2}
+\subsection{Action of a Group on a Category up to Isomorphism}
+
+\VerdierSemanticAnchor{ch1-1-2-1}
+\noindent\textbf{1.2.1.}\quad
+Let $\mathcal C$ be a $G$-graded category. Choose a normalized cleavage of
+the fibered category $\mathcal C\xrightarrow{\deg}\mathcal G$ [18],
+\emph{i.e.} for every $g\in G$ choose a base-change functor:
+
+\VerdierSemanticAnchor{ch1-1-2-1-eq1}
+\begingroup
+\makeatletter
+\tagsleft@true
+\let\veqno\@@leqno
+\makeatother
+\begin{equation}
+  \begin{cases}
+    T(g)\colon\mathcal C_e\longrightarrow\mathcal C_e,\\[0.4em]
+    T(e)=\text{the identity on }\mathcal C_e.
+  \end{cases}
+  \tag{1.2.1.1}
+\end{equation}
+\endgroup
+
+\VerdierSemanticAnchor{ch1-1-2-1-transition}
+For every pair $(g,h)$ of elements of $G$, there is [18] an isomorphism of
+functors:
+
+\VerdierSemanticAnchor{ch1-1-2-1-eq2}
+\begingroup
+\makeatletter
+\tagsleft@true
+\let\veqno\@@leqno
+\makeatother
+\begin{equation}
+  \begin{cases}
+    c(h,g)\colon T(hg)\longrightarrow T(g)T(h),\\[0.4em]
+    c(g,e)=c(e,g)=\text{the identity on }T(g)
+  \end{cases}
+  \tag{1.2.1.2}
+\end{equation}
+\endgroup

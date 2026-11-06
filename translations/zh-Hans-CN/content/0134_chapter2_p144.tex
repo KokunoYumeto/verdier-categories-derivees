@@ -1,0 +1,71 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0144}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-c-bis-converse}
+\noindent 饱和的。由 d) 的证明，子范畴 $Q(Q^{-1}(\mathcal C))$ 严格满且
+饱和。而范畴 $Q(Q^{-1}(\mathcal C))$ 是 $\mathcal C$ 的严格满闭包。因此
+$\mathcal C$ 是饱和的。这就证明了断言 c)$^{\mathrm{bis}}$。
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-d-bis}
+还需证明最后一个断言。显然，当 $\mathcal C$ 严格满时，
+$Q(Q^{-1}(\mathcal C))=\mathcal C$。设 $\mathcal A$ 是包含
+$\widehat{\mathcal B}$ 的严格满三角子范畴。需要证明
+$\mathcal A=Q^{-1}(Q(\mathcal A))$。把 $\mathcal B$ 替换为
+$\widehat{\mathcal B}$ 不会改变范畴 $\mathcal D/\mathcal B$ (2.2.11)，
+故可假设 $\mathcal B$ 饱和，从而 $\mathcal B=\widehat{\mathcal B}$。
+显然有包含关系 $\mathcal A\subset Q^{-1}(Q(\mathcal A))$，因此只需证明：
+$\mathcal D$ 中在 $\mathcal D/\mathcal B$ 里同构于 $\mathcal A$ 的某个对象
+的任意对象，仍是 $\mathcal A$ 的对象。
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-d-bis-roof-setup}
+于是设 $X$ 是 $\mathcal A$ 的对象，$Y$ 是 $\mathcal D$ 的对象，并设
+$m\colon Q(X)\xrightarrow{\sim}Q(Y)$ 为同构。态射 $m$ 可分解为
+$m=Q(f)Q(s)^{-1}$，其中 $s\in S_{\mathcal D}(\mathcal B)$ (2.2.2)，
+且 $Q(f)$ 是同构。由于 $\mathcal B$ 饱和，故
+$f\in S_{\mathcal D}(\mathcal B)$（(2.1.8) 与 (2.2.4)）。因此在
+$\mathcal D$ 中有图式：
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-d-bis-roof}
+\begin{center}
+  \begin{tikzcd}[column sep=4.2em,row sep=2.5em,baseline=(current bounding box.center)]
+    & Z \arrow[dl,"s"'] \arrow[dr,"f"] & \\
+    X && Y
+  \end{tikzcd}
+  \qquad $s,f\in S_{\mathcal D}(\mathcal B)$\quad .
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-d-bis-complete}
+因 $s$ 属于 $S_{\mathcal D}(\mathcal B)$，存在特异三角
+$(Z,X,W,s,u,v)$，其中 $W$ 是 $\mathcal B$ 的对象 (2.1.7)。因此 $W$
+是 $\mathcal A$ 的对象；又因 $\mathcal A$ 严格满，$Z$ 也是
+$\mathcal A$ 的对象 (1.2.4)。同一论证表明 $Y$ 也是 $\mathcal A$ 的对象，
+命题得证。
+
+\VerdierSemanticAnchor{ch2-2-3-2}
+\medskip\noindent\textbf{2.3.2.}\quad
+\VerdierSemanticAnchor{ch2-2-3-2-free-object}
+设 $F\colon C\longrightarrow C'$ 为函子，$X$ 为 $C'$ 的对象。回顾：若存在
+态射 $u\colon F(Y)\longrightarrow X$，使得对每个态射
+$F(Z)\xrightarrow{v}X$，都存在唯一态射 $w\colon Z\longrightarrow Y$ 使下图
+交换，则称 $C$ 的对象 $Y$ \emph{在 $X$ 上 $F$-右自由}，或简称
+\emph{在 $X$ 上右自由}：
+
+\VerdierSemanticAnchor{ch2-2-3-2-free-object-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=4.7em,row sep=2.7em]
+    F(Y) \arrow[rr,"u"] && X \\
+    & F(Z) \arrow[ul,"{F(w)}"] \arrow[ur,"v"'] &
+  \end{tikzcd}
+  \quad .
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-3-2-freedom-arrow-boundary}
+箭头 $u\colon F(Y)\longrightarrow X$ 称为二元组 $(X,Y)$ 的\emph{自由箭头}
+（相对于函子 $F$）。还可在取一个
+\endgroup

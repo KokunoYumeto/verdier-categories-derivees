@@ -1,0 +1,73 @@
+\VerdierPhysicalPageAnchor{0028}%
+\VerdierSemanticAnchor{intro-7-locally-compact-model}
+particularly simple case of locally compact spaces provides a model for the
+statements one obtains. Let $X$ and $Y$ be two locally compact spaces (say,
+of finite cohomological dimension), $A$ a (noetherian) ring,
+$\mathbf D(X_A)$ and $\mathbf D(Y_A)$ the derived categories of the
+categories $X_A$ and $Y_A$ of sheaves of $A$-modules on $X$ and $Y$
+respectively, and $f\colon X\longrightarrow Y$ a continuous map. In this
+situation one can then define:
+
+\VerdierSemanticAnchor{intro-7-f-shriek}
+\begin{enumerate}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\item A functor
+\[
+f_!\colon X_A\longrightarrow Y_A,
+\]
+the direct image with proper support, and the corresponding total derived
+functor:
+\VerdierSemanticAnchor{intro-7-rf-shriek}
+\[
+\mathrm Rf_!\colon \mathbf D(X_A)\longrightarrow \mathbf D(Y_A).
+\]
+(When $f\colon X\longrightarrow Y$ is a proper map, $f_!$ is the usual
+direct-image functor.)
+
+\VerdierSemanticAnchor{intro-7-f-upper-shriek}
+\item A functor
+\[
+f^!\colon \mathbf D^+(Y_A)\longrightarrow \mathbf D^+(X_A)
+\]
+(the sign $+$ means that one restricts to complexes bounded below), whose
+precise definition is fairly technical but which is characterized, up to
+unique isomorphism, by property c).
+
+\VerdierSemanticAnchor{intro-7-duality-adjunction}
+\item A bifunctorial isomorphism:
+\VerdierSemanticAnchor{intro-7-delta-f}
+\[
+\Delta_f(F,G)\colon
+\operatorname{RHom}(\mathrm Rf_!F,G)
+\longrightarrow
+\operatorname{RHom}(F,f^!G)
+\]
+defined for every object $F$ of $\mathbf D(X_A)$ and every object $G$ of
+$\mathbf D^+(Y_A)$ ($\operatorname{RHom}$ denotes the total derived functor
+of the “complex of homomorphisms” functor).
+\end{enumerate}
+
+The important phenomena are then the following:
+
+\VerdierSemanticAnchor{intro-7-duality-D1}
+\noindent\textit{D1)} Formation of the functor $f^!$ is transitive as $f$
+varies.
+
+\VerdierSemanticAnchor{intro-7-duality-D2}
+\noindent\textit{D2)} The isomorphism $\Delta_f$ is compatible with
+composition of maps.
+
+\VerdierSemanticAnchor{intro-7-duality-D3}
+\noindent\textit{D3)} When $X$ is smooth over $Y$ of relative dimension
+$n$, i.e. when, locally on $X$, $X$ is $Y$-isomorphic to the product of an
+open subset of $Y$ with the topological space $\mathbf R^n$ (for example:
+$Y$ is a point and $X$ a topological manifold), then for every object $G$ of
+$\mathbf D^+(Y_A)$ there is a canonical isomorphism
+\VerdierSemanticAnchor{intro-7-relative-orientation}
+\[
+f^!(G)\simeq f^*(G)\otimes\omega_{X/Y}[n],
+\]
+where $f^*(G)$ is the usual inverse image, $\omega_{X/Y}$ is a locally free
+sheaf of rank $1$, namely the relative orientation sheaf of $X$ over $Y$,
+and $\omega_{X/Y}[n]$ denotes the complex obtained by shifting the degrees of
+$\omega_{X/Y}$ by $n$ units.

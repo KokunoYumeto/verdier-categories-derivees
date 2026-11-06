@@ -1,0 +1,107 @@
+\VerdierPhysicalPageAnchor{0038}%
+\VerdierSemanticAnchor{ch1-1-2-4-isomorphisms-cont}
+et d'isomorphismes :
+
+\[
+  m(g)\colon F_eT(g)\longrightarrow T'(g)F_e,
+  \qquad g\in G,
+\]
+tels que les diagrammes (1.2.3.2) soient commutatifs.
+
+\VerdierSemanticAnchor{ch1-1-2-4-characterization}
+Un $G^\circ$-foncteur est donc un foncteur
+“commutant à isomorphisme près aux opérations de $G^\circ$”. On
+utilisera pour le désigner la notation $(F_e,m)$.
+
+\VerdierSemanticAnchor{ch1-1-2-4-strict}
+Lorsque pour tout $g\in G$ les isomorphismes $m(g)$ sont des
+isomorphismes identiques, ce qui implique en particulier que pour tout
+$g\in G$ on a les égalités $F_eT(g)=T'(g)F_e$, on dit que le
+$G^\circ$-foncteur est \emph{strict}.
+
+\VerdierSemanticAnchor{ch1-1-2-5}
+\noindent\textbf{1.2.5.}\quad
+Soient $\mathcal C$, $\mathcal C'$ et $\mathcal C''$ trois catégories
+graduées et
+\[
+  \mathcal C\xrightarrow{F}\mathcal C'
+  \xrightarrow{F'}\mathcal C'',\qquad F''=F'F,
+\]
+trois foncteurs gradués. Choisissons sur $\mathcal C$, $\mathcal C'$ et
+$\mathcal C''$ des clivages normalisés. On en déduit, d'après ce qui
+précède, trois $G^\circ$-catégories
+$(\mathcal C_e,G^\circ,T,c)$,
+$(\mathcal C'_e,G^\circ,T',c')$ et
+$(\mathcal C''_e,G^\circ,T'',c'')$, et trois $G^\circ$-foncteurs
+$(F_e,m)$, $(F'_e,m')$ et $(F''_e,m'')$. On vérifie immédiatement qu'on a
+les relations :
+
+\VerdierSemanticAnchor{ch1-1-2-5-eq1}
+\begin{equation}
+  \begin{cases}
+    F''_e=F'_eF_e,\\[0.5em]
+    m''(g)=\bigl(m'(g)\star F_e\bigr)
+      \bigl(F'_e\star m(g)\bigr),\qquad g\in G.
+  \end{cases}
+  \tag{1.2.5.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-2-6}
+\noindent\textbf{Définition 1.2.6.}\quad
+Soient $(\mathcal C_e,G^\circ,T,c)$,
+$(\mathcal C'_e,G^\circ,T',c')$ et
+$(\mathcal C''_e,G^\circ,T'',c'')$ trois $G^\circ$-catégories et :
+
+\[
+\begin{tikzcd}[column sep=large]
+(\mathcal C_e,G^\circ,T,c)
+  \arrow[r,"{(F_e,m)}"]
+&
+(\mathcal C'_e,G^\circ,T',c')
+  \arrow[r,"{(F_e^{\prime},m^{\prime})}"]
+&
+(\mathcal C''_e,G^\circ,T'',c'')
+\end{tikzcd}
+\]
+deux $G^\circ$-foncteurs.
+
+\VerdierSemanticAnchor{ch1-1-2-6-composite}
+Les égalités (1.2.5.1) définissent un $G^\circ$-foncteur qui est appelé
+le \emph{foncteur composé} des $G^\circ$-foncteurs $(F_e,m)$ et
+$(F'_e,m')$.
+
+\VerdierSemanticAnchor{ch1-1-2-7}
+\noindent\textbf{1.2.7.}\quad
+Soient $F$ et $F'$ deux foncteurs gradués entre deux catégories
+$\mathcal C$ et $\mathcal C'$ graduées de type $G$, et soit
+$u\colon F\to F'$ un morphisme de foncteurs de degré $e$. Choisissons
+sur $\mathcal C$ et $\mathcal C'$ des clivages normalisés. On en déduit
+deux $G^\circ$-catégories $(\mathcal C_e,G^\circ,T,c)$ et
+$(\mathcal C'_e,G^\circ,T',c')$, et deux $G^\circ$-foncteurs
+$(F_e,m)$, $(F'_e,m')$. Le morphisme $u$ détermine alors un morphisme de
+foncteurs :
+
+\VerdierSemanticAnchor{ch1-1-2-7-eq1}
+\begin{equation}
+  u_e\colon F_e\longrightarrow F'_e
+  \tag{1.2.7.1}
+\end{equation}
+tel que le diagramme ci-après soit commutatif :
+
+\VerdierSemanticAnchor{ch1-1-2-7-eq2}
+\begin{equation}
+\begin{tikzcd}[column sep=huge,row sep=large]
+F_eT(g)
+  \arrow[r,"u_e\star T(g)"]
+  \arrow[d,"m(g)",swap]
+&
+F_e^{\prime}T(g)
+  \arrow[d,"m^{\prime}(g)"]
+\\
+T^{\prime}(g)F_e
+  \arrow[r,"T^{\prime}(g)\star u_e",swap]
+&
+T^{\prime}(g)F_e^{\prime}\mathpunct{.}
+\end{tikzcd}
+\tag{1.2.7.2}
+\end{equation}

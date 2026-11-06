@@ -1,0 +1,76 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0108}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch1-app-signs}
+\section*{Appendix: Comments on the Choice of Signs}
+\addcontentsline{toc}{section}{Appendix: Comments on the Choice of Signs}
+
+\VerdierSemanticAnchor{ch1-app-signs-cone}
+The cone functor is determined up to unique isomorphism by its adjunction
+properties (3.1.3). In order to associate easily to a morphism of
+$\operatorname{tr}_1(C)$ a triangle of $\operatorname{comp}(C)$, we chose as
+translation functor the functor “cone of the morphism
+$X\longrightarrow 0$” ((3.1.7) and (3.2.2.7)), i.e. shifting the degrees and
+changing the sign of the differential.
+
+\VerdierSemanticAnchor{ch1-app-signs-strict}
+Let $F\colon\prod_{i\in[n]}C_i\longrightarrow C$ be a multiadditive functor.
+The category $\prod_{i\in[n]}\operatorname{comp}(C_i)$ is naturally endowed
+with the structure of a $\mathbb Z[n]$-category. If one wants the functor
+\[
+  F^{[n]}\colon\prod_{i\in[n]}\operatorname{comp}(C_i)
+  \longrightarrow\operatorname{comp}^{n}(C)
+\]
+to be a strict $\mathbb Z[n]$-functor, one is led to the choice of
+conventions that we made for translations: shifting the degrees in one
+direction and changing the sign of the corresponding differential.
+
+\VerdierSemanticAnchor{ch1-app-signs-simple-complex}
+We adopted the conventions of [1] for the choice of the associated
+simple-complex functor (except that, in our multiple complexes, the
+differentials commute with one another). This makes it possible to define the
+functor $K_{\Pi}F\colon\prod_i K(C_i)\longrightarrow K(C)$. It then turns out
+that $K_{\Pi}F(X_1,\ldots,X_i[1],\ldots,X_n)$ is different from
+$K_{\Pi}F(X_1,\ldots,X_i,\ldots,X_n)[1]$. In order nevertheless to assert
+that the functor $K_{\Pi}F$ sends distinguished triangles to distinguished
+triangles, one is led to define the isomorphisms
+
+\VerdierSemanticAnchor{ch1-app-signs-shift-isomorphism}
+\[
+  p_i\colon K_{\Pi}F(X_1,\ldots,X_i[1],\ldots,X_n)
+  \xrightarrow{\ \sim\ }
+  K_{\Pi}F(X_1,\ldots,X_i,\ldots,X_n)[1]
+\]
+(proof of (3.4.3)).
+
+\VerdierSemanticAnchor{ch1-app-signs-anticommutativity}
+It then turns out that, for $i\ne j$, one has anticommutative diagrams:
+
+\VerdierSemanticAnchor{ch1-app-signs-diagram}
+\begin{center}
+  \resizebox{\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=3.2em,row sep=4.3em]
+      K_{\Pi}F(X_1,\ldots,X_i[1],\ldots,X_j[1],\ldots)
+        \arrow[r,"p_j"]
+        \arrow[d,"p_i"']
+        \& K_{\Pi}F(X_1,\ldots,X_i[1],\ldots,X_j,\ldots)[1]
+          \arrow[d,"p_i"] \\
+      K_{\Pi}F(X_1,\ldots,X_i,\ldots,X_j[1],\ldots)[1]
+        \arrow[r,"p_j"]
+        \& K_{\Pi}F(X_1,\ldots,X_i,\ldots,X_j,\ldots)[2].
+    \end{tikzcd}$%
+  }
+\end{center}
+
+\VerdierSemanticAnchor{ch1-app-signs-koszul-choice}
+We then showed in (1.5.2) how to extend these isomorphisms coherently to
+isomorphisms $p(\sigma)$ defined for every $\sigma\in\mathbb Z[n]$. An
+arbitrary choice enters here. It consists in choosing a cocycle in a
+cohomology class that is itself well determined: the Koszul class (1.6.3).
+In order to conform to commonly accepted rules (for example [1]), we chose in
+every case the Koszul cocycle (1.6.6).
+\endgroup

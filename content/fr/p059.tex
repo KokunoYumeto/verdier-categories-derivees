@@ -1,0 +1,86 @@
+\VerdierPhysicalPageAnchor{0059}%
+\VerdierSemanticAnchor{ch1-1-5-13}
+\noindent\textbf{1.5.13.}\quad
+Les $\mathbb Z^n$-catégories que nous utiliserons dans ce travail seront
+des catégories strictes. Aussi ne tenterons-nous pas d'aborder le
+problème signalé en (1.5.12) dans le cas général. Cependant l'exemple
+présenté en (1.5.12) suggère que la détermination des structures de
+$\mathbb Z$-catégorie sur une catégorie $\mathcal C$ est
+particulièrement simple. C'est en effet le cas. Désignons par
+$E\text{-}\operatorname{Cat}$ la $U$-catégorie dont les objets sont les
+catégories appartenant à $U$ munies d'une équivalence :
+
+\VerdierSemanticAnchor{ch1-1-5-13-eq1}
+\begin{equation}
+  T\colon\mathcal C\longrightarrow\mathcal C
+  \tag{1.5.13.1}
+\end{equation}
+et dont les morphismes sont les foncteurs
+$F\colon\mathcal C\to\mathcal C'$ muni d'un isomorphisme :
+
+\VerdierSemanticAnchor{ch1-1-5-13-eq2}
+\begin{equation}
+  m\colon FT\longrightarrow T'F.
+  \tag{1.5.13.2}
+\end{equation}
+
+On a alors évidemment un foncteur de la $U$-catégorie
+$\mathbb Z\text{-}\operatorname{Cat}$ dans la $U$-catégorie
+$E\text{-}\operatorname{Cat}$ :
+
+\VerdierSemanticAnchor{ch1-1-5-13-eq3}
+\begin{equation}
+  R\colon \mathbb Z\text{-}\operatorname{Cat}
+  \longrightarrow E\text{-}\operatorname{Cat}.
+  \tag{1.5.13.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-5-13-action}
+Le foncteur $R$ associe à une $\mathbb Z$-catégorie
+$(\mathcal C,\mathbb Z,T,c)$ la catégorie $\mathcal C$ munie de
+l'équivalence $T(1)\colon\mathcal C\to\mathcal C$ et à tout
+$\mathbb Z$-foncteur :
+\[
+  (F,m)\colon(\mathcal C,\mathbb Z,T,c)
+  \longrightarrow(\mathcal C',\mathbb Z,T',c'),
+\]
+le foncteur $F$ muni de l'isomorphisme
+$m(1)\colon FT(1)\to T'(1)F$.
+
+\VerdierSemanticAnchor{ch1-1-5-14}
+\VerdierSemanticAnchor{ch1-1-5-14-proposition}
+\noindent\textbf{Proposition 1.5.14.}\quad
+\emph{Le foncteur $R$ est une équivalence de catégories.}
+
+\VerdierSemanticAnchor{ch1-1-5-14-proof}
+Nous nous bornerons à donner des indications sur la démonstration. La
+proposition (1.5.2) et la remarque (1.5.8) montrent que $R$ est
+pleinement fidèle. Il suffit donc de montrer que $R$ est essentiellement
+surjectif. Soit donc
+$(\mathcal C,T\colon\mathcal C\to\mathcal C)$ une catégorie munie d'une
+équivalence. Soient $T^{-1}\colon\mathcal C\to\mathcal C$ un foncteur
+quasi-inverse de $T$ et :
+
+\VerdierSemanticAnchor{ch1-1-5-14-eq1}
+\begin{equation}
+  \begin{aligned}
+    u&\colon\operatorname{id}_{\mathcal C}\longrightarrow TT^{-1},\\
+    v&\colon\operatorname{id}_{\mathcal C}\longrightarrow T^{-1}T
+  \end{aligned}
+  \tag{1.5.14.1}
+\end{equation}
+les isomorphismes d'adjonction.
+
+Les foncteurs $T^n$ et $(T^{-1})^n$ sont, pour tout entier $n>0$,
+adjoints l'un de l'autre, d'où des isomorphismes d'adjonction :
+
+\VerdierSemanticAnchor{ch1-1-5-14-eq2}
+\begin{equation}
+  \begin{aligned}
+    u^{(n)}&\colon\operatorname{id}_{\mathcal C}
+      \longrightarrow T^n(T^{-1})^n,\\
+    v^{(n)}&\colon\operatorname{id}_{\mathcal C}
+      \longrightarrow (T^{-1})^nT^n.
+  \end{aligned}
+  \tag{1.5.14.2}
+\end{equation}

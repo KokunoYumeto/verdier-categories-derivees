@@ -1,0 +1,95 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0232}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-1-7-double-complex-case}
+Suppose then that $X$ is a double complex and that $m=1$. To prove a), it
+suffices to show that, for every $(p,q,r)$ in
+$\mathcal{F}\ell_2(\widetilde{\mathbb Z})$, the following diagram in
+$\operatorname{comp}(\mathcal A)$:
+
+\VerdierSemanticAnchor{ch4d-4-1-7-6}
+\begin{equation}
+\resizebox{0.98\linewidth}{!}{$
+\displaystyle
+\int_2{}^{1}\!X(p,q)\longrightarrow
+\int_2{}^{1}\!X(p,r)\longrightarrow
+\int_2{}^{1}\!X(q,r)
+\xrightarrow{{}^{1}\!d(p,q,r)}
+\int_2T_1\bigl({}^{1}\!X(p,q)\bigr)
+=\left(\int_2{}^{1}\!X(p,q)\right)[1]
+$}
+\tag{4.1.7.6}
+\end{equation}
+
+defines a distinguished triangle in $K(\mathcal A)$ (observe that in this
+case the commutation isomorphism for translations
+$\int_2T_1({}^{1}\!X(p,q))\xrightarrow{\sim}
+(\int_2{}^{1}\!X(p,q))[1]$ is the identity). The other assertions in a)
+are evident. To prove that diagram (4.1.7.6) defines a distinguished
+triangle in $K(\mathcal A)$, it suffices, by property (TRII) (Chapter~II,
+1.1.1), to show that the diagram
+
+\VerdierSemanticAnchor{ch4d-4-1-7-7}
+\begin{equation}
+\resizebox{0.96\linewidth}{!}{$
+\displaystyle
+\left(\int_2{}^{1}\!X(q,r)\right)[-1]
+\xrightarrow{-{}^{1}\!d(p,q,r)[-1]}
+\int_2{}^{1}\!X(p,q)\longrightarrow
+\int_2{}^{1}\!X(p,r)\longrightarrow
+\int_2{}^{1}\!X(q,r)
+$}
+\tag{4.1.7.7}
+\end{equation}
+
+defines a distinguished triangle in $K(\mathcal A)$. One sees immediately
+that the simple complex $\int_2{}^{1}\!X(p,r)$ is equal to the cone of the
+morphism $-{}^{1}\!d(p,q,r)[-1]$ (Chapter~I, 3.1.2), and that the
+morphisms
+$\int_2{}^{1}\!X(p,q)\longrightarrow\int_2{}^{1}\!X(p,r)$ and
+$\int_2{}^{1}\!X(p,r)\longrightarrow\int_2{}^{1}\!X(q,r)$ appearing in
+(4.1.7.7) are the morphisms introduced in the study of the cone functor
+(Chapter~I, 3.2.2.2 and 3.2.2.4). Consequently, the triangle in
+$K(\mathcal A)$ defined by diagram (4.1.7.7) is, by definition
+(Chapter~I, 3.3.1), a distinguished triangle. We now prove b). Using the
+notation introduced in (4.1.6.5), we have just shown that in the diagram
+
+\VerdierSemanticAnchor{ch4d-4-1-7-8}
+\begin{equation}
+{}^{1}\!Y(q,r)[-1]
+\xrightarrow{-{}^{1}\!d(-\infty,q,r)}
+{}^{1}\!Y(q)\longrightarrow{}^{1}\!Y(r)\longrightarrow{}^{1}\!Y(q,r),
+\tag{4.1.7.8}
+\end{equation}
+
+the complex ${}^{1}\!Y(r)$ appears as the cone of the morphism
+$-{}^{1}\!d(-\infty,q,r)$ (set $p=-\infty$ in diagram (4.1.7.7)).
+Moreover, in (4.1.1), the object $\mathcal Y(q,r)$ was defined as the cone
+of the morphism
+
+\VerdierSemanticAnchor{ch4d-4-1-7-9}
+\begin{equation}
+{}^{1}\!Y(q)\longrightarrow{}^{1}\!Y(r).
+\tag{4.1.7.9}
+\end{equation}
+
+In this situation (Chapter~I, 3.2.5.2), a homotopy equivalence (and hence
+an isomorphism in $K(\mathcal A)$) was then defined:
+
+\VerdierSemanticAnchor{ch4d-4-1-7-10}
+\begin{equation}
+J(q,r)\colon\mathcal Y(q,r)\longrightarrow{}^{1}\!Y(q,r).
+\tag{4.1.7.10}
+\end{equation}
+
+\VerdierSemanticAnchor{ch4d-4-1-7-proof-end}
+We leave it to the reader to verify that this homotopy equivalence is
+functorial with respect to the indices $(q,r)$ in
+$\mathcal{F}\ell_1(\widetilde{\mathbb Z})$ and with respect to the double
+complex $X$, and that it defines a canonical isomorphism from the spectral
+object $\bigl(\mathcal Y(p,q),\delta(p,q,r)\bigr)$ onto the spectral object
+$\bigl({}^{1}\!Y(p,q),{}^{1}\!d(p,q,r)\bigr)$.
+\endgroup

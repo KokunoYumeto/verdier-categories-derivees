@@ -1,0 +1,68 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0058}%
+\VerdierSemanticAnchor{ch1-1-5-10-converse}
+\noindent\textbf{逆に：}\par
+
+\VerdierSemanticAnchor{ch1-1-5-10}
+\VerdierSemanticAnchor{ch1-1-5-10-proposition}
+\noindent\textbf{命題 1.5.10.}\quad
+\emph{基礎となる関手の間の射 $u\colon F_1\to F_2$ で、各
+$i\in[1,n]$ に対して図式 (1.5.9.2) が $\beta(e_i)$-可換であるものは、
+関手の $\beta$-射である。}
+
+\VerdierSemanticAnchor{ch1-1-5-10-proof}
+実際、各 $\sigma\in\mathbb Z^n$ に対し、$R(\sigma)$ で次の性質を表す：
+
+\VerdierSemanticAnchor{ch1-1-5-10-property}
+\noindent\emph{$(R(\sigma))$\qquad 次の図式は $\beta(\sigma)$-可換である：}
+
+\VerdierSemanticAnchor{ch1-1-5-10-eq1}
+\begin{equation}
+  \resizebox{0.78\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=6em,row sep=4em]
+      F_1T(\sigma)
+        \arrow[r,"{p_1(\sigma)}"]
+        \arrow[d,"{u*T(\sigma)}"']
+        \& T'(\sigma)F_1
+          \arrow[d,"{T'(\sigma)*u}"] \\
+      F_2T(\sigma)
+        \arrow[r,"{p_2(\sigma)}"]
+        \& T'(\sigma)F_2
+    \end{tikzcd}$%
+  }\;.
+  \tag*{\ensuremath{(1.5.10.1)_{\sigma}}}
+\end{equation}
+
+図式 $(1.5.10.1)_{\sigma_1}$、$(1.5.10.1)_{\sigma_2}$、
+$(1.5.10.1)_{\sigma_1+\sigma_2}$ を調べれば、直ちに次が分かる：
+
+\VerdierSemanticAnchor{ch1-1-5-10-closure}
+\noindent\emph{性質 $R(\sigma_1)$、$R(\sigma_2)$、
+$R(\sigma_1+\sigma_2)$ のうち二つが成り立てば、残る一つも成り立つ。}
+
+\VerdierSemanticAnchor{ch1-1-5-10-conclusion}
+さらに仮定により、性質 $R(e_i)$（$i\in[1,n]$）および $R(0)$ が
+成り立つ。したがって $R(\sigma)$ はすべての
+$\sigma\in\mathbb Z^n$ に対して成り立つ。
+
+\VerdierSemanticAnchor{ch1-1-5-11}
+\noindent\textbf{1.5.11.}\quad
+厳密な $\mathbb Z^n$-圏とは、その自己同型群の中の $\mathbb Z^n$ の表現を
+備えた圏である。このような表現を定めるには、互いに可換する $n$ 個の自己同型
+$T(e_1),\ldots,T(e_n)$ を与えれば十分である。
+
+\VerdierSemanticAnchor{ch1-1-5-12}
+\noindent\textbf{1.5.12.}\quad
+与えられた圏上の（必ずしも厳密でない）$\mathbb Z^n$-圏構造を決定する問題は、
+はるかに簡単ではない。例えば、圏 $\mathcal C$ 上で、すべての
+$\sigma\in\mathbb Z^n$ に対して
+$T(\sigma)=\text{$\mathcal C$ の恒等関手}$ となる $\mathbb Z^n$-圏構造だけを
+考える。このとき各対 $\sigma_1,\sigma_2\in\mathbb Z^n$ に対して、
+$\mathcal C$ の恒等関手の自己同型群（これは可換群である）の元
+$c(\sigma_1,\sigma_2)$ を与え、それらが恒等式 (1.2.1.3) を満たすことを
+要求しなければならない。したがって、このような構造を与えることは、
+$\mathcal C$ の恒等関手の自己同型群に値をとる $\mathbb Z^n$ 上の正規化された
+非斉次 2-余サイクルを与えることである。さらに、二つのこのような構造が
+$F=\text{$\mathcal C$ の恒等関手}$ を満たす $\mathbb Z^n$-関手 $(F,m)$ により
+同型であるための必要十分条件は、対応する余サイクルが同じコホモロジー類に
+属することである。

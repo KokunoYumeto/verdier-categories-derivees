@@ -1,0 +1,74 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0189}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-1-4-proof-cont}
+où $v$ est un homotopisme.
+
+Construisons en effet le cône du morphisme $m$ :
+
+\VerdierSemanticAnchor{ch3d-2-1-4-cone-m}
+\[
+X\xrightarrow{m}Y\xrightarrow{p(m)}c(m)
+\longrightarrow X[1],
+\]
+puis de nouveau, le cône du morphisme $p(m)$ :
+
+\VerdierSemanticAnchor{ch3d-2-1-4-cone-pm}
+\[
+Y\xrightarrow{p(m)}c(m)\longrightarrow c(p(m))
+\xrightarrow{q}Y[1].
+\]
+% Anomalie diplomatique de l'autorité : « une épimorphisme » ; correction : « un épimorphisme ».
+Le morphisme $c(p(m))\xrightarrow{q}Y[1]$ est un épimorphisme
+(chap. I, 3.2.2). Il résulte des propriétés des triangles distingués
+(propriété TRII) qu'il existe un homotopisme :
+
+\VerdierSemanticAnchor{ch3d-2-1-4-homotopy-equivalence}
+\[
+X\xrightarrow{v}c(p(m))[-1]
+\]
+tel que le triangle ci-après :
+
+\VerdierSemanticAnchor{ch3d-2-1-4-triangle}
+\begin{center}
+\begin{tikzcd}[column sep=3.5em,row sep=3.2em]
+X \arrow[rr,"v"] \arrow[dr,"m"']
+  && c(p(m))[-1] \arrow[dl,"{q[-1]}"] \\
+& Y &
+\end{tikzcd}
+\end{center}
+soit commutatif à homotopie près.
+
+On peut donc supposer que le morphisme $m$ est un épimorphisme de
+$\operatorname{comp}(\mathcal A)$. Soit alors :
+
+\VerdierSemanticAnchor{ch3d-2-1-4-kernel}
+\[
+N=\cdots\longrightarrow N^i\xrightarrow{d_N^i}N^{i+1}
+\xrightarrow{d_N^{i+1}}N^{i+2}\longrightarrow\cdots
+\]
+le noyau du morphisme $m$. Posons :
+
+\VerdierSemanticAnchor{ch3d-2-1-4-truncation}
+\[
+N_{-n}=\cdots\longrightarrow N^{n-3}\longrightarrow N^{n-2}
+\longrightarrow\operatorname{Im}(d_N^{n-2})
+\longrightarrow0\longrightarrow0\longrightarrow\cdots.
+\]
+Les $N_{-n}$ forment une suite décroissante de sous-complexes acycliques
+de $N$, d'où, en posant $X_n=X/N_n$, une suite :
+
+\VerdierSemanticAnchor{ch3d-2-1-4-quotients}
+\[
+u_n\colon X_n\longrightarrow X_{n-1},\qquad n\in\mathbb Z.
+\]
+Les $u_n$ sont des morphismes élémentaires de hauteur $-n$ et
+\[
+\varprojlim_n X_n=X,
+\qquad
+\varinjlim_n X_n=Y.
+\]
+\endgroup

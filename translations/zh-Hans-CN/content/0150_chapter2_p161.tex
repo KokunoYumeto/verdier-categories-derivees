@@ -1,0 +1,60 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0161}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch3-3-2-9-exactness-test}
+在 $\mathcal D^\wedge$ 中正合。序列 (3.2.9.1) 正合，当且仅当对
+$\mathcal D$ 的每个对象 $W$，序列
+\[
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),h(X))\longrightarrow
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),h(Y))\longrightarrow
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),h(Z))
+\]
+正合。这由 $h$ 的充分忠实性与 (1.2.1) 得到。
+
+\VerdierSemanticAnchor{ch3-3-2-9-factorization}
+设 $\mathcal A$ 为阿贝尔范畴。与 $\mathcal H$ 复合的函子
+\[
+\mathcal E x(\mathrm A(\mathcal D),\mathcal A)
+\longrightarrow\mathcal H\!om(\mathcal D,\mathcal A)
+\]
+充分忠实，这是显然的：正合函子之间的态射，一旦知道它在足够多投射对象上的
+取值，便被唯一确定。还需证明每个上同调函子
+$\Psi\colon\mathcal D\to\mathcal A$ 都经过
+$\mathrm A(\mathcal D)$ 分解：
+\VerdierSemanticAnchor{ch3-3-2-9-2}
+\[
+\begin{tikzcd}[column sep=5em,row sep=3em]
+\mathcal D\arrow[r,"\mathcal H"]\arrow[dr,"\Psi"']&
+\mathrm A(\mathcal D)\arrow[d,"\Phi"]\\
+&\mathcal A
+\end{tikzcd}
+\tag{3.2.9.2}
+\]
+其中 $\Phi$ 正合。对 $\mathrm A(\mathcal D)$ 的每个对象
+$X\xrightarrow fY$，令
+\begingroup\renewcommand{\thefootnote}{(*)}%
+\[
+\Phi(X\xrightarrow fY)=
+\operatorname{Image}_{\mathcal A}
+(\Psi(X)\xrightarrow{\Psi(f)}\Psi(Y)).\footnote{此构造涉及在
+$\mathcal A$ 中选择一个“像”函子；该选择当然在唯一同构意义下唯一。
+总可以要求——下文也将如此约定——这个“像”函子把 $\mathcal A$ 中每个恒等态射
+$\operatorname{id}_T$ 送到配有态射 $T\xrightarrow{\operatorname{id}_T}T$
+的对象 $T$。}
+\]
+\endgroup
+由此得到一个从 $\mathrm A(\mathcal D)$ 到 $\mathcal A$ 的函子 $\Phi$，并使图式
+(3.2.9.2) 交换。我们证明 $\Phi$ 正合。由 (3.2.7)，$\Phi$ 立即左正合；
+取反范畴同理可知 $\Phi$ 右正合。这就完成了定理 (3.2.1) 的证明。
+
+\VerdierSemanticAnchor{ch3-3-2-10}
+\medskip\noindent\textbf{注 3.2.10.}\quad
+1) 定理 (3.2.1, c)) 所述的泛性质在等价意义下确定范畴
+$\mathrm A(\mathcal D)$。
+
+2) 若 $\mathcal D$ 中的可数直和或可数积可表示，则
+$\mathrm A(\mathcal D)$ 中所有投射对象（相应地，内射对象）都同构于
+$\mathcal D$ 的对象。事实上，这样的对象是 $\mathrm A(\mathcal D)$ 中
+$\mathcal D$ 某个对象的直和项，因而是 $\mathcal D$ 某个对象上一个投影态射的核。
+在上述假设下，投影态射在 $\mathcal D$ 中可分解 (1.2.9)。
+\endgroup

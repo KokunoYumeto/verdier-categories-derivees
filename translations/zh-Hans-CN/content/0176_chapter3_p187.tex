@@ -1,0 +1,72 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0187}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-1-1-base-change}
+现在设 $m\colon Z\longrightarrow X$ 是复形的一个态射。复形 $Z'$ 显然是
+$Z$ 上由沿 $Z\xrightarrow{m}X$ 的基变换得到的对象，并由下图中左侧的竖直箭头给出：
+
+\VerdierSemanticAnchor{ch3d-2-1-1-base-change-square}
+\begin{center}
+\begin{tikzcd}[column sep=4.2em,row sep=2.6em]
+Z' \arrow[r] \arrow[d] & X(u,i) \arrow[d,"{p(u,i)}"] \\
+Z \arrow[r,"m"'] & X
+\end{tikzcd}
+\end{center}
+该箭头同构于一个形如 $p(w,i)\colon Z(w,i)\longrightarrow Z$ 的复形态射，其中
+$w$ 是适当的态射。
+
+\VerdierSemanticAnchor{ch3d-2-1-2}
+\medskip\noindent\textbf{引理 2.1.2.}\quad
+\textit{a) 态射
+$H^j(p(u,i))\colon H^j(X(u,i))\longrightarrow H^j(X)$ 在
+$j\neq i,i+1$ 时是同构。}
+
+\noindent\textit{b) 有正合列：}
+
+\VerdierSemanticAnchor{ch3d-2-1-2-exact-sequences}
+\[
+0\longrightarrow H^i(X(u,i))\longrightarrow H^i(X)
+\longrightarrow
+\frac{\operatorname{Ker}(d_X^i)+\operatorname{Im}(u)}
+     {\operatorname{Im}(d_X^{i-1})+\operatorname{Im}(u)}
+\longrightarrow0,
+\]
+\[
+0\longrightarrow
+\frac{\operatorname{Ker}(d_X^i)+\operatorname{Im}(u)}
+     {\operatorname{Im}(d_X^{i-1})+\operatorname{Im}(u)}
+\longrightarrow
+\frac{X^i}{\operatorname{Im}(d_X^{i-1})+\operatorname{Im}(u)}
+\longrightarrow
+\frac{X^i}{\operatorname{Ker}(d_X^i)+\operatorname{Im}(u)}
+\longrightarrow0,
+\]
+\[
+0\longrightarrow
+\frac{X^i}{\operatorname{Ker}(d_X^i)+\operatorname{Im}(u)}
+\longrightarrow H^{i+1}(X(u,i))\longrightarrow H^{i+1}(X)
+\longrightarrow0.
+\]
+
+\noindent\textit{c) $p(u,i)$ 是拟同构的充分必要条件为}
+\[
+\operatorname{Im}(d_X^{i-1})+\operatorname{Im}(u)=X^i.
+\]
+\VerdierSemanticAnchor{ch3d-2-1-2-proof}
+图追逐留给读者。
+
+\VerdierSemanticAnchor{ch3d-2-1-3}
+\medskip\noindent\textbf{定义 2.1.3.}\quad
+复形态射 $m\colon Z\longrightarrow X$ 称为一个\emph{高度为 $i$ 的初等态射}，
+如果它在 $\mathcal{F}\ell_1(\operatorname{comp}(\mathcal A))$ 中同构于形如
+$p(u,i)$ 的态射，其中 $u$ 是满态射。
+
+\VerdierSemanticAnchor{ch3d-2-1-3-properties}
+因此初等态射特别是拟同构（(2.1.2), c)）。初等态射是
+$\operatorname{comp}(\mathcal A)$ 中的满态射。
+$\operatorname{comp}(\mathcal A)$ 中的满态射是初等态射，当且仅当其核是
+至多含有两个非零分量的无环复形。同一高度的两个初等态射的复合是
+\endgroup

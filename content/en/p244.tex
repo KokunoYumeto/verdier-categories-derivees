@@ -1,0 +1,73 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0244}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-exact-diagram}
+One thereby obtains a commutative diagram whose rows are exact:
+\[
+\begin{tikzcd}[column sep=2.7em,row sep=2.8em]
+F_1^{p+r-1}(Y) \arrow[r] \arrow[d] &
+F_1^p(L^\bullet) \arrow[r] \arrow[d,"{m(L^\bullet[p])}"'] &
+F_1^p(X) \arrow[r] \arrow[d,"{m(X[p])}"'] &
+F_1^{p+r}(Y) \arrow[d] \\
+F_2^{p+r-1}(Y) \arrow[r] &
+F_2^p(L^\bullet) \arrow[r] &
+F_2^p(X) \arrow[r] &
+F_2^{p+r}(Y).
+\end{tikzcd}
+\]
+The integer $r$ was chosen so that the objects $F_i^q(Y)$ are zero for
+$i=1,2$ and $q\geq p+r-1$; consequently, everything reduces to showing
+that $m(L^\bullet)$ is an isomorphism for every object $L^\bullet$ of
+$\operatorname{comp}^{b}(\mathcal A)$ whose components are elements of
+$M$.
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-spectral-sequence}
+Now the morphism $m$ induces a morphism between the first spectral
+sequences of the functors $F_1$ and $F_2$ relative to the complex
+$L^\bullet$. On the initial terms, this morphism
+\[
+m_1^{p,q}(L^\bullet)\colon F_1^q(L^p)\longrightarrow F_2^q(L^p),
+\]
+is an isomorphism by hypothesis. Since these spectral sequences are
+stationary (4.5.3), the morphism $m$ induces an isomorphism on the abutments
+(Chapter~II, 4.4.5), and hence, by (4.4.2), the morphism $m(L^\bullet)$ is
+an isomorphism.
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-end}
+This completes the proof of assertion e). Assertion f) follows from
+assertion e) by passing to the opposite categories. The theorem is proved.
+
+\VerdierSemanticAnchor{ch4d-4-6}
+\medskip\noindent\textbf{4.6. The Cartan--Eilenberg spectral object.}
+
+\VerdierSemanticAnchor{ch4d-4-6-1}
+\noindent\textbf{Definition 4.6.1.}\quad
+A complex $I^\bullet$ of $\mathcal A$ is called a \emph{Cartan--Eilenberg
+injective complex} if, for every integer $i$, the objects
+$\operatorname{Im}(d_{I^\bullet}^{i})$ and $H^i(I^\bullet)$ are injective.
+
+\VerdierSemanticAnchor{ch4d-4-6-2}
+\noindent\textbf{4.6.2.}\quad
+Observe that a Cartan--Eilenberg injective complex $I^\bullet$ is of
+injective type (1.1.5); i.e.\ its components are injective objects of
+$\mathcal A$, and for every integer $i$ the object
+$\operatorname{Ker}(d_{I^\bullet}^{i})$ is an injective object of
+$\mathcal A$. This follows immediately by using the three-term exact
+sequences relating these various objects.
+
+\VerdierSemanticAnchor{ch4d-4-6-3-a}
+\medskip\noindent\textbf{Proposition 4.6.3.}\quad
+\textit{Let $I^\bullet$ be a Cartan--Eilenberg injective complex.}
+
+\noindent\textit{a) For every complex $Y$, the canonical morphism}
+\[
+\operatorname{Hom}_{K(\mathcal A)}(Y,I^\bullet)
+\longrightarrow
+\prod_{p\in\mathbb Z}
+\operatorname{Hom}_{\mathcal A}\bigl(H^p(Y),H^p(I^\bullet)\bigr)
+\]
+\textit{is an isomorphism.}
+\endgroup

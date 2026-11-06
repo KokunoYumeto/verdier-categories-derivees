@@ -1,0 +1,95 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0138}%
+\begingroup
+\small
+\setlength{\emergencystretch}{2em}%
+\setlength{\parskip}{0pt}%
+\setlength{\abovedisplayskip}{1pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{1pt plus 1pt minus 1pt}%
+
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-2-4-b}
+\noindent b) 圏 $\mathcal C$ が加法圏ならば、圏
+$\mathcal C(S^{-1})$ は加法圏であり、関手 $Q$ は加法関手である。
+
+\VerdierSemanticAnchor{ch2-2-2-4-c}
+\par\noindent c) $\widehat S$ を、$Q$ により $\mathcal C(S^{-1})$ の
+同型へ送られる $\mathcal C$ の射の集合とする。
+\VerdierSemanticAnchor{ch2-2-2-4-c-saturation}%
+集合 $\widehat S$ は $\mathcal C$ の飽和乗法的系である。$S$ を含む
+$\mathcal C$ の任意の飽和乗法的系は $\widehat S$ を含む。
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-2-4-proof-b}
+\par\noindent 第一の主張は $\mathcal C(S^{-1})$ の普遍性から直ちに従う：
+圏 $\bigl(\mathcal C^\circ(S^{-1})\bigr)^\circ$ はこの問題の解である。
+第二の主張は定理 (2.2.2) の主張 b)、c) から直ちに従う。
+\VerdierSemanticAnchor{ch2-2-2-4-proof-c-characterization}%
+$\mathcal C(S^{-1})$ の射の記述から、$\mathcal C$ の射 $f$ が $Q$ に
+より同型へ送られるための必要十分条件は、$gf$ と $fh$ が定義されて
+$S$ に属するような $\mathcal C$ の二射 $g$、$h$ が存在することだと
+直ちに分かる。
+\VerdierSemanticAnchor{ch2-2-2-4-proof-c-sm2-sm3}%
+したがって、集合 $\widehat S$ は性質 SM2)、SM3) をもつ。
+\VerdierSemanticAnchor{ch2-2-2-4-proof-c-sm1-sm4}%
+さらに、$\widehat S$ の定義から、この集合は性質 SM1)、SM4) をもつ。
+\VerdierSemanticAnchor{ch2-2-2-4-proof-c-conclusion}%
+ゆえに $\widehat S$ は $\mathcal C$ の飽和乗法的系である。(2.2.4) の
+最後の主張は明らかである。
+
+\VerdierSemanticAnchor{ch2-2-2-5}
+\smallskip
+\noindent\textbf{2.2.5.} $\mathcal C$ を圏、$S$ を $\mathcal C$ の
+乗法的系とする。
+\VerdierSemanticAnchor{ch2-2-2-5-localized-category}%
+圏 $\mathcal C(S^{-1})$ を、系 $S$ に関する $\mathcal C$ の
+\emph{局所化圏}と呼ぶ。
+\VerdierSemanticAnchor{ch2-2-2-5-localization-functor}%
+関手 $Q\colon\mathcal C\longrightarrow\mathcal C(S^{-1})$ を
+\emph{局所化関手}と呼ぶ。
+\VerdierSemanticAnchor{ch2-2-2-5-saturation}%
+乗法的系 $\widehat S$ を系 $S$ の\emph{飽和化}と呼ぶ。
+
+\VerdierSemanticAnchor{ch2-2-2-6}
+\smallskip
+\noindent\textbf{定理 2.2.6.}\quad
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-2-6-setup}%
+$\mathcal D$ を三角圏、$S$ を $\mathcal D$ の乗法的系とする (2.1.4)。
+$\mathcal D(S^{-1})$ を $\mathcal D$ の局所化圏、
+$Q\colon\mathcal D\longrightarrow\mathcal D(S^{-1})$ を局所化関手とする。
+
+\VerdierSemanticAnchor{ch2-2-2-6-a}
+\par\noindent a) $\mathcal D(S^{-1})$ 上には、$Q$ が厳密な
+$\mathbb Z$-関手となるような厳密な $\mathbb Z$-圏の構造がただ一つ
+存在する。
+
+\VerdierSemanticAnchor{ch2-2-2-6-b}
+\par\noindent b) $\mathcal D(S^{-1})$ 上には、$Q$ が完全関手となる
+ような三角構造がただ一つ存在する。この構造の完全三角は、
+$\mathcal D$ の完全三角の $Q$ による像と同型な三角である。
+
+\VerdierSemanticAnchor{ch2-2-2-6-c-factorization}
+\par\noindent c) $S$ の射を同型へ送る、三角圏（それぞれアーベル圏）
+への任意の完全（それぞれコホモロジー的）関手
+$F\colon\mathcal D\longrightarrow\mathcal D'$ は、
+$Q\colon\mathcal D\longrightarrow\mathcal D(S^{-1})$ を通じて完全
+（それぞれコホモロジー的）関手
+$G\colon\mathcal D(S^{-1})\longrightarrow\mathcal D'$ として一意に
+分解する。
+\VerdierSemanticAnchor{ch2-2-2-6-c-morphism-lifting}%
+$F_1,F_2\colon\mathcal D\rightrightarrows\mathcal D'$ を $S$ の射を
+同型へ送る二つの完全（それぞれコホモロジー的）関手とし、
+$G_1,G_2\colon\mathcal D(S^{-1})\rightrightarrows\mathcal D'$ をそれぞれ
+の分解、$m\colon F_1\longrightarrow F_2$ を完全（それぞれ
+コホモロジー的）関手の射とする。このとき $m=p\star Q$ を満たす
+関手の射 $p\colon G_1\longrightarrow G_2$ がただ一つ存在する。
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-2-6-proof-a}
+\par\noindent 第一の主張は定理 (2.2.2) と SM5) から直ちに従う。
+\VerdierSemanticAnchor{ch2-2-2-6-proof-c-p139-boundary}%
+第三の主張は
+
+\VerdierSemanticAnchor{ch2-2-2-6-p139-boundary}
+\endgroup

@@ -1,0 +1,93 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0132}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{2pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{2pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-1-10-continuation}
+\noindent SM3) が従う。
+\VerdierSemanticAnchor{ch2-2-1-10-triangle-setup}%
+仮定により、$N$ が $\mathcal D'$ の対象であるような完全三角
+$(X,Y,N,s,h,u)$ が存在する。$fs=0$ なので、(1.2.1) により
+$f=gh$ を満たす射 $g\colon N\to Z$ が存在する。
+
+\VerdierSemanticAnchor{ch2-2-1-10-factorization}
+次に $g$ を含む完全三角 $(N,Z,W,g,t,v)$ をとる (TRI)。このとき
+$tg=0$ (1.2.2)、したがって $tf=tgh=0$ である。
+
+\VerdierSemanticAnchor{ch2-2-1-10-closure-conclusion}
+よって $t$ が $S(\mathcal D')$ に属することを示せばよく、これは TRII)
+から直ちに従う。
+
+\VerdierSemanticAnchor{ch2-2-1-11}
+\medskip
+\noindent\textbf{2.1.11.}\quad
+\VerdierSemanticAnchor{ch2-2-1-11-sm5}
+\emph{$S(\mathcal D')$ は性質} SM5) \emph{をもつ。}
+\VerdierSemanticAnchor{ch2-2-1-11-proof}
+これは TRII) と $\mathcal D'$ がシフトで安定であることから直ちに従う。
+
+\VerdierSemanticAnchor{ch2-2-1-12}
+\medskip
+\noindent\textbf{2.1.12.}\quad
+\VerdierSemanticAnchor{ch2-2-1-12-sm6}
+\emph{$S(\mathcal D')$ は性質} SM6) \emph{をもつ。}
+\VerdierSemanticAnchor{ch2-2-1-12-triangle-pair}
+$(X,Y,Z,u,v,w)$ と $(X',Y',Z',u',v',w')$ を $\mathcal D$ の二つの
+完全三角とし、
+
+\VerdierSemanticAnchor{ch2-2-1-12-input-square}
+\begin{center}
+  \begin{tikzcd}[column sep=4.2em,row sep=2.5em]
+    X \arrow[r,"u"] \arrow[d,"s"'] &
+    Y \arrow[d,"{s'}"] \\
+    X' \arrow[r,"{u'}"] & Y'
+  \end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-1-12-completion-goal}
+\noindent を、$s$ と $s'$ が $S(\mathcal D')$ に属する可換図式とする。
+$(s,s',s'')$ が三角の射となるような $S(\mathcal D')$ の射
+$s''\colon Z\to Z'$ を見つけなければならない。
+
+\VerdierSemanticAnchor{ch2-2-1-12-case-reduction}
+まず次の二つの場合のいずれかにあると仮定してよい：
+
+\begin{enumerate}
+\renewcommand{\labelenumi}{\emph{\alph{enumi})}}
+  \item \VerdierSemanticAnchor{ch2-2-1-12-case-a}%
+  $X=X'$ かつ $s=\operatorname{id}_X$。
+  \item \VerdierSemanticAnchor{ch2-2-1-12-case-b}%
+  $Y=Y'$ かつ $s'=\operatorname{id}_Y$。
+\end{enumerate}
+
+\VerdierSemanticAnchor{ch2-2-1-12-factorization}
+実際、任意の射の射は次のように分解する：
+
+\VerdierSemanticAnchor{ch2-2-1-12-factorization-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=4.2em,row sep=1.7em]
+    X \arrow[r,"u"] \arrow[d,"\operatorname{id}_X"'] &
+    Y \arrow[d,"{s'}"] \\
+    X \arrow[r,"{s'u}"] \arrow[d,"s"'] &
+    Y' \arrow[d,"\operatorname{id}_{Y'}"] \\
+    X' \arrow[r,"{u'}"] & Y'
+  \end{tikzcd}
+  \quad ,
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-1-12-composition}
+\noindent そして $s''$ は合成により得られる（$S(\mathcal D')$ が合成について
+閉じていることはすでに示した）。
+
+\VerdierSemanticAnchor{ch2-2-1-12-opposite-category}
+次に、反対圏へ移ることで場合 b) は場合 a) から従う。
+
+\VerdierSemanticAnchor{ch2-2-1-12-triv-conclusion}
+したがって場合 a) だけを扱えばよく、これは TRIV) から直ちに得られる帰結
+である。
+
+\VerdierSemanticAnchor{ch2-2-1-13-p133-boundary}
+\endgroup

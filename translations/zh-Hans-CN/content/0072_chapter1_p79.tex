@@ -1,0 +1,78 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0079}%
+\VerdierSemanticAnchor{ch1-2-5-7-morphisms}
+\noindent\hspace*{2em}--\ 设 $X$ 与 $Y$ 是 $K(C)$ 的两个对象，
+$f,g\colon X\rightrightarrows Y$ 是 $\operatorname{comp}(C)$ 的两个态射。
+“$f$ 与 $g$ 同伦”是
+$\operatorname{Hom}_{\operatorname{comp}(C)}(X,Y)$ 上的一个等价关系，
+并将 $\operatorname{Hom}_{K(C)}(X,Y)$ 定义为
+$\operatorname{Hom}_{\operatorname{comp}(C)}(X,Y)$ 对这一等价关系的商。
+
+\VerdierSemanticAnchor{ch1-2-5-7-composition}
+\noindent\hspace*{2em}--\ 由 (2.5.5) 立即可知，
+$\operatorname{comp}(C)$ 的态射复合法则可传递到商上，
+并定义 $K(C)$ 的态射复合法则。
+
+\VerdierSemanticAnchor{ch1-2-5-7-additive-category}
+由 (2.5.5) 还立即可知，上述定义确实给出一个范畴，且该范畴是加法范畴。
+
+\VerdierSemanticAnchor{ch1-2-5-7-quotient-functor}
+典范函子
+$\operatorname{comp}(C)\xrightarrow{Q}K(C)$ 在对象上为恒等，
+并把 $\operatorname{comp}(C)$ 的每个态射 $f$ 送到其等价类 $\dot f$；
+这个函子是加法函子。
+
+\VerdierSemanticAnchor{ch1-2-5-7-homotopy-class}
+$K(C)$ 的态射 $\dot f$，即 $\operatorname{comp}(C)$ 的态射 $f$
+在典范函子下的像，称为 $f$ 的\emph{同伦类}。
+
+\VerdierSemanticAnchor{ch1-2-5-7-name}
+范畴 $K(C)$ 称为 $C$ 的\emph{复形同伦范畴}。
+
+\VerdierSemanticAnchor{ch1-2-5-8}
+\noindent\textbf{2.5.8.}\quad
+典范函子 $\operatorname{comp}(C)\xrightarrow{Q}K(C)$ 具有下列性质：
+从 $K(C)$ 到一个范畴 $A$ 的每个函子，与 $Q$ 复合后都给出一个从
+$\operatorname{comp}(C)$ 到 $A$ 的函子。因此，对任意范畴 $A$，得到一个函子：
+
+\VerdierSemanticAnchor{ch1-2-5-8-hom-functor}
+\begin{equation*}
+  \mathcal H\!om(Q,A)\colon
+  \mathcal H\!om(K(C),A)
+  \longrightarrow
+  \mathcal H\!om(\operatorname{comp}(C),A)
+\end{equation*}
+（$\mathcal H\!om$ 表示函子范畴）。
+
+\VerdierSemanticAnchor{ch1-2-5-8-fully-faithful}
+这个函子充分忠实，在对象上单射；其像是下列范畴的充分子范畴：
+
+\VerdierSemanticAnchor{ch1-2-5-8-essential-image}
+\begin{equation*}
+  \mathcal H\!om(\operatorname{comp}(C),A),
+\end{equation*}
+该充分子范畴由把 $\operatorname{comp}(C)$ 中每对同伦态射送到相等态射的
+所有函子 $\operatorname{comp}(C)\longrightarrow A$ 所定义。
+
+\VerdierSemanticAnchor{ch1-2-5-8-uniqueness}
+带有典范函子 $\operatorname{comp}(C)\xrightarrow{Q}K(C)$ 的范畴
+$K(C)$，由这一性质在唯一同构意义下确定。
+
+\VerdierSemanticAnchor{ch1-2-5-9}
+\noindent\textbf{2.5.9.}\quad
+由 (2.5.5) 与 (2.5.8) 立即可知，$K(C)$ 上存在唯一的平移函子，
+使得典范函子
+
+\VerdierSemanticAnchor{ch1-2-5-9-translation}
+\begin{equation*}
+  \operatorname{comp}(C)\longrightarrow K(C)
+\end{equation*}
+与平移严格交换。
+
+\VerdierSemanticAnchor{ch1-2-5-9-strict-z-category}
+这个平移函子是 $K(C)$ 的一个自同构，因而在 $K(C)$ 上定义了一个
+严格 $\mathbb Z$-范畴结构。
+
+\VerdierSemanticAnchor{ch1-2-5-9-strict-z-functor}
+典范函子 $\operatorname{comp}(C)\longrightarrow K(C)$ 是严格
+$\mathbb Z$-函子。

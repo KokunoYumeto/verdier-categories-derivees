@@ -1,0 +1,104 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0213}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-2-5-second-diagram}
+\[
+\begin{tikzcd}[column sep=4.5em]
+X & Z^\bullet
+  \arrow[l,"{u(S^n(X,X'))}"']
+  \arrow[r,"{v(S^n(X,X'))}"]
+& X'[n]
+\end{tikzcd}
+\quad,
+\]
+从而得到图：
+
+\VerdierSemanticAnchor{ch3d-3-2-5-composite-diagram}
+\begin{center}
+\resizebox{0.98\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=3.0em]
+X
+\& Z^\bullet
+  \arrow[l,"{u(S^n)}"']
+  \arrow[r,"{v(S^n)}"]
+\& X'[n]
+\& {Z'}^\bullet[n]
+  \arrow[l,"{u(S^m)[n]}"']
+  \arrow[r,"{v(S^m)[n]}"]
+\& X''[m+n]
+\end{tikzcd}$% 
+}
+\end{center}
+（为简化记号，我们采用了显然的缩写。）于是，由
+$D(\mathcal A)$ 中平移的定义（第二章，2.2.6），得到等式：
+
+\VerdierSemanticAnchor{ch3d-3-2-5-1}
+\begin{equation}
+\begin{aligned}
+&\bigl(\delta^m(S^m(X',X''))\bigr)[n]\,
+  \delta^n(S^n(X,X'))\\
+&\qquad={}
+[v(S^m)[n]][u(S^m)[n]]^{-1}[v(S^n)][u(S^n)]^{-1}.
+\end{aligned}
+\tag{3.2.5.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-2-5-2}
+现置：
+\begin{equation}
+\begin{aligned}
+Z''^\bullet={}&\cdots\longrightarrow0\longrightarrow X''
+\xrightarrow{(-1)^n u'_m}Z'_{m-1}
+\xrightarrow{(-1)^n u'_{m-1}}\cdots\\
+&\cdots\xrightarrow{(-1)^n u'_1}Z'_0
+\xrightarrow{u_nu'_0}Z_{n-1}
+\xrightarrow{u_{n-1}}\cdots\xrightarrow{u_1}Z_0
+\longrightarrow0\longrightarrow0\longrightarrow\cdots.
+\end{aligned}
+\tag{3.2.5.2}
+\end{equation}
+（$Z_i$ 是次数为 $-i$ 的 $Z''^\bullet$ 的分量），
+
+\VerdierSemanticAnchor{ch3d-3-2-5-spliced-extension}
+\[
+\begin{aligned}
+S^{m+n}(X,X'')={}&0\longrightarrow X''
+\xrightarrow{(-1)^n u'_m}Z'_{m-1}
+\xrightarrow{(-1)^n u'_{m-1}}\cdots\\
+&\cdots\xrightarrow{(-1)^n u'_1}Z'_0
+\xrightarrow{u_nu'_0}Z_{n-1}
+\xrightarrow{u_{n-1}}\cdots\xrightarrow{u_1}Z_0
+\xrightarrow{u_0}X\longrightarrow0.
+\end{aligned}
+\]
+现在定义两个复形态射：
+
+\VerdierSemanticAnchor{ch3d-3-2-5-3}
+\begin{equation}
+\begin{aligned}
+\rho\colon Z''^\bullet\longrightarrow Z^\bullet,
+&\qquad
+\begin{cases}
+\rho^p=\operatorname{id},&p\geq -n+1,\\
+\rho^{-n}=u'_0,&\\
+\rho^p=0,&p<-n;
+\end{cases}\\[3pt]
+\psi\colon Z''^\bullet\longrightarrow {Z'}^\bullet[n],
+&\qquad
+\begin{cases}
+\psi^p=0,&p\geq -n+1,\\
+\psi^p=\operatorname{id},&p\leq -n.
+\end{cases}
+\end{aligned}
+\tag{3.2.5.3}
+\end{equation}
+立即可验证下列性质：
+
+\VerdierSemanticAnchor{ch3d-3-2-5-a}
+\noindent a) 态射
+$\rho\colon Z''^\bullet\longrightarrow Z^\bullet$（3.2.5.3）是一个
+拟同构。
+\endgroup

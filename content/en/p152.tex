@@ -1,0 +1,79 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0152}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+
+\VerdierSemanticAnchor{ch3}
+\section{Abelianization of triangulated categories.}
+
+\VerdierSemanticAnchor{ch3-3-1}
+\subsection{Construction of the category
+\texorpdfstring{$\mathrm A(\mathcal D)$}{A(D)}.}
+
+\VerdierSemanticAnchor{ch3-3-1-1}
+\noindent\textbf{3.1.1.}\quad
+Let $\mathcal D$ be an additive category and let
+$\mathcal{F}\ell_1(\mathcal D)$ be the category of morphisms of $\mathcal D$
+(Chapter I, 3.3.6). A morphism
+
+\VerdierSemanticAnchor{ch3-3-1-1-square}
+\[
+\begin{tikzcd}[column sep=4.2em,row sep=2.5em]
+X \arrow[r,"f"] \arrow[d,"g"'] & Y \arrow[d,"h"] \\
+X' \arrow[r,"f'"'] & Y'
+\end{tikzcd}
+\]
+
+\VerdierSemanticAnchor{ch3-3-1-1-negligible-morphism}
+\noindent in $\mathcal{F}\ell_1(\mathcal D)$ is called \emph{negligible} if
+$f'g=hf=0$. The composite, in either order, of a negligible morphism and an
+arbitrary morphism is negligible; the direct sum of two negligible morphisms
+is negligible.
+
+\VerdierSemanticAnchor{ch3-3-1-1-quotient-category}
+Denote by $\mathrm A(\mathcal D)$ the category whose objects are those of
+$\mathcal{F}\ell_1(\mathcal D)$ and whose morphisms are the morphisms of
+$\mathcal{F}\ell_1(\mathcal D)$ modulo negligible morphisms; that is, for
+objects $U,V$ of $\mathrm A(\mathcal D)$, the group
+$\operatorname{Hom}_{\mathrm A(\mathcal D)}(U,V)$ is the quotient of
+$\operatorname{Hom}_{\mathcal{F}\ell_1(\mathcal D)}(U,V)$ by the subgroup of
+negligible morphisms. The category $\mathrm A(\mathcal D)$ is additive.
+
+\VerdierSemanticAnchor{ch3-3-1-1-canonical-quotient}
+Let $C$ be a category. Composition with the canonical functor
+\[
+\mathcal{F}\ell_1(\mathcal D)\longrightarrow\mathrm A(\mathcal D)
+\]
+gives a functor
+
+\VerdierSemanticAnchor{ch3-3-1-1-1}
+\[
+\mathcal H\!om(\mathrm A(\mathcal D),C)
+\longrightarrow
+\mathcal H\!om(\mathcal{F}\ell_1(\mathcal D),C).
+\tag{3.1.1.1}
+\]
+This functor is fully faithful and injective on objects. Its image is the full
+subcategory defined by the functors from $\mathcal{F}\ell_1(\mathcal D)$ to
+$C$ that send morphisms differing by a negligible morphism to equal
+morphisms.
+
+\VerdierSemanticAnchor{ch3-3-1-2}
+\medskip
+\noindent\textbf{3.1.2.}\quad
+The canonical functor from $\mathcal D$ to $\mathcal{F}\ell_1(\mathcal D)$,
+$X\longmapsto(X\xrightarrow{\operatorname{id}_X}X)$, composed with the
+canonical functor $\mathcal{F}\ell_1(\mathcal D)\longrightarrow\mathrm A(\mathcal D)$,
+is denoted
+
+\VerdierSemanticAnchor{ch3-3-1-2-1}
+\[
+\mathcal H\colon\mathcal D\longrightarrow\mathrm A(\mathcal D).
+\tag{3.1.2.1}
+\]
+The functor $\mathcal H$ is additive. It is fully faithful and injective on
+objects. It therefore realizes $\mathcal D$ as a full subcategory of
+$\mathrm A(\mathcal D)$.
+\endgroup

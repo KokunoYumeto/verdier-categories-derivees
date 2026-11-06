@@ -1,0 +1,76 @@
+\VerdierPhysicalPageAnchor{0029}%
+\VerdierSemanticAnchor{intro-7-duality-D4}
+\noindent\textit{D4)} Lorsque $X$ est un fermé de $Y$ et que $f$ est
+l'injection canonique, le foncteur $f^!$ est le foncteur dérivé total du
+foncteur \og sections à support dans $X$\fg{}.
+
+\VerdierSemanticAnchor{intro-7-traditional-duality}
+Ce théorème, et ses variantes dans les autres contextes signalés plus haut,
+contient les formulations traditionnelles de la dualité : théorème de
+dualité de Poincaré dans le cas topologique, théorème de dualité de Serre pour
+les faisceaux algébriques cohérents sur une variété projective et lisse. Mais
+l'emploi du langage des catégories dérivées ne permet pas seulement de
+démontrer avec plus de généralité des théorèmes auxquels on pouvait ne
+s'intéresser que dans des cas particuliers simples. On ne sait par exemple,
+à l'heure actuelle, démontrer le théorème de dualité sous la forme
+traditionnelle (type dualité de Serre), pour les faisceaux algébriques
+cohérents sur une variété propre et lisse non projective sur un corps
+algébriquement clos, que par l'intermédiaire du théorème de dualité général.
+Il en est de même pour la dualité en cohomologie étale, pour les variétés
+projectives non singulières.
+
+\VerdierSemanticAnchor{intro-8}
+\noindent\textbf{8.}\quad
+Les théorèmes de dualité dans les cas 1), 2) et 4) conduisent à des formules
+de points fixes de Lefschetz, de type non classique, faisant intervenir des
+faisceaux pouvant présenter des singularités [10], [11], [12]. Soient $X$ un
+espace topologique compact de dimension cohomologique finie, $A$ un anneau
+noethérien, $F$ un faisceau de $A$-modules sur $X$ possédant les propriétés
+suivantes :
+
+\VerdierSemanticAnchor{intro-8-lefschetz-hypotheses}
+\begin{enumerate}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\VerdierSemanticAnchor{intro-8-hypothesis-a}
+\item En tout point de $X$, les fibres du faisceau $F$ sont des $A$-modules
+de type fini et de dimension projective finie.
+
+\VerdierSemanticAnchor{intro-8-hypothesis-b}
+\item Une propriété de régularité au voisinage de tout point de $X$, analogue
+aux propriétés décrites par Wilder [9].
+\end{enumerate}
+
+\VerdierSemanticAnchor{intro-8-endomorphism}
+Soit $\Phi=(\Phi_X,\Phi_F)\colon(X,F)\longrightarrow(X,F)$ un endomorphisme
+de l'espace topologique $X$ muni du faisceau $F$. L'endomorphisme $\Phi$
+induit un endomorphisme de complexe de $A$-modules :
+\VerdierSemanticAnchor{intro-8-rh-phi}
+\[
+\mathrm{RH}(\Phi)\colon
+\mathrm{RH}(X,F)\longrightarrow\mathrm{RH}(X,F).
+\]
+
+\VerdierSemanticAnchor{intro-8-perfect-complex}
+Sous les hypothèses a) et b), le complexe $\mathrm{RH}(X,F)$ est un
+\emph{complexe parfait} de $A$-modules, \emph{i.e.} il est isomorphe, dans la
+catégorie dérivée, à un complexe fini dont les composants sont des
+$A$-modules projectifs de type fini.
+
+\VerdierSemanticAnchor{intro-8-lefschetz-number}
+On peut donc définir le nombre de Lefschetz $\chi(\mathrm{RH}(\Phi))$ comme
+étant la somme alternée des traces des composants de $\mathrm{RH}(\Phi)$, qui
+sont des endomorphismes de modules projectifs de type fini. Supposons
+maintenant, pour fixer les idées, que les points fixes de $\Phi$ soient
+isolés. On a alors l'égalité :
+\VerdierSemanticAnchor{intro-8-lefschetz-formula}
+\begingroup
+\makeatletter
+\tagsleft@true
+\let\veqno\@@leqno
+\makeatother
+\begin{equation}
+\chi\bigl(\mathrm{RH}(\Phi)\bigr)
+=\sum_{P\ \mathrm{fixe}}\chi_P(\Phi)
+\tag{Lef}
+\end{equation}
+\endgroup

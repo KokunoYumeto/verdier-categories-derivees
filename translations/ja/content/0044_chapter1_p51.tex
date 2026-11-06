@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0051}%
+\VerdierSemanticAnchor{ch1-1-5}
+\subsection{\texorpdfstring{$\mathbb Z^n$}{Z n}-圏}
+
+\VerdierSemanticAnchor{ch1-1-5-1}
+\noindent\textbf{1.5.1.}\quad
+$(\mathcal C,\mathbb Z^n,T,c)$ を $\mathbb Z^n$-圏、
+$(\mathcal C',\mathbb Z^n,T',c')$ を加法的な $\mathbb Z^n$-圏とし、
+\[
+  (F,p)\colon(\mathcal C,\mathbb Z^n,T,c)
+  \longrightarrow(\mathcal C',\mathbb Z^n,T',c')
+\]
+を正規化された余サイクル
+$\alpha\in Z^2(\mathbb Z^n,\mathbb Z/2\mathbb Z)$ で捩られた
+$\mathbb Z^n$-関手とする。$e_1,\ldots,e_n$ を $\mathbb Z^n$ の標準基底と
+する。このとき、各 $i\in[1,n]$ に対して関手の同型
+
+\VerdierSemanticAnchor{ch1-1-5-1-eq1}
+\begin{equation}
+  p(e_i)\colon FT(e_i)\longrightarrow T'(e_i)F
+  \tag{1.5.1.1}
+\end{equation}
+があり、また $i\ne j$ である各対 $(i,j)$ に対して、次の図式は
+$\alpha(e_i,e_j)\alpha^{-1}(e_j,e_i)$-可換である：
+
+\VerdierSemanticAnchor{ch1-1-5-1-eq2}
+\begin{center}
+  \resizebox{0.98\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=4.2em,row sep=3.3em]
+      FT(e_i+e_j)
+        \arrow[r,"{F*c(e_i,e_j)}"]
+        \arrow[d,"{F*c(e_j,e_i)}"]
+        \&
+      FT(e_j)T(e_i)
+        \arrow[r,"{p(e_j)*T(e_i)}"]
+        \&
+      T'(e_j)FT(e_i)
+        \arrow[d,"{T'(e_j)*p(e_i)}"'] \\
+      FT(e_i)T(e_j)
+        \arrow[d,"{p(e_i)*T(e_j)}"]
+        \& {} \&
+      T'(e_j)T'(e_i)F
+        \arrow[d,"{c'(e_i,e_j)^{-1}*F}"'] \\
+      T'(e_i)FT(e_j)
+        \arrow[r,"{T'(e_i)*p(e_j)}"']
+        \&
+      T'(e_i)T'(e_j)F
+        \arrow[r,"{c'(e_j,e_i)^{-1}*F}"']
+        \&
+      T'(e_i+e_j)F
+    \end{tikzcd}$%
+  }\;.
+  \hfill\textup{(1.5.1.2)}
+\end{center}
+
+\VerdierSemanticAnchor{ch1-1-5-2}
+\noindent\textbf{命題 1.5.2.}\quad
+\emph{$F\colon\mathcal C\to\mathcal C'$ を関手とし、各 $i\in[1,n]$ に
+対して関手の同型
+\[
+  p_i\colon FT(e_i)\longrightarrow T'(e_i)F
+\]
+が与えられているとする。各対 $i\ne j$ について、図式 (1.5.1.2) の
+$p(e_i)$ を $p_i$ に置き換えた図式が
+$\alpha(e_i,e_j)\alpha^{-1}(e_j,e_i)$-可換であるならば、余サイクル
+$\alpha$ で捩られた $\mathbb Z^n$-関手
+\[
+  (F,p)\colon(\mathcal C,\mathbb Z^n,T,c)
+  \longrightarrow(\mathcal C',\mathbb Z^n,T',c')
+\]
+で
+\[
+  p(e_i)=p_i,
+  \qquad i\in[1,n]
+\]
+を満たすものがただ一つ存在する。}
+
+\VerdierSemanticAnchor{ch1-1-5-2-proof-intro}
+一意性は図式 (1.4.3.11) を調べれば証明できる。この確認は読者に委ねる。
+ここでは存在証明の指針だけを与える。証明は整数 $n$ に関する帰納法で行う。

@@ -1,0 +1,66 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0170}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{2.5em}
+\VerdierSemanticAnchor{ch4-4-2-7-second-diagram}
+把同一个观察应用于图式
+\[
+\begin{tikzcd}[column sep=4.6em,row sep=2.8em]
+&H^n(f_2f_1)\arrow[d]\arrow[dr]&\\
+H^n(f_1)\arrow[ur]\arrow[r]&
+H^n(f_3f_2f_1)\arrow[r]&H^n(f_3f_2),
+\end{tikzcd}
+\]
+得到一个同构：
+\VerdierSemanticAnchor{ch4-4-2-7-2}
+\[
+E\!\begin{bmatrix}n\\ f_1,f_2,f_3\end{bmatrix}
+\xrightarrow{\ \sim\ }
+\operatorname{Im}\bigl(H^n(f_2f_1)\longrightarrow H^n(f_3f_2f_1)\bigr)
+\Big/
+\operatorname{Im}\bigl(H^n(f_1)\longrightarrow H^n(f_3f_2f_1)\bigr).
+\tag{4.2.7.2}
+\]
+
+\VerdierSemanticAnchor{ch4-4-3}
+\medskip\noindent\textbf{4.3. 各项
+$E\!\begin{bmatrix}n\\ -\infty,p,q,+\infty\end{bmatrix}$。}
+
+\VerdierSemanticAnchor{ch4-4-3-1}
+\medskip\noindent\textbf{4.3.1.}
+设 $\widetilde{\mathbb Z}$ 是在有序集 $\mathbb Z$ 上增添一个初始元
+$-\infty$ 和一个终元 $+\infty$ 所得到的有序集。滥用记号，我们也用
+$\widetilde{\mathbb Z}$ 表示与有序集 $\widetilde{\mathbb Z}$ 关联的范畴。
+$\widetilde{\mathbb Z}$ 的一个态射因而是一个数对 $p\leq q$，其中 $p$ 与
+$q$ 是 $\widetilde{\mathbb Z}$ 的元素。一个有序列
+$p_1\leq p_2\leq\cdots\leq p_n$ 定义了
+$\mathcal{F}\ell_{n-1}(\widetilde{\mathbb Z})$ 的一个对象，记为
+$(p_1,p_2,\ldots,p_n)$。若 $\widetilde{\mathbb Z}$ 的一个态射的源与靶都
+属于 $\mathbb Z$，则称该态射为\textit{有限态射}。若
+$\mathcal{F}\ell_n(\widetilde{\mathbb Z})$ 的一个对象所包含的各态射都是
+有限态射，则称该对象为\textit{有限的}。
+
+\VerdierSemanticAnchor{ch4-4-3-2}
+\medskip\noindent\textbf{4.3.2.}
+\textit{本文只使用 $\widetilde{\mathbb Z}$ 型谱对象，今后将其简称为
+谱对象。}这样便重新得到 [1] 第 XV 章 §7 的概念。设
+$(H^n(p,q),\delta,\ p\leq q\in\widetilde{\mathbb Z})$ 为一个取值于
+阿贝尔范畴 $\mathcal A$ 的谱对象。令：
+\VerdierSemanticAnchor{ch4-4-3-2-1}
+\[
+F^pH^n(-\infty,+\infty)
+=\operatorname{Im}\bigl(H^n(-\infty,p)\longrightarrow
+H^n(-\infty,+\infty)\bigr).
+\tag{4.3.2.1}
+\]
+有 $F^{+\infty}H^n(-\infty,+\infty)=H^n(-\infty,+\infty)$ 且
+$F^{-\infty}H^n(-\infty,+\infty)=0$。各
+$F^pH^n(-\infty,+\infty)$ 构成一个 $\widetilde{\mathbb Z}$ 型的
+$H^n(-\infty,+\infty)$ 的递增滤过。此外，对每个数对 $p\leq q$，
+由 (4.2.7.2) 有同构：
+\VerdierSemanticAnchor{ch4-4-3-2-filtration-quotient}
+\[
+E\!\begin{bmatrix}n\\ -\infty,p,q,+\infty\end{bmatrix}
+\simeq
+F^qH^n(-\infty,+\infty)\big/F^pH^n(-\infty,+\infty).
+\]
+\endgroup

@@ -1,0 +1,57 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0195}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-1-proof-cont}
+ここで $X_n$ は $\operatorname{comp}^{-}(\mathcal A)$ の対象、$u_n$ は高さ
+$-n$ の初等射であり、次の図式はホモトピーを除いて可換である：
+
+\VerdierSemanticAnchor{ch3d-2-3-1-limits-square}
+\begin{center}
+\begin{tikzcd}[column sep=5.5em,row sep=3.0em]
+\displaystyle\varprojlim_n X_n \arrow[r] \arrow[d]
+  & X \arrow[d,"m"] \\
+\displaystyle\varinjlim_n X_n \arrow[r,"\sim"'] & Y
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-2-3-1-normalization}
+したがって、命題を証明するには $X=\varprojlim_n X_n$ と仮定してよく、
+さらに $n$ が十分小さいとき、$X_n=Y$ かつ $u_n=\operatorname{id}$ である。
+$n$ に関する帰納法により、次を構成する：
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-data}
+\noindent a) 初等射の列
+\[
+v_n\colon L_n^\bullet\longrightarrow L_{n-1}^\bullet,
+\qquad n\in\mathbf Z,\qquad
+v_n\text{ という初等射の高さは }-n.
+\]
+
+\noindent b) 射の列
+\[
+w_n\colon L_n^\bullet\longrightarrow X_n
+\]
+で、次を満たすもの：
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-condition-1}
+\noindent 1) 各 $n\in\mathbf Z$ に対して、$L_n^\bullet$ の次数 $i$ の成分は、
+$i\geq -n$ なら $M$ に属し、次数 $i$ の成分は、$i<-n$ なら $M^\wedge$ に属する。
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-square}
+\noindent 2) 次の図式が可換である：
+\begin{center}
+\begin{tikzcd}[column sep=5.0em,row sep=2.8em]
+L_n^\bullet \arrow[r,"w_n"] \arrow[d,"v_n"']
+  & X_n \arrow[d,"u_n"] \\
+L_{n-1}^\bullet \arrow[r,"w_{n-1}"'] & X_{n-1}
+\end{tikzcd}
+\end{center}
+これは各 $n\in\mathbf Z$ に対して成り立つ。
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-condition-3}
+\noindent 3) 対象 $L_n^\bullet$ は $Y$ に等しく、射 $v_n$ と $w_n$ は恒等射である。
+これは $n$ が十分小さいときに成り立つ。
+\endgroup

@@ -1,0 +1,77 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0104}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\jot}{2pt}%
+
+\VerdierSemanticAnchor{ch1-3-4-3-zero-differential-complex}
+For every complex $X$, denote by $\overline{X}$ the complex obtained by
+retaining the components of $X$ and setting the differentials equal to zero.
+It follows immediately from the definition of $H$ that
+$\overline{H(X)}=H(\overline{X})$. Likewise, for every morphism of complexes
+$f\colon X\longrightarrow Y$, denote by
+$\overline{f}\colon\overline{X}\longrightarrow\overline{Y}$ the morphism
+obtained by retaining the components of $f$. It then follows from the
+definition of the cone functor that
+$c(\overline{f})=\overline{Y}\oplus\overline{X[1]}$, that
+$p(\overline{f})\colon\overline{Y}\longrightarrow c(\overline{f})$ is the
+first injection, and that
+$q(\overline{f})\colon c(\overline{f})\longrightarrow\overline{X[1]}$ is the
+second projection.
+
+\VerdierSemanticAnchor{ch1-3-4-3-cone-graded-splitting}
+Since the functor $H$ and the functor ``$\overline{\phantom{X}}$'' are
+additive, it follows that
+$\overline{H(c(f))}=\overline{H(Y)}\oplus\overline{H(X[1])}$, that
+$\overline{H(p(f))}\colon\overline{H(Y)}\longrightarrow\overline{H(c(f))}$ is
+the first injection, and that
+$\overline{H(q(f))}\colon\overline{H(c(f))}\longrightarrow\overline{H(X[1])}$
+is the second projection. Consequently,
+\[
+  H(c(f))^l=H(Y)^l\oplus H(X[1])^l,
+\]
+
+\VerdierSemanticAnchor{ch1-3-4-3-2}
+\begin{equation}
+  d_{H(c(f))}^{,l}=
+  \begin{pmatrix}
+    d_{H(Y)}^{,l} & \Phi^l\\
+    0 & d_{H(X[1])}^{,l}
+  \end{pmatrix},
+  \tag{3.4.3.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-4-3-phi-map}
+\[
+  \Phi^l\colon H(X[1])^l\longrightarrow H(Y)^{l+1}.
+\]
+The differential of $H(c(f))$ is obtained in this form simply by expressing
+that $H(p(f))$ and $H(q(f))$ are morphisms of complexes. To compute $\Phi^l$,
+one must return to the definition of the functor $H$ and hence to the
+definition of the associated simple-complex functor (2.2.2.5). We have
+
+\VerdierSemanticAnchor{ch1-3-4-3-x-shift-components}
+\[
+  H(X[1])^l=
+  \prod_{\substack{\sigma=\sum_i l_i e_i\\ \sum_i l_i=l}}
+  F(X_1^{l_1},\ldots,X^{l_j+1},\ldots,X_n^{l_n}),
+\]
+
+\VerdierSemanticAnchor{ch1-3-4-3-3}
+\begin{equation}
+  H(Y)^{l+1}=
+  \prod_{\substack{\sigma=\sum_i l_i e_i\\ \sum_i l_i=l}}
+  F(X_1^{l_1},\ldots,Y^{l_j+1},\ldots,X_n^{l_n}),
+  \tag{3.4.3.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-4-3-phi-components}
+\[
+  \Phi^l=
+  \prod_{\substack{\sigma=\sum_i l_i e_i\\ \sum_i l_i=l}}
+  \varepsilon(\sigma,j)
+  F(X_1^{l_1},\ldots,f^{l_j+1},\ldots,X_n^{l_n}).
+\]
+\endgroup

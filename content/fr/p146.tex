@@ -1,0 +1,101 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0146}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+\sloppy
+
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-3-3-f}
+\noindent f) Un objet $Z$ de $\mathcal D$ appartient à
+$Q^{-1}(\operatorname{Lib}_R(Q))$ si et seulement s'il existe un objet
+libre à droite $Y$ et un morphisme $s\colon Z\longrightarrow Y$, où $s$
+appartient à $\widehat{S_{\mathcal D}(\mathcal B)}$, le saturé du système
+$S_{\mathcal D}(\mathcal B)$ (2.2.4, (c)).
+
+\VerdierSemanticAnchor{ch2-2-3-3-g}
+\par\noindent g) Le foncteur d'inclusion
+$L_R(Q)\subset Q^{-1}(\operatorname{Lib}_R(Q))$ admet un adjoint à gauche
+\[
+  \mathcal R\colon Q^{-1}(\operatorname{Lib}_R(Q))\longrightarrow L_R(Q).
+\]
+
+\VerdierSemanticAnchor{ch2-2-3-3-adjunction-diagram}
+\begin{center}
+\begin{tikzcd}[column sep=3.2em,row sep=3.1em]
+L_R(Q)
+  \arrow[r,shift left=.7ex]
+  \arrow[dr,"{Q|_{L_R(Q)}}"']
+& Q^{-1}(\operatorname{Lib}_R(Q))
+  \arrow[l,dashed,bend right=28,"{\mathcal R}"']
+  \arrow[r,hook]
+  \arrow[d,"{Q_1}"]
+& \mathcal D \arrow[d,"Q"] \\
+& \operatorname{Lib}_R(Q)
+  \arrow[ul,dashed,bend left=10,"{\Psi}"']
+  \arrow[r,hook]
+& \mathcal D/\mathcal B
+\end{tikzcd}
+\end{center}
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-3-3-adjunction-explanation}
+Soit $\Psi\colon\operatorname{Lib}_R(Q)\longrightarrow L_R(Q)$ un foncteur
+quasi-inverse à $Q|_{L_R(Q)}$ (cf. c) et e)). On peut prendre
+$\mathcal R=\Psi Q_1$, où on désigne par
+$Q_1\colon Q^{-1}(\operatorname{Lib}_R(Q))\longrightarrow
+\operatorname{Lib}_R(Q)$ le foncteur induit par $Q$. Le foncteur $\Psi$ est
+adjoint à droite au foncteur $Q_1$.
+
+\VerdierSemanticAnchor{ch2-2-3-4}
+\medskip
+\noindent\textbf{2.3.4. Démonstration de la proposition 2.3.3 :}\quad
+\VerdierSemanticAnchor{ch2-2-3-4-a-proof}
+Démontrons a). Tout d'abord, si $Y$ est $Q$-libre à droite, le foncteur
+$X\longmapsto\operatorname{Hom}_{\mathcal D}(X,Y)$ est isomorphe au
+foncteur
+$X\longmapsto\operatorname{Hom}_{\mathcal D/\mathcal B}(Q(X),Z)$, pour un
+objet $Z$ convenable de $\mathcal D/\mathcal B$. Par suite, le foncteur
+$X\longmapsto\operatorname{Hom}_{\mathcal D}(X,Y)$ transforme les
+morphismes de $S_{\mathcal D}(\mathcal B)$ en isomorphismes. Ceci démontre
+l'implication i) $\Rightarrow$ ii). L'implication ii) $\Rightarrow$ iii)
+résulte de ce que le morphisme $B\longrightarrow0$ est un morphisme de
+$S_{\mathcal D}(\mathcal B)$. L'implication iii) $\Rightarrow$ iv) résulte
+de la définition de $S_{\mathcal D}(\mathcal B)$ et de (1.2.6).
+L'implication iv) $\Rightarrow$ v) résulte de l'isomorphisme (2.2.4) :
+
+\VerdierSemanticAnchor{ch2-2-3-4-colimit-isomorphism}
+\[
+  \operatorname{Hom}_{\mathcal D/\mathcal B}(Q(X),Q(Y))
+  \xrightarrow{\sim}
+  \varinjlim_{Y\backslash S_{\mathcal D}(\mathcal B)}
+  \operatorname{Hom}_{\mathcal D}(X,\mathord\cdot)\, .
+\]
+
+\VerdierSemanticAnchor{ch2-2-3-4-a-proof-complete}
+Enfin, l'implication v) $\Rightarrow$ i) est évidente : $Y$ est libre à
+droite sur $Q(Y)$.
+
+\VerdierSemanticAnchor{ch2-2-3-4-b-c-e-proof}
+L'assertion b) résulte de a), iii). L'assertion c) résulte de a), v). Il
+résulte aussi de a), v) que les objets de $\mathcal D/\mathcal B$ qui sont
+libérables à droite sont les objets de $\mathcal D/\mathcal B$ qui sont
+isomorphes dans $\mathcal D/\mathcal B$ aux images par $Q$ des objets
+$Q$-libres à droite. Les flèches de liberté sont des isomorphismes. Ceci
+démontre e). Il est alors clair que $\operatorname{Lib}_R(Q)$ est une
+sous-catégorie triangulée strictement pleine.
+
+\VerdierSemanticAnchor{ch2-2-3-4-d-proof}
+Soit $Z=Z_1\oplus Z_2$ un objet de $\operatorname{Lib}_R(Q)$. Il existe donc
+un objet $Q$-libre à droite $Y$ et un isomorphisme
+$Q(Y)\xrightarrow{\sim}Z_1\oplus Z_2$. Le foncteur
+$X\longmapsto\operatorname{Hom}_{\mathcal D}(X,Y)$ admet donc un projecteur,
+et par suite la décomposition de $Z$ en somme directe définit sur $Y$ un
+projecteur. Les facteurs de $Z$ seront dans $\operatorname{Lib}_R(Q)$ si et
+seulement si ce projecteur est décomposable, ce qui est le cas lorsque dans
+$\mathcal D$ les sommes ou produits dénombrables sont représentables
+(1.2.9).
+\endgroup

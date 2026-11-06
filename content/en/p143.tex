@@ -1,0 +1,106 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0143}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-3-1-continuation}%
+For every full triangulated subcategory $\mathcal A$ such that
+$\mathcal B\subset\mathcal A\subset\mathcal D$, denote by
+$S_{\mathcal D}(\mathcal B)$ (respectively $S_{\mathcal A}(\mathcal B)$)
+the multiplicative system of $\mathcal D$ (respectively $\mathcal A$)
+associated with $\mathcal B$ (2.1.7).
+
+\VerdierSemanticAnchor{ch2-2-3-1-a-intersection}
+\par\noindent a) One has
+$S_{\mathcal D}(\mathcal B)\cap\operatorname{Fl}(\mathcal A)
+=S_{\mathcal A}(\mathcal B)$.
+
+\VerdierSemanticAnchor{ch2-2-3-1-b-fully-faithful}
+\par\noindent b) The canonical functor
+$\mathcal A/\mathcal B\longrightarrow\mathcal D/\mathcal B$ is fully
+faithful and injective on objects. The image of this functor is
+$Q(\mathcal A)$, where
+$Q\colon\mathcal D\longrightarrow\mathcal D/\mathcal B$ is the canonical
+functor.
+
+\VerdierSemanticAnchor{ch2-2-3-1-c-quotient-transitivity}
+\par\noindent c) The canonical functor
+$\mathcal D/\mathcal A\longrightarrow
+(\mathcal D/\mathcal B)/(\mathcal A/\mathcal B)$ is an isomorphism of
+categories.
+
+\VerdierSemanticAnchor{ch2-2-3-1-d-saturation}
+\par\noindent d) If the category $\mathcal A$ is saturated (2.1.6), the
+subcategory $Q(\mathcal A)$ is saturated.
+
+\VerdierSemanticAnchor{ch2-2-3-1-inverse-image-setup}
+For every full triangulated subcategory $\mathcal C$ of
+$\mathcal D/\mathcal B$, denote by $Q^{-1}(\mathcal C)$ the full
+subcategory of $\mathcal D$ defined by the objects $X$ of $\mathcal D$
+such that $Q(X)$ is isomorphic to an object of the category $\mathcal C$.
+
+\VerdierSemanticAnchor{ch2-2-3-1-a-bis}
+\par\noindent a)$^{\mathrm{bis}}$ The category $Q^{-1}(\mathcal C)$ is a
+strictly full triangulated subcategory of $\mathcal D$.
+
+\VerdierSemanticAnchor{ch2-2-3-1-b-bis}
+\par\noindent b)$^{\mathrm{bis}}$ The multiplicative system
+$S_{\mathcal D}(Q^{-1}(\mathcal C))$ consists of the morphisms of
+$\mathcal D$ whose image under $Q$ is a morphism in
+$S_{\mathcal D/\mathcal B}(\mathcal C)$.
+
+\VerdierSemanticAnchor{ch2-2-3-1-c-bis}
+\par\noindent c)$^{\mathrm{bis}}$ The subcategory $Q^{-1}(\mathcal C)$ is
+saturated if and only if the subcategory $\mathcal C$ is saturated.
+
+\VerdierSemanticAnchor{ch2-2-3-1-d-bis}
+\par\noindent d)$^{\mathrm{bis}}$ The map
+$\mathcal A\longmapsto Q(\mathcal A)$ is an isomorphism of ordered sets
+from the set of strictly full triangulated subcategories of $\mathcal D$
+containing $\widehat{\mathcal B}$ (the kernel of the functor $Q$), ordered
+by inclusion, to the set of strictly full triangulated subcategories of
+$\mathcal D/\mathcal B$, ordered by inclusion. The inverse map is
+$\mathcal C\longmapsto Q^{-1}(\mathcal C)$.
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-ab}
+The first assertion is evident. The second follows immediately from the
+description of morphisms in the categories $\mathcal A/\mathcal B$ and
+$\mathcal D/\mathcal B$ (2.2.1).
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-c}
+To prove c), it suffices to refer to the universal properties of quotient
+categories (2.2.11).
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-d}
+Let us prove d). After replacing $\mathcal A$ by its strictly full closure,
+which changes $Q(\mathcal A)$ only up to equivalence, we may assume that
+$\mathcal A$ is strictly full. The kernel of the functor
+$\mathcal D\longrightarrow\mathcal D/\mathcal A$ is then the category
+$\mathcal A$ (2.2.11). This functor factors as
+$\mathcal D\longrightarrow\mathcal D/\mathcal B
+\longrightarrow\mathcal D/\mathcal A$. It follows that the kernel of the
+canonical functor
+$\mathcal D/\mathcal B\longrightarrow\mathcal D/\mathcal A$ is
+$Q(\mathcal A)$. Consequently, $Q(\mathcal A)$ is saturated (2.1.16).
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-a-bis-b-bis}
+Assertion a)$^{\mathrm{bis}}$ is evident, as is assertion
+b)$^{\mathrm{bis}}$.
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-c-bis-forward}
+Suppose that $\mathcal C$ is saturated. We may further assume that
+$\mathcal C$ is strictly full, for if $\widehat{\mathcal C}$ denotes the
+strictly full closure of $\mathcal C$, then the category
+$\widehat{\mathcal C}$ is strictly full and saturated and
+$Q^{-1}(\widehat{\mathcal C})=Q^{-1}(\mathcal C)$. The category
+$\mathcal C$ is then the kernel of an exact functor (2.2.11).
+Consequently, $Q^{-1}(\mathcal C)$ is the kernel of an exact functor, hence
+is saturated (2.1.16).
+
+\VerdierSemanticAnchor{ch2-2-3-1-p144-boundary}
+Suppose that $Q^{-1}(\mathcal C)$ is
+\endgroup

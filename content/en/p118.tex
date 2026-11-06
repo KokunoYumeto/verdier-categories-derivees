@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0118}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-6-exactness-complete}
+is exact. Taking $W=Z$, we see that the identity map
+$\operatorname{id}_Z\in\operatorname{Hom}_{\mathcal D}(Z,Z)$ comes from a map
+$s\colon Z\longrightarrow Y$, whence the existence of the section. This
+section makes it possible to construct a commutative diagram:
+
+\VerdierSemanticAnchor{ch2-1-2-6-section-diagram}
+\begin{equation*}
+  \begin{tikzcd}[column sep=3.5em,row sep=3.0em]
+    X \arrow[r,"{\binom{\operatorname{id}}{0}}"]
+      \arrow[d,"{\operatorname{id}}"']
+      & X\oplus Z \arrow[r,"{(0,\operatorname{id})}"]
+        \arrow[d,"{(u,s)}"]
+      & Z \arrow[d,"{\operatorname{id}}"] \\
+    X \arrow[r,"u"'] & Y \arrow[r,"v"'] & Z
+  \end{tikzcd}\,.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-6-hom-five-lemma}
+Applying the functor $\operatorname{Hom}_{\mathcal D}(W,\mathord\cdot)$, the
+exactness of the sequence (1.2.6.2) and the five lemma imply that the
+morphism
+
+\VerdierSemanticAnchor{ch2-1-2-6-hom-isomorphism}
+\[
+  \operatorname{Hom}_{\mathcal D}\bigl(W,(u,s)\bigr)\colon
+  \operatorname{Hom}_{\mathcal D}(W,X\oplus Z)
+  \longrightarrow \operatorname{Hom}_{\mathcal D}(W,Y)
+\]
+is an isomorphism.\space Consequently, the morphism $(u,s)$ is an isomorphism.
+
+\VerdierSemanticAnchor{ch2-1-2-7}
+\medskip
+\noindent\textbf{Remark 1.2.7.}\quad
+Corollary (1.2.6) shows that every exact functor
+$\mathcal D'\xrightarrow{F}\mathcal D$ is additive. First, the triangle
+$0\longrightarrow0\longrightarrow0\longrightarrow0$ is distinguished in
+$\mathcal D'$; consequently, the triangle
+
+\VerdierSemanticAnchor{ch2-1-2-7-zero-triangle}
+\[
+  F(0)\xrightarrow{\operatorname{id}_{F(0)}}F(0)
+  \xrightarrow{\operatorname{id}_{F(0)}}F(0)
+  \longrightarrow F(0)[1]
+\]
+is distinguished in $\mathcal D$. It then follows from (1.2.2) that
+$F(0)=0$. Applying $F$ to distinguished triangles of the form (1.2.6.1)
+and applying (1.2.6), we deduce that $F$ is additive. An analogous argument
+shows that every cohomological functor is additive.
+
+\VerdierSemanticAnchor{ch2-1-2-8}
+\medskip
+\noindent\textbf{Definition 1.2.8.}\quad
+A \emph{decomposition} of a morphism $f\colon X\longrightarrow Y$ in an
+additive category is a commutative diagram
+
+\VerdierSemanticAnchor{ch2-1-2-8-decomposition-diagram}
+\begin{equation*}
+  \begin{tikzcd}[ampersand replacement=\&,column sep=5.2em,row sep=3.4em]
+    X \arrow[r,"f"] \arrow[d,"\wr"']
+      \& Y \arrow[d,"\wr"] \\
+    Z\oplus W
+      \arrow[r,"{\left(\begin{smallmatrix}0&\operatorname{id}_W\\0&0\end{smallmatrix}\right)}"]
+      \& W\oplus Z'
+  \end{tikzcd}\,.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-8-decomposable}
+A morphism is called \emph{decomposable} if it admits a decomposition.
+
+\VerdierSemanticAnchor{ch2-1-2-8-splitting}
+A \emph{splitting} of a morphism $f\colon X\longrightarrow Y$ is a morphism
+$g\colon Y\longrightarrow X$ such that
+\endgroup

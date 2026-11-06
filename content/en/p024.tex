@@ -1,0 +1,90 @@
+\VerdierPhysicalPageAnchor{0024}%
+deduces for the cohomology objects. The mechanism of spectral sequences most
+often conceals the simplicity of the phenomena. The elementary example of
+the Künneth relations is significant in this respect.
+
+\VerdierSemanticAnchor{intro-5}
+\noindent\textbf{5.}\quad
+Let $X$ and $Y$ be two compact spaces, let $A$ be a commutative ring with
+identity (for simplicity), and let $F$ and $G$ be two sheaves of $A$-modules
+on $X$ and $Y$, respectively. When $A$ is a field, it is known that the cross
+product [23] defines an isomorphism of graded vector spaces:
+
+\VerdierSemanticAnchor{intro-5-kunneth-field}
+\begin{equation}
+\mathrm H^*(X,F)\otimes_A\mathrm H^*(Y,G)
+\xrightarrow{\sim}
+\mathrm H^*(X\times Y,F\otimes_A G).
+\tag{$\text{Kü}_{\mathrm{coh}}^{1}$}
+\end{equation}
+
+When $A=\mathbb Z$ and either the sheaf $F$ or the sheaf $G$ is torsion-free,
+one has split exact sequences:
+
+\VerdierSemanticAnchor{intro-5-kunneth-torsion-free}
+\begin{equation}
+\begin{aligned}
+0 &\longrightarrow
+\bigoplus_{p+q=n}\mathrm H^p(X,F)\otimes_A\mathrm H^q(Y,G)
+\longrightarrow \mathrm H^n(X\times Y,F\otimes_A G) \longrightarrow \\
+&\longrightarrow
+\bigoplus_{p+q=n+1}
+\operatorname{Tor}^{\mathbb Z}\bigl(\mathrm H^p(X,F),\mathrm H^q(Y,G)\bigr)
+\longrightarrow 0.
+\end{aligned}
+\tag{$\text{Kü}_{\mathrm{coh}}^{2}$}
+\end{equation}
+
+When $A=\mathbb Z$ and no assumption is made on $F$ and $G$, one has two
+families of split exact sequences:
+
+\VerdierSemanticAnchor{intro-5-kunneth-general-split}
+\begin{equation}
+\begin{aligned}
+0 &\longrightarrow
+\bigoplus_{p+q=n}\mathrm H^p(X,F)\otimes_A\mathrm H^q(Y,G)
+\longrightarrow \mathbb H^n \longrightarrow \\
+&\longrightarrow
+\bigoplus_{p+q=n+1}
+\operatorname{Tor}^{\mathbb Z}\bigl(\mathrm H^p(X,F),\mathrm H^q(Y,G)\bigr)
+\longrightarrow 0, \\
+0 &\longrightarrow
+\mathrm H^{n+1}\bigl(X\times Y,\mathcal T\!or^A(F,G)\bigr)
+\longrightarrow \mathbb H^n
+\longrightarrow \mathrm H^n(X\times Y,F\otimes_A G)
+\longrightarrow 0.
+\end{aligned}
+\tag{$\text{Kü}_{\mathrm{coh}}^{3}$}
+\end{equation}
+
+The initial formulation $\text{(Kü)}_{\mathrm{coh}}^{1}$ thus
+becomes more complicated, but remains accessible to explicit calculation.
+When the ring $A$ is more complicated, for example when
+$A=\mathbb Z/\ell^r\mathbb Z$, with $\ell$ prime and $r>1$, a ring of infinite
+global cohomological dimension, traditionally one has only two spectral
+sequences with the same abutment, whose initial terms are:
+
+\VerdierSemanticAnchor{intro-5-kunneth-spectral-sequences}
+\begin{equation}
+\begin{aligned}
+{}'K_2^{p,q}
+  &=\bigoplus_{r+s=q}
+    \operatorname{Tor}_{-p}^{A}
+    \bigl(\mathrm H^r(X,F),\mathrm H^s(Y,G)\bigr), \\
+{}''K_2^{p,q}
+  &=\mathrm H^p\bigl(X\times Y,\mathcal T\!or_{-q}^{A}(F,G)\bigr).
+\end{aligned}
+\tag{$\text{Kü}_{\mathrm{coh}}^{4}$}
+\end{equation}
+
+However, these spectral sequences and the isomorphism between their
+abutments are only the consequence and imperfect translation of the
+following relation in the derived category of the category of $A$-modules:
+
+\VerdierSemanticAnchor{intro-5-kunneth-derived}
+\begin{equation}
+\mathrm{RH}(X,F)\overset{\mathrm L}{\otimes}_A\mathrm{RH}(Y,G)
+\xrightarrow{\sim}
+\mathrm{RH}\bigl(X\times Y,F\overset{\mathrm L}{\otimes}_A G\bigr),
+\tag{$\text{Kü}_{\mathrm{Der}}$}
+\end{equation}

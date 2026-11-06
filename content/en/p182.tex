@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0182}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-1-3-1-naturality-cont}
+the following diagram is commutative:
+
+\VerdierSemanticAnchor{ch3d-1-3-1-naturality-square}
+\begin{center}
+\begin{tikzcd}[column sep=4.5em,row sep=2.4em]
+G(Z) \arrow[r,"{\delta(S)}"] \arrow[d,"{G(w)}"']
+  & G(X)[1] \arrow[d,"{G(u)[1]}"] \\
+G(Z') \arrow[r,"{\delta(S^{\prime})}"'] & G(X')[1]
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-1-3-1-distinguished-triangle}
+\noindent b) For every exact sequence in $\mathcal A$,
+$S=0\longrightarrow X\xrightarrow{u}Y\xrightarrow{v}Z\longrightarrow0$,
+the triangle
+$(G(X),\allowbreak G(Y),\allowbreak G(Z),\allowbreak G(u),\allowbreak
+G(v),\allowbreak\delta(S))$ is distinguished.
+
+\VerdierSemanticAnchor{ch3d-1-3-2}
+\medskip\noindent\textbf{1.3.2.}\quad
+Let $\mathcal A$ be an abelian category and let $u$ be a morphism of
+$\operatorname{comp}(\mathcal A)$. We denote by $[u]$ the image of
+$\dot u$ in $D(\mathcal A)$. Let
+$S=0\longrightarrow X\xrightarrow{u}Y\xrightarrow{v}Z\longrightarrow0$
+be an exact sequence in $\operatorname{comp}(\mathcal A)$. The adjunction
+properties of the cone functor (Chap. I, 3.1.3) define a morphism
+$\mu(S)\colon c(u)\longrightarrow Z$. The following diagram is commutative
+(Chap. I, 3.2.2.4):
+
+\VerdierSemanticAnchor{ch3d-1-3-2-cone-square}
+\begin{center}
+\begin{tikzcd}[column sep=4.2em,row sep=2.8em]
+Y \arrow[r,"p(u)"] \arrow[dr,"v"'] & c(u) \arrow[d,"\mu(S)"] \\
+& Z
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-1-3-2-components}
+A simple calculation shows that the components of the morphism $\mu(S)$
+are:
+\begin{equation}
+\begin{aligned}
+\mu(S)^i&\colon Y^i\oplus X^{i+1}\longrightarrow Z^i,\\
+\mu(S)^i&=(v^i,0).
+\end{aligned}
+\tag{1.3.2.1}
+\end{equation}
+It follows that the morphism $\mu(S)\colon c(u)\longrightarrow Z$ is an
+epimorphism and that there is an exact sequence:
+
+\VerdierSemanticAnchor{ch3d-1-3-2-short-exact}
+\[
+0\longrightarrow c(\operatorname{id}_X)\longrightarrow c(u)
+\longrightarrow Z\longrightarrow0.
+\]
+Now introduce the complex $c(\mu(S))$, and let
+$m\colon c(\operatorname{id}_X)\longrightarrow c(\mu(S))[-1]$ be the
+morphism with components:
+
+\VerdierSemanticAnchor{ch3d-1-3-2-morphism-m}
+\begin{equation}
+\begin{aligned}
+m^i&\colon X^i\oplus X^{i+1}
+  \longrightarrow Z^{i-1}\oplus Y^i\oplus X^{i+1},\\[2pt]
+m^i&=
+\begin{pmatrix}
+0&0\\
+u^i&0\\
+0&\operatorname{id}
+\end{pmatrix}.
+\end{aligned}
+\tag{1.3.2.2}
+\end{equation}
+\endgroup

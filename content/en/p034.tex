@@ -1,0 +1,53 @@
+\chapter{Categories of Complexes in Additive Categories}
+\VerdierPhysicalPageAnchor{0034}
+\VerdierSemanticAnchor{ch1}
+
+\VerdierSemanticAnchor{ch1-1}
+\section{Graded Categories}
+
+\VerdierSemanticAnchor{ch1-1-1}
+\subsection{\texorpdfstring{$G$}{G}-Graded Categories}
+
+\VerdierSemanticAnchor{ch1-1-1-1}
+\noindent\textbf{1.1.1.}\quad
+To each group $G$ we associate a category, which we denote $\mathcal G$,
+defined as follows:
+
+\VerdierSemanticAnchor{ch1-1-1-1-group-category}
+\noindent\textnormal{(1.1.1.1)}
+\begin{list}{--}{%
+  \setlength{\leftmargin}{2em}%
+  \setlength{\itemsep}{0.25em}%
+  \setlength{\topsep}{0.25em}%
+}
+  \item \VerdierSemanticAnchor{ch1-1-1-1-group-category-ob}%
+    $\operatorname{Ob}(\mathcal G)$ is a singleton, whose element is
+    chosen once and for all.
+  \item \VerdierSemanticAnchor{ch1-1-1-1-group-category-fl}%
+    $\operatorname{Fl}(\mathcal G)$ is the underlying set of $G$.
+  \item \VerdierSemanticAnchor{ch1-1-1-1-group-category-maps}%
+    The source and target maps are the unique maps from
+    $\operatorname{Fl}(\mathcal G)$ to $\operatorname{Ob}(\mathcal G)$.
+    The identity map sends the unique element of
+    $\operatorname{Ob}(\mathcal G)$ to the identity element of $G$.
+  \item \VerdierSemanticAnchor{ch1-1-1-1-group-category-composition}%
+    The composite of two arrows
+    ${}\xrightarrow{g}{}\xrightarrow{h}{}$ is the arrow $hg$, the product in
+    the group $G$ of the elements $h$ and $g$.
+\end{list}
+
+\VerdierSemanticAnchor{ch1-1-1-1-graded-category}
+A category fibered over $\mathcal G$ [18] is called a
+\emph{$G$-graded category}. A $G$-graded category $(\mathcal C,G)$ is thus a
+category $\mathcal C$ equipped with a functor
+$\deg\colon\mathcal C\to\mathcal G$ making $\mathcal C$ a category fibered
+over $\mathcal G$.
+
+\VerdierSemanticAnchor{ch1-1-1-1-degree-functor}
+The functor $\deg\colon\mathcal C\to\mathcal G$ is called the
+\emph{degree functor}. The image under $\deg$ of a morphism of $\mathcal C$
+is called the \emph{degree of that morphism}.
+\VerdierSemanticAnchor{ch1-1-1-1-fiber-category}
+Let $e$ be the identity element
+of $G$. We denote by $\mathcal C_e$ the fiber category of $(\mathcal C,G)$.
+The category $\mathcal C_e$ is

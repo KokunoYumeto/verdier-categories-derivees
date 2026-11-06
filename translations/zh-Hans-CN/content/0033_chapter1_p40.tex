@@ -1,0 +1,91 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0040}%
+\VerdierSemanticAnchor{ch1-1-3-2-eq4}
+而同构 $c(g',g)^{-1}$ 定义一个映射
+
+\begin{equation}
+  \operatorname{Hom}_{\mathcal C}
+    \bigl(T(g)Y,T(g)T(g')Z\bigr)
+  \longrightarrow
+  \operatorname{Hom}_{\mathcal C}
+    \bigl(T(g)Y,T(g'g)Z\bigr).
+  \tag{1.3.2.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-3-2-eq5}
+因此，$v$ 的像是一个元素
+$v'\in\operatorname{Hom}_{\mathcal C}(T(g)Y,T(g'g)Z)$。在 $\mathcal C$ 中
+$u$ 与 $v'$ 的复合是一个元素
+
+\begin{equation}
+  w=v'\mathbin{\circ_{\mathcal C}}u,
+  \qquad w\in\operatorname{Hom}^{g'g}(X,Z),
+  \tag{1.3.2.5}
+\end{equation}
+依定义，它就是 $u$ 与 $v$ 在 $\mathcal C[G]$ 中的复合。纤维化函子
+$\mathcal C[G]\to\mathcal G$ 是显然的那个函子。纤维化范畴
+$\mathcal C[G]\to\mathcal G$ 带有一个典范正规劈分。
+
+\VerdierSemanticAnchor{ch1-1-3-3}
+\noindent\textbf{1.3.3.}\quad
+事实上，还有一个更精确的结果。设 $\mathcal C$ 与 $\mathcal C'$ 为两个配备
+正规劈分的 $G$-分次范畴。函子 $\Psi$ 定义一个双射
+
+\VerdierSemanticAnchor{ch1-1-3-3-eq1}
+\begin{equation}
+  \Psi(\mathcal C,\mathcal C')\colon
+  \operatorname{Hom}_{\operatorname{Grad}(G)}(\mathcal C,\mathcal C')
+  \longrightarrow
+  \operatorname{Hom}_{G^\circ\text{-}\operatorname{Cat}}
+    \bigl(\Psi(\mathcal C),\Psi(\mathcal C')\bigr).
+  \tag{1.3.3.1}
+\end{equation}
+
+这些集合分别是下列范畴的对象集：
+
+\VerdierSemanticAnchor{ch1-1-3-3-eq2}
+\begin{equation}
+  \mathcal{H}\!om_{\operatorname{Grad}(G)}(\mathcal C,\mathcal C'),
+  \qquad
+  \mathcal{H}\!om_{G^\circ\text{-}\operatorname{Cat}}
+    \bigl(\Psi(\mathcal C),\Psi(\mathcal C')\bigr),
+  \tag{1.3.3.2}
+\end{equation}
+它们的态射分别为次数 $e$ 的函子态射，以及与 $G^\circ$ 的作用相容的函子
+态射。此外，由 (1.2.7) 立即可知，映射 $\Psi(\mathcal C,\mathcal C')$ 延拓为
+一个函子
+
+\VerdierSemanticAnchor{ch1-1-3-3-eq3}
+\begin{equation}
+  \Psi(\mathcal C,\mathcal C')\colon
+  \mathcal{H}\!om_{\operatorname{Grad}(G)}(\mathcal C,\mathcal C')
+  \longrightarrow
+  \mathcal{H}\!om_{G^\circ\text{-}\operatorname{Cat}}
+    \bigl(\Psi(\mathcal C),\Psi(\mathcal C')\bigr)
+  \tag{1.3.3.3}
+\end{equation}
+并且很容易验证下述命题。
+
+\VerdierSemanticAnchor{ch1-1-3-4}
+\noindent\textbf{命题 1.3.4.}\quad
+\emph{函子 $\Psi(\mathcal C,\mathcal C')$ 是范畴的同构。}
+
+\VerdierSemanticAnchor{ch1-1-3-5}
+\noindent\textbf{1.3.5.}\quad
+最后，为求完整，还应指出，函子 $\Psi$（延拓到函子态射之后）保持函子沿函子
+态射的卷积。验证留给读者。
+
+\VerdierSemanticAnchor{ch1-1-3-6}
+\noindent\textbf{1.3.6.}\quad
+我们最常使用严格 $G^\circ$-范畴 (1.2.2)。设
+$(\mathcal C,G^\circ,T)$ 与 $(\mathcal C',G^\circ,T')$ 为两个严格
+$G^\circ$-范畴。此时，一个 $G^\circ$-函子 $(F,m)$ 是一个函子
+$F\colon\mathcal C\to\mathcal C'$，连同一族同构
+
+\VerdierSemanticAnchor{ch1-1-3-6-eq1}
+\begin{equation}
+  m(g)\colon FT(g)\longrightarrow T'(g)F,
+  \qquad g\in G,
+  \qquad m(e)=\text{恒等同构}
+  \tag{1.3.6.1}
+\end{equation}

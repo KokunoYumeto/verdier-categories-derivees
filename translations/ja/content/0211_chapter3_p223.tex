@@ -1,0 +1,53 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0223}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-3-8-cont}
+$m=m_nm_{n-1}\cdots m_2m_1$ となる。これから $F$ の一意性が直ちに
+従う。存在を示すには、補題 (3.3.1) により、$m$ に第二の分解
+$m=m'_nm'_{n-1}\cdots m'_1$ があるとき、次の可換図式が存在することに
+注意すれば十分である：
+
+\VerdierSemanticAnchor{ch3d-3-3-8-comparison-diagram}
+\begin{center}
+\resizebox{\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=1.7em,row sep=3.0em]
+{}
+  \& X_1[p+1] \arrow[r,"m_2"]
+  \& X_2[p+2] \arrow[r]
+  \& \cdots \arrow[r]
+  \& X_{n-1}[p+n-1] \arrow[dr,"m_n"]
+  \& {} \\
+X[p]
+  \arrow[ur,"m_1"]
+  \arrow[r,"{m''_1}"]
+  \arrow[dr,"m'_1"']
+  \& X''_1[p+1]
+     \arrow[u,"{f_1[p+1]}"]
+     \arrow[d,"{g_1[p+1]}"']
+     \arrow[r,"{m''_2}"]
+  \& X''_2[p+2]
+     \arrow[u,"{f_2[p+2]}"]
+     \arrow[d,"{g_2[p+2]}"']
+     \arrow[r]
+  \& \cdots \arrow[r]
+  \& X''_{n-1}[p+n-1]
+     \arrow[u,"{f_{n-1}[p+n-1]}"]
+     \arrow[d,"{g_{n-1}[p+n-1]}"']
+     \arrow[r,"{m''_n}"]
+  \& Y[p+n] \\
+{}
+  \& X'_1[p+1] \arrow[r,"m'_2"']
+  \& X'_2[p+2] \arrow[r]
+  \& \cdots \arrow[r]
+  \& X'_{n-1}[p+n-1] \arrow[ur,"m'_n"']
+  \& {}
+\end{tikzcd}\quad\mathpunct{,}$%
+}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-3-3-8-conclusion}
+ここで $f_i$ と $g_i$、$1\leq i\leq n-1$ は $\mathcal A$ の射である。
+\endgroup

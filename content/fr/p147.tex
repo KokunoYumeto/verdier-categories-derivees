@@ -1,0 +1,101 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0147}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-3-4-d-complete}
+\noindent Ceci démontre d) ; démontrons maintenant f).
+
+\VerdierSemanticAnchor{ch2-2-3-4-f}
+Un objet $Z$ de $\mathcal D$ appartient à
+$Q^{-1}(\operatorname{Lib}_R(Q))$ si et seulement s'il existe un objet
+$Q$-libre à droite $Y$ et un isomorphisme dans $\mathcal D/\mathcal B$ :
+$Q(Z)\xrightarrow[\sim]{m}Q(Y)$.
+
+\VerdierSemanticAnchor{ch2-2-3-4-f-fraction}
+Un tel isomorphisme est de la forme $m=Q(s)^{-1}Q(t)$, où
+$s\in S_{\mathcal D}(\mathcal B)$ et
+$t\in\widehat{S_{\mathcal D}(\mathcal B)}$ ((2.2.2) et (2.2.4)). On a par
+suite dans $\mathcal D$ un diagramme :
+
+\VerdierSemanticAnchor{ch2-2-3-4-f-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=4.1em,row sep=2.5em]
+    Z \arrow[r,"t"] & X & Y \arrow[l,"s"']
+  \end{tikzcd}
+  \quad .
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-3-4-f-retraction}
+D'après a), iv), le morphisme $s$ admet une rétraction
+$s'\colon X\longrightarrow Y$ qui est un élément de
+$S_{\mathcal D}(\mathcal B)$ (1.2.6). Par suite, il existe un morphisme
+$t'\colon Z\longrightarrow Y$,
+$t'\in\widehat{S_{\mathcal D}(\mathcal B)}$.
+
+\VerdierSemanticAnchor{ch2-2-3-4-f-converse}
+Réciproquement, s'il existe un tel morphisme, le morphisme
+$Q(t')\colon Q(Z)\longrightarrow Q(Y)$ est un isomorphisme.
+
+\VerdierSemanticAnchor{ch2-2-3-4-g}
+Il reste à démontrer g). On a, d'après a), v), un isomorphisme
+bifonctoriel :
+
+\VerdierSemanticAnchor{ch2-2-3-4-g-q1-adjunction}
+\[
+  \operatorname{Hom}_{Q^{-1}(\operatorname{Lib}_R(Q))}(Z,\Psi(W))
+  \xrightarrow{\sim}
+  \operatorname{Hom}_{\operatorname{Lib}_R(Q)}(Q_1(Z),W),
+\]
+ce qui montre que $\Psi$ est adjoint à droite à $Q_1$.
+
+\VerdierSemanticAnchor{ch2-2-3-4-g-inclusion-adjunction}
+On en déduit immédiatement que si on note
+$i\colon L_R(Q)\lhook\joinrel\longrightarrow
+Q^{-1}(\operatorname{Lib}_R(Q))$ le foncteur d'inclusion, on a un
+isomorphisme bifonctoriel :
+\[
+  \operatorname{Hom}_{Q^{-1}(\operatorname{Lib}_R(Q))}(Z,i(Y))
+  \xrightarrow{\sim}
+  \operatorname{Hom}_{L_R(Q)}(\Psi Q_1(Z),Y)\, .
+\]
+
+\VerdierSemanticAnchor{ch2-2-3-4-g-proof-complete}
+Ceci montre que le foncteur $\mathcal R=\Psi Q_1$ est adjoint à gauche au
+foncteur d'inclusion et achève la démonstration de la proposition (2.3.3).
+
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-3-5}
+\medskip
+\noindent\textbf{Proposition 2.3.5.}\quad
+\VerdierSemanticAnchor{ch2-2-3-5-setup}
+Soient $\mathcal D$ une catégorie triangulée, $\mathcal A$ et $\mathcal B$
+deux sous-catégories triangulées pleines ($\mathcal B$ strictement pleine),
+$S_{\mathcal D}(\mathcal B)$ et
+$S_{\mathcal A}(\mathcal A\cap\mathcal B)$ les systèmes multiplicatifs de
+$\mathcal D$ et $\mathcal A$ associés respectivement aux catégories
+$\mathcal B$ et $\mathcal A\cap\mathcal B$.
+
+\VerdierSemanticAnchor{ch2-2-3-5-a}
+\par\noindent a) Les conditions suivantes sont équivalentes :
+
+\VerdierSemanticAnchor{ch2-2-3-5-a-i}
+\par\noindent\hspace{1.2em}i) Tout morphisme
+$X\xrightarrow{s}X'$, avec $X\in\operatorname{Ob}(\mathcal A)$,
+$s\in S_{\mathcal D}(\mathcal B)$, s'insère dans un diagramme commutatif :
+
+\VerdierSemanticAnchor{ch2-2-3-5-a-i-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=4.1em,row sep=2.6em]
+    X \arrow[r,"s"] \arrow[dr,"{s'}"'] & X' \arrow[d] &
+    {s'\in S_{\mathcal A}(\mathcal A\cap\mathcal B)} \\
+    & X'' &
+  \end{tikzcd}
+  \quad .
+\end{center}
+\endgroup
+\endgroup

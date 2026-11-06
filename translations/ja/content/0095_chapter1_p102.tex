@@ -1,0 +1,94 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0102}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\jot}{2pt}%
+\VerdierSemanticAnchor{ch1-3-4-1-proof}
+(3.3.1) により、与えられた三角が次の形であると常に仮定できる。
+
+\VerdierSemanticAnchor{ch1-3-4-1-cone-model}
+\[
+  X\xrightarrow{\dot f}Y\xrightarrow{\dot p(f)}c(f)
+  \xrightarrow{\dot q(f)}X[1]
+\]
+ここで $f\colon X\longrightarrow Y$ は $\operatorname{comp}(C)$ における射で
+ある。したがって、三角
+
+\VerdierSemanticAnchor{ch1-3-4-1-goal-triangle}
+\[
+  (\iota_1X)[-1]\xrightarrow{\iota_1\dot q(f)}\iota_1c(f)
+  \xrightarrow{\iota_1\dot p(f)}\iota_1Y
+  \xrightarrow{-(\iota_1\dot f)}\iota_1X
+\]
+が完全三角であることを示せばよい（$\iota_1f$ は射 $f$ の
+$\iota_1\colon\operatorname{comp}(C)^{\circ}\longrightarrow
+\operatorname{comp}(C^{\circ})$ による像である）。$\iota_1$ の定義 (2.4.1) と
+写像錐関手の定義 (3.1.2) から、複体 $\iota_1c(f)$ の成分と微分は直ちに
+次のようになる。
+
+\VerdierSemanticAnchor{ch1-3-4-1-components}
+\[
+  \iota_1c(f)^i=(\iota_1X)^{i-1}\oplus(\iota_1Y)^i,
+\]
+\VerdierSemanticAnchor{ch1-3-4-1-1}
+\begin{equation}
+  d_{\iota_1c(f)}^i=
+  \begin{pmatrix}
+    -d_{\iota_1X}^{i-1} & (\iota_1f)^i\\
+    0 & d_{\iota_1Y}^{i}
+  \end{pmatrix}.
+  \tag{3.4.1.1}
+\end{equation}
+\VerdierSemanticAnchor{ch1-3-4-1-cone-identity}
+したがって、
+\[
+  \iota_1c(f)=c(-\iota_1f)[-1],
+\]
+であり、次の図式が可換であることが確かめられる。
+
+\VerdierSemanticAnchor{ch1-3-4-1-comparison}
+\begin{center}
+  \begin{tikzpicture}[>=stealth,scale=0.70,every node/.style={transform shape}]
+    \node (x1) at (0,1.60) {$(\iota_1X)[-1]$};
+    \node (c1) at (3.20,1.60) {$\iota_1c(f)$};
+    \node (y1) at (6.05,1.60) {$\iota_1Y$};
+    \node (z1) at (8.60,1.60) {$\iota_1X$};
+    \node (x2) at (0,0) {$(\iota_1X)[-1]$};
+    \node (c2) at (3.20,0) {$c(-\iota_1f)[-1]$};
+    \node (y2) at (6.05,0) {$\iota_1Y$};
+    \node (z2) at (8.60,0) {$\iota_1X$};
+    \draw[->] (x1) -- node[above] {$\iota_1\dot q(f)$} (c1);
+    \draw[->] (c1) -- node[above] {$\iota_1\dot p(f)$} (y1);
+    \draw[->] (y1) -- node[above] {$-\iota_1\dot f$} (z1);
+    \draw[->] (x2) -- node[above] {$\dot p(-\iota_1f)[-1]$} (c2);
+    \draw[->] (c2) -- node[above] {$\dot q(-\iota_1f)[-1]$} (y2);
+    \draw[->] (y2) -- node[above] {$-\iota_1\dot f$} (z2);
+    \draw[double,double distance=1.1pt] (x1) -- (x2);
+    \draw[double,double distance=1.1pt] (c1) -- (c2);
+    \draw[double,double distance=1.1pt] (y1) -- (y2);
+    \draw[double,double distance=1.1pt] (z1) -- (z2);
+  \end{tikzpicture}
+\end{center}
+\VerdierSemanticAnchor{ch1-3-4-1-proof-complete}
+そこで (3.3.3) を適用すれば証明が完了する。
+
+\VerdierSemanticAnchor{ch1-3-4-2}
+\noindent\textbf{3.4.2.}\quad
+\VerdierSemanticAnchor{ch1-3-4-2-multiadditive-functor}
+$F\colon\prod_{i\in[n]}C_i\longrightarrow C$ を多加法的関手とする。
+話を具体的にするため、$C$ において可算積が表現可能であると仮定する。
+\[
+  K_{\Pi}F\colon\prod_{i\in[n]}K(C_i)\longrightarrow K(C)
+\]
+\VerdierSemanticAnchor{ch1-3-4-2-homotopy-extension}
+を $F$ の複体のホモトピー圏への $\Pi$-拡張とし、
+
+\VerdierSemanticAnchor{ch1-3-4-2-shift-isomorphisms}
+\[
+  p_i\colon K_{\Pi}F(X_1,\ldots,X_i[1],\ldots,X_n)
+  \longrightarrow K_{\Pi}F(X_1,\ldots,X_i,\ldots,X_n)[1]
+\]
+を標準的な関手同型とする。
+\endgroup

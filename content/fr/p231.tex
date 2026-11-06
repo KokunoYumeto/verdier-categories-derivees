@@ -1,0 +1,85 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0231}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-1-7-proof}
+Supposons, tout d'abord, la proposition démontrée lorsque $X$ est un double
+complexe et lorsque l'entier $m=1$, et montrons comment on peut se ramener
+à ce cas. Soit $\varphi\colon[n]\longrightarrow[2]$ l'application :
+
+\VerdierSemanticAnchor{ch4d-4-1-7-1}
+\begin{equation}
+\left\{
+\begin{aligned}
+\varphi(m)&=1,\\
+\varphi(i)&=2,\qquad i\in[n],\quad i\neq m.
+\end{aligned}
+\right.
+\tag{4.1.7.1}
+\end{equation}
+
+Posons $\int_\varphi X=Z$ (chap.~I, 2.2.2). On peut alors effectuer sur le
+double complexe $Z$ les constructions décrites en (4.1.6.$i$),
+$1\leq i\leq4$. On obtient des doubles complexes :
+
+\VerdierSemanticAnchor{ch4d-4-1-7-2}
+\begin{equation}
+{}^{1}\!Z(p,q),\qquad
+(p,q)\in\mathcal{F}\ell_1(\widetilde{\mathbb Z}),
+\tag{4.1.7.2}
+\end{equation}
+
+et des morphismes de doubles complexes :
+
+\VerdierSemanticAnchor{ch4d-4-1-7-3}
+\begin{equation}
+\begin{aligned}
+f_Z\bigl((p,q),(p',q')\bigr)&\colon
+{}^{1}\!Z(p,q)\longrightarrow{}^{1}\!Z(p',q'),\\
+g_Z(p,q,r)&\colon
+{}^{1}\!Z(q,r)\longrightarrow T_1\bigl({}^{1}\!Z(p,q)\bigr).
+\end{aligned}
+\tag{4.1.7.3}
+\end{equation}
+
+On constate alors que :
+
+\VerdierSemanticAnchor{ch4d-4-1-7-4}
+\begin{equation}
+\left\{
+\begin{aligned}
+\int_\varphi{}^{m}\!X(p,q)
+  &={}^{1}\!Z(p,q),
+  &&(p,q)\in\mathcal{F}\ell_1(\widetilde{\mathbb Z}),\\
+\int_\varphi f\bigl((p,q),(p',q')\bigr)
+  &=f_Z\bigl((p,q),(p',q')\bigr),
+\end{aligned}
+\right.
+\tag{4.1.7.4}
+\end{equation}
+
+(vérification immédiate) et que de plus le morphisme $g_Z(p,q,r)$ est le
+morphisme composé :
+
+\VerdierSemanticAnchor{ch4d-4-1-7-5}
+\begin{equation}
+\int_\varphi{}^{m}\!X(q,r)
+\xrightarrow{\int_\varphi g(p,q,r)}
+\int_\varphi T_m\bigl({}^{m}\!X(p,q)\bigr)
+\xrightarrow{(**)}
+T_1\left(\int_\varphi{}^{m}\!X(p,q)\right)
+\tag{4.1.7.5}
+\end{equation}
+
+où $(**)$ est l'isomorphisme de commutation du foncteur $\int_\varphi$ aux
+translations (chap.~I, 2.3.2.1) (pour vérifier ceci, on utilise la définition
+explicite des différentielles de $Z$ (chap.~I, 2.2.2.5) et de l'isomorphisme
+de commutation (chap.~I, 2.3.2.1). Construisons alors l'objet spectral défini
+par $Z$ filtré par son premier degré. Il résulte de l'égalité
+$\int_2\int_\varphi=\int_n$, de (4.1.7.4), (4.1.7.5) et de
+(chap.~I, 2.3.3) que
+$\bigl({}^{m}\!Y(p,q),{}^{m}\!d(p,q,r)\bigr)$ est égal à cet objet
+spectral.
+\endgroup

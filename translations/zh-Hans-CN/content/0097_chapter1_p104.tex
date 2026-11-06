@@ -1,0 +1,73 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0104}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\jot}{2pt}%
+
+\VerdierSemanticAnchor{ch1-3-4-3-zero-differential-complex}
+对每个复形 $X$，以 $\overline{X}$ 表示保留 $X$ 的各分量而将微分置零所得的
+复形。由 $H$ 的定义立即可得
+$\overline{H(X)}=H(\overline{X})$。同样，对每个复形态射
+$f\colon X\longrightarrow Y$，以
+$\overline{f}\colon\overline{X}\longrightarrow\overline{Y}$ 表示保留 $f$ 的各分量
+所得的态射。由映射锥函子的定义可知
+$c(\overline{f})=\overline{Y}\oplus\overline{X[1]}$，且
+$p(\overline{f})\colon\overline{Y}\longrightarrow c(\overline{f})$ 是第一分量的
+典范包含态射，
+$q(\overline{f})\colon c(\overline{f})\longrightarrow\overline{X[1]}$ 是到第二分量
+的典范投影。
+
+\VerdierSemanticAnchor{ch1-3-4-3-cone-graded-splitting}
+由于函子 $H$ 和函子“$\overline{\phantom{X}}$”均为加性函子，故
+$\overline{H(c(f))}=\overline{H(Y)}\oplus\overline{H(X[1])}$，且
+$\overline{H(p(f))}\colon\overline{H(Y)}\longrightarrow\overline{H(c(f))}$ 是第一
+分量的典范包含态射，
+$\overline{H(q(f))}\colon\overline{H(c(f))}\longrightarrow\overline{H(X[1])}$ 是到
+第二分量的典范投影。因此
+\[
+  H(c(f))^l=H(Y)^l\oplus H(X[1])^l,
+\]
+
+\VerdierSemanticAnchor{ch1-3-4-3-2}
+\begin{equation}
+  d_{H(c(f))}^{,l}=
+  \begin{pmatrix}
+    d_{H(Y)}^{,l} & \Phi^l\\
+    0 & d_{H(X[1])}^{,l}
+  \end{pmatrix},
+  \tag{3.4.3.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-4-3-phi-map}
+\[
+  \Phi^l\colon H(X[1])^l\longrightarrow H(Y)^{l+1}.
+\]
+$H(c(f))$ 的微分写成这一形式，只是表达 $H(p(f))$ 和 $H(q(f))$ 是复形态射。
+为计算 $\Phi^l$，须回到函子 $H$ 的定义，从而回到关联单复形函子的定义
+(2.2.2.5)。有
+
+\VerdierSemanticAnchor{ch1-3-4-3-x-shift-components}
+\[
+  H(X[1])^l=
+  \prod_{\substack{\sigma=\sum_i l_i e_i\\ \sum_i l_i=l}}
+  F(X_1^{l_1},\ldots,X^{l_j+1},\ldots,X_n^{l_n}),
+\]
+
+\VerdierSemanticAnchor{ch1-3-4-3-3}
+\begin{equation}
+  H(Y)^{l+1}=
+  \prod_{\substack{\sigma=\sum_i l_i e_i\\ \sum_i l_i=l}}
+  F(X_1^{l_1},\ldots,Y^{l_j+1},\ldots,X_n^{l_n}),
+  \tag{3.4.3.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-4-3-phi-components}
+\[
+  \Phi^l=
+  \prod_{\substack{\sigma=\sum_i l_i e_i\\ \sum_i l_i=l}}
+  \varepsilon(\sigma,j)
+  F(X_1^{l_1},\ldots,f^{l_j+1},\ldots,X_n^{l_n}).
+\]
+\endgroup

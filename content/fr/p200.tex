@@ -1,0 +1,89 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0200}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-3-condition-2}
+\noindent\textit{2) La suite $i\longmapsto i-M\text{-}\dim(Y^i)$ tende vers
+$+\infty$, quand $i$ tend vers $+\infty$.}
+
+\VerdierSemanticAnchor{ch3d-2-3-3-quasi-isomorphism}
+\textit{Il existe alors un complexe
+$X\in\operatorname{Ob}\operatorname{comp}(\mathcal A)$ dont les composants
+sont des éléments de $M$ et un quasi-isomorphisme :}
+\[
+u\colon X\longrightarrow Y.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-3-bounded-cases}
+\textit{Si on suppose de plus que tous les composants de $Y$ sont de
+$M$-dimension finie et que
+$Y\in\operatorname{Ob}(\operatorname{comp}^{b}(\mathcal A))$
+(resp. $\operatorname{Ob}(\operatorname{comp}^{+}(\mathcal A))$), on peut
+alors prendre $X$ dans $\operatorname{comp}^{b}(\mathcal A)$
+(resp. $\operatorname{comp}^{+}(\mathcal A)$).}
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof}
+Soit $n_0$ un entier tel que
+$i>n_0\Rightarrow M\text{-}\dim(Y^i)<+\infty$. On se propose de construire :
+
+\VerdierSemanticAnchor{ch3d-2-3-3-induction-data}
+\noindent a) Une suite de complexes $X_i$, $i\geq n_0$.
+
+\noindent b) Une suite de morphismes
+$u_i\colon X_i\longrightarrow X_{i-1}$, $i>n_0$,
+$u_{n_0}\colon X_{n_0}\longrightarrow Y$, tels que :
+
+\VerdierSemanticAnchor{ch3d-2-3-3-properties}
+\noindent $1)_i$ $(X_i)^j\in M$, pour $j\leq i$.
+
+\noindent $2)_i$ $(X_i)^j=Y^j$, pour $j>i$.
+
+\noindent $3)_i$ Le morphisme $u_i$ soit un quasi-isomorphisme.
+
+\noindent $4)_i$ $(u_i)^j=\operatorname{id}$, pour $j>i$.
+
+\noindent $5)_i$ $(u_i)^j=\operatorname{id}$, pour
+$j\leq i-M\text{-}\dim(Y^i)$ ; cette dernière propriété n'étant vraie que
+pour $i>n_0$.
+
+\VerdierSemanticAnchor{ch3d-2-3-3-projective-limit}
+Cette construction étant faite, remarquons que le système projectif $X_i$
+admet une limite projective dans $\operatorname{comp}(\mathcal A)$ : les
+systèmes projectifs induits sur les composants de degré donné sont
+stationnaires, car $i-M\text{-}\dim(Y^i)$ tend vers $+\infty$ avec $i$. Il
+suffira de poser alors $X=\varprojlim_i X_i$ et de prendre pour
+$u\colon X\longrightarrow Y$ le morphisme canonique. Les composants du
+complexe $X$ sont des éléments de $M$ et le morphisme $u$ est un
+quasi-isomorphisme.
+
+\VerdierSemanticAnchor{ch3d-2-3-3-un0}
+Construisons tout d'abord le morphisme
+$u_{n_0}\colon X_{n_0}\longrightarrow Y$. Procédons par récurrence et
+supposons qu'on ait construit pour tout entier $i$, $-n_0\leq i<q$, des
+complexes $X_{n_0,i}$ et des morphismes
+$v_{n_0,i}\colon X_{n_0,i}\longrightarrow X_{n_0,i-1}$, $i>-n_0$, et
+$v_{n_0,-n_0}\colon X_{n_0,-n_0}\longrightarrow Y$, tels que :
+
+\VerdierSemanticAnchor{ch3d-2-3-3-inner-properties}
+\noindent $I)_{n_0,i}$ Les composants $(X_{n_0,i})^j$ soient des éléments de
+$M$, pour $-i\leq j\leq n_0$.
+
+\noindent $II)_{n_0,i}$ Les composants $(X_{n_0,i})^j$ soient des éléments
+de $M'$, pour tout entier $j$.
+
+\noindent $III)_{n_0,i}$ Le morphisme $v_{n_0,i}$ soit un morphisme
+élémentaire de hauteur $-i$ (2.1.3).
+
+\VerdierSemanticAnchor{ch3d-2-3-3-xn0qminus1-shape}
+Le complexe $X_{n_0,q-1}$ est alors de la forme :
+\[
+\resizebox{\textwidth}{!}{$\displaystyle
+\cdots\longrightarrow Y^{-q-1}\longrightarrow Z^{-q}
+\longrightarrow L^{-q+1}\longrightarrow L^{-q+2}\longrightarrow\cdots
+\longrightarrow L^{n_0-1}\longrightarrow L^{n_0}
+\longrightarrow Y^{n_0+1}\longrightarrow Y^{n_0+2}\longrightarrow\cdots,
+$}
+\]
+\endgroup

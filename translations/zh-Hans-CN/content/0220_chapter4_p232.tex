@@ -1,0 +1,87 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0232}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-1-7-double-complex-case}
+现在假设 $X$ 是双复形且 $m=1$。为证明 a)，只须证明：对
+$\mathcal{F}\ell_2(\widetilde{\mathbb Z})$ 中的每个 $(p,q,r)$，
+$\operatorname{comp}(\mathcal A)$ 中的如下图
+
+\VerdierSemanticAnchor{ch4d-4-1-7-6}
+\begin{equation}
+\resizebox{0.98\linewidth}{!}{$
+\displaystyle
+\int_2{}^{1}\!X(p,q)\longrightarrow
+\int_2{}^{1}\!X(p,r)\longrightarrow
+\int_2{}^{1}\!X(q,r)
+\xrightarrow{{}^{1}\!d(p,q,r)}
+\int_2T_1\bigl({}^{1}\!X(p,q)\bigr)
+=\left(\int_2{}^{1}\!X(p,q)\right)[1]
+$}
+\tag{4.1.7.6}
+\end{equation}
+
+在 $K(\mathcal A)$ 中定义一个特异三角（注意，在此情形，与平移交换的同构
+$\int_2T_1({}^{1}\!X(p,q))\xrightarrow{\sim}
+(\int_2{}^{1}\!X(p,q))[1]$ 是恒等态射）。a) 中的其他断言是显然的。
+为证明图 (4.1.7.6) 在 $K(\mathcal A)$ 中定义一个特异三角，由性质 (TRII)
+（第二章，1.1.1），只须证明如下图
+
+\VerdierSemanticAnchor{ch4d-4-1-7-7}
+\begin{equation}
+\resizebox{0.96\linewidth}{!}{$
+\displaystyle
+\left(\int_2{}^{1}\!X(q,r)\right)[-1]
+\xrightarrow{-{}^{1}\!d(p,q,r)[-1]}
+\int_2{}^{1}\!X(p,q)\longrightarrow
+\int_2{}^{1}\!X(p,r)\longrightarrow
+\int_2{}^{1}\!X(q,r)
+$}
+\tag{4.1.7.7}
+\end{equation}
+
+在 $K(\mathcal A)$ 中定义一个特异三角。立即可见，单复形
+$\int_2{}^{1}\!X(p,r)$ 等于态射 $-{}^{1}\!d(p,q,r)[-1]$ 的映射锥
+（第一章，3.1.2），并且 (4.1.7.7) 中出现的态射
+$\int_2{}^{1}\!X(p,q)\longrightarrow\int_2{}^{1}\!X(p,r)$ 与
+$\int_2{}^{1}\!X(p,r)\longrightarrow\int_2{}^{1}\!X(q,r)$，正是研究映射锥
+函子时引入的态射（第一章，3.2.2.2 与 3.2.2.4）。因此，图 (4.1.7.7)
+所定义的 $K(\mathcal A)$ 中的三角，按照定义（第一章，3.3.1），是特异三角。
+现在证明 b)。使用 (4.1.6.5) 中引入的记号，刚才已经证明，在图
+
+\VerdierSemanticAnchor{ch4d-4-1-7-8}
+\begin{equation}
+{}^{1}\!Y(q,r)[-1]
+\xrightarrow{-{}^{1}\!d(-\infty,q,r)}
+{}^{1}\!Y(q)\longrightarrow{}^{1}\!Y(r)\longrightarrow{}^{1}\!Y(q,r),
+\tag{4.1.7.8}
+\end{equation}
+
+中，复形 ${}^{1}\!Y(r)$ 是态射 $-{}^{1}\!d(-\infty,q,r)$ 的映射锥
+（在图 (4.1.7.7) 中置 $p=-\infty$）。此外，在 (4.1.1) 中，对象
+$\mathcal Y(q,r)$ 被定义为如下态射的映射锥：
+
+\VerdierSemanticAnchor{ch4d-4-1-7-9}
+\begin{equation}
+{}^{1}\!Y(q)\longrightarrow{}^{1}\!Y(r).
+\tag{4.1.7.9}
+\end{equation}
+
+于是在这种情形下（第一章，3.2.5.2）定义了一个同伦等价（从而定义了
+$K(\mathcal A)$ 中的同构）：
+
+\VerdierSemanticAnchor{ch4d-4-1-7-10}
+\begin{equation}
+J(q,r)\colon\mathcal Y(q,r)\longrightarrow{}^{1}\!Y(q,r).
+\tag{4.1.7.10}
+\end{equation}
+
+\VerdierSemanticAnchor{ch4d-4-1-7-proof-end}
+留给读者验证，这个同伦等价关于
+$\mathcal{F}\ell_1(\widetilde{\mathbb Z})$ 中的指标 $(q,r)$ 以及关于双复形
+$X$ 都是函子性的，并且定义了从谱对象
+$\bigl(\mathcal Y(p,q),\delta(p,q,r)\bigr)$ 到谱对象
+$\bigl({}^{1}\!Y(p,q),{}^{1}\!d(p,q,r)\bigr)$ 的典范同构。
+\endgroup

@@ -1,0 +1,96 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0143}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-3-1-continuation}%
+$\mathcal B\subset\mathcal A\subset\mathcal D$ を満たす任意の充満三角部分圏
+$\mathcal A$ に対し、$\mathcal B$ に対応する $\mathcal D$（それぞれ
+$\mathcal A$）の乗法的系を $S_{\mathcal D}(\mathcal B)$（それぞれ
+$S_{\mathcal A}(\mathcal B)$）と書く (2.1.7)。
+
+\VerdierSemanticAnchor{ch2-2-3-1-a-intersection}
+\par\noindent a) 次が成り立つ：
+$S_{\mathcal D}(\mathcal B)\cap\operatorname{Fl}(\mathcal A)
+=S_{\mathcal A}(\mathcal B)$。
+
+\VerdierSemanticAnchor{ch2-2-3-1-b-fully-faithful}
+\par\noindent b) 標準関手
+$\mathcal A/\mathcal B\longrightarrow\mathcal D/\mathcal B$ は充満忠実で、
+対象上単射である。この関手の像は $Q(\mathcal A)$ である。ここで
+$Q\colon\mathcal D\longrightarrow\mathcal D/\mathcal B$ は標準関手である。
+
+\VerdierSemanticAnchor{ch2-2-3-1-c-quotient-transitivity}
+\par\noindent c) 標準関手
+$\mathcal D/\mathcal A\longrightarrow
+(\mathcal D/\mathcal B)/(\mathcal A/\mathcal B)$ は圏の同型である。
+
+\VerdierSemanticAnchor{ch2-2-3-1-d-saturation}
+\par\noindent d) 圏 $\mathcal A$ が飽和ならば (2.1.6)、部分圏
+$Q(\mathcal A)$ は飽和である。
+
+\VerdierSemanticAnchor{ch2-2-3-1-inverse-image-setup}
+$\mathcal D/\mathcal B$ の任意の充満三角部分圏 $\mathcal C$ に対し、
+$Q(X)$ が圏 $\mathcal C$ のある対象と同型になるような $\mathcal D$ の
+対象 $X$ からなる $\mathcal D$ の充満部分圏を $Q^{-1}(\mathcal C)$ と書く。
+
+\VerdierSemanticAnchor{ch2-2-3-1-a-bis}
+\par\noindent a)$^{\mathrm{bis}}$ 圏 $Q^{-1}(\mathcal C)$ は
+$\mathcal D$ の厳密充満三角部分圏である。
+
+\VerdierSemanticAnchor{ch2-2-3-1-b-bis}
+\par\noindent b)$^{\mathrm{bis}}$ 乗法的系
+$S_{\mathcal D}(Q^{-1}(\mathcal C))$ は、$Q$ による像が
+$S_{\mathcal D/\mathcal B}(\mathcal C)$ の射となる $\mathcal D$ の射から
+なる。
+
+\VerdierSemanticAnchor{ch2-2-3-1-c-bis}
+\par\noindent c)$^{\mathrm{bis}}$ 部分圏 $Q^{-1}(\mathcal C)$ が飽和である
+ための必要十分条件は、部分圏 $\mathcal C$ が飽和であることである。
+
+\VerdierSemanticAnchor{ch2-2-3-1-d-bis}
+\par\noindent d)$^{\mathrm{bis}}$ 写像
+$\mathcal A\longmapsto Q(\mathcal A)$ は、包含関係で順序づけた、
+$\widehat{\mathcal B}$（関手 $Q$ の核）を含む $\mathcal D$ の厳密充満
+三角部分圏の集合から、包含関係で順序づけた $\mathcal D/\mathcal B$ の
+厳密充満三角部分圏の集合への順序集合の同型である。逆写像は
+$\mathcal C\longmapsto Q^{-1}(\mathcal C)$ である。
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-ab}
+第一の主張は明らかである。第二の主張は、圏 $\mathcal A/\mathcal B$ と
+$\mathcal D/\mathcal B$ における射の記述 (2.2.1) から直ちに従う。
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-c}
+c) を示すには、商圏の普遍性 (2.2.11) を参照すればよい。
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-d}
+d) を示そう。$\mathcal A$ をその厳密充満閉包で置き換えても
+$Q(\mathcal A)$ は同値の範囲でしか変わらないので、$\mathcal A$ は厳密充満
+であると仮定してよい。このとき関手
+$\mathcal D\longrightarrow\mathcal D/\mathcal A$ の核は圏 $\mathcal A$
+である (2.2.11)。この関手は
+$\mathcal D\longrightarrow\mathcal D/\mathcal B
+\longrightarrow\mathcal D/\mathcal A$ と分解する。したがって標準関手
+$\mathcal D/\mathcal B\longrightarrow\mathcal D/\mathcal A$ の核は
+$Q(\mathcal A)$ である。ゆえに $Q(\mathcal A)$ は飽和である (2.1.16)。
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-a-bis-b-bis}
+主張 a)$^{\mathrm{bis}}$ は明らかであり、主張 b)$^{\mathrm{bis}}$ も同様で
+ある。
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-c-bis-forward}
+$\mathcal C$ が飽和であると仮定する。さらに $\mathcal C$ は厳密充満で
+あると仮定してよい。実際、$\widehat{\mathcal C}$ を $\mathcal C$ の厳密充満
+閉包とすると、圏 $\widehat{\mathcal C}$ は厳密充満かつ飽和であり、
+$Q^{-1}(\widehat{\mathcal C})=Q^{-1}(\mathcal C)$ である。このとき圏
+$\mathcal C$ はある完全関手の核である (2.2.11)。したがって
+$Q^{-1}(\mathcal C)$ はある完全関手の核であり、ゆえに飽和である
+(2.1.16)。
+
+\VerdierSemanticAnchor{ch2-2-3-1-p144-boundary}
+$Q^{-1}(\mathcal C)$ が
+\endgroup

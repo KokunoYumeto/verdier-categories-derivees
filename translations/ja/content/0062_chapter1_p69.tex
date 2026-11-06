@@ -1,0 +1,75 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0069}%
+\VerdierSemanticAnchor{ch1-2-2-2-continuation}%
+$C$ における $m$-重複複体をなす。
+
+\VerdierSemanticAnchor{ch1-2-2-2-morphism}
+次に $f\colon Y\to Y'$ を $C$ における $\varphi$-総和可能な
+$n$-重複複体の射とする。次のようにおく：
+
+\VerdierSemanticAnchor{ch1-2-2-2-eq6}
+\begin{equation}
+  \left(\int_\varphi f\right)^\tau
+  =\bigoplus_{\varphi(\sigma)=\tau}f^\sigma\colon
+  \left(\int_\varphi Y\right)^\tau
+  \longrightarrow
+  \left(\int_\varphi Y'\right)^\tau.
+  \tag{2.2.2.6}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-2-2-functoriality}
+$\left(\int_\varphi f\right)^\tau$ が $\int_\varphi Y$ と
+$\int_\varphi Y'$ の微分と可換することは明らかである。したがってこの族は
+$m$-重複複体の射
+$\int_\varphi f\colon\int_\varphi Y\to\int_\varphi Y'$ を定める。また
+$\int_\varphi fg=\int_\varphi f\,\int_\varphi g$ および
+$\int_\varphi\operatorname{id}_Y=\operatorname{id}_{\int_\varphi Y}$ は
+明らかである。ゆえに $\int_\varphi$ は $\varphi$-総和可能な
+$n$-重複複体の圏から $m$-重複複体の圏への加法関手である。
+
+\VerdierSemanticAnchor{ch1-2-2-3}
+\noindent\textbf{2.2.3.}\quad
+$\varphi\colon[n]\to[m]$ を写像、$\tau\in\mathbb Z[m]$、$i\in[m]$ と
+する。集合 $E_1$（それぞれ $E_2$）を
+
+\VerdierSemanticAnchor{ch1-2-2-3-fibers}
+\[
+  \begin{aligned}
+    E_1&=\{\sigma_1\in\mathbb Z[n]\mid\varphi(\sigma_1)=\tau\},\\
+    \text{（それぞれ }E_2
+      &=\{\sigma_2\in\mathbb Z[n]\mid
+          \varphi(\sigma_2)=\tau+e_i\}\text{）}
+  \end{aligned}
+\]
+とする。最後に $Y$ を $C$ における $n$-重複複体とし、
+$\sigma_1\in E_1$、$\sigma_2\in E_2$ に対して
+
+\VerdierSemanticAnchor{ch1-2-2-3-eq1}
+\begin{equation}
+  u_{\sigma_2,\sigma_1}(Y)
+  =\begin{cases}
+    \varepsilon(\tau,i)\varepsilon(\sigma_1,j)d_Y^{\sigma_1,j},
+      &\text{もし }\sigma_2-\sigma_1=e_j,\\
+    0,&\text{それ以外},
+  \end{cases}
+  \tag{2.2.3.1}
+\end{equation}
+とおく。これにより $E_2\times E_1$ 型の行列
+
+\VerdierSemanticAnchor{ch1-2-2-3-eq2}
+\begin{equation}
+  M(\tau,i,Y)
+  =\bigl(u_{\sigma_2,\sigma_1}(Y)\bigr)_{
+    \sigma_2\in E_2,\,\sigma_1\in E_1}
+  \tag{2.2.3.2}
+\end{equation}
+を得る。
+
+\VerdierSemanticAnchor{ch1-2-2-3-matrix-identification}
+$Y$ が $\varphi$-総和可能ならば、これは射
+$d_{\int_\varphi Y}^{\tau,i}$ の行列である。
+
+\VerdierSemanticAnchor{ch1-2-2-3-extensions}
+一般に、この行列は各行および各列に有限個しか非零成分をもたない。したがって
+$C$ において可算積と直和が表現可能ならば、関手 $\int_\varphi$ を任意の
+複体へ拡張する方法は先験的に少なくとも二つある：

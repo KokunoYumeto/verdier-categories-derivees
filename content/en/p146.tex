@@ -1,0 +1,100 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0146}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-3-3-f}
+\noindent f) An object $Z$ of $\mathcal D$ belongs to
+$Q^{-1}(\operatorname{Lib}_R(Q))$ if and only if there exist an object $Y$
+free on the right and a morphism $s\colon Z\longrightarrow Y$, where $s$
+belongs to $\widehat{S_{\mathcal D}(\mathcal B)}$, the saturation of the
+system $S_{\mathcal D}(\mathcal B)$ (2.2.4, (c)).
+
+\VerdierSemanticAnchor{ch2-2-3-3-g}
+\par\noindent g) The inclusion functor
+$L_R(Q)\subset Q^{-1}(\operatorname{Lib}_R(Q))$ admits a left adjoint
+\[
+  \mathcal R\colon Q^{-1}(\operatorname{Lib}_R(Q))\longrightarrow L_R(Q).
+\]
+
+\VerdierSemanticAnchor{ch2-2-3-3-adjunction-diagram}
+\begin{center}
+\begin{tikzcd}[column sep=3.2em,row sep=3.1em]
+L_R(Q)
+  \arrow[r,shift left=.7ex]
+  \arrow[dr,"{Q|_{L_R(Q)}}"']
+& Q^{-1}(\operatorname{Lib}_R(Q))
+  \arrow[l,dashed,bend right=28,"{\mathcal R}"']
+  \arrow[r,hook]
+  \arrow[d,"{Q_1}"]
+& \mathcal D \arrow[d,"Q"] \\
+& \operatorname{Lib}_R(Q)
+  \arrow[ul,dashed,bend left=10,"{\Psi}"']
+  \arrow[r,hook]
+& \mathcal D/\mathcal B
+\end{tikzcd}
+\end{center}
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-3-3-adjunction-explanation}
+Let $\Psi\colon\operatorname{Lib}_R(Q)\longrightarrow L_R(Q)$ be a
+quasi-inverse to $Q|_{L_R(Q)}$ (cf. c) and e)). We may take
+$\mathcal R=\Psi Q_1$, where
+$Q_1\colon Q^{-1}(\operatorname{Lib}_R(Q))\longrightarrow
+\operatorname{Lib}_R(Q)$ denotes the functor induced by $Q$. The functor
+$\Psi$ is right adjoint to the functor $Q_1$.
+
+\VerdierSemanticAnchor{ch2-2-3-4}
+\medskip
+\noindent\textbf{2.3.4. Proof of Proposition 2.3.3:}\quad
+\VerdierSemanticAnchor{ch2-2-3-4-a-proof}
+Let us prove a). First, if $Y$ is $Q$-free on the right, the functor
+$X\longmapsto\operatorname{Hom}_{\mathcal D}(X,Y)$ is isomorphic to the
+functor
+$X\longmapsto\operatorname{Hom}_{\mathcal D/\mathcal B}(Q(X),Z)$, for a
+suitable object $Z$ of $\mathcal D/\mathcal B$. Consequently, the functor
+$X\longmapsto\operatorname{Hom}_{\mathcal D}(X,Y)$ sends the morphisms in
+$S_{\mathcal D}(\mathcal B)$ to isomorphisms. This proves i)
+$\Rightarrow$ ii). The implication ii) $\Rightarrow$ iii) follows from the
+fact that the morphism $B\longrightarrow0$ belongs to
+$S_{\mathcal D}(\mathcal B)$. The implication iii) $\Rightarrow$ iv)
+follows from the definition of $S_{\mathcal D}(\mathcal B)$ and (1.2.6).
+The implication iv) $\Rightarrow$ v) follows from the isomorphism (2.2.4):
+
+\VerdierSemanticAnchor{ch2-2-3-4-colimit-isomorphism}
+\[
+  \operatorname{Hom}_{\mathcal D/\mathcal B}(Q(X),Q(Y))
+  \xrightarrow{\sim}
+  \varinjlim_{Y\backslash S_{\mathcal D}(\mathcal B)}
+  \operatorname{Hom}_{\mathcal D}(X,\mathord\cdot)\, .
+\]
+
+\VerdierSemanticAnchor{ch2-2-3-4-a-proof-complete}
+Finally, the implication v) $\Rightarrow$ i) is evident: $Y$ is free on
+the right over $Q(Y)$.
+
+\VerdierSemanticAnchor{ch2-2-3-4-b-c-e-proof}
+Assertion b) follows from a), iii). Assertion c) follows from a), v). It
+also follows from a), v) that the objects of $\mathcal D/\mathcal B$ which
+are liberable on the right are precisely the objects of
+$\mathcal D/\mathcal B$ isomorphic in $\mathcal D/\mathcal B$ to images
+under $Q$ of objects that are $Q$-free on the right. The freedom arrows are
+isomorphisms. This proves e). It is then clear that
+$\operatorname{Lib}_R(Q)$ is a strictly full triangulated subcategory.
+
+\VerdierSemanticAnchor{ch2-2-3-4-d-proof}
+Let $Z=Z_1\oplus Z_2$ be an object of $\operatorname{Lib}_R(Q)$. There is
+therefore an object $Y$ that is $Q$-free on the right and an isomorphism
+$Q(Y)\xrightarrow{\sim}Z_1\oplus Z_2$. The functor
+$X\longmapsto\operatorname{Hom}_{\mathcal D}(X,Y)$ therefore admits a
+projector, and hence the decomposition of $Z$ as a direct sum defines a
+projector on $Y$. The factors of $Z$ will belong to
+$\operatorname{Lib}_R(Q)$ if and only if this projector is decomposable,
+which is the case when countable sums or products are representable in
+$\mathcal D$ (1.2.9).
+\endgroup

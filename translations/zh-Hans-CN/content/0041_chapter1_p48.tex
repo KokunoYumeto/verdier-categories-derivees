@@ -1,0 +1,75 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0048}%
+\VerdierSemanticAnchor{ch1-1-4-4}
+\noindent\textbf{定义 1.4.4.}\quad
+设 $(\mathcal C,G,T,c)$ 与 $(\mathcal C',G,T',c')$ 为两个 $G$-范畴，
+其中 $\mathcal C'$ 是加性范畴。设
+$\alpha\in Z^2(G,\mathbb Z/2\mathbb Z)$ 为一个正规化非齐次余循环。
+称由一个函子
+
+\VerdierSemanticAnchor{ch1-1-4-4-functor}
+\[
+  F\colon\mathcal C\longrightarrow\mathcal C'
+\]
+以及函子同构
+
+\VerdierSemanticAnchor{ch1-1-4-4-twisting-data}
+\[
+  p(\sigma)\colon FT(\sigma)\longrightarrow T'(\sigma)F,
+  \qquad \sigma\in G,
+\]
+组成的对象 $(F,p)$ 为一个\emph{由余循环 $\alpha$ 扭曲的 $G$-函子}，条件是
+对每一对 $\sigma_1,\sigma_2\in G$，图 (1.4.3.11) 都是
+$\alpha(\sigma_1,\sigma_2)$-交换的。
+
+\VerdierSemanticAnchor{ch1-1-4-4-correspondence}
+因此，选择扩张 (1.4.3.4) 的一个正规化截面 $s$，便在下列两类对象之间建立
+双射：一类是在 $F$ 上诱导符号群典范作用的 $H$-函子
+\[
+  (F,m)\colon(\mathcal C,H,T_f,c_f)
+  \longrightarrow(\mathcal C',H,T'_f,c'_f),
+\]
+另一类是由截面 $s$ 所定义的余循环 $\alpha_s$ 扭曲的 $G$-函子。
+
+\VerdierSemanticAnchor{ch1-1-4-5}
+\noindent\textbf{1.4.5.}\quad
+沿用 (1.4.3) 的记号。设
+
+\VerdierSemanticAnchor{ch1-1-4-5-eq1}
+\begin{equation}
+  \begin{gathered}
+    (F_1,m_1),(F_2,m_2)\colon
+    (\mathcal C,H,T_f,c_f)\\[-0.2em]
+    \longrightarrow(\mathcal C',H,T'_f,c'_f)
+  \end{gathered}
+  \tag{1.4.5.1}
+\end{equation}
+为两个诱导符号群典范作用的 $H$-函子，并设
+
+\VerdierSemanticAnchor{ch1-1-4-5-eq2}
+\begin{equation}
+  u\colon(F_1,m_1)\longrightarrow(F_2,m_2)
+  \tag{1.4.5.2}
+\end{equation}
+为一个与 $H$ 的作用相容的函子态射。
+
+\VerdierSemanticAnchor{ch1-1-4-5-sections}
+设 $s_1,s_2$ 为正合列 (1.4.3.4) 中映射 $f$ 的两个正规化截面
+（$s_1(e)=s_2(e)=e$），并设
+$\alpha_{s_1},\alpha_{s_2}\in Z^2(G,\mathbb Z/2\mathbb Z)$ 为相应的
+正规化余循环。令 $\beta\colon G\to\mathbb Z/2\mathbb Z$ 为映射
+
+\VerdierSemanticAnchor{ch1-1-4-5-eq3}
+\begin{equation}
+  \beta(\sigma)=s_2(\sigma)s_1(\sigma)^{-1},
+  \qquad \sigma\in G.
+  \tag{1.4.5.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-5-induced}
+由 (1.4.3)，函子 $(F_1,m_1)$ 与 $(F_2,m_2)$ 分别定义由余循环
+$\alpha_{s_1}$ 与 $\alpha_{s_2}$ 扭曲的 $G$-函子 $(F_1,p_1)$ 与
+$(F_2,p_2)$。立即可验证，底层函子之间的态射 $u\colon F_1\to F_2$ 具有
+下述性质：
+
+\VerdierSemanticAnchor{ch1-1-4-5-property}

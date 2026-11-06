@@ -1,0 +1,95 @@
+\VerdierPhysicalPageAnchor{0044}%
+\VerdierSemanticAnchor{ch1-1-4}
+\subsection{Changement de groupes}
+
+\VerdierSemanticAnchor{ch1-1-4-1}
+\noindent\textbf{1.4.1.}\quad
+Soit $f\colon H\to G$ un homomorphisme de groupes. On associe à toute
+$G$-catégorie $(\mathcal C,G,T,c)$ une $H$-catégorie
+$(\mathcal C,H,T_f,c_f)$ en faisant opérer $H$ sur $\mathcal C$ par
+l'intermédiaire de $f$, \emph{i.e.} en posant :
+
+\VerdierSemanticAnchor{ch1-1-4-1-eq1}
+\begin{equation}
+  \begin{aligned}
+    T_f(h)&=T\bigl(f(h)\bigr),
+      & h&\in H,\\
+    c_f(h,h')&=c\bigl(f(h),f(h')\bigr),
+      & h,h'&\in H.
+  \end{aligned}
+  \tag{1.4.1.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-1-gfunctor}
+Étant donné de même un $G$-foncteur :
+\[
+  (F,m)\colon(\mathcal C,G,T,c)
+  \longrightarrow(\mathcal C',G,T',c'),
+\]
+on lui associe un $H$-foncteur $(F,m_f)$ entre les $H$-catégories
+correspondantes en posant :
+
+\VerdierSemanticAnchor{ch1-1-4-1-eq2}
+\begin{equation}
+  m_f(h)=m\bigl(f(h)\bigr).
+  \tag{1.4.1.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-1-morphisms}
+Enfin, un morphisme de $G$-foncteurs compatible avec les opérations de
+$G$ est compatible avec les opérateurs de $H$.
+
+\VerdierSemanticAnchor{ch1-1-4-1-eq3}
+Ce qui précède définit visiblement un foncteur, qu'on appelle le
+\emph{foncteur de changement de groupes} :
+\begin{equation}
+  f^*\colon G\text{-}\operatorname{Cat}
+  \longrightarrow H\text{-}\operatorname{Cat}.
+  \tag{1.4.1.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-1-eq4}
+Plus précisément, soient $\mathcal C$ et $\mathcal C'$ deux
+$G$-catégories ; le foncteur $f^*$ définit une application :
+\begin{equation}
+  \begin{aligned}
+    f^*(\mathcal C,\mathcal C')\colon\quad
+      &\operatorname{Hom}_{G\text{-}\operatorname{Cat}}
+        (\mathcal C,\mathcal C')\\
+      &\longrightarrow
+        \operatorname{Hom}_{H\text{-}\operatorname{Cat}}
+        \bigl(f^*(\mathcal C),f^*(\mathcal C')\bigr).
+  \end{aligned}
+  \tag{1.4.1.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-1-homcategories}
+Mais les ensembles
+$\operatorname{Hom}_{G\text{-}\operatorname{Cat}}
+(\mathcal C,\mathcal C')$ et
+$\operatorname{Hom}_{H\text{-}\operatorname{Cat}}
+\bigl(f^*(\mathcal C),f^*(\mathcal C')\bigr)$ sont des ensembles
+d'objets de catégories
+$\mathcal H\!om_{G\text{-}\operatorname{Cat}}
+(\mathcal C,\mathcal C')$ et
+$\mathcal H\!om_{H\text{-}\operatorname{Cat}}
+\bigl(f^*(\mathcal C),f^*(\mathcal C')\bigr)$ dont les morphismes sont
+les morphismes de foncteurs, compatibles avec les opérations des
+groupes, et l'application $f^*(\mathcal C,\mathcal C')$ s'étend
+naturellement en un foncteur :
+
+\VerdierSemanticAnchor{ch1-1-4-1-eq5}
+\begin{equation}
+  \begin{aligned}
+    f^*(\mathcal C,\mathcal C')\colon\quad
+      &\mathcal H\!om_{G\text{-}\operatorname{Cat}}
+        (\mathcal C,\mathcal C')\\
+      &\longrightarrow
+        \mathcal H\!om_{H\text{-}\operatorname{Cat}}
+        \bigl(f^*(\mathcal C),f^*(\mathcal C')\bigr).
+  \end{aligned}
+  \tag{1.4.1.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-1-faithful}
+Ce foncteur est fidèle.

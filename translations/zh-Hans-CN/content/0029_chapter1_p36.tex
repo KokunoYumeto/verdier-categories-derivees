@@ -1,0 +1,88 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0036}%
+\VerdierSemanticAnchor{ch1-1-1-2-degree-e-morphism-cont}
+其次数为 $e$，并满足通常的相容性质。
+
+\VerdierSemanticAnchor{ch1-1-1-3}
+\noindent\textbf{定义 1.1.3.}\quad
+若一个 $G$-分次范畴的纤维范畴 $\mathcal C_e$ 是加性的 [20]，就称该
+$G$-分次范畴是\emph{加性的}。
+\VerdierSemanticAnchor{ch1-1-1-3-additive-functor}
+加性分次范畴之间的一个分次函子，若其在纤维上的限制是加性函子，就称它是
+\emph{加性的}。
+
+\VerdierSemanticAnchor{ch1-1-1-3-cadd}
+设 $\mathcal C$ 为一个加性 $G$-分次范畴。当 $G\neq\{e\}$ 时，忘掉纤维化结构
+后的范畴 $\mathcal C$ \emph{并不是加性范畴}。不过，可以如下地给 $\mathcal C$
+关联一个加性范畴：对 $\mathcal C$ 的每一对对象 $X,Y$ 和 $G$ 的每个元素 $g$，
+集合 $\operatorname{Hom}_{\mathcal C}^{g}(X,Y)$ 自然带有阿贝尔群结构。定义一个
+新范畴 $\mathcal C_{\mathrm{add}}$：以 $\mathcal C$ 的对象作为其对象，并把对象
+$X$ 与 $Y$ 之间的态射集定义为：
+
+\VerdierSemanticAnchor{ch1-1-1-3-eq1}
+\begingroup
+\makeatletter
+\tagsleft@true
+\let\veqno\@@leqno
+\makeatother
+\begin{equation}
+  \operatorname{Hom}_{\mathcal C_{\mathrm{add}}}(X,Y)
+  =\bigoplus_{g\in G}\operatorname{Hom}_{\mathcal C}^{g}(X,Y).
+  \tag{1.1.3.1}
+\end{equation}
+\endgroup
+
+\VerdierSemanticAnchor{ch1-1-1-3-cadd-composition}
+$\mathcal C_{\mathrm{add}}$ 中态射的复合以显然的方式定义；可以验证
+$\mathcal C_{\mathrm{add}}$ 是一个加性范畴。
+\VerdierSemanticAnchor{ch1-1-1-3-fadd}
+同样，给定两个加性分次范畴之间的一个加性笛卡尔函子
+$F\colon\mathcal C\to\mathcal C'$，同一方法构造出一个加性函子
+$F_{\mathrm{add}}\colon\mathcal C_{\mathrm{add}}\to
+\mathcal C'_{\mathrm{add}}$。我们将从不使用这一构造。
+
+\VerdierSemanticAnchor{ch1-1-1-3-restrictive}
+请注意，这里采用的分次范畴定义比自然想到的定义更为严格。除了显然的结构
+(1.1.2.1) 与 (1.1.2.2) 之外，我们还要求性质 (1.1.2.3)。
+
+\VerdierSemanticAnchor{ch1-1-2}
+\subsection{群在范畴上的同构意义下作用}
+
+\VerdierSemanticAnchor{ch1-1-2-1}
+\noindent\textbf{1.2.1.}\quad
+设 $\mathcal C$ 为一个 $G$-分次范畴。为纤维化范畴
+$\mathcal C\xrightarrow{\deg}\mathcal G$ 选取一个正规劈分 [18]，也就是说，
+对每个 $g\in G$ 选取一个基变换函子：
+
+\VerdierSemanticAnchor{ch1-1-2-1-eq1}
+\begingroup
+\makeatletter
+\tagsleft@true
+\let\veqno\@@leqno
+\makeatother
+\begin{equation}
+  \begin{cases}
+    T(g)\colon\mathcal C_e\longrightarrow\mathcal C_e,\\[0.4em]
+    T(e)=\text{$\mathcal C_e$ 上的恒等函子。}
+  \end{cases}
+  \tag{1.2.1.1}
+\end{equation}
+\endgroup
+
+\VerdierSemanticAnchor{ch1-1-2-1-transition}
+对 $G$ 中每一对元素 $(g,h)$，都有 [18] 一个函子同构：
+
+\VerdierSemanticAnchor{ch1-1-2-1-eq2}
+\begingroup
+\makeatletter
+\tagsleft@true
+\let\veqno\@@leqno
+\makeatother
+\begin{equation}
+  \begin{cases}
+    c(h,g)\colon T(hg)\longrightarrow T(g)T(h),\\[0.4em]
+    c(g,e)=c(e,g)=\text{$T(g)$ 上的恒等同构}
+  \end{cases}
+  \tag{1.2.1.2}
+\end{equation}
+\endgroup

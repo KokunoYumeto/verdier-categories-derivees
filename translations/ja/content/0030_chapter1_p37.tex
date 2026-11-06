@@ -1,0 +1,77 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0037}%
+\VerdierSemanticAnchor{ch1-1-2-1-coherence}
+があり、$G$ の元の各三つ組 $(g,h,k)$ に対して関係式
+
+\VerdierSemanticAnchor{ch1-1-2-1-eq3}
+\begin{equation}
+  \bigl(T(g)\star c(k,h)\bigr)c(kh,g)
+  =\bigl(c(h,g)\star T(k)\bigr)c(k,hg).
+  \tag{1.2.1.3}
+\end{equation}
+が成り立つ。
+
+\VerdierSemanticAnchor{ch1-1-2-2}
+\noindent\textbf{定義 1.2.2.}\quad
+$G$ を群とする。$G^\circ$-\emph{圏}（$G^\circ$ は $G$ の反対群）とは、圏
+$\mathcal C_e$ と、(1.2.1.1), (1.2.1.2), (1.2.1.3) の性質を満たす関手族
+$T(g)$（$g\in G$）および関手の同型族 $c(h,g)$（$g,h\in G$）との組である。
+
+\VerdierSemanticAnchor{ch1-1-2-2-transition}
+したがって $G^\circ$-圏とは、群 $G^\circ$ の同型を除いて定まる作用を備えた圏
+$\mathcal C_e$ である。これを $(\mathcal C_e,G^\circ,T,c)$ と書き、同型
+$c(h,g)$ を\emph{遷移同型}という。
+
+\VerdierSemanticAnchor{ch1-1-2-2-strict}
+遷移同型が恒等同型であるとき（特に任意の $g,h\in G$ に対し
+$T(hg)=T(g)T(h)$ となる）、この $G^\circ$-圏を\emph{狭義}という。したがって
+このような対象は、圏 $\mathcal C_e$ の自己同型群における $G^\circ$ の表現に
+よって指定される。
+
+\VerdierSemanticAnchor{ch1-1-2-3}
+\noindent\textbf{1.2.3.}\quad
+いま $\mathcal C$ と $\mathcal C'$ を二つの $G$-次数付き圏、
+$F\colon\mathcal C\to\mathcal C'$ を次数付き関手とする。$\mathcal C$ と
+$\mathcal C'$ に正規化された切断系を選ぶ。この選択は関手の同型
+
+\VerdierSemanticAnchor{ch1-1-2-3-eq1}
+\begin{equation}
+  m(g)\colon F_eT(g)\longrightarrow T'(g)F_e,\qquad
+  g\in G,\qquad m(e)=\text{$F_e$ 上の恒等同型}
+  \tag{1.2.3.1}
+\end{equation}
+を定め、各 $g,h\in G$ に対して次の図式が可換となる：
+
+\VerdierSemanticAnchor{ch1-1-2-3-eq2}
+\begin{equation}
+\begin{tikzcd}[column sep=huge,row sep=large]
+F_eT(hg)
+  \arrow[r,"m(hg)"]
+  \arrow[d,"{F_e\star c(h,g)}",swap]
+&
+T^{\prime}(hg)F_e
+  \arrow[dd,"{c^{\prime}(h,g)\star F_e}"]
+\\
+F_eT(g)T(h)
+  \arrow[d,"m(g)\star T(h)",swap]
+&
+{}
+\\
+T^{\prime}(g)F_eT(h)
+  \arrow[r,"T^{\prime}(g)\star m(h)"]
+&
+T^{\prime}(g)T^{\prime}(h)F_e\mathpunct{.}
+\end{tikzcd}
+\tag{1.2.3.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-2-4}
+\noindent\textbf{定義 1.2.4.}\quad
+$(\mathcal C_e,G^\circ,T,c)$ と
+$(\mathcal C'_e,G^\circ,T',c')$ を二つの $G^\circ$-圏とする。
+$G^\circ$-\emph{関手}とは、関手
+
+\VerdierSemanticAnchor{ch1-1-2-4-fe}
+\[
+  F_e\colon\mathcal C_e\longrightarrow\mathcal C'_e
+\]

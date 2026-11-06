@@ -1,0 +1,83 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0074}%
+\VerdierSemanticAnchor{ch1-2-4-1-pi-opposite}
+(2.2.3) と (2.2.4) で定義された関手の反対関手である。同様に、次のように表す：
+
+\VerdierSemanticAnchor{ch1-2-4-1-eq4}
+\begin{equation}
+  \int_{\varphi,C^\circ}^{\Pi}\colon
+  \operatorname{comp}^{n}(C^\circ)
+  \longrightarrow
+  \operatorname{comp}^{m}(C^\circ),
+  \tag{2.4.1.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-1-pi-definition}
+これは (2.2.3) と (2.2.4) で定義された関手である。次の図式が可換であることは
+ただちに確かめられる：
+
+\VerdierSemanticAnchor{ch1-2-4-1-eq5}
+\begin{equation}
+  \resizebox{0.82\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=6.5em,row sep=5.2em]
+      \operatorname{comp}^{n}(C)^\circ
+        \arrow[r,"\iota_n"]
+        \arrow[d,"{\left(\int_{\varphi,C}^{\Sigma}\right)^\circ}"']
+        \& \operatorname{comp}^{n}(C^\circ)
+          \arrow[d,"{\int_{\varphi,C^\circ}^{\Pi}}"] \\
+      \operatorname{comp}^{m}(C)^\circ
+        \arrow[r,"\iota_m"]
+        \& \operatorname{comp}^{m}(C^\circ)
+    \end{tikzcd}$%
+  }
+  \tag{2.4.1.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-1-eq5-commutative}
+特に、$\varphi$ が唯一の写像
+$[n]\longrightarrow[1]$ であるとき、次の可換図式を得る：
+
+\VerdierSemanticAnchor{ch1-2-4-1-eq6}
+\begin{equation}
+  \resizebox{0.82\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=6.5em,row sep=5.2em]
+      \operatorname{comp}^{n}(C)^\circ
+        \arrow[r,"\iota_n"]
+        \arrow[d,"{\left(\int_{n,C}^{\Sigma}\right)^\circ}"']
+        \& \operatorname{comp}^{n}(C^\circ)
+          \arrow[d,"{\int_{n,C^\circ}^{\Pi}}"] \\
+      \operatorname{comp}(C)^\circ
+        \arrow[r,"\iota_1"]
+        \& \operatorname{comp}(C^\circ)
+    \end{tikzcd}$%
+  }
+  \tag{2.4.1.6}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-1-twisted-isomorphism}
+また、同型の組 $(\iota_1,\iota_n)$ が、捩れた
+$\mathbb Z[n]$-関手 $\left(\int_{n,C}^{\Sigma}\right)^\circ$ から捩れた
+$\mathbb Z[n]$-関手 $\int_{n,C^\circ}^{\Pi}$ への同型であることもただちに確かめられる
+（$\int_{n,C^\circ}^{\Pi}$ の次数付き構造は (2.3.4) で述べられ、
+$\left(\int_{n,C}^{\Sigma}\right)^\circ$ の次数付き構造は (2.3.4) と
+(1.4.8) で述べられる）。
+
+\VerdierSemanticAnchor{ch1-2-4-1-identification}
+以下、同型 $\iota_n$ により、圏
+$\operatorname{comp}^{n}(C)^\circ$ と
+$\operatorname{comp}^{n}(C^\circ)$、および関手
+$\left(\int_{\varphi,C}^{\Sigma}\right)^\circ$ と
+$\int_{\varphi,C^\circ}^{\Pi}$ をそれぞれ同一視する。
+
+\VerdierSemanticAnchor{ch1-2-4-2}
+\noindent\textbf{2.4.2.}\quad
+$C_i$（$i\in[n]$）を加法圏の族とし、
+$\prod_{i\in[n]}C_i$ をその積とする。
+$\prod_{i\in[n]}C_i$ の対象を $(X_1,X_2,\ldots,X_n)$ と表し、記号
+$(X_1,X_2,\ldots,f_i,\ldots,X_n)$ で次の射を表す：
+
+\VerdierSemanticAnchor{ch1-2-4-2-component-morphism}
+\begin{equation*}
+  (\operatorname{id}_{X_1},\operatorname{id}_{X_2},\ldots,
+  f_i,\ldots,\operatorname{id}_{X_n}).
+\end{equation*}

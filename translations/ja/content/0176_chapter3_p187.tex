@@ -1,0 +1,74 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0187}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-1-1-base-change}
+ここで $m\colon Z\longrightarrow X$ を複体の射とする。複体 $Z'$ は、
+$Z$ 上で $Z\xrightarrow{m}X$ に沿う基底変換によって得られる対象であり、次の図式の左側の縦射で与えられる：
+
+\VerdierSemanticAnchor{ch3d-2-1-1-base-change-square}
+\begin{center}
+\begin{tikzcd}[column sep=4.2em,row sep=2.6em]
+Z' \arrow[r] \arrow[d] & X(u,i) \arrow[d,"{p(u,i)}"] \\
+Z \arrow[r,"m"'] & X
+\end{tikzcd}
+\end{center}
+この射は、$p(w,i)\colon Z(w,i)\longrightarrow Z$ という形の複体の射と同型であり、
+ここで $w$ は適当な射である。
+
+\VerdierSemanticAnchor{ch3d-2-1-2}
+\medskip\noindent\textbf{補題 2.1.2.}\quad
+\textit{a) 射
+$H^j(p(u,i))\colon H^j(X(u,i))\longrightarrow H^j(X)$ は
+$j\neq i,i+1$ のとき同型である。}
+
+\noindent\textit{b) 次の完全列がある：}
+
+\VerdierSemanticAnchor{ch3d-2-1-2-exact-sequences}
+\[
+0\longrightarrow H^i(X(u,i))\longrightarrow H^i(X)
+\longrightarrow
+\frac{\operatorname{Ker}(d_X^i)+\operatorname{Im}(u)}
+     {\operatorname{Im}(d_X^{i-1})+\operatorname{Im}(u)}
+\longrightarrow0,
+\]
+\[
+0\longrightarrow
+\frac{\operatorname{Ker}(d_X^i)+\operatorname{Im}(u)}
+     {\operatorname{Im}(d_X^{i-1})+\operatorname{Im}(u)}
+\longrightarrow
+\frac{X^i}{\operatorname{Im}(d_X^{i-1})+\operatorname{Im}(u)}
+\longrightarrow
+\frac{X^i}{\operatorname{Ker}(d_X^i)+\operatorname{Im}(u)}
+\longrightarrow0,
+\]
+\[
+0\longrightarrow
+\frac{X^i}{\operatorname{Ker}(d_X^i)+\operatorname{Im}(u)}
+\longrightarrow H^{i+1}(X(u,i))\longrightarrow H^{i+1}(X)
+\longrightarrow0.
+\]
+
+\noindent\textit{c) $p(u,i)$ が擬同型であるための必要十分条件は}
+\[
+\operatorname{Im}(d_X^{i-1})+\operatorname{Im}(u)=X^i
+\]
+\textit{である。}
+\VerdierSemanticAnchor{ch3d-2-1-2-proof}
+図式追跡は読者に委ねる。
+
+\VerdierSemanticAnchor{ch3d-2-1-3}
+\medskip\noindent\textbf{定義 2.1.3.}\quad
+複体の射 $m\colon Z\longrightarrow X$ が\emph{高さ $i$ の初等射}であるとは、
+$\mathcal{F}\ell_1(\operatorname{comp}(\mathcal A))$ において、$p(u,i)$ 型の射と
+同型であり、ここで $u$ がエピ射であることをいう。
+
+\VerdierSemanticAnchor{ch3d-2-1-3-properties}
+したがって初等射は、とくに擬同型である（(2.1.2), c)）。初等射は
+$\operatorname{comp}(\mathcal A)$ のエピ射である。
+$\operatorname{comp}(\mathcal A)$ のエピ射が初等射であるための必要十分条件は、
+その核が高々二つの非零成分をもつ非輪状複体であることである。同じ高さの
+二つの初等射の合成は
+\endgroup

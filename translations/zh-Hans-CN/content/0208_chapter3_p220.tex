@@ -1,0 +1,68 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0220}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-3-4-b}
+\noindent\textit{b) 当范畴 $\mathcal C$ 为加法范畴时，从
+$\mathcal A^{\operatorname{Ext}}$ 到 $\mathcal C$ 的函子是预加法的，当且仅当
+与之相联系的函子列中的每个函子都是加法函子。}
+
+\VerdierSemanticAnchor{ch3d-3-3-4-proof}
+我们只证明 $\Phi$ 本质满。首先，必要时以等价范畴替换所涉及的范畴，可以
+假设范畴 $\mathcal A$ 只有一个零对象。立即可验证，此时范畴
+$\mathcal A^{\operatorname{Ext}}$ 也只有一个零对象。设
+$(F^n,\delta_F^n)$ 是一个相联系的函子列。注意，对每个整数 $n$，性质
+SFL II) 定义同构 $F^n(0)\longrightarrow F^{n+1}(0)$。因此，必要时以一个
+同构的函子列替换 $(F^n,\delta_F^n)$，可以假设对每个 $n$，都有
+$F^n(0)=F^{n+1}(0)$ 且 $\delta_F^n(0)=\operatorname{id}$。
+
+\VerdierSemanticAnchor{ch3d-3-3-4-object-definition}
+每个非零对象 $W$ 在范畴 $\mathcal A^{\operatorname{Ext}}$ 中均可唯一写成
+$X[n]$ 的形式，其中 $X$ 是 $\mathcal A$ 的对象。于是，对每个非零对象
+$W$ 在 $\mathcal A^{\operatorname{Ext}}$ 中，置
+$F(W)=F^n(X)$，并置 $F(0)=F^0(0)$。这样便定义了一个从
+$\operatorname{Ob}(\mathcal A^{\operatorname{Ext}})$ 到
+$\operatorname{Ob}(\mathcal C)$ 的映射。现在将把它延拓为函子
+$F\colon\mathcal A^{\operatorname{Ext}}\longrightarrow\mathcal C$，使其诱导
+相联系的函子列 $(F^n,\delta_F^n)$。设
+$m\colon W\longrightarrow W'$ 是 $\mathcal A^{\operatorname{Ext}}$ 的态射。
+先考察下列情形：
+
+\VerdierSemanticAnchor{ch3d-3-3-4-morphism-cases-zero}
+\noindent 1) $W=W'=0$。置 $F(m)=\operatorname{id}_{F^0(0)}$。
+
+\noindent 2) $W=0$ 且 $W'=X[p]$，$X\neq0$。置
+$F(m)=F^p(0\longrightarrow X)$。
+
+\noindent 3) $W=Y[p]$，$Y\neq0$，且 $W'=0$。置
+$F(m)=F^p(Y\longrightarrow0)$。
+
+\VerdierSemanticAnchor{ch3d-3-3-4-degree}
+现在假设 $W$ 与 $W'$ 均不同于零对象。它们可唯一写成
+$W=X[p]$、$W'=Y[q]$ 的形式，其中 $X$ 与 $Y$ 是 $\mathcal A$ 的对象。
+这时整数 $q-p$ 称为 $m$ 的\emph{次数}。
+
+\VerdierSemanticAnchor{ch3d-3-3-4-morphism-cases-degree}
+\noindent 4) $m<0$，即该态射的次数小于 0。置
+$F(m)=F^q(0\longrightarrow Y)\,F^p(X\longrightarrow0)$。
+
+\noindent 5) $m=0$，即该态射的次数为 0。这时态射 $m$ 可唯一写成 $f[p]$ 的形式，
+其中 $f$ 是 $\mathcal A$ 的态射。置 $F(m)=F^p(f)$。
+
+\noindent 6) $m=1$，即该态射的次数为 1。存在 $\mathcal A$ 中的正合列
+\[
+S=0\longrightarrow Y\longrightarrow Z\longrightarrow X\longrightarrow0
+\]
+使得 $m=\delta^1(S)[p]$ (3.3.1)。置 $F(m)=\delta_F^p(S)$。如此定义的
+态射 $F(m)$ 不依赖于所选正合列，这由 (3.2.2) 与性质 SFL I) 得到。
+
+\VerdierSemanticAnchor{ch3d-3-3-4-fl-le-n}
+以 $\mathcal{F}\ell_{\leq n}(\mathcal A^{\operatorname{Ext}})$ 表示所有满足
+下列条件的态射 $m\colon W\longrightarrow W'$ 所成的集合：$W$ 或 $W'$ 是
+零对象，或者 $m$ 的次数小于或等于 $n$。函子
+$F\colon\mathcal A^{\operatorname{Ext}}\longrightarrow\mathcal C$ 诱导相联系
+函子列 $(F^n,\delta_F^n)$，其存在性
+由下面的引理与命题得到：
+\endgroup

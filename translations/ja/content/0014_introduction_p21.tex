@@ -1,0 +1,56 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0021}
+に対し、層の複体の射
+
+\VerdierSemanticAnchor{intro-1-flat-quasi-isomorphism}
+\[
+F\otimes\rho:
+F\otimes_{\mathbb Z}L_1^{\bullet}
+\longrightarrow
+F\otimes_{\mathbb Z}L_2^{\bullet}
+\qquad\text{,}
+\]
+は\emph{擬同型}である。
+
+\VerdierSemanticAnchor{intro-1-coherent-tensor-system}
+したがって、層の複体 $F\otimes_{\mathbb Z}L^{\bullet}$ と擬同型からなる
+整合的な系が得られ、それは正確に定式化できる意味で層 $G$ に関手的に
+依存する。いずれにせよ、複体 $F\otimes_{\mathbb Z}L^{\bullet}$
+（$L^{\bullet}$ は $G$ の平坦分解）のコホモロジー対象は一意な同型を
+除いて定まり、$G$ に関手的に依存する。こうして得られる関手は所望の
+性質をもち、「$F$ とのテンソル積」関手の左導来関手と呼ぶにふさわしい。
+
+\VerdierSemanticAnchor{intro-1-tor-sheaves}
+もちろん、Tor 層 $\operatorname{Tor}^{\mathbb Z}(F,G)$ を計算するには、
+前層 $U\longmapsto\operatorname{Tor}^{\mathbb Z}(F(U),G(U))$
+（$U$ は $E$ の開集合）に付随する層をとればよい。しかし本稿の方法は、
+擬同型を除いて良定義な層の複体を与え、そのコホモロジー対象は
+$\operatorname{Tor}^{\mathbb Z}(F,G)$ と $F\otimes_{\mathbb Z}G$ である。
+後に見るように、この付加的な情報はこれらの関手を扱ううえで本質的である。
+この方法はただちに環付きトポスの場合へ拡張でき、その枠組みで「層の
+テンソル積」関手の左導来関手を定義できる。
+
+\VerdierSemanticAnchor{intro-2}
+\noindent\textbf{2.}\quad
+二つの関手の合成の導来関手、結合性、および Künneth 型の関係を調べると、
+引数が考察中の圏の単なる対象ではなく、その圏の対象の複体である場合へ、
+導来関手の形式体系を拡張する必要が生じる。この拡張は [1] で行われた。
+その要点を振り返ろう。$F:\mathcal A\to\mathcal B$ を二つのアーベル圏の
+間の加法的関手とし、$\mathcal A$ は十分な入射対象をもつとする。
+$Y^{\bullet}$ を $\mathcal A$ の対象の複体とする。前掲書では複体
+$Y^{\bullet}$ の「入射分解」が定義されており、これを $Y^{\bullet}$ の
+\emph{Cartan--Eilenberg 入射分解}と呼ぶ。
+
+\VerdierSemanticAnchor{intro-2-ce-resolution}
+定義により、このような分解は $\mathcal A$ の入射対象を成分にもつ双複体
+$I^{\bullet\bullet}$ であって、増大写像
+
+\VerdierSemanticAnchor{intro-2-ce-augmentation}
+\[
+Y^{\bullet}\xrightarrow{\varepsilon}I^{\bullet\bullet}
+\]
+を備え、これが複体 $Y^{\bullet}$ の各成分、境界、およびコホモロジー
+対象の通常の意味での入射分解を誘導するものである。これらの分解は双複体の
+ホモトピーを除いて一意である。次に双複体 $F(I^{\bullet\bullet})$ を作り、
+その付随単複体 $\int F(I^{\bullet\bullet})$ を作る。この単複体もまた、
+$Y^{\bullet}$ によってホモトピーを除いて定まる。

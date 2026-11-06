@@ -1,0 +1,58 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0159}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch3-3-2-5-2}
+gives, on taking the images of the horizontal morphisms, the diagram
+\[
+V\xrightarrow{\alpha}V'\xrightarrow{\gamma}\operatorname{Im}(u'f').
+\tag{3.2.5.2}
+\]
+\VerdierSemanticAnchor{ch3-3-2-5-cokernel-proof}
+First, $\gamma$ is an epimorphism: indeed, $V'$ and
+$\operatorname{Im}(u'f')$ are quotients of $h(X')$. Next,
+$\gamma\alpha=0$: the canonical morphism $h(X)\to V$ is an epimorphism, the
+canonical morphism $\operatorname{Im}(u'f')\to h(Z')$ is a monomorphism, and
+$h(u'g'f)$ is the image under $h$ of the composite of two consecutive
+morphisms of a distinguished triangle; it is therefore zero (1.2.2). It
+remains to show that (3.2.5.2) is exact at $V'$. For this purpose, by the
+properties of exact sequences in $\mathcal D^\wedge$, it suffices to show
+that, for every object $W$ of $\mathcal D$, the following sequence of
+abelian groups
+\[
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),V)\longrightarrow
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),V')\longrightarrow
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),\operatorname{Im}(u'f'))
+\]
+is exact. Let $\sigma\colon h(W)\to V'$. Composing with the canonical
+morphism $V'\to h(Y')$ gives a morphism from $h(W)$ to $h(Y')$, that is, a
+morphism $m\colon W\to Y'$. We have $\gamma\sigma=0$ if and only if
+$u'm=0$, since $\operatorname{Im}(u'f')$ is a subobject of $h(Z')$. By
+(1.2.1), there is therefore a morphism $n\colon W\to X$ such that $g'fn=m$.
+Composing with the canonical morphism $h(X)\to V$ gives a morphism
+$\sigma'\colon h(W)\to V$. Since $V'$ is a subobject of $h(Y')$, we have
+$\alpha\sigma'=\sigma$. This proves (3.2.5).
+
+\VerdierSemanticAnchor{ch3-3-2-6}
+\medskip\noindent\textbf{3.2.6.}\quad
+By (3.2.3), $\mathrm A(\mathcal D)$ is equivalent to the full subcategory of
+admissible objects in $\mathcal D^\wedge$. By (3.2.5), this is an abelian
+subcategory. Thus $\mathrm A(\mathcal D)$ is abelian.
+
+\VerdierSemanticAnchor{ch3-3-2-7}
+\medskip\noindent\textbf{Proposition 3.2.7.}\quad
+\textit{Every exact sequence in $\mathrm A(\mathcal D)$}
+\[
+0\longrightarrow V_1\longrightarrow V_2\longrightarrow V_3
+\]
+\textit{is isomorphic to a sequence in $\mathrm A(\mathcal D)$ determined
+by a commutative diagram in $\mathcal D$:}
+\VerdierSemanticAnchor{ch3-3-2-7-diagram}
+\[
+\begin{tikzcd}[column sep=3.3em,row sep=2.4em]
+0\arrow[r]&X_1\arrow[r,"u_1"]\arrow[d,"f_1"']&X_2\arrow[r,"u_2"]\arrow[d,"f_2"']&X_3\arrow[d,"f_3"]\\
+0\arrow[r]&Y_1\arrow[r,"\operatorname{id}_{Y_1}"']&Y_2=Y_1\arrow[r]&Y_3
+\end{tikzcd}
+\qquad
+(X_i\xrightarrow{f_i}Y_i)\simeq V_i,\quad1\leq i\leq3.
+\]
+\endgroup

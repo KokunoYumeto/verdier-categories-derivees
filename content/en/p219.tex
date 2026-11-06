@@ -1,0 +1,76 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0219}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-3-2-sfl-i-induced-square}
+whose rows are exact gives, for every integer $n$, a commutative diagram:
+\begin{center}
+\begin{tikzcd}[column sep=5.2em,row sep=3.0em]
+F^n(Z) \arrow[r,"{\delta_F^n(S)}"] \arrow[d,"{F^n(g)}"']
+  & F^{n+1}(X) \arrow[d,"{F^{n+1}(f)}"] \\
+F^n(Z') \arrow[r,"{\delta_F^n(S')}"']
+  & F^{n+1}(X')
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-3-3-2-sfl-ii}
+\noindent\textbf{SFL II)} When
+$S=0\longrightarrow0\longrightarrow0\longrightarrow0\longrightarrow0$,
+the morphism $\delta_F^n(S)$ is an isomorphism for every integer $n$.
+
+\VerdierSemanticAnchor{ch3d-3-3-2-msfl}
+Now let $m\colon F\longrightarrow F'$ be a morphism of functors
+$F,F'\colon\mathcal A^{\operatorname{Ext}}\longrightarrow\mathcal C$.
+It gives, in the evident way, a sequence of morphisms of functors
+$m^n\colon F^n\longrightarrow {F'}^n$. This sequence of morphisms has the
+following property:
+
+\noindent\textbf{MSFL)} For every exact sequence
+$S=0\longrightarrow X\longrightarrow Y\longrightarrow Z\longrightarrow0$
+and every integer $n$, the following diagram is commutative:
+
+\VerdierSemanticAnchor{ch3d-3-3-2-msfl-square}
+\begin{center}
+\begin{tikzcd}[column sep=5.2em,row sep=3.0em]
+F^n(Z) \arrow[r,"{\delta_F^n(S)}"] \arrow[d,"{m^n(Z)}"']
+  & F^{n+1}(X) \arrow[d,"{m^{n+1}(X)}"] \\
+{F'}^n(Z) \arrow[r,"{\delta_{F'}^n(S)}"']
+  & {F'}^{n+1}(X)
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-3-3-3}
+\medskip\noindent\textbf{Definition 3.3.3.}\quad
+A sequence of functors $F^n\colon\mathcal A\longrightarrow\mathcal C$,
+equipped for every exact sequence
+$S=0\longrightarrow X\longrightarrow Y\longrightarrow Z\longrightarrow0$
+with a morphism
+$\delta_F^n(S)\colon F^n(Z)\longrightarrow F^{n+1}(X)$ satisfying
+properties SFL I) and SFL II), is called a \emph{connected sequence of
+functors}. Let $(F^n,\delta_F^n)$ and $({F'}^n,\delta_{F'}^n)$ be two
+connected sequences of functors. A sequence of morphisms of functors
+$m^n\colon F^n\longrightarrow {F'}^n$ is called a \emph{morphism of
+connected sequences of functors} if it satisfies property MSFL).
+
+\VerdierSemanticAnchor{ch3d-3-3-4}
+\medskip\noindent\textbf{Proposition 3.3.4.}\quad
+\textit{Let
+$\mathcal H\!om(\mathcal A^{\operatorname{Ext}},\mathcal C)$ be the
+category of functors from $\mathcal A^{\operatorname{Ext}}$ to
+$\mathcal C$, and let $\mathcal{SFL}(\mathcal A,\mathcal C)$ be the category
+whose objects are connected sequences of functors and whose morphisms are
+morphisms of connected sequences of functors. The preceding construction
+defines a functor:}
+
+\VerdierSemanticAnchor{ch3d-3-3-4-functor}
+\[
+\Phi\colon
+\mathcal H\!om(\mathcal A^{\operatorname{Ext}},\mathcal C)
+\longrightarrow\mathcal{SFL}(\mathcal A,\mathcal C).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-3-4-a}
+\noindent\textit{a) This functor is an equivalence of categories.}
+\endgroup

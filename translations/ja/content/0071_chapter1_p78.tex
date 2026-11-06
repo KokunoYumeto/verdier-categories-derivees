@@ -1,0 +1,86 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0078}%
+\VerdierSemanticAnchor{ch1-2-5-4}
+\noindent\textbf{2.5.4.}\quad
+演算 $\star$ と「ホモトピーの和」は次の性質をもつ：
+
+\VerdierSemanticAnchor{ch1-2-5-4-eq1}
+\begin{equation}
+  \begin{aligned}
+    u\star(b+a) &= u\star b+u\star a,\\
+    (b+a)\star v &= b\star v+a\star v,\\
+    uu'\star a &= u\star(u'\star a),\\
+    a\star vv' &= (a\star v)\star v'.
+  \end{aligned}
+  \tag{2.5.4.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-5-5}
+\noindent\textbf{2.5.5.}\quad
+二つの射 $f,g\colon X\rightrightarrows Y$ を結ぶホモトピーが存在するとき、
+$f$ と $g$ は\emph{ホモトピック}であるという。
+
+\VerdierSemanticAnchor{ch1-2-5-5-difference-criterion}
+射 $f-g$ が零にホモトピックならば、二つの射 $f,g$ はホモトピックである。
+
+\VerdierSemanticAnchor{ch1-2-5-5-shift-stability}
+$f\colon X\longrightarrow Y$ を零にホモトピックな射とする。任意の
+$\sigma\in\mathbb Z[n]$ に対し、射 $T(\sigma)f$ は零にホモトピックである。
+
+\VerdierSemanticAnchor{ch1-2-5-5-null-homotopic-ideal}
+零にホモトピックな射全体は $\operatorname{comp}^{n}(C)$ のイデアルをなす。
+すなわち、零にホモトピックな射と任意の射との合成は、いずれの順序でも
+零にホモトピックであり、零にホモトピックな二つの射の直和も
+零にホモトピックである。
+
+\VerdierSemanticAnchor{ch1-2-5-6}
+\noindent\textbf{2.5.6.}\quad
+$\varphi\colon[n]\longrightarrow[m]$ を写像とする。
+
+\VerdierSemanticAnchor{ch1-2-5-6-integration-preserves-homotopy}
+関手 $\int_\varphi^\Sigma$ と $\int_\varphi^\Pi$ は、
+$\operatorname{comp}^{n}(C)$ のホモトピックな射の対を
+$\operatorname{comp}^{m}(C)$ のホモトピックな射の対へ送る。
+
+\VerdierSemanticAnchor{ch1-2-5-6-multiadditive-setup}
+同様に、
+$F\colon\prod_{i\in[n]}C_i\longrightarrow C$ を多加法的関手、
+
+\VerdierSemanticAnchor{ch1-2-5-6-fn-functor}
+\begin{equation*}
+  F^{[n]}\colon
+  \prod_{i\in[n]}\operatorname{comp}(C_i)
+  \longrightarrow \operatorname{comp}^{n}(C)
+\end{equation*}
+を (2.4.2.4) で述べた関手とする。また $X_i$ を
+$\operatorname{comp}(C_i)$ の対象 $(i\ne j)$、
+$f,g\colon X\rightrightarrows Y$ を $\operatorname{comp}(C_j)$ の
+ホモトピックな二つの射とする。
+
+\VerdierSemanticAnchor{ch1-2-5-6-fn-preserves-homotopy}
+$\operatorname{comp}^{n}(C)$ の射
+\begin{equation*}
+  F^{[n]}(X_1,\ldots,f,\ldots,X_n)
+  \quad\text{と}\quad
+  F^{[n]}(X_1,\ldots,g,\ldots,X_n)
+\end{equation*}
+はホモトピックである。
+
+\VerdierSemanticAnchor{ch1-2-5-6-totalizations-preserve-homotopy}
+したがって、$\operatorname{comp}(C)$ の射
+\begin{equation*}
+  \operatorname{comp}_{\Pi}F(X_1,\ldots,f,\ldots,X_n)
+  \quad\text{と}\quad
+  \operatorname{comp}_{\Pi}F(X_1,\ldots,g,\ldots,X_n)
+\end{equation*}
+はホモトピックである（$\operatorname{comp}_{\Sigma}F$ についても同様）。
+
+\VerdierSemanticAnchor{ch1-2-5-6-reference}
+これらすべての主張の検証は読者に委ねる。あるいは [1] を参照されたい。
+
+\VerdierSemanticAnchor{ch1-2-5-7}
+\noindent\textbf{2.5.7.}\quad
+$K(C)$ で次の圏を表す：
+
+\VerdierSemanticAnchor{ch1-2-5-7-objects}
+\noindent\hspace*{2em}--\ $K(C)$ の対象は $\operatorname{comp}(C)$ の対象である。

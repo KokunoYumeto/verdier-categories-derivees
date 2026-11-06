@@ -1,0 +1,91 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0083}%
+\VerdierSemanticAnchor{ch1-3-1-1-additivity}
+La catégorie $\operatorname{tr}_1(C)$ est additive. La somme directe de
+$X\xrightarrow{f}Y$ et de $X'\xrightarrow{f'}Y'$ est :
+
+\VerdierSemanticAnchor{ch1-3-1-1-direct-sum}
+\begin{equation*}
+  X\oplus X'
+  \xrightarrow{\left(\begin{smallmatrix}f&0\\0&f'\end{smallmatrix}\right)}
+  Y\oplus Y'.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-3-1-2}
+\noindent\textbf{3.1.2.}\quad
+Soit $X\xrightarrow{f}Y$ un objet de $\operatorname{tr}_1(C)$. Posons :
+
+\VerdierSemanticAnchor{ch1-3-1-2-cone-object}
+\begin{equation*}
+  c(f)^i=Y^i\oplus X^{i+1},
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-3-1-2-eq1}
+\begin{equation}
+  d_{c(f)}^i=
+  \begin{pmatrix}
+    d_Y^i & f^{i+1}\\
+    0 & -d_X^{i+1}
+  \end{pmatrix}
+  \colon Y^i\oplus X^{i+1}\longrightarrow Y^{i+1}\oplus X^{i+2}.
+  \tag{3.1.2.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-1-2-cone-verification}
+On vérifie qu'on a ainsi défini un complexe d'objets de $C$.
+\VerdierSemanticAnchor{ch1-3-1-2-cone-name}
+Ce complexe est noté $c(f)$ et est appelé le \emph{cône du morphisme} $f$.
+Soit maintenant :
+
+\VerdierSemanticAnchor{ch1-3-1-2-morphism-setup}
+\begin{equation*}
+  \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center)]
+    \node (X)  at (0,1.8) {$X$};
+    \node (Y)  at (4.2,1.8) {$Y$};
+    \node (Xp) at (0,0) {$X'$};
+    \node (Yp) at (4.2,0) {$Y'$};
+    \draw[->] (X) -- node[above] {$f$} (Y);
+    \draw[->] (X) -- node[left] {$g$} (Xp);
+    \draw[->] (Y) -- node[right] {$h$} (Yp);
+    \draw[->] (Xp) -- node[below] {$f'$} (Yp);
+    \draw[decorate,decoration={snake,amplitude=0.8pt,segment length=3.3pt}]
+      (2.25,0.18) -- (3.10,0.83);
+    \draw[->] (3.10,0.83) -- node[above left] {$a$} (3.95,1.48);
+  \end{tikzpicture}
+\end{equation*}
+un morphisme de $\operatorname{tr}_1(C)$. Posons :
+
+\VerdierSemanticAnchor{ch1-3-1-2-eq2}
+\begin{equation}
+  c((g,h,a))^i=
+  \begin{pmatrix}
+    h^i & a^i\\
+    0 & g^{i+1}
+  \end{pmatrix}
+  \colon Y^i\oplus X^{i+1}\longrightarrow Y'^i\oplus X'^{i+1}.
+  \tag{3.1.2.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-1-2-complex-morphism}
+Ces morphismes commutent avec les différentielles de $c(f)$ et de $c(f')$
+et par suite définissent un morphisme de complexes :
+
+\VerdierSemanticAnchor{ch1-3-1-2-eq3}
+\begin{equation}
+  c((g,h,a))\colon c(f)\longrightarrow c(f').
+  \tag{3.1.2.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-1-2-cone-functor}
+On vérifie qu'on a défini ainsi un foncteur
+$c\colon\operatorname{tr}_1(C)\longrightarrow\operatorname{comp}(C)$
+qu'on appelle le \emph{foncteur cône}.
+
+\VerdierSemanticAnchor{ch1-3-1-2-s-functor}
+Désignons par
+$s\colon\operatorname{comp}(C)\longrightarrow\operatorname{tr}_1(C)$
+le foncteur $X\longmapsto(0\longrightarrow X)$.
+\VerdierSemanticAnchor{ch1-3-1-2-phi-setup}
+Pour tout objet $X\xrightarrow{f}Y$ de $\operatorname{tr}_1(C)$, on désigne par
+$\Phi(f)\colon(X\xrightarrow{f}Y)\longrightarrow s c(f)$ le
+

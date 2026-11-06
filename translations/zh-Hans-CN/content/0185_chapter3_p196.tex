@@ -1,0 +1,61 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0196}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-1-construction}
+完成上述构造后，只需令
+$L^\bullet=\varprojlim_n L_n^\bullet$，
+$w=\varprojlim_n w_n$。对充分小的 $n$，令
+$L_n=Y$、$v_n=\operatorname{id}_Y$ 且
+$w_n=\operatorname{id}_Y$。假设对每个整数 $n<q$（其中
+$q\in\mathbf Z$），已经构造了具有上述性质 1)、2) 与 3) 的复形
+$L_n^\bullet$ 以及态射 $v_n$ 和 $w_n$。复形 $X_n$ 形如
+
+\VerdierSemanticAnchor{ch3d-2-3-1-xn-shape}
+\[
+X_n=\cdots\longrightarrow Y^{-n-2}\longrightarrow Z^{-n-1}
+\longrightarrow X^{-n}\longrightarrow X^{-n+1}\longrightarrow\cdots
+\]
+而复形 $L_n^\bullet$ 形如
+
+\VerdierSemanticAnchor{ch3d-2-3-1-ln-shape}
+\[
+L_n^\bullet=\cdots\longrightarrow Y^{-n-2}\longrightarrow Z'^{-n-1}
+\longrightarrow L^{-n}\longrightarrow L^{-n+1}\longrightarrow\cdots,
+\]
+其中 $Y^i$（相应地，$X^i$）是复形 $Y$（相应地，$X$）的分量。因此有图
+
+\VerdierSemanticAnchor{ch3d-2-3-1-degree-q-diagram}
+\begin{center}
+\begin{tikzcd}[column sep=5.2em,row sep=2.8em]
+  & X^{-q} \arrow[d,"(\dot u_q)^{-q}"] \\
+Z'^{-q} \arrow[r,"(w_{q-1})^{-q}"] & Z^{-q},
+\end{tikzcd}
+\end{center}
+其中 $(\dot u_q)^{-q}$ 是满态射，且 $Z'^{-q}\in M^\wedge$。由于集合
+$M^\wedge$ 具有性质 $(E_2)$（2.2.4），可将此图补全为交换图
+
+\VerdierSemanticAnchor{ch3d-2-3-1-lifting-square}
+\begin{center}
+\begin{tikzcd}[column sep=5.2em,row sep=2.8em]
+L^{-q} \arrow[r,"\beta"] \arrow[d,"\alpha"']
+  & X^{-q} \arrow[d,"(\dot u_q)^{-q}"] \\
+Z'^{-q} \arrow[r,"(w_{q-1})^{-q}"] & Z^{-q},
+\end{tikzcd}
+\end{center}
+其中态射 $\alpha$ 是满态射，且对象 $L^{-q}$ 属于 $M$。使用
+(2.1.1.2) 与 (2.1.1.3) 的记号，可推出下列复形的交换图：
+
+\VerdierSemanticAnchor{ch3d-2-3-1-complex-square}
+\begin{center}
+\begin{tikzcd}[column sep=4.8em,row sep=3.0em]
+L_{q-1}^\bullet(\alpha,-q) \arrow[r,"\varphi"]
+  \arrow[d,"{p(\alpha,-q)}"']
+  & X_{q-1}((\dot u_q)^{-q},-q)\simeq X_q
+    \arrow[d,"{p((\dot u_q)^{-q},-q)\simeq\dot u_q}"] \\
+L_{q-1}^\bullet \arrow[r,"w_{q-1}"] & X_{q-1}.
+\end{tikzcd}
+\end{center}
+\endgroup

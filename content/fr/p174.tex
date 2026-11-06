@@ -1,0 +1,66 @@
+\chapter{Les catégories dérivées.}
+\VerdierPhysicalPageAnchor{0174}%
+\VerdierSemanticAnchor{ch3d}
+\begingroup
+\small
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-1}
+\section{Définitions des catégories dérivées.}
+
+\noindent\textit{Dans ce paragraphe, $\mathcal A$ désigne, sauf mention du
+contraire, une catégorie abélienne.}
+
+\VerdierSemanticAnchor{ch3d-1-1}
+\subsection{Notations et terminologie.}
+
+\VerdierSemanticAnchor{ch3d-1-1-1}
+\noindent\textbf{1.1.1.}\quad
+Soit $\mathcal A$ une catégorie additive (non nécessairement abélienne). On
+désigne par $\operatorname{comp}^{b}(\mathcal A)$ (resp.
+$\operatorname{comp}^{+}(\mathcal A)$, resp.
+$\operatorname{comp}^{-}(\mathcal A)$) la sous-catégorie pleine de
+$\operatorname{comp}(\mathcal A)$ définie par les complexes $X$ tels que
+$X^i=0$, pour $|i|$ assez grand (resp. $i$ assez petit, resp. $i$ assez
+grand). On désigne par $K^{b}(\mathcal A)$ (resp. $K^{+}(\mathcal A)$,
+resp. $K^{-}(\mathcal A)$) la sous-catégorie pleine de $K(\mathcal A)$
+définie par les objets de $\operatorname{comp}^{b}(\mathcal A)$ (resp.
+$\operatorname{comp}^{+}(\mathcal A)$, resp.
+$\operatorname{comp}^{-}(\mathcal A)$).
+
+\VerdierSemanticAnchor{ch3d-1-1-2}
+\noindent\textbf{1.1.2.}\quad
+Soient maintenant $\mathcal A$ une catégorie (abélienne) et $*$ l'un des
+signes typographiques : $b$, $+$, $-$, ``vide''. On désigne par
+$\operatorname{comp}^{*,b}(\mathcal A)$ (resp.
+$\operatorname{comp}^{*,+}(\mathcal A)$, resp.
+$\operatorname{comp}^{*,-}(\mathcal A)$) la sous-catégorie pleine de
+$\operatorname{comp}^{*}(\mathcal A)$ définie par les complexes $X$, objets
+de $\operatorname{comp}^{*}(\mathcal A)$, tels que $H^i(X)=0$, pour $|i|$
+grand (resp.\ pour $i$ petit, resp.\ pour $i$ grand). De même, on désigne par
+$K^{*,b}(\mathcal A)$ (resp. $K^{*,+}(\mathcal A)$, resp.
+$K^{*,-}(\mathcal A)$) la sous-catégorie pleine de $K^{*}(\mathcal A)$
+définie par les complexes $X$, objets de $K^{*}(\mathcal A)$, tels que
+$H^i(X)=0$, pour $|i|$ grand (resp. $i$ petit, resp. $i$ grand). On introduit
+ainsi huit sous-catégories de $K(\mathcal A)$ :
+
+\VerdierSemanticAnchor{ch3d-1-1-2-diagram}
+\begin{center}
+  \resizebox{0.88\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=3.5em,row sep=1.7em]
+      \& \& K^{+}(\mathcal A) \arrow[dr] \& \& \\
+      \& K^{+,b}(\mathcal A) \arrow[ur] \arrow[dr]
+        \& \& K^{,+}(\mathcal A) \arrow[dr] \& \\
+      K^{b}(\mathcal A) \arrow[ur] \arrow[dr]
+        \& \& K^{,b}(\mathcal A) \arrow[ur] \arrow[dr]
+        \& \& K(\mathcal A) \\
+      \& K^{-,b}(\mathcal A) \arrow[ur] \arrow[dr]
+        \& \& K^{,-}(\mathcal A) \arrow[ur] \& \\
+      \& \& K^{-}(\mathcal A) \arrow[ur] \& \&
+    \end{tikzcd}$%
+  }\hfill\textup{(1.1.2.1)}
+\end{center}
+\endgroup

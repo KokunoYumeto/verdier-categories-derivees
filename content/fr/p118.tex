@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0118}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-6-exactness-complete}
+est exacte. En prenant $W=Z$, on voit que l'application identique
+$\operatorname{id}_Z\in\operatorname{Hom}_{\mathcal D}(Z,Z)$ provient d'une
+application $s\colon Z\longrightarrow Y$, d'où l'existence de la section.
+Cette section permet de construire un diagramme commutatif :
+
+\VerdierSemanticAnchor{ch2-1-2-6-section-diagram}
+\begin{equation*}
+  \begin{tikzcd}[column sep=3.5em,row sep=3.0em]
+    X \arrow[r,"{\binom{\operatorname{id}}{0}}"]
+      \arrow[d,"{\operatorname{id}}"']
+      & X\oplus Z \arrow[r,"{(0,\operatorname{id})}"]
+        \arrow[d,"{(u,s)}"]
+      & Z \arrow[d,"{\operatorname{id}}"] \\
+    X \arrow[r,"u"'] & Y \arrow[r,"v"'] & Z
+  \end{tikzcd}\,.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-6-hom-five-lemma}
+En appliquant le foncteur $\operatorname{Hom}_{\mathcal D}(W,\mathord\cdot)$,
+l'exactitude de la suite (1.2.6.2) et le lemme des cinq entraînent que le
+morphisme :
+
+\VerdierSemanticAnchor{ch2-1-2-6-hom-isomorphism}
+\[
+  \operatorname{Hom}_{\mathcal D}\bigl(W,(u,s)\bigr)\colon
+  \operatorname{Hom}_{\mathcal D}(W,X\oplus Z)
+  \longrightarrow \operatorname{Hom}_{\mathcal D}(W,Y)
+\]
+est un isomorphisme. Par suite, le morphisme $(u,s)$ est un isomorphisme.
+
+\VerdierSemanticAnchor{ch2-1-2-7}
+\medskip
+\noindent\textbf{Remarque 1.2.7.}\quad
+Le corollaire (1.2.6) permet de montrer que tout foncteur exact
+$\mathcal D'\xrightarrow{F}\mathcal D$ est additif. Tout d'abord, le triangle
+$0\longrightarrow0\longrightarrow0\longrightarrow0$ est distingué dans
+$\mathcal D'$ ; par suite, le triangle :
+
+\VerdierSemanticAnchor{ch2-1-2-7-zero-triangle}
+\[
+  F(0)\xrightarrow{\operatorname{id}_{F(0)}}F(0)
+  \xrightarrow{\operatorname{id}_{F(0)}}F(0)
+  \longrightarrow F(0)[1]
+\]
+est distingué dans $\mathcal D$. On déduit alors de (1.2.2) que $F(0)=0$.
+En appliquant le foncteur $F$ à des triangles distingués du type (1.2.6.1)
+et en appliquant (1.2.6), on en déduit que $F$ est additif. Un raisonnement
+analogue montre que tout foncteur cohomologique est additif.
+
+\VerdierSemanticAnchor{ch2-1-2-8}
+\medskip
+\noindent\textbf{Définition 1.2.8.}\quad
+Une \emph{décomposition} d'un morphisme $f\colon X\longrightarrow Y$ d'une
+catégorie additive est un diagramme commutatif :
+
+\VerdierSemanticAnchor{ch2-1-2-8-decomposition-diagram}
+\begin{equation*}
+  \begin{tikzcd}[ampersand replacement=\&,column sep=5.2em,row sep=3.4em]
+    X \arrow[r,"f"] \arrow[d,"\wr"']
+      \& Y \arrow[d,"\wr"] \\
+    Z\oplus W
+      \arrow[r,"{\left(\begin{smallmatrix}0&\operatorname{id}_W\\0&0\end{smallmatrix}\right)}"]
+      \& W\oplus Z'
+  \end{tikzcd}\,.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-8-decomposable}
+Un morphisme est dit \emph{décomposable} s'il admet une décomposition.
+
+\VerdierSemanticAnchor{ch2-1-2-8-splitting}
+Un \emph{scindage} d'un morphisme $f\colon X\longrightarrow Y$ est un
+morphisme $g\colon Y\longrightarrow X$ tel que
+\endgroup

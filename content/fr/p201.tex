@@ -1,0 +1,84 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0201}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-n0-epimorphism}
+où $Z^{-q}$ est un élément de $M'$ et les $L^j$,
+$-q+1\leq j\leq n_0$, des éléments de $M$. Il existe par suite un
+épimorphisme :
+\[
+\alpha\colon L^{-q}\longrightarrow Z^{-q},
+\qquad\text{où }L^{-q}\in M.
+\]
+Posons alors :
+\[
+X_{n_0,q}=X_{n_0,q-1}(\alpha,-q),
+\qquad
+v_{n_0,q}=p(\alpha,-q)\quad\text{(2.1.1)}.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-n0-completion}
+Il est clair que par construction on a les propriétés
+$I)_{n_0,q}$ et $III)_{n_0,q}$. La propriété
+$II)_{n_0,q}$ résulte de ce que l'ensemble $M'$ possède les
+propriétés $(E_1)$ et $(E_4)$. On peut donc poursuivre la construction des
+$X_{n_0,i}$. En posant
+$X_{n_0}=\varprojlim_i X_{n_0,i}$ et en prenant pour
+$u_{n_0}\colon X_{n_0}\longrightarrow Y$ le morphisme canonique, on
+obtient un complexe et un morphisme qui possèdent les propriétés
+$1)_{n_0}$, $2)_{n_0}$, $3)_{n_0}$, $4)_{n_0}$.
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-outer-induction}
+Pour construire alors les complexes $X_i$ et les morphismes
+$u_i\colon X_i\longrightarrow X_{i-1}$, nous procédons par récurrence.
+Supposons donc qu'on ait construit pour tout entier $i$, $n_0\leq i<q$,
+des complexes $X_i$ et des morphismes
+$u_i\colon X_i\longrightarrow X_{i-1}$ possédant les propriétés
+$1)_i$, $2)_i$, $3)_i$, $4)_i$, $5)_i$, $n_0\leq i<q$. Il s'agit de
+construire un complexe $X_q$ et un morphisme
+$u_q\colon X_q\longrightarrow X_{q-1}$ tels que l'on ait les propriétés
+$1)_q$, $2)_q$, $3)_q$, $4)_q$, $5)_q$. Tout d'abord, si $Y^q\in M$, on
+pose $X_q=X_{q-1}$ et $u_q=\operatorname{id}$. Supposons que $Y^q$ ne
+soit pas un élément de $M$, i.e.\ que $M\text{-}\dim(Y^q)>0$.
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-q-inner-induction}
+Pour construire le complexe $X_q$ et le morphisme
+$u_q\colon X_q\longrightarrow X_{q-1}$, nous procédons à nouveau par
+récurrence. Soit $r$ un entier tel que
+\[
+-q<r\leq -q+M\text{-}\dim(Y^q).
+\]
+Supposons qu'on ait déterminé une suite de complexes $X_{q,l}$,
+$-q<l<r$, et de morphismes
+$v_{q,l}\colon X_{q,l}\longrightarrow X_{q,l-1}$ (on pose
+$X_{q,-q}=X_{q-1}$) tels que :
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-q-r-conditions}
+\noindent$I')_l$
+$(X_{q,l})^j=(X_{q,l-1})^j$, pour tout $j\neq-l,-l+1$.
+
+\noindent$II')_l$
+$(X_{q,l})^{-l}\in M'$ et
+$M\text{-}\dim((X_{q,l})^{-l})=M\text{-}\dim(Y^q)-l-q$.
+
+\noindent$III')_l$
+$(X_{q,l})^{-l+1}\in M$.
+
+\noindent$IV')_l$
+$v_{q,l}$ soit un morphisme élémentaire de hauteur $-l+1$ et
+$(v_{q,l})^j=\operatorname{id}$, pour $j\neq-l,-l+1$.
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-q-rminus1-complex}
+Le complexe $X_{q,r-1}$ est alors de la forme :
+\[
+\cdots\longrightarrow L^{-r}\longrightarrow Z^{-r+1}
+\longrightarrow L^{-r+2}\longrightarrow\cdots\longrightarrow L^q
+\longrightarrow Y^{q+1}\longrightarrow Y^{q+2}\longrightarrow\cdots,
+\]
+où les $L^i$ sont des éléments de $M$ et où $Z^{-r+1}$ est un élément de
+$M'$ tel que
+$M\text{-}\dim(Z^{-r+1})=M\text{-}\dim(Y^q)-r+1-q$. Il existe donc un
+épimorphisme
+\endgroup

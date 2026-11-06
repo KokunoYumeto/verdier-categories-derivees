@@ -1,0 +1,75 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0039}%
+\VerdierSemanticAnchor{ch1-1-2-8}
+\noindent\textbf{定義 1.2.8.}\quad
+$(\mathcal C_e,G^\circ,T,c)$ と
+$(\mathcal C'_e,G^\circ,T',c')$ を二つの $G^\circ$-圏、
+$(F_e,m)$ と $(F'_e,m')\colon\mathcal C_e\to\mathcal C'_e$ を二つの
+$G^\circ$-関手とする。関手の射 $u_e\colon F_e\to F'_e$ は、すべての
+$g\in G$ について図式 (1.2.7.2) が可換であるとき、\emph{$G^\circ$ の作用と
+両立する}という。
+
+\VerdierSemanticAnchor{ch1-1-2-additive}
+最後に、$G^\circ$-圏は、その台圏が加法圏であるとき\emph{加法的}であるという。
+(1.1.3) により、加法的な次数付き圏に対応する $G^\circ$-圏は加法的である。
+
+\VerdierSemanticAnchor{ch1-1-3}
+\subsection{二つの言語の同値性}
+
+\VerdierSemanticAnchor{ch1-1-3-1}
+\noindent\textbf{1.3.1.}\quad
+宇宙 $U$ を固定する。$U$ に属する $G$-次数付き圏を対象、次数付き関手を射と
+する $U$-圏を $\operatorname{Grad}(G)$ と書く。同様に、$U$ に属する
+$G^\circ$-圏を対象、$G^\circ$-関手を射とする $U$-圏を
+$G^\circ\text{-}\operatorname{Cat}$ と書く。(1.2.1), (1.2.3), (1.2.5) から、
+各 $G$-次数付き圏に正規化された切断系を選ぶことにより関手
+
+\VerdierSemanticAnchor{ch1-1-3-1-eq1}
+\begin{equation}
+  \Psi\colon \operatorname{Grad}(G)
+  \longrightarrow G^\circ\text{-}\operatorname{Cat}
+  \tag{1.3.1.1}
+\end{equation}
+が定義されることが直ちに分かる。
+
+[18] の結果は次のように解釈できる。
+
+\VerdierSemanticAnchor{ch1-1-3-2}
+\noindent\textbf{命題 1.3.2.}\quad
+\emph{関手 $\Psi$ は圏同値である。}
+
+\VerdierSemanticAnchor{ch1-1-3-2-quasi-inverse}
+$\Psi$ の擬逆関手の記述は [18] にある。ここでは $G^\circ$-圏
+$(\mathcal C,G^\circ,T,c)$ に対応する次数付き圏 $\mathcal C[G]$ を簡単に
+記述する。まず $\mathcal C[G]$ の対象集合は $\mathcal C$ の対象集合である。
+$X,Y$ を $\mathcal C$ の二対象とし、
+
+\VerdierSemanticAnchor{ch1-1-3-2-eq1}
+\begin{equation}
+  \operatorname{Hom}^{g}(X,Y)
+  =\operatorname{Hom}_{\mathcal C}(X,T(g)Y),
+  \qquad g\in G,
+  \tag{1.3.2.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-3-2-eq2}
+\begin{equation}
+  \operatorname{Hom}_{\mathcal C[G]}(X,Y)
+  =\coprod_{g\in G}\operatorname{Hom}^{g}(X,Y)
+  \tag{1.3.2.2}
+\end{equation}
+とおく。
+
+\VerdierSemanticAnchor{ch1-1-3-2-composition}
+次に $\mathcal C[G]$ における射の合成を記述する。$X,Y,Z$ を $\mathcal C$ の
+三対象、$u\in\operatorname{Hom}^{g}(X,Y)$,
+$v\in\operatorname{Hom}^{g'}(Y,Z)$（$g,g'\in G$）とする。関手 $T(g)$ は写像
+
+\VerdierSemanticAnchor{ch1-1-3-2-eq3}
+\begin{equation}
+  \operatorname{Hom}^{g'}(Y,Z)
+  \longrightarrow
+  \operatorname{Hom}_{\mathcal C}
+    \bigl(T(g)Y,T(g)T(g')Z\bigr)
+  \tag{1.3.2.3}
+\end{equation}

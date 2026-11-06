@@ -1,0 +1,53 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0021}
+层复形的态射
+
+\VerdierSemanticAnchor{intro-1-flat-quasi-isomorphism}
+\[
+F\otimes\rho:
+F\otimes_{\mathbb Z}L_1^{\bullet}
+\longrightarrow
+F\otimes_{\mathbb Z}L_2^{\bullet}
+\qquad\text{,}
+\]
+都是\emph{拟同构}。
+
+\VerdierSemanticAnchor{intro-1-coherent-tensor-system}
+因此，我们得到一个由层复形 $F\otimes_{\mathbb Z}L^{\bullet}$ 与拟同构
+组成的相容系统；在一种可以精确定义的意义下，它函子性地依赖于层 $G$。
+无论如何，复形 $F\otimes_{\mathbb Z}L^{\bullet}$（$L^{\bullet}$ 是 $G$
+的平坦分解）的上同调对象在唯一同构意义下确定，并函子性地依赖于 $G$。
+所得函子具有所需性质，理应称为“与 $F$ 作张量积”这一函子的左导出函子。
+
+\VerdierSemanticAnchor{intro-1-tor-sheaves}
+当然，为了计算扭层 $\operatorname{Tor}^{\mathbb Z}(F,G)$，可以取预层
+$U\longmapsto\operatorname{Tor}^{\mathbb Z}(F(U),G(U))$（$U$ 是 $E$
+的开集）所对应的层。但是，我们的方法给出了一个在拟同构意义下良定义的
+层复形，它的上同调对象是 $\operatorname{Tor}^{\mathbb Z}(F,G)$ 与
+$F\otimes_{\mathbb Z}G$。正如后文将看到的，这一附加信息对于方便地处理
+这些函子至关重要。该方法立即推广到环化拓扑斯，并在这一框架下定义“层的
+张量积”函子的左导出函子。
+
+\VerdierSemanticAnchor{intro-2}
+\noindent\textbf{2.}\quad
+在研究两个函子复合的导出函子、结合性性质以及 Künneth 型关系时，我们必须
+把导出函子的形式体系推广到这样一种情形：自变量不再只是所研究范畴中的
+一个对象，而是该范畴中对象的一个复形。这一推广已在 [1] 中完成。这里回顾
+其主要轮廓。设 $F:\mathcal A\to\mathcal B$ 是两个阿贝尔范畴之间的加性
+函子，并且 $\mathcal A$ 有足够多的内射对象。设 $Y^{\bullet}$ 是
+$\mathcal A$ 中对象的一个复形。在前引文献中定义了复形 $Y^{\bullet}$ 的
+“内射分解”，我们称之为 $Y^{\bullet}$ 的
+\emph{Cartan--Eilenberg 内射分解}。
+
+\VerdierSemanticAnchor{intro-2-ce-resolution}
+按定义，这样的分解是一个双复形 $I^{\bullet\bullet}$，其分量都是
+$\mathcal A$ 的内射对象，并配有增广
+
+\VerdierSemanticAnchor{intro-2-ce-augmentation}
+\[
+Y^{\bullet}\xrightarrow{\varepsilon}I^{\bullet\bullet}
+\]
+它在复形 $Y^{\bullet}$ 的各分量、边界以及上同调对象上诱导通常意义下的
+内射分解。这些分解在双复形的同伦意义下唯一。然后形成双复形
+$F(I^{\bullet\bullet})$，再形成其关联单复形
+$\int F(I^{\bullet\bullet})$；后者同样由 $Y^{\bullet}$ 在同伦意义下确定。

@@ -1,0 +1,76 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0148}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-3-5-a-ii}
+\noindent\hspace{1.2em}ii) 每个态射 $B\longrightarrow X$，其中
+$B\in\operatorname{Ob}(\mathcal B)$ 且 $X\in\operatorname{Ob}(\mathcal A)$，
+都可嵌入交换图：
+\VerdierSemanticAnchor{ch2-2-3-5-a-ii-diagram}
+\begin{center}
+ \begin{tikzcd}[column sep=4.2em,row sep=2.6em]
+ B \arrow[r] \arrow[dr] & X & {B'\in\operatorname{Ob}(\mathcal A\cap\mathcal B)} \\
+ & B' \arrow[u] &
+ \end{tikzcd}\quad .
+\end{center}
+\VerdierSemanticAnchor{ch2-2-3-5-a-definition}
+$\mathcal D$ 中满足上述两个等价性质的满三角子范畴 $\mathcal A$ 称为
+\emph{右 $\mathcal B$-局部化子范畴}。
+\VerdierSemanticAnchor{ch2-2-3-5-b}
+\par\noindent b) 若 $\mathcal A$ 是右 $\mathcal B$-局部化的，则典范函子
+\VerdierSemanticAnchor{ch2-2-3-5-b-functor}
+\[
+ \mathcal A/(\mathcal A\cap\mathcal B)\longrightarrow\mathcal D/\mathcal B
+\]
+充分忠实，并且在对象上单射。
+\VerdierSemanticAnchor{ch2-2-3-5-c}
+\par\noindent c) 下列条件等价：
+\VerdierSemanticAnchor{ch2-2-3-5-c-i}
+\par\noindent\hspace{1.2em}i) $\mathcal A$ 是右 $\mathcal B$-局部化的。
+\VerdierSemanticAnchor{ch2-2-3-5-c-ii}
+\par\noindent\hspace{1.2em}ii) 设
+$Q\colon\mathcal D/(\mathcal A\cap\mathcal B)\longrightarrow
+\mathcal D/\mathcal B$ 为典范函子。子范畴
+$\mathcal A/(\mathcal A\cap\mathcal B)\longrightarrow
+\mathcal D/(\mathcal A\cap\mathcal B)$ 由 $Q$-右自由对象组成。
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-3-5-proof-a}
+a) 中的等价性立即由 TRIII 以及乘法系 $S_{\mathcal D}(\mathcal B)$ 与
+$S_{\mathcal A}(\mathcal A\cap\mathcal B)$ 的定义 (2.1.7) 得到。
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-setup}
+下面证明 b)。设 $X$ 与 $Y$ 为 $\mathcal A$ 的两个对象（因而也是
+$\mathcal A/(\mathcal A\cap\mathcal B)$ 的对象）。
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-injectivity}
+先证明同态
+\[
+ \operatorname{Hom}_{\mathcal A/(\mathcal A\cap\mathcal B)}(X,Y)
+ \longrightarrow\operatorname{Hom}_{\mathcal D/\mathcal B}(X,Y)
+\]
+是单射。
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-quotient-functors}
+记 $Q_1\colon\mathcal A\longrightarrow\mathcal A/(\mathcal A\cap\mathcal B)$
+与 $Q_2\colon\mathcal D\longrightarrow\mathcal D/\mathcal B$ 为典范商函子。
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-fraction}
+任意元素 $m\in\operatorname{Hom}_{\mathcal A/(\mathcal A\cap\mathcal B)}(X,Y)$
+可写成 $m=Q_1(s)^{-1}Q_1(f)$，其中
+$s\in S_{\mathcal A}(\mathcal A\cap\mathcal B)$ (2.2.2)。它在
+$\operatorname{Hom}_{\mathcal D/\mathcal B}(X,Y)$ 中的像是
+$Q_2(s)^{-1}Q_2(f)$。
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-zero-criterion}
+由 (2.2.4, a))，该像为零，当且仅当存在交换图：
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-zero-diagram}
+\begin{center}
+ \begin{tikzcd}[column sep=3.7em,row sep=2.5em]
+ & {} \arrow[r,"u"] & {} \\
+ X \arrow[ur,"f"] && Y \arrow[ul,"s"] \arrow[u,"t"'] &
+ {t\in S_{\mathcal D}(\mathcal B)}
+ \end{tikzcd}
+\end{center}
+\endgroup

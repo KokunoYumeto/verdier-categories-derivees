@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0238}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-3-4}
+\noindent\textbf{4.3.4.}\quad
+$D(\mathcal A)$ から $D(\mathcal A)$ のスペクトル対象の圏への関手も、
+用語を濫用して\emph{第二標準スペクトル対象関手}と呼ぶ。
+
+$X$ を $\mathcal A$ の複体とし、
+$\bigl(X(p,q),\delta(p,q,r)\bigr)$ を $X$ に付随する第二スペクトル対象とする。
+(4.3.2) と (1.2.10) から、$D(\mathcal A)$ における標準同型を得る：
+
+\VerdierSemanticAnchor{ch4d-4-3-4-1}
+\begin{equation}
+X(p,p+1)\xrightarrow{\sim}H^p(X)[-p].
+\tag{4.3.4.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch4d-4-3-4-boundedness}
+さらに、$X$ が $D^*(\mathcal A)$ の対象
+（$*=-,+,b,$ または「空白」）であるとき、$X$ に付随する第二スペクトル対象は
+実際には $D^*(\mathcal A)$ に値をとる。
+
+\VerdierSemanticAnchor{ch4d-4-4}
+\medskip\noindent\textbf{4.4. 通常のスペクトル系列。}
+
+\VerdierSemanticAnchor{ch4d-4-4-1}
+\noindent\textbf{4.4.1.}\quad
+$\mathcal A$ を、必ずしもアーベル圏とは限らない加法圏とし、
+$F\colon K(\mathcal A)\longrightarrow\mathcal B$ をアーベル圏
+$\mathcal B$ へのコホモロジー的関手とする。また
+$F^p\colon K(\mathcal A)\longrightarrow\mathcal B$ を、$F$ と
+$K(\mathcal A)$ のシフト関手との合成から得られる関手
+（$F^p(X)=F(X[p])$）とする。さらに $Y$ を $\mathcal A$ の複体とする。
+関手 $F$ は、$Y$ に付随する $K(\mathcal A)$ に値をとる第一スペクトル対象
+(4.1.4) を、$\mathcal B$ に値をとるスペクトル対象に移す。これから
+（第II章 4.3.3）、$F$ と $Y$ の双方について関手的な（後者が
+$\operatorname{comp}(\mathcal A)$ の中を動くとき）、$\mathcal B$ に値をとる
+スペクトル系列を得る。これを\emph{関手 $F$ の複体 $Y$ に関する第一
+スペクトル系列}という。このスペクトル系列には常に（第II章 4.3.3.1）で
+導入した添字付けを用いる。
+
+\VerdierSemanticAnchor{ch4d-4-4-2}
+\medskip\noindent\textbf{命題 4.4.2.}\quad
+
+\VerdierSemanticAnchor{ch4d-4-4-2-a}
+\noindent\textit{a) 関手 $F$ の複体 $Y$ に関する第一スペクトル系列の項
+$\mathrm I_1^{p,q}$ は次で与えられる：}
+\[
+\mathrm I_1^{p,q}=F^q(Y^p)
+\]
+\noindent\textit{（ここで $Y^p$ は、唯一の非零成分が次数零にあり、それが
+複体 $Y$ の第 $p$ 成分である複体を表す）。対応する微分は}
+
+\VerdierSemanticAnchor{ch4d-4-4-2-a-differential}
+\[
+\begin{aligned}
+d_1&\colon\mathrm I_1^{p,q}\longrightarrow\mathrm I_1^{p+1,q},\\
+d_1&=F^q(-d_Y^p)\colon F^q(Y^p)\longrightarrow F^q(Y^{p+1}).
+\end{aligned}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-4-2-b}
+\noindent\textit{b) したがって、同じスペクトル系列の項
+$\mathrm I_2^{p,q}$ は次のように記述できる：
+$F^{q,\bullet}\colon\operatorname{comp}(K(\mathcal A))
+\longrightarrow\operatorname{comp}(\mathcal B)$ を $F^q$ の複体への拡張、
+$H_{\mathcal B}^p\colon\operatorname{comp}(\mathcal B)
+\longrightarrow\mathcal B$ を第 $p$ コホモロジー対象関手、$Y^\bullet$ を
+$\operatorname{comp}(K(\mathcal A))$ の次の対象とする：}
+
+\VerdierSemanticAnchor{ch4d-4-4-2-b-complex}
+\[
+Y^\bullet=\cdots\longrightarrow Y^{p-1}
+\xrightarrow{d_Y^{p-1}}Y^p\xrightarrow{d_Y^p}Y^{p+1}
+\longrightarrow\cdots.
+\]
+\endgroup

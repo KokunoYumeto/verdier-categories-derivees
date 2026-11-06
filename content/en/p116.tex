@@ -1,0 +1,75 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0116}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-5-input-triangles-complete}
+be two distinguished triangles, and let, moreover:
+
+\VerdierSemanticAnchor{ch2-1-2-5-sum-triangle}
+\[
+  X\oplus X'\xrightarrow{u\oplus u'}Y\oplus Y'
+  \xrightarrow{m}L\xrightarrow{n}(X\oplus X')[1]
+\]
+be a distinguished triangle containing the morphism $u\oplus u'$ (TRI).
+The diagrams:
+
+\VerdierSemanticAnchor{ch2-1-2-5-first-inclusion-square}
+\begin{equation*}
+  \begin{tikzcd}[column sep=4.2em,row sep=3.2em]
+    X \arrow[r,"u"] \arrow[d,"{\binom{\operatorname{id}_X}{0}}"']
+      & Y \arrow[d,"{\binom{\operatorname{id}_Y}{0}}"] \\
+    X\oplus X' \arrow[r,"{u\oplus u'}"']
+      & Y\oplus Y'
+  \end{tikzcd}
+  \,,
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-5-second-inclusion-square}
+\begin{equation*}
+  \begin{tikzcd}[column sep=4.2em,row sep=3.2em]
+    X' \arrow[r,"{u'}"] \arrow[d,"{\binom{0}{\operatorname{id}_{X'}}}"']
+      & Y' \arrow[d,"{\binom{0}{\operatorname{id}_{Y'}}}"] \\
+    X\oplus X' \arrow[r,"{u\oplus u'}"']
+      & Y\oplus Y'
+  \end{tikzcd}
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-5-triii-completions}
+are commutative and hence, by virtue of (TRIII), can be completed to
+commutative diagrams:
+
+\VerdierSemanticAnchor{ch2-1-2-5-first-triangle-morphism}
+\begin{equation*}
+  \resizebox{0.98\linewidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=2.25em,row sep=3.1em]
+      X \arrow[r,"u"] \arrow[d,"{\binom{\operatorname{id}_X}{0}}"']
+        \& Y \arrow[r,"v"] \arrow[d,"{\binom{\operatorname{id}_Y}{0}}"']
+        \& Z \arrow[r,"w"] \arrow[d,"f"']
+        \& X[1] \arrow[d,"{\binom{\operatorname{id}_{X[1]}}{0}}"] \\
+      X\oplus X' \arrow[r,"{u\oplus u'}"']
+        \& Y\oplus Y' \arrow[r,"m"']
+        \& L \arrow[r,"n"']
+        \& (X\oplus X')[1]
+    \end{tikzcd}$%
+  }\,.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-5-second-triangle-morphism}
+\begin{equation*}
+  \resizebox{0.98\linewidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=2.25em,row sep=3.1em]
+      X' \arrow[r,"{u'}"] \arrow[d,"{\binom{0}{\operatorname{id}_{X'}}}"']
+        \& Y' \arrow[r,"{v'}"] \arrow[d,"{\binom{0}{\operatorname{id}_{Y'}}}"']
+        \& Z' \arrow[r,"{w'}"] \arrow[d,"{f'}"']
+        \& X'[1] \arrow[d,"{\binom{0}{\operatorname{id}_{X'[1]}}}"] \\
+      X\oplus X' \arrow[r,"{u\oplus u'}"']
+        \& Y\oplus Y' \arrow[r,"m"']
+        \& L \arrow[r,"n"']
+        \& (X\oplus X')[1]
+    \end{tikzcd}$%
+  }\,.
+\end{equation*}
+\endgroup

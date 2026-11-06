@@ -1,0 +1,89 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0088}%
+\VerdierSemanticAnchor{ch1-3-2-3}
+\noindent\textbf{3.2.3.}\quad
+\VerdierSemanticAnchor{ch1-3-2-3-translation-automorphism}
+$\operatorname{comp}(C)$ のシフト自己同型は、自然に自己同型
+$T\colon\operatorname{tr}_1(C)\longrightarrow\operatorname{tr}_1(C)$ に延長される：
+
+\VerdierSemanticAnchor{ch1-3-2-3-eq1}
+\begin{equation}
+  \begin{aligned}
+    T\bigl(X\xrightarrow{f}Y\bigr)
+      &=X[1]\xrightarrow{f[1]}Y[1],\\
+    T((g,h,a))&=(g[1],h[1],-a[1]).
+  \end{aligned}
+  \tag{3.2.3.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-3-cone-z-functor}
+次に、同型
+\VerdierSemanticAnchor{ch1-3-2-3-psi-isomorphism}
+$\Psi(f)\colon c(f[1])\xrightarrow{\sim}c(f)[1]$ を定めることにより、
+写像錐関手を $\mathbb Z$-関手 (1.5.2) にする：
+
+\VerdierSemanticAnchor{ch1-3-2-3-eq2}
+\begin{equation}
+  \Psi(f)^i=
+  \begin{pmatrix}
+    \operatorname{id}_{Y^{i+1}} & 0\\
+    0 & -\operatorname{id}_{X^{i+2}}
+  \end{pmatrix}
+  \colon Y^{i+1}\oplus X^{i+2}
+  \longrightarrow Y^{i+1}\oplus X^{i+2}.
+  \tag{3.2.3.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-3-reader-verification}
+(3.2.3.2) が実際に複体の同型を定めることを読者は確かめ、次の命題を証明されたい：
+
+\VerdierSemanticAnchor{ch1-3-2-4}
+\noindent\textbf{命題 3.2.4.}\quad
+\VerdierSemanticAnchor{ch1-3-2-4-zero-source}
+\emph{$f=0\longrightarrow Y$ のとき、標準同型}
+\begin{equation*}
+  c(f[n])\xrightarrow{\sim}c(f)[n]
+\end{equation*}
+\emph{は $Y[n]$ の恒等写像にほかならない。$f=X\longrightarrow0$ のとき、
+標準同型}
+\VerdierSemanticAnchor{ch1-3-2-4-zero-target}
+\begin{equation*}
+  c(f[n])\xrightarrow{\sim}c(f)[n]
+\end{equation*}
+\emph{は同型}
+\begin{equation*}
+  X[n+1]\xrightarrow{(-1)^n\operatorname{id}_{X[n+1]}}X[n+1]
+\end{equation*}
+\emph{にほかならない。}
+
+\VerdierSemanticAnchor{ch1-3-2-5}
+\noindent\textbf{3.2.5.}\quad
+$X\xrightarrow{f}Y$ を $\operatorname{tr}_1(C)$ の対象とする。これに
+$\operatorname{comp}(C)$ の三角
+
+\VerdierSemanticAnchor{ch1-3-2-5-triangle}
+\VerdierSemanticAnchor{ch1-3-2-5-eq1}
+\begin{equation}
+  Y\xrightarrow{p(f)}c(f)\xrightarrow{q(f)}X[1]
+  \xrightarrow{f[1]}Y[1]
+  \tag{3.2.5.1}
+\end{equation}
+を対応させることができる。
+
+\VerdierSemanticAnchor{ch1-3-2-5-composite}
+射 $q(f)p(f)\colon Y\longrightarrow X[1]$ は、次の射の写像錐関手による像である：
+
+\VerdierSemanticAnchor{ch1-3-2-5-cone-morphism-diagram}
+\begin{equation*}
+  \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center)]
+    \node (Z1) at (0,1.45) {$0$};
+    \node (Y)  at (3.5,1.45) {$Y$};
+    \node (X)  at (0,0) {$X$};
+    \node (Z2) at (3.5,0) {$0$};
+    \node[anchor=base west,inner sep=0pt,xshift=.08em] at (Z2.base east) {$.$};
+    \draw[->] (Z1) -- (Y);
+    \draw[->] (Z1) -- (X);
+    \draw[->] (Y) -- (Z2);
+    \draw[->] (X) -- (Z2);
+  \end{tikzpicture}
+\end{equation*}

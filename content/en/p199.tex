@@ -1,0 +1,92 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0199}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-2-exact-sequences}
+and exact sequences
+\[
+0\longrightarrow H^{-q}(X_{q-1})\longrightarrow
+\frac{Z^{-q}}{\operatorname{Im}(Y^{-q-1}\longrightarrow Z^{-q})}
+\longrightarrow
+\frac{Z^{-q}}{\operatorname{Ker}(Z^{-q}\longrightarrow L^{-q+1})}
+\longrightarrow0,
+\]
+\[
+0\longrightarrow
+\frac{Z^{-q}}{\operatorname{Ker}(Z^{-q}\longrightarrow L^{-q+1})}
+\longrightarrow L^{-q+1}\longrightarrow
+\frac{L^{-q+1}}{\operatorname{Im}(Z^{-q}\longrightarrow L^{-q+1})}
+\longrightarrow0,
+\]
+\[
+0\longrightarrow H^{-q+1}(X_{q-1})\longrightarrow
+\frac{L^{-q+1}}{\operatorname{Im}(Z^{-q}\longrightarrow L^{-q+1})}
+\longrightarrow
+\frac{L^{-q+1}}{\operatorname{Ker}(L^{-q+1}\longrightarrow L^{-q+2})}
+\longrightarrow0.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-2-mq-object}
+Since the complex $X_{q-1}$ is quasi-isomorphic to $Y$, the objects
+$H^i(X_{q-1})$ belong to $M$. It follows from the exact sequences above,
+the induction hypothesis 2), and the exactness properties of $M^\wedge$
+(2.2.4) that the object
+\[
+Z^{-q}/\operatorname{Im}(Y^{-q-1}\longrightarrow Z^{-q})
+\]
+belongs to $M^\wedge$. Consequently, there is a morphism
+
+\VerdierSemanticAnchor{ch3d-2-3-2-v}
+\[
+v\colon L^{-q}\longrightarrow Z^{-q}
+\]
+such that $L^{-q}$ belongs to $M$ and the composite morphism
+
+\VerdierSemanticAnchor{ch3d-2-3-2-composite}
+\[
+L^{-q}\xrightarrow{v}Z^{-q}\longrightarrow
+Z^{-q}/\operatorname{Im}(Y^{-q-1}\longrightarrow Z^{-q})
+\]
+is an epimorphism. Set
+
+\VerdierSemanticAnchor{ch3d-2-3-2-xq}
+\[
+X_q=X_{q-1}(v,-q),
+\qquad
+\dot u_q=p(v,-q)\quad(2.1.1).
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-2-verify}
+It follows from (2.1.2) that $u_q$ is a quasi-isomorphism, which proves
+property 3). It remains to verify property 2), that is, to verify that the
+kernel and image of $L^{-q}\longrightarrow L^{-q+1}$ belong to $M^\wedge$;
+this follows immediately from the exact sequences
+
+\VerdierSemanticAnchor{ch3d-2-3-2-exact-sequences-2}
+\[
+0\longrightarrow\operatorname{Im}(L^{-q}\longrightarrow L^{-q+1})
+\longrightarrow\operatorname{Ker}(L^{-q+1}\longrightarrow L^{-q+2})
+\longrightarrow H^{-q+1}(X_q)\longrightarrow0,
+\]
+\[
+0\longrightarrow\operatorname{Ker}(L^{-q}\longrightarrow L^{-q+1})
+\longrightarrow L^{-q}\longrightarrow
+\operatorname{Im}(L^{-q}\longrightarrow L^{-q+1})\longrightarrow0.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-2-conclusion}
+This completes the proof of the proposition.
+
+\VerdierSemanticAnchor{ch3d-2-3-3}
+\medskip\noindent\textbf{Proposition 2.3.3.}
+\textit{Let $M\subset M'$ be two sets of objects of $\mathcal A$ such that
+$M$ satisfies properties $(E_4)$ and $(E_5)$, $M'$ satisfies properties
+$(E_1)$ and $(E_4)$, and every object of $M'$ is a quotient of an object of
+$M$. Let $Y\in\operatorname{Ob}\operatorname{comp}(\mathcal A)$ be a complex
+such that:}
+
+\noindent\textit{1) The components $Y^i$, $i\in\mathbf Z$, of $Y$ belong to
+$M'$.}
+\endgroup

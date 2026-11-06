@@ -1,0 +1,73 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0205}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-a-conclusion}
+which shows that $X$ is a projective object of $\mathcal A$.
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-b}
+Let us prove b). Let $L^\bullet$ be a complex of projective type that is an
+object of $K^{-}(\mathcal A)$, and let
+$u\colon L^\bullet\longrightarrow Y$ be a morphism into an acyclic
+complex. Suppose that, for every integer $i>n$, we have constructed a
+morphism $s^i\colon L^i\longrightarrow Y^{i-1}$ such that
+$u^i=d_Y^{i-1}s^i+s^{i+1}d_{L^\bullet}^{i}$ (such a construction is always
+possible for $n$ sufficiently large because
+$L^\bullet$ is an object of $K^{-}(\mathcal A)$). It follows that
+$d_Y^n\bigl(u^n-s^{n+1}d_{L^\bullet}^{n}\bigr)=0$, and therefore the
+morphism $u^n-s^{n+1}d_{L^\bullet}^{n}$ factors through
+$\operatorname{Ker}(d_Y^n)$. Since the complex $Y$ is acyclic, the
+morphism $Y^{n-1}\longrightarrow\operatorname{Ker}(d_Y^n)$ is an
+epimorphism; and since $L^n$ is projective, there is a morphism
+$s^n\colon L^n\longrightarrow Y^{n-1}$ such that
+$d_Y^{n-1}s^n=u^n-s^{n+1}d_{L^\bullet}^{n}$.
+Induction thus shows that, for every integer $i$, there is a morphism $s^i$
+such that $u^i=d_Y^{i-1}s^i+s^{i+1}d_{L^\bullet}^{i}$. The morphism $u$
+is therefore homotopic to zero. It follows from (Chap. II, 2.3.3) that
+$L^\bullet$ is an object that is $Q$-free on the left. The last assertion
+of b) now follows from (Chap. II, 2.3.3).
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-c-projective-complexes}
+Let us prove c). Assertion 1) follows immediately from b) and (2.3.1). To
+prove assertion 1) in its ``respectively'' form, first let us show that
+every complex of projective type is $Q$-free on the left. Let $L^\bullet$
+be a complex of projective type and let
+$u\colon X\longrightarrow L^\bullet$ be a quasi-isomorphism. It
+suffices to show that $u$ has a section (Chap. II, 2.3.3). It
+therefore suffices to show that there is a complex ${L'}^\bullet$ of
+projective type and a quasi-isomorphism
+$v\colon {L'}^\bullet\longrightarrow X$ such that the composite morphism
+$uv\colon {L'}^\bullet\longrightarrow L^\bullet$ is an isomorphism
+in $K(\mathcal A)$. By (2.3.3), there is always a complex ${L'}^\bullet$
+of projective type and a quasi-isomorphism
+$v\colon {L'}^\bullet\longrightarrow X$. It remains only to show that the
+quasi-isomorphism
+$uv\colon {L'}^\bullet\longrightarrow L^\bullet$ is an isomorphism.
+Now there is a distinguished triangle
+$({L'}^\bullet,L^\bullet,{L''}^\bullet,uv,w,m)$, where
+${L''}^\bullet$ is an acyclic complex of projective type.
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-c-acyclic-projective-complexes}
+It remains only to show that acyclic complexes of projective type are
+homotopic to zero. Let ${L''}^\bullet$ be an acyclic complex of projective
+type. Since the projective dimension of the objects of $\mathcal A$ is
+bounded, the kernels of the differentials of ${L''}^\bullet$ are
+projective (2.2.6). It follows that all the differentials of
+${L''}^\bullet$ are decomposable morphisms (Chap. II, 1.2.8), and hence
+that ${L''}^\bullet$ is homotopic to zero.
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-c-conclusion}
+It now follows from (Chap. II, 2.3.3) that the natural functor
+$K^{*}(P)\longrightarrow D(\mathcal A)$ is fully faithful. Consequently,
+the functor $K^{*}(P)\longrightarrow D^{*}(\mathcal A)$ is fully faithful.
+By (2.3.3), this functor is also essentially surjective, and is therefore
+an equivalence of categories. Assertions 2) and 3) are now merely direct
+applications of (Chap. II, 2.3.3). Assertion 4) is then evident: an object
+that is $Q$-free on the left in $K^{-}(\mathcal A)$ (respectively, in
+$K^{*}(\mathcal A)$) admits, by (2.3.1) (respectively, (2.3.3)), a left
+resolution by a complex of projective type in $K^{-}(\mathcal A)$
+(respectively, $K^{*}(\mathcal A)$), and a quasi-isomorphism between
+objects that are $Q$-free on the left is an isomorphism in $K(\mathcal A)$.
+\endgroup

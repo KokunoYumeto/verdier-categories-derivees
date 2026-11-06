@@ -1,0 +1,93 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0192}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-2-5-cont}
+整数 $n$ で $M\text{-}\dim(X)\leq n$ となるものが存在するとき、対象 $X$ の $M$-次元
+（$M\text{-}\dim(X)$ と記す）とは、最小の整数 $n$ であって
+$M\text{-}\dim(X)\leq n$ を満たすものをいう。そのような整数が存在しないときは
+$M\text{-}\dim(X)=+\infty$ と定める。
+
+\VerdierSemanticAnchor{ch3d-2-2-6}
+\medskip\noindent\textbf{補題 2.2.6.}\quad
+\textit{$0\longrightarrow X\longrightarrow L\xrightarrow{u}Y\longrightarrow0$
+を $\mathcal A$ における完全列とし、$L\in M$ かつ $X,Y\in M'$ とする。このとき}
+\[
+M\text{-}\dim(X)=\sup\{M\text{-}\dim(Y)-1,0\}.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-2-7}
+\medskip\noindent\textbf{命題 2.2.7.}\quad
+\textit{$0\longrightarrow X\longrightarrow Y\longrightarrow Z\longrightarrow0$
+を完全列とし、$X,Y,Z\in M'$ とする。}
+
+\noindent\textit{a) 
+$M\text{-}\dim(Z)\leq
+\inf\{M\text{-}\dim(X),M\text{-}\dim(Y)\}$ ならば、
+$M\text{-}\dim(X)=M\text{-}\dim(Y)$ である。}
+
+\noindent\textit{b) 
+$M\text{-}\dim(Y)\leq
+\inf\{M\text{-}\dim(X),M\text{-}\dim(Z)\}$ ならば、}
+\[
+M\text{-}\dim(X)=
+\sup\{M\text{-}\dim(Z)-1,M\text{-}\dim(Y)\}.
+\]
+
+\noindent\textit{c) 
+$M\text{-}\dim(X)\leq
+\inf\{M\text{-}\dim(Y),M\text{-}\dim(Z)\}$ ならば、
+$M\text{-}\dim(Z)=M\text{-}\dim(Y)$ または
+$M\text{-}\dim(Z)=M\text{-}\dim(Y)+1$ である。}
+
+\VerdierSemanticAnchor{ch3d-2-2-7-proof}
+完全列の間のエピ射を構成し、帰納法を用いて命題を証明する：
+
+\VerdierSemanticAnchor{ch3d-2-2-7-epimorphism-diagram}
+\begin{center}
+\begin{tikzcd}[column sep=2.8em,row sep=2.4em]
+0 \arrow[r] & L_2 \arrow[r] \arrow[d] & L_1 \arrow[r] \arrow[d]
+  & L_0 \arrow[r] \arrow[d] & 0 \\
+0 \arrow[r] & X \arrow[r] & Y \arrow[r] & Z \arrow[r] & 0
+\end{tikzcd}
+\end{center}
+\[
+L_i\in M,\qquad 0\leq i\leq2,
+\]
+そして、補題 (2.2.6) によって制御される核の完全列に帰納法の仮定を適用する。
+したがって、補題を証明すればよい。
+
+\VerdierSemanticAnchor{ch3d-2-2-6-proof}
+まず、$M\text{-}\dim(Y)=+\infty$（それぞれ $0$）ならば、
+$M\text{-}\dim(X)=+\infty$（それぞれ $0$）である。したがって、
+$M\text{-}\dim(Y)$ は有限かつ零でないと仮定してよく、証明すべきことは
+$M\text{-}\dim(X)=M\text{-}\dim(Y)-1$ である。次の
+
+\VerdierSemanticAnchor{ch3d-2-2-6-resolution}
+\[
+0\longrightarrow L_n\longrightarrow L_{n-1}\longrightarrow\cdots
+\longrightarrow L_0\xrightarrow{u}Y\longrightarrow0,
+\qquad n\geq1,
+\]
+を $Y$ の $M$-分解とする。次をおく：
+
+\VerdierSemanticAnchor{ch3d-2-2-6-v-complex}
+\[
+\begin{aligned}
+V^\bullet={}&0\longrightarrow0\longrightarrow\cdots\longrightarrow0
+\longrightarrow L_n\longrightarrow L_{n-1}\longrightarrow\cdots\\
+&\longrightarrow L_0\xrightarrow{u}Y\longrightarrow0
+\longrightarrow0\longrightarrow\cdots
+\end{aligned}
+\]
+（$L_i$ は次数 $-i$ の成分である）。さらに、
+
+\VerdierSemanticAnchor{ch3d-2-2-6-u0}
+\[
+U_0^\bullet=V^\bullet(u,1),
+\qquad
+p_0=p(u,1)\colon U_0^\bullet\longrightarrow V^\bullet.
+\]
+\endgroup

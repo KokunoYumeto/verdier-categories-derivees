@@ -1,0 +1,85 @@
+\VerdierPhysicalPageAnchor{0075}%
+\VerdierSemanticAnchor{ch1-2-4-2-continuation}
+Ces conventions s'appliquent en particulier à la catégorie
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$.
+
+\VerdierSemanticAnchor{ch1-2-4-2-graded-product-category}
+Remarquons que la catégorie
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$ est munie d'une structure de
+$\mathbb Z[n]$-catégorie (1.3.11). Pour tout
+$\sigma=\sum_{i\in[n]}l_i e_i$, $\sigma\in\mathbb Z[n]$, on a :
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq1}
+\begin{equation}
+  T(\sigma)(X_1,X_2,\ldots,X_n)
+  = (X_1[l_1],X_2[l_2],\ldots,X_n[l_n]).
+  \tag{2.4.2.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-2-summable-object}
+Un objet $(X_1,\ldots,X_n)$ de
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$ est dit \emph{sommable} si,
+pour tout $l\in\mathbb Z$, l'ensemble des
+$\sigma=\sum_{i\in[n]}l_i e_i\in\mathbb Z[n]$ tels que
+$\sum_{i\in[n]}l_i=l$ et $X_i^{l_i}\neq0$, pour au moins un
+$i\in[n]$, est fini.
+
+\VerdierSemanticAnchor{ch1-2-4-2-multiadditive-functor}
+Soit maintenant
+$F\colon\prod_{i\in[n]}C_i\longrightarrow C$ un foncteur multiadditif
+(covariant). Pour tout objet $(X_1,\ldots,X_n)$ de
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$, posons :
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq2}
+\begin{equation}
+  F^{[n]}(X_1,\ldots,X_n)^\sigma
+  =F(X_1^{l_1},\ldots,X_n^{l_n}),
+  \tag{2.4.2.2}
+\end{equation}
+pour tout $\sigma=\sum_{i\in[n]}l_i e_i\in\mathbb Z[n]$,
+\VerdierSemanticAnchor{ch1-2-4-2-eq2-differential}
+\begin{equation*}
+  d^{\sigma,i}_{F^{[n]}(X_1,\ldots,X_n)}
+  =F(X_1^{l_1},\ldots,d_{X_i}^{l_i},\ldots,X_n^{l_n}),
+  \qquad \forall i\in[n].
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-2-4-2-nfold-complex}
+On a ainsi défini un complexe $n$-uple de $C$.
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq3}
+Pour tout morphisme $(f_1,\ldots,f_n)$ de
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$, posons :
+\begin{equation}
+  F^{[n]}(f_1,\ldots,f_n)^\sigma
+  =F(f_1^{l_1},\ldots,f_n^{l_n}),
+  \tag{2.4.2.3}
+\end{equation}
+pour tout $\sigma=\sum_{i\in[n]}l_i e_i\in\mathbb Z[n]$.
+
+\VerdierSemanticAnchor{ch1-2-4-2-morphism-of-complexes}
+On a ainsi défini un morphisme de complexes $n$-uples.
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq4}
+Ce qui précède définit visiblement un foncteur :
+\begin{equation}
+  F^{[n]}\colon
+  \prod_{i\in[n]}\operatorname{comp}(C_i)
+  \longrightarrow \operatorname{comp}^{n}(C).
+  \tag{2.4.2.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq5}
+Remarquons que, pour tout $\sigma\in\mathbb Z[n]$, on a :
+\begin{equation}
+  F^{[n]}T(\sigma)=T(\sigma)F^{[n]}.
+  \tag{2.4.2.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-2-strict-graded-functor}
+Par suite, le foncteur $F^{[n]}$ est un $\mathbb Z[n]$-foncteur strict.
+
+\VerdierSemanticAnchor{ch1-2-4-2-preserves-summability}
+Le foncteur $F^{[n]}$ transforme les objets sommables de
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$ en objets sommables de
+$\operatorname{comp}^{n}(C)$.

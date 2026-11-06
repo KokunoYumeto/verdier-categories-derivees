@@ -1,0 +1,85 @@
+
+\clearpage
+\VerdierPhysicalPageAnchor{0125}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-3-5}
+\noindent\textbf{命題 1.3.5.}\quad
+\emph{$C$ をアーベル圏とする。関手}
+
+\VerdierSemanticAnchor{ch2-1-3-5-h0-functor}
+\[
+  H^0\colon K(C)\longrightarrow C
+\]
+\noindent\emph{はコホモロジー的関手である。}
+
+\VerdierSemanticAnchor{ch2-1-3-5-first-exact-sequence}
+実際、（第 I 章、3.3.1）により、$\operatorname{tr}_1(C)$
+（第 I 章、3.1.1）の各対象 $X\xrightarrow{f}Y$ に対して列
+\[
+  H^0(X)\xrightarrow{H^0(f)}H^0(Y)
+  \xrightarrow{H^0(p(f))}H^0(c(f))
+  \xrightarrow{H^0(q(f))}H^0(X[1])
+\]
+\noindent が完全であることを示せばよい。
+
+\VerdierSemanticAnchor{ch2-1-3-5-trii-reduction}
+性質 TRII (1.1.1) を用いると、列
+
+\VerdierSemanticAnchor{ch2-1-3-5-reduced-exact-sequence}
+\[
+  H^0(Y)\xrightarrow{H^0(p(f))}H^0(c(f))
+  \xrightarrow{H^0(q(f))}H^0(X[1])
+\]
+\noindent が完全であることを示せば十分である。これは定義
+（第 I 章、3.1.2 および 3.2.2）から直ちに従う。
+
+\VerdierSemanticAnchor{ch2-1-3-5-proof-complete}
+関手 $H^0\colon K(C)\longrightarrow C$ を\emph{標準コホモロジー的関手}
+と呼ぶ。
+
+\VerdierSemanticAnchor{ch2-1-3-5-shifted-cohomology}
+慣例に従い、$H^n(X)=H^0(X[n])$ とおく。
+
+\VerdierSemanticAnchor{ch2-1-3-6}
+\medskip
+\noindent\textbf{命題 1.3.6.}\quad
+\emph{$C$ をアーベル圏とする。次の条件は同値である。}
+
+\VerdierSemanticAnchor{ch2-1-3-6-equivalent-conditions}
+\begin{enumerate}
+\renewcommand{\labelenumi}{\roman{enumi})}
+\item \emph{圏 $K(C)$ はアーベル圏である。}
+\item \emph{圏 $K(C)$ は分解可能である (1.2.8)。}
+\item \emph{圏 $C$ は分解可能である。}
+\end{enumerate}
+
+\VerdierSemanticAnchor{ch2-1-3-6-i-iff-ii}
+同値 $\mathrm{i)}\Longleftrightarrow\mathrm{ii)}$ は (1.2.9) から従う。
+
+\VerdierSemanticAnchor{ch2-1-3-6-ii-implies-iii}
+$C$ は $K(C)$ の充満部分圏なので、含意
+$\mathrm{ii)}\Longrightarrow\mathrm{iii)}$ は明らかである。
+
+\VerdierSemanticAnchor{ch2-1-3-6-hstar-complex}
+$C$ の各複体 $X$ に対し、$H^*(X)$ を複体
+\[
+  H^*(X)^l=H^l(X),\qquad l\in\mathbb Z,
+\]
+\[
+  d_{H^*(X)}^l=0,\qquad l\in\mathbb Z.
+\]
+\noindent と定める。
+
+\VerdierSemanticAnchor{ch2-1-3-6-hstar-equivalence}
+$C$ が分解可能ならば、関手 $H^*\colon K(C)\longrightarrow K(C)$ が
+圏同値であることが確かめられる。
+
+\VerdierSemanticAnchor{ch2-1-3-6-proof-complete}
+したがって $\mathrm{iii)}\Longrightarrow\mathrm{ii)}$ が従う。
+\endgroup
+

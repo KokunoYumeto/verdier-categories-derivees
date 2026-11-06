@@ -1,0 +1,64 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0156}%
+\begingroup\small
+\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+
+\VerdierSemanticAnchor{ch3-3-2-3-hom-map}
+Soient $(X,Y,f)$ et $(X',Y',f')$ deux objets de $\mathrm A(\mathcal D)$.
+Pour démontrer la proposition (3.2.3), il suffit de montrer que
+l'homomorphisme défini par le foncteur $\operatorname{Im}$
+\[
+\operatorname{Hom}_{\mathrm A(\mathcal D)}((X,Y,f),(X',Y',f'))
+\longrightarrow
+\operatorname{Hom}_{\mathcal D^\wedge}(\operatorname{Im}(f),\operatorname{Im}(f'))
+\tag{3.2.3.2}
+\]
+est un isomorphisme.
+
+\VerdierSemanticAnchor{ch3-3-2-3-injectivity}
+Montrons d'abord l'injectivité. Soit donc
+$(g;g')\colon(X,Y,f)\to(X',Y',f')$ un morphisme de
+$\mathcal{F}\ell_1(\mathcal D)$ tel que
+$\operatorname{Im}((g;g'))=0$. Le morphisme composé :
+\[
+\operatorname{Im}((f';\operatorname{id}_{Y'}))\circ
+\operatorname{Im}((g;g'))\circ
+\operatorname{Im}((\operatorname{id}_X;f))=h(g'f)=0.
+\]
+Comme $h$ est pleinement fidèle, $g'f=0$ ; donc $(g;g')$ est négligeable.
+La surjectivité de l'homomorphisme (3.2.3.2) résultera du lemme suivant.
+
+\VerdierSemanticAnchor{ch3-3-2-4}
+\medskip\noindent\textbf{Lemme 3.2.4.}\quad
+\textit{Soit
+$\alpha\colon\operatorname{Im}(f)\to\operatorname{Im}(f')$ un morphisme de
+$\mathcal D^\wedge$. Il existe deux morphismes de $\mathcal D$,
+$g\colon X\to X'$ et $g'\colon Y\to Y'$, tels que les diagrammes suivants
+soient commutatifs :}
+
+\VerdierSemanticAnchor{ch3-3-2-4-1}
+\[
+\begin{tikzcd}[column sep=6em,row sep=2.3em]
+h(X)\arrow[r,"\operatorname{Im}((\operatorname{id}_X;f))"]\arrow[d,"h(g)"']&
+\operatorname{Im}(f)\arrow[d,"\alpha"]\\
+h(X')\arrow[r,"\operatorname{Im}((\operatorname{id}_{X'};f'))"']&
+\operatorname{Im}(f')
+\end{tikzcd}
+\tag{3.2.4.1}
+\]
+
+\VerdierSemanticAnchor{ch3-3-2-4-2}
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.3em]
+h(X)\arrow[r,"h(f)"]\arrow[d,"h(g)"']&h(Y)\arrow[d,"h(g')"]\\
+h(X')\arrow[r,"h(f')"']&h(Y')
+\end{tikzcd}
+\tag{3.2.4.2}
+\]
+
+\VerdierSemanticAnchor{ch3-3-2-4-consequence}
+En effet, le lemme implique que
+$\alpha=\operatorname{Im}((g;g'))$, par (3.2.3.1) et parce que
+$\operatorname{Im}((\operatorname{id}_X;f))$ est un épimorphisme de
+$\mathcal D^\wedge$.
+\endgroup

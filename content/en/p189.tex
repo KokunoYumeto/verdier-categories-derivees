@@ -1,0 +1,73 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0189}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-1-4-proof-cont}
+where $v$ is a homotopy equivalence.
+
+Indeed, construct the cone of the morphism $m$:
+
+\VerdierSemanticAnchor{ch3d-2-1-4-cone-m}
+\[
+X\xrightarrow{m}Y\xrightarrow{p(m)}c(m)
+\longrightarrow X[1],
+\]
+and then, once more, the cone of the morphism $p(m)$:
+
+\VerdierSemanticAnchor{ch3d-2-1-4-cone-pm}
+\[
+Y\xrightarrow{p(m)}c(m)\longrightarrow c(p(m))
+\xrightarrow{q}Y[1].
+\]
+The morphism $c(p(m))\xrightarrow{q}Y[1]$ is an epimorphism
+(Chap. I, 3.2.2). It follows from the properties of distinguished triangles
+(property TRII) that there is a homotopy equivalence
+
+\VerdierSemanticAnchor{ch3d-2-1-4-homotopy-equivalence}
+\[
+X\xrightarrow{v}c(p(m))[-1]
+\]
+such that the following triangle
+
+\VerdierSemanticAnchor{ch3d-2-1-4-triangle}
+\begin{center}
+\begin{tikzcd}[column sep=3.5em,row sep=3.2em]
+X \arrow[rr,"v"] \arrow[dr,"m"']
+  && c(p(m))[-1] \arrow[dl,"{q[-1]}"] \\
+& Y &
+\end{tikzcd}
+\end{center}
+is commutative up to homotopy.
+
+We may therefore suppose that the morphism $m$ is an epimorphism in
+$\operatorname{comp}(\mathcal A)$. Let
+
+\VerdierSemanticAnchor{ch3d-2-1-4-kernel}
+\[
+N=\cdots\longrightarrow N^i\xrightarrow{d_N^i}N^{i+1}
+\xrightarrow{d_N^{i+1}}N^{i+2}\longrightarrow\cdots
+\]
+be the kernel of $m$. Set
+
+\VerdierSemanticAnchor{ch3d-2-1-4-truncation}
+\[
+N_{-n}=\cdots\longrightarrow N^{n-3}\longrightarrow N^{n-2}
+\longrightarrow\operatorname{Im}(d_N^{n-2})
+\longrightarrow0\longrightarrow0\longrightarrow\cdots.
+\]
+The $N_{-n}$ form a decreasing sequence of acyclic subcomplexes of $N$;
+therefore, on setting $X_n=X/N_n$, one obtains a sequence
+
+\VerdierSemanticAnchor{ch3d-2-1-4-quotients}
+\[
+u_n\colon X_n\longrightarrow X_{n-1},\qquad n\in\mathbb Z.
+\]
+The $u_n$ are elementary morphisms of height $-n$, and
+\[
+\varprojlim_n X_n=X,
+\qquad
+\varinjlim_n X_n=Y.
+\]
+\endgroup

@@ -1,0 +1,84 @@
+\VerdierPhysicalPageAnchor{0080}%
+\VerdierSemanticAnchor{ch1-2-5-10}
+\noindent\textbf{2.5.10.}\quad
+\VerdierSemanticAnchor{ch1-2-5-10-multiadditive-setup}
+Soit
+$F\colon\prod_{i\in[n]}C_i\longrightarrow C$ un foncteur multiadditif.
+Désignons par :
+
+\VerdierSemanticAnchor{ch1-2-5-10-quotient-functors}
+\begin{equation*}
+  Q_i\colon\operatorname{comp}(C_i)\longrightarrow K(C_i)
+\end{equation*}
+les foncteurs canoniques. Il résulte de (2.5.6) et de (2.5.7) qu'il existe,
+lorsque les produits dénombrables sont représentables dans $C$, un et un
+seul foncteur
+
+\VerdierSemanticAnchor{ch1-2-5-10-pi-extension}
+\begin{equation*}
+  K_{\Pi}(F)\colon
+  \prod_{i\in[n]}K(C_i)\longrightarrow K(C)
+\end{equation*}
+tel que le diagramme ci-après soit commutatif :
+
+\VerdierSemanticAnchor{ch1-2-5-10-eq1}
+\begin{equation}
+  \resizebox{0.84\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=6.8em,row sep=5.0em]
+      \displaystyle\prod_{i\in[n]}\operatorname{comp}(C_i)
+        \arrow[r,"{\operatorname{comp}_{\Pi}F}"]
+        \arrow[d,"{\prod_{i\in[n]}Q_i}"']
+        \& \operatorname{comp}(C)
+          \arrow[d,"Q"] \\
+      \displaystyle\prod_{i\in[n]}K(C_i)
+        \arrow[r,"{K_{\Pi}F}"]
+        \& K(C)\mathpunct{.}
+    \end{tikzcd}$%
+  }
+  \tag{2.5.10.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-5-10-twisted-structure}
+De plus, le foncteur $\prod_{i\in[n]}Q_i$ étant un
+$\mathbb Z[n]$-foncteur strict, il existe sur le foncteur $K_{\Pi}F$ une et
+une seule structure de $\mathbb Z[n]$-foncteur gradué tordu par le cocycle de
+Koszul relatif à la base ordonnée $e_1,\ldots,e_n$ de $\mathbb Z[n]$, tel
+qu'on ait l'égalité entre $\mathbb Z[n]$-foncteurs tordus :
+
+\VerdierSemanticAnchor{ch1-2-5-10-eq2}
+\begin{equation}
+  K_{\Pi}F\prod_{i\in[n]}Q_i
+  =Q\operatorname{comp}_{\Pi}F.
+  \tag{2.5.10.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-5-10-morphism-setup}
+Enfin, soient $F$ et $F'$ deux foncteurs multiadditifs et
+$m\colon F\longrightarrow F'$ un morphisme de foncteurs. Il résulte de
+(2.5.7) qu'il existe un et un seul morphisme de foncteurs :
+
+\VerdierSemanticAnchor{ch1-2-5-10-eq3}
+\begin{equation}
+  K_{\Pi}m\colon K_{\Pi}F\longrightarrow K_{\Pi}F'
+  \tag{2.5.10.3}
+\end{equation}
+tel que :
+
+\VerdierSemanticAnchor{ch1-2-5-10-eq4}
+\begin{equation}
+  K_{\Pi}m\star\prod_{i\in[n]}Q_i
+  =Q\star\operatorname{comp}_{\Pi}m.
+  \tag{2.5.10.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-5-10-pi-terminology}
+Le foncteur $K_{\Pi}F$ est appelé la $\Pi$-\emph{extension} du foncteur $F$
+aux complexes à homotopie près. Le morphisme $K_{\Pi}m$ est appelé la
+$\Pi$-\emph{extension} du morphisme $m$ aux complexes à homotopie près.
+
+\VerdierSemanticAnchor{ch1-2-5-10-sigma-analogue}
+Lorsque les sommes directes dénombrables sont représentables dans $C$, on
+définit de manière analogue le foncteur $K_{\Sigma}F$ : la
+$\Sigma$-\emph{extension} du foncteur $F$ aux complexes à homotopie près, et
+le morphisme $K_{\Sigma}m$ : la $\Sigma$-\emph{extension} du morphisme $m$
+aux complexes à homotopie près.

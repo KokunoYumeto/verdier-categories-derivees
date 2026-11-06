@@ -1,0 +1,76 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0035}%
+\VerdierSemanticAnchor{ch1-1-1-1-fiber-category-cont}%
+したがって $\mathcal C$ と同じ対象集合をもち、その射が $\mathcal C$ の次数
+$e$ の射であるような $\mathcal C$ の部分圏である。
+
+\VerdierSemanticAnchor{ch1-1-1-1-graded-functor}
+$(\mathcal C,G)$ と $(\mathcal C',G)$ を二つの $G$-次数付き圏とする。
+$(\mathcal C,G)$ から $(\mathcal C',G)$ への\emph{次数付き関手}とは、
+$\mathcal G$ 上のカルテジアン関手 $F$ のことである。ファイバー圏への制限で
+得られる関手を $F_e\colon\mathcal C_e\to\mathcal C'_e$ と書く。
+\VerdierSemanticAnchor{ch1-1-1-1-compatible-morphism}
+最後に、次数付き関手の射 $m\colon F\to F'$ が関手の
+$\mathcal G$-射であるとき、それは\emph{次数付けと両立する}という。
+
+\VerdierSemanticAnchor{ch1-1-1-2}
+\noindent\textbf{1.1.2.}\quad
+$\mathcal C$ を $G$-次数付き圏、$g$ を $G$ の元とする。$\mathcal C$ の各対象対
+$X,Y$ に対し、
+\VerdierSemanticAnchor{ch1-1-1-2-homogeneous-hom}%
+$X$ から $Y$ への次数 $g$ の射の集合を $\operatorname{Hom}^{g}(X,Y)$ と書く。
+このとき：
+\VerdierSemanticAnchor{ch1-1-1-2-eq1}
+\begingroup
+\makeatletter
+\tagsleft@true
+\let\veqno\@@leqno
+\makeatother
+\begin{equation}
+  \operatorname{Hom}(X,Y)
+  =\coprod_{g\in G}\operatorname{Hom}^{g}(X,Y).
+  \tag{1.1.2.1}
+\end{equation}
+\endgroup
+
+\VerdierSemanticAnchor{ch1-1-1-2-graded-hom-set}
+したがって集合 $\operatorname{Hom}(X,Y)$ は $G$-次数付き集合の構造をもつ。
+次数の関手性により、任意の射 $m\colon X\to Y$ と任意の射
+$n\colon Y\to Z$ に対して：
+\VerdierSemanticAnchor{ch1-1-1-2-eq2}
+\begin{equation}
+  \deg(n)\deg(m)=\deg(nm).
+  \tag{1.1.2.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-1-2-fibered-criterion}
+以上の式は $\mathcal C$ が $\mathcal G$ 上の圏であることを表すにすぎない。
+次に、圏 $\mathcal C$ が $\mathcal G$ 上にファイバー化されていることを表そう。
+そのためには、$\mathcal C$ の各対象が、指定された次数をもつ超カルテジアン射の
+終域であると言えばよい [19]。ところが $\mathcal C$ の超カルテジアン射は
+$\mathcal C$ の同型射にほかならないことが直ちに分かる。したがって
+$\mathcal C$ がファイバー化されていることは、次の性質と同値である：
+
+\VerdierSemanticAnchor{ch1-1-1-2-eq3}
+\noindent\textnormal{(1.1.2.3)}\quad
+\begin{minipage}[t]{0.78\textwidth}
+\emph{$G$ の各元 $g$ と $\mathcal C$ の各対象 $X$ に対し、終域が $X$ で次数が
+$g$ である同型射が存在する。}
+\end{minipage}
+\par\medskip
+
+\VerdierSemanticAnchor{ch1-1-1-2-degree-preserving-functors}
+いま $(\mathcal C,G)$ と $(\mathcal C',G)$ を二つの $G$-次数付き圏とし、
+$F\colon\mathcal C\to\mathcal C'$ を次数付き関手とする。まず $F$ は
+$\mathcal G$-関手であるから、射の次数を保つ。また $F$ は $\mathcal C$ の
+カルテジアン射を $\mathcal C'$ のカルテジアン射へ送るが、$\mathcal C$ の
+カルテジアン射は同型射なので、これは自動的である。ゆえに $\mathcal C$ から
+$\mathcal C'$ への次数付き関手は、ちょうど\emph{次数を保つ関手}である。
+
+\VerdierSemanticAnchor{ch1-1-1-2-degree-e-morphism}
+最後に、次数付けと両立する次数付き関手の射 $m\colon F\to F'$ とは、単に次数
+$e$ の関手の射、すなわち $\mathcal C$ の各対象 $X$ に対する射
+\VerdierSemanticAnchor{ch1-1-1-2-component}
+\[
+  m(X)\colon F(X)\longrightarrow F'(X)
+\]

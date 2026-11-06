@@ -1,0 +1,80 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0182}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-1-3-1-naturality-cont}
+le diagramme ci-après est commutatif :
+
+\VerdierSemanticAnchor{ch3d-1-3-1-naturality-square}
+\begin{center}
+\begin{tikzcd}[column sep=4.5em,row sep=2.4em]
+G(Z) \arrow[r,"{\delta(S)}"] \arrow[d,"{G(w)}"']
+  & G(X)[1] \arrow[d,"{G(u)[1]}"] \\
+G(Z') \arrow[r,"{\delta(S^{\prime})}"'] & G(X')[1]
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-1-3-1-distinguished-triangle}
+\noindent b) Pour toute suite exacte de $\mathcal A$,
+$S=0\longrightarrow X\xrightarrow{u}Y\xrightarrow{v}Z\longrightarrow0$,
+le triangle
+$(G(X),\allowbreak G(Y),\allowbreak G(Z),\allowbreak G(u),\allowbreak
+G(v),\allowbreak\delta(S))$ est distingué.
+
+\VerdierSemanticAnchor{ch3d-1-3-2}
+\medskip\noindent\textbf{1.3.2.}\quad
+Soient $\mathcal A$ une catégorie abélienne et $u$ un morphisme de
+$\operatorname{comp}(\mathcal A)$. On désigne par $[u]$ l'image de
+$\dot u$ dans $D(\mathcal A)$. Soit
+$S=0\longrightarrow X\xrightarrow{u}Y\xrightarrow{v}Z\longrightarrow0$
+une suite exacte de $\operatorname{comp}(\mathcal A)$. Les propriétés
+d'adjonction du foncteur cône (chap. I, 3.1.3) définissent un morphisme
+$\mu(S)\colon c(u)\longrightarrow Z$. Le diagramme ci-après est commutatif
+(chap. I, 3.2.2.4) :
+
+\VerdierSemanticAnchor{ch3d-1-3-2-cone-square}
+\begin{center}
+\begin{tikzcd}[column sep=4.2em,row sep=2.8em]
+Y \arrow[r,"p(u)"] \arrow[dr,"v"'] & c(u) \arrow[d,"\mu(S)"] \\
+& Z
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-1-3-2-components}
+Un calcul simple montre que les composants du morphisme $\mu(S)$ sont :
+\begin{equation}
+\begin{aligned}
+\mu(S)^i&\colon Y^i\oplus X^{i+1}\longrightarrow Z^i,\\
+\mu(S)^i&=(v^i,0).
+\end{aligned}
+\tag{1.3.2.1}
+\end{equation}
+On en déduit que le morphisme $\mu(S)\colon c(u)\longrightarrow Z$ est un
+épimorphisme et qu'on a une suite exacte :
+
+\VerdierSemanticAnchor{ch3d-1-3-2-short-exact}
+\[
+0\longrightarrow c(\operatorname{id}_X)\longrightarrow c(u)
+\longrightarrow Z\longrightarrow0.
+\]
+Introduisons alors le complexe $c(\mu(S))$ et soit
+$m\colon c(\operatorname{id}_X)\longrightarrow c(\mu(S))[-1]$ le
+morphisme de composants :
+
+\VerdierSemanticAnchor{ch3d-1-3-2-morphism-m}
+\begin{equation}
+\begin{aligned}
+m^i&\colon X^i\oplus X^{i+1}
+  \longrightarrow Z^{i-1}\oplus Y^i\oplus X^{i+1},\\[2pt]
+m^i&=
+\begin{pmatrix}
+0&0\\
+u^i&0\\
+0&\operatorname{id}
+\end{pmatrix}.
+\end{aligned}
+\tag{1.3.2.2}
+\end{equation}
+\endgroup

@@ -1,0 +1,61 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0022}
+因此，复形 $\int F(I^{\bullet\bullet})$ 的上同调对象
+$\mathrm R^nF(Y^{\bullet})$ 在典范同构意义下确定，并且函子性地依赖于复形
+$Y^{\bullet}$。所得函子 $\mathrm R^nF$ 称为 $F$ 的\emph{右超导出函子}。
+
+\VerdierSemanticAnchor{intro-2-spectral-sequences}
+此外，还得到两个关于 $Y^{\bullet}$ 函子性的谱序列，其初始项为：
+
+\VerdierSemanticAnchor{intro-2-spectral-sequence-one}
+\begin{equation}
+\mathrm I_2^{p,q}=\mathrm H^p\bigl(\mathrm R^qF(Y^{\bullet})\bigr)
+\tag{*}
+\end{equation}
+
+\VerdierSemanticAnchor{intro-2-spectral-sequence-two}
+\begin{equation}
+\mathrm{II}_2^{p,q}=\mathrm R^pF\bigl(\mathrm H^q(Y^{\bullet})\bigr),
+\tag{**}
+\end{equation}
+而它们的极限项是适当滤过的对象 $\mathrm R^nF(Y^{\bullet})$ 所关联的
+分次对象。为简单起见，只考虑所涉复形的分量在足够小的次数上为零的情形。
+此时可见谱序列 (*) 与 (**) 都收敛。复形态射
+$m:Y^{\bullet}\to Z^{\bullet}$ 诱导态射
+
+\VerdierSemanticAnchor{intro-2-hyperderived-morphism}
+\[
+\mathrm R^nF(m):\mathrm R^nF(Y^{\bullet})
+\longrightarrow \mathrm R^nF(Z^{\bullet})
+\]
+以及相应谱序列之间的态射。
+
+\VerdierSemanticAnchor{intro-2-quasi-isomorphism-invariance}
+特别地，\emph{当 $m$ 是拟同构时}，谱序列 (**) 表明
+\emph{态射 $\mathrm R^nF(m)$ 都是同构}。因此，只要在“拟同构意义下”知道
+复形 $Y^{\bullet}$，对象 $\mathrm R^nF(Y^{\bullet})$ 就已确定。另一方面，
+我们已经指出，同调代数的通常方法大多只给出在拟同构意义下确定的复形。
+由此看来，超同调所研究的自然对象正是“复形在拟同构意义下的类”。
+
+\VerdierSemanticAnchor{intro-3}
+\noindent\textbf{3.}\quad
+于是，我们所采用的步骤自然成为必然。对每个阿贝尔范畴 $\mathcal A$，引入
+$\mathcal A$ 中对象复形所成的范畴 $\operatorname{comp}(\mathcal A)$。
+然后从 $\operatorname{comp}(\mathcal A)$ 构造一个新范畴，在其中形式地
+逆转 $\operatorname{comp}(\mathcal A)$ 的拟同构。
+
+\VerdierSemanticAnchor{intro-3-derived-category}
+这样得到一个范畴 $\mathbf D(\mathcal A)$，即阿贝尔范畴 $\mathcal A$ 的
+\emph{“导出范畴”}。通过右分解的方法（在本引言中无须具体说明），给两个
+阿贝尔范畴之间的加性函子 $F:\mathcal A\to\mathcal B$ 对应一个函子
+$\mathrm RF:\mathbf D(\mathcal A)\to\mathbf D(\mathcal B)$。它通常只在
+一个适当的子范畴 $\mathbf D^*(\mathcal A)\subset\mathbf D(\mathcal A)$
+上定义；这个子范畴是通过限制所考虑复形的次数而得到的。该函子称为 $F$ 的
+\emph{全右导出函子}。
+
+\VerdierSemanticAnchor{intro-3-total-right-derived-functor}
+对 $\mathbf D^*(\mathcal A)$ 的每个对象 $X$，$\mathbf D(\mathcal B)$ 中的
+对象 $\mathrm RF(X)$ 是一个在“拟同构意义下”确定的 $\mathcal B$ 中对象
+复形；因此，该复形的上同调对象 $\mathrm R^nF(X)$ 是良定义的。函子
+$X\longmapsto\mathrm R^nF(X)$ 是 $F$ 的“右超导出函子”，这里定义它们
+时不必一定假设

@@ -1,0 +1,74 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0197}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-step-conclusion}
+Posons alors $L_q^\bullet=L_{q-1}^\bullet(\alpha,-q)$,
+$w_q=\varphi$, $v_q=p(\alpha,-q)$. Les complexes $L_n^\bullet$ et les
+morphismes de complexes $w_n$ et $v_n$, $n\leq q$, possèdent les propriétés
+2) et 3). Il reste à montrer que $L_q^\bullet$ possède la propriété 1)
+ci-dessus. Ceci résulte du fait que l'ensemble $M^\wedge$ est exact $(E_6)$
+(2.2.4).
+
+\VerdierSemanticAnchor{ch3d-2-3-1-proof-b}
+Démontrons b). Soient $L$ un élément de $M$ et
+$\dot u\colon X\longrightarrow L$ un épimorphisme. Désignons par $Y$ le
+noyau de $\dot u$. On a un quasi-isomorphisme :
+
+\VerdierSemanticAnchor{ch3d-2-3-1-kernel-quasi-isomorphism}
+\begin{center}
+\begin{tikzcd}[column sep=2.25em,row sep=2.6em]
+\cdots \arrow[r] & 0 \arrow[r] \arrow[d] & Y \arrow[r] \arrow[d]
+  & X \arrow[r] \arrow[d,"\dot u"] & 0 \arrow[r] \arrow[d] & \cdots \\
+\cdots \arrow[r] & 0 \arrow[r] & 0 \arrow[r] & L \arrow[r] & 0 \arrow[r]
+  & \cdots.
+\end{tikzcd}
+\end{center}
+Par suite, on a un quasi-isomorphisme :
+
+\VerdierSemanticAnchor{ch3d-2-3-1-resolution-quasi-isomorphism}
+\begin{center}
+\begin{tikzcd}[column sep=2.25em,row sep=2.6em]
+\cdots \arrow[r] & L^{-1} \arrow[r] \arrow[d] & L^0 \arrow[r] \arrow[d,"v"]
+  & L^1 \arrow[r] \arrow[d] & L^2 \arrow[r] \arrow[d] & \cdots \\
+\cdots \arrow[r] & Y \arrow[r] & X \arrow[r] & 0 \arrow[r] & 0 \arrow[r]
+  & \cdots,
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-2-3-1-e2}
+où les $L^i$ sont des éléments de $M$. Par suite, le morphisme $\dot u v$
+est un épimorphisme, ce qui démontre la propriété $(E_2)$. Soit maintenant :
+
+\VerdierSemanticAnchor{ch3d-2-3-1-exact-resolution}
+\[
+0\longrightarrow X\xrightarrow{\dot u}L_n\longrightarrow L_{n-1}
+\longrightarrow\cdots\longrightarrow L_0\longrightarrow0
+\]
+une suite exacte, où les $L_i$ sont des éléments de $M$. On a alors un
+quasi-isomorphisme :
+\begin{center}
+\begin{tikzcd}[column sep=1.35em,row sep=2.6em]
+\cdots \arrow[r] & 0 \arrow[r] \arrow[d] & 0 \arrow[r] \arrow[d]
+  & X \arrow[r] \arrow[d,"\dot u"] & 0 \arrow[r] \arrow[d]
+  & \cdots \arrow[r] & 0 \arrow[r] \arrow[d] & 0 \arrow[r] \arrow[d]
+  & \cdots \\
+\cdots \arrow[r] & 0 \arrow[r] & 0 \arrow[r] & L_n \arrow[r]
+  & L_{n-1} \arrow[r] & \cdots \arrow[r] & L_0 \arrow[r] & 0 \arrow[r]
+  & \cdots.
+\end{tikzcd}
+\end{center}
+Il existe par suite un quasi-isomorphisme :
+
+\VerdierSemanticAnchor{ch3d-2-3-1-e3-quasi-isomorphism}
+\begin{center}
+\begin{tikzcd}[column sep=2.7em,row sep=2.6em]
+\cdots \arrow[r] & L^{-n-1} \arrow[r] \arrow[d]
+  & L^{-n} \arrow[r] \arrow[d,"v"] & L^{-n+1} \arrow[r] \arrow[d]
+  & \cdots \\
+\cdots \arrow[r] & 0 \arrow[r] & X \arrow[r] & 0 \arrow[r] & \cdots
+\end{tikzcd}
+\end{center}
+\endgroup

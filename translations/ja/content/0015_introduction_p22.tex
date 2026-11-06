@@ -1,0 +1,66 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0022}
+したがって、複体 $\int F(I^{\bullet\bullet})$ のコホモロジー対象
+$\mathrm R^nF(Y^{\bullet})$ は標準同型を除いて定まり、複体 $Y^{\bullet}$
+に関手的に依存する。こうして得られる関手 $\mathrm R^nF$ が $F$ の
+\emph{右超導来関手}である。
+
+\VerdierSemanticAnchor{intro-2-spectral-sequences}
+さらに、$Y^{\bullet}$ に関手的な二つのスペクトル系列が得られ、その初項は
+次のとおりである：
+
+\VerdierSemanticAnchor{intro-2-spectral-sequence-one}
+\begin{equation}
+\mathrm I_2^{p,q}=\mathrm H^p\bigl(\mathrm R^qF(Y^{\bullet})\bigr)
+\tag{*}
+\end{equation}
+
+\VerdierSemanticAnchor{intro-2-spectral-sequence-two}
+\begin{equation}
+\mathrm{II}_2^{p,q}=\mathrm R^pF\bigl(\mathrm H^q(Y^{\bullet})\bigr),
+\tag{**}
+\end{equation}
+またその極限項は、適切にフィルター付けられた対象
+$\mathrm R^nF(Y^{\bullet})$ に付随する次数付き対象である。簡単のため、
+考える複体の成分が十分小さい次数で零になる場合に限ろう。このとき
+スペクトル系列 (*) と (**) は収束する。複体の射
+$m:Y^{\bullet}\to Z^{\bullet}$ は射
+
+\VerdierSemanticAnchor{intro-2-hyperderived-morphism}
+\[
+\mathrm R^nF(m):\mathrm R^nF(Y^{\bullet})
+\longrightarrow \mathrm R^nF(Z^{\bullet})
+\]
+および対応するスペクトル系列の射を誘導する。
+
+\VerdierSemanticAnchor{intro-2-quasi-isomorphism-invariance}
+特に、\emph{$m$ が擬同型であるとき}、スペクトル系列 (**) により
+\emph{射 $\mathrm R^nF(m)$ は同型である}。したがって、複体
+$Y^{\bullet}$ が「擬同型を除いて」分かれば、対象
+$\mathrm R^nF(Y^{\bullet})$ は決定される。他方、通常のホモロジー代数の
+方法は多くの場合、擬同型を除いてしか定まらない複体だけを与えることを
+すでに述べた。ゆえに、超ホモロジーが研究する自然な対象は
+「擬同型を除いた複体の類」である。
+
+\VerdierSemanticAnchor{intro-3}
+\noindent\textbf{3.}\quad
+そこで、次の手順が自然に要請される。各アーベル圏 $\mathcal A$ に対して、
+$\mathcal A$ の対象の複体の圏 $\operatorname{comp}(\mathcal A)$ を導入する。
+次に、$\operatorname{comp}(\mathcal A)$ の擬同型を形式的に可逆にすることに
+より、$\operatorname{comp}(\mathcal A)$ から新しい圏を構成する。
+
+\VerdierSemanticAnchor{intro-3-derived-category}
+こうして圏 $\mathbf D(\mathcal A)$、すなわちアーベル圏 $\mathcal A$ の
+\emph{「導来圏」}を得る。この序論で詳述する必要のない右分解の方法により、
+二つのアーベル圏の間の加法的関手 $F:\mathcal A\to\mathcal B$ に対して、
+関手 $\mathrm RF:\mathbf D(\mathcal A)\to\mathbf D(\mathcal B)$ を
+対応させる。これは多くの場合、考える複体の次数に制限を課して得られる
+適切な部分圏 $\mathbf D^*(\mathcal A)\subset\mathbf D(\mathcal A)$ 上で
+のみ定義され、$F$ の\emph{全右導来関手}と呼ばれる。
+
+\VerdierSemanticAnchor{intro-3-total-right-derived-functor}
+$\mathbf D^*(\mathcal A)$ の各対象 $X$ に対して、$\mathbf D(\mathcal B)$
+の対象 $\mathrm RF(X)$ は $\mathcal B$ の対象からなる「擬同型を除いて」
+定まる複体である。したがって、そのコホモロジー対象 $\mathrm R^nF(X)$ は
+良定義である。関手 $X\longmapsto\mathrm R^nF(X)$ は $F$ の
+「右超導来関手」であり、ここでは必ずしも次を仮定せずに定義される：

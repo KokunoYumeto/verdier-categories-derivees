@@ -1,0 +1,76 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0123}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-14}
+\noindent\textbf{Remark 1.2.14.}\quad
+The properties studied in 1.2 did not at any point involve axiom TRIV. They
+are therefore valid for all strict additive $\mathbb Z$-categories equipped
+with a set of triangles satisfying axioms TRI, TRII, and TRIII.
+
+\VerdierSemanticAnchor{ch2-1-3}
+\medskip
+\noindent\textbf{1.3. Examples of triangulated categories.}
+
+\VerdierSemanticAnchor{ch2-1-3-1}
+\medskip
+\noindent\textbf{1.3.1.}\quad
+Let $C$ be an additive category and $K(C)$ the category of complexes of $C$
+up to homotopy (chap. I, 2.5.7). The category $K(C)$ is a strict
+$\mathbb Z$-category equipped with a family of triangles, the distinguished
+triangles (chap. I, 3.3.1), which satisfies properties TRI, TRII, and TRIII
+(chap. I, 3.3).
+
+\VerdierSemanticAnchor{ch2-1-3-2}
+\medskip
+\noindent\textbf{Proposition 1.3.2.}\quad
+\textit{The category $K(C)$, equipped with the family of distinguished
+triangles, is a triangulated category.}
+
+\VerdierSemanticAnchor{ch2-1-3-2-triv-reduction}
+It remains to prove that the family of distinguished triangles of $K(C)$
+has property TRIV. Thus let
+
+\VerdierSemanticAnchor{ch2-1-3-2-commutative-triangle}
+\[
+  \begin{tikzcd}[column sep=4.2em,row sep=2.6em]
+    & X_2 \arrow[dr,"u_1"] & \\
+    X_1 \arrow[ur,"u_3"] \arrow[rr,"u_2"'] && X_3
+  \end{tikzcd}
+\]
+\noindent be a commutative diagram, and let
+
+\VerdierSemanticAnchor{ch2-1-3-2-input-triangles}
+\[
+  \begin{aligned}
+    X_1&\xrightarrow{u_3}X_2\xrightarrow{v_3}Z_3
+      \xrightarrow{w_3}X_1[1],\\
+    X_2&\xrightarrow{u_1}X_3\xrightarrow{v_1}Z_1
+      \xrightarrow{w_1}X_2[1],\\
+    X_1&\xrightarrow{u_2}X_3\xrightarrow{v_2}Z_2
+      \xrightarrow{w_2}X_1[1]
+  \end{aligned}
+\]
+\noindent be three distinguished triangles. By (chap. I, 3.3.5), there
+exist three distinguished triangles
+
+\VerdierSemanticAnchor{ch2-1-3-2-alternative-triangles}
+\[
+  \resizebox{0.98\linewidth}{!}{$
+    (X_1,X_2,Z'_3,u_3,v'_3,w'_3),\qquad
+    (X_2,X_3,Z'_1,u_1,v'_1,w'_1),\qquad
+    (X_1,X_3,Z'_2,u_2,v'_2,w'_2)
+  $}
+\]
+\noindent and two morphisms
+
+\VerdierSemanticAnchor{ch2-1-3-2-morphisms-boundary}
+\[
+  m'_1\colon Z'_3\longrightarrow Z'_2,\qquad
+  m'_3\colon Z'_2\longrightarrow Z'_1,
+\]
+\endgroup

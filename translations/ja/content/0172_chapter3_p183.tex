@@ -1,0 +1,72 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0183}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-1-3-2-morphism-m-cont}
+射 $m$ はモノ射であり、次の完全列が得られる：
+
+\VerdierSemanticAnchor{ch3d-1-3-2-exact-sequence}
+\begin{equation}
+0\longrightarrow c(\operatorname{id}_X)
+\xrightarrow{m}c(\mu(S))[-1]
+\longrightarrow c(\operatorname{id}_Z)[-1]
+\longrightarrow0.
+\tag{1.3.2.3}
+\end{equation}
+複体 $c(\operatorname{id}_X)$ と $c(\operatorname{id}_Z)$ は零複体に
+ホモトピックである。したがって、複体 $c(\mu(S))$ は非輪状である。
+ゆえに射 $\mu(S)$ は擬同型である。
+
+\VerdierSemanticAnchor{ch3d-1-3-2-k-diagram}
+圏 $K(\mathcal A)$ に移ると、次の図式を得る（第 I 章，3.2.2.7）：
+\begin{center}
+\resizebox{0.84\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=3.2em,row sep=2.6em]
+X \arrow[r,"\dot u"]
+  \& Y \arrow[r,"\dot{p}(u)"] \arrow[dr,"\dot v"']
+  \& c(\dot u) \arrow[r,"\dot{q}(u)"] \arrow[d,"\dot\mu(S)"]
+  \& X[1] \\
+\& \& Z \&
+\end{tikzcd}$%
+}
+\end{center}
+そこで次のように置く：
+
+\VerdierSemanticAnchor{ch3d-1-3-2-connecting}
+\begin{equation}
+\delta(S)=[q(u)][\mu(S)]^{-1}.
+\tag{1.3.2.4}
+\end{equation}
+$K(\mathcal A)$（第 I 章，3.3.1）および $D(\mathcal A)$
+（第 II 章，2.2.6）の三角構造の定義から、三角
+$(X,Y,Z,[u],[v],\delta(S))$ は $D(\mathcal A)$ の完全三角である。
+さらに、射 $\delta(S)$ が $S$ に関して関手的であることは直ちに確かめられる
+（(1.3.1)，性質 a)）。したがって、標準関手
+$\operatorname{comp}(\mathcal A)\longrightarrow D(\mathcal A)$ に
+$\delta$-関手の構造を与えたことになる。こうして得られた $\delta$-関手を
+\emph{標準 $\delta$-関手}と呼ぶ。射 $\delta(S)$ を、完全列 $S$ に付随する
+\emph{連結射}と呼ぶ。
+
+\VerdierSemanticAnchor{ch3d-1-3-3}
+\medskip\noindent\textbf{1.3.3.}\quad
+$\mathcal A^o$ を $\mathcal A$ の反対圏とする。
+$\operatorname{comp}(\mathcal A^o)$ の任意の完全列 $S$ に付随する連結射を
+$\delta^o(S)$ と書く。$C$ を圏、$X$ を $C$ の対象、$u$ を $C$ の射とする。
+以下の命題では、記法の濫用により、$C$ の反対圏において対応する対象と射も
+$X^o$ および $u^o$ と書く（$C$ の反対圏は $C$ と同じ対象と射の集合をもつ
+ことを思い出しておく）。
+
+\VerdierSemanticAnchor{ch3d-1-3-4}
+\medskip\noindent\textbf{命題 1.3.4.}\quad
+\textit{a) $\operatorname{comp}(\mathcal A)$ の任意の完全列 $S$ に対して、}
+\[
+\delta(S[1])=-\delta(S)[1].
+\]
+\noindent\textit{b) $\operatorname{comp}(\mathcal A)$ の任意の完全列 $S$ に
+対して、同一視 (1.2.8) のもとで、}
+\[
+\delta^o(S^o)=\delta(S)^o[1].
+\]
+\endgroup

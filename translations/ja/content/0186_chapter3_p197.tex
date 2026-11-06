@@ -1,0 +1,72 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0197}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-step-conclusion}
+そこで $L_q^\bullet=L_{q-1}^\bullet(\alpha,-q)$、
+$w_q=\varphi$、$v_q=p(\alpha,-q)$ とおく。複体 $L_n^\bullet$ と複体の射
+$w_n$、$v_n$ は、$n\leq q$ に対して性質 2) と 3) をもつ。あとは
+$L_q^\bullet$ が上の性質 1) をもつことを示せばよい。これは集合
+$M^\wedge$ が完全、すなわち $(E_6)$（2.2.4）を満たすことから従う。
+
+\VerdierSemanticAnchor{ch3d-2-3-1-proof-b}
+b) を証明する。$L$ を $M$ に属する対象とし、
+$\dot u\colon X\longrightarrow L$ をエピ射とする。$Y$ を
+$\dot u$ の核とおく。次の擬同型がある：
+
+\VerdierSemanticAnchor{ch3d-2-3-1-kernel-quasi-isomorphism}
+\begin{center}
+\begin{tikzcd}[column sep=2.25em,row sep=2.6em]
+\cdots \arrow[r] & 0 \arrow[r] \arrow[d] & Y \arrow[r] \arrow[d]
+  & X \arrow[r] \arrow[d,"\dot u"] & 0 \arrow[r] \arrow[d] & \cdots \\
+\cdots \arrow[r] & 0 \arrow[r] & 0 \arrow[r] & L \arrow[r] & 0 \arrow[r]
+  & \cdots.
+\end{tikzcd}
+\end{center}
+したがって、次の擬同型がある：
+
+\VerdierSemanticAnchor{ch3d-2-3-1-resolution-quasi-isomorphism}
+\begin{center}
+\begin{tikzcd}[column sep=2.25em,row sep=2.6em]
+\cdots \arrow[r] & L^{-1} \arrow[r] \arrow[d] & L^0 \arrow[r] \arrow[d,"v"]
+  & L^1 \arrow[r] \arrow[d] & L^2 \arrow[r] \arrow[d] & \cdots \\
+\cdots \arrow[r] & Y \arrow[r] & X \arrow[r] & 0 \arrow[r] & 0 \arrow[r]
+  & \cdots,
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-2-3-1-e2}
+ここで各 $L^i$ は $M$ に属する。したがって射 $\dot u v$ はエピ射であり、
+性質 $(E_2)$ が示された。次に、
+
+\VerdierSemanticAnchor{ch3d-2-3-1-exact-resolution}
+\[
+0\longrightarrow X\xrightarrow{\dot u}L_n\longrightarrow L_{n-1}
+\longrightarrow\cdots\longrightarrow L_0\longrightarrow0
+\]
+を完全列とし、各 $L_i$ は $M$ に属するとする。このとき次の擬同型がある：
+\begin{center}
+\begin{tikzcd}[column sep=1.35em,row sep=2.6em]
+\cdots \arrow[r] & 0 \arrow[r] \arrow[d] & 0 \arrow[r] \arrow[d]
+  & X \arrow[r] \arrow[d,"\dot u"] & 0 \arrow[r] \arrow[d]
+  & \cdots \arrow[r] & 0 \arrow[r] \arrow[d] & 0 \arrow[r] \arrow[d]
+  & \cdots \\
+\cdots \arrow[r] & 0 \arrow[r] & 0 \arrow[r] & L_n \arrow[r]
+  & L_{n-1} \arrow[r] & \cdots \arrow[r] & L_0 \arrow[r] & 0 \arrow[r]
+  & \cdots.
+\end{tikzcd}
+\end{center}
+従って、次の擬同型が存在する：
+
+\VerdierSemanticAnchor{ch3d-2-3-1-e3-quasi-isomorphism}
+\begin{center}
+\begin{tikzcd}[column sep=2.7em,row sep=2.6em]
+\cdots \arrow[r] & L^{-n-1} \arrow[r] \arrow[d]
+  & L^{-n} \arrow[r] \arrow[d,"v"] & L^{-n+1} \arrow[r] \arrow[d]
+  & \cdots \\
+\cdots \arrow[r] & 0 \arrow[r] & X \arrow[r] & 0 \arrow[r] & \cdots
+\end{tikzcd}
+\end{center}
+\endgroup

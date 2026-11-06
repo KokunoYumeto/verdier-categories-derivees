@@ -1,0 +1,98 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0193}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-2-6-proof-cont}
+(2.1.1)。射 $p_0$ は高さ $1$ の初等射である。複体 $U_0^\bullet$ は次の形をもつ：
+
+\VerdierSemanticAnchor{ch3d-2-2-6-u0-complex}
+\[
+\begin{aligned}
+U_0^\bullet={}&0\longrightarrow0\longrightarrow\cdots\longrightarrow0
+\longrightarrow L_n\longrightarrow L_{n-1}\longrightarrow\cdots\\
+&\longrightarrow L_1\longrightarrow Z_0\longrightarrow L
+\longrightarrow0\longrightarrow0\longrightarrow\cdots.
+\end{aligned}
+\]
+性質 $(E_4)$ により、対象 $Z_0$ は $M'$ に属する。したがって、エピ射
+$u_0\colon L'_0\longrightarrow Z_0$ が存在し、$L'_0\in M$ である。
+(2.1.1) と同様に、$U_1^\bullet=U_0^\bullet(u_0,0)$ および
+$p_1=p(u_0,0)\colon U_1^\bullet\longrightarrow U_0^\bullet$ とおく。
+
+\VerdierSemanticAnchor{ch3d-2-2-6-iterated-elementary-morphisms}
+このように続けると、帰納法により射の列
+\[
+p_i\colon U_i^\bullet\longrightarrow U_{i-1}^\bullet,
+\qquad 1\leq i\leq n-1,
+\]
+\[
+p_0\colon U_0^\bullet\longrightarrow V^\bullet,
+\]
+が得られる。ここで $p_i$ は高さ $-i+1$ の初等射であり、
+$U_i^\bullet$ は次の形をもつ：
+
+\VerdierSemanticAnchor{ch3d-2-2-6-ui-complex}
+\[
+\begin{aligned}
+U_i^\bullet={}&0\longrightarrow0\longrightarrow\cdots
+\longrightarrow L_n\longrightarrow L_{n-1}\longrightarrow\cdots
+\longrightarrow L_{i+1}\longrightarrow Z_i\\
+&\longrightarrow L'_{i-1}\longrightarrow\cdots\longrightarrow L'_0
+\longrightarrow L\longrightarrow0\longrightarrow\cdots ,
+\end{aligned}
+\]
+ただし $L'_j\in M$, $0\leq j\leq i-1$ である。したがって、これらの射
+$p_i$ を合成すると、エピな擬同型
+
+\VerdierSemanticAnchor{ch3d-2-2-6-composite}
+\[
+p\colon U_{n-1}^\bullet\longrightarrow V^\bullet.
+\]
+が得られる。ここで、複体
+
+\VerdierSemanticAnchor{ch3d-2-2-6-unminus1-complex}
+\[
+\begin{aligned}
+U_{n-1}^\bullet={}&0\longrightarrow0\longrightarrow\cdots
+\longrightarrow L_n\longrightarrow Z_{n-1}\longrightarrow L'_{n-2}
+\longrightarrow\cdots\\
+&\longrightarrow L'_0\longrightarrow L\longrightarrow0
+\longrightarrow\cdots ,
+\end{aligned}
+\]
+において、対象 $Z_{n-1}$ は性質 $(E_4)$ により $M$ の二つの対象の拡大として
+現れるので、$M$ に属する（性質 $(E_5)$ による）。次をおく：
+
+\VerdierSemanticAnchor{ch3d-2-2-6-l-complexes}
+\[
+L^\bullet=0\longrightarrow0\longrightarrow L_n\longrightarrow L_{n-1}
+\longrightarrow\cdots\longrightarrow L_0\longrightarrow0
+\longrightarrow0\longrightarrow\cdots ,
+\]
+\[
+\begin{aligned}
+{L'}^\bullet={}&0\longrightarrow0\longrightarrow L_n
+\longrightarrow Z_{n-1}\longrightarrow L'_{n-2}
+\longrightarrow\cdots\\
+&\longrightarrow L'_0\longrightarrow0\longrightarrow0
+\longrightarrow\cdots ,
+\end{aligned}
+\]
+また、$m\colon {L'}^\bullet\longrightarrow L^\bullet$ を $p$ が誘導する射とする。
+$L^\bullet$（それぞれ ${L'}^\bullet$）の唯一の非零コホモロジー対象は $Y$ で次数
+$0$ にある（それぞれ $L$ で次数 $0$ にある）。また $m$ がこれらの対象上に誘導する
+射は $u$ である。射 $m$ の写像錐 $c(m)$ を考える：
+
+\VerdierSemanticAnchor{ch3d-2-2-6-cone}
+\[
+\begin{aligned}
+c(m)={}&\cdots\longrightarrow0\longrightarrow L_n
+\longrightarrow L_n\oplus Z_{n-1}
+\longrightarrow L_{n-1}\oplus L'_{n-2}\longrightarrow\cdots\\
+&\longrightarrow L_1\oplus L'_0\longrightarrow L_0
+\longrightarrow0\longrightarrow\cdots.
+\end{aligned}
+\]
+\endgroup

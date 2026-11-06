@@ -1,0 +1,75 @@
+\VerdierPhysicalPageAnchor{0022}%
+à homotopie près par le complexe $Y^{\bullet}$. Les objets de cohomologie
+$\mathrm R^nF(Y^{\bullet})$ du complexe
+$\int F(I^{\bullet\bullet})$ sont donc définis à isomorphisme canonique près
+et on constate qu'ils dépendent fonctoriellement du complexe $Y^{\bullet}$.
+Les foncteurs $\mathrm R^nF$ obtenus sont les
+\emph{hyperdérivés à droite} de $F$.
+
+\VerdierSemanticAnchor{intro-2-spectral-sequences}
+On obtient de plus deux suites spectrales fonctorielles en $Y^{\bullet}$ dont
+les termes initiaux sont :
+
+\VerdierSemanticAnchor{intro-2-spectral-sequence-one}
+\begin{equation}
+\mathrm I_2^{p,q}=\mathrm H^p\bigl(\mathrm R^qF(Y^{\bullet})\bigr)
+\tag{*}
+\end{equation}
+
+\VerdierSemanticAnchor{intro-2-spectral-sequence-two}
+\begin{equation}
+\mathrm{II}_2^{p,q}=\mathrm R^pF\bigl(\mathrm H^q(Y^{\bullet})\bigr),
+\tag{**}
+\end{equation}
+et dont les termes infinis sont les gradués associés aux objets
+$\mathrm R^nF(Y^{\bullet})$ convenablement filtrés. Bornons-nous, pour
+simplifier, au cas où les composants des complexes envisagés sont nuls en
+degré suffisamment petit. On constate alors que les suites spectrales (*) et
+(**) convergent. Un morphisme $m:Y^{\bullet}\to Z^{\bullet}$ de complexes
+induit des morphismes :
+
+\VerdierSemanticAnchor{intro-2-hyperderived-morphism}
+\[
+\mathrm R^nF(m):\mathrm R^nF(Y^{\bullet})
+\longrightarrow \mathrm R^nF(Z^{\bullet})
+\]
+et des morphismes des suites spectrales correspondantes.
+
+\VerdierSemanticAnchor{intro-2-quasi-isomorphism-invariance}
+En particulier, \emph{lorsque $m$ est un quasi-isomorphisme}, la suite
+spectrale (**) montre que \emph{les morphismes $\mathrm R^nF(m)$ sont des
+isomorphismes}. Ainsi les objets $\mathrm R^nF(Y^{\bullet})$ sont déterminés
+dès que l'on connaît le complexe $Y^{\bullet}$ à ``quasi-isomorphisme près''.
+Comme, par ailleurs, on a indiqué que les procédés usuels de l'algèbre
+homologique ne fournissent le plus souvent que des complexes déterminés à
+quasi-isomorphisme près, il apparaît que les objets naturels qu'étudie
+l'hyperhomologie sont les ``classes de complexes à quasi-isomorphisme près''.
+
+\VerdierSemanticAnchor{intro-3}
+\noindent\textbf{3.}\quad
+La démarche que nous suivons s'impose alors naturellement. On introduit, pour
+toute catégorie abélienne $\mathcal A$, la catégorie
+$\operatorname{comp}(\mathcal A)$ des complexes d'objets de $\mathcal A$.
+Puis on construit à partir de $\operatorname{comp}(\mathcal A)$ une nouvelle
+catégorie en rendant formellement inversibles les quasi-isomorphismes de
+$\operatorname{comp}(\mathcal A)$.
+
+\VerdierSemanticAnchor{intro-3-derived-category}
+On obtient ainsi une catégorie $\mathbf D(\mathcal A)$ :
+\emph{la ``catégorie dérivée'' de la catégorie abélienne $\mathcal A$}.
+Par des procédés de résolution à droite qu'il importe peu de préciser dans
+cette introduction, on associe à un foncteur additif entre deux catégories
+abéliennes $F:\mathcal A\to\mathcal B$, un foncteur
+$\mathrm RF:\mathbf D(\mathcal A)\to\mathbf D(\mathcal B)$ (qui n'est défini
+le plus souvent que sur une sous-catégorie convenable
+$\mathbf D^*(\mathcal A)\subset\mathbf D(\mathcal A)$ obtenue en imposant des
+limitations aux degrés des complexes envisagés) appelé le
+\emph{foncteur dérivé total à droite} de $F$.
+
+\VerdierSemanticAnchor{intro-3-total-right-derived-functor}
+Pour tout objet $X$ de $\mathbf D^*(\mathcal A)$, l'objet $\mathrm RF(X)$ de
+$\mathbf D(\mathcal B)$ est donc un complexe d'objets de $\mathcal B$ défini à
+``quasi-isomorphisme près'', et par suite, les objets de cohomologie
+$\mathrm R^nF(X)$ de ce complexe sont bien définis. Les foncteurs
+$X\longmapsto\mathrm R^nF(X)$ sont les ``hyperdérivés à droite'' du foncteur
+$F$, définis ici sans supposer nécessairement que

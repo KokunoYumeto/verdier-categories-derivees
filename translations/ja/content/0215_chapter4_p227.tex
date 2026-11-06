@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0227}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-1-2-9}
+最後に、$\mathcal{F}\ell_1(\widetilde{\mathbb Z})$ の各元 $(p,q)$ に対し、
+\begin{equation}
+J(p,q)\colon\mathcal Y(p,q)\longrightarrow Y(p,q)
+\tag{4.1.2.9}
+\end{equation}
+を次の複体の射のホモトピー類とする：
+
+\VerdierSemanticAnchor{ch4d-4-1-2-10}
+\begin{equation}
+j(p,q)\colon\mathcal Y(p,q)\longrightarrow Y(p,q),
+\tag{4.1.2.10}
+\end{equation}
+この射は次の式で定義される：
+
+\VerdierSemanticAnchor{ch4d-4-1-2-11}
+\begin{equation}
+\begin{aligned}
+j(p,q)^i&=0,
+  &&i<-q\ \lor\ i>-p-1,\\
+j(p,q)^i&=\operatorname{id},
+  &&-q\leq i\leq-p-2,\\
+j(p,q)^{-p-1}&\colon
+  Y^{-p-1}\oplus Y^{-p}\longrightarrow Y^{-p-1},\\
+j(p,q)^{-p-1}&=(\operatorname{id},0).
+\end{aligned}
+\tag{4.1.2.11}
+\end{equation}
+
+\VerdierSemanticAnchor{ch4d-4-1-3}
+\medskip\noindent\textbf{命題 4.1.3.}\quad
+\textit{a) $\mathcal{F}\ell_1(\widetilde{\mathbb Z})$ の各元 $(p,q)$ に対し、
+$K(\mathcal A)$ の射
+$J(p,q)\colon\mathcal Y(p,q)\longrightarrow Y(p,q)$ は同型である。}
+
+\VerdierSemanticAnchor{ch4d-4-1-3-b}
+\noindent\textit{b) $\mathcal{F}\ell_1(\widetilde{\mathbb Z})$ の元の組
+$(p,q)$、$(p',q')$ で $p\leq p'$ かつ $q\leq q'$ を満たすものに対し、
+$K(\mathcal A)$ の次の図式は}
+
+\VerdierSemanticAnchor{ch4d-4-1-3-b-diagram}
+\begin{center}
+\begin{tikzcd}[column sep=7.0em,row sep=3.2em]
+\mathcal Y(p,q)
+  \arrow[r,"{\Phi((p,q),(p',q'))}"]
+  \arrow[d,"{J(p,q)}"']
+&\mathcal Y(p',q') \arrow[d,"{J(p',q')}"]\\
+Y(p,q)
+  \arrow[r,"{\varphi((p,q),(p',q'))}"']
+&Y(p',q')
+\end{tikzcd}
+\end{center}
+\noindent\textit{可換である。}
+
+\VerdierSemanticAnchor{ch4d-4-1-3-c}
+\noindent\textit{c) $\mathcal{F}\ell_2(\widetilde{\mathbb Z})$ の各元
+$(p,q,r)$ に対し、$K(\mathcal A)$ の次の図式は}
+
+\VerdierSemanticAnchor{ch4d-4-1-3-c-diagram}
+\begin{center}
+\begin{tikzcd}[column sep=7.0em,row sep=3.2em]
+\mathcal Y(q,r)
+  \arrow[r,"{\delta(p,q,r)}"]
+  \arrow[d,"{J(q,r)}"']
+&\mathcal Y(p,q)[1] \arrow[d,"{J(p,q)[1]}"]\\
+Y(q,r)
+  \arrow[r,"{\delta(p,q,r)}"']
+&Y(p,q)[1]
+\end{tikzcd}
+\end{center}
+\noindent\textit{可換である。}
+
+\VerdierSemanticAnchor{ch4d-4-1-3-proof}
+検証は読者に委ねる。
+\endgroup

@@ -1,0 +1,69 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0244}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-exact-diagram}
+これにより、各行が完全である可換図式を得る：
+\[
+\begin{tikzcd}[column sep=2.7em,row sep=2.8em]
+F_1^{p+r-1}(Y) \arrow[r] \arrow[d] &
+F_1^p(L^\bullet) \arrow[r] \arrow[d,"{m(L^\bullet[p])}"'] &
+F_1^p(X) \arrow[r] \arrow[d,"{m(X[p])}"'] &
+F_1^{p+r}(Y) \arrow[d] \\
+F_2^{p+r-1}(Y) \arrow[r] &
+F_2^p(L^\bullet) \arrow[r] &
+F_2^p(X) \arrow[r] &
+F_2^{p+r}(Y).
+\end{tikzcd}
+\]
+整数 $r$ は、$i=1,2$ および $q\geq p+r-1$ に対して対象 $F_i^q(Y)$ が
+零となるように選んだ。したがって、すべての成分が $M$ の元である
+$\operatorname{comp}^{b}(\mathcal A)$ の任意の対象 $L^\bullet$ に対して、
+$m(L^\bullet)$ が同型であることを示せばよい。
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-spectral-sequence}
+一方、射 $m$ は、複体 $L^\bullet$ に関する関手 $F_1$ と $F_2$ の第一
+スペクトル系列の間の射を誘導する。初期項上で、この射
+\[
+m_1^{p,q}(L^\bullet)\colon F_1^q(L^p)\longrightarrow F_2^q(L^p),
+\]
+は仮定により同型である。これらのスペクトル系列は定常なので (4.5.3)、
+射 $m$ は収束先上の同型を誘導し（第 II 章、4.4.5）、したがって (4.4.2)
+により射 $m(L^\bullet)$ は同型である。
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-end}
+これで主張 e) の証明が完了する。主張 f) は反対圏へ移ることにより主張 e)
+から従う。定理が示された。
+
+\VerdierSemanticAnchor{ch4d-4-6}
+\medskip\noindent\textbf{4.6. Cartan--Eilenberg のスペクトル対象。}
+
+\VerdierSemanticAnchor{ch4d-4-6-1}
+\noindent\textbf{定義 4.6.1.}\quad
+$\mathcal A$ の複体 $I^\bullet$ が\emph{Cartan--Eilenberg 入射複体}である
+とは、各整数 $i$ に対して対象 $\operatorname{Im}(d_{I^\bullet}^{i})$ と
+$H^i(I^\bullet)$ が入射対象であることをいう。
+
+\VerdierSemanticAnchor{ch4d-4-6-2}
+\noindent\textbf{4.6.2.}\quad
+Cartan--Eilenberg 入射複体 $I^\bullet$ は入射型であることに注意する
+(1.1.5)。すなわち、その成分は $\mathcal A$ の入射対象であり、各整数
+$i$ に対して対象 $\operatorname{Ker}(d_{I^\bullet}^{i})$ は
+$\mathcal A$ の入射対象である。これらの対象を結ぶ三項完全列を用いれば、
+このことは直ちに確かめられる。
+
+\VerdierSemanticAnchor{ch4d-4-6-3-a}
+\medskip\noindent\textbf{命題 4.6.3.}\quad
+\textit{$I^\bullet$ を Cartan--Eilenberg 入射複体とする。}
+
+\noindent\textit{a) 任意の複体 $Y$ に対し、標準射}
+\[
+\operatorname{Hom}_{K(\mathcal A)}(Y,I^\bullet)
+\longrightarrow
+\prod_{p\in\mathbb Z}
+\operatorname{Hom}_{\mathcal A}\bigl(H^p(Y),H^p(I^\bullet)\bigr)
+\]
+\textit{は同型である。}
+\endgroup

@@ -1,0 +1,62 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0243}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-a-bcd}
+\noindent $D^b(\mathcal A)$ 的对象。态射 $m$ 诱导函子 $F_1$ 与 $F_2$
+关于复形 $X$ 的第二典范谱序列之间的态射。在初始项之间诱导的态射
+\[
+m_2^{p,q}(X)\colon F_1^p\bigl(H^q(X)\bigr)
+\longrightarrow F_2^p\bigl(H^q(X)\bigr)
+\]
+依假设是同构。此外，两个谱序列都是定常的 (4.5.3)。由此可知（第二章，
+4.4.5），态射 $m$ 诱导两个谱序列的收敛目标之间的同构，因而 $m(X)$ 是
+同构。断言 b)、c)、d) 的证明类似：只须注意，在所作假设下，第二典范谱序列
+都是定常的 (4.5.3)。
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e}
+证明 e)。根据 c)，只须证明 $\mathcal A$ 的每个对象都是
+$\operatorname{Is}(m)$ 的对象。设 $X$ 是 $\mathcal A$ 的对象，$p$ 是整数，
+并证明态射
+\[
+m(X[p])\colon F_1^p(X)\longrightarrow F_2^p(X)
+\]
+是同构。函子 $F_1$ 与 $F_2$ 左定常，所以存在整数 $r$，使得对
+$i=1,2$、$\mathcal A$ 的每个对象 $Y$ 以及每个整数 $q\geq p+r-1$，都有
+$F_i^q(Y)=0$。性质 $\alpha$) 蕴涵 $X$ 拟同构于复形
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-complex-w}
+\[
+W^\bullet=
+\cdots\longrightarrow0\longrightarrow Y\longrightarrow L^{-r+1}
+\longrightarrow L^{-r+2}\longrightarrow\cdots\longrightarrow L^{-1}
+\longrightarrow L^0\longrightarrow0\longrightarrow\cdots,
+\]
+其中分量 $L^i$，$-r+1\leq i\leq0$，都是 $M$ 的元素。以 $L^\bullet$
+表示复形
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-complex-l}
+\[
+\cdots\longrightarrow0\longrightarrow L^{-r+1}
+\longrightarrow L^{-r+2}\longrightarrow\cdots\longrightarrow L^{-1}
+\longrightarrow L^0\longrightarrow0\longrightarrow\cdots.
+\]
+有复形的正合列
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-exact-sequence}
+\[
+0\longrightarrow L^\bullet\longrightarrow W^\bullet
+\longrightarrow Y[r]\longrightarrow0,
+\]
+从而由 (1.3.2) 得到 $D^*(\mathcal A)$ 中的特异三角：
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-triangle}
+\[
+\begin{tikzcd}[column sep=5.2em,row sep=2.8em]
+{} & Y[r] \arrow[dl] \\
+L^\bullet \arrow[r] & X \arrow[u]
+\end{tikzcd}
+\]
+\endgroup

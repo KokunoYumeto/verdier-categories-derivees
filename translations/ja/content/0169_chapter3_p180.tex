@@ -1,0 +1,67 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0180}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-1-2-8-duality-cont}
+以後、特に断らない限り、同型 $i$ によって圏 $D(\mathcal A)^o$ と
+$D(\mathcal A^o)$ を同一視する。この同一視によって、圏
+$D^b(\mathcal A)^o$ は圏 $D^b(\mathcal A^o)$ と、圏
+$D^+(\mathcal A)^o$ は圏 $D^-(\mathcal A^o)$ と、圏
+$D^-(\mathcal A)^o$ は圏 $D^+(\mathcal A^o)$ と同一視されることに
+注意する。
+
+\VerdierSemanticAnchor{ch3d-1-2-9}
+\medskip\noindent\textbf{1.2.9.}\quad
+標準関手 $\mathcal A\longrightarrow K(\mathcal A)$（第 II 章，1.3.3）と関手
+$Q\colon K(\mathcal A)\longrightarrow D(\mathcal A)$ の合成は、充満忠実関手
+$\mathcal A\longrightarrow D(\mathcal A)$ を与える。実際、$X$ と $Y$ を
+$\mathcal A$ の二つの対象とする。$D(\mathcal A)$ における $X$ から $Y$
+への射は（第 II 章，2.2.2）、$K(\mathcal A)$ における図式の類
+$\overline D$ である：
+
+\VerdierSemanticAnchor{ch3d-1-2-9-roof}
+\[
+\overline D=X\xleftarrow{\ s\ }Z^\bullet\xrightarrow{\ m\ }Y,
+\]
+ここで $s$ は $K(\mathcal A)$ における擬同型である。したがって
+$s\colon Z^\bullet\longrightarrow X$ は同型
+$H^0(s)\colon H^0(Z^\bullet)\xrightarrow{\sim}H(X)=X$ を誘導し、
+$\overline D=Q\bigl(H^0(m)H^0(s)^{-1}\bigr)$ であることが直ちに確かめ
+られる。これは準同型
+\[
+\operatorname{Hom}_{\mathcal A}(X,Y)\longrightarrow
+\operatorname{Hom}_{D(\mathcal A)}(X,Y)
+\]
+が全射であることを示す。これが単射であることを示そう。$\mathcal A$ の射
+$f\colon X\longrightarrow Y$ が圏 $D(\mathcal A)$ で零射を定めるための
+必要十分条件は、$fs=0$ となる $K(\mathcal A)$ の擬同型
+$s\colon Z^\bullet\longrightarrow X$ が存在することである。したがって
+$H^0(f)H^0(s)=0$ である。$H^0(s)$ は同型なので、$H^0(f)=f=0$ となる。
+
+さらに、関手 $\mathcal A\longrightarrow D(\mathcal A)$ は対象の集合上でも
+単射であり、したがって $\mathcal A$ を $D(\mathcal A)$ の充満部分圏として
+実現する。以後、圏 $\mathcal A$ は常にこの関手によってその導来圏の部分圏
+とみなす。標準コホモロジー的関手 $D(\mathcal A)\xrightarrow{H}\mathcal A$
+を部分圏 $\mathcal A$ に制限すると恒等関手になる。
+
+\VerdierSemanticAnchor{ch3d-1-2-10}
+\medskip\noindent\textbf{命題 1.2.10.}\quad
+\textit{a) $D(\mathcal A)$ の対象 $X$ が $\mathcal A$ の対象と同型であるための
+必要十分条件は、すべての $i\neq0$ に対して $H^i(X)=0$ であることである。
+このときこの対象は $H^0(X)$ と標準的に同型である。}
+
+\noindent\textit{b) $X$ と $Y$ を $\mathcal A$ の二つの対象とする。このとき}
+\[
+\operatorname{Ext}_{\mathcal A}^{n}(X,Y)=0\quad\text{ただし }n<0,
+\qquad
+\operatorname{Ext}_{\mathcal A}^{0}(X,Y)
+=\operatorname{Hom}_{\mathcal A}(X,Y).
+\]
+
+\VerdierSemanticAnchor{ch3d-1-2-10-proof}
+a) を証明する。$X$ が $\mathcal A$ の対象であれば、$i\neq0$ に対して
+$H^i(X)=0$ であることは明らかである。$X$ を $D(\mathcal A)$ の対象とし、
+$i\neq0$ に対して $H^i(X)$ が零であるとする。
+\endgroup

@@ -1,0 +1,65 @@
+\chapter{导出范畴。}
+\VerdierPhysicalPageAnchor{0174}%
+\VerdierSemanticAnchor{ch3d}
+\begingroup
+\small
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-1}
+\section*{1. 导出范畴的定义。}
+
+\noindent\textit{在本节中，除非另有说明，$\mathcal A$ 表示一个阿贝尔范畴。}
+
+\VerdierSemanticAnchor{ch3d-1-1}
+\subsection*{1.1. 记号与术语。}
+
+\VerdierSemanticAnchor{ch3d-1-1-1}
+\noindent\textbf{1.1.1.}\quad
+设 $\mathcal A$ 为一个加法范畴（不必是阿贝尔范畴）。以
+$\operatorname{comp}^{b}(\mathcal A)$（相应地，
+$\operatorname{comp}^{+}(\mathcal A)$、
+$\operatorname{comp}^{-}(\mathcal A)$）表示
+$\operatorname{comp}(\mathcal A)$ 的如下满子范畴：其对象为满足
+$X^i=0$ 的复形 $X$，其中 $|i|$ 足够大（相应地，$i$ 足够小、
+$i$ 足够大）。以 $K^{b}(\mathcal A)$（相应地，
+$K^{+}(\mathcal A)$、$K^{-}(\mathcal A)$）表示 $K(\mathcal A)$
+的如下满子范畴：其对象为 $\operatorname{comp}^{b}(\mathcal A)$
+（相应地，$\operatorname{comp}^{+}(\mathcal A)$、
+$\operatorname{comp}^{-}(\mathcal A)$）的对象。
+
+\VerdierSemanticAnchor{ch3d-1-1-2}
+\noindent\textbf{1.1.2.}\quad
+现在设 $\mathcal A$ 为一个（阿贝尔）范畴，并设 $*$ 为排印符号
+$b$、$+$、$-$、“空”之一。以
+$\operatorname{comp}^{*,b}(\mathcal A)$（相应地，
+$\operatorname{comp}^{*,+}(\mathcal A)$、
+$\operatorname{comp}^{*,-}(\mathcal A)$）表示
+$\operatorname{comp}^{*}(\mathcal A)$ 的如下满子范畴：其对象为
+$\operatorname{comp}^{*}(\mathcal A)$ 中满足 $H^i(X)=0$ 的复形 $X$，
+其中 $|i|$ 足够大（相应地，$i$ 足够小、$i$ 足够大）。同样，以
+$K^{*,b}(\mathcal A)$（相应地，$K^{*,+}(\mathcal A)$、
+$K^{*,-}(\mathcal A)$）表示 $K^{*}(\mathcal A)$ 的如下满子范畴：
+其对象为 $K^{*}(\mathcal A)$ 中满足 $H^i(X)=0$ 的复形 $X$，其中
+$|i|$ 足够大（相应地，$i$ 足够小、$i$ 足够大）。由此得到
+$K(\mathcal A)$ 的八个子范畴：
+
+\VerdierSemanticAnchor{ch3d-1-1-2-diagram}
+\begin{center}
+  \resizebox{0.88\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=3.5em,row sep=1.7em]
+      \& \& K^{+}(\mathcal A) \arrow[dr] \& \& \\
+      \& K^{+,b}(\mathcal A) \arrow[ur] \arrow[dr]
+        \& \& K^{,+}(\mathcal A) \arrow[dr] \& \\
+      K^{b}(\mathcal A) \arrow[ur] \arrow[dr]
+        \& \& K^{,b}(\mathcal A) \arrow[ur] \arrow[dr]
+        \& \& K(\mathcal A) \\
+      \& K^{-,b}(\mathcal A) \arrow[ur] \arrow[dr]
+        \& \& K^{,-}(\mathcal A) \arrow[ur] \& \\
+      \& \& K^{-}(\mathcal A) \arrow[ur] \& \&
+    \end{tikzcd}$%
+  }\hfill\textup{(1.1.2.1)}
+\end{center}
+\endgroup

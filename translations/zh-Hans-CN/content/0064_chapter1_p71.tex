@@ -1,0 +1,97 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0071}%
+\VerdierSemanticAnchor{ch1-2-3}
+\subsection{复形范畴上的分次结构}
+
+\VerdierSemanticAnchor{ch1-2-3-1}
+\noindent\textbf{2.3.1.}\quad
+设 $Y$ 为一个 $n$-重复形，且 $i\in[n]$。规定：
+
+\VerdierSemanticAnchor{ch1-2-3-1-eq1}
+\begin{equation}
+  \begin{aligned}
+    (T_iY)^\sigma&=Y^{\sigma+e_i},
+      &&\sigma\in\mathbb Z[n],\\
+    d_{T_iY}^{\sigma,j}&=\nu(i,j)d_Y^{\sigma+e_i,j},
+      &&j\in[n],
+  \end{aligned}
+  \tag{2.3.1.1}
+\end{equation}
+其中，当 $i\ne j$ 时 $\nu(i,j)=1$，当 $i=j$ 时 $\nu(i,j)=-1$。
+
+\VerdierSemanticAnchor{ch1-2-3-1-morphism-shift}
+对于 $n$-重复形的任一态射
+$f\colon Y\longrightarrow Y'$，规定：
+
+\VerdierSemanticAnchor{ch1-2-3-1-eq2}
+\begin{equation}
+  (T_if)^\sigma=f^{\sigma+e_i},
+  \qquad \sigma\in\mathbb Z[n].
+  \tag{2.3.1.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-3-1-translation-functor}
+由此定义一个函子
+$T_i\colon\operatorname{comp}^{n}(C)\longrightarrow
+\operatorname{comp}^{n}(C)$，称为\emph{方向 $i$ 上的平移函子}。
+
+\VerdierSemanticAnchor{ch1-2-3-1-n-equals-one}
+当 $n=1$ 时，使用记号 $TY$、$Tf$，或 $Y[1]$、$f[1]$。
+方向 $i$ 上的平移函子是 $\operatorname{comp}^{n}(C)$ 的一个自同构。
+
+\VerdierSemanticAnchor{ch1-2-3-1-eq3}
+函子 $T_i$（$i\in[n]$）两两交换：
+\begin{equation}
+  T_iT_j=T_jT_i,
+  \qquad \forall i,j\in[n].
+  \tag{2.3.1.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-3-1-action}
+因此，可以定义群 $\mathbb Z[n]$ 在范畴
+$\operatorname{comp}^{n}(C)$ 上的作用：
+
+\VerdierSemanticAnchor{ch1-2-3-1-eq4}
+\begin{equation}
+  \sigma=\sum_{i\in[n]}l_ie_i,
+  \qquad
+  T(\sigma)=T_1^{l_1}\cdots T_n^{l_n}.
+  \tag{2.3.1.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-3-1-strict-graded-category}
+今后，记号 $\operatorname{comp}^{n}(C)$ 表示范畴
+$\operatorname{comp}^{n}(C)$ 连同上述严格 $\mathbb Z[n]$-范畴结构。
+
+\VerdierSemanticAnchor{ch1-2-3-2}
+\noindent\textbf{2.3.2.}\quad
+设 $\varphi\colon[n]\longrightarrow[m]$ 为一个映射，$Y$ 为 $C$ 中的一个
+$n$-重复形，且 $i\in[n]$。为明确起见，假定 $C$ 中可数直和可表示。
+
+\VerdierSemanticAnchor{ch1-2-3-2-equal-objects}
+首先注意，对象
+$\left(\int_\varphi^\Sigma T_iY\right)^\tau$ 与
+$\left(T_{\varphi(i)}\int_\varphi^\Sigma Y\right)^\tau$ 相等。
+事实上，按定义，它们都等于：
+
+\VerdierSemanticAnchor{ch1-2-3-2-direct-sum}
+\begin{equation*}
+  \bigoplus_{\varphi(\sigma)=\tau+e_{\varphi(i)}}Y^\sigma.
+\end{equation*}
+于是规定：
+
+\VerdierSemanticAnchor{ch1-2-3-2-eq1}
+\begin{equation}
+  \begin{aligned}
+    \bigl(p_{i,\varphi}(Y)\bigr)^\tau\colon
+    \left(\int_\varphi^\Sigma T_iY\right)^\tau
+      &\longrightarrow
+    \left(T_{\varphi(i)}\int_\varphi^\Sigma Y\right)^\tau,
+      &&\tau\in\mathbb Z[m],\\[2pt]
+    \bigl(p_{i,\varphi}(Y)\bigr)^\tau
+      &=\bigoplus_{\varphi(\sigma)=\tau+e_{\varphi(i)}}
+        \varepsilon(\sigma,i)\varepsilon(\varphi(\sigma),\varphi(i))
+        \operatorname{id}_{Y^\sigma}.
+  \end{aligned}
+  \tag{2.3.2.1}
+\end{equation}

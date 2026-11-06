@@ -1,0 +1,90 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0088}%
+\VerdierSemanticAnchor{ch1-3-2-3}
+\noindent\textbf{3.2.3.}\quad
+\VerdierSemanticAnchor{ch1-3-2-3-translation-automorphism}
+The translation automorphism of $\operatorname{comp}(C)$ extends naturally to
+an automorphism
+$T\colon\operatorname{tr}_1(C)\longrightarrow\operatorname{tr}_1(C)$:
+
+\VerdierSemanticAnchor{ch1-3-2-3-eq1}
+\begin{equation}
+  \begin{aligned}
+    T\bigl(X\xrightarrow{f}Y\bigr)
+      &=X[1]\xrightarrow{f[1]}Y[1],\\
+    T((g,h,a))&=(g[1],h[1],-a[1]).
+  \end{aligned}
+  \tag{3.2.3.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-3-cone-z-functor}
+One then makes the cone functor into a $\mathbb Z$-functor (1.5.2) by defining
+an isomorphism
+\VerdierSemanticAnchor{ch1-3-2-3-psi-isomorphism}
+$\Psi(f)\colon c(f[1])\xrightarrow{\sim}c(f)[1]$:
+
+\VerdierSemanticAnchor{ch1-3-2-3-eq2}
+\begin{equation}
+  \Psi(f)^i=
+  \begin{pmatrix}
+    \operatorname{id}_{Y^{i+1}} & 0\\
+    0 & -\operatorname{id}_{X^{i+2}}
+  \end{pmatrix}
+  \colon Y^{i+1}\oplus X^{i+2}
+  \longrightarrow Y^{i+1}\oplus X^{i+2}.
+  \tag{3.2.3.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-3-reader-verification}
+The reader will verify that (3.2.3.2) indeed defines an isomorphism of
+complexes and will prove the following proposition:
+
+\VerdierSemanticAnchor{ch1-3-2-4}
+\noindent\textbf{Proposition 3.2.4.}\quad
+\VerdierSemanticAnchor{ch1-3-2-4-zero-source}
+\emph{When $f=0\longrightarrow Y$, the canonical isomorphism:}
+\begin{equation*}
+  c(f[n])\xrightarrow{\sim}c(f)[n]
+\end{equation*}
+\emph{is nothing other than the identity map of $Y[n]$. When
+$f=X\longrightarrow0$, the canonical isomorphism:}
+\VerdierSemanticAnchor{ch1-3-2-4-zero-target}
+\begin{equation*}
+  c(f[n])\xrightarrow{\sim}c(f)[n]
+\end{equation*}
+\emph{is nothing other than the isomorphism:}
+\begin{equation*}
+  X[n+1]\xrightarrow{(-1)^n\operatorname{id}_{X[n+1]}}X[n+1].
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-3-2-5}
+\noindent\textbf{3.2.5.}\quad
+Let $X\xrightarrow{f}Y$ be an object of $\operatorname{tr}_1(C)$. One can
+associate with it a triangle of $\operatorname{comp}(C)$:
+
+\VerdierSemanticAnchor{ch1-3-2-5-triangle}
+\VerdierSemanticAnchor{ch1-3-2-5-eq1}
+\begin{equation}
+  Y\xrightarrow{p(f)}c(f)\xrightarrow{q(f)}X[1]
+  \xrightarrow{f[1]}Y[1].
+  \tag{3.2.5.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-5-composite}
+Now the morphism $q(f)p(f)\colon Y\longrightarrow X[1]$ is the image under the
+cone functor of the morphism:
+
+\VerdierSemanticAnchor{ch1-3-2-5-cone-morphism-diagram}
+\begin{equation*}
+  \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center)]
+    \node (Z1) at (0,1.45) {$0$};
+    \node (Y)  at (3.5,1.45) {$Y$};
+    \node (X)  at (0,0) {$X$};
+    \node (Z2) at (3.5,0) {$0$};
+    \node[anchor=base west,inner sep=0pt,xshift=.08em] at (Z2.base east) {$.$};
+    \draw[->] (Z1) -- (Y);
+    \draw[->] (Z1) -- (X);
+    \draw[->] (Y) -- (Z2);
+    \draw[->] (X) -- (Z2);
+  \end{tikzpicture}
+\end{equation*}

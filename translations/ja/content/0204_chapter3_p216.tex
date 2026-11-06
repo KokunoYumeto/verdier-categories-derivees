@@ -1,0 +1,93 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0216}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-2-8-cont}
+ここで $Z''_{n-1}$ は押し出しである：
+
+\VerdierSemanticAnchor{ch3d-3-2-8-pushout-square}
+\begin{center}
+\begin{tikzcd}[column sep=4.2em,row sep=2.8em]
+Y \arrow[r,"u_n"] \arrow[d,"g"']
+  & Z_{n-1} \arrow[d,"g''"] \\
+Y'' \arrow[r,"u''_n"'] & Z''_{n-1}
+\end{tikzcd}
+\end{center}
+また $u''_{n-1}$ は等式 $u''_{n-1}g''=u_{n-1}$ と
+$u''_{n-1}u''_n=0$ によって一意に定まる射である。
+
+\VerdierSemanticAnchor{ch3d-3-2-9}
+\medskip\noindent\textbf{命題 3.2.9.}\quad
+\textit{a) 次の等式が成り立つ：}
+\[
+\delta^n(S^n(X,Y)*f)=\delta^n(S^n(X,Y))f,
+\]
+\[
+\delta^n(g*S^n(X,Y))=g[n]\,\delta^n(S^n(X,Y)).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-2-9-b-diagram}
+\noindent\textit{b) 任意の可換図：}
+\begin{center}
+\resizebox{\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=1.75em,row sep=2.7em]
+S^n(X,Y)=0 \arrow[r]
+  \& Y \arrow[r] \arrow[d,"g"']
+  \& Z_{n-1} \arrow[r] \arrow[d]
+  \& \cdots \arrow[r]
+  \& Z_1 \arrow[r] \arrow[d]
+  \& Z_0 \arrow[r] \arrow[d]
+  \& X \arrow[r] \arrow[d,"f"]
+  \& 0 \\
+{S'}^n(X',Y')=0 \arrow[r]
+  \& Y' \arrow[r]
+  \& Z'_{n-1} \arrow[r]
+  \& \cdots \arrow[r]
+  \& Z'_1 \arrow[r]
+  \& Z'_0 \arrow[r]
+  \& X' \arrow[r]
+  \& 0
+\end{tikzcd}$%
+}
+\end{center}
+\noindent\textit{は次の等式を与える：}
+
+\VerdierSemanticAnchor{ch3d-3-2-9-1}
+\begin{equation}
+\delta^n(g*S^n(X,Y))=\delta^n({S'}^n(X',Y')*f).
+\tag{3.2.9.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-2-9-proof}
+$n=1$ のとき、これらの性質は標準 $\delta$-関手
+$\operatorname{comp}(\mathcal A)\longrightarrow D(\mathcal A)$ (1.3) の
+性質から従う。一般の場合は (3.2.5) を用いて $n$ に関する帰納法を
+行えば得られる。
+
+\VerdierSemanticAnchor{ch3d-3-2-10}
+\medskip\noindent\textbf{3.2.10.}\quad
+$S^n(X,Y)$ と ${S'}^n(X',Y')$ を、それぞれ集合
+$E_{\mathcal A}^{n}(X,Y)$ と $E_{\mathcal A}^{n}(X',Y')$ に属する二つの
+元とし、次の射を考える：
+
+\VerdierSemanticAnchor{ch3d-3-2-10-direct-sum-map}
+\[
+\delta^n\bigl(S^n(X,Y)\oplus {S'}^n(X',Y')\bigr)
+\colon X\oplus X'\longrightarrow (Y\oplus Y')[n].
+\]
+このとき次の等式が成り立つ：
+
+\VerdierSemanticAnchor{ch3d-3-2-10-1}
+\begin{equation}
+\delta^n\bigl(S^n(X,Y)\oplus {S'}^n(X',Y')\bigr)
+=
+\begin{pmatrix}
+\delta^n(S^n(X,Y))&0\\
+0&\delta^n({S'}^n(X',Y'))
+\end{pmatrix},
+\tag{3.2.10.1}
+\end{equation}
+これは写像 $\delta_n$ の定義から直ちに従う。
+\endgroup

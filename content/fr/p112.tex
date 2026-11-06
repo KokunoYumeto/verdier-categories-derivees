@@ -1,0 +1,88 @@
+\VerdierPhysicalPageAnchor{0112}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-1-3}
+\noindent\textbf{Définition 1.1.3.}\quad
+Soient $\mathcal D$ et $\mathcal D'$ deux catégories triangulées. Un
+\emph{foncteur exact} de $\mathcal D$ dans $\mathcal D'$ est un
+$\mathbb Z$-foncteur (non nécessairement strict) (chap. I, 1.2.4)
+$(F,p)\colon\mathcal D\longrightarrow\mathcal D'$ tel que, pour tout
+triangle distingué :
+
+\VerdierSemanticAnchor{ch2-1-1-3-source-triangle}
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+\]
+de $\mathcal D$, le triangle :
+
+\VerdierSemanticAnchor{ch2-1-1-3-image-triangle}
+\[
+  FX\xrightarrow{Fu}FY\xrightarrow{Fv}FZ
+  \xrightarrow{p(X)Fw}(FX)[1]
+\]
+soit distingué (1.1.4.2).
+
+\VerdierSemanticAnchor{ch2-1-1-4}
+\medskip
+\noindent\textbf{Définition 1.1.4.}\quad
+Soient $\mathcal D_i$, $1\leq i\leq n$, et $\mathcal D$, $n+1$ catégories
+triangulées. Un \emph{foncteur multi-exact} de $\prod_i\mathcal D_i$ dans
+$\mathcal D$ est un $\mathbb Z^n$-foncteur tordu (chap. I, 1.4.4)
+$(F,p)\colon\prod_i\mathcal D_i\longrightarrow\mathcal D$ tel que, pour
+toute famille d'objets $X_i$ appartenant respectivement aux catégories
+$\mathcal D_i$, $i\ne j$, le $\mathbb Z$-foncteur :
+
+\VerdierSemanticAnchor{ch2-1-1-4-partial-functor}
+\[
+  X\longmapsto F(X_1,\ldots,X,\ldots,X_n)\colon
+  \mathcal D_j\longrightarrow\mathcal D
+\]
+soit un foncteur exact.
+
+\VerdierSemanticAnchor{ch2-1-1-4-1}
+\medskip
+\noindent\textbf{1.1.4.1.}\quad
+Dans la définition (1.1.4), la catégorie $\prod_i\mathcal D_i$ est munie
+de sa $\mathbb Z^n$-structure canonique et le groupe $\mathbb Z^n$ opère
+sur la catégorie $\mathcal D$ par l'intermédiaire de l'homomorphisme
+
+\VerdierSemanticAnchor{ch2-1-1-4-1-group-action}
+\[
+  \mathbb Z^n\longrightarrow\mathbb Z,
+\]
+somme des coordonnées (chap. I, 1.6.6).
+
+\VerdierSemanticAnchor{ch2-1-1-4-2}
+\medskip
+\noindent\textbf{1.1.4.2.}\quad
+Conformément à la règle des signes I (chap. I, 1.6.6), les foncteurs
+multi-exacts seront, sauf mention expresse du contraire, tordus par le
+cocycle de Koszul relatif à la base canonique $e_1,\ldots,e_n$ de
+$\mathbb Z^n$ (chap. I, 1.6.4).
+
+\VerdierSemanticAnchor{ch2-1-1-4-2-trivial-cocycle}
+Ceci implique en particulier que les foncteurs exacts de $\mathcal D$
+dans $\mathcal D'$ sont tordus par le cocycle trivial.
+
+\VerdierSemanticAnchor{ch2-1-1-5}
+\medskip
+\noindent\textbf{Définition 1.1.5.}\quad
+Soient $\mathcal D$ une catégorie triangulée et $\mathcal A$ une catégorie
+abélienne. Un foncteur $H\colon\mathcal D\longrightarrow\mathcal A$ est
+appelé \emph{foncteur cohomologique} si pour tout triangle distingué :
+
+\VerdierSemanticAnchor{ch2-1-1-5-source-triangle}
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+\]
+le diagramme :
+
+\VerdierSemanticAnchor{ch2-1-1-5-image-sequence}
+\[
+  HX\xrightarrow{Hu}HY\xrightarrow{Hv}HZ\xrightarrow{Hw}H(X[1])
+\]
+est une suite exacte de $\mathcal A$.
+\endgroup

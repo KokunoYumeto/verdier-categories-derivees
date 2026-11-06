@@ -1,0 +1,62 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0188}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-1-3-properties-cont}
+初等射である。初等射は基底変換で安定である。次の複体の射の列を考える：
+
+\VerdierSemanticAnchor{ch3d-2-1-3-bi-infinite-chain}
+\[
+\cdots\longrightarrow X_n\xrightarrow{u_n}X_{n-1}
+\xrightarrow{u_{n-1}}X_{n-2}\longrightarrow\cdots
+\]
+この列は両方向に無限であり、各整数 $n$ に対して射 $u_n$ は高さ $-n$ の
+初等射であるとする。この列は $\operatorname{comp}(\mathcal A)$ において
+射影極限と帰納極限をもつ（任意に固定した次数の成分に誘導される列は、
+両方向で定常である）。
+
+\VerdierSemanticAnchor{ch3d-2-1-4}
+\medskip\noindent\textbf{補題 2.1.4.}\quad
+\textit{$m\colon X\longrightarrow Y$ を
+$\operatorname{comp}(\mathcal A)$ の擬同型とする。射の列}
+\[
+u_n\colon X_n\longrightarrow X_{n-1},\qquad n\in\mathbb Z,
+\]
+\textit{で、各整数 $n$ に対して $u_n$ が高さ $-n$ の初等射となるもの、および
+射}
+
+\VerdierSemanticAnchor{ch3d-2-1-4-limits}
+\[
+\varinjlim_n X_n\xleftarrow{\ \sim\ }Y,
+\qquad
+\varprojlim_n X_n\xleftarrow{\ v\ }X,
+\quad v\text{ はホモトピー同値（第 I 章，2.5.11）}
+\]
+\textit{であって、図式}
+
+\VerdierSemanticAnchor{ch3d-2-1-4-square}
+\begin{center}
+\begin{tikzcd}[column sep=5.6em,row sep=3em]
+X \arrow[r,"v"] \arrow[d,"m"']
+  & \displaystyle\varprojlim_n X_n \arrow[d] \\
+Y \arrow[r,"{\sim}"'] & \displaystyle\varinjlim_n X_n
+\end{tikzcd}
+\end{center}
+\textit{がホモトピーを除いて可換となるものが存在する。}
+
+\VerdierSemanticAnchor{ch3d-2-1-4-proof}
+まず、射 $m\colon X\longrightarrow Y$ を
+$\operatorname{comp}(\mathcal A)$ の射とすると、エピ射
+$m'\colon X'\longrightarrow Y$ と、ホモトピーを除いて可換な図式
+
+\VerdierSemanticAnchor{ch3d-2-1-4-epimorphism-diagram}
+\begin{center}
+\begin{tikzcd}[column sep=3.5em,row sep=3.2em]
+X \arrow[rr,"v"] \arrow[dr,"m"'] && X' \arrow[dl,"{m'}"] \\
+& Y &
+\end{tikzcd}
+\end{center}
+が存在する。
+\endgroup

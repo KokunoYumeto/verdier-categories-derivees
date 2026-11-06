@@ -1,0 +1,103 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0085}%
+\VerdierSemanticAnchor{ch1-3-1-4-homotopy-definition-continuation}
+を $\operatorname{tr}_1(C)$ の二つの射とする。$(g,h,a)$ と
+$(g',h',a')$ を結ぶ\emph{ホモトピー}とは三つ組 $(b,b',\alpha)$ であり、
+$b\colon g\rightsquigarrow g'$ と $b'\colon h\rightsquigarrow h'$ は
+ホモトピーで、
+
+\VerdierSemanticAnchor{ch1-3-1-4-second-order-condition}
+\begin{equation*}
+  \alpha\colon f'\star b+a'\rightsquigarrow b'\star f+a
+\end{equation*}
+は二階ホモトピー (2.5.12) である。
+
+\VerdierSemanticAnchor{ch1-3-1-4-homotopic-morphisms}
+$\operatorname{tr}_1(C)$ の二つの射は、それらを結ぶホモトピーが存在するとき、
+\emph{ホモトピック}であるという。
+\VerdierSemanticAnchor{ch1-3-1-4-equivalence-relation}
+「$(g,h,a)$ と $(g',h',a')$ はホモトピックである」という関係は、射の直和と
+合成に両立する同値関係である。
+\VerdierSemanticAnchor{ch1-3-1-4-tr1-homotopy-category}
+したがって、対象を $\operatorname{tr}_1(C)$ の対象、射を
+$\operatorname{tr}_1(C)$ の射のホモトピー類とする圏
+$\operatorname{Tr}_1(C)$ を導入できる。
+
+\VerdierSemanticAnchor{ch1-3-1-5}
+\noindent\textbf{命題 3.1.5.}\quad
+\emph{
+$D,D'\colon (X\xrightarrow{f}Y)\rightrightarrows
+(X'\xrightarrow{f'}Y')$ を $\operatorname{tr}_1(C)$ の二つの射とする。
+$D$ と $D'$ が $\operatorname{tr}_1(C)$ でホモトピックならば、$c(D)$ と
+$c(D')$ は $\operatorname{comp}(C)$ でホモトピックである。}
+
+\VerdierSemanticAnchor{ch1-3-1-5-proof-setup}
+$D=(g,h,a)$、$D'=(g',h',a')$ とする。$D$ と $D'$ が
+$\operatorname{tr}_1(C)$ でホモトピックであると仮定する。このとき、次を満たす
+ホモトピー $b,b'$ が存在する：
+
+\VerdierSemanticAnchor{ch1-3-1-5-eq1}
+\begin{equation}
+  \begin{aligned}
+    g'-g&=bd+db,\\
+    h'-h&=b'd+db'.
+  \end{aligned}
+  \tag{3.1.5.1}
+\end{equation}
+
+（記号を軽くするため、この計算では各成分の次数を表す上付き添字を省いた。）
+\VerdierSemanticAnchor{ch1-3-1-5-second-order-homotopy}
+さらに、次を満たす二階ホモトピー $\alpha$ が存在する：
+\begin{equation*}
+  \alpha d-d\alpha=b'f+a-(f'b+a').
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-3-1-5-cone-homotopy}
+直ちに計算すると
+\begin{equation*}
+  \begin{pmatrix}
+    b' & \alpha\\
+    0  & -b
+  \end{pmatrix}
+\end{equation*}
+が $c(D)$ と $c(D')$ を結ぶホモトピーであることがわかる。
+
+\VerdierSemanticAnchor{ch1-3-1-6}
+\noindent\textbf{系 3.1.6.}\quad
+\emph{関手}
+\begin{equation*}
+  c\colon\operatorname{tr}_1(C)\longrightarrow\operatorname{comp}(C)
+  \qquad\text{および}\qquad
+  s\colon\operatorname{comp}(C)\longrightarrow\operatorname{tr}_1(C)
+\end{equation*}
+\emph{は $\operatorname{tr}_1(C)$ と $\operatorname{comp}(C)$ のホモトピーに
+両立し、商をとることにより、やはり}
+
+\VerdierSemanticAnchor{ch1-3-1-6-descended-functors}
+\begin{equation*}
+  c\colon\operatorname{Tr}_1(C)\longrightarrow K(C)
+  \qquad\text{および}\qquad
+  s\colon K(C)\longrightarrow\operatorname{Tr}_1(C)
+\end{equation*}
+\emph{と書かれる関手を定める。}
+\VerdierSemanticAnchor{ch1-3-1-6-adjunction}
+\emph{関手 $c\colon\operatorname{Tr}_1(C)\longrightarrow K(C)$ は関手
+$s\colon K(C)\longrightarrow\operatorname{Tr}_1(C)$ の左随伴である。}
+
+\VerdierSemanticAnchor{ch1-3-1-6-proof}
+これは (3.1.5) と (3.1.3) から形式的に従う。
+
+\VerdierSemanticAnchor{ch1-3-1-7}
+\noindent\textbf{3.1.7.}\quad
+\VerdierSemanticAnchor{ch1-3-1-7-s-prime}
+$s'\colon\operatorname{comp}(C)\longrightarrow\operatorname{tr}_1(C)$ を
+関手 $X\longmapsto(X\longrightarrow 0)$ とする。
+\VerdierSemanticAnchor{ch1-3-1-7-comp-translation}
+関手 $cs'\colon\operatorname{comp}(C)\longrightarrow\operatorname{comp}(C)$
+は $\operatorname{comp}(C)$ のシフト関手に等しい。
+\VerdierSemanticAnchor{ch1-3-1-7-descended-s-prime}
+関手 $s'$ は $\operatorname{comp}(C)$ のホモトピックな二つの射を
+$\operatorname{tr}_1(C)$ のホモトピックな射に送り、したがって、やはり $s'$ と
+書かれる関手 $s'\colon K(C)\longrightarrow\operatorname{Tr}_1(C)$ を定める。
+\VerdierSemanticAnchor{ch1-3-1-7-k-translation}
+関手 $cs'\colon K(C)\longrightarrow K(C)$ は $K(C)$ のシフト関手に等しい。

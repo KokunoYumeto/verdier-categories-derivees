@@ -1,0 +1,80 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0229}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-1-6-cont}
+\noindent 次で定義される $n$-重複複体とする：
+
+\VerdierSemanticAnchor{ch4d-4-1-6-1}
+\begin{equation}
+({}^{m}\!X(p,q))^\sigma=
+\begin{cases}
+X^\sigma,&-q\leq\sigma_m<-p,\\
+0,&\sigma_m<-q\ \lor\ -p\leq\sigma_m,
+\end{cases},
+\tag{4.1.6.1}
+\end{equation}
+
+\noindent ${}^{m}\!X(p,q)$ の微分は $X$ の微分である。ただし、考えている
+微分の始域または終域が零対象である場合は、この限りでないことがある。
+
+$\mathcal{F}\ell_1(\widetilde{\mathbb Z})$ の元 $(p,q)$ と $(p',q')$ の
+任意の組で $p\leq p'$ かつ $q\leq q'$ を満たすものに対し、
+
+\VerdierSemanticAnchor{ch4d-4-1-6-2}
+\begin{equation}
+f\bigl((p,q),(p',q')\bigr)\colon
+{}^{m}\!X(p,q)\longrightarrow{}^{m}\!X(p',q')
+\tag{4.1.6.2}
+\end{equation}
+
+を、各成分が恒等射である $n$-重複複体の射とする。ただし、始域または終域が
+零対象である場合は、この限りでないことがある。最後に、
+$\mathcal{F}\ell_2(\widetilde{\mathbb Z})$ の各元 $(p,q,r)$ に対し、
+
+\VerdierSemanticAnchor{ch4d-4-1-6-3}
+\begin{equation}
+g(p,q,r)\colon{}^{m}\!X(q,r)
+\longrightarrow T_m\bigl({}^{m}\!X(p,q)\bigr)
+\tag{4.1.6.3}
+\end{equation}
+
+を、次の成分をもつ射とする（$T_m$ は方向 $m$ のシフト関手を表す
+（第 I 章、2.3.1））：
+
+\VerdierSemanticAnchor{ch4d-4-1-6-4}
+\begin{equation}
+\left\{
+\begin{aligned}
+g(p,q,r)^\sigma&=0,
+  &&\sigma_m\neq-q-1,\\
+g(p,q,r)^\sigma&=-d_X^{\sigma,m},
+  &&\sigma_m=-q-1.
+\end{aligned}
+\right.
+\tag{4.1.6.4}
+\end{equation}
+
+ここで新しい記法を導入する。まず、記法を濫用して、
+$\int_n\colon\operatorname{comp}^n(\mathcal A)\longrightarrow
+\operatorname{comp}(\mathcal A)$ により、付随する単純複体関手の
+$\Pi$-拡張または $\Sigma$-拡張を表す（$\mathcal A$ に可算積または可算和が
+存在する場合に限る（第 I 章、2.2.3））。次のように置く：
+
+\VerdierSemanticAnchor{ch4d-4-1-6-5}
+\begin{equation}
+\left\{
+\begin{aligned}
+\int_n{}^{m}\!X(p,q)
+  &={}^{m}\!Y(p,q),\\
+\int_n{}^{m}\!X(-\infty,q)
+  &={}^{m}\!Y(-\infty,q)={}^{m}\!Y(q),\\
+\int_n{}^{m}\!X(-\infty,+\infty)=\int_n X
+  &={}^{m}\!Y(-\infty,+\infty)={}^{m}\!Y(+\infty)=Y.
+\end{aligned}
+\right.
+\tag{4.1.6.5}
+\end{equation}
+\endgroup

@@ -1,0 +1,66 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0172}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch4-4-4}
+\medskip\noindent\textbf{4.4. Convergence.}
+
+\VerdierSemanticAnchor{ch4-4-4-1}
+\medskip\noindent\textbf{4.4.1.}\quad
+Pour une étude détaillée de la convergence des suites spectrales, nous
+renvoyons à \emph{loc. cit.} Nous n'utiliserons que le critère suivant :
+
+\VerdierSemanticAnchor{ch4-4-4-2}
+\medskip\noindent\textbf{Définition 4.4.2.}\quad
+On dit qu'un objet spectral $(H^n(p,q),\delta)$ à valeurs dans une catégorie
+abélienne $\mathcal A$ est \emph{stationnaire}, si pour tout entier $n$, il
+existe deux entiers $u(n),v(n)\in\mathbb Z$ tels que :
+\[
+\begin{aligned}
+H^n(p,q)&=0,&&u(n)\leq p\leq q\leq+\infty,\\
+H^n(p,q)&=0,&&-\infty\leq p\leq q\leq v(n).
+\end{aligned}
+\]
+
+\VerdierSemanticAnchor{ch4-4-4-3}
+\medskip\noindent\textbf{Théorème 4.4.3.}\quad
+\textit{Soit $(H^n(p,q),\delta)$ un objet spectral stationnaire.}
+
+\textit{a) Pour tout $n$, la filtration
+$F^pH^n(-\infty,+\infty)$, $p\in\widetilde{\mathbb Z}$, est stationnaire,
+i.e. il existe deux entiers $n_1\leq n_2$ dans $\mathbb Z$ tels que :}
+\[
+F^{n_1}H^n(-\infty,+\infty)=0
+\quad\text{et}\quad
+F^{n_2}H^n(-\infty,+\infty)=H^n(-\infty,+\infty).
+\]
+
+\textit{b) Les différentielles partant de (resp. aboutissant à)
+$E\!\left[\begin{smallmatrix}n\\r,p,q,s\end{smallmatrix}\right]$ sont nulles
+si $r\leq v(n+1)$ (resp. $u(n-1)\leq s$), et de plus :}
+
+\textit{c) Pour tout $n$ et tout couple $p\leq q$, les objets
+$E\!\left[\begin{smallmatrix}n\\r,p,q,s\end{smallmatrix}\right]$ tels que}
+\[
+-\infty\leq r\leq v(n+1)
+\quad\text{et}\quad
+u(n-1)\leq s\leq+\infty
+\]
+\textit{sont canoniquement isomorphes.}
+
+Ce théorème résulte immédiatement des définitions.
+
+\VerdierSemanticAnchor{ch4-4-4-3-convergence}
+Un objet spectral stationnaire fournit une suite spectrale fortement
+convergente au sens de \emph{loc. cit.} Nous dirons qu'une suite spectrale
+associée à un objet spectral est \emph{stationnaire}, ou encore,
+abusivement, \emph{convergente}, lorsque cet objet spectral est stationnaire.
+En utilisant l'une ou l'autre des notations de (4.3.3), nous écrirons :
+\[
+\mathrm I_r^{p,q}\Longrightarrow H^{p+q}(-\infty,+\infty),
+\qquad
+\mathrm{II}_r^{p,q}\Longrightarrow H^{p+q}(-\infty,+\infty)
+\]
+pour indiquer qu'une suite spectrale converge. L'ensemble des termes
+$H^{p+q}(-\infty,+\infty)$ sera alors appelé l'\emph{aboutissement} de la
+suite spectrale.
+\endgroup

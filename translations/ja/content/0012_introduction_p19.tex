@@ -1,0 +1,52 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0019}
+
+\VerdierSemanticAnchor{intro-1-resolution-comparison-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X \arrow[r,"\varepsilon'"] \arrow[dr,"\varepsilon"']
+  & \mathcal R(X) \arrow[d,"\rho"] \\
+  & I^{\bullet}(X)
+\end{tikzcd}
+\]
+
+\VerdierSemanticAnchor{intro-1-f-acyclic-morphism}
+さらに、$F$-非輪状分解の射
+
+\VerdierSemanticAnchor{intro-1-f-acyclic-morphism-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X \arrow[r,"\varepsilon_1"] \arrow[dr,"\varepsilon_2"']
+  & \mathcal R_1(X) \arrow[d,"\rho'"] \\
+  & \mathcal R_2(X)
+\end{tikzcd}
+\qquad\text{,}
+\]
+が与えられると、$\mathcal B$ の対象の複体の射
+
+\VerdierSemanticAnchor{intro-1-f-rho-prime}
+\[
+F(\rho') : F(\mathcal R_1(X)) \longrightarrow F(\mathcal R_2(X))
+\]
+は擬同型である。
+
+\VerdierSemanticAnchor{intro-1-inductive-system}
+ここでは、$\mathcal B$ において複体と擬同型からなる帰納系が得られ、
+それはホモトピーを除いて一意な最大元、すなわち $X$ の入射分解の $F$ に
+よる像をもつことに注意しよう。これから扱う第二の例では、この現象は
+もはや生じない。
+
+\VerdierSemanticAnchor{intro-1-left-derived-tensor}
+分解によって導来関手を定義する方法は、$\mathcal A$ が十分な入射対象や
+射影対象をもつとは限らない場合にも、ときに一般化できる。$\mathcal A$ を
+位相空間 $E$ 上のアーベル群の層の圏としよう。この圏は一般には十分な
+射影対象をもたない。それでも、各層 $G$ に層
+$F\otimes_{\mathbb Z}G$（$F$ は固定した層）を対応させる
+$\mathcal A$ から $\mathcal A$ への右完全関手の\emph{左導来関手}を
+定義したい。当然、この定義は左導来関手の通常の性質（完全列に対する
+振る舞いと、ある普遍性）をもつ関手を与え、既知の場合（たとえば $E$ が
+一点に縮退する場合）には通常の Tor 積を再現しなければならない。
+
+\VerdierSemanticAnchor{intro-1-left-resolution}
+次のようにすればよい。各層 $G$ は有限長（実際には長さ 2）の左分解
+$L^{\bullet}\to G$ をもち、その各層の

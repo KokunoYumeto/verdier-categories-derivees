@@ -1,0 +1,50 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0019}
+
+\VerdierSemanticAnchor{intro-1-resolution-comparison-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X \arrow[r,"\varepsilon'"] \arrow[dr,"\varepsilon"']
+  & \mathcal R(X) \arrow[d,"\rho"] \\
+  & I^{\bullet}(X)
+\end{tikzcd}
+\]
+
+\VerdierSemanticAnchor{intro-1-f-acyclic-morphism}
+此外，给定一个 $F$-无环分解之间的态射：
+
+\VerdierSemanticAnchor{intro-1-f-acyclic-morphism-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X \arrow[r,"\varepsilon_1"] \arrow[dr,"\varepsilon_2"']
+  & \mathcal R_1(X) \arrow[d,"\rho'"] \\
+  & \mathcal R_2(X)
+\end{tikzcd}
+\qquad\text{,}
+\]
+则 $\mathcal B$ 中对象复形的态射
+
+\VerdierSemanticAnchor{intro-1-f-rho-prime}
+\[
+F(\rho') : F(\mathcal R_1(X)) \longrightarrow F(\mathcal R_2(X))
+\]
+是拟同构。
+
+\VerdierSemanticAnchor{intro-1-inductive-system}
+注意，这里在 $\mathcal B$ 中得到一个由复形与拟同构组成的归纳系，它有一个
+在同伦意义下唯一的极大元：$X$ 的一个内射分解在 $F$ 下的像。我们现在讨论的
+第二个例子中不再出现这一现象。
+
+\VerdierSemanticAnchor{intro-1-left-derived-tensor}
+用分解定义导出函子的办法有时可以推广到 $\mathcal A$ 不必有足够多内射对象
+或投射对象的情形。设 $\mathcal A$ 是拓扑空间 $E$ 上阿贝尔群层的范畴。
+一般而言，这个范畴没有足够多的投射对象。尽管如此，我们仍要定义从
+$\mathcal A$ 到 $\mathcal A$ 的右正合函子之\emph{左导出函子}；这个函子把
+每个层 $G$ 映到层 $F\otimes_{\mathbb Z}G$（其中 $F$ 是固定的层）。
+当然，我们要求这个定义所得函子具有左导出函子的通常性质（关于正合列的
+行为以及某种泛性质），并在已知情形中（例如 $E$ 缩为一点时）给出通常的
+扭积。
+
+\VerdierSemanticAnchor{intro-1-left-resolution}
+可以如下操作。每个层 $G$ 都有一个有限长度（事实上长度为 2）的左分解
+$L^{\bullet}\to G$，其中各层的

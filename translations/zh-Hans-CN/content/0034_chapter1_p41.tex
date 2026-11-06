@@ -1,0 +1,70 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0041}%
+\VerdierSemanticAnchor{ch1-1-3-6-eq2}
+并要求下列图交换：
+
+\begin{equation}
+  \begin{tikzcd}[column sep=7em,row sep=3em]
+    FT(hg) \arrow[r,"m(hg)"] \arrow[d,equal] &
+      T'(hg)F \arrow[d,equal] \\
+    FT(g)T(h) \arrow[d,"m(g)\mathbin{\star}T(h)"'] &
+      T'(g)T'(h)F \\
+    T'(g)FT(h) \arrow[ur,"T'(g)\mathbin{\star}m(h)"'] &
+  \end{tikzcd}
+  \qquad g,h\in G.
+  \tag{1.3.6.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-3-6-remark}
+应当指出，即使 $G^\circ$ 严格作用于范畴，函子也未必严格地与 $G^\circ$ 的
+作用交换。因此，当 $G^\circ$ 平凡地作用于范畴 $\mathcal C$ 和
+$\mathcal C'$（即 $T(g)=T'(g)=$ 恒等函子）时，一个 $G^\circ$-函子无非是
+一个配备了 $G$ 在其自同构群中的表示的函子。此外，不难看出，一个
+$G^\circ$-函子未必同构于一个严格 $G^\circ$-函子。仿照 [19] 很容易构造
+一个反例。
+
+\VerdierSemanticAnchor{ch1-1-3-6-strictify}
+利用同一文献的结果，还可以证明，每个 $G^\circ$-范畴都 $G^\circ$-等价于一个
+严格 $G^\circ$-范畴。用相同的方法还可以把这个结果加强如下。给定两个
+$G^\circ$-范畴 $(\mathcal C,G^\circ,T,c)$ 与
+$(\mathcal C',G^\circ,T',c')$，存在两个严格 $G^\circ$-范畴
+$(\widetilde{\mathcal C},G^\circ,\widetilde T)$、
+$(\widetilde{\mathcal C}',G^\circ,\widetilde T')$，以及 $G^\circ$-等价
+
+\VerdierSemanticAnchor{ch1-1-3-6-equivalences}
+\[
+  (u,\mu)\colon
+  (\widetilde{\mathcal C},G^\circ,\widetilde T)
+  \longrightarrow
+  (\mathcal C,G^\circ,T,c),
+\]
+\[
+  (v,\nu)\colon
+  (\mathcal C',G^\circ,T',c')
+  \longrightarrow
+  (\widetilde{\mathcal C}',G^\circ,\widetilde T')
+\]
+使得对每个函子
+
+\VerdierSemanticAnchor{ch1-1-3-6-functor}
+\[
+  (F,m)\colon
+  (\mathcal C,G^\circ,T,c)
+  \longrightarrow
+  (\mathcal C',G^\circ,T',c'),
+\]
+复合函子
+
+\VerdierSemanticAnchor{ch1-1-3-6-composite}
+\[
+  (v,\nu)(F,m)(u,\mu)\colon
+  (\widetilde{\mathcal C},G^\circ,\widetilde T)
+  \longrightarrow
+  (\widetilde{\mathcal C}',G^\circ,\widetilde T')
+\]
+同构于一个严格地与 $G^\circ$ 的作用交换的函子。我们将不使用这个结果。
+
+\VerdierSemanticAnchor{ch1-1-3-7}
+\noindent\textbf{1.3.7.}\quad
+在本小节中，我们回顾了两种语言的等价：分次范畴的语言与
+$G^\circ$-范畴的语言。在本文中我们将

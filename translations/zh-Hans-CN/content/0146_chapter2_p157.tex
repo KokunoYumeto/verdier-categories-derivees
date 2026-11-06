@@ -1,0 +1,48 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0157}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch3-3-2-4-proof}
+为证明引理 3.2.4，注意
+$h(X')\xrightarrow{\operatorname{Im}((\operatorname{id}_{X'};f'))}
+\operatorname{Im}(f')$ 是 $\mathcal D^\wedge$ 中的满态射。可表示函子在 $\mathcal D^\wedge$ 中是
+投射对象，故存在 $g\colon X\to X'$ 使 (3.2.4.1) 交换。
+
+现转而构造态射 $g'\colon Y\to Y'$。由三角范畴的公理 TRI 与 TRII，存在两个特异三角
+$(Z,X,Y,u,f,v)$ 与 $(Z',X',Y',u',f',v')$。由于
+对 $\mathcal D$ 的每个对象 $W$，函子
+$\operatorname{Hom}_{\mathcal D}(W,\mathord\cdot)$ 是上同调函子 (1.2.1)，下列序列正合：
+\VerdierSemanticAnchor{ch3-3-2-4-exact-sequences}
+\[
+\begin{tikzcd}[column sep=3.7em]
+h(Z)\arrow[r,"h(u)"]&h(X)\arrow[r,"\operatorname{Im}((\operatorname{id}_X;f))"]&\operatorname{Im}(f)\arrow[r]&0\\
+h(Z')\arrow[r,"h(u')"']&h(X')\arrow[r,"\operatorname{Im}((\operatorname{id}_{X'};f'))"']&\operatorname{Im}(f')\arrow[r]&0
+\end{tikzcd}
+\]
+因 $h(Z)$ 在 $\mathcal D^\wedge$ 中投射，存在 $g''\colon Z\to Z'$ 使
+\VerdierSemanticAnchor{ch3-3-2-4-triii-square}
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.3em]
+h(Z)\arrow[r,"h(u)"]\arrow[d,"h(g'')"']&h(X)\arrow[d,"h(g)"]\\
+h(Z')\arrow[r,"h(u')"']&h(X')
+\end{tikzcd}
+\]
+交换。公理 TRIII 给出 $g'$，使 $(g'',g,g')$ 为三角的态射；故
+(3.2.4.2) 交换。引理与命题 3.2.3 得证。
+
+\VerdierSemanticAnchor{ch3-3-2-5}
+\medskip\noindent\textbf{命题 3.2.5.}\quad
+\textit{设 $V$ 与 $V'$ 为 $\mathcal D^\wedge$ 的两个可容许对象，并设
+$\alpha\colon V\to V'$ 为 $\mathcal D^\wedge$ 的态射。$\alpha$ 在
+$\mathcal D^\wedge$ 中的核（相应地，$\alpha$ 在 $\mathcal D^\wedge$ 中的余核）
+是 $\mathcal D^\wedge$ 的可容许对象。}
+
+\VerdierSemanticAnchor{ch3-3-2-5-setup}
+由 (3.2.3)，可设 $V=\operatorname{Im}(f)$、$V'=\operatorname{Im}(f')$，且
+$\alpha$ 由态射 $h(f)$ 与 $h(f')$ 的像上的下列交换图诱导：
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.4em]
+h(X)\arrow[r,"h(f)"]\arrow[d,"h(g)"']&h(Y)\arrow[d,"h(g')"]\\
+h(X')\arrow[r,"h(f')"']&h(Y').
+\end{tikzcd}
+\]
+\endgroup

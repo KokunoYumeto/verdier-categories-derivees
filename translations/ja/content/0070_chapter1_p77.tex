@@ -1,0 +1,108 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0077}%
+\VerdierSemanticAnchor{ch1-2-4-3-simple-complex-morphisms}
+したがって、単純複体へ移ることにより、二つの関手の射
+
+\VerdierSemanticAnchor{ch1-2-4-3-eq2}
+\begin{equation}
+  \begin{aligned}
+    \operatorname{comp}_{\Pi}h\colon
+      \operatorname{comp}_{\Pi}F
+      &\longrightarrow \operatorname{comp}_{\Pi}F',\\
+    \operatorname{comp}_{\Sigma}h\colon
+      \operatorname{comp}_{\Sigma}F
+      &\longrightarrow \operatorname{comp}_{\Sigma}F'
+  \end{aligned}
+  \tag{2.4.3.2}
+\end{equation}
+を得る。
+
+\VerdierSemanticAnchor{ch1-2-4-3-composition}
+$h$ と $h'$ が多加法的関手の合成可能な二つの射ならば、次が成り立つ：
+\begin{equation*}
+  \begin{aligned}
+    \operatorname{comp}_{\Pi}hh'
+      &=\operatorname{comp}_{\Pi}h\,\operatorname{comp}_{\Pi}h',\\
+    \operatorname{comp}_{\Sigma}hh'
+      &=\operatorname{comp}_{\Sigma}h\,\operatorname{comp}_{\Sigma}h'.
+  \end{aligned}
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-2-4-3-sign-rule-ii}
+射 $\operatorname{comp}_{\Pi}h$（それぞれ、
+$\operatorname{comp}_{\Sigma}h$）は、符号規則 II (1.6.6) に従う
+$\mathbb Z[n]$-関手の射である。
+
+\VerdierSemanticAnchor{ch1-2-4-4}
+\noindent\textbf{2.4.4.}\quad
+関手 $F$ がいくつかの変数について反変、すなわち
+$i\in J\subset[n]$ に対して $C_i=(C_i')^\circ$ であるとき、
+(2.4.1) で行った同一視のもとで、関手 $\operatorname{comp}_{\Pi}F$ と
+$\operatorname{comp}_{\Sigma}F$ は対応する変数について反変である。
+
+\VerdierSemanticAnchor{ch1-2-5}
+\subsection{ホモトピー}
+
+\VerdierSemanticAnchor{ch1-2-5-1}
+\noindent\textbf{2.5.1.}\quad
+$X$ と $Y$ を $C$ の二つの $n$-重複体、
+$f,g\colon X\rightrightarrows Y$ を二つの複体の射とする。
+$f$ と $g$ を結ぶ\emph{ホモトピー}とは、射の族
+
+\VerdierSemanticAnchor{ch1-2-5-1-family}
+\begin{equation*}
+  a=\bigl(a^{\sigma,i}\colon X^{\sigma+e_i}\longrightarrow Y^\sigma,
+    \ \sigma\in\mathbb Z[n],\ i\in[n]\bigr)
+\end{equation*}
+で、次を満たすものをいう：
+
+\VerdierSemanticAnchor{ch1-2-5-1-eq1}
+\begin{equation}
+  \begin{aligned}
+    a^{\sigma+e_i-e_j,j}d_X^{\sigma,i}
+      &=d_Y^{\sigma-e_j,i}a^{\sigma-e_j,j},
+      &&\forall\sigma\in\mathbb Z[n],\
+        \ \forall i,j\in[n],\ i\ne j,\\
+    g^\sigma-f^\sigma
+      &=\sum_{i\in[n]}\Bigl(
+          a^{\sigma,i}d_X^{\sigma,i}
+          +d_Y^{\sigma-e_i,i}a^{\sigma-e_i,i}\Bigr),
+      &&\forall\sigma\in\mathbb Z[n].
+  \end{aligned}
+  \tag{2.5.1.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-5-1-notation}
+$f$ と $g$ を結ぶホモトピー $a$ を $a\colon f\rightsquigarrow g$ と記す。
+
+\VerdierSemanticAnchor{ch1-2-5-2}
+\noindent\textbf{2.5.2.}\quad
+$f,g,h\colon X\longrightarrow Y$ を三つの射、
+$a\colon f\rightsquigarrow g$ と $b\colon g\rightsquigarrow h$ を
+二つのホモトピーとする。ホモトピー
+$b+a\colon f\rightsquigarrow h$ を
+
+\VerdierSemanticAnchor{ch1-2-5-2-sum}
+\begin{equation*}
+  (b+a)^{\sigma,i}=b^{\sigma,i}+a^{\sigma,i},
+  \qquad \sigma\in\mathbb Z[n],\ i\in[n]
+\end{equation*}
+で定める。
+
+\VerdierSemanticAnchor{ch1-2-5-3}
+\noindent\textbf{2.5.3.}\quad
+$f,g\colon X\rightrightarrows Y$ を二つの複体の射、
+$a\colon f\rightsquigarrow g$ をホモトピーとし、
+$u\colon Y\longrightarrow Y'$（それぞれ、$v\colon X'\longrightarrow X$）
+を複体の射とする。ホモトピー
+$u\star a\colon uf\rightsquigarrow ug$（それぞれ、
+$a\star v\colon fv\rightsquigarrow gv$）を
+
+\VerdierSemanticAnchor{ch1-2-5-3-whiskering}
+\begin{equation*}
+  (u\star a)^{\sigma,i}=u^\sigma a^{\sigma,i}
+  \qquad
+  \text{（それぞれ、}(a\star v)^{\sigma,i}
+    =a^{\sigma,i}v^{\sigma+e_i}\text{）}
+\end{equation*}
+で定める。

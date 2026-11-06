@@ -1,0 +1,66 @@
+\VerdierPhysicalPageAnchor{0020}
+sheaves whose stalks are torsion-free abelian groups (a \emph{flat}
+resolution). The following facts are readily verified:
+
+\VerdierSemanticAnchor{intro-1-flat-common-refinement}
+\noindent\emph{a)} Given two flat resolutions
+$L_i^{\bullet}\xrightarrow{\varepsilon_i}G$, $i=1,2$, there exists a third
+$L_3^{\bullet}\xrightarrow{\varepsilon_3}G$ and a diagram of resolutions
+commuting up to homotopy:
+
+\VerdierSemanticAnchor{intro-1-flat-common-refinement-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+  & L_1^{\bullet} \arrow[dr,"\varepsilon_1"] & \\
+L_3^{\bullet} \arrow[ur,"\rho_1"] \arrow[rr,"\varepsilon_3"]
+  \arrow[dr,"\rho_2"'] && G \\
+  & L_2^{\bullet} \arrow[ur,"\varepsilon_2"'] &
+\end{tikzcd}
+\qquad\text{.}
+\]
+
+\VerdierSemanticAnchor{intro-1-flat-homotopy-equalizer}
+\noindent\emph{b)} Given two morphisms of flat resolutions:
+
+\VerdierSemanticAnchor{intro-1-flat-parallel-morphisms-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+L_1^{\bullet}
+  \arrow[d,bend right=12,"\rho"']
+  \arrow[d,bend left=12,"\rho'"]
+  \arrow[dr,"\varepsilon_1"] & \\
+L_2^{\bullet} \arrow[r,"\varepsilon_2"'] & G
+\end{tikzcd}
+\qquad\text{,}
+\]
+there exists a third flat resolution:
+
+\VerdierSemanticAnchor{intro-1-flat-third-resolution}
+\[
+L_3^{\bullet}\xrightarrow{\varepsilon_3}G
+\qquad\text{,}
+\]
+and a morphism of resolutions:
+
+\VerdierSemanticAnchor{intro-1-flat-sigma-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+L_3^{\bullet} \arrow[d,"\sigma"'] \arrow[dr,"\varepsilon_3"] & \\
+L_1^{\bullet} \arrow[r,"\varepsilon_1"'] & G
+\end{tikzcd}
+\qquad\text{,}
+\]
+such that the morphisms of complexes $\rho\sigma$ and $\rho'\sigma$ are
+homotopic.
+
+\VerdierSemanticAnchor{intro-1-flat-morphism}
+\noindent\emph{c)} For every morphism of flat resolutions:
+
+\VerdierSemanticAnchor{intro-1-flat-morphism-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+L_1^{\bullet} \arrow[d,"\rho"'] \arrow[dr,"\varepsilon_1"] & \\
+L_2^{\bullet} \arrow[r,"\varepsilon_2"'] & G
+\end{tikzcd}
+\qquad\text{,}
+\]

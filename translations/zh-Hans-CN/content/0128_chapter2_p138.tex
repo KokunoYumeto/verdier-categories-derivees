@@ -1,0 +1,92 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0138}%
+\begingroup
+\small
+\setlength{\emergencystretch}{2em}%
+\setlength{\parskip}{0pt}%
+\setlength{\abovedisplayskip}{1pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{1pt plus 1pt minus 1pt}%
+
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-2-4-b}
+\noindent b) 当范畴 $\mathcal C$ 是加性范畴时，范畴
+$\mathcal C(S^{-1})$ 是加性范畴，且函子 $Q$ 是加性函子。
+
+\VerdierSemanticAnchor{ch2-2-2-4-c}
+\par\noindent c) 设 $\widehat S$ 为 $\mathcal C$ 中被 $Q$ 送到
+$\mathcal C(S^{-1})$ 的同构的态射集合。
+\VerdierSemanticAnchor{ch2-2-2-4-c-saturation}%
+集合 $\widehat S$ 是 $\mathcal C$ 的饱和乘法系。$\mathcal C$ 中每个
+包含 $S$ 的饱和乘法系都包含 $\widehat S$。
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-2-4-proof-b}
+\par\noindent 第一个断言立即由 $\mathcal C(S^{-1})$ 的泛性质得到：
+范畴 $\bigl(\mathcal C^\circ(S^{-1})\bigr)^\circ$ 是该泛问题的一个解。
+第二个断言立即由定理 (2.2.2) 的断言 b) 与 c) 得到。
+\VerdierSemanticAnchor{ch2-2-2-4-proof-c-characterization}%
+由 $\mathcal C(S^{-1})$ 中态射的描述立即可知，$\mathcal C$ 的态射
+$f$ 被 $Q$ 送到同构，当且仅当 $\mathcal C$ 中存在两个态射 $g$ 与
+$h$，使得 $gf$ 与 $fh$ 有定义并且属于 $S$。
+\VerdierSemanticAnchor{ch2-2-2-4-proof-c-sm2-sm3}%
+由此立即可知，集合 $\widehat S$ 具有性质 SM2) 与 SM3)。
+\VerdierSemanticAnchor{ch2-2-2-4-proof-c-sm1-sm4}%
+此外，由 $\widehat S$ 的定义可知，该集合具有性质 SM1) 与 SM4)。
+\VerdierSemanticAnchor{ch2-2-2-4-proof-c-conclusion}%
+因此，$\widehat S$ 是 $\mathcal C$ 的饱和乘法系。(2.2.4) 的最后一个
+断言是显然的。
+
+\VerdierSemanticAnchor{ch2-2-2-5}
+\smallskip
+\noindent\textbf{2.2.5.} 设 $\mathcal C$ 为范畴，$S$ 为
+$\mathcal C$ 的乘法系。
+\VerdierSemanticAnchor{ch2-2-2-5-localized-category}%
+范畴 $\mathcal C(S^{-1})$ 称为 $\mathcal C$ 关于乘法系 $S$ 的
+\emph{局部化范畴}。
+\VerdierSemanticAnchor{ch2-2-2-5-localization-functor}%
+函子 $Q\colon\mathcal C\longrightarrow\mathcal C(S^{-1})$ 称为
+\emph{局部化函子}。
+\VerdierSemanticAnchor{ch2-2-2-5-saturation}%
+乘法系 $\widehat S$ 称为乘法系 $S$ 的\emph{饱和化}。
+
+\VerdierSemanticAnchor{ch2-2-2-6}
+\smallskip
+\noindent\textbf{定理 2.2.6.}\quad
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-2-6-setup}%
+设 $\mathcal D$ 为三角范畴，$S$ 为 $\mathcal D$ 的乘法系 (2.1.4)。
+以 $\mathcal D(S^{-1})$ 表示 $\mathcal D$ 的局部化范畴，以
+$Q\colon\mathcal D\longrightarrow\mathcal D(S^{-1})$ 表示局部化函子。
+
+\VerdierSemanticAnchor{ch2-2-2-6-a}
+\par\noindent a) 在 $\mathcal D(S^{-1})$ 上存在唯一的严格
+$\mathbb Z$-范畴结构，使 $Q$ 为严格 $\mathbb Z$-函子。
+
+\VerdierSemanticAnchor{ch2-2-2-6-b}
+\par\noindent b) 在 $\mathcal D(S^{-1})$ 上存在唯一的三角结构，使
+$Q$ 为正合函子。该结构的特异三角，是那些同构于 $\mathcal D$ 的
+特异三角在 $Q$ 下的像的三角。
+
+\VerdierSemanticAnchor{ch2-2-2-6-c-factorization}
+\par\noindent c) 到某个三角范畴（分别地，阿贝尔范畴）、并把 $S$
+中态射送到同构的每个正合（分别地，上同调）函子
+$F\colon\mathcal D\longrightarrow\mathcal D'$，都唯一地通过
+$Q\colon\mathcal D\longrightarrow\mathcal D(S^{-1})$ 分解为正合
+（分别地，上同调）函子
+$G\colon\mathcal D(S^{-1})\longrightarrow\mathcal D'$。
+\VerdierSemanticAnchor{ch2-2-2-6-c-morphism-lifting}%
+设 $F_1,F_2\colon\mathcal D\rightrightarrows\mathcal D'$ 为两个把
+$S$ 中态射送到同构的正合（分别地，上同调）函子；设
+$G_1,G_2\colon\mathcal D(S^{-1})\rightrightarrows\mathcal D'$ 为它们
+各自的分解，并设 $m\colon F_1\longrightarrow F_2$ 为正合（分别地，
+上同调）函子的态射。存在唯一的函子态射
+$p\colon G_1\longrightarrow G_2$，使 $m=p\star Q$。
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-2-6-proof-a}
+\par\noindent 第一个断言立即由定理 (2.2.2) 与 SM5) 得到。
+\VerdierSemanticAnchor{ch2-2-2-6-proof-c-p139-boundary}%
+第三个断言立即由
+
+\VerdierSemanticAnchor{ch2-2-2-6-p139-boundary}
+\endgroup

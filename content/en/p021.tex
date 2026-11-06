@@ -1,0 +1,63 @@
+\VerdierPhysicalPageAnchor{0021}
+the morphism of complexes of sheaves:
+
+\VerdierSemanticAnchor{intro-1-flat-quasi-isomorphism}
+\[
+F\otimes\rho:
+F\otimes_{\mathbb Z}L_1^{\bullet}
+\longrightarrow
+F\otimes_{\mathbb Z}L_2^{\bullet}
+\qquad\text{,}
+\]
+is a \emph{quasi-isomorphism}.
+
+\VerdierSemanticAnchor{intro-1-coherent-tensor-system}
+Thus one obtains a coherent system of complexes of sheaves
+$F\otimes_{\mathbb Z}L^{\bullet}$ and quasi-isomorphisms which depends
+functorially on the sheaf $G$, in a sense that can be made precise. In any
+case, the cohomology objects of the complexes
+$F\otimes_{\mathbb Z}L^{\bullet}$ ($L^{\bullet}$ a flat resolution of $G$) are
+defined up to unique isomorphism and depend functorially on $G$. The resulting
+functors have the desired properties and deserve the name left derived
+functors of the functor ``tensor product with $F$''.
+
+\VerdierSemanticAnchor{intro-1-tor-sheaves}
+Of course, to calculate the torsion sheaves
+$\operatorname{Tor}^{\mathbb Z}(F,G)$, one can take the sheaf associated with
+the presheaf
+$U\longmapsto\operatorname{Tor}^{\mathbb Z}(F(U),G(U))$ ($U$ open in $E$).
+But the method we use provides a complex of sheaves well defined up to
+quasi-isomorphism whose cohomology objects are
+$\operatorname{Tor}^{\mathbb Z}(F,G)$ and $F\otimes_{\mathbb Z}G$, additional
+information essential for handling these functors conveniently, as we shall
+see below. This method extends immediately to ringed topoi and makes it
+possible in this setting to define the left derived functors of the functor
+``tensor product of sheaves''.
+
+\VerdierSemanticAnchor{intro-2}
+\noindent\textbf{2.}\quad
+In the study of the derived functors of a composite of two functors, of
+associativity properties, and of relations of Künneth type, one is led to
+extend the formalism of derived functors to the case where the argument is no
+longer merely an object of the category under study, but a complex of objects
+of that category. This extension was carried out in [1]. Let us recall its
+main outlines. Let $F:\mathcal A\to\mathcal B$ be an additive functor between
+two abelian categories such that $\mathcal A$ has enough injective objects.
+Let $Y^{\bullet}$ be a complex of objects of $\mathcal A$. In \emph{loc. cit.}
+one defines the ``injective resolutions'' of the complex $Y^{\bullet}$, which
+we call \emph{Cartan--Eilenberg injective resolutions} of $Y^{\bullet}$.
+
+\VerdierSemanticAnchor{intro-2-ce-resolution}
+Such a resolution is, by definition, a double complex
+$I^{\bullet\bullet}$ whose components are injective objects of $\mathcal A$,
+equipped with an augmentation
+
+\VerdierSemanticAnchor{intro-2-ce-augmentation}
+\[
+Y^{\bullet}\xrightarrow{\varepsilon}I^{\bullet\bullet}
+\]
+that induces injective resolutions (in the usual sense) of the components,
+the boundaries, and the cohomology objects of the complex $Y^{\bullet}$. These
+resolutions are unique up to homotopy (of double complexes). One then forms
+the double complex $F(I^{\bullet\bullet})$, and then the associated simple
+complex $\int F(I^{\bullet\bullet})$, which likewise is determined

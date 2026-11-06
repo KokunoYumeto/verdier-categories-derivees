@@ -1,0 +1,46 @@
+\chapter{加法圏における複体の圏}
+\VerdierPhysicalPageAnchor{0034}
+\VerdierSemanticAnchor{ch1}
+
+\VerdierSemanticAnchor{ch1-1}
+\section{次数付き圏}
+
+\VerdierSemanticAnchor{ch1-1-1}
+\subsection{\texorpdfstring{$G$}{G}-次数付き圏}
+
+\VerdierSemanticAnchor{ch1-1-1-1}
+\noindent\textbf{1.1.1.}\quad
+各群 $G$ に対し、次のように定義される圏 $\mathcal G$ を対応させる。
+
+\VerdierSemanticAnchor{ch1-1-1-1-group-category}
+\noindent\textnormal{(1.1.1.1)}
+\begin{list}{--}{%
+  \setlength{\leftmargin}{2em}%
+  \setlength{\itemsep}{0.25em}%
+  \setlength{\topsep}{0.25em}%
+}
+  \item \VerdierSemanticAnchor{ch1-1-1-1-group-category-ob}%
+    $\operatorname{Ob}(\mathcal G)$ は一点集合であり、その元を一度固定して選ぶ。
+  \item \VerdierSemanticAnchor{ch1-1-1-1-group-category-fl}%
+    $\operatorname{Fl}(\mathcal G)$ は $G$ の台集合である。
+  \item \VerdierSemanticAnchor{ch1-1-1-1-group-category-maps}%
+    始域写像と終域写像は $\operatorname{Fl}(\mathcal G)$ から
+    $\operatorname{Ob}(\mathcal G)$ への唯一の写像である。恒等写像は
+    $\operatorname{Ob}(\mathcal G)$ の唯一の元を $G$ の単位元へ送る。
+  \item \VerdierSemanticAnchor{ch1-1-1-1-group-category-composition}%
+    二つの矢印 ${}\xrightarrow{g}{}\xrightarrow{h}{}$ の合成は矢印 $hg$、
+    すなわち群 $G$ における元 $h$ と $g$ の積である。
+\end{list}
+
+\VerdierSemanticAnchor{ch1-1-1-1-graded-category}
+$\mathcal G$ 上にファイバー化された圏 [18] を\emph{$G$-次数付き圏}という。
+したがって $G$-次数付き圏 $(\mathcal C,G)$ とは、圏 $\mathcal C$ と、
+$\mathcal C$ を $\mathcal G$ 上のファイバー圏にする関手
+$\deg\colon\mathcal C\to\mathcal G$ との組である。
+
+\VerdierSemanticAnchor{ch1-1-1-1-degree-functor}
+関手 $\deg\colon\mathcal C\to\mathcal G$ を\emph{次数関手}という。
+$\mathcal C$ の射の $\deg$ による像を、その射の\emph{次数}という。
+\VerdierSemanticAnchor{ch1-1-1-1-fiber-category}
+$e$ を $G$ の単位元とする。$(\mathcal C,G)$ のファイバー圏を
+$\mathcal C_e$ と書く。圏 $\mathcal C_e$ は

@@ -1,0 +1,92 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0040}%
+\VerdierSemanticAnchor{ch1-1-3-2-eq4}
+を定め、同型 $c(g',g)^{-1}$ は写像
+
+\begin{equation}
+  \operatorname{Hom}_{\mathcal C}
+    \bigl(T(g)Y,T(g)T(g')Z\bigr)
+  \longrightarrow
+  \operatorname{Hom}_{\mathcal C}
+    \bigl(T(g)Y,T(g'g)Z\bigr)
+  \tag{1.3.2.4}
+\end{equation}
+を定める。
+
+\VerdierSemanticAnchor{ch1-1-3-2-eq5}
+したがって $v$ の像は
+$v'\in\operatorname{Hom}_{\mathcal C}(T(g)Y,T(g'g)Z)$ である。
+$\mathcal C$ における $u$ と $v'$ の合成は元
+
+\begin{equation}
+  w=v'\mathbin{\circ_{\mathcal C}}u,
+  \qquad w\in\operatorname{Hom}^{g'g}(X,Z),
+  \tag{1.3.2.5}
+\end{equation}
+であり、定義により、これを $\mathcal C[G]$ における $u$ と $v$ の合成とする。
+ファイバー化関手 $\mathcal C[G]\to\mathcal G$ は明らかな関手である。
+ファイバー圏 $\mathcal C[G]\to\mathcal G$ は標準的な正規切断系を備える。
+
+\VerdierSemanticAnchor{ch1-1-3-3}
+\noindent\textbf{1.3.3.}\quad
+実際、より精密な結果がある。$\mathcal C,\mathcal C'$ を正規切断系を備えた
+二つの $G$-次数付き圏とする。関手 $\Psi$ は全単射
+
+\VerdierSemanticAnchor{ch1-1-3-3-eq1}
+\begin{equation}
+  \Psi(\mathcal C,\mathcal C')\colon
+  \operatorname{Hom}_{\operatorname{Grad}(G)}(\mathcal C,\mathcal C')
+  \longrightarrow
+  \operatorname{Hom}_{G^\circ\text{-}\operatorname{Cat}}
+    \bigl(\Psi(\mathcal C),\Psi(\mathcal C')\bigr)
+  \tag{1.3.3.1}
+\end{equation}
+を定める。
+
+これらの集合は、それぞれ次の圏の対象集合である：
+
+\VerdierSemanticAnchor{ch1-1-3-3-eq2}
+\begin{equation}
+  \mathcal{H}\!om_{\operatorname{Grad}(G)}(\mathcal C,\mathcal C'),
+  \qquad
+  \mathcal{H}\!om_{G^\circ\text{-}\operatorname{Cat}}
+    \bigl(\Psi(\mathcal C),\Psi(\mathcal C')\bigr),
+  \tag{1.3.3.2}
+\end{equation}
+その射は、それぞれ次数 $e$ の関手の射と、$G^\circ$ の作用と両立する関手の
+射である。さらに (1.2.7) から、写像 $\Psi(\mathcal C,\mathcal C')$ が関手
+
+\VerdierSemanticAnchor{ch1-1-3-3-eq3}
+\begin{equation}
+  \Psi(\mathcal C,\mathcal C')\colon
+  \mathcal{H}\!om_{\operatorname{Grad}(G)}(\mathcal C,\mathcal C')
+  \longrightarrow
+  \mathcal{H}\!om_{G^\circ\text{-}\operatorname{Cat}}
+    \bigl(\Psi(\mathcal C),\Psi(\mathcal C')\bigr)
+  \tag{1.3.3.3}
+\end{equation}
+へ拡張されることが直ちに従い、次が容易に確かめられる。
+
+\VerdierSemanticAnchor{ch1-1-3-4}
+\noindent\textbf{命題 1.3.4.}\quad
+\emph{関手 $\Psi(\mathcal C,\mathcal C')$ は圏の同型である。}
+
+\VerdierSemanticAnchor{ch1-1-3-5}
+\noindent\textbf{1.3.5.}\quad
+完全を期すなら、関手 $\Psi$（関手の射へ拡張したもの）が、関手の射による
+関手の畳み込みを保つことも注意すべきである。検証は読者に委ねる。
+
+\VerdierSemanticAnchor{ch1-1-3-6}
+\noindent\textbf{1.3.6.}\quad
+最も多く用いるのは狭義 $G^\circ$-圏 (1.2.2) である。
+$(\mathcal C,G^\circ,T)$ と $(\mathcal C',G^\circ,T')$ を二つの狭義
+$G^\circ$-圏とする。このとき $G^\circ$-関手 $(F,m)$ とは、関手
+$F\colon\mathcal C\to\mathcal C'$ と同型
+
+\VerdierSemanticAnchor{ch1-1-3-6-eq1}
+\begin{equation}
+  m(g)\colon FT(g)\longrightarrow T'(g)F,
+  \qquad g\in G,
+  \qquad m(e)=\text{恒等同型}
+  \tag{1.3.6.1}
+\end{equation}

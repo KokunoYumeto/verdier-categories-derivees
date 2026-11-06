@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0227}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-1-2-9}
+最后，对 $\mathcal{F}\ell_1(\widetilde{\mathbb Z})$ 的每个元素 $(p,q)$，以
+\begin{equation}
+J(p,q)\colon\mathcal Y(p,q)\longrightarrow Y(p,q)
+\tag{4.1.2.9}
+\end{equation}
+表示如下复形态射的同伦类：
+
+\VerdierSemanticAnchor{ch4d-4-1-2-10}
+\begin{equation}
+j(p,q)\colon\mathcal Y(p,q)\longrightarrow Y(p,q),
+\tag{4.1.2.10}
+\end{equation}
+该态射由下式定义：
+
+\VerdierSemanticAnchor{ch4d-4-1-2-11}
+\begin{equation}
+\begin{aligned}
+j(p,q)^i&=0,
+  &&i<-q\ \lor\ i>-p-1,\\
+j(p,q)^i&=\operatorname{id},
+  &&-q\leq i\leq-p-2,\\
+j(p,q)^{-p-1}&\colon
+  Y^{-p-1}\oplus Y^{-p}\longrightarrow Y^{-p-1},\\
+j(p,q)^{-p-1}&=(\operatorname{id},0).
+\end{aligned}
+\tag{4.1.2.11}
+\end{equation}
+
+\VerdierSemanticAnchor{ch4d-4-1-3}
+\medskip\noindent\textbf{命题 4.1.3.}\quad
+\textit{a) 对 $\mathcal{F}\ell_1(\widetilde{\mathbb Z})$ 的每个元素
+$(p,q)$，$K(\mathcal A)$ 中的态射
+$J(p,q)\colon\mathcal Y(p,q)\longrightarrow Y(p,q)$ 是同构。}
+
+\VerdierSemanticAnchor{ch4d-4-1-3-b}
+\noindent\textit{b) 对 $\mathcal{F}\ell_1(\widetilde{\mathbb Z})$ 中满足
+$p\leq p'$ 且 $q\leq q'$ 的每一对 $(p,q)$、$(p',q')$，
+$K(\mathcal A)$ 中的如下图：}
+
+\VerdierSemanticAnchor{ch4d-4-1-3-b-diagram}
+\begin{center}
+\begin{tikzcd}[column sep=7.0em,row sep=3.2em]
+\mathcal Y(p,q)
+  \arrow[r,"{\Phi((p,q),(p',q'))}"]
+  \arrow[d,"{J(p,q)}"']
+&\mathcal Y(p',q') \arrow[d,"{J(p',q')}"]\\
+Y(p,q)
+  \arrow[r,"{\varphi((p,q),(p',q'))}"']
+&Y(p',q')
+\end{tikzcd}
+\end{center}
+\noindent\textit{是交换的。}
+
+\VerdierSemanticAnchor{ch4d-4-1-3-c}
+\noindent\textit{c) 对 $\mathcal{F}\ell_2(\widetilde{\mathbb Z})$ 的每个元素
+$(p,q,r)$，$K(\mathcal A)$ 中的如下图：}
+
+\VerdierSemanticAnchor{ch4d-4-1-3-c-diagram}
+\begin{center}
+\begin{tikzcd}[column sep=7.0em,row sep=3.2em]
+\mathcal Y(q,r)
+  \arrow[r,"{\delta(p,q,r)}"]
+  \arrow[d,"{J(q,r)}"']
+&\mathcal Y(p,q)[1] \arrow[d,"{J(p,q)[1]}"]\\
+Y(q,r)
+  \arrow[r,"{\delta(p,q,r)}"']
+&Y(p,q)[1]
+\end{tikzcd}
+\end{center}
+\noindent\textit{是交换的。}
+
+\VerdierSemanticAnchor{ch4d-4-1-3-proof}
+验证留给读者。
+\endgroup

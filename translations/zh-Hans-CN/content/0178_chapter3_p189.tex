@@ -1,0 +1,71 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0189}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-1-4-proof-cont}
+其中 $v$ 是同伦等价。
+
+事实上，构造态射 $m$ 的映射锥：
+
+\VerdierSemanticAnchor{ch3d-2-1-4-cone-m}
+\[
+X\xrightarrow{m}Y\xrightarrow{p(m)}c(m)\longrightarrow X[1],
+\]
+再构造态射 $p(m)$ 的映射锥：
+
+\VerdierSemanticAnchor{ch3d-2-1-4-cone-pm}
+\[
+Y\xrightarrow{p(m)}c(m)\longrightarrow c(p(m))
+\xrightarrow{q}Y[1].
+\]
+态射 $c(p(m))\xrightarrow{q}Y[1]$ 是满态射（第一章，3.2.2）。由特异三角的
+性质（性质 TRII），存在同伦等价
+
+\VerdierSemanticAnchor{ch3d-2-1-4-homotopy-equivalence}
+\[
+X\xrightarrow{v}c(p(m))[-1]
+\]
+使得三角
+
+\VerdierSemanticAnchor{ch3d-2-1-4-triangle}
+\begin{center}
+\begin{tikzcd}[column sep=3.5em,row sep=3.2em]
+X \arrow[rr,"v"] \arrow[dr,"m"']
+  && c(p(m))[-1] \arrow[dl,"{q[-1]}"] \\
+& Y &
+\end{tikzcd}
+\end{center}
+在同伦意义下交换。
+
+因此可以假定态射 $m$ 是 $\operatorname{comp}(\mathcal A)$ 中的满态射。设
+
+\VerdierSemanticAnchor{ch3d-2-1-4-kernel}
+\[
+N=\cdots\longrightarrow N^i\xrightarrow{d_N^i}N^{i+1}
+\xrightarrow{d_N^{i+1}}N^{i+2}\longrightarrow\cdots
+\]
+为态射 $m$ 的核。令
+
+\VerdierSemanticAnchor{ch3d-2-1-4-truncation}
+\[
+N_{-n}=\cdots\longrightarrow N^{n-3}\longrightarrow N^{n-2}
+\longrightarrow\operatorname{Im}(d_N^{n-2})
+\longrightarrow0\longrightarrow0\longrightarrow\cdots.
+\]
+诸 $N_{-n}$ 构成 $N$ 的无环子复形的一个递减列。于是令
+$X_n=X/N_n$，得到一列
+
+\VerdierSemanticAnchor{ch3d-2-1-4-quotients}
+\[
+u_n\colon X_n\longrightarrow X_{n-1},\qquad n\in\mathbb Z.
+\]
+诸 $u_n$ 是高度为 $-n$ 的初等态射，并且
+
+\[
+\varprojlim_n X_n=X,
+\qquad
+\varinjlim_n X_n=Y.
+\]
+\endgroup

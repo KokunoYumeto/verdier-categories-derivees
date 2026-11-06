@@ -1,0 +1,72 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0069}%
+\VerdierSemanticAnchor{ch1-2-2-2-continuation}%
+构成 $C$ 中的一个 $m$-重复形。
+
+\VerdierSemanticAnchor{ch1-2-2-2-morphism}
+现设 $f\colon Y\to Y'$ 为 $C$ 中 $\varphi$-可求和 $n$-重复形的态射。令
+
+\VerdierSemanticAnchor{ch1-2-2-2-eq6}
+\begin{equation}
+  \left(\int_\varphi f\right)^\tau
+  =\bigoplus_{\varphi(\sigma)=\tau}f^\sigma\colon
+  \left(\int_\varphi Y\right)^\tau
+  \longrightarrow
+  \left(\int_\varphi Y'\right)^\tau.
+  \tag{2.2.2.6}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-2-2-functoriality}
+显然，$\left(\int_\varphi f\right)^\tau$ 与 $\int_\varphi Y$ 和
+$\int_\varphi Y'$ 的微分交换。因此，这样的一族态射定义了 $m$-重复形的态射
+$\int_\varphi f\colon\int_\varphi Y\to\int_\varphi Y'$。还显然有
+$\int_\varphi fg=\int_\varphi f\,\int_\varphi g$ 以及
+$\int_\varphi\operatorname{id}_Y=\operatorname{id}_{\int_\varphi Y}$。
+因此，$\int_\varphi$ 是从 $\varphi$-可求和 $n$-重复形范畴到 $m$-重复形
+范畴的函子；这个函子是加法的。
+
+\VerdierSemanticAnchor{ch1-2-2-3}
+\noindent\textbf{2.2.3.}\quad
+设 $\varphi\colon[n]\to[m]$ 为映射，$\tau\in\mathbb Z[m]$，并设
+$i\in[m]$。令 $E_1$（分别 $E_2$）为集合
+
+\VerdierSemanticAnchor{ch1-2-2-3-fibers}
+\[
+  \begin{aligned}
+    E_1&=\{\sigma_1\in\mathbb Z[n]\mid\varphi(\sigma_1)=\tau\},\\
+    \text{（分别 }E_2
+      &=\{\sigma_2\in\mathbb Z[n]\mid
+          \varphi(\sigma_2)=\tau+e_i\}\text{）。}
+  \end{aligned}
+\]
+最后，设 $Y$ 为 $C$ 中的一个 $n$-重复形。对
+$\sigma_1\in E_1$、$\sigma_2\in E_2$，令
+
+\VerdierSemanticAnchor{ch1-2-2-3-eq1}
+\begin{equation}
+  u_{\sigma_2,\sigma_1}(Y)
+  =\begin{cases}
+    \varepsilon(\tau,i)\varepsilon(\sigma_1,j)d_Y^{\sigma_1,j},
+      &\text{若 }\sigma_2-\sigma_1=e_j,\\
+    0,&\text{否则},
+  \end{cases}
+  \tag{2.2.3.1}
+\end{equation}
+从而得到一个 $E_2\times E_1$ 型矩阵
+
+\VerdierSemanticAnchor{ch1-2-2-3-eq2}
+\begin{equation}
+  M(\tau,i,Y)
+  =\bigl(u_{\sigma_2,\sigma_1}(Y)\bigr)_{
+    \sigma_2\in E_2,\,\sigma_1\in E_1}.
+  \tag{2.2.3.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-2-3-matrix-identification}
+当 $Y$ 为 $\varphi$-可求和时，这就是态射
+$d_{\int_\varphi Y}^{\tau,i}$ 的矩阵。
+
+\VerdierSemanticAnchor{ch1-2-2-3-extensions}
+注意，一般而言，这个矩阵的每一行与每一列都只有有限多个非零项。因此，当
+$C$ 中可数乘积与直和都可表示时，函子 $\int_\varphi$ 至少有两种先验可能的
+扩张到任意复形的方法：

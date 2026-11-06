@@ -1,0 +1,66 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0020}
+茎は捩れのないアーベル群である（\emph{平坦}分解）。次の事実は容易に
+確かめられる：
+
+\VerdierSemanticAnchor{intro-1-flat-common-refinement}
+\noindent\emph{a)} 二つの平坦分解
+$L_i^{\bullet}\xrightarrow{\varepsilon_i}G$、$i=1,2$ が与えられると、
+第三の平坦分解 $L_3^{\bullet}\xrightarrow{\varepsilon_3}G$ と、
+ホモトピーを除いて可換な分解の図式が存在する：
+
+\VerdierSemanticAnchor{intro-1-flat-common-refinement-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+  & L_1^{\bullet} \arrow[dr,"\varepsilon_1"] & \\
+L_3^{\bullet} \arrow[ur,"\rho_1"] \arrow[rr,"\varepsilon_3"]
+  \arrow[dr,"\rho_2"'] && G \\
+  & L_2^{\bullet} \arrow[ur,"\varepsilon_2"'] &
+\end{tikzcd}
+\qquad\text{.}
+\]
+
+\VerdierSemanticAnchor{intro-1-flat-homotopy-equalizer}
+\noindent\emph{b)} 平坦分解の二つの射
+
+\VerdierSemanticAnchor{intro-1-flat-parallel-morphisms-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+L_1^{\bullet}
+  \arrow[d,bend right=12,"\rho"']
+  \arrow[d,bend left=12,"\rho'"]
+  \arrow[dr,"\varepsilon_1"] & \\
+L_2^{\bullet} \arrow[r,"\varepsilon_2"'] & G
+\end{tikzcd}
+\qquad\text{,}
+\]
+が与えられると、第三の平坦分解
+
+\VerdierSemanticAnchor{intro-1-flat-third-resolution}
+\[
+L_3^{\bullet}\xrightarrow{\varepsilon_3}G
+\qquad\text{,}
+\]
+と、分解の射
+
+\VerdierSemanticAnchor{intro-1-flat-sigma-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+L_3^{\bullet} \arrow[d,"\sigma"'] \arrow[dr,"\varepsilon_3"] & \\
+L_1^{\bullet} \arrow[r,"\varepsilon_1"'] & G
+\end{tikzcd}
+\qquad\text{,}
+\]
+が存在し、複体の射 $\rho\sigma$ と $\rho'\sigma$ はホモトピックになる。
+
+\VerdierSemanticAnchor{intro-1-flat-morphism}
+\noindent\emph{c)} 任意の平坦分解の射
+
+\VerdierSemanticAnchor{intro-1-flat-morphism-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+L_1^{\bullet} \arrow[d,"\rho"'] \arrow[dr,"\varepsilon_1"] & \\
+L_2^{\bullet} \arrow[r,"\varepsilon_2"'] & G
+\end{tikzcd}
+\qquad\text{,}
+\]

@@ -1,0 +1,57 @@
+\VerdierPhysicalPageAnchor{0019}%
+gramme ci-après soit commutatif :
+
+\VerdierSemanticAnchor{intro-1-resolution-comparison-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X \arrow[r,"\varepsilon'"] \arrow[dr,"\varepsilon"']
+  & \mathcal R(X) \arrow[d,"\rho"] \\
+  & I^{\bullet}(X)
+\end{tikzcd}
+\]
+
+\VerdierSemanticAnchor{intro-1-f-acyclic-morphism}
+De plus, étant donné un morphisme de résolutions $F$-acycliques :
+
+\VerdierSemanticAnchor{intro-1-f-acyclic-morphism-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X \arrow[r,"\varepsilon_1"] \arrow[dr,"\varepsilon_2"']
+  & \mathcal R_1(X) \arrow[d,"\rho'"] \\
+  & \mathcal R_2(X)
+\end{tikzcd}
+\qquad\text{,}
+\]
+le morphisme de complexes d'objets de $\mathcal B$ :
+
+\VerdierSemanticAnchor{intro-1-f-rho-prime}
+\[
+F(\rho') : F(\mathcal R_1(X)) \longrightarrow F(\mathcal R_2(X))
+\]
+est un quasi-isomorphisme.
+
+\VerdierSemanticAnchor{intro-1-inductive-system}
+Remarquons qu'ici on obtient dans $\mathcal B$ un système inductif de
+complexes et de quasi-isomorphismes qui possède un élément maximal unique à
+homotopie près : le transformé par $F$ d'une résolution injective de $X$. Ce
+phénomène ne se produit plus dans le deuxième exemple que nous abordons
+maintenant.
+
+\VerdierSemanticAnchor{intro-1-left-derived-tensor}
+Le procédé de définition des foncteurs dérivés par résolution se généralise
+parfois au cas où la catégorie $\mathcal A$ ne possède plus nécessairement
+suffisamment d'objets injectifs ou projectifs. Considérons le cas où
+$\mathcal A$ est la catégorie des faisceaux de groupes commutatifs sur un
+espace topologique $E$. Cette catégorie ne possède pas, en général,
+suffisamment d'objets projectifs. On se propose néanmoins de définir les
+\emph{foncteurs dérivés gauches} du foncteur exact à droite de $\mathcal A$
+dans $\mathcal A$ qui, à tout faisceau $G$, associe le faisceau
+$F\otimes_{\mathbb Z}G$ ($F$ faisceau fixe). On exige, bien entendu, que cette
+définition fournisse des foncteurs possédant les propriétés usuelles des
+foncteurs dérivés gauches (comportement par rapport aux suites exactes et une
+certaine propriété universelle) et qu'elle redonne dans les cas connus (par
+exemple lorsque $E$ est réduit à un point) les produits de torsion usuels.
+
+\VerdierSemanticAnchor{intro-1-left-resolution}
+On peut opérer de la manière que voici. Tout faisceau $G$ admet une résolution
+à gauche $L^{\bullet}\to G$ de longueur finie (en fait de longueur 2) par des

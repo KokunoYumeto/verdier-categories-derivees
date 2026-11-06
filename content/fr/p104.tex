@@ -1,0 +1,76 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0104}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\jot}{2pt}%
+
+\VerdierSemanticAnchor{ch1-3-4-3-zero-differential-complex}
+Pour tout complexe $X$, désignons par $\overline{X}$ le complexe obtenu en
+gardant les composants de $X$ et en annulant les différentielles. Il résulte
+immédiatement de la définition de $H$ qu'on a l'égalité
+$\overline{H(X)}=H(\overline{X})$. De même, pour tout morphisme de complexes
+$f\colon X\longrightarrow Y$, désignons par
+$\overline{f}\colon\overline{X}\longrightarrow\overline{Y}$ le morphisme obtenu
+en conservant les composants de $f$. Il résulte alors de la définition du
+foncteur cône que $c(\overline{f})=\overline{Y}\oplus\overline{X[1]}$, que le
+morphisme $p(\overline{f})\colon\overline{Y}\longrightarrow c(\overline{f})$
+est la première injection et que le morphisme
+$q(\overline{f})\colon c(\overline{f})\longrightarrow\overline{X[1]}$ est la
+deuxième projection.
+
+\VerdierSemanticAnchor{ch1-3-4-3-cone-graded-splitting}
+Le foncteur $H$ et le foncteur «\,$\overline{\phantom{X}}$\,» étant additifs,
+on en déduit que
+$\overline{H(c(f))}=\overline{H(Y)}\oplus\overline{H(X[1])}$, que
+$\overline{H(p(f))}\colon\overline{H(Y)}\longrightarrow\overline{H(c(f))}$ est
+la première injection et que
+$\overline{H(q(f))}\colon\overline{H(c(f))}\longrightarrow\overline{H(X[1])}$
+est la deuxième projection. Il en résulte que
+\[
+  H(c(f))^l=H(Y)^l\oplus H(X[1])^l,
+\]
+
+\VerdierSemanticAnchor{ch1-3-4-3-2}
+\begin{equation}
+  d_{H(c(f))}^{,l}=
+  \begin{pmatrix}
+    d_{H(Y)}^{,l} & \Phi^l\\
+    0 & d_{H(X[1])}^{,l}
+  \end{pmatrix},
+  \tag{3.4.3.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-4-3-phi-map}
+\[
+  \Phi^l\colon H(X[1])^l\longrightarrow H(Y)^{l+1}.
+\]
+La différentielle de $H(c(f))$ s'obtient sous cette forme en exprimant
+simplement que $H(p(f))$ et $H(q(f))$ sont des morphismes de complexes. Pour
+calculer $\Phi^l$, il faut revenir à la définition du foncteur $H$ et, par
+suite, à la définition du foncteur complexe simple associé (2.2.2.5). On a :
+
+\VerdierSemanticAnchor{ch1-3-4-3-x-shift-components}
+\[
+  H(X[1])^l=
+  \prod_{\substack{\sigma=\sum_i l_i e_i\\ \sum_i l_i=l}}
+  F(X_1^{l_1},\ldots,X^{l_j+1},\ldots,X_n^{l_n}),
+\]
+
+\VerdierSemanticAnchor{ch1-3-4-3-3}
+\begin{equation}
+  H(Y)^{l+1}=
+  \prod_{\substack{\sigma=\sum_i l_i e_i\\ \sum_i l_i=l}}
+  F(X_1^{l_1},\ldots,Y^{l_j+1},\ldots,X_n^{l_n}),
+  \tag{3.4.3.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-4-3-phi-components}
+\[
+  \Phi^l=
+  \prod_{\substack{\sigma=\sum_i l_i e_i\\ \sum_i l_i=l}}
+  \varepsilon(\sigma,j)
+  F(X_1^{l_1},\ldots,f^{l_j+1},\ldots,X_n^{l_n}).
+\]
+\endgroup

@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0048}%
+\VerdierSemanticAnchor{ch1-1-4-4}
+\begingroup
+\emergencystretch=1em
+\noindent\textbf{定義 1.4.4.}\quad
+$(\mathcal C,G,T,c)$ と $(\mathcal C',G,T',c')$ を二つの $G$-圏とし、
+$\mathcal C'$ は加法圏であるとする。また
+$\alpha\in Z^2(G,\mathbb Z/2\mathbb Z)$ を正規化された非斉次余サイクルとする。
+関手
+
+\VerdierSemanticAnchor{ch1-1-4-4-functor}
+\[
+  F\colon\mathcal C\longrightarrow\mathcal C'
+\]
+と関手同型
+
+\VerdierSemanticAnchor{ch1-1-4-4-twisting-data}
+\[
+  p(\sigma)\colon FT(\sigma)\longrightarrow T'(\sigma)F,
+  \qquad \sigma\in G
+\]
+からなる対象 $(F,p)$ を、\emph{余サイクル $\alpha$ で捩られた $G$-関手}
+という。ただし各 $\sigma_1,\sigma_2\in G$ に対して図式 (1.4.3.11) が
+$\alpha(\sigma_1,\sigma_2)$-可換であることを要求する。
+\par
+\endgroup
+
+\VerdierSemanticAnchor{ch1-1-4-4-correspondence}
+したがって拡大 (1.4.3.4) の正規化された切断 $s$ を選ぶと、$F$ 上に符号群の
+標準作用を誘導する $H$-関手
+\[
+  (F,m)\colon(\mathcal C,H,T_f,c_f)
+  \longrightarrow(\mathcal C',H,T'_f,c'_f)
+\]
+と、切断 $s$ が定める余サイクル $\alpha_s$ で捩られた $G$-関手との間に
+全単射が得られる。
+
+\VerdierSemanticAnchor{ch1-1-4-5}
+\noindent\textbf{1.4.5.}\quad
+(1.4.3) の記法を用いる。
+
+\VerdierSemanticAnchor{ch1-1-4-5-eq1}
+\begin{equation}
+  \begin{gathered}
+    (F_1,m_1),(F_2,m_2)\colon
+    (\mathcal C,H,T_f,c_f)\\[-0.2em]
+    \longrightarrow(\mathcal C',H,T'_f,c'_f)
+  \end{gathered}
+  \tag{1.4.5.1}
+\end{equation}
+を符号群の標準作用を誘導する二つの $H$-関手とし、
+
+\VerdierSemanticAnchor{ch1-1-4-5-eq2}
+\begin{equation}
+  u\colon(F_1,m_1)\longrightarrow(F_2,m_2)
+  \tag{1.4.5.2}
+\end{equation}
+を $H$ の作用と両立する関手の射とする。
+
+\VerdierSemanticAnchor{ch1-1-4-5-sections}
+完全列 (1.4.3.4) の写像 $f$ の正規化された二つの切断を $s_1,s_2$ とする
+（$s_1(e)=s_2(e)=e$）。対応する正規化された余サイクルを
+$\alpha_{s_1},\alpha_{s_2}\in Z^2(G,\mathbb Z/2\mathbb Z)$ とし、写像
+$\beta\colon G\to\mathbb Z/2\mathbb Z$ を
+
+\VerdierSemanticAnchor{ch1-1-4-5-eq3}
+\begin{equation}
+  \beta(\sigma)=s_2(\sigma)s_1(\sigma)^{-1},
+  \qquad \sigma\in G
+  \tag{1.4.5.3}
+\end{equation}
+で定める。
+
+\VerdierSemanticAnchor{ch1-1-4-5-induced}
+(1.4.3) により、関手 $(F_1,m_1)$ と $(F_2,m_2)$ は、それぞれ余サイクル
+$\alpha_{s_1}$ と $\alpha_{s_2}$ で捩られた $G$-関手 $(F_1,p_1)$ と
+$(F_2,p_2)$ を定める。基礎にある関手の間の射 $u\colon F_1\to F_2$ が
+次の性質をもつことは直ちに確かめられる：
+
+\VerdierSemanticAnchor{ch1-1-4-5-property}

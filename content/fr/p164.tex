@@ -1,0 +1,67 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0164}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch4-4-1-6-triangulated-square}
+tel que, pour tout objet
+$\omega_2=(\mathord\bullet\xrightarrow f\mathord\bullet\xrightarrow g\mathord\bullet)$
+de $\mathcal{F}\ell_2(\mathcal J)$, le diagramme ci-après soit commutatif :
+\[
+\begin{tikzcd}[column sep=5.2em,row sep=2.7em]
+X_g\arrow[r,"{\delta(\omega_2)}"]\arrow[d,"{m_g}"']&X_f[1]\arrow[d,"{m_f[1]}"]\\
+Y_g\arrow[r,"{\delta'(\omega_2)}"']&Y_f[1].
+\end{tikzcd}
+\]
+
+\VerdierSemanticAnchor{ch4-4-1-6-abelian}
+Soient $\mathcal A$ une catégorie abélienne et $(H^n(f),\delta)$,
+$(H'^{n}(f),\delta')$ deux objets spectraux de type $\mathcal J$ à valeurs
+dans $\mathcal A$. Un \emph{morphisme d'objets spectraux} est une suite de
+morphismes de foncteurs
+\[
+m^n(f)\colon H^n(f)\longrightarrow H'^{n}(f),\qquad
+f\in\operatorname{Ob}\mathcal{F}\ell_1(\mathcal J),\quad n\in\mathbb Z,
+\]
+telle que, pour tout objet
+$\omega_2=(\mathord\bullet\xrightarrow f\mathord\bullet\xrightarrow g\mathord\bullet)$
+de $\mathcal{F}\ell_2(\mathcal J)$ et tout entier $n$, le diagramme ci-après
+soit commutatif :
+\[
+\begin{tikzcd}[column sep=5.2em,row sep=2.7em]
+H^n(g)\arrow[r,"{\delta^n(\omega_2)}"]\arrow[d,"{m^n(g)}"']&
+H^{n+1}(f)\arrow[d,"{m^{n+1}(f)}"]\\
+H'^{n}(g)\arrow[r,"{\delta'^{n}(\omega_2)}"']&H'^{n+1}(f).
+\end{tikzcd}
+\]
+Les objets spectraux de type $\mathcal J$ à valeurs dans $\mathcal D$
+(resp. $\mathcal A$) forment une catégorie.
+
+\VerdierSemanticAnchor{ch4-4-2}
+\subsection{Mécanisme des suites spectrales.}
+
+\VerdierSemanticAnchor{ch4-4-2-1}
+\medskip\noindent\textbf{4.2.1.}\quad
+Soient $\mathcal A$ une catégorie abélienne et $(H^n(f),\delta)$ un objet
+spectral de type $\mathcal J$. Pour tout objet
+$\omega_2=(\mathord\bullet\xrightarrow f\mathord\bullet\xrightarrow g\mathord\bullet)$
+de $\mathcal{F}\ell_2(\mathcal J)$, posons :
+\VerdierSemanticAnchor{ch4-4-2-1-1}
+\[
+\left\{
+\begin{aligned}
+B\!\left[\begin{smallmatrix}n\\\omega_2\end{smallmatrix}\right]
+&=B\!\left[\begin{smallmatrix}n\\f,g\end{smallmatrix}\right]
+=\operatorname{Im}\bigl(H^{n-1}(g)
+  \xrightarrow{\delta^{n-1}(\omega_2)}H^n(f)\bigr)\\
+&\simeq\operatorname{Ker}\bigl(H^n(f)
+  \xrightarrow{H^n*u_1(\omega_2)}H^n(gf)\bigr),\\[2pt]
+Z\!\left[\begin{smallmatrix}n\\\omega_2\end{smallmatrix}\right]
+&=Z\!\left[\begin{smallmatrix}n\\f,g\end{smallmatrix}\right]
+=\operatorname{Ker}\bigl(H^n(g)
+  \xrightarrow{\delta^n(\omega_2)}H^{n+1}(f)\bigr)\\
+&\simeq\operatorname{Im}\bigl(H^n(gf)
+  \xrightarrow{H^n*u_2(\omega_2)}H^n(g)\bigr).
+\end{aligned}
+\right.
+\tag{4.2.1.1}
+\]
+\endgroup

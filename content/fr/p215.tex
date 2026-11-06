@@ -1,0 +1,86 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0215}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-2-7-cont}
+Par ailleurs, on a identifié en (1.2.8) la catégorie $D(\mathcal A)^o$ à
+la catégorie $D(\mathcal A^o)$, ce qui permet d'identifier les ensembles
+$\operatorname{Ext}_{\mathcal A^o}^{n}(Y,X)$ et
+$\operatorname{Ext}_{\mathcal A}^{n}(X,Y)$ (chap. I, 1.3.9). Modulo ces
+identifications, on a donc deux applications ayant même source et même but :
+
+\VerdierSemanticAnchor{ch3d-3-2-7-2}
+\begin{equation}
+\resizebox{0.74\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=5.0em,row sep=2.8em]
+E_{\mathcal A}^{n}(X,Y)
+  \arrow[r,"{\delta_{\mathcal A}^{n}}"]
+  \arrow[d,equal]
+\& \operatorname{Ext}_{\mathcal A}^{n}(X,Y)
+  \arrow[d,equal] \\
+E_{\mathcal A^o}^{n}(Y,X)
+  \arrow[r,"{\delta_{\mathcal A^o}^{n}}"']
+\& \operatorname{Ext}_{\mathcal A^o}^{n}(Y,X)
+\end{tikzcd}$%
+}
+\tag{3.2.7.2}
+\end{equation}
+et on a la relation :
+
+\VerdierSemanticAnchor{ch3d-3-2-7-3}
+\begin{equation}
+\delta_{\mathcal A}^{n}=\delta_{\mathcal A^o}^{n}.
+\tag{3.2.7.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-2-7-proof}
+Cette relation est vraie pour $n=1$ (1.3.4). Elle se démontre alors par
+récurrence sur $n$ en utilisant (3.2.5).
+
+\VerdierSemanticAnchor{ch3d-3-2-8}
+\medskip\noindent\textbf{3.2.8.}\quad
+Soit :
+\[
+S^n(X,Y)=0\longrightarrow Y\xrightarrow{u_n}Z_{n-1}
+\xrightarrow{u_{n-1}}\cdots\xrightarrow{u_2}Z_1
+\xrightarrow{u_1}Z_0\xrightarrow{u_0}X\longrightarrow0
+\]
+un élément de $E_{\mathcal A}^{n}(X,Y)$,
+$f\colon X'\longrightarrow X$ et $g\colon Y\longrightarrow Y''$ deux
+morphismes de $\mathcal A$. Posons :
+
+\VerdierSemanticAnchor{ch3d-3-2-8-1}
+\begin{equation}
+\begin{aligned}
+S^n(X,Y)*f={}&0\longrightarrow Y\xrightarrow{u_n}Z_{n-1}
+\xrightarrow{u_{n-1}}\cdots\xrightarrow{u_2}Z_1
+\xrightarrow{u'_1}Z'_0\\
+&\xrightarrow{u'_0}X'\longrightarrow0,
+\end{aligned}
+\tag{3.2.8.1}
+\end{equation}
+où $Z'_0$ est le produit fibré :
+
+\VerdierSemanticAnchor{ch3d-3-2-8-pullback-square}
+\begin{center}
+\begin{tikzcd}[column sep=4.2em,row sep=2.8em]
+Z'_0 \arrow[r,"u'_0"] \arrow[d,"f'"']
+  & X' \arrow[d,"f"] \\
+Z_0 \arrow[r,"u_0"'] & X
+\end{tikzcd}
+\end{center}
+et où $u'_1$ est l'unique morphisme défini par les égalités
+$f'u'_1=u_1$ et $u'_0u'_1=0$. De même, posons :
+
+\VerdierSemanticAnchor{ch3d-3-2-8-2}
+\begin{equation}
+\begin{aligned}
+g*S^n(X,Y)={}&0\longrightarrow Y''\xrightarrow{u''_n}Z''_{n-1}
+\xrightarrow{u''_{n-1}}Z_{n-2}\xrightarrow{u_{n-2}}\cdots\\
+&\cdots\xrightarrow{u_1}Z_0\xrightarrow{u_0}X\longrightarrow0.
+\end{aligned}
+\tag{3.2.8.2}
+\end{equation}
+\endgroup

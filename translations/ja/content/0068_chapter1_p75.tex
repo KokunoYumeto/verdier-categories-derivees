@@ -1,0 +1,85 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0075}%
+\VerdierSemanticAnchor{ch1-2-4-2-continuation}
+これらの約束は、特に圏
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$ に適用される。
+
+\VerdierSemanticAnchor{ch1-2-4-2-graded-product-category}
+圏 $\prod_{i\in[n]}\operatorname{comp}(C_i)$ には
+$\mathbb Z[n]$-圏構造 (1.3.11) が備わっていることに注意する。任意の
+$\sigma=\sum_{i\in[n]}l_i e_i$，$\sigma\in\mathbb Z[n]$ に対して、次が成り立つ：
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq1}
+\begin{equation}
+  T(\sigma)(X_1,X_2,\ldots,X_n)
+  = (X_1[l_1],X_2[l_2],\ldots,X_n[l_n]).
+  \tag{2.4.2.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-2-summable-object}
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$ の対象
+$(X_1,\ldots,X_n)$ が\emph{総和可能}であるとは、任意の
+$l\in\mathbb Z$ に対し、
+$\sum_{i\in[n]}l_i=l$ かつ少なくとも一つの $i\in[n]$ について
+$X_i^{l_i}\neq0$ を満たす
+$\sigma=\sum_{i\in[n]}l_i e_i\in\mathbb Z[n]$ の集合が有限であることをいう。
+
+\VerdierSemanticAnchor{ch1-2-4-2-multiadditive-functor}
+ここで
+$F\colon\prod_{i\in[n]}C_i\longrightarrow C$ を多加法的（共変）関手とする。
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$ の任意の対象
+$(X_1,\ldots,X_n)$ に対して、次のように定める：
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq2}
+\begin{equation}
+  F^{[n]}(X_1,\ldots,X_n)^\sigma
+  =F(X_1^{l_1},\ldots,X_n^{l_n}),
+  \tag{2.4.2.2}
+\end{equation}
+ここで $\sigma=\sum_{i\in[n]}l_i e_i\in\mathbb Z[n]$ とし、
+\VerdierSemanticAnchor{ch1-2-4-2-eq2-differential}
+\begin{equation*}
+  d^{\sigma,i}_{F^{[n]}(X_1,\ldots,X_n)}
+  =F(X_1^{l_1},\ldots,d_{X_i}^{l_i},\ldots,X_n^{l_n}),
+  \qquad \forall i\in[n].
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-2-4-2-nfold-complex}
+これにより $C$ の $n$-重複体が定義された。
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq3}
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$ の任意の射
+$(f_1,\ldots,f_n)$ に対して、次のように定める：
+\begin{equation}
+  F^{[n]}(f_1,\ldots,f_n)^\sigma
+  =F(f_1^{l_1},\ldots,f_n^{l_n}),
+  \tag{2.4.2.3}
+\end{equation}
+ここで $\sigma=\sum_{i\in[n]}l_i e_i\in\mathbb Z[n]$ とする。
+
+\VerdierSemanticAnchor{ch1-2-4-2-morphism-of-complexes}
+これにより $n$-重複体の射が定義された。
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq4}
+上記は明らかに関手を定義する：
+\begin{equation}
+  F^{[n]}\colon
+  \prod_{i\in[n]}\operatorname{comp}(C_i)
+  \longrightarrow \operatorname{comp}^{n}(C).
+  \tag{2.4.2.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq5}
+任意の $\sigma\in\mathbb Z[n]$ に対して、次が成り立つことに注意する：
+\begin{equation}
+  F^{[n]}T(\sigma)=T(\sigma)F^{[n]}.
+  \tag{2.4.2.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-2-strict-graded-functor}
+したがって、関手 $F^{[n]}$ は厳密な $\mathbb Z[n]$-関手である。
+
+\VerdierSemanticAnchor{ch1-2-4-2-preserves-summability}
+関手 $F^{[n]}$ は
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$ の総和可能な対象を
+$\operatorname{comp}^{n}(C)$ の総和可能な対象へ送る。

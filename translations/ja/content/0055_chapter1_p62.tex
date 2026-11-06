@@ -1,0 +1,91 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0062}%
+\VerdierSemanticAnchor{ch1-1-6-4}
+\VerdierSemanticAnchor{ch1-1-6-4-definition}
+\noindent\textbf{定義 1.6.4.}\quad
+\emph{$\mathbb Z^n$ の順序付き基底 $e_1,\ldots,e_n$ に関する Koszul
+余サイクル}とは、基底 $e_1,\ldots,e_n$ に関する Koszul 類に属し、次を
+満たすただ一つの余サイクル $\alpha$ である：
+
+\VerdierSemanticAnchor{ch1-1-6-4-eq1}
+\begin{equation}
+  \alpha(\sigma_1,\sigma_2)=1
+  \quad
+  \forall\sigma_1\in\mathbb Z^n(\leq i),\quad
+  \forall\sigma_2\in\mathbb Z^n(\geq i),\quad
+  \forall i\in[1,n].
+  \tag{1.6.4.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-4-coordinate-intro}
+$\sigma_1=\sum_{i=1}^{n}p_i e_i$ および
+$\sigma_2=\sum_{i=1}^{n}q_i e_i$ を $\mathbb Z^n$ の二元とすると、
+
+\VerdierSemanticAnchor{ch1-1-6-4-eq2}
+\begin{equation}
+  \alpha(\sigma_1,\sigma_2)
+  =(-1)^{\left(\sum_{i<j}q_i p_j\right)}.
+  \tag{1.6.4.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-4-justification}
+この定義には説明が必要である。(1.6.4.1) を満たす Koszul 類の余サイクルの
+存在は明らかである。実際、直ちに計算すれば、余サイクル (1.6.4.2) は
+(1.6.4.1) を満たし、Koszul 類に属することが分かる (1.6.2)。一意性を
+確かめるには、$\alpha$ とコホモロガスな任意の余サイクルが
+
+\VerdierSemanticAnchor{ch1-1-6-4-cohomologous-form}
+\begin{equation*}
+  \alpha_1(\sigma_1,\sigma_2)
+  =\alpha(\sigma_1,\sigma_2)
+   \beta(\sigma_2)\beta(\sigma_1+\sigma_2)^{-1}\beta(\sigma_1)
+\end{equation*}
+の形であり、この余サイクルが (1.6.4.1) を満たすことと
+
+\VerdierSemanticAnchor{ch1-1-6-4-condition}
+\begin{equation*}
+  \beta(\sigma_1+\sigma_2)=\beta(\sigma_1)\beta(\sigma_2)
+  \quad
+  \forall i,\quad
+  \forall\sigma_1\in\mathbb Z^n(\leq i),\quad
+  \forall\sigma_2\in\mathbb Z^n(\geq i)
+\end{equation*}
+が同値であることに注意すればよい。
+
+\VerdierSemanticAnchor{ch1-1-6-4-uniqueness}
+ここから $\beta\colon\mathbb Z^n\to\mathbb Z/2\mathbb Z$ が群準同型である
+ことが直ちに従い、したがって $\alpha_1=\alpha$ である。
+
+\VerdierSemanticAnchor{ch1-1-6-5}
+\VerdierSemanticAnchor{ch1-1-6-5-order-dependence}
+\noindent\textbf{1.6.5.}\quad
+Koszul 余サイクルの定義は、$\mathbb Z^n$ の基底 $e_1,\ldots,e_n$ に
+入れた全順序に本質的に依存する。$[1,n]$ 上の自然順序を $\leq$、任意の
+全順序を $\leq_s$ とする。$s$ を次を満たす $[1,n]$ のただ一つの置換とする：
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq1}
+\begin{equation}
+  i\leq_s j\quad\Longleftrightarrow\quad s(i)\leq s(j).
+  \tag{1.6.5.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-5-cocycles}
+$\alpha$ と $\alpha_s$ を、それぞれ順序 $\leq$ と $\leq_s$ に関する
+Koszul 余サイクルとする。このとき
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq2}
+\VerdierSemanticAnchor{ch1-1-6-5-eq2-natural}
+\VerdierSemanticAnchor{ch1-1-6-5-eq2-coordinates}
+\VerdierSemanticAnchor{ch1-1-6-5-eq2-permuted}
+\begin{equation}
+  \begin{aligned}
+    \alpha(\sigma_1,\sigma_2)
+      &=(-1)^{\left(\sum_{i<j}q_i p_j\right)},\\
+    \sigma_1&=\sum_i p_i e_i,
+      \qquad \sigma_2=\sum_i q_i e_i,\\
+    \alpha_s(\sigma_1,\sigma_2)
+      &=(-1)^{\left(\sum_{s(i)<s(j)}q_i p_j\right)},
+  \end{aligned}
+  \tag{1.6.5.2}
+\end{equation}
+\VerdierSemanticAnchor{ch1-1-6-5-open}

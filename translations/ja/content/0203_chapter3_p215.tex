@@ -1,0 +1,87 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0215}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-2-7-cont}
+さらに、(1.2.8) で圏 $D(\mathcal A)^o$ を圏
+$D(\mathcal A^o)$ と同一視した。これにより、集合
+$\operatorname{Ext}_{\mathcal A^o}^{n}(Y,X)$ と
+$\operatorname{Ext}_{\mathcal A}^{n}(X,Y)$ を同一視できる
+（第 I 章，1.3.9）。これらの同一視のもとで、始域と終域がともに同じ
+二つの写像を得る：
+
+\VerdierSemanticAnchor{ch3d-3-2-7-2}
+\begin{equation}
+\resizebox{0.74\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=5.0em,row sep=2.8em]
+E_{\mathcal A}^{n}(X,Y)
+  \arrow[r,"{\delta_{\mathcal A}^{n}}"]
+  \arrow[d,equal]
+\& \operatorname{Ext}_{\mathcal A}^{n}(X,Y)
+  \arrow[d,equal] \\
+E_{\mathcal A^o}^{n}(Y,X)
+  \arrow[r,"{\delta_{\mathcal A^o}^{n}}"']
+\& \operatorname{Ext}_{\mathcal A^o}^{n}(Y,X)
+\end{tikzcd}$%
+}
+\tag{3.2.7.2}
+\end{equation}
+そして次の関係がある：
+
+\VerdierSemanticAnchor{ch3d-3-2-7-3}
+\begin{equation}
+\delta_{\mathcal A}^{n}=\delta_{\mathcal A^o}^{n}.
+\tag{3.2.7.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-2-7-proof}
+この関係は $n=1$ のとき成り立つ (1.3.4)。そこで (3.2.5) を用いて
+$n$ に関する帰納法を行えば証明される。
+
+\VerdierSemanticAnchor{ch3d-3-2-8}
+\medskip\noindent\textbf{3.2.8.}\quad
+次を
+\[
+S^n(X,Y)=0\longrightarrow Y\xrightarrow{u_n}Z_{n-1}
+\xrightarrow{u_{n-1}}\cdots\xrightarrow{u_2}Z_1
+\xrightarrow{u_1}Z_0\xrightarrow{u_0}X\longrightarrow0
+\]
+$E_{\mathcal A}^{n}(X,Y)$ の元とし、
+$f\colon X'\longrightarrow X$ と $g\colon Y\longrightarrow Y''$ を
+$\mathcal A$ の二つの射とする。次のようにおく：
+
+\VerdierSemanticAnchor{ch3d-3-2-8-1}
+\begin{equation}
+\begin{aligned}
+S^n(X,Y)*f={}&0\longrightarrow Y\xrightarrow{u_n}Z_{n-1}
+\xrightarrow{u_{n-1}}\cdots\xrightarrow{u_2}Z_1
+\xrightarrow{u'_1}Z'_0\\
+&\xrightarrow{u'_0}X'\longrightarrow0,
+\end{aligned}
+\tag{3.2.8.1}
+\end{equation}
+ここで $Z'_0$ はファイバー積である：
+
+\VerdierSemanticAnchor{ch3d-3-2-8-pullback-square}
+\begin{center}
+\begin{tikzcd}[column sep=4.2em,row sep=2.8em]
+Z'_0 \arrow[r,"u'_0"] \arrow[d,"f'"']
+  & X' \arrow[d,"f"] \\
+Z_0 \arrow[r,"u_0"'] & X
+\end{tikzcd}
+\end{center}
+また $u'_1$ は等式 $f'u'_1=u_1$ と $u'_0u'_1=0$ によって一意に
+定まる射である。同様に次のようにおく：
+
+\VerdierSemanticAnchor{ch3d-3-2-8-2}
+\begin{equation}
+\begin{aligned}
+g*S^n(X,Y)={}&0\longrightarrow Y''\xrightarrow{u''_n}Z''_{n-1}
+\xrightarrow{u''_{n-1}}Z_{n-2}\xrightarrow{u_{n-2}}\cdots\\
+&\cdots\xrightarrow{u_1}Z_0\xrightarrow{u_0}X\longrightarrow0.
+\end{aligned}
+\tag{3.2.8.2}
+\end{equation}
+\endgroup

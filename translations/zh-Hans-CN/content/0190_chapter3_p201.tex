@@ -1,0 +1,73 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0201}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-n0-epimorphism}
+其中 $Z^{-q}$ 属于 $M'$，而 $L^j$（$-q+1\leq j\leq n_0$）均属于
+$M$。因此存在满态射
+\[
+\alpha\colon L^{-q}\longrightarrow Z^{-q},
+\qquad\text{其中 }L^{-q}\in M.
+\]
+令
+\[
+X_{n_0,q}=X_{n_0,q-1}(\alpha,-q),
+\qquad
+v_{n_0,q}=p(\alpha,-q)\quad\text{(2.1.1)}.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-n0-completion}
+由构造显然有性质 $I)_{n_0,q}$ 与 $III)_{n_0,q}$。性质
+$II)_{n_0,q}$ 来自集合 $M'$ 具有性质 $(E_1)$ 与 $(E_4)$。因此可继续构造
+$X_{n_0,i}$。令 $X_{n_0}=\varprojlim_i X_{n_0,i}$，并取典范态射
+$u_{n_0}\colon X_{n_0}\longrightarrow Y$，便得到具有性质
+$1)_{n_0}$、$2)_{n_0}$、$3)_{n_0}$、$4)_{n_0}$ 的复形与态射。
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-outer-induction}
+下面用归纳法构造复形 $X_i$ 与态射
+$u_i\colon X_i\longrightarrow X_{i-1}$。假设对每个满足 $n_0\leq i<q$
+的整数 $i$，已经构造了复形 $X_i$ 及态射
+$u_i\colon X_i\longrightarrow X_{i-1}$，并具有性质
+$1)_i$、$2)_i$、$3)_i$、$4)_i$、$5)_i$，其中 $n_0\leq i<q$。
+现在要构造复形 $X_q$ 与态射 $u_q\colon X_q\longrightarrow X_{q-1}$，
+使其具有性质 $1)_q$、$2)_q$、$3)_q$、$4)_q$、$5)_q$。首先，若
+$Y^q\in M$，则令 $X_q=X_{q-1}$ 且 $u_q=\operatorname{id}$。现设
+$Y^q$ 不属于 $M$，即 $M\text{-}\dim(Y^q)>0$。
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-q-inner-induction}
+为了构造复形 $X_q$ 与态射 $u_q\colon X_q\longrightarrow X_{q-1}$，
+再次使用归纳法。设整数 $r$ 满足
+\[
+-q<r\leq -q+M\text{-}\dim(Y^q).
+\]
+假设已经确定了一列复形 $X_{q,l}$（$-q<l<r$）及态射
+$v_{q,l}\colon X_{q,l}\longrightarrow X_{q,l-1}$（令
+$X_{q,-q}=X_{q-1}$），使得：
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-q-r-conditions}
+\noindent$I')_l$
+对每个 $j\neq-l,-l+1$，$(X_{q,l})^j=(X_{q,l-1})^j$。
+
+\noindent$II')_l$
+$(X_{q,l})^{-l}\in M'$，且
+$M\text{-}\dim((X_{q,l})^{-l})=M\text{-}\dim(Y^q)-l-q$。
+
+\noindent$III')_l$
+$(X_{q,l})^{-l+1}\in M$。
+
+\noindent$IV')_l$
+$v_{q,l}$ 是高度为 $-l+1$ 的初等态射，并且对
+$j\neq-l,-l+1$，$(v_{q,l})^j=\operatorname{id}$。
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-q-rminus1-complex}
+复形 $X_{q,r-1}$ 于是形如
+\[
+\cdots\longrightarrow L^{-r}\longrightarrow Z^{-r+1}
+\longrightarrow L^{-r+2}\longrightarrow\cdots\longrightarrow L^q
+\longrightarrow Y^{q+1}\longrightarrow Y^{q+2}\longrightarrow\cdots,
+\]
+其中 $L^i$ 均属于 $M$，而 $Z^{-r+1}$ 属于 $M'$，且满足
+$M\text{-}\dim(Z^{-r+1})=M\text{-}\dim(Y^q)-r+1-q$。因此存在满态射
+\endgroup

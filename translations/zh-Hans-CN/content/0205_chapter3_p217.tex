@@ -1,0 +1,72 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0217}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-2-11}
+\medskip\noindent\textbf{3.2.11.}\quad
+设 $f=\delta^n(S^n(X,Y))$ 与 $g=\delta^n({S'}^n(X,Y))$ 是
+$\operatorname{Ext}_{\mathcal A}^{n}(X,Y)$ 的两个元素。按照定义，态射
+$f+g\in\operatorname{Ext}_{\mathcal A}^{n}(X,Y)$ 是如下复合态射：
+
+\VerdierSemanticAnchor{ch3d-3-2-11-sum-composite}
+\[
+X\xrightarrow{\binom{\operatorname{id}}{\operatorname{id}}}X\oplus X
+\xrightarrow{\begin{pmatrix}f&0\\0&g\end{pmatrix}}
+Y[n]\oplus Y[n]
+\xrightarrow{(\operatorname{id},\operatorname{id})}Y[n].
+\]
+
+\VerdierSemanticAnchor{ch3d-3-2-11-construction}
+利用 (3.2.9) 与 (3.2.10)，可以从元素 $S^n(X,Y)$ 和 ${S'}^n(X,Y)$
+构造元素 ${S''}^n(X,Y)\in E_{\mathcal A}^{n}(X,Y)$，使得
+$\delta^n({S''}^n(X,Y))=f+g$。将这一构造的明确写法留给读者。
+
+\VerdierSemanticAnchor{ch3d-3-2-12}
+\medskip\noindent\textbf{3.2.12.}\quad
+我们已经在本小节中证明，群 $\operatorname{Ext}_{\mathcal A}^{n}(X,Y)$
+（$X$ 与 $Y$ 是 $\mathcal A$ 的对象）可以解释为集合
+$E_{\mathcal A}^{n}(X,Y)$ 关于 (3.2.2) 所述等价关系的商。此外，扩张的
+复合与其和可以用 $E_{\mathcal A}^{n}(X,Y)$ 的元素上的简单运算来描述。
+由此重新得到 Yoneda [3] 的描述。
+
+\VerdierSemanticAnchor{ch3d-3-3}
+\subsection*{3.3. 范畴
+\texorpdfstring{$\mathcal A^{\operatorname{Ext}}$}{A Ext}。}
+
+\VerdierSemanticAnchor{ch3d-3-3-1}
+\medskip\noindent\textbf{引理 3.3.1.}\quad
+\textit{a) 设 $X$ 与 $Y$ 是 $\mathcal A$ 的两个对象，并设
+$\xi\in\operatorname{Ext}_{\mathcal A}^{0}(X[p],Y[q])\simeq
+\operatorname{Ext}_{\mathcal A}^{q-p}(X,Y)$，$q>p$。存在 $q-p$ 条长度为
+$1$ 的正合列 $S_i^1$，$1\leq i\leq q-p$，使长度为 $n$ 的正合列
+$S_{q-p}^1*S_{q-p-1}^1*\cdots*S_1^1$ 有定义 (3.2.4)，并且：}
+
+\VerdierSemanticAnchor{ch3d-3-3-1-1}
+\begin{equation}
+\delta^{q-p}\bigl(S_{q-p}^1*S_{q-p-1}^1*\cdots*S_1^1\bigr)[p]=\xi.
+\tag{3.3.1.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-3-1-b-factorizations}
+\noindent\textit{b) 设 $S^n$ 与 ${S'}^n$ 是
+$E_{\mathcal A}^{n}(X,Y)$ 的两个元素，它们可利用 (3.2.6) 的记号写成}
+\[
+S^n=S_n^1*S_{n-1}^1*\cdots*S_1^1,
+\]
+\[
+{S'}^n={S'}_n^1*{S'}_{n-1}^1*\cdots*{S'}_1^1,
+\]
+\noindent\textit{其中 $S_i^1$ 与 ${S'}_i^1$，$1\leq i\leq n$，都是
+长度为 $1$ 的正合列。}
+
+\VerdierSemanticAnchor{ch3d-3-3-1-b-equivalence}
+\noindent\textit{下列性质等价：}
+
+\noindent\textit{i) $\delta^n(S^n)=\delta^n({S'}^n)$。}
+
+\noindent\textit{ii) 存在 $n$ 条长度为 $1$ 的正合列
+${S''}_i^1$，$1\leq i\leq n$，以及 $2n-2$ 个 $\mathcal A$ 中的态射：
+$f_i$，$1\leq i\leq n-1$，和 $g_i$，$1\leq i\leq n-1$，使得下列正合列}
+\endgroup

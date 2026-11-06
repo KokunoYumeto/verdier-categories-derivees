@@ -1,0 +1,101 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0149}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-3-5-injectivity-p149-continuation}
+\noindent tel que $uf=0$. En utilisant alors a), i), on voit qu'il existe
+un diagramme commutatif :
+
+\VerdierSemanticAnchor{ch2-2-3-5-injectivity-refinement-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=3.7em,row sep=2.3em]
+    && {} \\
+    & {} \arrow[ur,"v"] && {t'\in S_{\mathcal A}(\mathcal A\cap\mathcal B)} \\
+    X \arrow[ur,"f"] && Y \arrow[ul,"s"] \arrow[uu,"{t'}"'] &
+  \end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-3-5-injectivity-conclusion}
+\noindent tel que $vf=0$. Il en résulte alors que
+$m=Q_1(t')^{-1}Q_1(vf)=0$.
+
+\VerdierSemanticAnchor{ch2-2-3-5-surjectivity-map}
+Montrons maintenant que l'homomorphisme :
+\[
+  \operatorname{Hom}_{\mathcal A/(\mathcal A\cap\mathcal B)}(X,Y)
+  \longrightarrow
+  \operatorname{Hom}_{\mathcal D/\mathcal B}(X,Y)
+\]
+est surjectif.
+
+\VerdierSemanticAnchor{ch2-2-3-5-surjectivity-roof}
+Un élément $p\in\operatorname{Hom}_{\mathcal D/\mathcal B}(X,Y)$ se met
+sous la forme :
+\[
+  p=Q_2(t)^{-1}Q_2(g),\qquad t\in S_{\mathcal D}(\mathcal B).
+\]
+
+\VerdierSemanticAnchor{ch2-2-3-5-surjectivity-refinement}
+En utilisant a), i), on voit qu'un tel élément s'écrit toujours sous la
+forme :
+\[
+  p=Q_2(s)^{-1}Q_2(g'),\qquad
+  s\in S_{\mathcal A}(\mathcal A\cap\mathcal B),
+\]
+
+\VerdierSemanticAnchor{ch2-2-3-5-surjectivity-conclusion}
+\noindent et, par suite, qu'il provient d'un élément de
+$\operatorname{Hom}_{\mathcal A/(\mathcal A\cap\mathcal B)}(X,Y)$.
+
+\VerdierSemanticAnchor{ch2-2-3-5-c-proof-i-implies-ii}
+Il reste à démontrer l'équivalence de c). Démontrons tout d'abord que i)
+$\Rightarrow$ ii).
+
+\VerdierSemanticAnchor{ch2-2-3-5-iterated-quotient}
+D'après (2.3.1), la catégorie $\mathcal D/\mathcal B$ est canoniquement
+isomorphe à la catégorie
+$(\mathcal D/(\mathcal A\cap\mathcal B))
+/(\mathcal B/(\mathcal A\cap\mathcal B))$ et le foncteur canonique :
+
+\VerdierSemanticAnchor{ch2-2-3-5-q-functor}
+\[
+  Q\colon\mathcal D/(\mathcal A\cap\mathcal B)
+  \longrightarrow\mathcal D/\mathcal B
+\]
+est le foncteur de passage au quotient.
+
+\VerdierSemanticAnchor{ch2-2-3-5-q-free-reduction}
+Par suite, d'après la proposition (2.3.3, a)), pour démontrer l'implication
+i) $\Rightarrow$ ii), il suffit de montrer que pour tout objet $X$ de
+$\mathcal A$ et tout objet $B$ de $\mathcal B$,
+$\operatorname{Hom}_{\mathcal D/(\mathcal A\cap\mathcal B)}(B,X)=0$.
+
+\VerdierSemanticAnchor{ch2-2-3-5-m-representation}
+Un élément $m$ de
+$\operatorname{Hom}_{\mathcal D/(\mathcal A\cap\mathcal B)}(B,X)$ se met
+sous la forme $Q_3(f)Q_3(s)^{-1}$, où :
+
+\VerdierSemanticAnchor{ch2-2-3-5-q3-functor}
+\[
+  Q_3\colon\mathcal D\longrightarrow
+  \mathcal D/(\mathcal A\cap\mathcal B)
+\]
+est le foncteur canonique, et où $s$ est un élément de
+$S_{\mathcal D}(\mathcal A\cap\mathcal B)$, le système multiplicatif de
+$\mathcal D$ associé à $\mathcal A\cap\mathcal B$ (2.2.2). On a alors un
+diagramme de $\mathcal D$ :
+
+\VerdierSemanticAnchor{ch2-2-3-5-w-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=4em,row sep=2.4em]
+    & W \arrow[dl,"s"'] \arrow[dr,"f"] & \\
+    B && X
+  \end{tikzcd}
+  \quad ,
+\end{center}
+\endgroup

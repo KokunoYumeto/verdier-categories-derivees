@@ -1,0 +1,89 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0211}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-2-1-complex-x}
+\noindent a) 非零成分が次数零の対象 $X$ だけである複体 $X$。
+
+\VerdierSemanticAnchor{ch3d-3-2-1-complex-z}
+\noindent b) 複体
+\[
+Z^\bullet=\cdots\longrightarrow0\longrightarrow Y
+\longrightarrow Z_{n-1}\longrightarrow\cdots\longrightarrow Z_0
+\longrightarrow0\longrightarrow0\longrightarrow\cdots
+\]
+（$Y$ は次数 $-n$ の成分であり、$Z_i$ は次数 $-i$ の成分である）。
+
+\VerdierSemanticAnchor{ch3d-3-2-1-complex-y-shift}
+\noindent c) 非零成分が次数 $-n$ の対象 $Y$ だけである複体 $Y[n]$。
+
+\VerdierSemanticAnchor{ch3d-3-2-1-morphisms}
+唯一の非零成分が次数 $0$ の $u_0$ である射を
+$u(S^n(X,Y))\colon Z^\bullet\longrightarrow X$ と書き、唯一の非零成分が
+次数 $-n$ の $\operatorname{id}_Y$ である射を
+$v(S^n(X,Y))\colon Z^\bullet\longrightarrow Y[n]$ と書く。射
+$u(S^n(X,Y))$ は擬同型なので、$D(\mathcal A)$ における射を与える
+（(1.3.2) の記法を用いる）：
+
+\VerdierSemanticAnchor{ch3d-3-2-1-1}
+\begin{equation}
+\delta_{\mathcal A}^{n}(S^n(X,Y))=
+[v(S^n(X,Y))][u(S^n(X,Y))]^{-1}\colon X\longrightarrow Y[n].
+\tag{3.2.1.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-2-1-2}
+こうして写像
+\begin{equation}
+\delta_{\mathcal A}^{n}\colon E_{\mathcal A}^{n}(X,Y)
+\longrightarrow\operatorname{Ext}_{\mathcal A}^{n}(X,Y),
+\tag{3.2.1.2}
+\end{equation}
+を定義する。混同のおそれがなければ、単に $\delta^n$ と書く。
+
+\VerdierSemanticAnchor{ch3d-3-2-2}
+\medskip\noindent\textbf{命題 3.2.2.}\quad
+\textit{a) 写像 $\delta^n$ は全射である。}
+
+\VerdierSemanticAnchor{ch3d-3-2-2-b-sequences}
+\noindent\textit{b) 二つの元}
+\[
+S^n(X,Y)=0\longrightarrow Y\longrightarrow Z_{n-1}
+\longrightarrow\cdots\longrightarrow Z_0\longrightarrow X
+\longrightarrow0
+\]
+\noindent\textit{と}
+\[
+{S'}^n(X,Y)=0\longrightarrow Y\longrightarrow Z'_{n-1}
+\longrightarrow\cdots\longrightarrow Z'_0\longrightarrow X
+\longrightarrow0
+\]
+\noindent\textit{が $\delta^n$ によって同じ像をもつための必要十分条件は、
+ある元}
+\[
+{S''}^n(X,Y)=0\longrightarrow Y\longrightarrow Z''_{n-1}
+\longrightarrow\cdots\longrightarrow Z''_0\longrightarrow X
+\longrightarrow0
+\]
+\noindent\textit{と、次の可換図式が存在することである：}
+
+\VerdierSemanticAnchor{ch3d-3-2-2-b-diagram}
+\begin{center}
+\resizebox{\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=2.25em,row sep=2.5em]
+0 \arrow[r] \& Y \arrow[r] \& Z_{n-1} \arrow[r] \& \cdots
+  \arrow[r] \& Z_0 \arrow[r] \& X \arrow[r] \& 0 \\
+0 \arrow[r] \& Y \arrow[r] \arrow[u,"{\operatorname{id}}"]
+  \arrow[d,"{\operatorname{id}}"']
+\& Z''_{n-1} \arrow[r] \arrow[u] \arrow[d]
+\& \cdots \arrow[r]
+\& Z''_0 \arrow[r] \arrow[u] \arrow[d]
+\& X \arrow[r] \arrow[u,"{\operatorname{id}}"']
+  \arrow[d,"{\operatorname{id}}"] \& 0 \\
+0 \arrow[r] \& Y \arrow[r] \& Z'_{n-1} \arrow[r] \& \cdots
+  \arrow[r] \& Z'_0 \arrow[r] \& X \arrow[r] \& 0
+\end{tikzcd}$}
+\end{center}
+\endgroup

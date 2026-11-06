@@ -1,0 +1,64 @@
+\VerdierPhysicalPageAnchor{0021}
+le morphisme de complexes de faisceaux :
+
+\VerdierSemanticAnchor{intro-1-flat-quasi-isomorphism}
+\[
+F\otimes\rho:
+F\otimes_{\mathbb Z}L_1^{\bullet}
+\longrightarrow
+F\otimes_{\mathbb Z}L_2^{\bullet}
+\qquad\text{,}
+\]
+est un \emph{quasi-isomorphisme}.
+
+\VerdierSemanticAnchor{intro-1-coherent-tensor-system}
+On obtient donc un système cohérent de complexes de faisceaux
+$F\otimes_{\mathbb Z}L^{\bullet}$ et de quasi-isomorphismes qui dépend, en un
+sens qu'on peut préciser, fonctoriellement du faisceau $G$. En tout cas, les
+objets de cohomologie des complexes $F\otimes_{\mathbb Z}L^{\bullet}$
+($L^{\bullet}$ résolution plate de $G$) sont définis à isomorphismes uniques
+près et dépendent fonctoriellement de $G$. Les foncteurs ainsi obtenus
+possèdent les propriétés voulues et méritent le nom de foncteurs dérivés
+gauches du foncteur ``produit tensoriel par $F$''.
+
+\VerdierSemanticAnchor{intro-1-tor-sheaves}
+Bien entendu, pour calculer les faisceaux de torsion
+$\operatorname{Tor}^{\mathbb Z}(F,G)$, on peut prendre le faisceau associé au
+préfaisceau
+$U\longmapsto\operatorname{Tor}^{\mathbb Z}(F(U),G(U))$ ($U$ ouvert de $E$).
+Mais la méthode que nous employons fournit un complexe de faisceaux bien défini
+à quasi-isomorphisme près dont les objets de cohomologie sont
+$\operatorname{Tor}^{\mathbb Z}(F,G)$ et $F\otimes_{\mathbb Z}G$, information
+supplémentaire essentielle pour le maniement commode de ces foncteurs, ainsi
+que nous le verrons par la suite. Cette méthode s'étend immédiatement au cas
+des topos annelés et permet de définir dans ce cadre les foncteurs dérivés
+gauches du foncteur ``produit tensoriel de faisceaux''.
+
+\VerdierSemanticAnchor{intro-2}
+\noindent\textbf{2.}\quad
+Dans l'étude des foncteurs dérivés d'un foncteur composé de deux foncteurs, des
+propriétés d'associativité, des relations du type de Künneth, on est amené à
+étendre le formalisme des foncteurs dérivés au cas où l'argument n'est plus
+seulement un objet de la catégorie étudiée, mais un complexe d'objets de cette
+catégorie. Cette extension a été faite dans [1]. Rappelons-en les grandes
+lignes. Soit $F:\mathcal A\to\mathcal B$ un foncteur additif entre deux
+catégories abéliennes telles que $\mathcal A$ possède suffisamment d'objets
+injectifs. Soit $Y^{\bullet}$ un complexe d'objets de $\mathcal A$. On définit
+dans \emph{loc. cit.} les ``résolutions injectives'' du complexe $Y^{\bullet}$,
+que nous appelons \emph{résolutions injectives de Cartan-Eilenberg} du complexe
+$Y^{\bullet}$.
+
+\VerdierSemanticAnchor{intro-2-ce-resolution}
+Une telle résolution est, par définition, un double complexe
+$I^{\bullet\bullet}$ dont les composants sont des objets injectifs de
+$\mathcal A$, muni d'une augmentation :
+
+\VerdierSemanticAnchor{intro-2-ce-augmentation}
+\[
+Y^{\bullet}\xrightarrow{\varepsilon}I^{\bullet\bullet}
+\]
+qui induit des résolutions injectives (au sens usuel) des composants, des
+bords, et des objets de cohomologie du complexe $Y^{\bullet}$. Ces résolutions
+sont uniques à homotopie (de doubles complexes) près. On forme alors le double
+complexe $F(I^{\bullet\bullet})$, puis le complexe simple associé
+$\int F(I^{\bullet\bullet})$ qui, lui aussi, est déterminé

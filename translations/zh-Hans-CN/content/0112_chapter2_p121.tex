@@ -1,0 +1,80 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0121}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-11-iv-to-i-complete}
+证明蕴含 $\mathrm{iv)}\Longrightarrow\mathrm{i)}$。设
+$f\colon X\longrightarrow Y$ 为配有分裂 $g\colon Y\longrightarrow X$
+的态射。此时 $f\colon X\longrightarrow Y$ 的核函子等于
+$gf\colon X\longrightarrow X$ 的核函子，而后者是 $X$ 的投影态射
+（{\itshape 即} $gfgf=gf$）。
+
+\VerdierSemanticAnchor{ch2-1-2-11-projector-reduction}
+因此问题归结为证明：在可数积可表示的三角范畴中，投影态射都有核。
+设 $e\colon X\longrightarrow X$ 为 $X$ 的投影态射。令 $X_i=X$
+（$i\in\mathbb N$），并设
+
+\VerdierSemanticAnchor{ch2-1-2-11-phi}
+\[
+  \Phi\colon\prod_{i\in\mathbb N}X_i\longrightarrow
+  \prod_{i\in\mathbb N}X_i, ,
+\]
+为由下式定义的态射：
+
+\VerdierSemanticAnchor{ch2-1-2-11-1}
+\begin{equation}
+  \Phi(x_0,x_1,x_2,\ldots)
+  =\bigl(ex_0+(1-e)x_1,ex_1+(1-e)x_2,\ldots\bigr)\,.
+  \tag{1.2.11.1}
+\end{equation}
+把符号 $x_0,x_1,\ldots$ 解释为从 $\mathcal D$ 的任意对象到各 $X_i$
+的态射，公式 (1.2.11.1) 即定义了一个态射。类似地，设
+
+\VerdierSemanticAnchor{ch2-1-2-11-psi}
+\[
+  \Psi\colon\prod_{i\in\mathbb N}X_i\longrightarrow
+  \prod_{i\in\mathbb N}X_i, ,
+\]
+为由下式定义的态射：
+
+\VerdierSemanticAnchor{ch2-1-2-11-2}
+\begin{equation}
+  \Psi(x_0,x_1,x_2,\ldots)
+  =\bigl(x_0,(1-e)x_0+ex_1,(1-e)x_1+ex_2,\ldots\bigr)\,.
+  \tag{1.2.11.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch2-1-2-11-kernel-conclusion}
+显然 $\Phi\Psi=\operatorname{id}$，故 $\Phi$ 是满态射。由已证明的蕴含关系，
+它有一个可表示的核。另一方面，$\Phi$ 的核函子典范同构于
+$e\colon X\longrightarrow X$ 的核函子。因此该函子可表示，从而投影态射
+$e$ 有核。这就完成了命题 (1.2.9) 的证明。
+
+\VerdierSemanticAnchor{ch2-1-2-12}
+\medskip
+\noindent\textbf{1.2.12.}\quad
+推论 (1.2.4) 表明，包含给定态射的特异三角在非唯一同构意义下唯一。
+
+\VerdierSemanticAnchor{ch2-1-2-12-functorial-question}
+此外，公理 TRIII 要求每个态射范畴中的态射都能扩张为三角的态射。
+因此可以问：是否能够这样定义三角结构——函子性地给范畴中的每个态射配
+一个特异三角。我们将证明，若可以，则在某些附加假设下该范畴可分解。
+
+\VerdierSemanticAnchor{ch2-1-2-13}
+\medskip
+\noindent\textbf{命题 1.2.13.}\quad
+\textit{设 $\mathcal D$ 为三角范畴，$\operatorname{Tr}$ 为从
+$\mathrm{Fl}_1(\mathcal D)$（第一章，3.3.6），即 $\mathcal D$ 的态射范畴，
+到特异三角范畴（即 $\mathcal D$ 的三角范畴中由特异三角构成的满子范畴）的函子：}
+
+\VerdierSemanticAnchor{ch2-1-2-13-tr-assignment}
+\[
+  \operatorname{Tr}\!\left(X\xrightarrow{f}Y\right)
+  =X\xrightarrow{f}Y\xrightarrow{a(f)}\tau(f)
+  \xrightarrow{b(f)}X[1], .
+\]
+\endgroup

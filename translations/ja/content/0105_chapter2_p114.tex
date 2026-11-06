@@ -1,0 +1,110 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0114}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2}
+\medskip
+\noindent\textbf{1.2. 三角圏の初歩的性質。}
+
+\VerdierSemanticAnchor{ch2-1-2-1}
+\medskip
+\noindent\textbf{命題 1.2.1.}\quad
+$\mathcal D$ を三角圏とする。$\mathcal D$ の任意の対象 $X$ に対し、関手
+$\operatorname{Hom}_{\mathcal D}(X,\mathord\cdot)$ および
+$\operatorname{Hom}_{\mathcal D}(\mathord\cdot,X)$ は、アーベル群の圏に
+値をとるコホモロジー的関手である。
+
+\VerdierSemanticAnchor{ch2-1-2-1-hom-functors}
+\noindent\emph{証明。}\quad
+まず関手 $\operatorname{Hom}_{\mathcal D}(X,\mathord\cdot)$ が
+コホモロジー的関手であることを示せば十分である。他方の主張は、反対圏
+$\mathcal D^\circ$ (1.1.7) に移ることで従う。そこで
+
+\VerdierSemanticAnchor{ch2-1-2-1-source-triangle}
+\[
+  X'\xrightarrow{u'}Y'\xrightarrow{v'}Z'\xrightarrow{w'}X'[1]
+\]
+を完全三角とする。図式
+
+\VerdierSemanticAnchor{ch2-1-2-1-1}
+\begin{equation}
+  \resizebox{0.98\linewidth}{!}{$
+    \operatorname{Hom}_{\mathcal D}(X,X')
+    \xrightarrow{\operatorname{Hom}_{\mathcal D}(X,u')}
+    \operatorname{Hom}_{\mathcal D}(X,Y')
+    \xrightarrow{\operatorname{Hom}_{\mathcal D}(X,v')}
+    \operatorname{Hom}_{\mathcal D}(X,Z')
+    \xrightarrow{\operatorname{Hom}_{\mathcal D}(X,w')}
+    \operatorname{Hom}_{\mathcal D}(X,X'[1])
+  $}
+  \tag{1.2.1.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch2-1-2-1-exactness-reduction}
+において
+\[
+  \operatorname{Hom}_{\mathcal D}(X,v')
+  \operatorname{Hom}_{\mathcal D}(X,u')=0
+\]
+であり、かつこの図式が $\operatorname{Hom}_{\mathcal D}(X,Y')$ で完全で
+あることを示せばよい。そうすれば公理 TRII により、
+$\operatorname{Hom}_{\mathcal D}(X,Z')$ でも同じ結果が得られる。
+$f\colon X\longrightarrow X'$ とする。TRI により三角
+
+\VerdierSemanticAnchor{ch2-1-2-1-identity-triangle}
+\[
+  X\xrightarrow{\operatorname{id}_X}X\longrightarrow0\longrightarrow X[1]
+\]
+は完全三角であり、TRII と TRIII により、次の図式を可換にする射
+$g\colon X\longrightarrow Y'$ が存在する。
+
+\VerdierSemanticAnchor{ch2-1-2-1-2}
+\begin{equation}
+  \begin{tikzcd}[column sep=3.2em,row sep=2.5em]
+    X \arrow[r,"{\operatorname{id}_X}"] \arrow[d,"f"']
+      & X \arrow[r] \arrow[d,"g"']
+      & 0 \arrow[r] \arrow[d]
+      & X[1] \arrow[d,"{f[1]}"] \\
+    X' \arrow[r,"u'"']
+      & Y' \arrow[r,"v'"']
+      & Z' \arrow[r,"w'"']
+      & X'[1]
+  \end{tikzcd}
+  \tag{1.2.1.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch2-1-2-1-zero-composite}
+したがって $u'f=g$ かつ $v'u'f=v'g=0$ であり、
+$\operatorname{Hom}_{\mathcal D}(X,v')
+\operatorname{Hom}_{\mathcal D}(X,u')=0$ が示された。
+
+\VerdierSemanticAnchor{ch2-1-2-1-lifting}
+次に $v'g=0$ を満たす射 $g\colon X\longrightarrow Y'$ をとる。TRII と
+TRIII により、図式 (1.2.1.2) を可換にする射
+$f\colon X\longrightarrow X'$ が存在する。ゆえに $g=u'f$ であり、列
+(1.2.1.1) は $\operatorname{Hom}_{\mathcal D}(X,Y')$ で完全である。
+
+\VerdierSemanticAnchor{ch2-1-2-2}
+\medskip
+\noindent\textbf{系 1.2.2.}\quad
+完全三角
+$X'\xrightarrow{u'}Y'\xrightarrow{v'}Z'\xrightarrow{w'}X'[1]$ では、
+連続する任意の二射の合成は零である。
+
+\VerdierSemanticAnchor{ch2-1-2-2-proof}
+\noindent\emph{証明。}\quad
+TRII により $v'u'=0$ を示せば十分である。そのためには、完全列
+(1.2.1.1) で $X=X'$ とし、
+$\operatorname{id}_{X'}\in\operatorname{Hom}_{\mathcal D}(X',X')$ の
+連続する像を考えればよい。
+
+\VerdierSemanticAnchor{ch2-1-2-3}
+\medskip
+\noindent\textbf{系 1.2.3.}\quad
+$(X,Y,Z,u,v,w)$ と $(X',Y',Z',u',v',w')$ を $\mathcal D$ の二つの
+完全三角とし、$(f_1,f_2,f_3)$ を三角の射とする。三つの $f_i$
+（$1\leq i\leq3$）のうち二つが同型ならば、残りの一つも同型である。
+\endgroup

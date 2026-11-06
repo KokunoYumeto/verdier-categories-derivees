@@ -1,0 +1,90 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0088}%
+\VerdierSemanticAnchor{ch1-3-2-3}
+\noindent\textbf{3.2.3.}\quad
+\VerdierSemanticAnchor{ch1-3-2-3-translation-automorphism}
+L'automorphisme de translation de $\operatorname{comp}(C)$ s'étend
+naturellement en un automorphisme
+$T\colon\operatorname{tr}_1(C)\longrightarrow\operatorname{tr}_1(C)$ :
+
+\VerdierSemanticAnchor{ch1-3-2-3-eq1}
+\begin{equation}
+  \begin{aligned}
+    T\bigl(X\xrightarrow{f}Y\bigr)
+      &=X[1]\xrightarrow{f[1]}Y[1],\\
+    T((g,h,a))&=(g[1],h[1],-a[1]).
+  \end{aligned}
+  \tag{3.2.3.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-3-cone-z-functor}
+On fait alors du foncteur cône un $\mathbb Z$-foncteur (1.5.2) en définissant
+un isomorphisme
+\VerdierSemanticAnchor{ch1-3-2-3-psi-isomorphism}
+$\Psi(f)\colon c(f[1])\xrightarrow{\sim}c(f)[1]$ :
+
+\VerdierSemanticAnchor{ch1-3-2-3-eq2}
+\begin{equation}
+  \Psi(f)^i=
+  \begin{pmatrix}
+    \operatorname{id}_{Y^{i+1}} & 0\\
+    0 & -\operatorname{id}_{X^{i+2}}
+  \end{pmatrix}
+  \colon Y^{i+1}\oplus X^{i+2}
+  \longrightarrow Y^{i+1}\oplus X^{i+2}.
+  \tag{3.2.3.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-3-reader-verification}
+Le lecteur vérifiera que (3.2.3.2) définit bien un isomorphisme de complexes
+et démontrera la proposition suivante :
+
+\VerdierSemanticAnchor{ch1-3-2-4}
+\noindent\textbf{Proposition 3.2.4.}\quad
+\VerdierSemanticAnchor{ch1-3-2-4-zero-source}
+\emph{Lorsque $f=0\longrightarrow Y$, l'isomorphisme canonique :}
+\begin{equation*}
+  c(f[n])\xrightarrow{\sim}c(f)[n]
+\end{equation*}
+\emph{n'est autre que l'application identique de $Y[n]$. Lorsque
+$f=X\longrightarrow0$, l'isomorphisme canonique :}
+\VerdierSemanticAnchor{ch1-3-2-4-zero-target}
+\begin{equation*}
+  c(f[n])\xrightarrow{\sim}c(f)[n]
+\end{equation*}
+\emph{n'est autre que l'isomorphisme :}
+\begin{equation*}
+  X[n+1]\xrightarrow{(-1)^n\operatorname{id}_{X[n+1]}}X[n+1].
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-3-2-5}
+\noindent\textbf{3.2.5.}\quad
+Soit $X\xrightarrow{f}Y$ un objet de $\operatorname{tr}_1(C)$. On peut lui
+associer un triangle de $\operatorname{comp}(C)$ :
+
+\VerdierSemanticAnchor{ch1-3-2-5-triangle}
+\VerdierSemanticAnchor{ch1-3-2-5-eq1}
+\begin{equation}
+  Y\xrightarrow{p(f)}c(f)\xrightarrow{q(f)}X[1]
+  \xrightarrow{f[1]}Y[1].
+  \tag{3.2.5.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-5-composite}
+Or le morphisme $q(f)p(f)\colon Y\longrightarrow X[1]$ est le transformé par
+le foncteur cône du morphisme :
+
+\VerdierSemanticAnchor{ch1-3-2-5-cone-morphism-diagram}
+\begin{equation*}
+  \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center)]
+    \node (Z1) at (0,1.45) {$0$};
+    \node (Y)  at (3.5,1.45) {$Y$};
+    \node (X)  at (0,0) {$X$};
+    \node (Z2) at (3.5,0) {$0$};
+    \node[anchor=base west,inner sep=0pt,xshift=.08em] at (Z2.base east) {$.$};
+    \draw[->] (Z1) -- (Y);
+    \draw[->] (Z1) -- (X);
+    \draw[->] (Y) -- (Z2);
+    \draw[->] (X) -- (Z2);
+  \end{tikzpicture}
+\end{equation*}

@@ -1,0 +1,85 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0122}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-13-countability-hypothesis}
+\textit{If countable products or countable direct sums are representable
+in $\mathcal D$, then the category $\mathcal D$ is decomposable.}
+
+\VerdierSemanticAnchor{ch2-1-2-13-proof-morphism}
+Indeed, let $v\colon W\longrightarrow X$ be a morphism such that $fv=0$.
+We then have a morphism of morphisms:
+
+\VerdierSemanticAnchor{ch2-1-2-13-morphism-square}
+\[
+  \begin{tikzcd}[column sep=4em,row sep=2.5em]
+    X \arrow[r,"f"] & Y \\
+    W \arrow[u,"v"] \arrow[r] & 0 \arrow[u]
+  \end{tikzcd}
+  \,.
+\]
+
+\VerdierSemanticAnchor{ch2-1-2-13-1}
+Hence, applying the functor $\operatorname{Tr}$, we obtain a commutative
+diagram:
+\begin{equation}
+  \resizebox{0.82\linewidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=2.05em,row sep=3em]
+      X \arrow[r,"f"]
+        \& Y \arrow[r,"{a(f)}"]
+        \& \tau(f) \arrow[r,"{b(f)}"]
+        \& X[1] \\
+      W \arrow[u,"v"] \arrow[r]
+        \& 0 \arrow[u] \arrow[r]
+        \& \tau(W\longrightarrow 0) \arrow[u,"{\operatorname{Tr}(v,0)}"]
+          \arrow[r,"{b(W\longrightarrow 0)}"']
+        \& W[1] \arrow[u,"{v[1]}"']
+    \end{tikzcd}$%
+  }\,.
+  \tag{1.2.13.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch2-1-2-13-bottom-triangle}
+First note that the bottom row of diagram (1.2.13.1) is a distinguished
+triangle. Consequently, the morphism $b(W\longrightarrow 0)$ is an
+isomorphism (1.2.1). Set:
+
+\VerdierSemanticAnchor{ch2-1-2-13-alpha-definition}
+\[
+  \alpha(v)=\operatorname{Tr}(v,0)[-1]
+  b(W\longrightarrow 0)^{-1}[-1]\,,
+\]
+so that the diagram
+
+\VerdierSemanticAnchor{ch2-1-2-13-alpha-diagram}
+\[
+  \begin{tikzcd}[column sep=3.5em,row sep=2.4em]
+    \tau(f)[-1] \arrow[r,"{b(f)[-1]}"]
+      & X \arrow[r,"f"]
+      & Y \\
+      & W \arrow[ul,"{\alpha(v)}"'] \arrow[u,"v"] \arrow[ur,"0"']
+  \end{tikzcd}
+\]
+commutes. One verifies at once that this defines a section:
+\par
+
+\VerdierSemanticAnchor{ch2-1-2-13-alpha-section}
+\[
+  \alpha\colon \operatorname{Ker}(f)\longrightarrow \tau(f)[-1]
+\]
+\noindent of the canonical morphism
+$\tau(f)[-1]\longrightarrow\operatorname{Ker}(f)$ from the functor
+represented by $\tau(f)[-1]$ into the kernel functor of the morphism $f$.
+
+\VerdierSemanticAnchor{ch2-1-2-13-projector-kernel}
+The kernel functor of $f$ is therefore isomorphic to the kernel functor of
+a projector of $\tau(f)[-1]$. It is therefore representable (1.2.9).
+
+\VerdierSemanticAnchor{ch2-1-2-13-proof-complete}
+It follows from (1.2.9) that the morphism $f$ is decomposable, which
+completes the proof.
+\endgroup

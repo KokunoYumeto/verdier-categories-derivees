@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0144}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-c-bis-converse}
+\noindent saturated. The subcategory $Q(Q^{-1}(\mathcal C))$ is strictly
+full and saturated by the proof of d). But the category
+$Q(Q^{-1}(\mathcal C))$ is the strictly full closure of $\mathcal C$.
+Consequently, $\mathcal C$ is saturated. This proves assertion
+c)$^{\mathrm{bis}}$.
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-d-bis}
+It remains to prove the last assertion. It is clear that when $\mathcal C$
+is strictly full, one has $Q(Q^{-1}(\mathcal C))=\mathcal C$. Let
+$\mathcal A$ be a strictly full triangulated category containing
+$\widehat{\mathcal B}$. We must show that
+$\mathcal A=Q^{-1}(Q(\mathcal A))$. Replacing $\mathcal B$ by
+$\widehat{\mathcal B}$, which does not change the category
+$\mathcal D/\mathcal B$ (2.2.11), we may assume that $\mathcal B$ is
+saturated, and hence that $\mathcal B=\widehat{\mathcal B}$. Since one
+clearly has the inclusion
+$\mathcal A\subset Q^{-1}(Q(\mathcal A))$, it suffices to show that every
+object of $\mathcal D$ which becomes isomorphic in $\mathcal D/\mathcal B$
+to an object of $\mathcal A$ is an object of $\mathcal A$.
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-d-bis-roof-setup}
+Thus let $X$ be an object of $\mathcal A$, let $Y$ be an object of
+$\mathcal D$, and let $m\colon Q(X)\xrightarrow{\sim}Q(Y)$ be an
+isomorphism. The morphism $m$ decomposes as $m=Q(f)Q(s)^{-1}$, where
+$s\in S_{\mathcal D}(\mathcal B)$ (2.2.2) and $Q(f)$ is an isomorphism.
+Hence $f\in S_{\mathcal D}(\mathcal B)$ because $\mathcal B$ is saturated
+((2.1.8) and (2.2.4)). We therefore have a diagram in $\mathcal D$:
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-d-bis-roof}
+\begin{center}
+  \begin{tikzcd}[column sep=4.2em,row sep=2.5em,baseline=(current bounding box.center)]
+    & Z \arrow[dl,"s"'] \arrow[dr,"f"] & \\
+    X && Y
+  \end{tikzcd}
+  \qquad $s,f\in S_{\mathcal D}(\mathcal B)$\quad .
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-d-bis-complete}
+Since $s$ belongs to $S_{\mathcal D}(\mathcal B)$, there exists a
+distinguished triangle $(Z,X,W,s,u,v)$, where $W$ is an object of
+$\mathcal B$ (2.1.7). Consequently, $W$ is an object of $\mathcal A$, and
+since $\mathcal A$ is strictly full, the object $Z$ also belongs to
+$\mathcal A$ (1.2.4). The same argument then shows that $Y$ is an object of
+$\mathcal A$, which completes the proof of the proposition.
+
+\VerdierSemanticAnchor{ch2-2-3-2}
+\medskip
+\noindent\textbf{2.3.2.}\quad
+\VerdierSemanticAnchor{ch2-2-3-2-free-object}
+Let $F\colon C\longrightarrow C'$ be a functor and let $X$ be an object of
+$C'$. Recall that an object $Y$ of $C$ is said to be \emph{$F$-free on the
+right over $X$}, or simply \emph{free on the right over $X$}, if there is
+a morphism $u\colon F(Y)\longrightarrow X$ such that for every morphism
+$F(Z)\xrightarrow{v}X$, there exists a unique morphism
+$w\colon Z\longrightarrow Y$ for which the following diagram is
+commutative:
+
+\VerdierSemanticAnchor{ch2-2-3-2-free-object-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=4.7em,row sep=2.7em]
+    F(Y) \arrow[rr,"u"] && X \\
+    & F(Z) \arrow[ul,"{F(w)}"] \arrow[ur,"v"'] &
+  \end{tikzcd}
+  \quad .
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-3-2-freedom-arrow-boundary}
+The arrow $u\colon F(Y)\longrightarrow X$ is called a \emph{freedom arrow}
+for the pair $(X,Y)$ (relative to the functor $F$). This may also be
+interpreted, by taking a
+\endgroup

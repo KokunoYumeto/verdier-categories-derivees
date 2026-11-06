@@ -1,0 +1,108 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0246}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-6-4}
+\noindent\textbf{4.6.4.}\quad
+Soit $X^{\bullet\bullet}$ un double complexe de $\mathcal A$
+(chap.~I, 2.1.2). Le double complexe $X^{\bullet\bullet}$ définit un objet
+de $\operatorname{comp}(\operatorname{comp}(\mathcal A))$ :
+
+\VerdierSemanticAnchor{ch4d-4-6-4-double-complex}
+\[
+X^{\bullet\bullet}\colon\quad
+\cdots\longrightarrow X^{\bullet,n-1}
+\xrightarrow{d_2^{\bullet,n-1}}X^{\bullet,n}
+\xrightarrow{d_2^{\bullet,n}}X^{\bullet,n+1}
+\longrightarrow\cdots.
+\]
+(On utilise les notations de (4.1.9). Attention au signe !)
+
+\VerdierSemanticAnchor{ch4d-4-6-4-b1}
+Désignons par $B_1^p(X^{\bullet\bullet})$ le complexe simple :
+
+\VerdierSemanticAnchor{ch4d-4-6-4-1}
+\[
+\left\{
+\begin{aligned}
+B_1^p(X^{\bullet\bullet})^i
+  &=\operatorname{Im}(d_1^{p-1,i}),\\
+d_{B_1^p(X^{\bullet\bullet})}^{i}
+  &\text{ induit par }d_2^{p,i}.
+\end{aligned}
+\right.
+\tag{4.6.4.1}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-4-z1}
+Désignons par $Z_1^p(X^{\bullet\bullet})$ le complexe simple :
+
+\VerdierSemanticAnchor{ch4d-4-6-4-2}
+\[
+\left\{
+\begin{aligned}
+Z_1^p(X^{\bullet\bullet})^i
+  &=\operatorname{Ker}(d_1^{p,i}),\\
+d_{Z_1^p(X^{\bullet\bullet})}^{i}
+  &\text{ induit par }d_2^{p,i}.
+\end{aligned}
+\right.
+\tag{4.6.4.2}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-4-h1}
+Désignons par $H_1^p(X^{\bullet\bullet})$ le complexe simple :
+
+\VerdierSemanticAnchor{ch4d-4-6-4-3}
+\[
+\left\{
+\begin{aligned}
+H_1^p(X^{\bullet\bullet})^i
+  &=Z_1^p(X^{\bullet\bullet})^i/B_1^p(X^{\bullet\bullet})^i,\\
+d_{H_1^p(X^{\bullet\bullet})}^{i}
+  &\text{ induit par }d_2^{p,i}.
+\end{aligned}
+\right.
+\tag{4.6.4.3}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-4-simple-as-double}
+Enfin, $Y$ étant un complexe simple de $\mathcal A$, nous désignons encore
+par $Y$ le complexe double dont les composants sont nuls en deuxième degré
+non nul et dont les composants et les premières différentielles sont ceux de
+$Y$ en deuxième degré zéro.
+
+\VerdierSemanticAnchor{ch4d-4-6-5}
+\medskip\noindent\textbf{Définition 4.6.5.}\quad
+Soit $Y$ un complexe simple de $\mathcal A$. Une \emph{résolution injective
+de Cartan--Eilenberg} de $Y$ est un double complexe :
+
+\VerdierSemanticAnchor{ch4d-4-6-5-double-complex}
+\[
+I^{\bullet\bullet}\colon\quad
+\cdots\longrightarrow0\longrightarrow I^{\bullet,0}
+\longrightarrow I^{\bullet,1}\longrightarrow I^{\bullet,2}
+\longrightarrow\cdots,
+\]
+muni d'un morphisme appelé \emph{augmentation} :
+
+\VerdierSemanticAnchor{ch4d-4-6-5-augmentation}
+\[
+\varepsilon\colon Y\longrightarrow I^{\bullet\bullet}
+\]
+tel que pour tout entier $p$, les complexes simples
+$B_1^p(I^{\bullet\bullet})$ (4.6.4.1) et
+$H_1^p(I^{\bullet\bullet})$ (4.6.4.3) munis des augmentations :
+
+\VerdierSemanticAnchor{ch4d-4-6-5-augmentations}
+\[
+B_1^p(\varepsilon)\colon
+\operatorname{Im}(d_Y^{p-1})\longrightarrow B_1^p(I^{\bullet\bullet}),
+\]
+\[
+H_1^p(\varepsilon)\colon
+H^p(Y)\longrightarrow H_1^p(I^{\bullet\bullet})
+\]
+\endgroup

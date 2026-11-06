@@ -1,0 +1,57 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0205}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-a-conclusion}
+这表明 $X$ 是 $\mathcal A$ 的投射对象。
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-b}
+证明 b)。设 $L^\bullet$ 是 $K^{-}(\mathcal A)$ 的一个投射型复形，并设
+$u\colon L^\bullet\longrightarrow Y$ 是到无环复形的态射。假设对每个整数
+$i>n$，已经构造了态射 $s^i\colon L^i\longrightarrow Y^{i-1}$，使得
+$u^i=d_Y^{i-1}s^i+s^{i+1}d_{L^\bullet}^{i}$（当 $n$ 足够大时总能作此构造，
+因为 $L^\bullet$ 是 $K^{-}(\mathcal A)$ 的对象）。于是
+$d_Y^n\bigl(u^n-s^{n+1}d_{L^\bullet}^{n}\bigr)=0$，因此态射
+$u^n-s^{n+1}d_{L^\bullet}^{n}$ 通过 $\operatorname{Ker}(d_Y^n)$ 分解。
+由于复形 $Y$ 无环，态射
+$Y^{n-1}\longrightarrow\operatorname{Ker}(d_Y^n)$ 是满态射；又因 $L^n$
+是投射对象，存在态射 $s^n\colon L^n\longrightarrow Y^{n-1}$，使得
+$d_Y^{n-1}s^n=u^n-s^{n+1}d_{L^\bullet}^{n}$。这样归纳可得：对每个整数
+$i$，存在态射 $s^i$，使得
+$u^i=d_Y^{i-1}s^i+s^{i+1}d_{L^\bullet}^{i}$。因此态射 $u$ 同伦于零。
+由（第二章，2.3.3），对象 $L^\bullet$ 是 $Q$-左自由的。b) 的最后一项断言
+也由（第二章，2.3.3）推出。
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-c-projective-complexes}
+证明 c)。断言 1) 立即由 b) 与（2.3.1）推出。为证明断言 1) 的相应情形，
+先证明每个投射型复形都是 $Q$-左自由的。设 $L^\bullet$ 是投射型复形，
+$u\colon X\longrightarrow L^\bullet$ 是拟同构。只需证明 $u$ 有截面
+（第二章，2.3.3）。因此只需证明存在投射型复形 ${L'}^\bullet$ 及拟同构
+$v\colon {L'}^\bullet\longrightarrow X$，使复合态射
+$uv\colon {L'}^\bullet\longrightarrow L^\bullet$ 是 $K(\mathcal A)$ 中的
+同构。由（2.3.3），总存在投射型复形 ${L'}^\bullet$ 及拟同构
+$v\colon {L'}^\bullet\longrightarrow X$。因而只需证明拟同构
+$uv\colon {L'}^\bullet\longrightarrow L^\bullet$ 是同构。现在存在特异三角
+$({L'}^\bullet,L^\bullet,{L''}^\bullet,uv,w,m)$，其中 ${L''}^\bullet$ 是
+无环投射型复形。
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-c-acyclic-projective-complexes}
+因此只需证明无环投射型复形都同伦于零。设 ${L''}^\bullet$ 是无环投射型复形。
+由于 $\mathcal A$ 的对象的投射维数有上界，${L''}^\bullet$ 的各微分之核都是
+投射对象（2.2.6）。从而 ${L''}^\bullet$ 的所有微分都是可分解态射
+（第二章，1.2.8），所以 ${L''}^\bullet$ 同伦于零。
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-c-conclusion}
+于是由（第二章，2.3.3），自然函子
+$K^{*}(P)\longrightarrow D(\mathcal A)$ 是充分忠实的。因此函子
+$K^{*}(P)\longrightarrow D^{*}(\mathcal A)$ 也是充分忠实的。由（2.3.3），
+该函子还本质满，因而是范畴等价。断言 2) 与 3) 只是（第二章，2.3.3）的
+直接应用。断言 4) 也就显然：$K^{-}(\mathcal A)$ 中（相应地，
+$K^{*}(\mathcal A)$ 中）的 $Q$-左自由对象，依（2.3.1）（相应地，
+（2.3.3）），有一个来自 $K^{-}(\mathcal A)$ 中（相应地，
+$K^{*}(\mathcal A)$ 中）投射型复形的左分解；而 $Q$-左自由对象之间的
+拟同构是 $K(\mathcal A)$ 中的同构。
+\endgroup
+

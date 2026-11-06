@@ -1,0 +1,74 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0050}%
+\VerdierSemanticAnchor{ch1-1-4-7-continuation}
+において、$(F_i,p_i)$ はそれぞれ関手 $(F_i,m_i)$ と切断 $s_i$ が定める
+捩れ $G$-関手であり、これらは $\beta_{j,i}$-射である。ここで
+
+\VerdierSemanticAnchor{ch1-1-4-7-eq3}
+\begin{equation}
+  \beta_{j,i}(\sigma)=s_j(\sigma)s_i(\sigma)^{-1},
+  \qquad i,j\in\{1,2,3\},\quad i<j
+  \tag{1.4.7.3}
+\end{equation}
+である。
+
+したがって関係式
+
+\VerdierSemanticAnchor{ch1-1-4-7-eq4}
+\begin{equation}
+  \beta_{3,1}=\beta_{3,2}\beta_{2,1}
+  \tag{1.4.7.4}
+\end{equation}
+を得る。
+
+\VerdierSemanticAnchor{ch1-1-4-7-composition}
+関係式 (1.4.7.2) と (1.4.7.4) により、$\beta_{3,2}$-射 $v$ と
+$\beta_{2,1}$-射 $u$ の\emph{合成}を定義でき、このように定めた合成は
+$H$-関手の射の合成と両立する。
+
+\VerdierSemanticAnchor{ch1-1-4-8}
+\noindent\textbf{1.4.8.}\quad
+$\mathcal C'$ を加法圏とし、
+\[
+  (F,p)\colon(\mathcal C,G,T,c)\longrightarrow
+  (\mathcal C',G,T',c')
+\]
+を正規化された余サイクル
+$\alpha\in Z^2(G,\mathbb Z/2\mathbb Z)$ で捩られた $G$-関手とする。
+関手 $(F,p)$ の\emph{反対捩れ次数付き関手}を
+
+\VerdierSemanticAnchor{ch1-1-4-8-eq1}
+\begin{equation}
+  (F^{\circ},p^{\circ})\colon
+  (\mathcal C^{\circ},G^{\circ},T^{\circ},c^{\circ})
+  \longrightarrow
+  (\mathcal C'^{\circ},G^{\circ},T'^{\circ},c'^{\circ})
+  \tag{1.4.8.1}
+\end{equation}
+と書く（(1.3.9) の記法を用いる）。これは次のように定義される。
+
+\VerdierSemanticAnchor{ch1-1-4-8-opposite-data}
+基礎にある関手は $F$ の反対関手 $F^{\circ}$ である。各
+$g\in G^{\circ}$（$G$ の反対群）に対し、$\mathcal C^{\circ}$ における同型
+\[
+  p^{\circ}(g)\colon
+  F^{\circ}T^{\circ}(g)=FT(g^{-1})
+  \overset{\sim}{\longrightarrow}
+  T'^{\circ}(g)F^{\circ}=T'(g^{-1})F
+\]
+は $p^{-1}(g^{-1})$ に等しい。
+
+\VerdierSemanticAnchor{ch1-1-4-8-opposite-cocycle}
+関手 $(F^{\circ},p^{\circ})$ は、余サイクル $\alpha$ の反対余サイクル
+$\alpha^{\circ}\in Z^2(G^{\circ},\mathbb Z/2\mathbb Z)$ で捩られた
+$G^{\circ}$-関手である：
+\[
+  \alpha^{\circ}(g,g')=\alpha^{-1}(g'^{-1},g^{-1}).
+\]
+
+\VerdierSemanticAnchor{ch1-1-4-9}
+\noindent\textbf{1.4.9.}\quad
+本節で群 $\mathbb Z/2\mathbb Z$ について用いた唯一の性質は、加法圏の
+恒等関手に標準的に作用することである。したがって、考察中の諸圏の恒等関手に
+$G$ の作用と両立する仕方で作用する可換群 $K$ に
+$\mathbb Z/2\mathbb Z$ を置き換えて、同様の議論を展開できる。

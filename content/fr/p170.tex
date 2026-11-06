@@ -1,0 +1,68 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0170}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{2.5em}
+\VerdierSemanticAnchor{ch4-4-2-7-second-diagram}
+En appliquant la même remarque au diagramme :
+\[
+\begin{tikzcd}[column sep=4.6em,row sep=2.8em]
+&H^n(f_2f_1)\arrow[d]\arrow[dr]&\\
+H^n(f_1)\arrow[ur]\arrow[r]&
+H^n(f_3f_2f_1)\arrow[r]&H^n(f_3f_2),
+\end{tikzcd}
+\]
+on obtient un isomorphisme :
+\VerdierSemanticAnchor{ch4-4-2-7-2}
+\[
+E\!\begin{bmatrix}n\\ f_1,f_2,f_3\end{bmatrix}
+\xrightarrow{\ \sim\ }
+\operatorname{Im}\bigl(H^n(f_2f_1)\longrightarrow H^n(f_3f_2f_1)\bigr)
+\Big/
+\operatorname{Im}\bigl(H^n(f_1)\longrightarrow H^n(f_3f_2f_1)\bigr).
+\tag{4.2.7.2}
+\]
+
+\VerdierSemanticAnchor{ch4-4-3}
+\medskip\noindent\textbf{4.3. Les termes
+$E\!\begin{bmatrix}n\\ -\infty,p,q,+\infty\end{bmatrix}$.}
+
+\VerdierSemanticAnchor{ch4-4-3-1}
+\medskip\noindent\textbf{4.3.1.}
+Soit $\widetilde{\mathbb Z}$ l'ensemble ordonné $\mathbb Z$ complété par un
+élément initial $-\infty$ et un élément final $+\infty$. Par abus de
+notation, nous désignerons également par $\widetilde{\mathbb Z}$ la
+catégorie associée à l'ensemble ordonné $\widetilde{\mathbb Z}$. Un
+morphisme de $\widetilde{\mathbb Z}$ est donc un couple $p\leq q$, où $p$
+et $q$ sont des éléments de $\widetilde{\mathbb Z}$. Une suite ordonnée
+$p_1\leq p_2\leq\cdots\leq p_n$ définit un objet de
+$\mathcal{F}\ell_{n-1}(\widetilde{\mathbb Z})$ noté
+$(p_1,p_2,\ldots,p_n)$. Un morphisme de $\widetilde{\mathbb Z}$ est dit
+\textit{fini} si sa source et son but appartiennent à $\mathbb Z$. Un objet
+de $\mathcal{F}\ell_n(\widetilde{\mathbb Z})$ est dit \textit{fini} si les
+morphismes qui le composent sont finis.
+
+\VerdierSemanticAnchor{ch4-4-3-2}
+\medskip\noindent\textbf{4.3.2.}
+\textit{Nous n'utiliserons dans ce travail que les objets spectraux de type
+$\widetilde{\mathbb Z}$, qui seront appelés dorénavant objets spectraux.}
+On retrouve ainsi la notion du chapitre XV, §7 de [1]. Soit
+$(H^n(p,q),\delta,\ p\leq q\in\widetilde{\mathbb Z})$ un objet spectral à
+valeurs dans une catégorie abélienne $\mathcal A$. Posons :
+\VerdierSemanticAnchor{ch4-4-3-2-1}
+\[
+F^pH^n(-\infty,+\infty)
+=\operatorname{Im}\bigl(H^n(-\infty,p)\longrightarrow
+H^n(-\infty,+\infty)\bigr).
+\tag{4.3.2.1}
+\]
+On a $F^{+\infty}H^n(-\infty,+\infty)=H^n(-\infty,+\infty)$ et
+$F^{-\infty}H^n(-\infty,+\infty)=0$. Les
+$F^pH^n(-\infty,+\infty)$ forment une filtration croissante de type
+$\widetilde{\mathbb Z}$ de $H^n(-\infty,+\infty)$. De plus, pour tout
+couple $p\leq q$ on a un isomorphisme (4.2.7.2) :
+\VerdierSemanticAnchor{ch4-4-3-2-filtration-quotient}
+\[
+E\!\begin{bmatrix}n\\ -\infty,p,q,+\infty\end{bmatrix}
+\simeq
+F^qH^n(-\infty,+\infty)\big/F^pH^n(-\infty,+\infty).
+\]
+\endgroup

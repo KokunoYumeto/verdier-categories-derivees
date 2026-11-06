@@ -1,0 +1,69 @@
+\chapter{三角范畴}
+\VerdierPhysicalPageAnchor{0110}%
+\VerdierSemanticAnchor{ch2}
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1}
+\section{定义与初步性质}
+
+\VerdierSemanticAnchor{ch2-1-1}
+\subsection{三角范畴的定义}
+
+\VerdierSemanticAnchor{ch2-1-1-1}
+\noindent\textbf{定义 1.1.1.}\quad
+一个\emph{三角范畴} $\mathcal D$ 是一个严格加法 $\mathbb Z$-范畴
+（第一章，1.5.11），并配有一族三角（第一章，3.2.1），称为\emph{特异三角}，
+它们具有下列性质：
+
+\VerdierSemanticAnchor{ch2-1-1-1-tri}
+\smallskip
+\noindent\textbf{TRI:}
+$\mathcal D$ 中任何与一个特异三角同构的三角都是特异三角。对于每个对象
+$X$（属于 $\mathcal D$），三角
+\[
+  X\xrightarrow{\operatorname{id}_X}X\longrightarrow 0
+  \longrightarrow X[1]
+\]
+是特异三角。每个态射 $u\colon X\longrightarrow Y$（属于 $\mathcal D$）都包含在
+如下特异三角中：
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1].
+\]
+
+\VerdierSemanticAnchor{ch2-1-1-1-trii}
+\noindent\textbf{TRII:}
+$\mathcal D$ 中的三角
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+\]
+是特异三角，当且仅当三角
+\[
+  Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+  \xrightarrow{-u[1]}Y[1]
+\]
+是特异三角。
+
+\VerdierSemanticAnchor{ch2-1-1-1-triii}
+\noindent\textbf{TRIII:}
+对于任意一对特异三角
+
+\VerdierSemanticAnchor{ch2-1-1-1-triii-triangles}
+\[
+  \begin{aligned}
+    X  &\xrightarrow{u}  Y  \xrightarrow{v}  Z  \xrightarrow{w}  X[1],\\
+    X' &\xrightarrow{u'} Y' \xrightarrow{v'} Z' \xrightarrow{w'} X'[1]
+  \end{aligned}
+\]
+以及任意交换图
+
+\VerdierSemanticAnchor{ch2-1-1-1-triii-square}
+\begin{center}
+  \begin{tikzcd}[column sep=4.5em,row sep=3em]
+    X \arrow[r,"u"] \arrow[d,"f"'] & Y \arrow[d,"g"] \\
+    X' \arrow[r,"u'"] & Y'\,,
+  \end{tikzcd}
+\end{center}
+\endgroup

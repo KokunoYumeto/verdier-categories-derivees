@@ -1,0 +1,80 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0182}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-1-3-1-naturality-cont}
+次の図式は可換である：
+
+\VerdierSemanticAnchor{ch3d-1-3-1-naturality-square}
+\begin{center}
+\begin{tikzcd}[column sep=4.5em,row sep=2.4em]
+G(Z) \arrow[r,"{\delta(S)}"] \arrow[d,"{G(w)}"']
+  & G(X)[1] \arrow[d,"{G(u)[1]}"] \\
+G(Z') \arrow[r,"{\delta(S^{\prime})}"'] & G(X')[1]
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-1-3-1-distinguished-triangle}
+\noindent b) $\mathcal A$ の任意の完全列
+$S=0\longrightarrow X\xrightarrow{u}Y\xrightarrow{v}Z\longrightarrow0$
+に対して、三角
+$(G(X),\allowbreak G(Y),\allowbreak G(Z),\allowbreak G(u),\allowbreak
+G(v),\allowbreak\delta(S))$ は完全三角である。
+
+\VerdierSemanticAnchor{ch3d-1-3-2}
+\medskip\noindent\textbf{1.3.2.}\quad
+$\mathcal A$ をアーベル圏とし、$u$ を
+$\operatorname{comp}(\mathcal A)$ の射とする。$D(\mathcal A)$ における
+$\dot u$ の像を $[u]$ と書く。
+$S=0\longrightarrow X\xrightarrow{u}Y\xrightarrow{v}Z\longrightarrow0$
+を $\operatorname{comp}(\mathcal A)$ の完全列とする。写像錐関手の随伴性
+（第 I 章，3.1.3）により、射
+$\mu(S)\colon c(u)\longrightarrow Z$ が定まる。次の図式は可換である
+（第 I 章，3.2.2.4）：
+
+\VerdierSemanticAnchor{ch3d-1-3-2-cone-square}
+\begin{center}
+\begin{tikzcd}[column sep=4.2em,row sep=2.8em]
+Y \arrow[r,"p(u)"] \arrow[dr,"v"'] & c(u) \arrow[d,"\mu(S)"] \\
+& Z
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-1-3-2-components}
+簡単な計算により、射 $\mu(S)$ の成分は次のようになる：
+\begin{equation}
+\begin{aligned}
+\mu(S)^i&\colon Y^i\oplus X^{i+1}\longrightarrow Z^i,\\
+\mu(S)^i&=(v^i,0).
+\end{aligned}
+\tag{1.3.2.1}
+\end{equation}
+したがって、射 $\mu(S)\colon c(u)\longrightarrow Z$ はエピ射であり、
+次の完全列が得られる：
+
+\VerdierSemanticAnchor{ch3d-1-3-2-short-exact}
+\[
+0\longrightarrow c(\operatorname{id}_X)\longrightarrow c(u)
+\longrightarrow Z\longrightarrow0.
+\]
+ここで複体 $c(\mu(S))$ を導入し、
+$m\colon c(\operatorname{id}_X)\longrightarrow c(\mu(S))[-1]$ を
+次の成分をもつ射とする：
+
+\VerdierSemanticAnchor{ch3d-1-3-2-morphism-m}
+\begin{equation}
+\begin{aligned}
+m^i&\colon X^i\oplus X^{i+1}
+  \longrightarrow Z^{i-1}\oplus Y^i\oplus X^{i+1},\\[2pt]
+m^i&=
+\begin{pmatrix}
+0&0\\
+u^i&0\\
+0&\operatorname{id}
+\end{pmatrix}.
+\end{aligned}
+\tag{1.3.2.2}
+\end{equation}
+\endgroup

@@ -1,0 +1,72 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0155}%
+\begingroup\small
+\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+
+\VerdierSemanticAnchor{ch3-3-2-2-admissible}
+An object of $\mathcal D^\wedge$ is called \emph{admissible} if it is the
+image of a morphism between representable functors. Let
+$\operatorname{Im}\colon\mathcal{F}\ell_1(\mathcal D)\to\mathcal D^\wedge$
+be the functor
+\VerdierSemanticAnchor{ch3-3-2-2-1}
+\[
+\operatorname{Im}\bigl(X\xrightarrow fY\bigr)
+=\text{the image of the morphism }h(f).
+\tag{3.2.2.1}
+\]
+The functor $\operatorname{Im}$ is additive and sends negligible morphisms to
+zero morphisms. It therefore factors uniquely through an additive functor,
+abusively denoted
+\VerdierSemanticAnchor{ch3-3-2-2-2}
+\[
+\operatorname{Im}\colon\mathrm A(\mathcal D)\longrightarrow\mathcal D^\wedge.
+\tag{3.2.2.2}
+\]
+The composite functor
+$\operatorname{Im}\circ\mathcal H\colon
+\mathcal D\longrightarrow\mathrm A(\mathcal D)
+\longrightarrow\mathcal D^\wedge$
+is none other than the functor $h$. An object of
+$\mathcal D^\wedge$ is isomorphic to the image under $\operatorname{Im}$ of an object of
+$\mathrm A(\mathcal D)$ if and only if it is admissible.
+
+\VerdierSemanticAnchor{ch3-3-2-3}
+\medskip\noindent\textbf{Proposition 3.2.3.}\quad
+\textit{The functor
+$\operatorname{Im}\colon\mathrm A(\mathcal D)\to\mathcal D^\wedge$ is fully
+faithful.}
+
+\VerdierSemanticAnchor{ch3-3-2-3-morphism-square}
+Let
+\[
+\begin{tikzcd}[column sep=4em,row sep=2.4em]
+X\arrow[r,"f"]\arrow[d,"g"']&Y\arrow[d,"g'"]\\
+X'\arrow[r,"f'"']&Y'
+\end{tikzcd}
+\qquad=(g;g')
+\]
+be a morphism in $\mathcal{F}\ell_1(\mathcal D)$, and denote its image by
+$\operatorname{Im}((g;g'))$. The diagram
+
+\VerdierSemanticAnchor{ch3-3-2-3-canonical-diagram}
+\[
+\begin{tikzcd}[column sep=4em,row sep=2.2em]
+X\arrow[r,"\operatorname{id}_X"]\arrow[d,"\operatorname{id}_X"']&X\arrow[d,"f"]\\
+X\arrow[r,"f"]\arrow[d,"f"']&Y\arrow[d,"\operatorname{id}_Y"]\\
+Y\arrow[r,"\operatorname{id}_Y"']&Y
+\end{tikzcd}
+\]
+yields, after applying $\operatorname{Im}$,
+\[
+h(X)\xrightarrow{\operatorname{Im}((\operatorname{id}_X;f))}
+\operatorname{Im}(f)\xrightarrow{\operatorname{Im}((f;\operatorname{id}_Y))}h(Y).
+\]
+
+\VerdierSemanticAnchor{ch3-3-2-3-1}
+We have
+\[
+\operatorname{Im}((f;\operatorname{id}_Y))\circ
+\operatorname{Im}((\operatorname{id}_X;f))=h(f).
+\tag{3.2.3.1}
+\]
+\endgroup

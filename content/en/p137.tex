@@ -1,0 +1,100 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0137}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{1pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{1pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-2-2-sm2-completion-diagram}
+\noindent into a commutative diagram:
+
+\begin{center}
+  \begin{tikzpicture}[>=stealth,line width=.38pt,x=1.30cm,y=1.45cm,
+    scale=.92,transform shape]
+    \node (Zpp) at (0,2.20) {$Z''$};
+    \node (Xp)  at (-1.25,1.10) {$X'$};
+    \node (Yp)  at ( 1.25,1.10) {$Y'$};
+    \node (Y)   at (0,0) {$Y$};
+    \draw[->] (Zpp) -- node[above left=-1pt] {$t'\in S$} (Xp);
+    \draw[->] (Zpp) -- node[above right=-1pt] {$m'$} (Yp);
+    \draw[->] (Xp)  -- node[below left=-1pt] {$m$} (Y);
+    \draw[->] (Yp)  -- node[below right=-1pt] {$t\in S$} (Y);
+    \node at (2.50,-.05) {$.$};
+  \end{tikzpicture}
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-2-2-composite-roof-d3}
+\noindent We then obtain a diagram
+$D_3=X\xleftarrow{st'}Z''\xrightarrow{pm'}Z$, where the composite $st'$
+belongs to $S$ (SM1).
+\VerdierSemanticAnchor{ch2-2-2-2-composite-class-independence}%
+One checks that the class $\overline D_3$ of $D_3$ in
+$\operatorname{Hom}_{\mathcal C(S^{-1})}(X,Z)$ depends only on the classes
+$\overline D_1$ and $\overline D_2$.
+\VerdierSemanticAnchor{ch2-2-2-2-composition-conclusion}%
+The morphism $\overline D_3$ is the
+composite in $\mathcal C(S^{-1})$ of the morphisms $\overline D_1$ and
+$\overline D_2$.
+
+\VerdierSemanticAnchor{ch2-2-2-3}
+\smallskip
+\noindent\textbf{Remark 2.2.3.}
+\VerdierSemanticAnchor{ch2-2-2-3-a}%
+a) It follows from the fourth assertion of theorem (2.2.2) that the category
+$\mathcal C(S^{-1})$, equipped with the functor
+$Q\colon\mathcal C\longrightarrow\mathcal C(S^{-1})$, is a solution of a
+universal problem:
+\VerdierSemanticAnchor{ch2-2-2-3-a-universal-problem}%
+the functor $Q$ carries the morphisms of $S$ to isomorphisms, and every
+functor from $\mathcal C$ to a category $\mathcal A$ that carries the
+morphisms of $S$ to isomorphisms factors uniquely through $Q$.
+\VerdierSemanticAnchor{ch2-2-2-3-a-unique-isomorphism}%
+The category $\mathcal C(S^{-1})$, equipped with the functor $Q$, is
+therefore determined up to unique isomorphism by this property.
+
+\VerdierSemanticAnchor{ch2-2-2-3-b}
+\par\noindent b) Let $\mathcal C$ be a category and $S$ a set of morphisms
+of $\mathcal C$ that need not be a multiplicative system of $\mathcal C$.
+\VerdierSemanticAnchor{ch2-2-2-3-b-general-localization}%
+There always exist a category $\mathcal C(S^{-1})$ and a functor
+$Q\colon\mathcal C\longrightarrow\mathcal C(S^{-1})$ that carries the
+morphisms of $S$ to isomorphisms, such that every functor from $\mathcal C$
+to a category $\mathcal A$ carrying the morphisms of $S$ to isomorphisms
+factors uniquely through $Q$.
+\VerdierSemanticAnchor{ch2-2-2-3-b-multiplicative-comparison}%
+When $S$ is a multiplicative system of $\mathcal C$, theorem (2.2.2) gives a
+simple description of the category $\mathcal C(S^{-1})$; it also gives
+additional properties of the functor $Q$ (assertions b) and c)) that do not
+hold in general.
+
+\VerdierSemanticAnchor{ch2-2-2-4}
+\smallskip
+\noindent\textbf{Corollary 2.2.4.}\quad
+\begingroup\itshape
+Let $\mathcal C$ be a category and $S$ a multiplicative system of
+$\mathcal C$.
+
+\VerdierSemanticAnchor{ch2-2-2-4-a}
+\par\noindent a) The set $S$ is a multiplicative system of
+$\mathcal C^\circ$, the category opposite to $\mathcal C$.
+\VerdierSemanticAnchor{ch2-2-2-4-a-opposite-system}%
+There is a canonical isomorphism of categories:
+
+\VerdierSemanticAnchor{ch2-2-2-4-a-canonical-isomorphism}
+\[
+  \bigl(\mathcal C^\circ(S^{-1})\bigr)^\circ
+  \longrightarrow \mathcal C(S^{-1})\,.
+\]
+
+\VerdierSemanticAnchor{ch2-2-2-4-a-hom-colimit-isomorphism}
+\noindent This isomorphism induces in particular isomorphisms:
+\[
+  \operatorname{Hom}_{\mathcal C(S^{-1})}(X,Y)
+  \longrightarrow
+  \varinjlim_{Y\backslash S}\operatorname{Hom}_{\mathcal C}(X,\mathord\cdot)\,.
+\]
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-2-4-p138-boundary}
+\endgroup

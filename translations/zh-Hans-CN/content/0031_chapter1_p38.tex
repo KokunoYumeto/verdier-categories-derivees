@@ -1,0 +1,98 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0038}%
+\VerdierSemanticAnchor{ch1-1-2-4-isomorphisms-cont}
+以及一族同构
+
+\[
+  m(g)\colon F_eT(g)\longrightarrow T'(g)F_e,
+  \qquad g\in G,
+\]
+所成的数据，并要求图 (1.2.3.2) 交换。
+
+\VerdierSemanticAnchor{ch1-1-2-4-characterization}
+因此，一个 $G^\circ$-函子就是一个“在同构意义下与 $G^\circ$ 的作用交换”的
+函子。我们用 $(F_e,m)$ 表示它。
+
+\VerdierSemanticAnchor{ch1-1-2-4-strict}
+若对每个 $g\in G$，同构 $m(g)$ 都是恒等同构——这特别蕴含对每个 $g\in G$
+都有等式 $F_eT(g)=T'(g)F_e$——就称该 $G^\circ$-函子是\emph{严格的}。
+
+\VerdierSemanticAnchor{ch1-1-2-5}
+\noindent\textbf{1.2.5.}\quad
+设 $\mathcal C$、$\mathcal C'$ 与 $\mathcal C''$ 为三个分次范畴，并设
+\[
+  \mathcal C\xrightarrow{F}\mathcal C'
+  \xrightarrow{F'}\mathcal C'',\qquad F''=F'F,
+\]
+为三个分次函子。在 $\mathcal C$、$\mathcal C'$ 与 $\mathcal C''$ 上选取正规
+劈分。由上述讨论，得到三个 $G^\circ$-范畴
+$(\mathcal C_e,G^\circ,T,c)$、
+$(\mathcal C'_e,G^\circ,T',c')$、
+$(\mathcal C''_e,G^\circ,T'',c'')$，以及三个 $G^\circ$-函子
+$(F_e,m)$、$(F'_e,m')$、$(F''_e,m'')$。立即可以验证关系式
+
+\VerdierSemanticAnchor{ch1-1-2-5-eq1}
+\begin{equation}
+  \begin{cases}
+    F''_e=F'_eF_e,\\[0.5em]
+    m''(g)=\bigl(m'(g)\star F_e\bigr)
+      \bigl(F'_e\star m(g)\bigr),\qquad g\in G.
+  \end{cases}
+  \tag{1.2.5.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-2-6}
+\noindent\textbf{定义 1.2.6.}\quad
+设 $(\mathcal C_e,G^\circ,T,c)$、
+$(\mathcal C'_e,G^\circ,T',c')$、
+$(\mathcal C''_e,G^\circ,T'',c'')$ 为三个 $G^\circ$-范畴，并设
+
+\[
+\begin{tikzcd}[column sep=large]
+(\mathcal C_e,G^\circ,T,c)
+  \arrow[r,"{(F_e,m)}"]
+&
+(\mathcal C'_e,G^\circ,T',c')
+  \arrow[r,"{(F_e^{\prime},m^{\prime})}"]
+&
+(\mathcal C''_e,G^\circ,T'',c'')
+\end{tikzcd}
+\]
+为两个 $G^\circ$-函子。
+
+\VerdierSemanticAnchor{ch1-1-2-6-composite}
+等式 (1.2.5.1) 定义了一个 $G^\circ$-函子，称为 $G^\circ$-函子
+$(F_e,m)$ 与 $(F'_e,m')$ 的\emph{复合函子}。
+
+\VerdierSemanticAnchor{ch1-1-2-7}
+\noindent\textbf{1.2.7.}\quad
+设 $F$ 与 $F'$ 为两个 $G$-分次范畴 $\mathcal C$ 和 $\mathcal C'$ 之间的两个
+分次函子，并设 $u\colon F\to F'$ 为一个次数为 $e$ 的函子态射。在
+$\mathcal C$ 与 $\mathcal C'$ 上选取正规劈分。由此得到两个 $G^\circ$-范畴
+$(\mathcal C_e,G^\circ,T,c)$、$(\mathcal C'_e,G^\circ,T',c')$，以及两个
+$G^\circ$-函子 $(F_e,m)$、$(F'_e,m')$。态射 $u$ 随之确定一个函子态射
+
+\VerdierSemanticAnchor{ch1-1-2-7-eq1}
+\begin{equation}
+  u_e\colon F_e\longrightarrow F'_e
+  \tag{1.2.7.1}
+\end{equation}
+使得下图交换：
+
+\VerdierSemanticAnchor{ch1-1-2-7-eq2}
+\begin{equation}
+\begin{tikzcd}[column sep=huge,row sep=large]
+F_eT(g)
+  \arrow[r,"u_e\star T(g)"]
+  \arrow[d,"m(g)",swap]
+&
+F_e^{\prime}T(g)
+  \arrow[d,"m^{\prime}(g)"]
+\\
+T^{\prime}(g)F_e
+  \arrow[r,"T^{\prime}(g)\star u_e",swap]
+&
+T^{\prime}(g)F_e^{\prime}\mathpunct{.}
+\end{tikzcd}
+\tag{1.2.7.2}
+\end{equation}

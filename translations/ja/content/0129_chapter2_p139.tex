@@ -1,0 +1,113 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0139}%
+\begingroup
+\normalsize
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{1pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{1pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-2-6-proof-c-continuation}
+\noindent 第二の主張と定理 (2.2.2) から直ちに従う。したがって第二の
+主張を証明すればよい。
+\VerdierSemanticAnchor{ch2-2-2-6-proof-b-setup}%
+$T$ を、$\mathcal D$ の完全三角の $Q$ による像と同型な
+$\mathcal D(S^{-1})$ の三角の集合とする。
+\VerdierSemanticAnchor{ch2-2-2-6-proof-b-tri-trii}%
+集合 $T$ が性質 TRI、TRII をもつことは容易に確かめられる。性質 TRIII
+を示すには次の補題が必要である：
+
+\VerdierSemanticAnchor{ch2-2-2-7}
+\smallskip
+\noindent\textbf{補題 2.2.7.}\quad
+\begingroup\itshape
+$u\colon X\longrightarrow Y$ と $u'\colon X'\longrightarrow Y'$ を
+$\mathcal D$ の二射とし、
+
+\VerdierSemanticAnchor{ch2-2-2-7-localized-square}
+\begin{center}
+  \begin{tikzpicture}[>=stealth,line width=.38pt,x=1.70cm,y=1.25cm,
+    scale=.98,transform shape]
+    \node (QX)  at (0,1) {$Q(X)$};
+    \node (QY)  at (2.35,1) {$Q(Y)$};
+    \node (QXp) at (0,0) {$Q(X')$};
+    \node (QYp) at (2.35,0) {$Q(Y')$};
+    \draw[->] (QX) -- node[above] {$Q(u)$} (QY);
+    \draw[->] (QXp) -- node[below] {$Q(u')$} (QYp);
+    \draw[->] (QX) -- node[left] {$m$} (QXp);
+    \draw[->] (QY) -- node[right] {$p$} (QYp);
+  \end{tikzpicture}
+\end{center}
+
+\noindent を $\mathcal D(S^{-1})$ における可換図式とする。
+\VerdierSemanticAnchor{ch2-2-2-7-common-representative}%
+このとき射 $u''\colon X''\longrightarrow Y''$ と、$\mathcal D$ における
+二つの可換図式
+
+\begin{center}
+  \VerdierSemanticAnchor{ch2-2-2-7-denominator-square}%
+  \begin{tikzpicture}[>=stealth,line width=.38pt,x=1.55cm,y=1.15cm,
+    scale=.95,transform shape]
+    \node (Xpp) at (0,1) {$X''$};
+    \node (Ypp) at (2,1) {$Y''$};
+    \node (X)   at (0,0) {$X$};
+    \node (Y)   at (2,0) {$Y$};
+    \draw[->] (Xpp) -- node[above] {$u''$} (Ypp);
+    \draw[->] (X) -- node[below] {$u$} (Y);
+    \draw[->] (Xpp) -- node[left] {$s$} (X);
+    \draw[->] (Ypp) -- node[right] {$t$} (Y);
+    \node at (3.25,.50) {$s,t\in S$};
+    \node at (4.50,0) {$,$};
+  \end{tikzpicture}
+  \par\smallskip
+  \VerdierSemanticAnchor{ch2-2-2-7-numerator-square}%
+  \begin{tikzpicture}[>=stealth,line width=.38pt,x=1.55cm,y=1.15cm,
+    scale=.95,transform shape]
+    \node (Xpp) at (0,1) {$X''$};
+    \node (Ypp) at (2,1) {$Y''$};
+    \node (Xp)  at (0,0) {$X'$};
+    \node (Yp)  at (2,0) {$Y'$};
+    \draw[->] (Xpp) -- node[above] {$u''$} (Ypp);
+    \draw[->] (Xp) -- node[below] {$u'$} (Yp);
+    \draw[->] (Xpp) -- node[left] {$f$} (Xp);
+    \draw[->] (Ypp) -- node[right] {$g$} (Yp);
+    \node at (3.10,0) {$,$};
+  \end{tikzpicture}
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-2-7-fraction-identities}
+\noindent であって、$m=Q(f)Q(s)^{-1}$、$p=Q(g)Q(t)^{-1}$ を満たす
+ものが存在する。
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-2-6-proof-b-triii-reduction}
+\par\noindent 補題を認め、集合 $T$ が性質 TRIII をもつことを示そう。
+集合 $T$ の定義により、次を示せばよい：$\mathcal D$ の二つの完全三角
+
+\VerdierSemanticAnchor{ch2-2-2-6-proof-b-distinguished-triangles}
+\[
+  (X,Y,Z,u,v,w)\,,\qquad
+  (X',Y',Z',u',v',w')
+\]
+
+\noindent と、$\mathcal D(S^{-1})$ の可換図式
+
+\VerdierSemanticAnchor{ch2-2-2-6-proof-b-localized-square}
+\begin{center}
+  \begin{tikzpicture}[>=stealth,line width=.38pt,x=1.70cm,y=1.25cm,
+    scale=.98,transform shape]
+    \node (QX)  at (0,1) {$Q(X)$};
+    \node (QY)  at (2.35,1) {$Q(Y)$};
+    \node (QXp) at (0,0) {$Q(X')$};
+    \node (QYp) at (2.35,0) {$Q(Y')$};
+    \draw[->] (QX) -- node[above] {$Q(u)$} (QY);
+    \draw[->] (QXp) -- node[below] {$Q(u')$} (QYp);
+    \draw[->] (QX) -- node[left] {$m$} (QXp);
+    \draw[->] (QY) -- node[right] {$p$} (QYp);
+    \node at (3.05,0) {$,$};
+  \end{tikzpicture}
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-2-6-proof-b-p140-boundary}
+\VerdierSemanticAnchor{ch2-2-2-6-p140-boundary}
+\endgroup

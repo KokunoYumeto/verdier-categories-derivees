@@ -1,0 +1,85 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0249}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-6-9-first-differentials}
+\noindent 而第一微分为 (4.1.9.1)
+\[
+\begin{aligned}
+d_1^{p,q}\colon(\mathrm{C.E.})_1^{p,q}
+  &\longrightarrow(\mathrm{C.E.})_1^{p+1,q},\\
+d_1^{p,q}&=F^q(-d_2^{\bullet,p}).
+\end{aligned}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-9-column-decomposition}
+复形 $I^{\bullet,p}$ 是 Cartan--Eilenberg 内射复形 (4.6.1)，因此由 (4.6.3)，
+$D(\mathcal A)$ 中存在典范同构
+\[
+I^{\bullet,p}\xrightarrow{\sim}
+\prod_{r\in\mathbb Z}H^r(I^{\bullet,p})[-r].
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-9-h1-components}
+现在采用 (4.6.4.3) 中引入的复形 $H_1^r(I^{\bullet\bullet})$。
+对每个整数 $r$，都有
+\[
+H_1^r(I^{\bullet\bullet})^p=H^r(I^{\bullet,p}),
+\]
+因而 $D(\mathcal A)$ 中存在典范同构
+
+\VerdierSemanticAnchor{ch4d-4-6-9-h1-decomposition}
+\[
+I^{\bullet,p}\xrightarrow{\sim}
+\prod_{r\in\mathbb Z}H_1^r(I^{\bullet\bullet})^p[-r],
+\]
+并且，在这个同构之下，复形态射
+\[
+d_2^{\bullet,p}\colon
+I^{\bullet,p}\longrightarrow I^{\bullet,p+1}
+\]
+同构于态射
+
+\VerdierSemanticAnchor{ch4d-4-6-9-d2-decomposition}
+\[
+\prod_{r\in\mathbb Z}
+d_{H_1^r(I^{\bullet\bullet})}^{p}[-r],
+\]
+由此得到初始项的最终表达式
+
+\VerdierSemanticAnchor{ch4d-4-6-9-1}
+\[
+(\mathrm{C.E.})_1^{p,q}
+=F^q\left(
+\prod_{r\in\mathbb Z}H_1^r(I^{\bullet\bullet})^p[-r]
+\right),
+\tag{4.6.9.1}
+\]
+以及第一微分的最终表达式
+
+\VerdierSemanticAnchor{ch4d-4-6-9-2}
+\[
+d_1^{p,q}
+=-F^q\left(
+\prod_{r\in\mathbb Z}d_{H_1^r(I^{\bullet\bullet})}^{p}[-r]
+\right).
+\tag{4.6.9.2}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-9-3-prelude}
+设 $F^{q,\bullet}(H_1^r(I^{\bullet\bullet}))$ 是把函子 $F^q$ 施于复形
+$H_1^r(I^{\bullet\bullet})$ 的各分量和微分而得到的 $\mathcal B$ 中对象的
+复形。公式 (4.6.9.1) 与 (4.6.9.2) 定义了一个态射
+
+\VerdierSemanticAnchor{ch4d-4-6-9-3}
+\[
+(\mathrm{C.E.})_2^{p,q}\longrightarrow
+\prod_{r\in\mathbb Z}
+H_{\mathcal B}^{p}\left(
+F^{q-r,\bullet}(H_1^r(I^{\bullet\bullet}))
+\right).
+\tag{4.6.9.3}
+\]
+\endgroup

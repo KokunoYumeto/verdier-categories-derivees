@@ -1,0 +1,94 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0153}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+
+\VerdierSemanticAnchor{ch3-3-1-3}
+\noindent\textbf{3.1.3.}\quad
+Supposons que la catégorie $\mathcal D$ soit une $\mathbb Z$-catégorie
+stricte. Les foncteurs de translation de $\mathcal D$,
+$X\longmapsto X[n]$, $n\in\mathbb Z$, s'étendent en automorphismes de
+$\mathcal{F}\ell_1(\mathcal D)$ :
+
+\VerdierSemanticAnchor{ch3-3-1-3-translation-extension}
+\[
+\bigl(X\xrightarrow{f}Y\bigr)
+\longmapsto
+\bigl(X[n]\xrightarrow{f[n]}Y[n]\bigr).
+\]
+Il résulte immédiatement de la propriété universelle de
+$\mathrm A(\mathcal D)$ (3.1.1.1) que ces automorphismes passent au quotient
+et définissent sur $\mathrm A(\mathcal D)$ une structure de
+$\mathbb Z$-catégorie stricte. Le foncteur
+$\mathcal H\colon\mathcal D\to\mathrm A(\mathcal D)$ est un
+$\mathbb Z$-foncteur strict.
+
+\VerdierSemanticAnchor{ch3-3-1-4}
+\medskip
+\noindent\textbf{3.1.4.}\quad
+Soient $\mathcal D$ et $\mathcal D'$ deux $\mathbb Z$-catégories strictes
+additives et $F\colon\mathcal D\to\mathcal D'$ un $\mathbb Z$-foncteur
+additif (tordu par le cocycle trivial). Soit $\mathcal{F}\ell_1(F)$
+l'extension de $F$ aux catégories de morphismes :
+\[
+\mathcal{F}\ell_1(F)\bigl(X\xrightarrow{f}Y\bigr)
+=\bigl(FX\xrightarrow{Ff}FY\bigr).
+\]
+Le foncteur $\mathcal{F}\ell_1(F)$ transforme les morphismes négligeables de
+$\mathcal{F}\ell_1(\mathcal D)$ en morphismes négligeables de
+$\mathcal{F}\ell_1(\mathcal D')$. Il définit par suite un foncteur
+
+\VerdierSemanticAnchor{ch3-3-1-4-1}
+\[
+\mathrm A(F)\colon\mathrm A(\mathcal D)\longrightarrow\mathrm A(\mathcal D').
+\tag{3.1.4.1}
+\]
+Le foncteur $\mathrm A(F)$ est additif. Il résulte immédiatement des
+propriétés universelles de $\mathrm A(\mathcal D)$ et
+$\mathrm A(\mathcal D')$ qu'il est muni canoniquement d'une structure de
+$\mathbb Z$-foncteur.
+
+\VerdierSemanticAnchor{ch3-3-1-4-composition}
+Soit $F'\colon\mathcal D'\to\mathcal D''$ un $\mathbb Z$-foncteur additif
+entre $\mathbb Z$-catégories strictes additives. On a alors
+
+\VerdierSemanticAnchor{ch3-3-1-4-2}
+\[
+\mathrm A(F')\mathrm A(F)=\mathrm A(F'F).
+\tag{3.1.4.2}
+\]
+
+\VerdierSemanticAnchor{ch3-3-1-4-3}
+Le diagramme ci-après est commutatif :
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.5em]
+\mathcal D \arrow[r,"F"] \arrow[d,"\mathcal H"'] &
+\mathcal D' \arrow[d,"\mathcal H'"] \\
+\mathrm A(\mathcal D) \arrow[r,"\mathrm A(F)"'] &
+\mathrm A(\mathcal D')
+\end{tikzcd}
+\tag{3.1.4.3}
+\]
+(les foncteurs $\mathcal H$ et $\mathcal H'$ sont définis en (3.1.2)).
+
+\VerdierSemanticAnchor{ch3-3-1-4-natural-transformation}
+Soit de même $m\colon F\to F''$ un morphisme de $\mathbb Z$-foncteurs
+additifs entre $\mathcal D$ et $\mathcal D'$. On en déduit, par les mêmes
+arguments que précédemment, un morphisme de $\mathbb Z$-foncteurs
+
+\VerdierSemanticAnchor{ch3-3-1-4-4}
+\[
+\mathrm A(m)\colon\mathrm A(F)\longrightarrow\mathrm A(F'').
+\tag{3.1.4.4}
+\]
+Si $m$ et $m'$ sont deux morphismes composables de $\mathbb Z$-foncteurs
+additifs, on a
+
+\VerdierSemanticAnchor{ch3-3-1-4-5}
+\[
+\mathrm A(m')\mathrm A(m)=\mathrm A(m'm).
+\tag{3.1.4.5}
+\]
+\endgroup

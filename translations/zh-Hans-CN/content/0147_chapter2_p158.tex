@@ -1,0 +1,43 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0158}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch3-3-2-5-kernel-triangle}
+设 $(Z,X,Y',u,f'g,v)$ 为 $\mathcal D$ 中的特异三角。图式
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.1em]
+h(Z)\arrow[r,"h(fu)"]\arrow[d,"h(u)"']&h(Y)\arrow[d,"\operatorname{id}_{h(Y)}"]\\
+h(X)\arrow[r,"h(f)"]\arrow[d,"h(g)"']&h(Y)\arrow[d,"h(g')"]\\
+h(X')\arrow[r,"h(f')"']&h(Y')
+\end{tikzcd}
+\]
+在水平方向取像后给出
+\VerdierSemanticAnchor{ch3-3-2-5-1}
+\[
+\operatorname{Im}(fu)\xrightarrow{\beta}V\xrightarrow{\alpha}V'.
+\tag{3.2.5.1}
+\]
+\VerdierSemanticAnchor{ch3-3-2-5-kernel-proof}
+我们证明态射 $\operatorname{Im}(fu)\to V$ 是 $\alpha$ 的核。首先，
+$\beta$ 是单态射：事实上，$\operatorname{Im}(fu)$ 与 $V$ 都是
+$h(Y)$ 的子对象。其次，$\alpha\beta=0$：典范态射
+$h(Z)\to\operatorname{Im}(fu)$ 是满态射，典范态射
+$V'\to h(Y')$ 是单态射，而 $h(f'gu)$ 是 $h$ 作用于一个特异
+三角中两个相继态射的复合所得的态射，故其为零 (1.2.2)。
+还需证明在 $V$ 处正合。设 $W$ 为 $\mathcal D$ 的对象。任意态射
+$\sigma\colon h(W)\to V$ 都来自 $h(W)$ 到 $h(X)$ 的态射，因为
+$h(W)$ 在 $\mathcal D^\wedge$ 中是投射对象；也就是说，它来自一个态射
+$m\colon W\to X$。它与 $\alpha$ 的复合为零，当且仅当
+$f'gm=0$，因为 $V'$ 是 $h(Y')$ 的子对象。由 (1.2.1)，存在
+$n\colon W\to Z$ 使 $un=m$。故 $\sigma$ 经 $\operatorname{Im}(fu)$ 分解。
+
+\VerdierSemanticAnchor{ch3-3-2-5-cokernel-setup}
+现证 $\alpha$ 在 $\mathcal D^\wedge$ 中的余核是 $\mathcal D^\wedge$ 的可容许对象。
+设 $(X,Y',Z',g'f,u',v')$ 为 $\mathcal D$ 中的特异三角。图式
+\[
+\begin{tikzcd}[column sep=5em,row sep=2em]
+h(X)\arrow[r,"h(f)"]\arrow[d,"h(g)"']&h(Y)\arrow[d,"h(g')"]\\
+h(X')\arrow[r,"h(f')"]\arrow[d,"\operatorname{id}_{h(X')}"']&h(Y')\arrow[d,"h(u')"]\\
+h(X')\arrow[r,"h(u'f')"']&h(Z')
+\end{tikzcd}
+\]
+\endgroup

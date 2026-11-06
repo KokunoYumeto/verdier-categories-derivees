@@ -1,0 +1,98 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0208}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3}
+\section*{3. \texorpdfstring{$\operatorname{Ext}$}{Ext} 的研究。}
+
+\VerdierSemanticAnchor{ch3d-3-preamble}
+\noindent\textit{在本节中，$\mathcal A$ 表示一个阿贝尔范畴。}
+
+\VerdierSemanticAnchor{ch3d-3-1}
+\subsection*{3.1. 不同的等价定义。}
+
+\VerdierSemanticAnchor{ch3d-3-1-1}
+\noindent\textbf{3.1.1.}\quad
+若对 $\mathcal A$ 的每一对对象 $X$ 与 $Y$ 以及每个整数 $p>n$，都有
+$\operatorname{Ext}_{\mathcal A}^{p}(X,Y)=0$（(1.2.5), (1.2.9)），
+则称\emph{$\mathcal A$ 的上同调维数小于或等于 $n$}。
+把使 $\mathcal A$ 的上同调维数小于或等于 $n$ 的最小整数 $n$ 称为
+\emph{$\mathcal A$ 的上同调维数}，并记作
+$\operatorname{dimcoh}(\mathcal A)$。若不存在使 $\mathcal A$ 的
+上同调维数小于或等于 $n$ 的整数 $n$，则称 $\mathcal A$ 的上同调
+维数为无穷，并写作
+$\operatorname{dimcoh}(\mathcal A)=+\infty$。
+
+\VerdierSemanticAnchor{ch3d-3-1-2}
+\noindent\textbf{3.1.2.}\quad
+回忆 (1.1.3)，以 $\operatorname{Qis}^{*}$ 表示
+$K^{*}(\mathcal A)$ 的拟同构所成的集合
+（$*=b,-,+,{}$“空”）。设 $X$ 是 $K^{*}(\mathcal A)$ 的一个对象，
+以 $\operatorname{Qis}^{*}/X$（相应地，
+$X\backslash\operatorname{Qis}^{*}$）表示靶为 $X$（相应地，源为 $X$）
+的拟同构所成的范畴（第二章，2.2.1）。由于
+$\operatorname{Qis}^{*}$ 是态射的一个乘法系，范畴
+$\operatorname{Qis}^{*}/X$（相应地，
+$X\backslash\operatorname{Qis}^{*}$）是左滤过的（相应地，右滤过的）
+（第二章，2.2.1）。范畴 $\operatorname{Qis}^{*}/X$（相应地，
+$X\backslash\operatorname{Qis}^{*}$）有始对象（相应地，终对象）
+$u\colon Y\longrightarrow X$（相应地，$u\colon X\longrightarrow Y$）
+的充分必要条件是：存在 $Q^{*}$-左自由（相应地，右自由）对象 $Y$，
+以及拟同构 $u\colon Y\longrightarrow X$（相应地，
+$u\colon X\longrightarrow Y$）；这由（第二章，2.3.3）立即可见。
+
+\VerdierSemanticAnchor{ch3d-3-1-3}
+\medskip\noindent\textbf{命题 3.1.3.}\quad
+\textit{设 $X$ 与 $Y$ 是 $\mathcal A$ 的两个复形。}
+
+\VerdierSemanticAnchor{ch3d-3-1-3-1}
+\[
+\textit{(1)}\qquad
+\operatorname{Ext}_{\mathcal A}^{0}(X,Y)=
+\varinjlim_{(\operatorname{Qis}/X)^o}
+\operatorname{Hom}_{K(\mathcal A)}(\mathord\cdot,Y).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-1-3-2}
+\[
+\textit{(2)}\qquad
+\operatorname{Ext}_{\mathcal A}^{0}(X,Y)\simeq
+\varinjlim_{Y\backslash\operatorname{Qis}}
+\operatorname{Hom}_{K(\mathcal A)}(X,\mathord\cdot).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-1-3-3}
+\[
+\textit{(3)}\qquad
+\operatorname{Ext}_{\mathcal A}^{0}(X,Y)\simeq
+\varinjlim_{(\operatorname{Qis}/X)^o\times
+  (Y\backslash\operatorname{Qis})}
+\operatorname{Hom}_{K(\mathcal A)}(\mathord\cdot,\mathord\cdot).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-1-3-4}
+\[
+\textit{(4)}\qquad
+\operatorname{Ext}_{\mathcal A}^{n}(X,Y)\simeq
+\operatorname{Ext}_{\mathcal A}^{0}(X[p],Y[n+p]),
+\qquad\textit{对每个整数 $p$。}
+\]
+
+\VerdierSemanticAnchor{ch3d-3-1-3-5}
+\[
+\textit{(5) 对 $K^{-}(\mathcal A)$ 中的每个 $X$，}\qquad
+\operatorname{Ext}_{\mathcal A}^{0}(X,Y)\simeq
+\varinjlim_{(\operatorname{Qis}^{-}/X)^o}
+\operatorname{Hom}_{K(\mathcal A)}(\mathord\cdot,Y).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-1-3-6}
+\[
+\textit{(6) 对 $K^{+}(\mathcal A)$ 中的每个 $Y$，}\qquad
+\operatorname{Ext}_{\mathcal A}^{0}(X,Y)\simeq
+\varinjlim_{Y\backslash\operatorname{Qis}^{+}}
+\operatorname{Hom}_{K(\mathcal A)}(X,\mathord\cdot).
+\]
+\endgroup

@@ -1,0 +1,82 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0117}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-5-combined-diagram}
+It follows that the following diagram is commutative:
+\begin{equation*}
+  \resizebox{0.98\linewidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=2.1em,row sep=3.1em]
+      X\oplus X' \arrow[r,"{u\oplus u'}"] \arrow[d,"{\operatorname{id}}"']
+        \& Y\oplus Y' \arrow[r,"{v\oplus v'}"] \arrow[d,"{\operatorname{id}}"']
+        \& Z\oplus Z' \arrow[r,"{w\oplus w'}"] \arrow[d,"{(f,f')}"']
+        \& (X\oplus X')[1] \arrow[d,"{\operatorname{id}}"] \\
+      X\oplus X' \arrow[r,"{u\oplus u'}"']
+        \& Y\oplus Y' \arrow[r,"m"']
+        \& L \arrow[r,"n"']
+        \& (X\oplus X')[1]
+    \end{tikzcd}$%
+  }\,.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-5-sum-cone-map}
+To prove the corollary, it suffices to show that the morphism
+\[
+  (f,f')\colon Z\oplus Z'\longrightarrow L
+\]
+is an isomorphism. It therefore suffices to show that, for every object $M$,
+the morphism
+
+\VerdierSemanticAnchor{ch2-1-2-5-hom-test}
+\[
+  \operatorname{Hom}_{\mathcal D}\bigl(M,(f,f')\bigr)
+\]
+is an isomorphism of abelian groups; this follows immediately from (1.2.1)
+and the five lemma.
+
+\VerdierSemanticAnchor{ch2-1-2-5-proof-complete}
+
+\VerdierSemanticAnchor{ch2-1-2-6}
+\medskip
+\noindent\textbf{Corollary 1.2.6.}\quad
+Let
+$X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]$
+be a distinguished triangle in $\mathcal D$ such that $w=0$. Then there
+exists a section $s\colon Z\longrightarrow Y$ of the morphism $v$. Every
+section $s\colon Z\longrightarrow Y$ defines an isomorphism
+
+\VerdierSemanticAnchor{ch2-1-2-6-split-isomorphism}
+\[
+  X\oplus Z\xrightarrow[\sim]{(u,s)}Y\,.
+\]
+
+\VerdierSemanticAnchor{ch2-1-2-6-converse}
+Conversely, every triangle of the form
+
+\VerdierSemanticAnchor{ch2-1-2-6-1}
+\begin{equation}
+  X\xrightarrow{\binom{\operatorname{id}}{0}}X\oplus Z
+  \xrightarrow{(0,\operatorname{id})}Z\xrightarrow{0}X[1]
+  \tag{1.2.6.1}
+\end{equation}
+is distinguished.
+
+\VerdierSemanticAnchor{ch2-1-2-6-third-assertion}
+The third assertion follows immediately from TRI, TRII, and (1.2.5).
+
+\VerdierSemanticAnchor{ch2-1-2-6-first-assertion}
+Let us prove the first assertion. It follows from (1.2.1) that, for every
+$W$, the sequence
+
+\VerdierSemanticAnchor{ch2-1-2-6-2}
+\begin{equation}
+  0\longrightarrow\operatorname{Hom}_{\mathcal D}(W,X)
+  \longrightarrow\operatorname{Hom}_{\mathcal D}(W,Y)
+  \longrightarrow\operatorname{Hom}_{\mathcal D}(W,Z)
+  \longrightarrow0
+  \tag{1.2.6.2}
+\end{equation}
+\endgroup

@@ -1,0 +1,80 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0052}%
+\VerdierSemanticAnchor{ch1-1-5-3}
+\noindent\textbf{1.5.3. $n=1$ の場合の存在。}\quad
+次のようにおく：
+
+\VerdierSemanticAnchor{ch1-1-5-3-eq1}
+\begin{equation}
+  \begin{aligned}
+    p(0)&=\text{恒等},\\
+    p(e_1)&=p_1.
+  \end{aligned}
+  \tag{1.5.3.1}
+\end{equation}
+次に
+
+\VerdierSemanticAnchor{ch1-1-5-3-eq2}
+\begin{equation}
+  \begin{aligned}
+    p(-e_1)={}&\alpha(e_1,-e_1)
+      \bigl(T'(-e_1)F*c^{-1}(-e_1,e_1)\bigr)\\
+      &{}\bigl(T'(-e_1)*p^{-1}(e_1)*T(-e_1)\bigr)
+      \bigl(c'(e_1,-e_1)*FT(-e_1)\bigr),
+  \end{aligned}
+  \tag{1.5.3.2}
+\end{equation}
+とおく。すなわち $p(-e_1)$ は、符号
+$\alpha(e_1,-e_1)$ を除けば、次の合成射である：
+
+\VerdierSemanticAnchor{ch1-1-5-3-eq2-composite}
+\begin{center}
+  \resizebox{0.94\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=7.2em,row sep=4.2em]
+      FT(-e_1)
+        \arrow[r,"{c'(e_1,-e_1)*FT(-e_1)}"]
+        \& T'(-e_1)T'(e_1)FT(-e_1)
+        \arrow[d,"{T'(-e_1)*p^{-1}(e_1)*T(-e_1)}"] \\
+      {} \& T'(-e_1)FT(e_1)T(-e_1)
+        \arrow[r,"{T'(-e_1)F*c^{-1}(-e_1,e_1)}"]
+        \& T'(-e_1)F
+    \end{tikzcd}$%
+  }\;.
+\end{center}
+
+\VerdierSemanticAnchor{ch1-1-5-3-recursive-definition}
+同型 $p(qe_1)$ を $|q|$ に関する帰納法で定める。そのため、定めるべき同型
+$p(re_1)$ が現れる (1.4.3.11) 型の図式 $D(q,q')$ を考える：
+
+\VerdierSemanticAnchor{ch1-1-5-3-eq3}
+\begin{center}
+  \resizebox{0.88\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=7.2em,row sep=3.8em]
+      FT((q+q')e_1)
+        \arrow[r,"{p((q+q')e_1)}"]
+        \arrow[d,"{F*c(q'e_1,qe_1)}"']
+        \& T'((q+q')e_1)F
+        \arrow[dd,"{c'(q'e_1,qe_1)*F}"'] \\
+      FT(qe_1)T(q'e_1)
+        \arrow[d,"{p(qe_1)*T(q'e_1)}"']
+        \& {} \\
+      T'(qe_1)FT(q'e_1)
+        \arrow[r,"{T'(qe_1)*p(q'e_1)}"']
+        \& T'(qe_1)T'(q'e_1)F
+    \end{tikzcd}$%
+  }
+  \hfill\textup{(1.5.3.3)}
+\end{center}
+
+\VerdierSemanticAnchor{ch1-1-5-3-recursive-step}
+$|q|<r$ を満たす整数 $q$ について同型 $p(qe_1)$ が定まっているとする。
+このとき、図式 $D(r-1,1)$ を $\alpha(r-1,1)$-可換にする唯一の同型として
+$p(re_1)$ を、図式 $D(-r+1,-1)$ を $\alpha(-r+1,-1)$-可換にする
+唯一の同型として $p(-re_1)$ を定める。こうして同型 $p(qe_1)$ が
+定まったので、次の性質を考えられる：
+
+\VerdierSemanticAnchor{ch1-1-5-3-property}
+\begin{equation}
+  \text{\emph{図式 $D(q,q')$ は $\alpha(q,q')$-可換である。}}
+  \tag{P(q,q')}
+\end{equation}

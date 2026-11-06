@@ -1,0 +1,66 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0155}%
+\begingroup\small
+\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+
+\VerdierSemanticAnchor{ch3-3-2-2-admissible}
+$\mathcal D^\wedge$ 的对象若为两个可表示函子之间某个态射的像，就称为
+\emph{可容许对象}。设
+$\operatorname{Im}\colon\mathcal{F}\ell_1(\mathcal D)\to\mathcal D^\wedge$
+为函子
+\VerdierSemanticAnchor{ch3-3-2-2-1}
+\[
+\operatorname{Im}\bigl(X\xrightarrow fY\bigr)=h(f)\text{ 的像}.
+\tag{3.2.2.1}
+\]
+$\operatorname{Im}$ 是加法函子，并把可忽略态射送到零态射。因此它唯一
+分解为加法函子（仍滥用记号记为）
+\VerdierSemanticAnchor{ch3-3-2-2-2}
+\[
+\operatorname{Im}\colon\mathrm A(\mathcal D)\longrightarrow\mathcal D^\wedge.
+\tag{3.2.2.2}
+\]
+复合函子
+$\operatorname{Im}\circ\mathcal H\colon
+\mathcal D\longrightarrow\mathrm A(\mathcal D)
+\longrightarrow\mathcal D^\wedge$
+就是函子 $h$。$\mathcal D^\wedge$ 的对象同构于
+$\mathrm A(\mathcal D)$ 中某个对象在 $\operatorname{Im}$ 下的像，当且仅当它可容许。
+
+\VerdierSemanticAnchor{ch3-3-2-3}
+\medskip\noindent\textbf{命题 3.2.3.}\quad
+\textit{函子 $\operatorname{Im}\colon\mathrm A(\mathcal D)\to
+\mathcal D^\wedge$ 充分忠实。}
+
+\VerdierSemanticAnchor{ch3-3-2-3-morphism-square}
+设
+\[
+\begin{tikzcd}[column sep=4em,row sep=2.4em]
+X\arrow[r,"f"]\arrow[d,"g"']&Y\arrow[d,"g'"]\\
+X'\arrow[r,"f'"']&Y'
+\end{tikzcd}
+\qquad=(g;g')
+\]
+为 $\mathcal{F}\ell_1(\mathcal D)$ 中的态射，并以
+$\operatorname{Im}((g;g'))$ 表示其像。图式
+\VerdierSemanticAnchor{ch3-3-2-3-canonical-diagram}
+\[
+\begin{tikzcd}[column sep=4em,row sep=2.2em]
+X\arrow[r,"\operatorname{id}_X"]\arrow[d,"\operatorname{id}_X"']&X\arrow[d,"f"]\\
+X\arrow[r,"f"]\arrow[d,"f"']&Y\arrow[d,"\operatorname{id}_Y"]\\
+Y\arrow[r,"\operatorname{id}_Y"']&Y
+\end{tikzcd}
+\]
+经 $\operatorname{Im}$ 给出
+\[
+h(X)\xrightarrow{\operatorname{Im}((\operatorname{id}_X;f))}
+\operatorname{Im}(f)\xrightarrow{\operatorname{Im}((f;\operatorname{id}_Y))}h(Y).
+\]
+\VerdierSemanticAnchor{ch3-3-2-3-1}
+并且
+\[
+\operatorname{Im}((f;\operatorname{id}_Y))\circ
+\operatorname{Im}((\operatorname{id}_X;f))=h(f).
+\tag{3.2.3.1}
+\]
+\endgroup

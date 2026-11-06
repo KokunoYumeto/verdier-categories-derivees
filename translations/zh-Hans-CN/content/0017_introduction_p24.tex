@@ -1,0 +1,85 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0024}
+谱序列的机制往往掩盖了现象本身的简洁性。Künneth 关系的初等例子对此颇有
+代表性。
+
+\VerdierSemanticAnchor{intro-5}
+\noindent\textbf{5.}\quad
+设 $X$ 与 $Y$ 是两个紧空间，$A$ 是有单位元的交换环（为简单起见），
+$F$ 与 $G$ 分别是 $X$ 与 $Y$ 上的 $A$-模层。当 $A$ 是域时，已知外积
+[23] 给出分次向量空间的同构：
+
+\VerdierSemanticAnchor{intro-5-kunneth-field}
+\begin{equation}
+\mathrm H^*(X,F)\otimes_A\mathrm H^*(Y,G)
+\xrightarrow{\sim}
+\mathrm H^*(X\times Y,F\otimes_A G).
+\tag{$\text{Kü}_{\mathrm{coh}}^{1}$}
+\end{equation}
+
+当 $A=\mathbb Z$，并且层 $F$ 或层 $G$ 无挠时，有可分裂正合列：
+
+\VerdierSemanticAnchor{intro-5-kunneth-torsion-free}
+\begin{equation}
+\begin{aligned}
+0 &\longrightarrow
+\bigoplus_{p+q=n}\mathrm H^p(X,F)\otimes_A\mathrm H^q(Y,G)
+\longrightarrow \mathrm H^n(X\times Y,F\otimes_A G) \longrightarrow \\
+&\longrightarrow
+\bigoplus_{p+q=n+1}
+\operatorname{Tor}^{\mathbb Z}\bigl(\mathrm H^p(X,F),\mathrm H^q(Y,G)\bigr)
+\longrightarrow 0.
+\end{aligned}
+\tag{$\text{Kü}_{\mathrm{coh}}^{2}$}
+\end{equation}
+
+当 $A=\mathbb Z$，而不对 $F$ 与 $G$ 作任何假设时，有两族可分裂正合列：
+
+\VerdierSemanticAnchor{intro-5-kunneth-general-split}
+\begin{equation}
+\begin{aligned}
+0 &\longrightarrow
+\bigoplus_{p+q=n}\mathrm H^p(X,F)\otimes_A\mathrm H^q(Y,G)
+\longrightarrow \mathbb H^n \longrightarrow \\
+&\longrightarrow
+\bigoplus_{p+q=n+1}
+\operatorname{Tor}^{\mathbb Z}\bigl(\mathrm H^p(X,F),\mathrm H^q(Y,G)\bigr)
+\longrightarrow 0, \\
+0 &\longrightarrow
+\mathrm H^{n+1}\bigl(X\times Y,\mathcal T\!or^A(F,G)\bigr)
+\longrightarrow \mathbb H^n
+\longrightarrow \mathrm H^n(X\times Y,F\otimes_A G)
+\longrightarrow 0.
+\end{aligned}
+\tag{$\text{Kü}_{\mathrm{coh}}^{3}$}
+\end{equation}
+
+因此，最初的表述 $\text{(Kü)}_{\mathrm{coh}}^{1}$ 变得复杂，但仍可作
+显式计算。当环 $A$ 更复杂时，例如
+$A=\mathbb Z/\ell^r\mathbb Z$，其中 $\ell$ 为素数、$r>1$；这是一个全局
+上同调维数无限的环。传统方法只给出两个具有同一收敛目标的谱序列，其初始
+项为：
+
+\VerdierSemanticAnchor{intro-5-kunneth-spectral-sequences}
+\begin{equation}
+\begin{aligned}
+{}'K_2^{p,q}
+  &=\bigoplus_{r+s=q}
+    \operatorname{Tor}_{-p}^{A}
+    \bigl(\mathrm H^r(X,F),\mathrm H^s(Y,G)\bigr), \\
+{}''K_2^{p,q}
+  &=\mathrm H^p\bigl(X\times Y,\mathcal T\!or_{-q}^{A}(F,G)\bigr).
+\end{aligned}
+\tag{$\text{Kü}_{\mathrm{coh}}^{4}$}
+\end{equation}
+
+然而，这两个谱序列及其收敛目标之间的同构，只是 $A$-模范畴的导出范畴中
+下述关系的推论与不完全表达：
+
+\VerdierSemanticAnchor{intro-5-kunneth-derived}
+\begin{equation}
+\mathrm{RH}(X,F)\overset{\mathrm L}{\otimes}_A\mathrm{RH}(Y,G)
+\xrightarrow{\sim}
+\mathrm{RH}\bigl(X\times Y,F\overset{\mathrm L}{\otimes}_A G\bigr).
+\tag{$\text{Kü}_{\mathrm{Der}}$}
+\end{equation}

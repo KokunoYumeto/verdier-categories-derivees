@@ -1,0 +1,70 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0180}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-1-2-8-duality-cont}
+Henceforth, unless otherwise stated, we identify the categories
+$D(\mathcal A)^o$ and $D(\mathcal A^o)$ by means of the isomorphism $i$.
+Note that this identification identifies $D^b(\mathcal A)^o$ with
+$D^b(\mathcal A^o)$, $D^+(\mathcal A)^o$ with $D^-(\mathcal A^o)$, and
+$D^-(\mathcal A)^o$ with $D^+(\mathcal A^o)$.
+
+\VerdierSemanticAnchor{ch3d-1-2-9}
+\medskip\noindent\textbf{1.2.9.}\quad
+The canonical functor $\mathcal A\longrightarrow K(\mathcal A)$
+(Chap. II, 1.3.3), composed with the functor
+$Q\colon K(\mathcal A)\longrightarrow D(\mathcal A)$, gives a fully
+faithful functor $\mathcal A\longrightarrow D(\mathcal A)$: indeed, let
+$X$ and $Y$ be two objects of $\mathcal A$. A morphism from $X$ to $Y$ in
+$D(\mathcal A)$ is (Chap. II, 2.2.2) the class $\overline D$ of a diagram in
+$K(\mathcal A)$:
+
+\VerdierSemanticAnchor{ch3d-1-2-9-roof}
+\[
+\overline D=X\xleftarrow{\ s\ }Z^\bullet\xrightarrow{\ m\ }Y,
+\]
+where $s$ is a quasi-isomorphism in $K(\mathcal A)$. Consequently,
+$s\colon Z^\bullet\longrightarrow X$ induces an isomorphism
+$H^0(s)\colon H^0(Z^\bullet)\xrightarrow{\sim}H(X)=X$, and one immediately
+checks that $\overline D=Q\bigl(H^0(m)H^0(s)^{-1}\bigr)$. This proves that
+the homomorphism
+\[
+\operatorname{Hom}_{\mathcal A}(X,Y)\longrightarrow
+\operatorname{Hom}_{D(\mathcal A)}(X,Y)
+\]
+is surjective. Let us prove that it is injective. A morphism
+$f\colon X\longrightarrow Y$ in $\mathcal A$ defines the zero morphism in
+$D(\mathcal A)$ if and only if there exists a quasi-isomorphism
+$s\colon Z^\bullet\longrightarrow X$ in $K(\mathcal A)$ such that $fs=0$.
+It follows that $H^0(f)H^0(s)=0$. Since $H^0(s)$ is an isomorphism, it
+follows that $H^0(f)=f=0$.
+
+Note also that the functor $\mathcal A\longrightarrow D(\mathcal A)$ is
+injective on the sets of objects and therefore realizes $\mathcal A$ as a
+full subcategory of $D(\mathcal A)$. Henceforth, the category $\mathcal A$
+will always be regarded as a subcategory of its derived category by means of
+this functor. The canonical cohomological functor
+$D(\mathcal A)\xrightarrow{H}\mathcal A$, restricted to the subcategory
+$\mathcal A$, is the identity functor.
+
+\VerdierSemanticAnchor{ch3d-1-2-10}
+\medskip\noindent\textbf{Proposition 1.2.10.}\quad
+\textit{a) An object $X$ of $D(\mathcal A)$ is isomorphic to an object of
+$\mathcal A$ if and only if $H^i(X)=0$ for every $i\neq0$. It is then
+canonically isomorphic to $H^0(X)$.}
+
+\noindent\textit{b) Let $X$ and $Y$ be two objects of $\mathcal A$. Then}
+\[
+\operatorname{Ext}_{\mathcal A}^{n}(X,Y)=0\quad\text{for }n<0,
+\qquad
+\operatorname{Ext}_{\mathcal A}^{0}(X,Y)
+=\operatorname{Hom}_{\mathcal A}(X,Y).
+\]
+
+\VerdierSemanticAnchor{ch3d-1-2-10-proof}
+Let us prove a). It is clear that $H^i(X)=0$ for $i\neq0$ when $X$ is an
+object of $\mathcal A$. Let $X$ be an object of $D(\mathcal A)$ such that
+$H^i(X)$ vanishes for $i\neq0$.
+\endgroup

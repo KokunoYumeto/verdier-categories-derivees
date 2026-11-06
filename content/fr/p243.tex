@@ -1,0 +1,67 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0243}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-a-bcd}
+\noindent $D^b(\mathcal A)$. Le morphisme $m$ induit un morphisme entre les
+deuxièmes suites spectrales canoniques des foncteurs $F_1$ et $F_2$
+relatives au complexe $X$. Le morphisme induit entre les termes initiaux :
+\[
+m_2^{p,q}(X)\colon F_1^p\bigl(H^q(X)\bigr)
+\longrightarrow F_2^p\bigl(H^q(X)\bigr)
+\]
+est par hypothèse un isomorphisme. De plus, les deux suites spectrales sont
+stationnaires (4.5.3). On en déduit (chap.~II, 4.4.5) que le morphisme $m$
+induit un isomorphisme entre les aboutissements des deux suites spectrales
+et, par suite, que $m(X)$ est un isomorphisme. Les assertions b), c), d) se
+démontrent de manière analogue : il suffit de remarquer que sous les
+hypothèses faites, les deuxièmes suites spectrales canoniques sont
+stationnaires (4.5.3).
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e}
+Démontrons e). Il suffit, d'après c), de montrer que tout objet de
+$\mathcal A$ est un objet de $\operatorname{Is}(m)$. Soient $X$ un objet de
+$\mathcal A$, $p$ un entier, et montrons que le morphisme :
+\[
+m(X[p])\colon F_1^p(X)\longrightarrow F_2^p(X)
+\]
+est un isomorphisme. Les foncteurs $F_1$ et $F_2$ étant stationnaires à
+gauche, il existe un entier $r$ tel que $F_i^q(Y)=0$, pour $i=1,2$, tout
+objet $Y$ de $\mathcal A$ et tout entier $q\geq p+r-1$. La propriété
+$\alpha$) implique que $X$ est quasi-isomorphe à un complexe :
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-complex-w}
+\[
+W^\bullet=
+\cdots\longrightarrow0\longrightarrow Y\longrightarrow L^{-r+1}
+\longrightarrow L^{-r+2}\longrightarrow\cdots\longrightarrow L^{-1}
+\longrightarrow L^0\longrightarrow0\longrightarrow\cdots,
+\]
+où les composants $L^i$, $-r+1\leq i\leq0$, sont des éléments de $M$.
+Désignons par $L^\bullet$ le complexe :
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-complex-l}
+\[
+\cdots\longrightarrow0\longrightarrow L^{-r+1}
+\longrightarrow L^{-r+2}\longrightarrow\cdots\longrightarrow L^{-1}
+\longrightarrow L^0\longrightarrow0\longrightarrow\cdots.
+\]
+On a une suite exacte de complexes :
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-exact-sequence}
+\[
+0\longrightarrow L^\bullet\longrightarrow W^\bullet
+\longrightarrow Y[r]\longrightarrow0,
+\]
+d'où (1.3.2) un triangle distingué de $D^*(\mathcal A)$ :
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-triangle}
+\[
+\begin{tikzcd}[column sep=5.2em,row sep=2.8em]
+{} & Y[r] \arrow[dl] \\
+L^\bullet \arrow[r] & X \arrow[u]
+\end{tikzcd}
+\]
+\endgroup

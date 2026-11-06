@@ -1,0 +1,87 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0112}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-1-3}
+\noindent\textbf{定义 1.1.3.}\quad
+设 $\mathcal D$ 与 $\mathcal D'$ 为两个三角范畴。从 $\mathcal D$ 到
+$\mathcal D'$ 的一个\emph{正合函子}，是一个（不必严格的）$\mathbb Z$-函子
+（第一章，1.2.4）
+$(F,p)\colon\mathcal D\longrightarrow\mathcal D'$，使得对于
+$\mathcal D$ 中的每个特异三角
+
+\VerdierSemanticAnchor{ch2-1-1-3-source-triangle}
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+\]
+三角
+
+\VerdierSemanticAnchor{ch2-1-1-3-image-triangle}
+\[
+  FX\xrightarrow{Fu}FY\xrightarrow{Fv}FZ
+  \xrightarrow{p(X)Fw}(FX)[1]
+\]
+是特异三角 (1.1.4.2)。
+
+\VerdierSemanticAnchor{ch2-1-1-4}
+\medskip
+\noindent\textbf{定义 1.1.4.}\quad
+设 $\mathcal D_i$（$1\leq i\leq n$）与 $\mathcal D$ 共为 $n+1$ 个
+三角范畴。从 $\prod_i\mathcal D_i$ 到 $\mathcal D$ 的一个
+\emph{多正合函子}，是一个扭曲的 $\mathbb Z^n$-函子（第一章，1.4.4）
+$(F,p)\colon\prod_i\mathcal D_i\longrightarrow\mathcal D$，使得对于分别
+属于范畴 $\mathcal D_i$ 的任意一族对象 $X_i$（$i\ne j$），
+$\mathbb Z$-函子
+
+\VerdierSemanticAnchor{ch2-1-1-4-partial-functor}
+\[
+  X\longmapsto F(X_1,\ldots,X,\ldots,X_n)\colon
+  \mathcal D_j\longrightarrow\mathcal D
+\]
+是正合函子。
+
+\VerdierSemanticAnchor{ch2-1-1-4-1}
+\medskip
+\noindent\textbf{1.1.4.1.}\quad
+在定义 (1.1.4) 中，范畴 $\prod_i\mathcal D_i$ 配备其典范
+$\mathbb Z^n$-结构，而群 $\mathbb Z^n$ 通过同态
+
+\VerdierSemanticAnchor{ch2-1-1-4-1-group-action}
+\[
+  \mathbb Z^n\longrightarrow\mathbb Z,
+\]
+即坐标之和，作用在范畴 $\mathcal D$ 上（第一章，1.6.6）。
+
+\VerdierSemanticAnchor{ch2-1-1-4-2}
+\medskip
+\noindent\textbf{1.1.4.2.}\quad
+依照符号规则 I（第一章，1.6.6），除非另有明确说明，多正合函子总是由
+$\mathbb Z^n$ 的典范基 $e_1,\ldots,e_n$ 所对应的 Koszul 余循环扭曲
+（第一章，1.6.4）。
+
+\VerdierSemanticAnchor{ch2-1-1-4-2-trivial-cocycle}
+特别地，这意味着从 $\mathcal D$ 到 $\mathcal D'$ 的正合函子由平凡余循环
+扭曲。
+
+\VerdierSemanticAnchor{ch2-1-1-5}
+\medskip
+\noindent\textbf{定义 1.1.5.}\quad
+设 $\mathcal D$ 为三角范畴，$\mathcal A$ 为阿贝尔范畴。函子
+$H\colon\mathcal D\longrightarrow\mathcal A$ 称为一个
+\emph{上同调函子}，如果对于每个特异三角
+
+\VerdierSemanticAnchor{ch2-1-1-5-source-triangle}
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1],
+\]
+图式
+
+\VerdierSemanticAnchor{ch2-1-1-5-image-sequence}
+\[
+  HX\xrightarrow{Hu}HY\xrightarrow{Hv}HZ\xrightarrow{Hw}H(X[1])
+\]
+是 $\mathcal A$ 中的正合列。
+\endgroup

@@ -1,0 +1,83 @@
+\VerdierPhysicalPageAnchor{0052}%
+\VerdierSemanticAnchor{ch1-1-5-3}
+\noindent\textbf{1.5.3. Existence dans le cas $n=1$.}\quad
+Posons :
+
+\VerdierSemanticAnchor{ch1-1-5-3-eq1}
+\begin{equation}
+  \begin{aligned}
+    p(0)&=\text{identité},\\
+    p(e_1)&=p_1.
+  \end{aligned}
+  \tag{1.5.3.1}
+\end{equation}
+Puis :
+
+\VerdierSemanticAnchor{ch1-1-5-3-eq2}
+\begin{equation}
+  \begin{aligned}
+    p(-e_1)={}&\alpha(e_1,-e_1)
+      \bigl(T'(-e_1)F*c^{-1}(-e_1,e_1)\bigr)\\
+      &{}\bigl(T'(-e_1)*p^{-1}(e_1)*T(-e_1)\bigr)
+      \bigl(c'(e_1,-e_1)*FT(-e_1)\bigr),
+  \end{aligned}
+  \tag{1.5.3.2}
+\end{equation}
+c'est-à-dire que $p(-e_1)$ est, au signe près (ce signe étant
+$\alpha(e_1,-e_1)$), le morphisme composé :
+
+\VerdierSemanticAnchor{ch1-1-5-3-eq2-composite}
+\begin{center}
+  \resizebox{0.94\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=7.2em,row sep=4.2em]
+      FT(-e_1)
+        \arrow[r,"{c'(e_1,-e_1)*FT(-e_1)}"]
+        \& T'(-e_1)T'(e_1)FT(-e_1)
+        \arrow[d,"{T'(-e_1)*p^{-1}(e_1)*T(-e_1)}"] \\
+      {} \& T'(-e_1)FT(e_1)T(-e_1)
+        \arrow[r,"{T'(-e_1)F*c^{-1}(-e_1,e_1)}"]
+        \& T'(-e_1)F
+    \end{tikzcd}$%
+  }\;.
+\end{center}
+
+\VerdierSemanticAnchor{ch1-1-5-3-recursive-definition}
+Nous allons définir les isomorphismes $p(qe_1)$ par récurrence sur
+$|q|$. Pour cela, considérons les diagrammes $D(q,q')$ du type
+(1.4.3.11), où les isomorphismes $p(re_1)$ à définir doivent
+intervenir :
+
+\VerdierSemanticAnchor{ch1-1-5-3-eq3}
+\begin{center}
+  \resizebox{0.88\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=7.2em,row sep=3.8em]
+      FT((q+q')e_1)
+        \arrow[r,"{p((q+q')e_1)}"]
+        \arrow[d,"{F*c(q'e_1,qe_1)}"']
+        \& T'((q+q')e_1)F
+        \arrow[dd,"{c'(q'e_1,qe_1)*F}"'] \\
+      FT(qe_1)T(q'e_1)
+        \arrow[d,"{p(qe_1)*T(q'e_1)}"']
+        \& {} \\
+      T'(qe_1)FT(q'e_1)
+        \arrow[r,"{T'(qe_1)*p(q'e_1)}"']
+        \& T'(qe_1)T'(q'e_1)F
+    \end{tikzcd}$%
+  }
+  \hfill\textup{(1.5.3.3)}
+\end{center}
+
+\VerdierSemanticAnchor{ch1-1-5-3-recursive-step}
+et supposons que les isomorphismes $p(qe_1)$ soient définis pour les
+entiers $q$ tels que $|q|<r$. On définit alors $p(re_1)$ comme étant
+l'unique isomorphisme rendant le diagramme $D(r-1,1)$
+$\alpha(r-1,1)$-commutatif et $p(-re_1)$ comme étant l'unique
+isomorphisme rendant le diagramme $D(-r+1,-1)$
+$\alpha(-r+1,-1)$-commutatif. Les isomorphismes $p(qe_1)$ étant
+maintenant définis, nous pouvons considérer la propriété :
+
+\VerdierSemanticAnchor{ch1-1-5-3-property}
+\begin{equation}
+  \text{\emph{Le diagramme $D(q,q')$ est $\alpha(q,q')$-commutatif.}}
+  \tag{P(q,q')}
+\end{equation}

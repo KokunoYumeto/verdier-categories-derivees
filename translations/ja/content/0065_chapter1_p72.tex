@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0072}%
+\VerdierSemanticAnchor{ch1-2-3-2-proof}
+直接の計算により、族
+$\bigl((p_{i,\varphi}(Y))^\tau,\ \tau\in\mathbb Z[m]\bigr)$
+は $\int_\varphi^\Sigma T_iY$ および
+$T_{\varphi(i)}\int_\varphi^\Sigma Y$ の微分と可換であり、したがって次の射を定める：
+
+\VerdierSemanticAnchor{ch1-2-3-2-eq2}
+\begin{equation}
+  p_{i,\varphi}(Y)\colon
+  \int_\varphi^\Sigma T_iY
+  \longrightarrow
+  T_{\varphi(i)}\int_\varphi^\Sigma Y.
+  \tag{2.3.2.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-3-2-functorial-isomorphism}
+この射は $Y$ に関して関手的な同型であり、したがって関手の同型を得る：
+
+\VerdierSemanticAnchor{ch1-2-3-2-eq3}
+\begin{equation}
+  p_{i,\varphi}\colon
+  \int_\varphi^\Sigma T_i
+  \xrightarrow{\ \sim\ }
+  T_{\varphi(i)}\int_\varphi^\Sigma.
+  \tag{2.3.2.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-3-3}
+\noindent\textbf{命題 2.3.3.}\quad
+\emph{1) 任意の $i,j\in[n]$（$i\ne j$）に対して、図式：}
+
+\VerdierSemanticAnchor{ch1-2-3-3-eq1}
+\begin{equation}
+  \resizebox{0.78\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=4.2em,row sep=4.8em]
+      \displaystyle\int_\varphi^\Sigma T_iT_j
+        \arrow[r,"{p_{i,\varphi}\star T_j}"]
+        \arrow[d,"{p_{j,\varphi}\star T_i}"']
+        \& \displaystyle T_{\varphi(i)}\int_\varphi^\Sigma T_j
+          \arrow[d,"{T_{\varphi(i)}\star p_{j,\varphi}}"] \\
+      \displaystyle T_{\varphi(j)}\int_\varphi^\Sigma T_i
+        \arrow[r,"{T_{\varphi(j)}\star p_{i,\varphi}}"]
+        \& \displaystyle T_{\varphi(i)}T_{\varphi(j)}\int_\varphi^\Sigma
+    \end{tikzcd}$%
+  }
+  \tag{2.3.3.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-3-3-commutation-dichotomy}
+\emph{$\varphi(i)\ne\varphi(j)$ のとき可換であり、
+$\varphi(i)=\varphi(j)$ のとき反可換である。}
+
+\VerdierSemanticAnchor{ch1-2-3-3-composition}
+\emph{2) $\psi\colon[m]\longrightarrow[r]$ を写像とする。図式：}
+
+\VerdierSemanticAnchor{ch1-2-3-3-composition-diagram}
+\begin{equation*}
+  \resizebox{\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=2.8em,row sep=5.0em]
+      \displaystyle\int_\psi^\Sigma\int_\varphi^\Sigma T_i
+        \arrow[rr,"{\int_\psi^\Sigma\star p_{i,\varphi}}"]
+        \arrow[d,equal]
+        \& {}
+        \& \displaystyle\int_\psi^\Sigma T_{\varphi(i)}\int_\varphi^\Sigma
+          \arrow[d,"{p_{\varphi(i),\psi}\star\int_\varphi^\Sigma}"] \\
+      \displaystyle\int_{\psi\varphi}^\Sigma T_i
+        \arrow[r,"{p_{i,\psi\varphi}}"']
+        \& \displaystyle T_{\psi\varphi(i)}\int_{\psi\varphi}^\Sigma
+          \arrow[r,equal]
+        \& \displaystyle T_{\psi\varphi(i)}\int_\psi^\Sigma\int_\varphi^\Sigma
+    \end{tikzcd}$%
+  }
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-2-3-3-canonical-isomorphism-caveat}
+\emph{は可換である。}（厳密を期す読者は、記号「$=$」を標準的同型で置き換えればよい。）
+
+\VerdierSemanticAnchor{ch1-2-3-3-proof}
+証明は直接的であり、読者に委ねる。第一の主張は (2.2.1.2) から従う。

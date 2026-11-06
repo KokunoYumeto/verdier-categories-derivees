@@ -1,0 +1,78 @@
+\VerdierPhysicalPageAnchor{0041}%
+\VerdierSemanticAnchor{ch1-1-3-6-eq2}
+tels que les diagrammes ci-après soient commutatifs :
+
+\begin{equation}
+  \begin{tikzcd}[column sep=7em,row sep=3em]
+    FT(hg) \arrow[r,"m(hg)"] \arrow[d,equal] &
+      T'(hg)F \arrow[d,equal] \\
+    FT(g)T(h) \arrow[d,"m(g)\mathbin{\star}T(h)"'] &
+      T'(g)T'(h)F \\
+    T'(g)FT(h) \arrow[ur,"T'(g)\mathbin{\star}m(h)"'] &
+  \end{tikzcd}
+  \qquad g,h\in G.
+  \tag{1.3.6.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-3-6-remark}
+Il convient de remarquer que, même dans le cas d'opération stricte de
+$G^\circ$ sur les catégories, les foncteurs ne commutent pas
+nécessairement strictement aux opérations de $G^\circ$. Ainsi, lorsque
+$G^\circ$ opère trivialement sur les catégories $\mathcal C$ et
+$\mathcal C'$ (\textit{i.e.} $T(g)=T'(g)=$ identité), un
+$G^\circ$-foncteur n'est alors autre qu'un foncteur muni d'une
+représentation de $G$ dans son groupe des automorphismes. De plus, il est
+facile de voir qu'un $G^\circ$-foncteur n'est pas nécessairement
+isomorphe à un $G^\circ$-foncteur strict. On construit facilement un
+contre-exemple en s'inspirant de [19].
+
+\VerdierSemanticAnchor{ch1-1-3-6-strictify}
+En utilisant les résultats de [\emph{loc. cit.}], on peut d'ailleurs
+montrer que toute $G^\circ$-catégorie est $G^\circ$-équivalente à une
+$G^\circ$-catégorie stricte. On peut aussi par les mêmes méthodes
+préciser ce résultat de la façon suivante. Étant données deux
+$G^\circ$-catégories $(\mathcal C,G^\circ,T,c)$ et
+$(\mathcal C',G^\circ,T',c')$, il existe deux $G^\circ$-catégories
+strictes : $(\widetilde{\mathcal C},G^\circ,\widetilde T)$ et
+$(\widetilde{\mathcal C}',G^\circ,\widetilde T')$ et des
+$G^\circ$-équivalences :
+
+\VerdierSemanticAnchor{ch1-1-3-6-equivalences}
+\[
+  (u,\mu)\colon
+  (\widetilde{\mathcal C},G^\circ,\widetilde T)
+  \longrightarrow
+  (\mathcal C,G^\circ,T,c),
+\]
+\[
+  (v,\nu)\colon
+  (\mathcal C',G^\circ,T',c')
+  \longrightarrow
+  (\widetilde{\mathcal C}',G^\circ,\widetilde T')
+\]
+telles que pour tout foncteur :
+
+\VerdierSemanticAnchor{ch1-1-3-6-functor}
+\[
+  (F,m)\colon
+  (\mathcal C,G^\circ,T,c)
+  \longrightarrow
+  (\mathcal C',G^\circ,T',c'),
+\]
+le foncteur composé :
+
+\VerdierSemanticAnchor{ch1-1-3-6-composite}
+\[
+  (v,\nu)(F,m)(u,\mu)\colon
+  (\widetilde{\mathcal C},G^\circ,\widetilde T)
+  \longrightarrow
+  (\widetilde{\mathcal C}',G^\circ,\widetilde T')
+\]
+soit isomorphe à un foncteur commutant strictement aux opérations de
+$G^\circ$. Nous n'utiliserons pas ce résultat.
+
+\VerdierSemanticAnchor{ch1-1-3-7}
+\noindent\textbf{1.3.7.}\quad
+Nous avons rappelé dans ce numéro l'équivalence de deux langages : le
+langage des catégories graduées et celui des $G^\circ$-catégories. Nous
+emploierons

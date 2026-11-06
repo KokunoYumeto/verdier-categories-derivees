@@ -1,0 +1,80 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0054}%
+\VerdierSemanticAnchor{ch1-1-5-4-eq1-condition}
+当 $\lambda,\mu\in\mathbb Z^{n-1}$ 或
+$\lambda,\mu\in\mathbb Z e_n$ 时，这些图为
+$\alpha(\lambda,\mu)$-交换的。对
+$\sigma\in\mathbb Z^{n-1}$、$\tau\in\mathbb Z e_n$，以
+$Q(\sigma,\tau)$ 表示下述性质：
+
+\VerdierSemanticAnchor{ch1-1-5-4-property-q}
+\begin{quote}
+  \noindent\textup{$(Q(\sigma,\tau))$}\quad
+  \emph{下图为
+  $\alpha(\sigma,\tau)\alpha^{-1}(\tau,\sigma)$-交换的：}
+\end{quote}
+
+\VerdierSemanticAnchor{ch1-1-5-4-eq2}
+\begin{equation}
+  \resizebox{0.98\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=4.5em,row sep=3.2em]
+      FT(\sigma+\tau)
+        \arrow[r,"{F*c(\sigma,\tau)}"]
+        \arrow[d,"{F*c(\tau,\sigma)}"]
+        \& FT(\tau)T(\sigma)
+        \arrow[r,"{p(\tau)*T(\sigma)}"]
+        \& T'(\tau)FT(\sigma)
+        \arrow[d,"{T'(\tau)*p(\sigma)}"'] \\
+      FT(\sigma)T(\tau)
+        \arrow[d,"{p(\sigma)*T(\tau)}"]
+        \& {}
+        \& T'(\tau)T'(\sigma)F
+        \arrow[d,"{c'(\sigma,\tau)^{-1}*F}"'] \\
+      T'(\sigma)FT(\tau)
+        \arrow[r,"{T'(\sigma)*p(\tau)}"']
+        \& T'(\sigma)T'(\tau)F
+        \arrow[r,"{c'(\tau,\sigma)^{-1}*F}"']
+        \& T'(\sigma+\tau)F
+    \end{tikzcd}$%
+  }\;.
+  \tag*{\(\textup{(1.5.4.2)}_{\sigma,\tau}\)}
+\end{equation}
+
+由假设，性质 $Q(e_i,e_n)$、$Q(e_i,0)$（$1\leq i\leq n-1$）
+及 $Q(0,e_n)$ 都成立。此外，利用
+$\alpha(\lambda,\mu)$-交换图
+$\textup{(1.5.4.1)}_{\lambda,\mu}$，容易验证 (1.5.4.3)：
+
+\VerdierSemanticAnchor{ch1-1-5-4-eq3}
+\begin{quote}
+  \noindent\textup{(1.5.4.3)}\quad
+  \emph{若性质 $Q(\sigma,\tau+\tau')$、$Q(\sigma,\tau)$、
+  $Q(\sigma,\tau')$ 中有两个成立，其中
+  $\sigma\in\mathbb Z^{n-1}$，$\tau,\tau'\in\mathbb Z e_n$，
+  则第三个也成立。同样，若性质
+  $Q(\sigma+\sigma',\tau)$、$Q(\sigma,\tau)$、
+  $Q(\sigma',\tau)$ 中有两个成立，其中
+  $\sigma,\sigma'\in\mathbb Z^{n-1}$，$\tau\in\mathbb Z e_n$，
+  则第三个也成立。}
+\end{quote}
+
+\VerdierSemanticAnchor{ch1-1-5-4-q-conclusion}
+由此可知，性质 $Q(\sigma,\tau)$ 对每个
+$\sigma\in\mathbb Z^{n-1}$ 和每个 $\tau\in\mathbb Z e_n$ 都成立。
+
+\VerdierSemanticAnchor{ch1-1-5-4-p-omega}
+对每个 $\omega\in\mathbb Z^n$，写成
+$\omega=\sigma+\tau$，其中 $\sigma\in\mathbb Z^{n-1}$、
+$\tau\in\mathbb Z e_n$；定义同构
+$p(\omega)\colon FT(\omega)\longrightarrow T'(\omega)F$
+为使图 $\textup{(1.5.4.1)}_{\sigma,\tau}$ 成为
+$\alpha(\sigma,\tau)$-交换图的唯一同构。这样，对于任意一对
+$\lambda,\mu\in\mathbb Z^n$，都可以写出图
+$\textup{(1.5.4.1)}_{\lambda,\mu}$，并考察性质：
+
+\VerdierSemanticAnchor{ch1-1-5-4-property-p}
+\begin{quote}
+  \noindent\textup{$(P(\lambda,\mu))$}\quad
+  \emph{图 $\textup{(1.5.4.1)}_{\lambda,\mu}$ 为
+  $\alpha(\lambda,\mu)$-交换的。}
+\end{quote}

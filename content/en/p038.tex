@@ -1,0 +1,108 @@
+\VerdierPhysicalPageAnchor{0038}%
+\VerdierSemanticAnchor{ch1-1-2-4-isomorphisms-cont}
+and isomorphisms
+
+\[
+  m(g)\colon F_eT(g)\longrightarrow T'(g)F_e,
+  \qquad g\in G,
+\]
+such that the diagrams (1.2.3.2) commute.
+
+\VerdierSemanticAnchor{ch1-1-2-4-characterization}
+A $G^\circ$-functor is thus a functor “commuting up to isomorphism
+with the actions of $G^\circ$”. We shall use the notation $(F_e,m)$
+to denote it.
+
+\VerdierSemanticAnchor{ch1-1-2-4-strict}
+When for every $g\in G$ the isomorphisms $m(g)$ are identity
+isomorphisms, which in particular implies that for every $g\in G$ one
+has the equalities $F_eT(g)=T'(g)F_e$, the $G^\circ$-functor is said to
+be \emph{strict}.
+
+\VerdierSemanticAnchor{ch1-1-2-5}
+\noindent\textbf{1.2.5.}\quad
+Let $\mathcal C$, $\mathcal C'$, and $\mathcal C''$ be three graded
+categories, and let
+\[
+  \mathcal C\xrightarrow{F}\mathcal C'
+  \xrightarrow{F'}\mathcal C'',\qquad F''=F'F,
+\]
+be three graded functors. Choose normalized cleavages on $\mathcal C$,
+$\mathcal C'$, and $\mathcal C''$. From the preceding discussion one
+obtains three $G^\circ$-categories
+$(\mathcal C_e,G^\circ,T,c)$,
+$(\mathcal C'_e,G^\circ,T',c')$, and
+$(\mathcal C''_e,G^\circ,T'',c'')$, and three $G^\circ$-functors
+$(F_e,m)$, $(F'_e,m')$, and $(F''_e,m'')$. One immediately checks the
+relations
+
+\VerdierSemanticAnchor{ch1-1-2-5-eq1}
+\begin{equation}
+  \begin{cases}
+    F''_e=F'_eF_e,\\[0.5em]
+    m''(g)=\bigl(m'(g)\star F_e\bigr)
+      \bigl(F'_e\star m(g)\bigr),\qquad g\in G.
+  \end{cases}
+  \tag{1.2.5.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-2-6}
+\noindent\textbf{Definition 1.2.6.}\quad
+Let $(\mathcal C_e,G^\circ,T,c)$,
+$(\mathcal C'_e,G^\circ,T',c')$, and
+$(\mathcal C''_e,G^\circ,T'',c'')$ be three $G^\circ$-categories and
+let
+
+\[
+\begin{tikzcd}[column sep=large]
+(\mathcal C_e,G^\circ,T,c)
+  \arrow[r,"{(F_e,m)}"]
+&
+(\mathcal C'_e,G^\circ,T',c')
+  \arrow[r,"{(F_e^{\prime},m^{\prime})}"]
+&
+(\mathcal C''_e,G^\circ,T'',c'')
+\end{tikzcd}
+\]
+be two $G^\circ$-functors.
+
+\VerdierSemanticAnchor{ch1-1-2-6-composite}
+The equalities (1.2.5.1) define a $G^\circ$-functor called the
+\emph{composite functor} of the $G^\circ$-functors $(F_e,m)$ and
+$(F'_e,m')$.
+
+\VerdierSemanticAnchor{ch1-1-2-7}
+\noindent\textbf{1.2.7.}\quad
+Let $F$ and $F'$ be two graded functors between two $G$-graded
+categories $\mathcal C$ and $\mathcal C'$, and let
+$u\colon F\to F'$ be a morphism of functors of degree $e$. Choose
+normalized cleavages on $\mathcal C$ and $\mathcal C'$. One obtains
+two $G^\circ$-categories $(\mathcal C_e,G^\circ,T,c)$ and
+$(\mathcal C'_e,G^\circ,T',c')$, and two $G^\circ$-functors
+$(F_e,m)$ and $(F'_e,m')$. The morphism $u$ then determines a morphism
+of functors
+
+\VerdierSemanticAnchor{ch1-1-2-7-eq1}
+\begin{equation}
+  u_e\colon F_e\longrightarrow F'_e
+  \tag{1.2.7.1}
+\end{equation}
+such that the following diagram commutes:
+
+\VerdierSemanticAnchor{ch1-1-2-7-eq2}
+\begin{equation}
+\begin{tikzcd}[column sep=huge,row sep=large]
+F_eT(g)
+  \arrow[r,"u_e\star T(g)"]
+  \arrow[d,"m(g)",swap]
+&
+F_e^{\prime}T(g)
+  \arrow[d,"m^{\prime}(g)"]
+\\
+T^{\prime}(g)F_e
+  \arrow[r,"T^{\prime}(g)\star u_e",swap]
+&
+T^{\prime}(g)F_e^{\prime}\mathpunct{.}
+\end{tikzcd}
+\tag{1.2.7.2}
+\end{equation}

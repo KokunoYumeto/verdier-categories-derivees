@@ -1,0 +1,88 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0111}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-1-1-triii-filler}
+\noindent 射 $h\colon Z\longrightarrow Z'$ であって、$(f,g,h)$ が三角の射と
+なるものが存在する。すなわち、次の図式は可換である。
+
+\VerdierSemanticAnchor{ch2-1-1-1-triii-morphism-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=3.6em,row sep=2.8em]
+    X \arrow[r,"u"] \arrow[d,"f"']
+      & Y \arrow[r,"v"] \arrow[d,"g"']
+      & Z \arrow[r,"w"] \arrow[d,"h"']
+      & X[1] \arrow[d,"{f[1]}"] \\
+    X' \arrow[r,"u'"]
+      & Y' \arrow[r,"v'"]
+      & Z' \arrow[r,"w'"]
+      & X'[1] .
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch2-1-1-1-triv}
+\noindent\textbf{TRIV:}
+任意の可換図式
+
+\VerdierSemanticAnchor{ch2-1-1-1-triv-input}
+\begin{center}
+  \begin{tikzcd}[column sep=4.3em,row sep=2.7em]
+    & X_2 \arrow[dr,"u_1"] & \\
+    X_1 \arrow[ur,"u_3"] \arrow[rr,"u_2"] && X_3
+  \end{tikzcd}
+\end{center}
+と任意の三つの完全三角
+
+\VerdierSemanticAnchor{ch2-1-1-1-triv-triangles}
+\[
+  \begin{aligned}
+    X_1 &\xrightarrow{u_3} X_2 \xrightarrow{v_3} Z_3
+        \xrightarrow{w_3} X_1[1],\\
+    X_2 &\xrightarrow{u_1} X_3 \xrightarrow{v_1} Z_1
+        \xrightarrow{w_1} X_2[1],\\
+    X_1 &\xrightarrow{u_2} X_3 \xrightarrow{v_2} Z_2
+        \xrightarrow{w_2} X_1[1],
+  \end{aligned}
+\]
+
+\VerdierSemanticAnchor{ch2-1-1-1-triv-fillers}
+に対して、二つの射
+\[
+  \begin{aligned}
+    m_1 &\colon Z_3\longrightarrow Z_2,\\
+    m_3 &\colon Z_2\longrightarrow Z_1,
+  \end{aligned}
+\]
+
+\VerdierSemanticAnchor{ch2-1-1-1-triv-morphisms}
+であって、$(\operatorname{id}_{X_1},u_1,m_1)$ と
+$(u_3,\operatorname{id}_{X_3},m_3)$ が三角の射となり、さらに三角
+
+\VerdierSemanticAnchor{ch2-1-1-1-triv-distinguished-triangle}
+\[
+  Z_3\xrightarrow{m_1}Z_2\xrightarrow{m_3}Z_1
+  \xrightarrow{v_3[1]w_1}Z_3[1]
+\]
+が完全三角となるものが存在する。
+
+\VerdierSemanticAnchor{ch2-1-1-2}
+\medskip
+\noindent\textbf{注意 1.1.2.}\quad
+$(X,Y,Z,u,v,w)$ を完全三角とする。TRII から、非有界列
+
+\VerdierSemanticAnchor{ch2-1-1-2-translation-sequence}
+\[
+  \cdots\longrightarrow X[n]
+  \xrightarrow{(-1)^n u[n]}Y[n]
+  \xrightarrow{(-1)^n v[n]}Z[n]
+  \xrightarrow{(-1)^n w[n]}X[n+1]
+  \longrightarrow\cdots
+\]
+において、連続する三つの射が完全三角をなすことが分かる。
+
+\VerdierSemanticAnchor{ch2-1-1-2-translation-automorphisms}
+$\mathcal D\colon X\longmapsto X[n]$ の自己同型を\emph{シフト自己同型}と呼ぶ。
+\endgroup

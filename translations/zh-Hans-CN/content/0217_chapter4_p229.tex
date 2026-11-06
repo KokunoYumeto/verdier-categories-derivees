@@ -1,0 +1,79 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0229}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-1-6-cont}
+\noindent 如下定义的 $n$-重复形：
+
+\VerdierSemanticAnchor{ch4d-4-1-6-1}
+\begin{equation}
+({}^{m}\!X(p,q))^\sigma=
+\begin{cases}
+X^\sigma,&-q\leq\sigma_m<-p,\\
+0,&\sigma_m<-q\ \lor\ -p\leq\sigma_m,
+\end{cases},
+\tag{4.1.6.1}
+\end{equation}
+
+\noindent ${}^{m}\!X(p,q)$ 的微分就是 $X$ 的微分，除非所考察微分的源或靶
+是零对象，在这种情形可能例外。
+
+对 $\mathcal{F}\ell_1(\widetilde{\mathbb Z})$ 中满足 $p\leq p'$ 且
+$q\leq q'$ 的任意两个元素 $(p,q)$ 与 $(p',q')$，以
+
+\VerdierSemanticAnchor{ch4d-4-1-6-2}
+\begin{equation}
+f\bigl((p,q),(p',q')\bigr)\colon
+{}^{m}\!X(p,q)\longrightarrow{}^{m}\!X(p',q')
+\tag{4.1.6.2}
+\end{equation}
+
+表示如下 $n$-重复形态射：其分量是恒等态射，除非源或靶是零对象，在这种
+情形可能例外。最后，对
+$\mathcal{F}\ell_2(\widetilde{\mathbb Z})$ 的每个元素 $(p,q,r)$，以
+
+\VerdierSemanticAnchor{ch4d-4-1-6-3}
+\begin{equation}
+g(p,q,r)\colon{}^{m}\!X(q,r)
+\longrightarrow T_m\bigl({}^{m}\!X(p,q)\bigr)
+\tag{4.1.6.3}
+\end{equation}
+
+表示如下态射（$T_m$ 表示沿方向 $m$ 的平移函子（第一章，2.3.1）），其分量为：
+
+\VerdierSemanticAnchor{ch4d-4-1-6-4}
+\begin{equation}
+\left\{
+\begin{aligned}
+g(p,q,r)^\sigma&=0,
+  &&\sigma_m\neq-q-1,\\
+g(p,q,r)^\sigma&=-d_X^{\sigma,m},
+  &&\sigma_m=-q-1.
+\end{aligned}
+\right.
+\tag{4.1.6.4}
+\end{equation}
+
+现在引入新记号。首先，滥用记号，以
+$\int_n\colon\operatorname{comp}^n(\mathcal A)\longrightarrow
+\operatorname{comp}(\mathcal A)$ 表示关联单复形函子的 $\Pi$-扩张或
+$\Sigma$-扩张（前提是 $\mathcal A$ 中存在可数积或可数和（第一章，
+2.2.3））。置
+
+\VerdierSemanticAnchor{ch4d-4-1-6-5}
+\begin{equation}
+\left\{
+\begin{aligned}
+\int_n{}^{m}\!X(p,q)
+  &={}^{m}\!Y(p,q),\\
+\int_n{}^{m}\!X(-\infty,q)
+  &={}^{m}\!Y(-\infty,q)={}^{m}\!Y(q),\\
+\int_n{}^{m}\!X(-\infty,+\infty)=\int_n X
+  &={}^{m}\!Y(-\infty,+\infty)={}^{m}\!Y(+\infty)=Y.
+\end{aligned}
+\right.
+\tag{4.1.6.5}
+\end{equation}
+\endgroup

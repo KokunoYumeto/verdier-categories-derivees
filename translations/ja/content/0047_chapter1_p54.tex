@@ -1,0 +1,79 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0054}%
+\VerdierSemanticAnchor{ch1-1-5-4-eq1-condition}
+は、$\lambda,\mu\in\mathbb Z^{n-1}$ または
+$\lambda,\mu\in\mathbb Z e_n$ のとき $\alpha(\lambda,\mu)$-可換である。
+$\sigma\in\mathbb Z^{n-1}$、$\tau\in\mathbb Z e_n$ に対し、
+$Q(\sigma,\tau)$ で次の性質を表す：
+
+\VerdierSemanticAnchor{ch1-1-5-4-property-q}
+\begin{quote}
+  \noindent\textup{$(Q(\sigma,\tau))$}\quad
+  \emph{次の図式は
+  $\alpha(\sigma,\tau)\alpha^{-1}(\tau,\sigma)$-可換である：}
+\end{quote}
+
+\VerdierSemanticAnchor{ch1-1-5-4-eq2}
+\begin{equation}
+  \resizebox{0.98\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=4.5em,row sep=3.2em]
+      FT(\sigma+\tau)
+        \arrow[r,"{F*c(\sigma,\tau)}"]
+        \arrow[d,"{F*c(\tau,\sigma)}"]
+        \& FT(\tau)T(\sigma)
+        \arrow[r,"{p(\tau)*T(\sigma)}"]
+        \& T'(\tau)FT(\sigma)
+        \arrow[d,"{T'(\tau)*p(\sigma)}"'] \\
+      FT(\sigma)T(\tau)
+        \arrow[d,"{p(\sigma)*T(\tau)}"]
+        \& {}
+        \& T'(\tau)T'(\sigma)F
+        \arrow[d,"{c'(\sigma,\tau)^{-1}*F}"'] \\
+      T'(\sigma)FT(\tau)
+        \arrow[r,"{T'(\sigma)*p(\tau)}"']
+        \& T'(\sigma)T'(\tau)F
+        \arrow[r,"{c'(\tau,\sigma)^{-1}*F}"']
+        \& T'(\sigma+\tau)F
+    \end{tikzcd}$%
+  }\;.
+  \tag*{\(\textup{(1.5.4.2)}_{\sigma,\tau}\)}
+\end{equation}
+
+仮定により、性質 $Q(e_i,e_n)$、$Q(e_i,0)$（$1\leq i\leq n-1$）、
+$Q(0,e_n)$ は成り立つ。さらに
+$\alpha(\lambda,\mu)$-可換図式
+$\textup{(1.5.4.1)}_{\lambda,\mu}$ を用いると、(1.5.4.3) が容易に
+確認できる：
+
+\VerdierSemanticAnchor{ch1-1-5-4-eq3}
+\begin{quote}
+  \noindent\textup{(1.5.4.3)}\quad
+  \emph{$\sigma\in\mathbb Z^{n-1}$、
+  $\tau,\tau'\in\mathbb Z e_n$ とする。性質
+  $Q(\sigma,\tau+\tau')$、$Q(\sigma,\tau)$、$Q(\sigma,\tau')$
+  のうち二つが成り立てば、残る一つも成り立つ。同様に、
+  $\sigma,\sigma'\in\mathbb Z^{n-1}$、$\tau\in\mathbb Z e_n$ とする。
+  性質 $Q(\sigma+\sigma',\tau)$、$Q(\sigma,\tau)$、
+  $Q(\sigma',\tau)$ のうち二つが成り立てば、残る一つも成り立つ。}
+\end{quote}
+
+\VerdierSemanticAnchor{ch1-1-5-4-q-conclusion}
+したがって性質 $Q(\sigma,\tau)$ は、すべての
+$\sigma\in\mathbb Z^{n-1}$ と $\tau\in\mathbb Z e_n$ に対して成り立つ。
+
+\VerdierSemanticAnchor{ch1-1-5-4-p-omega}
+各 $\omega\in\mathbb Z^n$ を
+$\omega=\sigma+\tau$（$\sigma\in\mathbb Z^{n-1}$、
+$\tau\in\mathbb Z e_n$）と書く。同型
+$p(\omega)\colon FT(\omega)\longrightarrow T'(\omega)F$ を、図式
+$\textup{(1.5.4.1)}_{\sigma,\tau}$ を $\alpha(\sigma,\tau)$-可換にする
+唯一の同型として定める。これにより、任意の対
+$\lambda,\mu\in\mathbb Z^n$ について図式
+$\textup{(1.5.4.1)}_{\lambda,\mu}$ を書き、次の性質を考えられる：
+
+\VerdierSemanticAnchor{ch1-1-5-4-property-p}
+\begin{quote}
+  \noindent\textup{$(P(\lambda,\mu))$}\quad
+  \emph{図式 $\textup{(1.5.4.1)}_{\lambda,\mu}$ は
+  $\alpha(\lambda,\mu)$-可換である。}
+\end{quote}

@@ -1,0 +1,77 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0222}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-3-7-cases-cont}
+\noindent$c_3)$ degré de $m=0$, degré de $m'<0$ ;
+
+\noindent$c_4)$ degré de $m$ et $m'=0$ ;
+
+\noindent$c_5)$ degré de $m=1$, degré de $m'<0$ ;
+
+\noindent$c_6)$ degré de $m<0$, degré de $m'=1$ ;
+
+\noindent$c_7)$ degré de $m=1$, degré de $m'=0$ ;
+
+\noindent$c_8)$ degré de $m=0$, degré de $m'=1$ ;
+
+\VerdierSemanticAnchor{ch3d-3-3-7-c8}
+Nous nous bornerons à envisager le cas $c_8)$ ; le cas $c_7)$ se traite de
+la même manière et les cas $c_i)$, $1\leq i\leq 6$, sont triviaux. Soit
+\[
+S=0\longrightarrow X''\longrightarrow Y\longrightarrow X'\longrightarrow0
+\]
+une suite exacte telle que $\delta^1(S)[p]=m'$, et
+$f\colon X\longrightarrow X'$ un morphisme de $\mathcal A$ tel que
+$f[p]=m$. On a alors $F(m)=F^p(f)$, $F(m')=\delta_F^p(S)$ et
+$F(m'')=\delta_F^p(S*f)$ (3.2.9). Or on a un diagramme commutatif :
+
+\VerdierSemanticAnchor{ch3d-3-3-7-c8-extension-square}
+\begin{center}
+\resizebox{0.92\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=2.6em,row sep=2.7em]
+{S*f=0} \arrow[r]
+  \& X'' \arrow[r] \arrow[d,"{\operatorname{id}}"']
+  \& Y' \arrow[r] \arrow[d]
+  \& X \arrow[r] \arrow[d,"f"]
+  \& 0 \\
+{S=0} \arrow[r]
+  \& X'' \arrow[r]
+  \& Y \arrow[r]
+  \& X' \arrow[r]
+  \& 0
+\end{tikzcd}\quad\mathpunct{.}$%
+}
+\end{center}
+D'où un diagramme commutatif (SFL I) :
+
+\VerdierSemanticAnchor{ch3d-3-3-7-c8-sfl-square}
+\begin{center}
+\begin{tikzcd}[column sep=5.5em,row sep=2.8em]
+F^p(X) \arrow[r,"{\delta_F^p(S*f)}"] \arrow[d,"{F^p(f)}"']
+  & F^{p+1}(X'') \arrow[d,"{\operatorname{id}}"] \\
+F^p(X') \arrow[r,"{\delta_F^p(S)}"']
+  & F^{p+1}(X'')
+\end{tikzcd}
+\hspace{1em},
+\end{center}
+c'est-à-dire
+\[
+F(m'')=F(m')F(m).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-3-8}
+\medskip\noindent\textbf{3.3.8. Démonstration de la proposition 3.3.6.}\quad
+Soit $m\colon X[p]\longrightarrow Y[p+n]$, $X$ et $Y$ objets de
+$\mathcal A$, $n>0$, un morphisme de $\mathcal A^{\operatorname{Ext}}$.
+D'après le lemme (3.3.1), il existe $n+1$ objets $X_i[p+i]$,
+$0\leq i\leq n$, $X_0[p]=X[p]$, $X_n[p+n]=Y[p+n]$ et $n$ morphismes :
+
+\VerdierSemanticAnchor{ch3d-3-3-8-factorization}
+\[
+X[p]\xrightarrow{m_1}X_1[p+1]\xrightarrow{m_2}X_2[p+2]
+\xrightarrow{m_3}\cdots\xrightarrow{m_n}Y[p+n]
+\]
+\endgroup

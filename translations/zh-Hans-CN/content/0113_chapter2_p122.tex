@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0122}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-13-countability-hypothesis}
+\textit{如果可数积或可数直和在 $\mathcal D$ 中可表示，则范畴
+$\mathcal D$ 可分解。}
+
+\VerdierSemanticAnchor{ch2-1-2-13-proof-morphism}
+事实上，设 $v\colon W\longrightarrow X$ 满足 $fv=0$。于是有态射范畴中的
+一个态射：
+
+\VerdierSemanticAnchor{ch2-1-2-13-morphism-square}
+\[
+  \begin{tikzcd}[column sep=4em,row sep=2.5em]
+    X \arrow[r,"f"] & Y \\
+    W \arrow[u,"v"] \arrow[r] & 0 \arrow[u]
+  \end{tikzcd}
+  \,.
+\]
+
+\VerdierSemanticAnchor{ch2-1-2-13-1}
+因此，应用函子 $\operatorname{Tr}$，得到交换图：
+\begin{equation}
+  \resizebox{0.82\linewidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=2.05em,row sep=3em]
+      X \arrow[r,"f"]
+        \& Y \arrow[r,"{a(f)}"]
+        \& \tau(f) \arrow[r,"{b(f)}"]
+        \& X[1] \\
+      W \arrow[u,"v"] \arrow[r]
+        \& 0 \arrow[u] \arrow[r]
+        \& \tau(W\longrightarrow 0) \arrow[u,"{\operatorname{Tr}(v,0)}"]
+          \arrow[r,"{b(W\longrightarrow 0)}"']
+        \& W[1] \arrow[u,"{v[1]}"']
+    \end{tikzcd}$%
+  }\,.
+  \tag{1.2.13.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch2-1-2-13-bottom-triangle}
+先注意图 (1.2.13.1) 的下行是特异三角。因此，态射
+$b(W\longrightarrow 0)$ 是同构 (1.2.1)。令：
+
+\VerdierSemanticAnchor{ch2-1-2-13-alpha-definition}
+\[
+  \alpha(v)=\operatorname{Tr}(v,0)[-1]
+  b(W\longrightarrow 0)^{-1}[-1]\,,
+\]
+则下图交换：
+
+\VerdierSemanticAnchor{ch2-1-2-13-alpha-diagram}
+\[
+  \begin{tikzcd}[column sep=3.5em,row sep=2.4em]
+    \tau(f)[-1] \arrow[r,"{b(f)[-1]}"]
+      & X \arrow[r,"f"]
+      & Y \\
+      & W \arrow[ul,"{\alpha(v)}"'] \arrow[u,"v"] \arrow[ur,"0"']
+  \end{tikzcd}
+\]
+立即验证可知，这样定义了一个截面：
+\par
+
+\VerdierSemanticAnchor{ch2-1-2-13-alpha-section}
+\[
+  \alpha\colon \operatorname{Ker}(f)\longrightarrow \tau(f)[-1]
+\]
+\noindent 即由 $\tau(f)[-1]$ 所表示的函子到态射 $f$ 的核函子的典范态射
+$\tau(f)[-1]\longrightarrow\operatorname{Ker}(f)$ 的一个截面。
+
+\VerdierSemanticAnchor{ch2-1-2-13-projector-kernel}
+因此，$f$ 的核函子同构于 $\tau(f)[-1]$ 的某个投影态射的核函子，
+故可表示 (1.2.9)。
+
+\VerdierSemanticAnchor{ch2-1-2-13-proof-complete}
+由 (1.2.9) 可知态射 $f$ 可分解，证明完毕。
+\endgroup

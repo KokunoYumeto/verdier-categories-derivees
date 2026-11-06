@@ -1,0 +1,41 @@
+\newcommand{\VerdierWorkTitle}{Des catégories dérivées des catégories abéliennes}
+\newcommand{\VerdierWorkAuthor}{Jean-Louis Verdier}
+\newcommand{\VerdierWorkEditor}{Georges Maltsiniotis}
+\newcommand{\VerdierPublication}{Astérisque 239 (1996)}
+
+\expandafter\def\csname VerdierLayerLabel-fr-diplomatic\endcsname{Édition diplomatique française}
+\expandafter\def\csname VerdierLayerLabel-fr-corrected\endcsname{Texte français corrigé}
+\expandafter\def\csname VerdierLayerLabel-english\endcsname{Source-aligned English edition}
+\expandafter\def\csname VerdierLayerLabel-bilingual\endcsname{Édition bilingue français--anglais}
+
+\expandafter\def\csname VerdierEditorLabel-french\endcsname{Édition établie par}
+\expandafter\def\csname VerdierEditorLabel-english\endcsname{Edited by}
+
+\expandafter\def\csname VerdierUnfinishedNotice-fr-diplomatic\endcsname{Le corps de la thèse a été laissé inachevé par l'auteur ; aucune lacune n'est silencieusement complétée.}
+\expandafter\def\csname VerdierUnfinishedNotice-fr-corrected\endcsname{Le corps de la thèse a été laissé inachevé par l'auteur ; aucune lacune n'est silencieusement complétée.}
+\expandafter\def\csname VerdierUnfinishedNotice-english\endcsname{The thesis body was left unfinished by the author; no gap is silently completed.}
+\expandafter\def\csname VerdierUnfinishedNotice-bilingual\endcsname{Le corps de la thèse a été laissé inachevé par l'auteur ; aucune lacune n'est silencieusement complétée.\par\medskip The thesis body was left unfinished by the author; no gap is silently completed.}
+
+\newcommand{\VerdierLayerLabel}{%
+  \ifcsname VerdierLayerLabel-\VerdierReaderLayer\endcsname
+    \csname VerdierLayerLabel-\VerdierReaderLayer\endcsname
+  \else
+    \VerdierReaderLayer
+  \fi
+}
+
+\newcommand{\VerdierEditorLabel}{%
+  \ifcsname VerdierEditorLabel-\VerdierReaderLanguage\endcsname
+    \csname VerdierEditorLabel-\VerdierReaderLanguage\endcsname
+  \else
+    Edited by
+  \fi
+}
+
+\newcommand{\VerdierUnfinishedNotice}{%
+  \ifcsname VerdierUnfinishedNotice-\VerdierReaderLayer\endcsname
+    \csname VerdierUnfinishedNotice-\VerdierReaderLayer\endcsname
+  \fi
+}
+
+\endinput

@@ -1,0 +1,97 @@
+\VerdierPhysicalPageAnchor{0062}%
+\VerdierSemanticAnchor{ch1-1-6-4}
+\VerdierSemanticAnchor{ch1-1-6-4-definition}
+\noindent\textbf{Définition 1.6.4.}\quad
+On appelle \emph{cocycle de Koszul relatif à une base ordonnée
+$e_1,\ldots,e_n$ de $\mathbb Z^n$} l'unique cocycle $\alpha$ dans la
+classe de Koszul relative à la base $e_1,\ldots,e_n$ qui vérifie les
+égalités :
+
+\VerdierSemanticAnchor{ch1-1-6-4-eq1}
+\begin{equation}
+  \alpha(\sigma_1,\sigma_2)=1
+  \quad
+  \forall\sigma_1\in\mathbb Z^n(\leq i),\quad
+  \forall\sigma_2\in\mathbb Z^n(\geq i),\quad
+  \forall i\in[1,n].
+  \tag{1.6.4.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-4-coordinate-intro}
+Soient
+$\sigma_1=\sum_{i=1}^{n}p_i e_i$,
+$\sigma_2=\sum_{i=1}^{n}q_i e_i$
+deux éléments de $\mathbb Z^n$ ; on a alors :
+
+\VerdierSemanticAnchor{ch1-1-6-4-eq2}
+\begin{equation}
+  \alpha(\sigma_1,\sigma_2)
+  =(-1)^{\left(\sum_{i<j}q_i p_j\right)}.
+  \tag{1.6.4.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-4-justification}
+Cette définition demande une justification. L'existence d'un cocycle
+dans la classe de Koszul vérifiant (1.6.4.1) est claire : un calcul
+immédiat montre que le cocycle (1.6.4.2) vérifie (1.6.4.1) et qu'il est
+dans la classe de Koszul (1.6.2). Pour vérifier l'unicité, il suffit de
+remarquer que tout cocycle cohomologue au cocycle $\alpha$ est du type :
+
+\VerdierSemanticAnchor{ch1-1-6-4-cohomologous-form}
+\begin{equation*}
+  \alpha_1(\sigma_1,\sigma_2)
+  =\alpha(\sigma_1,\sigma_2)
+   \beta(\sigma_2)\beta(\sigma_1+\sigma_2)^{-1}\beta(\sigma_1)
+\end{equation*}
+et qu'un tel cocycle possède la propriété (1.6.4.1) si et seulement si :
+
+\VerdierSemanticAnchor{ch1-1-6-4-condition}
+\begin{equation*}
+  \beta(\sigma_1+\sigma_2)=\beta(\sigma_1)\beta(\sigma_2)
+  \quad
+  \forall i,\quad
+  \forall\sigma_1\in\mathbb Z^n(\leq i),\quad
+  \forall\sigma_2\in\mathbb Z^n(\geq i).
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-1-6-4-uniqueness}
+On en déduit immédiatement que
+$\beta\colon\mathbb Z^n\longrightarrow\mathbb Z/2\mathbb Z$
+est un homomorphisme de groupes et par suite qu'on a
+$\alpha_1=\alpha$.
+
+\VerdierSemanticAnchor{ch1-1-6-5}
+\VerdierSemanticAnchor{ch1-1-6-5-order-dependence}
+\noindent\textbf{1.6.5.}\quad
+La définition du cocycle de Koszul fait intervenir de façon essentielle
+l'ordre total que l'on met sur la base $e_1,\ldots,e_n$ de
+$\mathbb Z^n$. Désignons par $\leq$ l'ordre naturel de $[1,n]$ et par
+$\leq_s$ un ordre total sur $[1,n]$. Soit $s$ l'unique permutation de
+$[1,n]$ telle que :
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq1}
+\begin{equation}
+  i\leq_s j\quad\Longleftrightarrow\quad s(i)\leq s(j).
+  \tag{1.6.5.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-5-cocycles}
+Soient $\alpha$ et $\alpha_s$ les cocycles de Koszul relatifs
+respectivement aux ordres $\leq$ et $\leq_s$. On a alors :
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq2}
+\VerdierSemanticAnchor{ch1-1-6-5-eq2-natural}
+\VerdierSemanticAnchor{ch1-1-6-5-eq2-coordinates}
+\VerdierSemanticAnchor{ch1-1-6-5-eq2-permuted}
+\begin{equation}
+  \begin{aligned}
+    \alpha(\sigma_1,\sigma_2)
+      &=(-1)^{\left(\sum_{i<j}q_i p_j\right)},\\
+    \sigma_1&=\sum_i p_i e_i,
+      \qquad \sigma_2=\sum_i q_i e_i,\\
+    \alpha_s(\sigma_1,\sigma_2)
+      &=(-1)^{\left(\sum_{s(i)<s(j)}q_i p_j\right)},
+  \end{aligned}
+  \tag{1.6.5.2}
+\end{equation}
+\VerdierSemanticAnchor{ch1-1-6-5-open}

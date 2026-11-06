@@ -1,0 +1,78 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0118}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-6-exactness-complete}
+是正合的。取 $W=Z$ 可见，恒等态射
+$\operatorname{id}_Z\in\operatorname{Hom}_{\mathcal D}(Z,Z)$ 来自某个态射
+$s\colon Z\longrightarrow Y$，因而存在该截面。此截面给出交换图：
+
+\VerdierSemanticAnchor{ch2-1-2-6-section-diagram}
+\begin{equation*}
+  \begin{tikzcd}[column sep=3.5em,row sep=3.0em]
+    X \arrow[r,"{\binom{\operatorname{id}}{0}}"]
+      \arrow[d,"{\operatorname{id}}"']
+      & X\oplus Z \arrow[r,"{(0,\operatorname{id})}"]
+        \arrow[d,"{(u,s)}"]
+      & Z \arrow[d,"{\operatorname{id}}"] \\
+    X \arrow[r,"u"'] & Y \arrow[r,"v"'] & Z
+  \end{tikzcd}\,.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-6-hom-five-lemma}
+应用函子 $\operatorname{Hom}_{\mathcal D}(W,\mathord\cdot)$，列
+(1.2.6.2) 的正合性与五引理推出态射
+
+\VerdierSemanticAnchor{ch2-1-2-6-hom-isomorphism}
+\[
+  \operatorname{Hom}_{\mathcal D}\bigl(W,(u,s)\bigr)\colon
+  \operatorname{Hom}_{\mathcal D}(W,X\oplus Z)
+  \longrightarrow \operatorname{Hom}_{\mathcal D}(W,Y)
+\]
+是同构。\space 因此，态射 $(u,s)$ 是同构。
+
+\VerdierSemanticAnchor{ch2-1-2-7}
+\medskip
+\noindent\textbf{注 1.2.7.}\quad
+推论 (1.2.6) 可用来证明每个正合函子
+$\mathcal D'\xrightarrow{F}\mathcal D$ 都是加性函子。首先，三角
+$0\longrightarrow0\longrightarrow0\longrightarrow0$ 在 $\mathcal D'$ 中
+是特异三角；因此，三角
+
+\VerdierSemanticAnchor{ch2-1-2-7-zero-triangle}
+\[
+  F(0)\xrightarrow{\operatorname{id}_{F(0)}}F(0)
+  \xrightarrow{\operatorname{id}_{F(0)}}F(0)
+  \longrightarrow F(0)[1]
+\]
+在 $\mathcal D$ 中是特异三角。由 (1.2.2) 得 $F(0)=0$。把 $F$
+应用于形如 (1.2.6.1) 的特异三角，再应用 (1.2.6)，便知 $F$ 是
+加性函子。类似论证表明每个上同调函子都是加性函子。
+
+\VerdierSemanticAnchor{ch2-1-2-8}
+\medskip
+\noindent\textbf{定义 1.2.8.}\quad
+加性范畴中态射 $f\colon X\longrightarrow Y$ 的一个\emph{分解}，
+是一个交换图：
+
+\VerdierSemanticAnchor{ch2-1-2-8-decomposition-diagram}
+\begin{equation*}
+  \begin{tikzcd}[ampersand replacement=\&,column sep=5.2em,row sep=3.4em]
+    X \arrow[r,"f"] \arrow[d,"\wr"']
+      \& Y \arrow[d,"\wr"] \\
+    Z\oplus W
+      \arrow[r,"{\left(\begin{smallmatrix}0&\operatorname{id}_W\\0&0\end{smallmatrix}\right)}"]
+      \& W\oplus Z'
+  \end{tikzcd}\,.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-8-decomposable}
+一个态射称为\emph{可分解的}，如果它具有一个分解。
+
+\VerdierSemanticAnchor{ch2-1-2-8-splitting}
+态射 $f\colon X\longrightarrow Y$ 的一个\emph{分裂}，是满足下列条件的态射
+$g\colon Y\longrightarrow X$：
+\endgroup

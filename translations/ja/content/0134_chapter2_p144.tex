@@ -1,0 +1,73 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0144}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-c-bis-converse}
+\noindent 飽和である。d) の証明により、部分圏
+$Q(Q^{-1}(\mathcal C))$ は厳密充満かつ飽和である。一方、圏
+$Q(Q^{-1}(\mathcal C))$ は $\mathcal C$ の厳密充満閉包である。したがって
+$\mathcal C$ は飽和である。これで主張 c)$^{\mathrm{bis}}$ が示された。
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-d-bis}
+最後の主張を示す。$\mathcal C$ が厳密充満ならば
+$Q(Q^{-1}(\mathcal C))=\mathcal C$ であることは明らかである。
+$\widehat{\mathcal B}$ を含む厳密充満三角圏 $\mathcal A$ をとる。
+$\mathcal A=Q^{-1}(Q(\mathcal A))$ を示せばよい。$\mathcal B$ を
+$\widehat{\mathcal B}$ で置き換えても圏 $\mathcal D/\mathcal B$ は変わらない
+(2.2.11) ので、$\mathcal B$ は飽和で
+$\mathcal B=\widehat{\mathcal B}$ と仮定してよい。包含
+$\mathcal A\subset Q^{-1}(Q(\mathcal A))$ は明らかなので、
+$\mathcal D/\mathcal B$ で $\mathcal A$ の対象と同型になる
+$\mathcal D$ の任意の対象が $\mathcal A$ の対象であることを示せばよい。
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-d-bis-roof-setup}
+$X$ を $\mathcal A$ の対象、$Y$ を $\mathcal D$ の対象とし、同型
+$m\colon Q(X)\xrightarrow{\sim}Q(Y)$ をとる。射 $m$ は
+$m=Q(f)Q(s)^{-1}$ と分解でき、ここで
+$s\in S_{\mathcal D}(\mathcal B)$ (2.2.2)、$Q(f)$ は同型である。
+$\mathcal B$ は飽和なので $f\in S_{\mathcal D}(\mathcal B)$ である
+（(2.1.8) と (2.2.4)）。したがって $\mathcal D$ に次の図式がある：
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-d-bis-roof}
+\begin{center}
+  \begin{tikzcd}[column sep=4.2em,row sep=2.5em,baseline=(current bounding box.center)]
+    & Z \arrow[dl,"s"'] \arrow[dr,"f"] & \\
+    X && Y
+  \end{tikzcd}
+  \qquad $s,f\in S_{\mathcal D}(\mathcal B)$\quad .
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-d-bis-complete}
+$s$ は $S_{\mathcal D}(\mathcal B)$ に属するので、$W$ が $\mathcal B$ の対象である
+完全三角 $(Z,X,W,s,u,v)$ が存在する (2.1.7)。したがって $W$ は
+$\mathcal A$ の対象であり、$\mathcal A$ は厳密充満だから $Z$ も
+$\mathcal A$ の対象である (1.2.4)。同じ議論により $Y$ も
+$\mathcal A$ の対象となり、命題の証明が完了する。
+
+\VerdierSemanticAnchor{ch2-2-3-2}
+\medskip\noindent\textbf{2.3.2.}\quad
+\VerdierSemanticAnchor{ch2-2-3-2-free-object}
+$F\colon C\longrightarrow C'$ を関手、$X$ を $C'$ の対象とする。
+$u\colon F(Y)\longrightarrow X$ が存在し、任意の射
+$F(Z)\xrightarrow{v}X$ に対して下図を可換にする唯一の射
+$w\colon Z\longrightarrow Y$ が存在するとき、$C$ の対象 $Y$ は
+\emph{$X$ 上 $F$-右自由}、または単に\emph{$X$ 上右自由}であるという：
+
+\VerdierSemanticAnchor{ch2-2-3-2-free-object-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=4.7em,row sep=2.7em]
+    F(Y) \arrow[rr,"u"] && X \\
+    & F(Z) \arrow[ul,"{F(w)}"] \arrow[ur,"v"'] &
+  \end{tikzcd}
+  \quad .
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-3-2-freedom-arrow-boundary}
+矢 $u\colon F(Y)\longrightarrow X$ を、組 $(X,Y)$ の（関手 $F$ に関する）
+\emph{自由矢}という。これはまた、ある
+\endgroup

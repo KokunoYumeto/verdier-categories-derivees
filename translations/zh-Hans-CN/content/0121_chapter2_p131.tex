@@ -1,0 +1,98 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0131}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{2pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{2pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-1-5-continuation}
+\noindent 至多有一个与包含函子相容的三角结构。
+
+\VerdierSemanticAnchor{ch2-2-1-5-criterion}
+设 $\mathcal D'$ 为 $\mathcal D$ 中在平移下稳定的满子范畴。要使
+$\mathcal D'$ 具有一个三角结构，并使 $\mathcal D'$ 成为 $\mathcal D$
+的满三角子范畴，充要条件是：对于
+$\mathcal D'$ 的任意一对对象 $X,Y$ 以及任意态射
+$f\colon X\to Y$，存在 $\mathcal D$ 中的特异三角 $(X,Y,Z,f,g,h)$，其中
+$Z$ 是 $\mathcal D'$ 的对象。
+
+\VerdierSemanticAnchor{ch2-2-1-6}
+\medskip
+\noindent\textbf{2.1.6.}\quad
+\VerdierSemanticAnchor{ch2-2-1-6-saturated}
+设 $\mathcal D$ 为三角范畴。$\mathcal D$ 的满三角子范畴 $\mathcal D'$
+称为\emph{饱和的}，如果它具有下列性质：
+
+\VerdierSemanticAnchor{ch2-2-1-6-direct-summand}
+\par\smallskip
+\noindent\makebox[0pt][l]{(2.1.6.1)}%
+\begin{minipage}[t]{\linewidth}
+  \centering\itshape
+  $\mathcal D'$ 的一个对象在 $\mathcal D$ 中的每个直和项\\[-1pt]
+  都同构于 $\mathcal D'$ 的一个对象。
+\end{minipage}
+\par\smallskip
+
+\VerdierSemanticAnchor{ch2-2-1-6-direct-summand-definition}
+\noindent （对象 $Y$ 的一个直和项，是指一个对象 $X$，使得存在对象 $Z$
+与同构 $X\oplus Z\xrightarrow{\sim}Y$）。
+
+\VerdierSemanticAnchor{ch2-2-1-7}
+\medskip
+\noindent\textbf{2.1.7.}\quad
+\VerdierSemanticAnchor{ch2-2-1-7-denominator-set}
+设 $\mathcal D'$ 为三角范畴 $\mathcal D$ 的满三角子范畴。以
+$S(\mathcal D')$ 表示如下定义的 $\mathcal D$ 的态射集：
+
+\VerdierSemanticAnchor{ch2-2-1-7-characterization}
+\par\smallskip
+\noindent\makebox[0pt][l]{(2.1.7.1)}%
+\begin{minipage}[t]{\linewidth}
+  \centering\itshape
+  态射 $f\colon X\to Y$ 属于 $S(\mathcal D')$，当且仅当存在\\[-1pt]
+  $\mathcal D$ 中的特异三角 $(X,Y,Z,f,g,h)$，其中 $Z$ 是 $\mathcal D'$ 的对象。
+\end{minipage}
+\par\smallskip
+
+\VerdierSemanticAnchor{ch2-2-1-8}
+\medskip
+\noindent\textbf{命题 2.1.8.}\quad
+\VerdierSemanticAnchor{ch2-2-1-8-proposition}
+\emph{集合 $S(\mathcal D')$ (2.1.7.1) 是 $\mathcal D$ 的乘法系 (2.1.4)。
+它是饱和的，当且仅当子范畴 $\mathcal D'$ 是饱和的。}
+
+\VerdierSemanticAnchor{ch2-2-1-8-proof-plan}
+由 (2.1.3)，为证明第一个断言，只需证明 $S(\mathcal D')$ 具有性质
+SM1)、SM3)、SM5)、SM6)。下面依次证明 $S(\mathcal D')$ 具有这些性质，
+最后再证明末一个断言。
+
+\VerdierSemanticAnchor{ch2-2-1-9}
+\medskip
+\noindent\textbf{2.1.9.}\quad
+\VerdierSemanticAnchor{ch2-2-1-9-sm1}
+\emph{集合 $S(\mathcal D')$ 具有性质 SM1)。}
+
+\VerdierSemanticAnchor{ch2-2-1-9-identity}
+首先，显然对于 $\mathcal D$ 的每个对象 $X$，态射
+$\operatorname{id}_X$ 属于 $S(\mathcal D')$。这立即由 TRI) 以及
+$\mathcal D'$ 的零对象也是 $\mathcal D$ 的零对象这一事实得到。
+
+\VerdierSemanticAnchor{ch2-2-1-9-composition}
+$S(\mathcal D')$ 对复合封闭这一事实立即由公理 TRIV) 与 (1.2.4) 得到。
+验证留给读者。
+
+\VerdierSemanticAnchor{ch2-2-1-10}
+\medskip
+\noindent\textbf{2.1.10.}\quad
+\VerdierSemanticAnchor{ch2-2-1-10-sm3}
+\emph{集合 $S(\mathcal D')$ 具有性质 SM3)。}
+
+\VerdierSemanticAnchor{ch2-2-1-10-reduction}
+首先只需证明：若有图式 $X\xrightarrow{s}Y\xrightarrow{f}Z$，其中
+$s\in S(\mathcal D')$ 且 $fs=0$，则存在图式
+$Y\xrightarrow{f}Z\xrightarrow{t}W$，其中 $t\in S(\mathcal D')$ 且
+$tf=0$。因为这样一来，取反范畴便得到反向断言，并由此
+
+\VerdierSemanticAnchor{ch2-2-1-10-p132-boundary}
+\endgroup

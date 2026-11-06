@@ -1,0 +1,83 @@
+\VerdierPhysicalPageAnchor{0079}%
+\VerdierSemanticAnchor{ch1-2-5-7-morphisms}
+\noindent\hspace*{2em}--\ Let $X$ and $Y$ be two objects of $K(C)$, and let
+$f,g\colon X\rightrightarrows Y$ be two morphisms of
+$\operatorname{comp}(C)$. The relation ``$f$ and $g$ are homotopic'' is an
+equivalence relation on $\operatorname{Hom}_{\operatorname{comp}(C)}(X,Y)$,
+and $\operatorname{Hom}_{K(C)}(X,Y)$ is defined to be the quotient of
+$\operatorname{Hom}_{\operatorname{comp}(C)}(X,Y)$ by this equivalence
+relation.
+
+\VerdierSemanticAnchor{ch1-2-5-7-composition}
+\noindent\hspace*{2em}--\ It follows immediately from (2.5.5) that the law of
+composition on the morphisms of $\operatorname{comp}(C)$ passes to the
+quotient and defines a law of composition on the morphisms of $K(C)$.
+
+\VerdierSemanticAnchor{ch1-2-5-7-additive-category}
+It follows immediately from (2.5.5) that we have indeed thereby defined a
+category and that this category is additive.
+
+\VerdierSemanticAnchor{ch1-2-5-7-quotient-functor}
+The canonical functor $\operatorname{comp}(C)\xrightarrow{Q}K(C)$, which is
+the identity on objects and associates to every morphism $f$ of
+$\operatorname{comp}(C)$ its equivalence class $\dot f$, is additive.
+
+\VerdierSemanticAnchor{ch1-2-5-7-homotopy-class}
+The morphism $\dot f$ of $K(C)$, the image of the morphism $f$ of
+$\operatorname{comp}(C)$ under the canonical functor, is called the
+\emph{class of $f$ modulo homotopy}.
+
+\VerdierSemanticAnchor{ch1-2-5-7-name}
+The category $K(C)$ is called the \emph{category of complexes of $C$ up to
+homotopy}.
+
+\VerdierSemanticAnchor{ch1-2-5-8}
+\noindent\textbf{2.5.8.}\quad
+The canonical functor $\operatorname{comp}(C)\xrightarrow{Q}K(C)$ has the
+following property: every functor from $K(C)$ to a category $A$ yields, by
+composition with $Q$, a functor from $\operatorname{comp}(C)$ to $A$; whence,
+for every category $A$, a functor:
+
+\VerdierSemanticAnchor{ch1-2-5-8-hom-functor}
+\begin{equation*}
+  \mathcal H\!om(Q,A)\colon
+  \mathcal H\!om(K(C),A)
+  \longrightarrow
+  \mathcal H\!om(\operatorname{comp}(C),A)
+\end{equation*}
+($\mathcal H\!om$ denotes the category of functors).
+
+\VerdierSemanticAnchor{ch1-2-5-8-fully-faithful}
+This functor is fully faithful, injective on objects, and its image is the full
+subcategory of:
+
+\VerdierSemanticAnchor{ch1-2-5-8-essential-image}
+\begin{equation*}
+  \mathcal H\!om(\operatorname{comp}(C),A)
+\end{equation*}
+defined by the functors from $\operatorname{comp}(C)$ to $A$ that send every
+pair of homotopic morphisms of $\operatorname{comp}(C)$ to equal morphisms.
+
+\VerdierSemanticAnchor{ch1-2-5-8-uniqueness}
+The category $K(C)$, equipped with the canonical functor
+$\operatorname{comp}(C)\xrightarrow{Q}K(C)$, is determined up to unique
+isomorphism by this property.
+
+\VerdierSemanticAnchor{ch1-2-5-9}
+\noindent\textbf{2.5.9.}\quad
+It follows immediately from (2.5.5) and (2.5.8) that there exists one and only
+one translation functor on $K(C)$ such that the canonical functor
+
+\VerdierSemanticAnchor{ch1-2-5-9-translation}
+\begin{equation*}
+  \operatorname{comp}(C)\longrightarrow K(C)
+\end{equation*}
+commutes (strictly) with translations.
+
+\VerdierSemanticAnchor{ch1-2-5-9-strict-z-category}
+This translation functor is an automorphism of $K(C)$ and consequently
+defines on $K(C)$ a strict $\mathbb Z$-category structure.
+
+\VerdierSemanticAnchor{ch1-2-5-9-strict-z-functor}
+The canonical functor $\operatorname{comp}(C)\longrightarrow K(C)$ is a
+strict $\mathbb Z$-functor.

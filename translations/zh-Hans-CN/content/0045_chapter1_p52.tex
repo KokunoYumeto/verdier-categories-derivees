@@ -1,0 +1,80 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0052}%
+\VerdierSemanticAnchor{ch1-1-5-3}
+\noindent\textbf{1.5.3. $n=1$ 情形下的存在性。}\quad
+置
+
+\VerdierSemanticAnchor{ch1-1-5-3-eq1}
+\begin{equation}
+  \begin{aligned}
+    p(0)&=\text{恒等},\\
+    p(e_1)&=p_1.
+  \end{aligned}
+  \tag{1.5.3.1}
+\end{equation}
+再置
+
+\VerdierSemanticAnchor{ch1-1-5-3-eq2}
+\begin{equation}
+  \begin{aligned}
+    p(-e_1)={}&\alpha(e_1,-e_1)
+      \bigl(T'(-e_1)F*c^{-1}(-e_1,e_1)\bigr)\\
+      &{}\bigl(T'(-e_1)*p^{-1}(e_1)*T(-e_1)\bigr)
+      \bigl(c'(e_1,-e_1)*FT(-e_1)\bigr),
+  \end{aligned}
+  \tag{1.5.3.2}
+\end{equation}
+也就是说，在相差符号（该符号为 $\alpha(e_1,-e_1)$）的意义下，
+$p(-e_1)$ 是下列复合态射：
+
+\VerdierSemanticAnchor{ch1-1-5-3-eq2-composite}
+\begin{center}
+  \resizebox{0.94\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=7.2em,row sep=4.2em]
+      FT(-e_1)
+        \arrow[r,"{c'(e_1,-e_1)*FT(-e_1)}"]
+        \& T'(-e_1)T'(e_1)FT(-e_1)
+        \arrow[d,"{T'(-e_1)*p^{-1}(e_1)*T(-e_1)}"] \\
+      {} \& T'(-e_1)FT(e_1)T(-e_1)
+        \arrow[r,"{T'(-e_1)F*c^{-1}(-e_1,e_1)}"]
+        \& T'(-e_1)F
+    \end{tikzcd}$%
+  }\;.
+\end{center}
+
+\VerdierSemanticAnchor{ch1-1-5-3-recursive-definition}
+我们将对 $|q|$ 作归纳来定义同构 $p(qe_1)$。为此，考察 (1.4.3.11)
+型的图 $D(q,q')$，其中将出现有待定义的同构 $p(re_1)$：
+
+\VerdierSemanticAnchor{ch1-1-5-3-eq3}
+\begin{center}
+  \resizebox{0.88\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=7.2em,row sep=3.8em]
+      FT((q+q')e_1)
+        \arrow[r,"{p((q+q')e_1)}"]
+        \arrow[d,"{F*c(q'e_1,qe_1)}"']
+        \& T'((q+q')e_1)F
+        \arrow[dd,"{c'(q'e_1,qe_1)*F}"'] \\
+      FT(qe_1)T(q'e_1)
+        \arrow[d,"{p(qe_1)*T(q'e_1)}"']
+        \& {} \\
+      T'(qe_1)FT(q'e_1)
+        \arrow[r,"{T'(qe_1)*p(q'e_1)}"']
+        \& T'(qe_1)T'(q'e_1)F
+    \end{tikzcd}$%
+  }
+  \hfill\textup{(1.5.3.3)}
+\end{center}
+
+\VerdierSemanticAnchor{ch1-1-5-3-recursive-step}
+设对于满足 $|q|<r$ 的整数 $q$，同构 $p(qe_1)$ 已经定义。
+定义 $p(re_1)$ 为使图 $D(r-1,1)$ 成为 $\alpha(r-1,1)$-交换图的唯一同构，
+并定义 $p(-re_1)$ 为使图 $D(-r+1,-1)$ 成为
+$\alpha(-r+1,-1)$-交换图的唯一同构。这样定义了所有同构 $p(qe_1)$ 后，
+可以考察下述性质：
+
+\VerdierSemanticAnchor{ch1-1-5-3-property}
+\begin{equation}
+  \text{\emph{图 $D(q,q')$ 为 $\alpha(q,q')$-交换的。}}
+  \tag{P(q,q')}
+\end{equation}

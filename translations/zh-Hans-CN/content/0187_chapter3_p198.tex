@@ -1,0 +1,70 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0198}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-1-proof-b-conclusion}
+于是 $v$ 是满态射，这证明了性质 $(E_3)$，并完成了命题的证明。
+
+\VerdierSemanticAnchor{ch3d-2-3-2}
+\medskip\noindent\textbf{命题 2.3.2.}
+\textit{设 $M$ 是 $\mathcal A$ 的一个对象集合，满足性质
+$(E_1)$、$(E_2)$ 与 $(E_3)$。设
+$Y\in\operatorname{Ob}\operatorname{comp}(\mathcal A)$ 是一个复形，使得对每个
+整数 $n$ 都有 $H^n(Y)\in M$，并且存在整数 $n_0$，使得对
+$n\geq n_0$ 有 $H^n(Y)=0$。则存在复形
+$X\in\operatorname{Ob}\operatorname{comp}^{-}(\mathcal A)$，其各分量均属于
+$M$，并存在拟同构}
+\[
+\dot u\colon X\longrightarrow Y.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-2-proof}
+首先，由 (1.2.1)，存在复形
+$Y'\in\operatorname{Ob}\operatorname{comp}^{-}(\mathcal A)$ 和拟同构
+$Y'\longrightarrow Y$。因此可归结到 $Y$ 是
+$\operatorname{comp}^{-}(\mathcal A)$ 的对象这一情形。我们将对 $n$ 归纳构造一列态射
+
+\VerdierSemanticAnchor{ch3d-2-3-2-induction}
+\[
+u_n\colon X_n\longrightarrow X_{n-1}
+\]
+使其具有下列性质：
+
+\VerdierSemanticAnchor{ch3d-2-3-2-induction-properties}
+\noindent 1) 对充分小的 $n$，$X_n=Y$ 且 $u_n=\operatorname{id}$。
+
+\noindent 2) 复形 $X_n$ 的次数 $i\geq -n$ 的分量属于 $M$。
+$X_n$ 的次数 $i\geq -n$ 的微分之核与像均属于 $M^\wedge$（2.1.1）。
+
+\noindent 3) 态射 $u_n$ 是拟同构。它同构于态射
+$p((\dot u_n)^{-n},-n)$（2.1.1.3）。
+
+\VerdierSemanticAnchor{ch3d-2-3-2-limits}
+完成这一构造后，只需令 $X=\varprojlim_n X_n$，并取典范态射
+$\dot u$：
+\[
+\dot u\colon X=\varprojlim_n X_n\longrightarrow\varinjlim_n X_n=Y.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-2-induction-step}
+对充分小的 $n$，令 $X_n=Y$ 且 $\dot u_n=\operatorname{id}_Y$。
+假设对每个整数 $n<q$，已经构造了复形 $X_n$ 与具有上述性质 1)、2) 和 3) 的
+态射 $\dot u_n$。复形 $X_{q-1}$ 形如
+
+\VerdierSemanticAnchor{ch3d-2-3-2-xqminus1}
+\[
+X_{q-1}=\cdots\longrightarrow Y^{-q-2}\longrightarrow Y^{-q-1}
+\longrightarrow Z^{-q}\longrightarrow L^{-q+1}\longrightarrow L^{-q+2}
+\longrightarrow\cdots,
+\]
+其中 $Y^i$ 是复形 $Y$ 的分量，而 $L^i$ 属于 $M$。于是有满态射
+
+\VerdierSemanticAnchor{ch3d-2-3-2-quotient}
+\[
+Z^{-q}\longrightarrow
+Z^{-q}/\operatorname{Im}(Y^{-q-1}\longrightarrow Z^{-q})
+\longrightarrow0
+\]
+\endgroup

@@ -1,0 +1,64 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0028}
+\VerdierSemanticAnchor{intro-7-locally-compact-model}
+局部紧空间这一特别简单的情形，为所得定理的表述提供了模型。设 $X$ 与 $Y$
+是两个局部紧空间（例如具有有限上同调维数），$A$ 是（Noether）环，
+$X_A$ 与 $Y_A$ 分别为 $X$ 与 $Y$ 上 $A$-模层的范畴，
+$\mathbf D(X_A)$ 与 $\mathbf D(Y_A)$ 为其导出范畴，并设
+$f\colon X\longrightarrow Y$ 为连续映射。此时可以定义：
+
+\VerdierSemanticAnchor{intro-7-f-shriek}
+\begin{enumerate}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\item 函子
+\[
+f_!\colon X_A\longrightarrow Y_A,
+\]
+即带真支集的直接像，以及相应的全导出函子：
+\VerdierSemanticAnchor{intro-7-rf-shriek}
+\[
+\mathrm Rf_!\colon \mathbf D(X_A)\longrightarrow \mathbf D(Y_A).
+\]
+（当 $f\colon X\longrightarrow Y$ 是真映射时，$f_!$ 就是通常的直接像函子。）
+
+\VerdierSemanticAnchor{intro-7-f-upper-shriek}
+\item 函子
+\[
+f^!\colon \mathbf D^+(Y_A)\longrightarrow \mathbf D^+(X_A)
+\]
+（符号 $+$ 表示只考虑下有界复形）。它的精确定义相当技术性，但性质 c)
+在唯一同构意义下刻画了它。
+
+\VerdierSemanticAnchor{intro-7-duality-adjunction}
+\item 双函子同构：
+\VerdierSemanticAnchor{intro-7-delta-f}
+\[
+\Delta_f(F,G)\colon
+\operatorname{RHom}(\mathrm Rf_!F,G)
+\longrightarrow
+\operatorname{RHom}(F,f^!G)
+\]
+它对 $\mathbf D(X_A)$ 的每个对象 $F$ 以及 $\mathbf D^+(Y_A)$ 的每个
+对象 $G$ 定义（$\operatorname{RHom}$ 表示“同态复形”函子的全导出函子）。
+\end{enumerate}
+
+此时的重要现象如下：
+
+\VerdierSemanticAnchor{intro-7-duality-D1}
+\noindent\textit{D1)} 当 $f$ 变化时，函子 $f^!$ 的构造具有传递性。
+
+\VerdierSemanticAnchor{intro-7-duality-D2}
+\noindent\textit{D2)} 同构 $\Delta_f$ 与映射的复合相容。
+
+\VerdierSemanticAnchor{intro-7-duality-D3}
+\noindent\textit{D3)} 若 $X$ 在 $Y$ 上光滑且相对维数为 $n$，也就是说在
+$X$ 的局部，$X$ 在 $Y$ 上同构于 $Y$ 的某个开子集与拓扑空间
+$\mathbf R^n$ 的乘积（例如 $Y$ 是一点而 $X$ 是拓扑流形），则对于
+$\mathbf D^+(Y_A)$ 的每个对象 $G$，都有典范同构：
+\VerdierSemanticAnchor{intro-7-relative-orientation}
+\[
+f^!(G)\simeq f^*(G)\otimes\omega_{X/Y}[n],
+\]
+其中 $f^*(G)$ 是通常的逆像，$\omega_{X/Y}$ 是秩为 $1$ 的局部自由层，
+即 $X$ 在 $Y$ 上的相对定向层；$\omega_{X/Y}[n]$ 表示把复形
+$\omega_{X/Y}$ 的次数平移 $n$ 个单位所得的复形。

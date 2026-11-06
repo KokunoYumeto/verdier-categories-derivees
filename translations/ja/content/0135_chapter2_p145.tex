@@ -1,0 +1,78 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0145}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-3-2-free-object-continuation}
+\noindent $C$ と $C'$ を要素として含む宇宙をとれば、関手
+$Z\longmapsto\operatorname{Hom}_C(Z,Y)$ と
+$Z\longmapsto\operatorname{Hom}_{C'}(F(Z),X)$ の間に同型が存在するとき
+$Y$ は $X$ 上右自由である、と言い換えられる。
+
+\VerdierSemanticAnchor{ch2-2-3-2-right-left-terminology}
+$C'$ の対象 $X$ が存在して $Y$ が $X$ 上右自由となるとき、$C$ の対象
+$Y$ は\emph{$F$-右自由}であるという。$X$ 上右自由な $C$ の対象 $Y$ が
+存在するとき、$C'$ の対象 $X$ は\emph{$F$-右自由化可能}である
+という。反対圏へ移ることで、\emph{左}自由および左自由化可能な対象も同様に
+定義する。
+
+\VerdierSemanticAnchor{ch2-2-3-3}
+\medskip\begingroup\itshape
+\noindent\textbf{命題 2.3.3.}\quad
+$\mathcal D$ を三角圏、$\mathcal B$ を充満三角部分圏、
+$Q\colon\mathcal D\longrightarrow\mathcal D/\mathcal B$ を商関手
+(2.2.10)、$S_{\mathcal D}(\mathcal B)$ を $\mathcal B$ に対応する
+$\mathcal D$ の乗法的系 (2.1.8) とする。
+
+\VerdierSemanticAnchor{ch2-2-3-3-a}
+\par\noindent a) $\mathcal D$ の任意の対象 $Y$ に対し、次の条件は同値である：
+\VerdierSemanticAnchor{ch2-2-3-3-a-i}
+\par\noindent\hspace{1.2em}i) 対象 $Y$ は $Q$-右自由である。
+\VerdierSemanticAnchor{ch2-2-3-3-a-ii}
+\par\noindent\hspace{1.2em}ii) 任意の射
+$s\in S_{\mathcal D}(\mathcal B)$、$s\colon S\longrightarrow T$ に対し、写像
+\[
+  \operatorname{Hom}_{\mathcal D}(s,Y)\colon
+  \operatorname{Hom}_{\mathcal D}(T,Y)\longrightarrow
+  \operatorname{Hom}_{\mathcal D}(S,Y)
+\]
+は全単射である。
+\VerdierSemanticAnchor{ch2-2-3-3-a-iii}
+\par\noindent\hspace{1.2em}iii) $\mathcal B$ の任意の対象 $B$ に対し、
+$\operatorname{Hom}_{\mathcal D}(B,Y)=0$。
+\VerdierSemanticAnchor{ch2-2-3-3-a-iv}
+\par\noindent\hspace{1.2em}iv) $s\in S_{\mathcal D}(\mathcal B)$ である
+任意の射 $Y\xrightarrow{s}Z$ はレトラクションをもつ。
+\VerdierSemanticAnchor{ch2-2-3-3-a-v}
+\par\noindent\hspace{1.2em}v) $\mathcal D$ の任意の対象 $X$ に対し、写像
+\[
+  \operatorname{Hom}_{\mathcal D}(X,Y)\longrightarrow
+  \operatorname{Hom}_{\mathcal D/\mathcal B}(Q(X),Q(Y))
+\]
+は全単射である。
+
+\VerdierSemanticAnchor{ch2-2-3-3-b}
+\par\noindent b) $L_R(Q)$ を $Q$-右自由な対象で定まる $\mathcal D$ の充満
+部分圏とする。圏 $L_R(Q)$ は三角圏であり、厳密充満かつ飽和である。
+\VerdierSemanticAnchor{ch2-2-3-3-c}
+\par\noindent c) 商関手の $L_R(Q)$ への制限
+\[
+  Q|_{L_R(Q)}\colon L_R(Q)\longrightarrow\mathcal D/\mathcal B
+  ,
+\]
+は充満忠実で、対象上単射である。
+\VerdierSemanticAnchor{ch2-2-3-3-d}
+\par\noindent d) $\operatorname{Lib}_R(Q)\subset\mathcal D/\mathcal B$ を
+$\mathcal D/\mathcal B$ の $Q$-右自由化可能な対象で定まる充満部分圏とする。
+$\operatorname{Lib}_R(Q)$ は厳密充満三角部分圏である。可算積または可算直和が
+$\mathcal D$ で表現可能ならば、$\operatorname{Lib}_R(Q)$ は飽和である。
+\VerdierSemanticAnchor{ch2-2-3-3-e}
+\par\noindent e) 関手 $Q$ は $L_R(Q)$ を $\operatorname{Lib}_R(Q)$ に送る。
+$\operatorname{Lib}_R(Q)$ は $L_R(Q)$ の像の厳密充満閉包である。自由矢は
+同型である。
+\endgroup
+\endgroup

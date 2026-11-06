@@ -1,0 +1,85 @@
+\VerdierPhysicalPageAnchor{0042}%
+\VerdierSemanticAnchor{ch1-1-3-7-cont}
+exclusivement dans ce travail le langage des $G^\circ$-catégories.
+Cependant, nous n'oublierons pas totalement le point de vue
+\textquotedblleft catégories graduées\textquotedblright\ en utilisant
+la terminologie suivante :
+
+\VerdierSemanticAnchor{ch1-1-3-8}
+\noindent\textbf{Définition 1.3.8.}\quad
+Soient $G$ un groupe et $(\mathcal C,G^\circ,T,c)$ une
+$G^\circ$-catégorie. Soient $g$ et $h$ deux éléments de $G$ et $X$ et
+$Y$ deux objets de $\mathcal C$. Un morphisme de $\mathcal C$ :
+
+\VerdierSemanticAnchor{ch1-1-3-8-morphism}
+\[
+  u\colon T(h)X\longrightarrow T(gh)Y
+\]
+sera appelé \emph{un morphisme de degré $g$ de $X$ dans $Y$}.
+
+Montrons que cette terminologie n'apporte pas de confusion. En effet,
+pour tout couple $h,h'$ d'éléments de $G$, le foncteur
+$T(h^{-1}h')$ et les isomorphismes $c(h,h^{-1}h')$ et
+$c(gh,h^{-1}h')$ définissent un isomorphisme bifonctoriel :
+
+\VerdierSemanticAnchor{ch1-1-3-8-eq1}
+\begin{equation}
+  i_g(h,h')\colon
+  \operatorname{Hom}_{\mathcal C}\bigl(T(h)X,T(gh)Y\bigr)
+  \overset{\sim}{\longrightarrow}
+  \operatorname{Hom}_{\mathcal C}\bigl(T(h')X,T(gh')Y\bigr).
+  \tag{1.3.8.1}
+\end{equation}
+
+Et les identités de cocycle (1.2.1.3) montrent qu'on a la relation :
+
+\VerdierSemanticAnchor{ch1-1-3-8-eq2}
+\begin{equation}
+  i_g(h,h'')=i_g(h',h'')i_g(h,h'),
+  \tag{1.3.8.2}
+\end{equation}
+pour tout triplet $h,h',h''\in G$. Si donc, on identifie les différents
+ensembles :
+
+\VerdierSemanticAnchor{ch1-1-3-8-identification}
+\[
+  \operatorname{Hom}_{\mathcal C}\bigl(T(h)X,T(gh)Y\bigr)
+\]
+à l'aide des isomorphismes $i_g(h,h')$, la formule (1.3.8.2) montre que
+ces différentes identifications sont compatibles. De plus, pour tout
+quadruplet $g,g',h,h'\in G$ et tout triplet $X,Y,Z$ d'objets de
+$\mathcal C$, le diagramme ci-après (1.3.8.3) est commutatif :
+
+\VerdierSemanticAnchor{ch1-1-3-8-eq3}
+\begin{center}
+  \resizebox{0.92\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=5em,row sep=4em]
+      \operatorname{Hom}_{\mathcal C}\bigl(T(h)X,T(gh)Y\bigr)
+      \times
+      \operatorname{Hom}_{\mathcal C}\bigl(T(gh)Y,T(g'gh)Z\bigr)
+      \arrow[r]
+      \arrow[d,
+        "{i_g(h,h')\times i_{g'}(gh,gh')}"',
+        "\sim"]
+      \&
+      \operatorname{Hom}_{\mathcal C}\bigl(T(h)X,T(g'gh)Z\bigr)
+      \arrow[d,"{i_{g'g}(h,h')}"',"\sim"]
+      \\
+      \operatorname{Hom}_{\mathcal C}\bigl(T(h')X,T(gh')Y\bigr)
+      \times
+      \operatorname{Hom}_{\mathcal C}\bigl(T(gh')Y,T(g'gh')Z\bigr)
+      \arrow[r]
+      \&
+      \operatorname{Hom}_{\mathcal C}\bigl(T(h')X,T(g'gh')Z\bigr)
+    \end{tikzcd}$%
+  }
+  \hfill\textup{(1.3.8.3)}
+\end{center}
+
+\VerdierSemanticAnchor{ch1-1-3-8-composition}
+(les flèches horizontales sont définies par la composition dans
+$\mathcal C$). Le diagramme (1.3.8.3) nous permet donc de définir sans
+ambiguïté, ou plus précisément aux identifications définies par les
+isomorphismes $i_g(h,h')$ près, le composé de deux morphismes de degré
+respectif $g$ et $g'$ et on vérifie immédiatement que cette définition
+de la composition est compatible avec la définition

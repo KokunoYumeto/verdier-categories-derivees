@@ -1,0 +1,59 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0195}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-1-proof-cont}
+où les $X_n$ sont des objets de $\operatorname{comp}^{-}(\mathcal A)$,
+les $u_n$ des morphismes élémentaires de hauteur $-n$ et un diagramme
+commutatif à homotopie près :
+
+\VerdierSemanticAnchor{ch3d-2-3-1-limits-square}
+\begin{center}
+\begin{tikzcd}[column sep=5.5em,row sep=3.0em]
+\displaystyle\varprojlim_n X_n \arrow[r] \arrow[d]
+  & X \arrow[d,"m"] \\
+\displaystyle\varinjlim_n X_n \arrow[r,"\sim"'] & Y
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-2-3-1-normalization}
+Pour démontrer la proposition, on peut donc supposer que
+$X=\varprojlim_n X_n$ et que $X_n=Y$, $u_n=\operatorname{id}$, pour $n$
+assez petit. Nous allons construire par récurrence sur $n$ :
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-data}
+\noindent a) Une suite de morphismes élémentaires :
+\[
+v_n\colon L_n^\bullet\longrightarrow L_{n-1}^\bullet,
+\qquad n\in\mathbf Z,\qquad
+v_n\text{ élémentaire de hauteur }-n.
+\]
+
+\noindent b) Une suite de morphismes :
+\[
+w_n\colon L_n^\bullet\longrightarrow X_n
+\]
+tels que :
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-condition-1}
+\noindent 1) Pour tout $n\in\mathbf Z$ les composants de degré $i$,
+$i\geq -n$, de $L_n^\bullet$ soient des éléments de $M$ et les composants de
+degré $i$, $i<-n$, soient des éléments de $M^\wedge$.
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-square}
+\noindent 2) Les diagrammes ci-après soient commutatifs :
+\begin{center}
+\begin{tikzcd}[column sep=5.0em,row sep=2.8em]
+L_n^\bullet \arrow[r,"w_n"] \arrow[d,"v_n"']
+  & X_n \arrow[d,"u_n"] \\
+L_{n-1}^\bullet \arrow[r,"w_{n-1}"'] & X_{n-1}
+\end{tikzcd}
+\end{center}
+pour tout $n\in\mathbf Z$.
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-condition-3}
+\noindent 3) L'objet $L_n^\bullet$ soit égal à $Y$ et les morphismes $v_n$
+et $w_n$ soient l'identité pour $n$ assez petit.
+\endgroup

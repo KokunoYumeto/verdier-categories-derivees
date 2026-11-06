@@ -1,0 +1,90 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0036}%
+\VerdierSemanticAnchor{ch1-1-1-2-degree-e-morphism-cont}
+であって、通常の両立条件を満たすものにほかならない。
+
+\VerdierSemanticAnchor{ch1-1-1-3}
+\noindent\textbf{定義 1.1.3.}\quad
+$G$-次数付き圏は、そのファイバー圏 $\mathcal C_e$ が加法圏であるとき [20]、
+\emph{加法的}であるという。
+\VerdierSemanticAnchor{ch1-1-1-3-additive-functor}
+加法的な次数付き圏の間の次数付き関手は、ファイバーへの制限が加法的である
+とき\emph{加法的}であるという。
+
+\VerdierSemanticAnchor{ch1-1-1-3-cadd}
+$\mathcal C$ を加法的な $G$-次数付き圏とする。ファイバー構造を忘れた圏
+$\mathcal C$ は、$G\neq\{e\}$ のとき\emph{加法圏ではない}。それでも
+$\mathcal C$ に加法圏を次のように対応させられる。$\mathcal C$ の各対象対
+$X,Y$ と $G$ の各元 $g$ に対し、集合
+$\operatorname{Hom}_{\mathcal C}^{g}(X,Y)$ は自然にアーベル群の構造をもつ。
+$\mathcal C$ の対象を対象とし、二対象 $X,Y$ の間の射集合を次で定める新しい圏
+$\mathcal C_{\mathrm{add}}$ を定義する：
+
+\VerdierSemanticAnchor{ch1-1-1-3-eq1}
+\begingroup
+\makeatletter
+\tagsleft@true
+\let\veqno\@@leqno
+\makeatother
+\begin{equation}
+  \operatorname{Hom}_{\mathcal C_{\mathrm{add}}}(X,Y)
+  =\bigoplus_{g\in G}\operatorname{Hom}_{\mathcal C}^{g}(X,Y).
+  \tag{1.1.3.1}
+\end{equation}
+\endgroup
+
+\VerdierSemanticAnchor{ch1-1-1-3-cadd-composition}
+$\mathcal C_{\mathrm{add}}$ における射の合成は明らかな仕方で定義され、
+$\mathcal C_{\mathrm{add}}$ が加法圏であることが確かめられる。
+\VerdierSemanticAnchor{ch1-1-1-3-fadd}
+同様に、二つの加法的な次数付き圏の間の加法的カルテジアン関手
+$F\colon\mathcal C\to\mathcal C'$ から、同じ方法で加法的関手
+$F_{\mathrm{add}}\colon\mathcal C_{\mathrm{add}}\to
+\mathcal C'_{\mathrm{add}}$ が構成される。この構成は今後用いない。
+
+\VerdierSemanticAnchor{ch1-1-1-3-restrictive}
+ここで採用した次数付き圏の定義は、自然に思い浮かぶ定義よりも制限的である
+ことに注意せよ。明らかな構造 (1.1.2.1), (1.1.2.2) に加えて、性質
+(1.1.2.3) を課している。
+
+\VerdierSemanticAnchor{ch1-1-2}
+\subsection{同型を除いて定まる圏への群作用}
+
+\VerdierSemanticAnchor{ch1-1-2-1}
+\noindent\textbf{1.2.1.}\quad
+$\mathcal C$ を $G$-次数付き圏とする。ファイバー圏
+$\mathcal C\xrightarrow{\deg}\mathcal G$ の正規化された切断系を選ぶ [18]。
+すなわち、各 $g\in G$ に対して基底変換関手を選ぶ：
+
+\VerdierSemanticAnchor{ch1-1-2-1-eq1}
+\begingroup
+\makeatletter
+\tagsleft@true
+\let\veqno\@@leqno
+\makeatother
+\begin{equation}
+  \begin{cases}
+    T(g)\colon\mathcal C_e\longrightarrow\mathcal C_e,\\[0.4em]
+    T(e)=\text{$\mathcal C_e$ 上の恒等関手。}
+  \end{cases}
+  \tag{1.2.1.1}
+\end{equation}
+\endgroup
+
+\VerdierSemanticAnchor{ch1-1-2-1-transition}
+$G$ の元の各対 $(g,h)$ に対し、関手の同型 [18]
+
+\VerdierSemanticAnchor{ch1-1-2-1-eq2}
+\begingroup
+\makeatletter
+\tagsleft@true
+\let\veqno\@@leqno
+\makeatother
+\begin{equation}
+  \begin{cases}
+    c(h,g)\colon T(hg)\longrightarrow T(g)T(h),\\[0.4em]
+    c(g,e)=c(e,g)=\text{$T(g)$ 上の恒等同型}
+  \end{cases}
+  \tag{1.2.1.2}
+\end{equation}
+\endgroup

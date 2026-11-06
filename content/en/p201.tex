@@ -1,0 +1,80 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0201}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-n0-epimorphism}
+where $Z^{-q}$ belongs to $M'$ and the $L^j$, $-q+1\leq j\leq n_0$,
+belong to $M$. Consequently, there is an epimorphism
+\[
+\alpha\colon L^{-q}\longrightarrow Z^{-q},
+\qquad\text{where }L^{-q}\in M.
+\]
+Set
+\[
+X_{n_0,q}=X_{n_0,q-1}(\alpha,-q),
+\qquad
+v_{n_0,q}=p(\alpha,-q)\quad\text{(2.1.1)}.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-n0-completion}
+It is clear from the construction that properties
+$I)_{n_0,q}$ and $III)_{n_0,q}$ hold. Property
+$II)_{n_0,q}$ follows from the fact that the set $M'$ has
+properties $(E_1)$ and $(E_4)$. We may therefore continue the construction
+of the $X_{n_0,i}$. Setting $X_{n_0}=\varprojlim_i X_{n_0,i}$ and taking
+the canonical morphism $u_{n_0}\colon X_{n_0}\longrightarrow Y$, we
+obtain a complex and a morphism having properties $1)_{n_0}$,
+$2)_{n_0}$, $3)_{n_0}$, and $4)_{n_0}$.
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-outer-induction}
+To construct the complexes $X_i$ and the morphisms
+$u_i\colon X_i\longrightarrow X_{i-1}$, we proceed by induction. Suppose
+that, for every integer $i$ with $n_0\leq i<q$, we have constructed
+complexes $X_i$ and morphisms $u_i\colon X_i\longrightarrow X_{i-1}$
+having properties $1)_i$, $2)_i$, $3)_i$, $4)_i$, and $5)_i$,
+$n_0\leq i<q$. We must construct a complex $X_q$ and a morphism
+$u_q\colon X_q\longrightarrow X_{q-1}$ having properties $1)_q$,
+$2)_q$, $3)_q$, $4)_q$, and $5)_q$. First, if $Y^q\in M$, set
+$X_q=X_{q-1}$ and $u_q=\operatorname{id}$. Suppose that $Y^q$ does not
+belong to $M$, i.e.\ that $M\text{-}\dim(Y^q)>0$.
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-q-inner-induction}
+To construct the complex $X_q$ and the morphism
+$u_q\colon X_q\longrightarrow X_{q-1}$, we proceed once more by
+induction. Let $r$ be an integer such that
+\[
+-q<r\leq -q+M\text{-}\dim(Y^q).
+\]
+Suppose that we have determined a sequence of complexes $X_{q,l}$,
+$-q<l<r$, and morphisms
+$v_{q,l}\colon X_{q,l}\longrightarrow X_{q,l-1}$ (we put
+$X_{q,-q}=X_{q-1}$) such that:
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-q-r-conditions}
+\noindent$I')_l$
+$(X_{q,l})^j=(X_{q,l-1})^j$ for every $j\neq-l,-l+1$.
+
+\noindent$II')_l$
+$(X_{q,l})^{-l}\in M'$ and
+$M\text{-}\dim((X_{q,l})^{-l})=M\text{-}\dim(Y^q)-l-q$.
+
+\noindent$III')_l$
+$(X_{q,l})^{-l+1}\in M$.
+
+\noindent$IV')_l$
+$v_{q,l}$ is an elementary morphism of height $-l+1$ and
+$(v_{q,l})^j=\operatorname{id}$ for $j\neq-l,-l+1$.
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-q-rminus1-complex}
+The complex $X_{q,r-1}$ then has the form
+\[
+\cdots\longrightarrow L^{-r}\longrightarrow Z^{-r+1}
+\longrightarrow L^{-r+2}\longrightarrow\cdots\longrightarrow L^q
+\longrightarrow Y^{q+1}\longrightarrow Y^{q+2}\longrightarrow\cdots,
+\]
+where the $L^i$ belong to $M$ and $Z^{-r+1}$ belongs to $M'$ and satisfies
+$M\text{-}\dim(Z^{-r+1})=M\text{-}\dim(Y^q)-r+1-q$. Consequently,
+there is an epimorphism
+\endgroup

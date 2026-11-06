@@ -1,0 +1,82 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0200}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-3-condition-2}
+\noindent\textit{2) $i$ が $+\infty$ に近づくとき、列
+$i\longmapsto i-M\text{-}\dim(Y^i)$ は $+\infty$ に近づく。}
+
+\VerdierSemanticAnchor{ch3d-2-3-3-quasi-isomorphism}
+\textit{このとき、各成分が $M$ に属する複体
+$X\in\operatorname{Ob}\operatorname{comp}(\mathcal A)$ と擬同型}
+\[
+u\colon X\longrightarrow Y.
+\]
+\textit{が存在する。}
+
+\VerdierSemanticAnchor{ch3d-2-3-3-bounded-cases}
+\textit{さらに、$Y$ のすべての成分が有限の $M$-次元をもち、
+$Y\in\operatorname{Ob}(\operatorname{comp}^{b}(\mathcal A))$
+（それぞれ $\operatorname{Ob}(\operatorname{comp}^{+}(\mathcal A))$）ならば、
+$X$ を $\operatorname{comp}^{b}(\mathcal A)$
+（それぞれ $\operatorname{comp}^{+}(\mathcal A)$）の対象にとることができる。}
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof}
+$i>n_0\Rightarrow M\text{-}\dim(Y^i)<+\infty$ となる整数 $n_0$ をとる。
+次のものを構成する：
+
+\VerdierSemanticAnchor{ch3d-2-3-3-induction-data}
+\noindent a) 複体の列 $X_i$、$i\geq n_0$。
+
+\noindent b) 射の列
+$u_i\colon X_i\longrightarrow X_{i-1}$、$i>n_0$、および
+$u_{n_0}\colon X_{n_0}\longrightarrow Y$ で、次を満たすもの：
+
+\VerdierSemanticAnchor{ch3d-2-3-3-properties}
+\noindent $1)_i$ $j\leq i$ ならば $(X_i)^j\in M$。
+
+\noindent $2)_i$ $j>i$ ならば $(X_i)^j=Y^j$。
+
+\noindent $3)_i$ 射 $u_i$ は擬同型である。
+
+\noindent $4)_i$ $j>i$ ならば $(u_i)^j=\operatorname{id}$。
+
+\noindent $5)_i$ $j\leq i-M\text{-}\dim(Y^i)$ ならば
+$(u_i)^j=\operatorname{id}$。この最後の性質は $i>n_0$ の場合にのみ課す。
+
+\VerdierSemanticAnchor{ch3d-2-3-3-projective-limit}
+この構成ができたとする。射影系 $X_i$ は $\operatorname{comp}(\mathcal A)$ において
+射影極限をもつ。実際、任意の固定した次数の成分上に誘導される射影系は定常である。
+これは $i-M\text{-}\dim(Y^i)$ が $i$ とともに $+\infty$ に近づくためである。
+従って、$X=\varprojlim_i X_i$ とおき、$u\colon X\longrightarrow Y$ として
+標準射をとればよい。複体 $X$ の各成分は $M$ に属し、$u$ は擬同型である。
+
+\VerdierSemanticAnchor{ch3d-2-3-3-un0}
+まず、射 $u_{n_0}\colon X_{n_0}\longrightarrow Y$ を構成する。
+帰納法により、$-n_0\leq i<q$ を満たす各整数 $i$ に対して、複体
+$X_{n_0,i}$、$i>-n_0$ に対する射
+$v_{n_0,i}\colon X_{n_0,i}\longrightarrow X_{n_0,i-1}$、および
+$v_{n_0,-n_0}\colon X_{n_0,-n_0}\longrightarrow Y$ が構成され、次を満たすと仮定する：
+
+\VerdierSemanticAnchor{ch3d-2-3-3-inner-properties}
+\noindent $I)_{n_0,i}$ $-i\leq j\leq n_0$ に対して、成分
+$(X_{n_0,i})^j$ は $M$ に属する。
+
+\noindent $II)_{n_0,i}$ すべての整数 $j$ に対して、成分
+$(X_{n_0,i})^j$ は $M'$ に属する。
+
+\noindent $III)_{n_0,i}$ 射 $v_{n_0,i}$ は高さ $-i$ の初等射である（2.1.3）。
+
+\VerdierSemanticAnchor{ch3d-2-3-3-xn0qminus1-shape}
+複体 $X_{n_0,q-1}$ は次の形をする：
+\[
+\resizebox{\textwidth}{!}{$\displaystyle
+\cdots\longrightarrow Y^{-q-1}\longrightarrow Z^{-q}
+\longrightarrow L^{-q+1}\longrightarrow L^{-q+2}\longrightarrow\cdots
+\longrightarrow L^{n_0-1}\longrightarrow L^{n_0}
+\longrightarrow Y^{n_0+1}\longrightarrow Y^{n_0+2}\longrightarrow\cdots,
+$}
+\]
+\endgroup

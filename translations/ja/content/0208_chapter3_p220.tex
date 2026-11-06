@@ -1,0 +1,73 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0220}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-3-4-b}
+\noindent\textit{b) 圏 $\mathcal C$ が加法圏であるとき、
+$\mathcal A^{\operatorname{Ext}}$ から $\mathcal C$ への関手が前加法的で
+あるための必要十分条件は、付随する連結関手列の各関手が加法的であること
+である。}
+
+\VerdierSemanticAnchor{ch3d-3-3-4-proof}
+$\Phi$ が本質的全射であることだけを示す。まず、必要ならばここに現れる
+圏を圏同値な圏に置き換えることにより、圏 $\mathcal A$ がただ一つの零対象
+をもつと仮定できる。このとき圏 $\mathcal A^{\operatorname{Ext}}$ もただ
+一つの零対象しかもたないことが直ちに確かめられる。
+$(F^n,\delta_F^n)$ を連結関手列とする。各整数 $n$ に対し、性質 SFL II)
+は同型 $F^n(0)\longrightarrow F^{n+1}(0)$ を定める。したがって、必要なら
+$(F^n,\delta_F^n)$ を同型な列で置き換えることにより、各 $n$ に対して
+$F^n(0)=F^{n+1}(0)$ かつ $\delta_F^n(0)=\operatorname{id}$ と仮定できる。
+
+\VerdierSemanticAnchor{ch3d-3-3-4-object-definition}
+任意の非零対象 $W$ は、圏 $\mathcal A^{\operatorname{Ext}}$ において
+$X[n]$ の形に一意に書ける。ここで $X$ は $\mathcal A$ の対象である。
+そこで各非零対象 $W$ に対し、$\mathcal A^{\operatorname{Ext}}$ において
+$F(W)=F^n(X)$ と置き、さらに $F(0)=F^0(0)$ と置く。こうして
+$\operatorname{Ob}(\mathcal A^{\operatorname{Ext}})$ から
+$\operatorname{Ob}(\mathcal C)$ への写像を定義した。これを関手
+$F\colon\mathcal A^{\operatorname{Ext}}\longrightarrow\mathcal C$ へ延長して、
+連結関手列 $(F^n,\delta_F^n)$ を誘導するようにする。
+$m\colon W\longrightarrow W'$ を $\mathcal A^{\operatorname{Ext}}$ の射と
+する。まず次の場合を考える：
+
+\VerdierSemanticAnchor{ch3d-3-3-4-morphism-cases-zero}
+\noindent 1) $W=W'=0$。$F(m)=\operatorname{id}_{F^0(0)}$ と置く。
+
+\noindent 2) $W=0$ かつ $W'=X[p]$、$X\neq0$。
+$F(m)=F^p(0\longrightarrow X)$ と置く。
+
+\noindent 3) $W=Y[p]$、$Y\neq0$、かつ $W'=0$。
+$F(m)=F^p(Y\longrightarrow0)$ と置く。
+
+\VerdierSemanticAnchor{ch3d-3-3-4-degree}
+次に $W$ と $W'$ がともに零対象でないとする。このとき
+$W=X[p]$、$W'=Y[q]$ の形に一意に書ける。ここで $X$ と $Y$ は
+$\mathcal A$ の対象である。
+整数 $q-p$ を $m$ の\emph{次数}という。
+
+\VerdierSemanticAnchor{ch3d-3-3-4-morphism-cases-degree}
+\noindent 4) $m<0$、すなわちこの射の次数が 0 より小さい場合。
+$F(m)=F^q(0\longrightarrow Y)\,F^p(X\longrightarrow0)$ と置く。
+
+\noindent 5) $m=0$、すなわちこの射の次数が 0 の場合。このとき射 $m$ は $f[p]$ の形に一意に
+書ける。ここで $f$ は $\mathcal A$ の射である。
+$F(m)=F^p(f)$ と置く。
+
+\noindent 6) $m=1$、すなわちこの射の次数が 1 の場合。$\mathcal A$ に完全列
+\[
+S=0\longrightarrow Y\longrightarrow Z\longrightarrow X\longrightarrow0
+\]
+で $m=\delta^1(S)[p]$ (3.3.1) を満たすものが存在する。
+$F(m)=\delta_F^p(S)$ と置く。こうして定義された射 $F(m)$ が選んだ完全列に
+依存しないことは、(3.2.2) と性質 SFL I) から従う。
+
+\VerdierSemanticAnchor{ch3d-3-3-4-fl-le-n}
+$\mathcal{F}\ell_{\leq n}(\mathcal A^{\operatorname{Ext}})$ を、射
+$m\colon W\longrightarrow W'$ で、$W$ または $W'$ が零対象であるか、あるいは
+$m$ の次数が $n$ 以下であるもの全体の集合とする。関手
+$F\colon\mathcal A^{\operatorname{Ext}}\longrightarrow\mathcal C$ が連結関手列
+$(F^n,\delta_F^n)$ を誘導するように存在することは、
+次の補題と命題から従う：
+\endgroup

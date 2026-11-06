@@ -1,0 +1,63 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0240}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-4-5}
+\noindent\textbf{4.4.5.}\quad
+データは (4.4.4) と同じであるが、さらに $D(\mathcal A)$ の対象 $X$ を
+与える。$\bigl(X(p,q),\delta(p,q,r)\bigr)$ を、複体 $X$ に付随する、
+$D(\mathcal A)$ に値をとる第二スペクトル対象とする (4.3.1)。関手 $F$ は
+このスペクトル対象を $\mathcal B$ に値をとるスペクトル対象へ送る。
+これにより、後者が圏 $D(\mathcal A)$ の中を動くとき、$F$ と引数 $X$ に
+関手的なスペクトル系列が得られる (4.3.3)。このスペクトル系列を
+\emph{複体 $X$ に関する関手 $F$ の第二スペクトル系列}という。この
+スペクトル系列には常に（第 II 章、4.3.3.2）で導入した添字付けを用いる。
+
+\VerdierSemanticAnchor{ch4d-4-4-6}
+\medskip\noindent\textbf{命題 4.4.6.}\quad
+
+\VerdierSemanticAnchor{ch4d-4-4-6-a}
+\noindent\textit{a) 複体 $X$ に関する $F$ の第二スペクトル系列の項
+$\mathrm{II}_2^{p,q}$ は次で与えられる：}
+\[
+\mathrm{II}_2^{p,q}=F^p\bigl(H^q(X)\bigr).
+\]
+
+\VerdierSemanticAnchor{ch4d-4-4-6-b}
+\noindent\textit{b) 各項 $\mathrm{II}_{\infty}^{p,q}$ は、適切な
+フィルトレーションを備えた対象 $F^{p+q}(X)$ に付随する次数付き対象である。}
+
+\VerdierSemanticAnchor{ch4d-4-4-6-proof}
+実際、(4.3.4.1) により標準同型
+\[
+X(p,p+1)\xrightarrow{\sim}H^p(X)[-p],
+\]
+がある。したがって（第 II 章、4.3.3.2）を用いると
+\[
+\mathrm{II}_2^{p,q}
+=F^{p+q}\bigl(H^q(X)[-q]\bigr)
+=F^p\bigl(H^q(X)\bigr),
+\]
+となり、a) の（記法を濫用した）等式が得られる。主張 b) は
+（第 II 章、4.3.2）から従う。
+
+\VerdierSemanticAnchor{ch4d-4-5}
+\medskip\noindent\textbf{4.5. 収束の問題。}
+
+\VerdierSemanticAnchor{ch4d-4-5-1}
+\noindent\textbf{定義 4.5.1.}\quad
+$\mathcal A$ と $\mathcal B$ を二つのアーベル圏とする。コホモロジー的関手
+$F\colon D^*(\mathcal A)\longrightarrow\mathcal B$
+（$*=+,-,b,{}$ ``空''）が\emph{右定常}（それぞれ\emph{左定常}）であるとは、
+ある整数 $n_0$ が存在し、$D^*(\mathcal A)$ の各対象 $X$ について、
+すべての $i<0$（それぞれ $>0$）に対し $H^i(X)=0$ ならば、すべての
+$n<n_0$（それぞれ $n>n_0$）に対し $F^n(X)=0$ となることをいう。関手
+$F$ が右定常かつ左定常ならば、\emph{定常}であるという。完全関手
+$G\colon D^*(\mathcal A)\longrightarrow D^{*'}(\mathcal B)$ が
+\emph{右定常}（それぞれ\emph{左定常}、それぞれ\emph{定常}）であるとは、
+関手 $G$ と標準コホモロジー的関手
+$D^{*'}(\mathcal B)\longrightarrow\mathcal B$ の合成として得られる
+コホモロジー的関手が右定常（それぞれ左定常、それぞれ定常）であることをいう。
+\endgroup

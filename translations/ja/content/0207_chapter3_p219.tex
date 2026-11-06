@@ -1,0 +1,70 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0219}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-3-2-sfl-i-induced-square}
+各行が完全であるとき、各整数 $n$ に対して次の可換図式を与える：
+\begin{center}
+\begin{tikzcd}[column sep=5.2em,row sep=3.0em]
+F^n(Z) \arrow[r,"{\delta_F^n(S)}"] \arrow[d,"{F^n(g)}"']
+  & F^{n+1}(X) \arrow[d,"{F^{n+1}(f)}"] \\
+F^n(Z') \arrow[r,"{\delta_F^n(S')}"']
+  & F^{n+1}(X')
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-3-3-2-sfl-ii}
+\noindent\textbf{SFL II)}
+$S=0\longrightarrow0\longrightarrow0\longrightarrow0\longrightarrow0$ のとき、
+射 $\delta_F^n(S)$ は各整数 $n$ に対して同型である。
+
+\VerdierSemanticAnchor{ch3d-3-3-2-msfl}
+次に、$m\colon F\longrightarrow F'$ を関手
+$F,F'\colon\mathcal A^{\operatorname{Ext}}\longrightarrow\mathcal C$ の射と
+する。これから明らかな仕方で関手の射の列
+$m^n\colon F^n\longrightarrow {F'}^n$ が得られる。この射の列は次の性質を
+もつ：
+
+\noindent\textbf{MSFL)} 任意の完全列
+$S=0\longrightarrow X\longrightarrow Y\longrightarrow Z\longrightarrow0$
+と任意の整数 $n$ に対して、次の図式は可換である：
+
+\VerdierSemanticAnchor{ch3d-3-3-2-msfl-square}
+\begin{center}
+\begin{tikzcd}[column sep=5.2em,row sep=3.0em]
+F^n(Z) \arrow[r,"{\delta_F^n(S)}"] \arrow[d,"{m^n(Z)}"']
+  & F^{n+1}(X) \arrow[d,"{m^{n+1}(X)}"] \\
+{F'}^n(Z) \arrow[r,"{\delta_{F'}^n(S)}"']
+  & {F'}^{n+1}(X)
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-3-3-3}
+\medskip\noindent\textbf{定義 3.3.3.}\quad
+関手列 $F^n\colon\mathcal A\longrightarrow\mathcal C$ に対し、任意の完全列
+$S=0\longrightarrow X\longrightarrow Y\longrightarrow Z\longrightarrow0$
+ごとに射 $\delta_F^n(S)\colon F^n(Z)\longrightarrow F^{n+1}(X)$ が与え
+られ、性質 SFL I) と SFL II) を満たすとき、これを\emph{連結関手列}と
+いう。$(F^n,\delta_F^n)$ と $({F'}^n,\delta_{F'}^n)$ を二つの連結関手列
+とする。関手の射の列 $m^n\colon F^n\longrightarrow {F'}^n$ が性質
+MSFL) を満たすとき、これを\emph{連結関手列の射}という。
+
+\VerdierSemanticAnchor{ch3d-3-3-4}
+\medskip\noindent\textbf{命題 3.3.4.}\quad
+\textit{$\mathcal H\!om(\mathcal A^{\operatorname{Ext}},\mathcal C)$ を
+$\mathcal A^{\operatorname{Ext}}$ から $\mathcal C$ への関手の圏とし、
+$\mathcal{SFL}(\mathcal A,\mathcal C)$ を、対象が連結関手列、射が連結
+関手列の射である圏とする。以上の構成は次の関手を定義する：}
+
+\VerdierSemanticAnchor{ch3d-3-3-4-functor}
+\[
+\Phi\colon
+\mathcal H\!om(\mathcal A^{\operatorname{Ext}},\mathcal C)
+\longrightarrow\mathcal{SFL}(\mathcal A,\mathcal C).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-3-4-a}
+\noindent\textit{a) この関手は圏同値である。}
+\endgroup

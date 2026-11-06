@@ -1,0 +1,86 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0245}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-6-3-b}
+\noindent\textit{b)
+$Q\colon K(\mathcal A)\longrightarrow D(\mathcal A)$ を商関手とする。複体
+$I^\bullet$ は $Q$-右自由である（第 II 章、2.3.3）。すなわち任意の複体
+$Y$ に対し、標準射}
+\[
+\operatorname{Hom}_{K(\mathcal A)}(Y,I^\bullet)
+\longrightarrow\operatorname{Hom}_{D(\mathcal A)}(Y,I^\bullet)
+\]
+\textit{は同型である。}
+
+\VerdierSemanticAnchor{ch4d-4-6-3-c}
+\noindent\textit{c)}
+\[
+H^*(I^\bullet)\colon\cdots\longrightarrow H^p(I^\bullet)
+\longrightarrow H^{p+1}(I^\bullet)\longrightarrow\cdots
+\]
+\textit{を、成分が $H^p(I^\bullet)$、$p\in\mathbb Z$ で、微分が零である
+複体とする。コホモロジー対象上で恒等射を誘導する $K(\mathcal A)$ の同型
+$I^\bullet\longrightarrow H^*(I^\bullet)$ が一意に存在する。}
+
+\VerdierSemanticAnchor{ch4d-4-6-3-d}
+\noindent\textit{d) 標準射
+$H^*(I^\bullet)\longrightarrow H^p(I^\bullet)[-p]$ は、$K(\mathcal A)$ と
+$D(\mathcal A)$ において同型を定める：}
+\[
+H^*(I^\bullet)\xrightarrow{\sim}
+\prod_{p\in\mathbb Z}H^p(I^\bullet)[-p].
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-3-proof-abcd}
+a) が b) を含意することを示す。実際、任意の非輪状複体 $Y$ に対して
+$\operatorname{Hom}_{K(\mathcal A)}(Y,I^\bullet)=0$ であることを示せば十分で
+あり（第 II 章、2.3.3）、これは a) から従う。a) が c) を含意することを
+示す。実際、a) の同型において複体 $Y$ を $I^\bullet$ で、複体
+$I^\bullet$ を $H^*(I^\bullet)$ で置き換えればよい。同様に、a) の同型で
+複体 $I^\bullet$ を複体 $H^*(I^\bullet)$ で置き換えると、a) が d) を
+含意することが分かる。a) を示す。定義から直ちに、複体 $I^\bullet$ は
+次の形の複体と同型である：
+
+\VerdierSemanticAnchor{ch4d-4-6-3-proof-a-decomposition}
+\[
+\resizebox{0.98\linewidth}{!}{$
+\displaystyle
+\cdots\longrightarrow
+J^{n-2}\oplus H^{n-1}\oplus J^{n-1}
+\xrightarrow{\left(\begin{smallmatrix}
+0&0&\mathrm{id}\\0&0&0\\0&0&0
+\end{smallmatrix}\right)}
+J^{n-1}\oplus H^n\oplus J^n
+\xrightarrow{\left(\begin{smallmatrix}
+0&0&\mathrm{id}\\0&0&0\\0&0&0
+\end{smallmatrix}\right)}
+J^n\oplus H^{n+1}\oplus J^{n+1}
+\longrightarrow\cdots
+$}.
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-3-proof-a-homotopy}
+したがって、$I^\bullet$ と複体 $H^*(I^\bullet)$ の間にはホモトピー同値が
+存在する。a) を示すには $I^\bullet=H^*(I^\bullet)$ と仮定してよい。
+このとき明らかに同型
+
+\VerdierSemanticAnchor{ch4d-4-6-3-proof-a-hom}
+\[
+\operatorname{Hom}_{K(\mathcal A)}\bigl(Y,H^*(I^\bullet)\bigr)
+\xrightarrow{\sim}
+\prod_{p\in\mathbb Z}
+\operatorname{Hom}_{K(\mathcal A)}
+\bigl(Y,H^p(I^\bullet)[-p]\bigr).
+\]
+がある。さらに、対象 $H^p(I^\bullet)$ は入射対象なので、標準射
+\[
+\operatorname{Hom}_{K(\mathcal A)}
+\bigl(Y,H^p(I^\bullet)[-p]\bigr)
+\longrightarrow
+\operatorname{Hom}_{\mathcal A}\bigl(H^p(Y),H^p(I^\bullet)\bigr)
+\]
+は同型である。
+\endgroup

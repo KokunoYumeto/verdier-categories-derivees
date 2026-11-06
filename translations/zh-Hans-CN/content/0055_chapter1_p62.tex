@@ -1,0 +1,91 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0062}%
+\VerdierSemanticAnchor{ch1-1-6-4}
+\VerdierSemanticAnchor{ch1-1-6-4-definition}
+\noindent\textbf{定义 1.6.4.}\quad
+\emph{相对于 $\mathbb Z^n$ 的一组有序基 $e_1,\ldots,e_n$ 的 Koszul
+余循环}，是相对于基 $e_1,\ldots,e_n$ 的 Koszul 类中满足下式的唯一余循环
+$\alpha$：
+
+\VerdierSemanticAnchor{ch1-1-6-4-eq1}
+\begin{equation}
+  \alpha(\sigma_1,\sigma_2)=1
+  \quad
+  \forall\sigma_1\in\mathbb Z^n(\leq i),\quad
+  \forall\sigma_2\in\mathbb Z^n(\geq i),\quad
+  \forall i\in[1,n].
+  \tag{1.6.4.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-4-coordinate-intro}
+设
+$\sigma_1=\sum_{i=1}^{n}p_i e_i$ 与
+$\sigma_2=\sum_{i=1}^{n}q_i e_i$
+为 $\mathbb Z^n$ 的两个元素，则：
+
+\VerdierSemanticAnchor{ch1-1-6-4-eq2}
+\begin{equation}
+  \alpha(\sigma_1,\sigma_2)
+  =(-1)^{\left(\sum_{i<j}q_i p_j\right)}.
+  \tag{1.6.4.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-4-justification}
+这个定义需要说明。满足 (1.6.4.1) 的 Koszul 类中的余循环显然存在：直接计算
+可知余循环 (1.6.4.2) 满足 (1.6.4.1)，并且属于 Koszul 类 (1.6.2)。为验证
+唯一性，只需注意每个与余循环 $\alpha$ 上同调等价的余循环都形如
+
+\VerdierSemanticAnchor{ch1-1-6-4-cohomologous-form}
+\begin{equation*}
+  \alpha_1(\sigma_1,\sigma_2)
+  =\alpha(\sigma_1,\sigma_2)
+   \beta(\sigma_2)\beta(\sigma_1+\sigma_2)^{-1}\beta(\sigma_1)
+\end{equation*}
+并且这样的余循环具有性质 (1.6.4.1)，当且仅当
+
+\VerdierSemanticAnchor{ch1-1-6-4-condition}
+\begin{equation*}
+  \beta(\sigma_1+\sigma_2)=\beta(\sigma_1)\beta(\sigma_2)
+  \quad
+  \forall i,\quad
+  \forall\sigma_1\in\mathbb Z^n(\leq i),\quad
+  \forall\sigma_2\in\mathbb Z^n(\geq i).
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-1-6-4-uniqueness}
+由此立即得到 $\beta\colon\mathbb Z^n\to\mathbb Z/2\mathbb Z$ 是群同态，
+因而 $\alpha_1=\alpha$。
+
+\VerdierSemanticAnchor{ch1-1-6-5}
+\VerdierSemanticAnchor{ch1-1-6-5-order-dependence}
+\noindent\textbf{1.6.5.}\quad
+Koszul 余循环的定义本质上依赖于赋予 $\mathbb Z^n$ 的基
+$e_1,\ldots,e_n$ 的全序。以 $\leq$ 表示 $[1,n]$ 上的自然次序，以
+$\leq_s$ 表示 $[1,n]$ 上的一个全序。设 $s$ 为 $[1,n]$ 上唯一满足下式的置换：
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq1}
+\begin{equation}
+  i\leq_s j\quad\Longleftrightarrow\quad s(i)\leq s(j).
+  \tag{1.6.5.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-5-cocycles}
+设 $\alpha$ 与 $\alpha_s$ 分别为相对于次序 $\leq$ 与 $\leq_s$ 的 Koszul
+余循环。则：
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq2}
+\VerdierSemanticAnchor{ch1-1-6-5-eq2-natural}
+\VerdierSemanticAnchor{ch1-1-6-5-eq2-coordinates}
+\VerdierSemanticAnchor{ch1-1-6-5-eq2-permuted}
+\begin{equation}
+  \begin{aligned}
+    \alpha(\sigma_1,\sigma_2)
+      &=(-1)^{\left(\sum_{i<j}q_i p_j\right)},\\
+    \sigma_1&=\sum_i p_i e_i,
+      \qquad \sigma_2=\sum_i q_i e_i,\\
+    \alpha_s(\sigma_1,\sigma_2)
+      &=(-1)^{\left(\sum_{s(i)<s(j)}q_i p_j\right)},
+  \end{aligned}
+  \tag{1.6.5.2}
+\end{equation}
+\VerdierSemanticAnchor{ch1-1-6-5-open}

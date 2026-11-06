@@ -1,0 +1,64 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0177}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-1-2-1-truncations-cont}
+\noindent（相应地，
+\[
+\begin{aligned}
+i^q&=\operatorname{id},&&q<n-1,\\
+i^{n-1}&\colon\operatorname{Ker}(d_X^{n-1})\longrightarrow X^{n-1}
+  &&\text{（典范态射）},\\
+i^q&=0,&&q\geq n
+\end{aligned}
+\]
+）。
+
+注意，态射 $p$（相应地，$i$）在次数 $j\geq n$（相应地，$j<n$）的
+上同调对象上诱导同构，并且当 $j<n$ 时 $H^j(X(n,+\infty))=0$
+（相应地，当 $j\geq n$ 时 $H^j(X(-\infty,n))=0$）。利用这个构造，
+命题 (1.2.1) 的所有断言都立即得到证明。详细证明留给读者。
+
+\VerdierSemanticAnchor{ch3d-1-2-2}
+\medskip\noindent\textbf{定义 1.2.2.}\quad
+三角范畴
+\[
+D(\mathcal A)=K(\mathcal A)/\operatorname{Ac}(\mathcal A)
+=K(\mathcal A)[\operatorname{Qis}(\mathcal A)^{-1}]
+\]
+称为 $\mathcal A$ 的\emph{导出范畴}，记为 $D(\mathcal A)$
+（第二章，2.2.6 与 2.2.10）。
+
+由定理 (2.2.6)，典范上同调函子
+$H\colon K(\mathcal A)\longrightarrow\mathcal A$ 唯一地分解为一个仍用相同
+记号表示的上同调函子：
+
+\VerdierSemanticAnchor{ch3d-1-2-2-cohomology}
+\begin{equation}
+H\colon D(\mathcal A)\longrightarrow\mathcal A,
+\tag{1.2.2.1}
+\end{equation}
+它仍称为\emph{典范上同调函子}。典范商函子记为
+$Q\colon K(\mathcal A)\longrightarrow D(\mathcal A)$。
+
+\VerdierSemanticAnchor{ch3d-1-2-3}
+\medskip\noindent\textbf{定理 1.2.3.}\quad
+\textit{a) 下图中的自然函子：}
+
+\VerdierSemanticAnchor{ch3d-1-2-3-a-diagram}
+\begin{center}
+  \resizebox{0.80\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=4.5em,row sep=3.0em]
+      \& K^{,+}(\mathcal A)/\operatorname{Ac}(\mathcal A)
+        \arrow[dr] \& \\
+      K^{,b}(\mathcal A)/\operatorname{Ac}(\mathcal A)
+        \arrow[ur] \arrow[dr]
+        \& \& D(\mathcal A) \\
+      \& K^{,-}(\mathcal A)/\operatorname{Ac}(\mathcal A)
+        \arrow[ur] \&
+    \end{tikzcd}$%
+  }
+\end{center}
+\endgroup

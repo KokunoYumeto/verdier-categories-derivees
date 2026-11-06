@@ -1,0 +1,65 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0244}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-exact-diagram}
+由此得到交换图，其行都是正合的：
+\[
+\begin{tikzcd}[column sep=2.7em,row sep=2.8em]
+F_1^{p+r-1}(Y) \arrow[r] \arrow[d] &
+F_1^p(L^\bullet) \arrow[r] \arrow[d,"{m(L^\bullet[p])}"'] &
+F_1^p(X) \arrow[r] \arrow[d,"{m(X[p])}"'] &
+F_1^{p+r}(Y) \arrow[d] \\
+F_2^{p+r-1}(Y) \arrow[r] &
+F_2^p(L^\bullet) \arrow[r] &
+F_2^p(X) \arrow[r] &
+F_2^{p+r}(Y).
+\end{tikzcd}
+\]
+整数 $r$ 的选择使得对 $i=1,2$ 与 $q\geq p+r-1$，对象 $F_i^q(Y)$ 都为
+零。因此，一切都归结为证明：对于 $\operatorname{comp}^{b}(\mathcal A)$
+中每个分量均为 $M$ 的元素的对象 $L^\bullet$，$m(L^\bullet)$ 都是同构。
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-spectral-sequence}
+而态射 $m$ 诱导函子 $F_1$ 与 $F_2$ 关于复形 $L^\bullet$ 的第一谱序列
+之间的态射。在初始项上，这个态射
+\[
+m_1^{p,q}(L^\bullet)\colon F_1^q(L^p)\longrightarrow F_2^q(L^p),
+\]
+依假设是同构。由于这些谱序列是定常的 (4.5.3)，态射 $m$ 在收敛目标上
+诱导同构（第二章，4.4.5），因而由 (4.4.2)，态射 $m(L^\bullet)$ 是同构。
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-end}
+这完成了断言 e) 的证明。转到反范畴，即由断言 e) 得到断言 f)。定理得证。
+
+\VerdierSemanticAnchor{ch4d-4-6}
+\medskip\noindent\textbf{4.6. Cartan--Eilenberg 谱对象。}
+
+\VerdierSemanticAnchor{ch4d-4-6-1}
+\noindent\textbf{定义 4.6.1.}\quad
+若对每个整数 $i$，对象 $\operatorname{Im}(d_{I^\bullet}^{i})$ 与
+$H^i(I^\bullet)$ 都是内射对象，则称 $\mathcal A$ 的复形 $I^\bullet$ 为
+\emph{Cartan--Eilenberg 内射复形}。
+
+\VerdierSemanticAnchor{ch4d-4-6-2}
+\noindent\textbf{4.6.2.}\quad
+注意，Cartan--Eilenberg 内射复形 $I^\bullet$ 是内射型的 (1.1.5)，即它的
+各分量都是 $\mathcal A$ 的内射对象，并且对每个整数 $i$，对象
+$\operatorname{Ker}(d_{I^\bullet}^{i})$ 都是 $\mathcal A$ 的内射对象。
+使用连接这些不同对象的三项正合列，即可立即验证这一点。
+
+\VerdierSemanticAnchor{ch4d-4-6-3-a}
+\medskip\noindent\textbf{命题 4.6.3.}\quad
+\textit{设 $I^\bullet$ 是 Cartan--Eilenberg 内射复形。}
+
+\noindent\textit{a) 对每个复形 $Y$，典范态射}
+\[
+\operatorname{Hom}_{K(\mathcal A)}(Y,I^\bullet)
+\longrightarrow
+\prod_{p\in\mathbb Z}
+\operatorname{Hom}_{\mathcal A}\bigl(H^p(Y),H^p(I^\bullet)\bigr)
+\]
+\textit{是同构。}
+\endgroup

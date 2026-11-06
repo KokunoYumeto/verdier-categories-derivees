@@ -1,0 +1,91 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0120}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-9-opposite-category}
+$\mathrm{ii)}\Longrightarrow\mathrm{iii)}$ pour la catégorie opposée à
+$\mathcal D$. L'implication $\mathrm{i)}\Longrightarrow\mathrm{iii)}$ pour
+toute catégorie triangulée est donc équivalente à l'implication
+$\mathrm{ii)}\Longrightarrow\mathrm{iii)}$ pour toute catégorie triangulée.
+Pour démontrer les implications :
+
+\VerdierSemanticAnchor{ch2-1-2-9-reduction-implication}
+\[
+  \mathrm{i)}\Longleftrightarrow\mathrm{ii)}
+  \Longleftrightarrow\mathrm{iii)}\Longrightarrow\mathrm{iv)}\,,
+\]
+il suffit donc de démontrer l'implication
+$\mathrm{i)}\Longrightarrow\mathrm{iii)}$.
+
+\VerdierSemanticAnchor{ch2-1-2-10}
+\medskip
+\noindent\textbf{1.2.10. Démonstration de la proposition 1.2.9. (suite).}
+Démontrons d'abord qu'un monomorphisme est décomposable. Soient
+$f\colon X\longrightarrow Y$ un monomorphisme et
+$X\xrightarrow{f}Y\xrightarrow{v}Z\xrightarrow{w}X[1]$ un triangle
+distingué contenant $f$ (TRI).
+
+\VerdierSemanticAnchor{ch2-1-2-10-monomorphism}
+Le morphisme $f$ étant un monomorphisme, il en est de même de $f[1]$. Il
+résulte alors de TRII et de (1.2.2) que $w=0$. Il résulte alors de (1.2.6)
+que le morphisme $f$ est décomposable.
+
+\VerdierSemanticAnchor{ch2-1-2-10-kernel-decomposition}
+Démontrons maintenant que
+$\mathrm{i)}\Longrightarrow\mathrm{iii)}$ dans le cas général. Supposons
+que le morphisme $f\colon X\longrightarrow Y$ admette un noyau
+$\operatorname{Ker}(f)\longrightarrow X$. Le morphisme
+$\operatorname{Ker}(f)\longrightarrow X$ est un monomorphisme, donc il est
+décomposable. Le morphisme $f$ est donc isomorphe à un morphisme du type :
+
+\VerdierSemanticAnchor{ch2-1-2-10-kernel-normal-form}
+\[
+  \operatorname{Ker}(f)\oplus X'
+  \xrightarrow{(0,g)}Y\,,
+\]
+dont le noyau est
+
+\VerdierSemanticAnchor{ch2-1-2-10-kernel-inclusion}
+\[
+  \operatorname{Ker}(f)
+  \xrightarrow{\left(\begin{smallmatrix}\operatorname{id}\\0\end{smallmatrix}\right)}
+  \operatorname{Ker}(f)\oplus X'.
+\]
+On en déduit immédiatement que le morphisme $g$ est un monomorphisme; par
+suite, il est décomposable. Le morphisme $f\colon X\longrightarrow Y$ est
+donc isomorphe à un morphisme du type :
+
+\VerdierSemanticAnchor{ch2-1-2-10-final-matrix}
+\[
+  \operatorname{Ker}(f)\oplus X'
+  \xrightarrow{\left(\begin{smallmatrix}0&\operatorname{id}\\0&0\end{smallmatrix}\right)}
+  X'\oplus Y'.
+\]
+Il est donc décomposable.
+
+\VerdierSemanticAnchor{ch2-1-2-11}
+\medskip
+\noindent\textbf{1.2.11. Démonstration de la proposition 1.2.9.
+(fin)\footnote{Nous utilisons ici un argument dû à Freyd.}}
+Il reste à démontrer l'implication
+$\mathrm{iv)}\Longrightarrow\mathrm{iii)}$ sous les hypothèses
+supplémentaires.
+
+\VerdierSemanticAnchor{ch2-1-2-11-duality-reduction}
+Remarquons tout d'abord que les sommes directes dénombrables sont
+représentables dans $\mathcal D$ si et seulement si les produits directs
+dénombrables sont représentables dans $\mathcal D^{\circ}$. De plus,
+l'implication $\mathrm{iv)}\Longrightarrow\mathrm{iii)}$ pour la catégorie
+$\mathcal D$ est équivalente à l'implication
+$\mathrm{iv)}\Longrightarrow\mathrm{iii)}$ pour la catégorie opposée à
+$\mathcal D$.
+
+\VerdierSemanticAnchor{ch2-1-2-11-product-case-boundary}
+Il suffit donc de démontrer l'implication
+$\mathrm{iv)}\Longrightarrow\mathrm{iii)}$ lorsque les produits
+dénombrables sont représentables dans $\mathcal D$, \textit{i.e.} compte
+tenu de ce qui précède, de
+\endgroup

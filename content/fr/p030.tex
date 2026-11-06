@@ -1,0 +1,64 @@
+\VerdierPhysicalPageAnchor{0030}%
+\VerdierSemanticAnchor{intro-8-local-invariants}
+où les $\chi_P(\Phi)$ sont des \emph{invariants locaux}, que l'on peut
+déterminer lorsqu'on connaît le faisceau $F$ et l'endomorphisme $\Phi$ au
+voisinage de $P$. Lorsque $X$ est une variété topologique et lorsque le
+faisceau $F$ est constant et libre de rang 1, on retrouve la formule de
+Lefschetz usuelle.
+
+\VerdierSemanticAnchor{intro-8-coherent-case}
+Dans le cadre de la cohomologie des faisceaux cohérents, on a une formule
+analogue. Il faut prendre, pour $X$, un schéma de type fini et propre sur un
+corps $k$ et pour $F$ un faisceau cohérent de tor-dimension finie, ou plus
+généralement un complexe parfait. L'étude des invariants locaux qui
+s'introduisent alors n'a été faite que dans certains cas particuliers.
+Lorsque le corps $k$ est algébriquement clos, le schéma $X$ lisse sur $k$,
+le faisceau $F$ localement libre et le point fixe $P$ à croisement normal,
+on obtient :
+\VerdierSemanticAnchor{intro-8-normal-crossing-formula}
+\[
+\chi_P(\Phi)
+=\frac{\operatorname{Tr}(\Phi_{F,P})}
+       {\det\bigl(1-d\Phi_{X,P}\bigr)}
+\]
+
+\VerdierSemanticAnchor{intro-8-normal-crossing-data}
+où $\Phi_{F,P}$ désigne l'endomorphisme induit par $\Phi$ sur la fibre
+réduite du faisceau $F$ en $P$ (qui est un $k$-espace vectoriel de dimension
+finie) et où $d\Phi_{X,P}$ désigne la différentielle du morphisme $\Phi_X$
+en $P$.
+
+\VerdierSemanticAnchor{intro-8-residue-extension}
+Lorsqu'on ne suppose plus que le point fixe $P$ est à croisement normal,
+\emph{i.e.} lorsqu'on ne suppose plus que l'endomorphisme
+$1-d\Phi_{X,P}$ est inversible, les invariants locaux peuvent encore se
+déterminer par un calcul de résidus au sens de [4].
+
+\VerdierSemanticAnchor{intro-8-relative-lefschetz}
+Le théorème de Lefschetz dans le contexte de la Géométrie Algébrique peut
+d'ailleurs se généraliser aux situations relatives.
+\VerdierSemanticAnchor{intro-8-relative-setup}
+On se donne un $Y$-schéma
+$X\xrightarrow{f}Y$ propre et lisse sur un schéma localement noethérien $Y$
+et un faisceau cohérent $F$ de tor-dimension finie sur $X$. Le complexe de
+faisceaux $\mathrm{R}f_*(F)$ sur $Y$ est alors un \emph{complexe parfait}.
+Soit $\Phi\colon(X,F)\longrightarrow(X,F)$ un $Y$-endomorphisme du schéma
+$X$ muni du faisceau $F$ et supposons que le schéma $P$ des points fixes de
+$\Phi$ soit fini sur $Y$. L'endomorphisme $\Phi$ induit un endomorphisme :
+\VerdierSemanticAnchor{intro-8-relative-rf-phi}
+\[
+\mathrm{R}f_*(\Phi)\colon
+\mathrm{R}f_*(F)\longrightarrow\mathrm{R}f_*(F),
+\]
+
+\VerdierSemanticAnchor{intro-8-relative-lefschetz-number}
+et comme le complexe $\mathrm{R}f_*(F)$ est \emph{parfait}, on peut définir
+le nombre de Lefschetz $\chi(\mathrm{R}f_*(\Phi))$ qui est ici une section du
+faisceau structural de $Y$. Cela posé, on a l'égalité :
+\VerdierSemanticAnchor{intro-8-relative-formula}
+\[
+\chi\bigl(\mathrm{R}f_*(\Phi)\bigr)=\chi_P(\Phi),
+\]
+où $\chi_P(\Phi)$ est un invariant local, qui peut encore se déterminer par
+un calcul de résidus.
+

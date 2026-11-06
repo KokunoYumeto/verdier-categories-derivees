@@ -1,0 +1,58 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0165}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch4-4-2-1-inclusions}
+We have thus defined two functors from $\mathcal{F}\ell_2(\mathcal J)$ to
+$\mathcal A$. By definition there are inclusions:
+\[
+B\!\left[\begin{smallmatrix}n\\f,g\end{smallmatrix}\right]\subset H^n(f),
+\qquad
+Z\!\left[\begin{smallmatrix}n\\f,g\end{smallmatrix}\right]\subset H^n(g).
+\]
+Let
+$\omega_3=(\mathord\bullet\xrightarrow f\mathord\bullet\xrightarrow g
+\mathord\bullet\xrightarrow h\mathord\bullet)$ be an object of
+$\mathcal{F}\ell_3(\mathcal J)$.
+
+\VerdierSemanticAnchor{ch4-4-2-2}
+\medskip\noindent\textbf{Proposition 4.2.2.}\quad
+\textit{We have the inclusions:}
+\[
+B\!\left[\begin{smallmatrix}n\\g,h\end{smallmatrix}\right]
+\subset
+Z\!\left[\begin{smallmatrix}n\\f,g\end{smallmatrix}\right]
+\subset H^n(g).
+\]
+The second inclusion is recorded for reference. To prove the first inclusion,
+it suffices to show that the composite of the two morphisms in the sequence
+\VerdierSemanticAnchor{ch4-4-2-2-proof-sequence}
+\[
+H^{n-1}(h)\xrightarrow{\delta_1}H^n(g)
+\xrightarrow{\delta_2}H^{n+1}(f)
+\]
+is zero. But the object
+$(\mathord\bullet\xrightarrow g\mathord\bullet\xrightarrow h\mathord\bullet)$
+of $\mathcal{F}\ell_2(\mathcal J)$ yields the exact sequence
+\[
+H^{n-1}(h)\xrightarrow{\delta_1}H^n(g)
+\xrightarrow u H^n(hg),
+\]
+and the morphism in $\mathcal{F}\ell_2(\mathcal J)$
+\VerdierSemanticAnchor{ch4-4-2-2-fl2-morphism}
+\[
+\begin{tikzcd}[column sep=4em,row sep=2.2em]
+{}\arrow[r,"f"]\arrow[d,"\operatorname{id}"']&{}
+ \arrow[r,"g"]\arrow[d,"\operatorname{id}"']&{}\arrow[d,"h"]\\
+{}\arrow[r,"f"']&{}\arrow[r,"hg"']&{}
+\end{tikzcd}
+\]
+yields the commutative diagram
+\VerdierSemanticAnchor{ch4-4-2-2-commutative-triangle}
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.7em]
+H^n(g)\arrow[r,"\delta_2"]\arrow[d,"u"']&H^{n+1}(f)\\
+H^n(hg)\arrow[ur,"\delta_3"']&{}
+\end{tikzcd}
+\]
+Hence the proposition.
+\endgroup

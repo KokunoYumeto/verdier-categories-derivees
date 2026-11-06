@@ -1,0 +1,68 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0170}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{2.5em}
+\VerdierSemanticAnchor{ch4-4-2-7-second-diagram}
+Applying the same observation to the diagram
+\[
+\begin{tikzcd}[column sep=4.6em,row sep=2.8em]
+&H^n(f_2f_1)\arrow[d]\arrow[dr]&\\
+H^n(f_1)\arrow[ur]\arrow[r]&
+H^n(f_3f_2f_1)\arrow[r]&H^n(f_3f_2),
+\end{tikzcd}
+\]
+gives an isomorphism
+\VerdierSemanticAnchor{ch4-4-2-7-2}
+\[
+E\!\begin{bmatrix}n\\ f_1,f_2,f_3\end{bmatrix}
+\xrightarrow{\ \sim\ }
+\operatorname{Im}\bigl(H^n(f_2f_1)\longrightarrow H^n(f_3f_2f_1)\bigr)
+\Big/
+\operatorname{Im}\bigl(H^n(f_1)\longrightarrow H^n(f_3f_2f_1)\bigr).
+\tag{4.2.7.2}
+\]
+
+\VerdierSemanticAnchor{ch4-4-3}
+\medskip\noindent\textbf{4.3. The terms
+$E\!\begin{bmatrix}n\\ -\infty,p,q,+\infty\end{bmatrix}$.}
+
+\VerdierSemanticAnchor{ch4-4-3-1}
+\medskip\noindent\textbf{4.3.1.}
+Let $\widetilde{\mathbb Z}$ be the ordered set $\mathbb Z$ completed by an
+initial element $-\infty$ and a final element $+\infty$. By abuse of
+notation, we shall also use $\widetilde{\mathbb Z}$ for the category
+associated with the ordered set $\widetilde{\mathbb Z}$. A morphism of
+$\widetilde{\mathbb Z}$ is therefore a pair $p\leq q$, where $p$ and $q$
+are elements of $\widetilde{\mathbb Z}$. An ordered sequence
+$p_1\leq p_2\leq\cdots\leq p_n$ defines an object of
+$\mathcal{F}\ell_{n-1}(\widetilde{\mathbb Z})$, denoted
+$(p_1,p_2,\ldots,p_n)$. A morphism of $\widetilde{\mathbb Z}$ is called
+\textit{finite} if its source and target belong to $\mathbb Z$. An object
+of $\mathcal{F}\ell_n(\widetilde{\mathbb Z})$ is called \textit{finite} if
+its constituent morphisms are finite.
+
+\VerdierSemanticAnchor{ch4-4-3-2}
+\medskip\noindent\textbf{4.3.2.}
+\textit{In this work we shall use only spectral objects of type
+$\widetilde{\mathbb Z}$; henceforth these will simply be called spectral
+objects.} This recovers the notion of [1], Chapter XV, §7. Let
+$(H^n(p,q),\delta,\ p\leq q\in\widetilde{\mathbb Z})$ be a spectral object
+with values in an abelian category $\mathcal A$. Set
+\VerdierSemanticAnchor{ch4-4-3-2-1}
+\[
+F^pH^n(-\infty,+\infty)
+=\operatorname{Im}\bigl(H^n(-\infty,p)\longrightarrow
+H^n(-\infty,+\infty)\bigr).
+\tag{4.3.2.1}
+\]
+We have $F^{+\infty}H^n(-\infty,+\infty)=H^n(-\infty,+\infty)$ and
+$F^{-\infty}H^n(-\infty,+\infty)=0$. The
+$F^pH^n(-\infty,+\infty)$ form an increasing filtration of type
+$\widetilde{\mathbb Z}$ on $H^n(-\infty,+\infty)$. Moreover, for every pair
+$p\leq q$, there is an isomorphism (4.2.7.2)
+\VerdierSemanticAnchor{ch4-4-3-2-filtration-quotient}
+\[
+E\!\begin{bmatrix}n\\ -\infty,p,q,+\infty\end{bmatrix}
+\simeq
+F^qH^n(-\infty,+\infty)\big/F^pH^n(-\infty,+\infty).
+\]
+\endgroup

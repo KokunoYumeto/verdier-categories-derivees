@@ -1,0 +1,75 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0250}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-6-9-3-isomorphism}
+\noindent 例如，当复形 $Y$ 是 $\operatorname{comp}^{+}(\mathcal A)$ 的对象且
+函子 $F$ 右定常时，这个态射是同构；或者，不对 $Y$ 作任何假设而函子 $F$
+定常时，这个态射也是同构 (4.5.1)。
+
+\VerdierSemanticAnchor{ch4d-4-6-9-derived-functors}
+由于双复形 $I^{\bullet\bullet}$ 是 $Y$ 的一个 Cartan--Eilenberg 内射分解，
+复形 $H_1^r(I^{\bullet\bullet})$ 是对象 $H^r(Y)$ 的一个内射分解；因此存在同构
+
+\VerdierSemanticAnchor{ch4d-4-6-9-4}
+\[
+H_{\mathcal B}^{p}\left(
+F^{q-r,\bullet}(H_1^r(I^{\bullet\bullet}))
+\right)
+\xrightarrow{\sim}
+R^pF^{q-r}(H^r(Y)),
+\tag{4.6.9.4}
+\]
+其中 $R^pF^{q-r}\colon\mathcal A\longrightarrow\mathcal B$ 表示函子
+$F^{q-r}$ 限制在范畴 $\mathcal A$ 上的第 $p$ 个右导出函子（在 [1] 的意义下）。
+因此，当态射 (4.6.9.3) 是同构时，存在同构
+
+\VerdierSemanticAnchor{ch4d-4-6-9-5}
+\[
+(\mathrm{C.E.})_2^{p,q}\xrightarrow{\sim}
+\prod_{r\in\mathbb Z}R^pF^{q-r}(H^r(Y)).
+\tag{4.6.9.5}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-10}
+\medskip\noindent\textbf{4.6.10.}\quad
+考察如下情形：范畴 $\mathcal B$ 是属于某个合适宇宙的阿贝尔群所成的范畴
+$\mathbf{Ab}$，而函子
+
+\[
+F\colon D(\mathcal A)\longrightarrow\mathbf{Ab}
+\]
+是函子
+
+\VerdierSemanticAnchor{ch4d-4-6-10-ext0}
+\[
+Y\longmapsto F(Y)=\operatorname{Ext}^{0}(Z,Y),
+\]
+其中 $Z$ 是 $D(\mathcal A)$ 的一个对象。设 $Y$ 是 $\mathcal A$ 的一个复形，
+且 $\varepsilon\colon Y\longrightarrow I^{\bullet\bullet}$ 是一个
+Cartan--Eilenberg 内射分解。于是态射 (4.6.9.3) 是同构 (4.6.3)，因而存在同构
+
+\VerdierSemanticAnchor{ch4d-4-6-10-1}
+\[
+(\mathrm{C.E.})_2^{p,q}\xrightarrow{\sim}
+\prod_{r\in\mathbb Z}
+\operatorname{Ext}^{p}\bigl(H^{r-q}(Z),H^r(Y)\bigr).
+\tag{4.6.10.1}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-10-stationarity}
+此外，相对于 $F$ 的 Cartan--Eilenberg 谱序列，在 $Y$ 是
+$\operatorname{comp}^{+}(\mathcal A)$ 的对象且 $Z$ 是
+$D^{-}(\mathcal A)$ 的对象时定常；或者，在 Cartan--Eilenberg 内射分解具有
+有限长度时定常。并且在这些假设下，由 (4.6.8)，这个谱序列的收敛目标是
+
+\VerdierSemanticAnchor{ch4d-4-6-10-abutment}
+\[
+\prod_{r\in\mathbb Z}
+\operatorname{Ext}^{p}\bigl(H^{r-q}(Z),H^r(Y)\bigr)
+\Longrightarrow
+\operatorname{Ext}^{p+q}(Z,Y).
+\]
+\endgroup

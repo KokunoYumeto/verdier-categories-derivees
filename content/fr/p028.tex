@@ -1,0 +1,72 @@
+\VerdierPhysicalPageAnchor{0028}%
+\VerdierSemanticAnchor{intro-7-locally-compact-model}
+cas particulièrement simple des espaces localement compacts fournit le
+modèle des énoncés qu'on obtient. Soient $X$ et $Y$ deux espaces localement
+compacts (disons : de dimension cohomologique finie), $A$ un anneau
+(noethérien), $\mathbf D(X_A)$ et $\mathbf D(Y_A)$ les catégories dérivées
+des catégories de faisceaux de $A$-modules $X_A$ et $Y_A$ sur $X$ et $Y$
+respectivement, $f\colon X\longrightarrow Y$ une application continue. On
+peut alors définir dans cette situation :
+
+\VerdierSemanticAnchor{intro-7-f-shriek}
+\begin{enumerate}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\item Un foncteur
+\[
+f_!\colon X_A\longrightarrow Y_A,
+\]
+image directe à support propre, et le foncteur dérivé total correspondant :
+\VerdierSemanticAnchor{intro-7-rf-shriek}
+\[
+\mathrm Rf_!\colon \mathbf D(X_A)\longrightarrow \mathbf D(Y_A).
+\]
+(Lorsque $f\colon X\longrightarrow Y$ est une application propre, le
+foncteur $f_!$ est le foncteur image directe usuel.)
+
+\VerdierSemanticAnchor{intro-7-f-upper-shriek}
+\item Un foncteur
+\[
+f^!\colon \mathbf D^+(Y_A)\longrightarrow \mathbf D^+(X_A)
+\]
+(le signe $+$ signifie qu'on se limite aux complexes bornés inférieurement)
+dont la définition précise est assez technique, mais qui est caractérisé, à
+isomorphisme unique près, par la propriété c).
+
+\VerdierSemanticAnchor{intro-7-duality-adjunction}
+\item Un isomorphisme bifonctoriel :
+\VerdierSemanticAnchor{intro-7-delta-f}
+\[
+\Delta_f(F,G)\colon
+\operatorname{RHom}(\mathrm Rf_!F,G)
+\longrightarrow
+\operatorname{RHom}(F,f^!G)
+\]
+défini pour tout objet $F$ de $\mathbf D(X_A)$ et tout objet $G$ de
+$\mathbf D^+(Y_A)$ ($\operatorname{RHom}$ désigne le foncteur dérivé total
+du foncteur \og complexe des homomorphismes\fg{}).
+\end{enumerate}
+
+Les phénomènes importants sont alors les suivants :
+
+\VerdierSemanticAnchor{intro-7-duality-D1}
+\noindent\textit{D1)} La formation du foncteur $f^!$ est transitive pour $f$
+variable.
+
+\VerdierSemanticAnchor{intro-7-duality-D2}
+\noindent\textit{D2)} L'isomorphisme $\Delta_f$ est compatible avec la
+composition des applications.
+
+\VerdierSemanticAnchor{intro-7-duality-D3}
+\noindent\textit{D3)} Lorsque $X$ est lisse sur $Y$ de dimension relative
+$n$, \emph{i.e.} lorsque, localement sur $X$, $X$ est $Y$-isomorphe au
+produit d'un ouvert de $Y$ par l'espace topologique $\mathbf R^n$ (exemple :
+$Y$ = un point, $X$ variété topologique), on a pour tout objet $G$ de
+$\mathbf D^+(Y_A)$ un isomorphisme canonique :
+\VerdierSemanticAnchor{intro-7-relative-orientation}
+\[
+f^!(G)\simeq f^*(G)\otimes\omega_{X/Y}[n],
+\]
+où $f^*(G)$ est l'image inverse usuelle, $\omega_{X/Y}$ un faisceau
+localement libre de rang $1$ : le faisceau d'orientation relative de $X$ sur
+$Y$, et où $\omega_{X/Y}[n]$ désigne le complexe obtenu en faisant subir au
+complexe $\omega_{X/Y}$ un décalage des degrés de $n$ unités.

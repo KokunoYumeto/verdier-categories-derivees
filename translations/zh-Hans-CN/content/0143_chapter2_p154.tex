@@ -1,0 +1,76 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0154}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+
+\VerdierSemanticAnchor{ch3-3-2}
+\subsection{范畴 \texorpdfstring{$\mathrm A(\mathcal D)$}{A(D)} 的性质
+  （\texorpdfstring{$\mathcal D$}{D} 为三角范畴）。}
+
+\VerdierSemanticAnchor{ch3-3-2-0}
+\noindent\textbf{3.2.0.}\quad
+设 $\mathcal D$ 与 $\mathcal D'$ 为两个三角范畴。以
+$\mathcal E x(\mathcal D,\mathcal D')$ 表示如下范畴：其对象是从
+$\mathcal D$ 到 $\mathcal D'$ 的正合函子，其态射是正合函子的态射。同样，以
+$\mathbb Z\text{-}\operatorname{Add}(\mathrm A(\mathcal D),
+\mathrm A(\mathcal D'))$ 表示如下范畴：其对象是从
+$\mathrm A(\mathcal D)$ 到 $\mathrm A(\mathcal D')$ 的加法
+$\mathbb Z$-函子，其态射是 $\mathbb Z$-函子的态射。由前文可知，我们定义了函子
+
+\VerdierSemanticAnchor{ch3-3-2-0-1}
+\[
+\mathrm A_{\mathcal D,\mathcal D'}\colon
+\mathcal E x(\mathcal D,\mathcal D')
+\longrightarrow
+\mathbb Z\text{-}\operatorname{Add}
+(\mathrm A(\mathcal D),\mathrm A(\mathcal D')),
+\tag{3.2.0.1}
+\]
+它把正合函子 $F$ 送到 $\mathrm A(F)$。
+
+\VerdierSemanticAnchor{ch3-3-2-1}
+\medskip
+\noindent\textbf{定理 3.2.1.}\begingroup\renewcommand{\thefootnote}{(*)}%
+\footnote{Freyd [17] 将此定理告知了我。}\endgroup\quad
+\textit{a) 若 $\mathcal D$ 是三角范畴，则 $\mathrm A(\mathcal D)$ 是阿贝尔
+范畴。若 $F\colon\mathcal D\to\mathcal D'$ 是三角范畴之间的正合函子，
+则函子 $\mathrm A(F)$ (3.1.4.1) 正合。函子
+$\mathrm A_{\mathcal D,\mathcal D'}$ (3.2.0.1) 充分忠实，并且在对象上单射。}
+
+\VerdierSemanticAnchor{ch3-3-2-1-b}
+\textit{b) $\mathcal D$ 的对象在 $\mathrm A(\mathcal D)$ 中既是内射对象又是
+投射对象。$\mathrm A(\mathcal D)$ 的每个对象都同构于 $\mathcal D$ 中某个
+对象的商对象（相应地，子对象）。}
+
+\VerdierSemanticAnchor{ch3-3-2-1-c}
+\textit{c) 设 $\mathcal A$ 为阿贝尔范畴。以
+$\mathcal E x(\mathrm A(\mathcal D),\mathcal A)$ 表示如下范畴：其对象是从
+$\mathrm A(\mathcal D)$ 到 $\mathcal A$ 的正合函子，其态射是函子的态射。
+同样，以 $\mathcal H\!om(\mathcal D,\mathcal A)$ 表示如下范畴：其对象是从
+$\mathcal D$ 到 $\mathcal A$ 的函子，其态射是函子的态射。与函子
+$\mathcal H\colon\mathcal D\to\mathrm A(\mathcal D)$ 复合定义函子}
+\[
+\mathcal E x(\mathrm A(\mathcal D),\mathcal A)
+\longrightarrow
+\mathcal H\!om(\mathcal D,\mathcal A).
+\]
+\textit{该函子充分忠实；它的本质像恰由从 $\mathcal D$ 到 $\mathcal A$ 的
+上同调函子组成 (1.1.5)。特别地，
+$\mathcal H\colon\mathcal D\to\mathrm A(\mathcal D)$ 是上同调函子。}
+
+\VerdierSemanticAnchor{ch3-3-2-1-proof-plan}
+本定理的证明将持续到第 (3.2.9) 段。我们先证明三个中间命题。
+
+\VerdierSemanticAnchor{ch3-3-2-2}
+\medskip
+\noindent\textbf{3.2.2.}\quad
+设 $U$ 为使 $\mathcal D$ 是 $U$-小范畴的宇宙，也就是说，
+$\mathcal D$ 是 $U$ 的一个元素。以 $\mathcal D^\wedge$
+表示 $\mathcal D$ 上取值于 $U$-小阿贝尔群范畴的反变加法函子范畴。
+$\mathcal D^\wedge$ 是阿贝尔范畴，而典范函子
+$h\colon\mathcal D\to\mathcal D^\wedge$ 把 $\mathcal D$ 的每个对象送到它所表示的函子；
+$h$ 充分忠实，并把 $\mathcal D$ 的每个对象送到
+$\mathcal D^\wedge$ 中的投射对象。
+\endgroup

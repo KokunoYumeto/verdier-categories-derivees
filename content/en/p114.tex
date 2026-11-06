@@ -1,0 +1,112 @@
+\VerdierPhysicalPageAnchor{0114}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2}
+\medskip
+\noindent\textbf{1.2. First Properties of Triangulated Categories.}
+
+\VerdierSemanticAnchor{ch2-1-2-1}
+\medskip
+\noindent\textbf{Proposition 1.2.1.}\quad
+Let $\mathcal D$ be a triangulated category. For every object $X$ of
+$\mathcal D$, the functors $\operatorname{Hom}_{\mathcal D}(X,\mathord\cdot)$
+and $\operatorname{Hom}_{\mathcal D}(\mathord\cdot,X)$ are cohomological
+functors with values in the category of abelian groups.
+
+\VerdierSemanticAnchor{ch2-1-2-1-hom-functors}
+\noindent\emph{Proof.}\quad
+It is enough first to show that the functor
+$\operatorname{Hom}_{\mathcal D}(X,\mathord\cdot)$ is cohomological. The
+other assertion then follows by passing to the opposite category
+$\mathcal D^\circ$ (1.1.7). Thus let
+
+\VerdierSemanticAnchor{ch2-1-2-1-source-triangle}
+\[
+  X'\xrightarrow{u'}Y'\xrightarrow{v'}Z'\xrightarrow{w'}X'[1]
+\]
+be a distinguished triangle. It is enough to show that in the diagram
+
+\VerdierSemanticAnchor{ch2-1-2-1-1}
+\begin{equation}
+  \resizebox{0.98\linewidth}{!}{$
+    \operatorname{Hom}_{\mathcal D}(X,X')
+    \xrightarrow{\operatorname{Hom}_{\mathcal D}(X,u')}
+    \operatorname{Hom}_{\mathcal D}(X,Y')
+    \xrightarrow{\operatorname{Hom}_{\mathcal D}(X,v')}
+    \operatorname{Hom}_{\mathcal D}(X,Z')
+    \xrightarrow{\operatorname{Hom}_{\mathcal D}(X,w')}
+    \operatorname{Hom}_{\mathcal D}(X,X'[1])
+  $}
+  \tag{1.2.1.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch2-1-2-1-exactness-reduction}
+we have
+\[
+  \operatorname{Hom}_{\mathcal D}(X,v')
+  \operatorname{Hom}_{\mathcal D}(X,u')=0
+\]
+and that this diagram is exact at $\operatorname{Hom}_{\mathcal D}(X,Y')$.
+Indeed, axiom TRII will then give the same result at
+$\operatorname{Hom}_{\mathcal D}(X,Z')$. Thus let
+$f\colon X\longrightarrow X'$. By TRI, the triangle
+
+\VerdierSemanticAnchor{ch2-1-2-1-identity-triangle}
+\[
+  X\xrightarrow{\operatorname{id}_X}X\longrightarrow0\longrightarrow X[1]
+\]
+is distinguished and, by TRII and TRIII, there exists a morphism
+$g\colon X\longrightarrow Y'$ such that the following diagram is commutative:
+
+\VerdierSemanticAnchor{ch2-1-2-1-2}
+\begin{equation}
+  \begin{tikzcd}[column sep=3.2em,row sep=2.5em]
+    X \arrow[r,"{\operatorname{id}_X}"] \arrow[d,"f"']
+      & X \arrow[r] \arrow[d,"g"']
+      & 0 \arrow[r] \arrow[d]
+      & X[1] \arrow[d,"{f[1]}"] \\
+    X' \arrow[r,"u'"']
+      & Y' \arrow[r,"v'"']
+      & Z' \arrow[r,"w'"']
+      & X'[1]
+  \end{tikzcd}
+  \tag{1.2.1.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch2-1-2-1-zero-composite}
+It follows that $u'f=g$ and that $v'u'f=v'g=0$, which proves that
+$\operatorname{Hom}_{\mathcal D}(X,v')
+\operatorname{Hom}_{\mathcal D}(X,u')=0$.
+
+\VerdierSemanticAnchor{ch2-1-2-1-lifting}
+Now let $g\colon X\longrightarrow Y'$ be a morphism such that $v'g=0$.
+By TRII and TRIII, there exists a morphism $f\colon X\longrightarrow X'$
+such that diagram (1.2.1.2) is commutative. It follows that $g=u'f$ and,
+consequently, sequence (1.2.1.1) is exact at
+$\operatorname{Hom}_{\mathcal D}(X,Y')$.
+
+\VerdierSemanticAnchor{ch2-1-2-2}
+\medskip
+\noindent\textbf{Corollary 1.2.2.}\quad
+In a distinguished triangle
+$X'\xrightarrow{u'}Y'\xrightarrow{v'}Z'\xrightarrow{w'}X'[1]$, the
+composite of any two consecutive morphisms is zero.
+
+\VerdierSemanticAnchor{ch2-1-2-2-proof}
+\noindent\emph{Proof.}\quad
+By TRII, it is enough to show that $v'u'=0$. For this, it is enough to take
+$X=X'$ in the exact sequence (1.2.1.1) and to consider the successive
+images of $\operatorname{id}_{X'}\in\operatorname{Hom}_{\mathcal D}(X',X')$.
+
+\VerdierSemanticAnchor{ch2-1-2-3}
+\medskip
+\noindent\textbf{Corollary 1.2.3.}\quad
+Let $(X,Y,Z,u,v,w)$ and $(X',Y',Z',u',v',w')$ be two distinguished
+triangles in $\mathcal D$, and let $(f_1,f_2,f_3)$ be a morphism of
+triangles. If two of the $f_i$, $1\leq i\leq3$, are isomorphisms, then so
+is the third.
+\endgroup
+

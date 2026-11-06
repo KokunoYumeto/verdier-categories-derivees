@@ -1,0 +1,74 @@
+\VerdierPhysicalPageAnchor{0067}%
+\VerdierSemanticAnchor{ch1-2-1-5}
+\noindent\textbf{2.1.5.}\quad
+The morphism $f^\sigma\colon Y^\sigma\longrightarrow Y'^\sigma$ is called
+the \emph{component of degree $\sigma$} of the morphism $(f^\sigma)$. Let
+$f\colon Y\longrightarrow Y'$ be a morphism of $n$-fold complexes. The
+component of degree $\sigma$ of $f$ is denoted $f^\sigma$.
+\VerdierSemanticAnchor{ch1-2-1-5-composition}
+Morphisms of $n$-fold complexes compose in the evident manner: component by
+component.
+\VerdierSemanticAnchor{ch1-2-1-5-category}
+The $n$-fold complexes of objects of $C$ form a category denoted
+$\operatorname{comp}^{n}(C)$. When $n=1$, we use the simplified notation
+$\operatorname{comp}^{1}(C)=\operatorname{comp}(C)$. The objects of
+$\operatorname{comp}(C)$ are called the \emph{simple complexes in $C$}, or
+even, when no confusion results, the \emph{complexes in $C$}. The categories
+$\operatorname{comp}^{n}(C)$ are additive.
+
+\VerdierSemanticAnchor{ch1-2-1-6}
+\noindent\textbf{2.1.6.}\quad
+Let $Y$ be an $n$-fold complex in $C$. To denote the component of degree
+$\sigma$ of $Y$, we sometimes use the notation $Y_{-\sigma}$, and to denote
+the differential of degree $\sigma$ of $Y$ in direction $i$, the notation
+$d^Y_{-\sigma,i}$.
+\VerdierSemanticAnchor{ch1-2-1-6-positive-finite}
+This notation is used especially when $Y$ is a simple complex all of whose
+components of positive degree vanish except for finitely many of them.
+Likewise, let $f\colon Y\longrightarrow Y'$ be a morphism of $n$-fold
+complexes. We sometimes use the notation $f_{-\sigma}$ to denote the
+component of degree $\sigma$ of the morphism $f$.
+
+\VerdierSemanticAnchor{ch1-2-1-7}
+\noindent\textbf{2.1.7.}\quad
+Let $\varphi\colon[n]\longrightarrow[m]$ be a map.
+\VerdierSemanticAnchor{ch1-2-1-7-summable}
+An $n$-fold complex $Y$ in $C$ is said to be \emph{$\varphi$-summable} if,
+for every $\tau\in\mathbb Z[m]$, the set of $\sigma\in\mathbb Z[n]$ such
+that $\varphi(\sigma)=\tau$ and $Y^\sigma$ is nonzero is finite. When
+$\varphi$ is the unique map $[n]\longrightarrow[1]$, we simply say
+\emph{summable}.
+\VerdierSemanticAnchor{ch1-2-1-7-composition}
+Let $[n]\xrightarrow{\varphi}[m]\xrightarrow{\psi}[p]$ be two maps. Every
+$n$-fold complex $Y$ that is $\psi\varphi$-summable is also
+$\varphi$-summable. In particular, every summable $n$-fold complex is
+$\varphi$-summable for every map $[n]\xrightarrow{\varphi}[m]$.
+\VerdierSemanticAnchor{ch1-2-1-7-injective}
+When $\varphi$ is injective, all complexes are $\varphi$-summable.
+\VerdierSemanticAnchor{ch1-2-1-7-category}
+The \emph{category of $\varphi$-summable $n$-fold complexes} is the full
+subcategory of $\operatorname{comp}^{n}(C)$ defined by the
+$\varphi$-summable complexes.
+
+\VerdierSemanticAnchor{ch1-2-2}
+\subsection{Associated Simple Complex}
+
+\VerdierSemanticAnchor{ch1-2-2-1}
+\noindent\textbf{2.2.1.}\quad
+For every $\sigma\in\mathbb Z[n]$,
+$\sigma=\sum_{j\in[n]}l_je_j$, $l_j\in\mathbb Z$, and every $i\in[n]$, put
+
+\VerdierSemanticAnchor{ch1-2-2-1-eq1}
+\begin{equation}
+  \varepsilon(\sigma,i)=(-1)^{\left(\sum_{j<i}l_j\right)}.
+  \tag{2.2.1.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-2-1-sign-map}
+Formula (2.2.1.1) defines a map
+\begin{equation*}
+  (\sigma,i)\longmapsto\varepsilon(\sigma,i)
+\end{equation*}
+from $\mathbb Z[n]\times[n]$ to the group of signs $\{-1,1\}$. One
+immediately checks that, for every $i\in[n]$, the map
+$\sigma\longmapsto\varepsilon(\sigma,i)$ is a homomorphism of

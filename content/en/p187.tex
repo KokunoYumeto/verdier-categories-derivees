@@ -1,0 +1,80 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0187}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-1-1-base-change}
+Now let $m\colon Z\longrightarrow X$ be a morphism of complexes. It is
+clear that the complex $Z'$ over $Z$ obtained by the base change along
+$Z\xrightarrow{m}X$:
+
+\VerdierSemanticAnchor{ch3d-2-1-1-base-change-square}
+\begin{center}
+\begin{tikzcd}[column sep=4.2em,row sep=2.6em]
+Z' \arrow[r] \arrow[d] & X(u,i) \arrow[d,"{p(u,i)}"] \\
+Z \arrow[r,"m"'] & X
+\end{tikzcd}
+\end{center}
+is isomorphic to a complex
+$p(w,i)\colon Z(w,i)\longrightarrow Z$ for a suitable morphism $w$.
+
+\VerdierSemanticAnchor{ch3d-2-1-2}
+\medskip\noindent\textbf{Lemma 2.1.2.}\quad
+\textit{a) The morphism
+$H^j(p(u,i))\colon H^j(X(u,i))\longrightarrow H^j(X)$ is an
+isomorphism for $j\neq i,i+1$.}
+
+\noindent\textit{b) There are exact sequences:}
+
+\VerdierSemanticAnchor{ch3d-2-1-2-exact-sequences}
+\[
+0\longrightarrow H^i(X(u,i))\longrightarrow H^i(X)
+\longrightarrow
+\frac{\operatorname{Ker}(d_X^i)+\operatorname{Im}(u)}
+ {\operatorname{Im}(d_X^{i-1})+\operatorname{Im}(u)}
+\longrightarrow0,
+\]
+\[
+\begin{aligned}
+0\longrightarrow{}&
+\frac{\operatorname{Ker}(d_X^i)+\operatorname{Im}(u)}
+ {\operatorname{Im}(d_X^{i-1})+\operatorname{Im}(u)}
+\longrightarrow
+\frac{X^i}{\operatorname{Im}(d_X^{i-1})+\operatorname{Im}(u)}\\
+&\longrightarrow
+\frac{X^i}{\operatorname{Ker}(d_X^i)+\operatorname{Im}(u)}
+\longrightarrow0,
+\end{aligned}
+\]
+\[
+0\longrightarrow
+\frac{X^i}{\operatorname{Ker}(d_X^i)+\operatorname{Im}(u)}
+\longrightarrow H^{i+1}(X(u,i))
+\longrightarrow H^{i+1}(X)\longrightarrow0.
+\]
+
+\noindent\textit{c) The morphism $p(u,i)$ is a quasi-isomorphism if
+and only if}
+\[
+\operatorname{Im}(d_X^{i-1})+\operatorname{Im}(u)=X^i.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-1-2-proof}
+The diagram chase is left to the reader.
+
+\VerdierSemanticAnchor{ch3d-2-1-3}
+\medskip\noindent\textbf{Definition 2.1.3.}\quad
+A morphism of complexes $m\colon Z\longrightarrow X$ is called an
+\emph{elementary morphism of height $i$} if it is isomorphic in
+$\mathcal{F}\ell_1(\operatorname{comp}(\mathcal A))$ to a morphism of the
+form $p(u,i)$, where $u$ is an epimorphism.
+
+\VerdierSemanticAnchor{ch3d-2-1-3-properties}
+Thus an elementary morphism is, in particular, a quasi-isomorphism
+((2.1.2), c)). An elementary morphism is an epimorphism in
+$\operatorname{comp}(\mathcal A)$. An epimorphism in
+$\operatorname{comp}(\mathcal A)$ is an elementary morphism if and only if
+its kernel is an acyclic complex with at most two nonzero components. The
+composite of two elementary morphisms of the same height is
+\endgroup

@@ -1,0 +1,61 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0240}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-4-5}
+\noindent\textbf{4.4.5.}\quad
+数据与 (4.4.4) 相同，但另给定 $D(\mathcal A)$ 的一个对象 $X$。设
+$\bigl(X(p,q),\delta(p,q,r)\bigr)$ 为与复形 $X$ 关联的、取值于
+$D(\mathcal A)$ 的第二谱对象 (4.3.1)。函子 $F$ 把这个谱对象变为取值于
+$\mathcal B$ 的谱对象。由此得到一个关于 $F$ 以及关于自变量 $X$ 都是函子性的
+谱序列，其中该自变量在范畴 $D(\mathcal A)$ 中变化 (4.3.3)。这个谱序列称为
+\emph{函子 $F$ 关于复形 $X$ 的第二谱序列}。对于这个谱序列，始终使用
+（第二章，4.3.3.2）中引入的指标法。
+
+\VerdierSemanticAnchor{ch4d-4-4-6}
+\medskip\noindent\textbf{命题 4.4.6.}\quad
+
+\VerdierSemanticAnchor{ch4d-4-4-6-a}
+\noindent\textit{a) 函子 $F$ 关于复形 $X$ 的第二谱序列的项
+$\mathrm{II}_2^{p,q}$ 由下式给出：}
+\[
+\mathrm{II}_2^{p,q}=F^p\bigl(H^q(X)\bigr).
+\]
+
+\VerdierSemanticAnchor{ch4d-4-4-6-b}
+\noindent\textit{b) 各项 $\mathrm{II}_{\infty}^{p,q}$ 是适当滤过的对象
+$F^{p+q}(X)$ 的关联分次对象。}
+
+\VerdierSemanticAnchor{ch4d-4-4-6-proof}
+事实上，由 (4.3.4.1)，有典范同构：
+\[
+X(p,p+1)\xrightarrow{\sim}H^p(X)[-p],
+\]
+从而利用（第二章，4.3.3.2），有
+\[
+\mathrm{II}_2^{p,q}
+=F^{p+q}\bigl(H^q(X)[-q]\bigr)
+=F^p\bigl(H^q(X)\bigr),
+\]
+由此得到 a) 中（滥用记号的）等式。断言 b) 由（第二章，4.3.2）得到。
+
+\VerdierSemanticAnchor{ch4d-4-5}
+\medskip\noindent\textbf{4.5. 收敛问题。}
+
+\VerdierSemanticAnchor{ch4d-4-5-1}
+\noindent\textbf{定义 4.5.1.}\quad
+设 $\mathcal A$ 与 $\mathcal B$ 是两个阿贝尔范畴。一个上同调函子
+$F\colon D^*(\mathcal A)\longrightarrow\mathcal B$
+（$*=+,-,b,{}$ ``空''）称为\emph{右定常的}（相应地，\emph{左定常的}），
+如果存在整数 $n_0$，使得对 $D^*(\mathcal A)$ 中每个满足
+$H^i(X)=0$ 对所有 $i<0$（相应地，$>0$）成立的对象 $X$，都有
+$F^n(X)=0$ 对所有 $n<n_0$（相应地，$n>n_0$）成立。若函子 $F$ 既右定常
+又左定常，则称其为\emph{定常的}。一个正合函子
+$G\colon D^*(\mathcal A)\longrightarrow D^{*'}(\mathcal B)$ 称为
+\emph{右定常的}（相应地，\emph{左定常的}，相应地，\emph{定常的}），
+如果将函子 $G$ 与典范上同调函子
+$D^{*'}(\mathcal B)\longrightarrow\mathcal B$ 复合所得的上同调函子是右定常的
+（相应地，左定常的，相应地，定常的）。
+\endgroup

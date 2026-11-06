@@ -1,0 +1,74 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0035}%
+\VerdierSemanticAnchor{ch1-1-1-1-fiber-category-cont}%
+因此是 $\mathcal C$ 的一个子范畴：它与 $\mathcal C$ 有相同的对象集，而其态射
+正是 $\mathcal C$ 中次数为 $e$ 的态射。
+
+\VerdierSemanticAnchor{ch1-1-1-1-graded-functor}
+设 $(\mathcal C,G)$ 与 $(\mathcal C',G)$ 为两个 $G$-分次范畴。从
+$(\mathcal C,G)$ 到 $(\mathcal C',G)$ 的一个\emph{分次函子}，是
+$\mathcal G$ 上的一个笛卡尔函子 $F$。将它限制在纤维范畴上所得的函子记作
+$F_e\colon\mathcal C_e\to\mathcal C'_e$。
+\VerdierSemanticAnchor{ch1-1-1-1-compatible-morphism}
+最后，分次函子之间的态射 $m\colon F\to F'$ 若是函子的一个
+$\mathcal G$-态射，就称它\emph{与分次相容}。
+
+\VerdierSemanticAnchor{ch1-1-1-2}
+\noindent\textbf{1.1.2.}\quad
+设 $\mathcal C$ 为一个 $G$-分次范畴，$g$ 为 $G$ 的一个元素。对
+$\mathcal C$ 的每一对对象 $X,Y$，以
+\VerdierSemanticAnchor{ch1-1-1-2-homogeneous-hom}%
+$\operatorname{Hom}^{g}(X,Y)$ 表示从 $X$ 到 $Y$ 的次数为 $g$ 的态射所成的集合。
+于是：
+\VerdierSemanticAnchor{ch1-1-1-2-eq1}
+\begingroup
+\makeatletter
+\tagsleft@true
+\let\veqno\@@leqno
+\makeatother
+\begin{equation}
+  \operatorname{Hom}(X,Y)
+  =\coprod_{g\in G}\operatorname{Hom}^{g}(X,Y).
+  \tag{1.1.2.1}
+\end{equation}
+\endgroup
+
+\VerdierSemanticAnchor{ch1-1-1-2-graded-hom-set}
+因此，集合 $\operatorname{Hom}(X,Y)$ 带有一个 $G$-分次集合的结构。由于次数具有
+函子性，对每个态射 $m\colon X\to Y$ 和每个态射 $n\colon Y\to Z$，都有：
+\VerdierSemanticAnchor{ch1-1-1-2-eq2}
+\begin{equation}
+  \deg(n)\deg(m)=\deg(nm).
+  \tag{1.1.2.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-1-2-fibered-criterion}
+上述公式只不过表达了 $\mathcal C$ 是 $\mathcal G$ 上的一个范畴。现在来表述
+$\mathcal C$ 纤维化于 $\mathcal G$ 之上这一事实。只需说，$\mathcal C$ 的每个
+对象都是一个具有指定次数的超笛卡尔态射的靶 [19]。但立刻可以验证，
+$\mathcal C$ 的超笛卡尔态射正是 $\mathcal C$ 的同构；因此，$\mathcal C$ 纤维化
+当且仅当它具有下列性质：
+
+\VerdierSemanticAnchor{ch1-1-1-2-eq3}
+\noindent\textnormal{(1.1.2.3)}\quad
+\begin{minipage}[t]{0.78\textwidth}
+\emph{对 $G$ 的每个元素 $g$ 以及 $\mathcal C$ 的每个对象 $X$，都存在一个以
+$X$ 为靶且次数为 $g$ 的同构。}
+\end{minipage}
+\par\medskip
+
+\VerdierSemanticAnchor{ch1-1-1-2-degree-preserving-functors}
+现在设 $(\mathcal C,G)$ 与 $(\mathcal C',G)$ 为两个 $G$-分次范畴，并设
+$F\colon\mathcal C\to\mathcal C'$ 为一个分次函子。首先，$F$ 是一个
+$\mathcal G$-函子，因而保持态射的次数。它还把 $\mathcal C$ 的笛卡尔态射送到
+$\mathcal C'$ 的笛卡尔态射；由于 $\mathcal C$ 的笛卡尔态射就是同构，这一点是
+自动的。因此，从 $\mathcal C$ 到 $\mathcal C'$ 的分次函子恰好就是
+\emph{保持次数的函子}。
+
+\VerdierSemanticAnchor{ch1-1-1-2-degree-e-morphism}
+最后，与分次相容的分次函子态射 $m\colon F\to F'$，无非是次数为 $e$ 的函子
+态射，也就是说，对 $\mathcal C$ 的每个对象 $X$ 给定一个态射：
+\VerdierSemanticAnchor{ch1-1-1-2-component}
+\[
+  m(X)\colon F(X)\longrightarrow F'(X)
+\]

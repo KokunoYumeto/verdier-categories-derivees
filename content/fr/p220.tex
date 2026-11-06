@@ -1,0 +1,80 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0220}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-3-4-b}
+\noindent\textit{b) Lorsque la catégorie $\mathcal C$ est additive, un
+foncteur de $\mathcal A^{\operatorname{Ext}}$ dans $\mathcal C$ est
+préadditif si et seulement si chacun des foncteurs de la suite de foncteurs
+liés associée est additif.}
+
+\VerdierSemanticAnchor{ch3d-3-3-4-proof}
+Nous nous bornerons à montrer que $\Phi$ est essentiellement surjectif. Tout
+d'abord, quitte à modifier les catégories en présence par une équivalence,
+on peut supposer que la catégorie $\mathcal A$ possède un seul objet nul.
+On vérifie aussitôt qu'alors la catégorie
+$\mathcal A^{\operatorname{Ext}}$ ne possède qu'un seul objet nul. Soit
+alors $(F^n,\delta_F^n)$ une suite de foncteurs liés. Remarquons que, pour
+tout entier $n$, la propriété SFL II) définit un isomorphisme
+$F^n(0)\longrightarrow F^{n+1}(0)$. On peut alors, en remplaçant au besoin
+la suite $(F^n,\delta_F^n)$ par une suite isomorphe, supposer que, pour tout
+$n$, $F^n(0)=F^{n+1}(0)$ et que
+$\delta_F^n(0)=\operatorname{id}$.
+
+\VerdierSemanticAnchor{ch3d-3-3-4-object-definition}
+Tout objet non nul $W$ de la catégorie
+$\mathcal A^{\operatorname{Ext}}$ s'écrit d'une manière unique sous la forme
+$X[n]$, où $X$ est un objet de $\mathcal A$. Posons alors pour tout objet
+non nul $W$ de $\mathcal A^{\operatorname{Ext}}$, $F(W)=F^n(X)$ et posons
+de plus $F(0)=F^0(0)$. Nous avons ainsi défini une application de
+$\operatorname{Ob}(\mathcal A^{\operatorname{Ext}})$ dans
+$\operatorname{Ob}(\mathcal C)$ que nous allons maintenant prolonger en un
+foncteur $F\colon\mathcal A^{\operatorname{Ext}}\longrightarrow\mathcal C$,
+qui induise la suite de foncteurs liés $(F^n,\delta_F^n)$. Soit donc
+$m\colon W\longrightarrow W'$ un morphisme de
+$\mathcal A^{\operatorname{Ext}}$. Examinons d'abord différents cas :
+
+\VerdierSemanticAnchor{ch3d-3-3-4-morphism-cases-zero}
+\noindent 1) $W=W'=0$. On pose alors
+$F(m)=\operatorname{id}_{F^0(0)}$.
+
+\noindent 2) $W=0$ et $W'=X[p]$, $X\neq0$. On pose alors
+$F(m)=F^p(0\longrightarrow X)$.
+
+\noindent 3) $W=Y[p]$, $Y\neq0$, et $W'=0$. On pose alors
+$F(m)=F^p(Y\longrightarrow0)$.
+
+\VerdierSemanticAnchor{ch3d-3-3-4-degree}
+Supposons maintenant que $W$ et $W'$ soient différents de l'objet nul. Ils
+s'écrivent alors de manière unique sous la forme $W=X[p]$, $W'=Y[q]$, où
+$X$ et $Y$ sont des objets de $\mathcal A$. L'entier $q-p$ est appelé alors
+le \emph{degré} de $m$.
+
+\VerdierSemanticAnchor{ch3d-3-3-4-morphism-cases-degree}
+\noindent 4) Degré de $m<0$. On pose alors
+$F(m)=F^q(0\longrightarrow Y)\,F^p(X\longrightarrow0)$.
+
+\noindent 5) Degré de $m=0$. Le morphisme $m$ s'écrit alors de manière
+unique sous la forme $f[p]$, où $f$ est un morphisme de $\mathcal A$. On
+pose alors $F(m)=F^p(f)$.
+
+\noindent 6) Degré de $m=1$. Il existe une suite exacte de $\mathcal A$ :
+\[
+S=0\longrightarrow Y\longrightarrow Z\longrightarrow X\longrightarrow0
+\]
+telle que $m=\delta^1(S)[p]$ (3.3.1). On pose alors
+$F(m)=\delta_F^p(S)$. Le fait que le morphisme $F(m)$ ainsi défini ne
+dépende pas de la suite exacte choisie résulte de (3.2.2) et de la propriété
+SFL I).
+
+\VerdierSemanticAnchor{ch3d-3-3-4-fl-le-n}
+Désignons alors par
+$\mathcal{F}\ell_{\leq n}(\mathcal A^{\operatorname{Ext}})$ l'ensemble des
+morphismes $m\colon W\longrightarrow W'$ tels que $W$ ou $W'$ soit l'objet
+nul ou tels que le degré de $m$ soit inférieur ou égal à $n$. L'existence du
+foncteur $F\colon\mathcal A^{\operatorname{Ext}}\longrightarrow\mathcal C$
+induisant la suite de foncteurs liés $(F^n,\delta_F^n)$ résulte alors du
+lemme et de la proposition suivants :
+\endgroup

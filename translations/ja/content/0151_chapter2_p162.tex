@@ -1,0 +1,69 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0162}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch4}
+\section*{4. スペクトル対象。}
+
+[1] 第 XV 章 \S 7 におけるスペクトル系列の叙述を取り上げ、三角圏に
+適合するよう改める。
+
+\VerdierSemanticAnchor{ch4-4-1}
+\subsection*{4.1. スペクトル対象の定義。}
+
+\VerdierSemanticAnchor{ch4-4-1-1}
+\medskip\noindent\textbf{4.1.1.}\quad
+$\mathcal J$ を圏とし、各 $n\in\mathbb N$ に対して
+$\mathcal{F}\ell_n(\mathcal J)$ を、$n$ 個の $\mathcal J$ の合成可能な
+射の列からなる圏とする（第 I 章、3.3.6）。次の三つの関手
+$s_i\colon\mathcal{F}\ell_2(\mathcal J)\to\mathcal{F}\ell_1(\mathcal J)$、
+$1\leq i\leq3$ を用いる：
+\VerdierSemanticAnchor{ch4-4-1-1-1}
+\[
+\left\{
+\begin{aligned}
+&\bigl(\mathord\bullet\xrightarrow f\mathord\bullet\xrightarrow g\mathord\bullet\bigr)
+   \in\operatorname{Ob}\mathcal{F}\ell_2(\mathcal J),\\
+&s_1\bigl(\mathord\bullet\xrightarrow f\mathord\bullet\xrightarrow g\mathord\bullet\bigr)
+   =\bigl(\mathord\bullet\xrightarrow f\mathord\bullet\bigr),\\
+&s_2\bigl(\mathord\bullet\xrightarrow f\mathord\bullet\xrightarrow g\mathord\bullet\bigr)
+   =\bigl(\mathord\bullet\xrightarrow{gf}\mathord\bullet\bigr),\\
+&s_3\bigl(\mathord\bullet\xrightarrow f\mathord\bullet\xrightarrow g\mathord\bullet\bigr)
+   =\bigl(\mathord\bullet\xrightarrow g\mathord\bullet\bigr).
+\end{aligned}
+\right.
+\tag{4.1.1.1}
+\]
+および二つの関手の射：
+\VerdierSemanticAnchor{ch4-4-1-1-2}
+\[
+\left\{
+\begin{aligned}
+&u_1\colon s_1\longrightarrow s_2,
+&&u_1(f,g)=
+\begin{tikzcd}[ampersand replacement=\&,column sep=2.8em,row sep=1.9em,baseline=(current bounding box.center)]
+{}\arrow[r,"f"]\arrow[d,"\operatorname{id}"']\&{}\arrow[d,"g"]\\
+{}\arrow[r,"gf"']\&{}
+\end{tikzcd},\\[2pt]
+&u_2\colon s_2\longrightarrow s_3,
+&&u_2(f,g)=
+\begin{tikzcd}[ampersand replacement=\&,column sep=2.8em,row sep=1.9em,baseline=(current bounding box.center)]
+{}\arrow[r,"gf"]\arrow[d,"f"']\&{}\arrow[d,"\operatorname{id}"]\\
+{}\arrow[r,"g"']\&{}
+\end{tikzcd}.
+\end{aligned}
+\right.
+\tag{4.1.1.2}
+\]
+
+\VerdierSemanticAnchor{ch4-4-1-2}
+\medskip\noindent\textbf{4.1.2.}\quad
+$\mathcal D$ を三角圏、$\mathcal J$ を圏とする。
+\emph{型 $\mathcal J$ で $\mathcal D$ に値をとるスペクトル対象}とは、
+次の二つの関手からなる対象である：
+
+a) 関手
+$X\colon\mathcal{F}\ell_1(\mathcal J)\longrightarrow\mathcal D$：
+\[
+\bigl(\mathord\bullet\xrightarrow f\mathord\bullet\bigr)\longmapsto X_f.
+\]
+\endgroup

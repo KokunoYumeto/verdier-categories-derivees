@@ -1,0 +1,102 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0131}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{2pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{2pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-1-5-continuation}
+\noindent には、包含関手と両立する三角構造は高々一つしか存在しない。
+
+\VerdierSemanticAnchor{ch2-2-1-5-criterion}
+$\mathcal D'$ をシフトで安定な $\mathcal D$ の充満部分圏とする。
+$\mathcal D'$ が三角構造をもち、$\mathcal D'$ が $\mathcal D$ の
+充満三角部分圏となるための必要十分条件は、$\mathcal D'$ の任意の二対象
+$X,Y$ と任意の射
+$f\colon X\to Y$ に対し、$Z$ が $\mathcal D'$ の対象であるような
+$\mathcal D$ の完全三角 $(X,Y,Z,f,g,h)$ が存在することである。
+
+\VerdierSemanticAnchor{ch2-2-1-6}
+\medskip
+\noindent\textbf{2.1.6.}\quad
+\VerdierSemanticAnchor{ch2-2-1-6-saturated}
+$\mathcal D$ を三角圏とする。$\mathcal D$ の充満三角部分圏 $\mathcal D'$
+が次の性質をもつとき、\emph{飽和}であるという。
+
+\VerdierSemanticAnchor{ch2-2-1-6-direct-summand}
+\par\smallskip
+\noindent\makebox[0pt][l]{(2.1.6.1)}%
+\begin{minipage}[t]{\linewidth}
+  \centering\itshape
+  $\mathcal D'$ の対象の $\mathcal D$ における任意の直和因子は、\\[-1pt]
+  $\mathcal D'$ の対象と同型である。
+\end{minipage}
+\par\smallskip
+
+\VerdierSemanticAnchor{ch2-2-1-6-direct-summand-definition}
+\noindent （対象 $Y$ の直和因子とは、ある対象 $Z$ と同型
+$X\oplus Z\xrightarrow{\sim}Y$ が存在するような対象 $X$ をいう。）
+
+\VerdierSemanticAnchor{ch2-2-1-7}
+\medskip
+\noindent\textbf{2.1.7.}\quad
+\VerdierSemanticAnchor{ch2-2-1-7-denominator-set}
+$\mathcal D'$ を三角圏 $\mathcal D$ の充満三角部分圏とする。次で定義される
+$\mathcal D$ の射の集合を $S(\mathcal D')$ と書く：
+
+\VerdierSemanticAnchor{ch2-2-1-7-characterization}
+\par\smallskip
+\noindent\makebox[0pt][l]{(2.1.7.1)}%
+\begin{minipage}[t]{\linewidth}
+  \centering\itshape
+  $f\colon X\to Y$ が $S(\mathcal D')$ に属するための必要十分条件は、\\[-1pt]
+  $Z$ が $\mathcal D'$ の対象であるような $\mathcal D$ の完全三角
+  $(X,Y,Z,f,g,h)$ が存在することである。
+\end{minipage}
+\par\smallskip
+
+\VerdierSemanticAnchor{ch2-2-1-8}
+\medskip
+\noindent\textbf{命題 2.1.8.}\quad
+\VerdierSemanticAnchor{ch2-2-1-8-proposition}
+\emph{集合 $S(\mathcal D')$ (2.1.7.1) は $\mathcal D$ の乗法的系
+(2.1.4) である。それが飽和であるための必要十分条件は、部分圏
+$\mathcal D'$ が飽和であることである。}
+
+\VerdierSemanticAnchor{ch2-2-1-8-proof-plan}
+第一の主張を証明するには、(2.1.3) により、集合 $S(\mathcal D')$ が性質
+SM1)、SM3)、SM5)、SM6) をもつことを示せばよい。以下
+$S(\mathcal D')$ がこれらの性質をもつことを順に示し、最後に末尾の主張を
+証明する。
+
+\VerdierSemanticAnchor{ch2-2-1-9}
+\medskip
+\noindent\textbf{2.1.9.}\quad
+\VerdierSemanticAnchor{ch2-2-1-9-sm1}
+\emph{$S(\mathcal D')$ は性質 SM1) をもつ。}
+
+\VerdierSemanticAnchor{ch2-2-1-9-identity}
+まず、$\mathcal D$ の任意の対象 $X$ に対し、射 $\operatorname{id}_X$ が
+$S(\mathcal D')$ に属することは明らかである。これは TRI) と、
+$\mathcal D'$ の零対象が $\mathcal D$ の零対象でもあることから直ちに従う。
+
+\VerdierSemanticAnchor{ch2-2-1-9-composition}
+$S(\mathcal D')$ が合成について閉じていることは、公理 TRIV) と (1.2.4)
+から直ちに従う。検証は読者に委ねる。
+
+\VerdierSemanticAnchor{ch2-2-1-10}
+\medskip
+\noindent\textbf{2.1.10.}\quad
+\VerdierSemanticAnchor{ch2-2-1-10-sm3}
+\emph{$S(\mathcal D')$ は性質 SM3) をもつ。}
+
+\VerdierSemanticAnchor{ch2-2-1-10-reduction}
+まず、$s\in S(\mathcal D')$、$fs=0$ なる図式
+$X\xrightarrow{s}Y\xrightarrow{f}Z$ が与えられたとき、
+$t\in S(\mathcal D')$、$tf=0$ なる図式
+$Y\xrightarrow{f}Z\xrightarrow{t}W$ が存在することを示せばよい。
+そうすれば反対圏へ移ることで逆向きも得られ、その結果、
+
+\VerdierSemanticAnchor{ch2-2-1-10-p132-boundary}
+\endgroup

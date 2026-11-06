@@ -1,0 +1,92 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0084}%
+\VerdierSemanticAnchor{ch1-3-1-2-phi-definition-continuation}
+$\operatorname{tr}_1(C)$ の次の射を表すものとする：
+
+\VerdierSemanticAnchor{ch1-3-1-2-phi-diagram}
+\begin{equation*}
+  \Phi(f)=(0,p(f),a(f))
+  \qquad
+  \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center)]
+    \node (X)  at (0,1.45) {$X$};
+    \node (Y)  at (3.5,1.45) {$Y$};
+    \node (Z)  at (0,0) {$0$};
+    \node (Cf) at (3.5,0) {$c(f)\mathpunct{,}$};
+    \draw[->] (X) -- node[above] {$f$} (Y);
+    \draw[->] (X) -- (Z);
+    \draw[->] (Y) -- node[right] {$p(f)$} (Cf);
+    \draw[->] (Z) -- (Cf);
+    \draw[decorate,decoration={snake,amplitude=0.8pt,segment length=3.3pt}]
+      (1.75,0.03) -- (2.35,0.20);
+    \draw[->] (2.35,0.20) -- node[above left] {$a(f)$} (3.27,0.52);
+  \end{tikzpicture}
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-3-1-2-eq4}
+\begin{equation}
+  \begin{aligned}
+    p(f)^i&=
+      \begin{pmatrix}
+        \operatorname{id}_{Y^i}\\[1mm]
+        0
+      \end{pmatrix}
+      \colon Y^i\longrightarrow Y^i\oplus X^{i+1},\\[2mm]
+    a(f)^i&=
+      \begin{pmatrix}
+        0\\[1mm]
+        \operatorname{id}_{X^{i+1}}
+      \end{pmatrix}
+      \colon X^{i+1}\longrightarrow Y^i\oplus X^{i+1}.
+  \end{aligned}
+  \tag{3.1.2.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-1-2-phi-naturality}
+直ちに計算すると、$\Phi$ は圏 $\operatorname{tr}_1(C)$ の恒等関手から
+関手 $sc$ への関手の射であることがわかる。
+
+\VerdierSemanticAnchor{ch1-3-1-3}
+\noindent\textbf{命題 3.1.3.}\quad
+\emph{射 $\Phi$ は写像錐関手を関手 $s$ の左随伴にする。すなわち、
+$\operatorname{tr}_1(C)$ の各対象 $X\xrightarrow{f}Y$ と
+$\operatorname{comp}(C)$ の各対象 $W$ に対し、射 $\Phi$ が定める標準写像}
+
+\VerdierSemanticAnchor{ch1-3-1-3-hom-isomorphism}
+\begin{equation*}
+  \operatorname{Hom}_{\operatorname{comp}(C)}(c(f),W)
+  \longrightarrow
+  \operatorname{Hom}_{\operatorname{tr}_1(C)}
+    \bigl((X\xrightarrow{f}Y),sW\bigr)
+\end{equation*}
+\emph{は同型である。}
+
+\VerdierSemanticAnchor{ch1-3-1-3-verification}
+検証は読者に委ねる。
+\VerdierSemanticAnchor{ch1-3-1-3-s-fully-faithful}
+関手 $s$ は充満忠実であり、したがって関手 $cs$ は恒等関手と標準的に同型である。
+\VerdierSemanticAnchor{ch1-3-1-3-cs-identity}
+実際、ここで選んだ関手 $c$ の構成では、関手 $cs$ は恒等関手に等しい。
+\VerdierSemanticAnchor{ch1-3-1-3-adjunction-reformulation}
+(3.1.3) の随伴性は次のようにも表せる。関手が定める写像
+
+\VerdierSemanticAnchor{ch1-3-1-3-c-hom-isomorphism}
+\begin{equation*}
+  c\colon
+  \operatorname{Hom}_{\operatorname{tr}_1(C)}
+    \bigl((X\xrightarrow{f}Y),sW\bigr)
+  \longrightarrow
+  \operatorname{Hom}_{\operatorname{comp}(C)}(c(f),W)
+\end{equation*}
+は同型である。
+
+\VerdierSemanticAnchor{ch1-3-1-4}
+\noindent\textbf{3.1.4.}\quad
+$\operatorname{tr}_1(C)$ にホモトピーの概念を定義する。次の二つの射を考える：
+
+\VerdierSemanticAnchor{ch1-3-1-4-homotopy-setup}
+\begin{equation*}
+  (g,h,a),(g',h',a')\colon
+  (X\xrightarrow{f}Y)
+  \rightrightarrows
+  (X'\xrightarrow{f'}Y')
+\end{equation*}

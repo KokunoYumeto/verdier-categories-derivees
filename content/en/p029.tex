@@ -1,0 +1,74 @@
+\VerdierPhysicalPageAnchor{0029}%
+\VerdierSemanticAnchor{intro-7-duality-D4}
+\noindent\textit{D4)} When $X$ is a closed subset of $Y$ and $f$ is the
+canonical inclusion, the functor $f^!$ is the total derived functor of the
+“sections with support in $X$” functor.
+
+\VerdierSemanticAnchor{intro-7-traditional-duality}
+This theorem, and its variants in the other contexts indicated above,
+contains the traditional formulations of duality: the Poincaré duality
+theorem in the topological case, and the Serre duality theorem for coherent
+algebraic sheaves on a smooth projective variety. But the use of the language
+of derived categories does not merely make it possible to prove, in greater
+generality, theorems in which one might have been interested only in simple
+special cases. For example, at present one knows how to prove the duality
+theorem in its traditional form (of Serre-duality type), for coherent
+algebraic sheaves on a smooth proper nonprojective variety over an
+algebraically closed field, only by way of the general duality theorem. The
+same holds for duality in étale cohomology, for nonsingular projective
+varieties.
+
+\VerdierSemanticAnchor{intro-8}
+\noindent\textbf{8.}\quad
+The duality theorems in cases 1), 2), and 4) lead to nonclassical Lefschetz
+fixed-point formulas involving sheaves that may have singularities [10],
+[11], [12]. Let $X$ be a compact topological space of finite cohomological
+dimension, $A$ a noetherian ring, and $F$ a sheaf of $A$-modules on $X$ with
+the following properties:
+
+\VerdierSemanticAnchor{intro-8-lefschetz-hypotheses}
+\begin{enumerate}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\VerdierSemanticAnchor{intro-8-hypothesis-a}
+\item At every point of $X$, the stalks of the sheaf $F$ are finitely
+generated $A$-modules of finite projective dimension.
+
+\VerdierSemanticAnchor{intro-8-hypothesis-b}
+\item A regularity property in a neighborhood of every point of $X$,
+analogous to the properties described by Wilder [9].
+\end{enumerate}
+
+\VerdierSemanticAnchor{intro-8-endomorphism}
+Let $\Phi=(\Phi_X,\Phi_F)\colon(X,F)\longrightarrow(X,F)$ be an endomorphism
+of the topological space $X$ equipped with the sheaf $F$. The endomorphism
+$\Phi$ induces an endomorphism of a complex of $A$-modules:
+\VerdierSemanticAnchor{intro-8-rh-phi}
+\[
+\mathrm{RH}(\Phi)\colon
+\mathrm{RH}(X,F)\longrightarrow\mathrm{RH}(X,F).
+\]
+
+\VerdierSemanticAnchor{intro-8-perfect-complex}
+Under hypotheses a) and b), the complex $\mathrm{RH}(X,F)$ is a
+\emph{perfect complex} of $A$-modules, i.e. it is isomorphic, in the derived
+category, to a finite complex whose components are finitely generated
+projective $A$-modules.
+
+\VerdierSemanticAnchor{intro-8-lefschetz-number}
+One can therefore define the Lefschetz number $\chi(\mathrm{RH}(\Phi))$ as
+the alternating sum of the traces of the components of
+$\mathrm{RH}(\Phi)$, which are endomorphisms of finitely generated
+projective modules. Suppose now, to fix ideas, that the fixed points of
+$\Phi$ are isolated. One then has the equality
+\VerdierSemanticAnchor{intro-8-lefschetz-formula}
+\begingroup
+\makeatletter
+\tagsleft@true
+\let\veqno\@@leqno
+\makeatother
+\begin{equation}
+\chi\bigl(\mathrm{RH}(\Phi)\bigr)
+=\sum_{P\ \mathrm{fixed}}\chi_P(\Phi)
+\tag{Lef}
+\end{equation}
+\endgroup

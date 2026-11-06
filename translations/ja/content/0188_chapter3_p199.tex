@@ -1,0 +1,87 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0199}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-2-exact-sequences}
+および次の完全列がある：
+\[
+0\longrightarrow H^{-q}(X_{q-1})\longrightarrow
+\frac{Z^{-q}}{\operatorname{Im}(Y^{-q-1}\longrightarrow Z^{-q})}
+\longrightarrow
+\frac{Z^{-q}}{\operatorname{Ker}(Z^{-q}\longrightarrow L^{-q+1})}
+\longrightarrow0,
+\]
+\[
+0\longrightarrow
+\frac{Z^{-q}}{\operatorname{Ker}(Z^{-q}\longrightarrow L^{-q+1})}
+\longrightarrow L^{-q+1}\longrightarrow
+\frac{L^{-q+1}}{\operatorname{Im}(Z^{-q}\longrightarrow L^{-q+1})}
+\longrightarrow0,
+\]
+\[
+0\longrightarrow H^{-q+1}(X_{q-1})\longrightarrow
+\frac{L^{-q+1}}{\operatorname{Im}(Z^{-q}\longrightarrow L^{-q+1})}
+\longrightarrow
+\frac{L^{-q+1}}{\operatorname{Ker}(L^{-q+1}\longrightarrow L^{-q+2})}
+\longrightarrow0.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-2-mq-object}
+複体 $X_{q-1}$ は $Y$ と擬同型なので、対象 $H^i(X_{q-1})$ は $M$ に属する。
+上の完全列、帰納法の仮定 2)、および $M^\wedge$ の完全性（2.2.4）から、対象
+\[
+Z^{-q}/\operatorname{Im}(Y^{-q-1}\longrightarrow Z^{-q})
+\]
+は $M^\wedge$ に属する。したがって、射
+
+\VerdierSemanticAnchor{ch3d-2-3-2-v}
+\[
+v\colon L^{-q}\longrightarrow Z^{-q}
+\]
+で、$L^{-q}$ が $M$ に属し、かつ合成射
+
+\VerdierSemanticAnchor{ch3d-2-3-2-composite}
+\[
+L^{-q}\xrightarrow{v}Z^{-q}\longrightarrow
+Z^{-q}/\operatorname{Im}(Y^{-q-1}\longrightarrow Z^{-q})
+\]
+がエピ射となるものが存在する。次をおく：
+
+\VerdierSemanticAnchor{ch3d-2-3-2-xq}
+\[
+X_q=X_{q-1}(v,-q),
+\qquad
+\dot u_q=p(v,-q)\quad(2.1.1).
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-2-verify}
+(2.1.2) により $u_q$ は擬同型であり、性質 3) が従う。残る性質 2)、すなわち
+$L^{-q}\longrightarrow L^{-q+1}$ の核と像が $M^\wedge$ に属することは、
+次の完全列から直ちに従う：
+
+\VerdierSemanticAnchor{ch3d-2-3-2-exact-sequences-2}
+\[
+0\longrightarrow\operatorname{Im}(L^{-q}\longrightarrow L^{-q+1})
+\longrightarrow\operatorname{Ker}(L^{-q+1}\longrightarrow L^{-q+2})
+\longrightarrow H^{-q+1}(X_q)\longrightarrow0,
+\]
+\[
+0\longrightarrow\operatorname{Ker}(L^{-q}\longrightarrow L^{-q+1})
+\longrightarrow L^{-q}\longrightarrow
+\operatorname{Im}(L^{-q}\longrightarrow L^{-q+1})\longrightarrow0.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-2-conclusion}
+これで命題の証明が完了した。
+
+\VerdierSemanticAnchor{ch3d-2-3-3}
+\medskip\noindent\textbf{命題 2.3.3.}
+\textit{$M\subset M'$ を $\mathcal A$ の対象の二つの集合とする。$M$ は性質
+$(E_4)$ と $(E_5)$ をもち、$M'$ は性質 $(E_1)$ と $(E_4)$ をもち、さらに
+$M'$ の各対象は $M$ のある対象の商対象であるとする。
+$Y\in\operatorname{Ob}\operatorname{comp}(\mathcal A)$ を次の条件を満たす複体とする：}
+
+\noindent\textit{1) $Y$ の成分 $Y^i$、$i\in\mathbf Z$ は $M'$ に属する。}
+\endgroup

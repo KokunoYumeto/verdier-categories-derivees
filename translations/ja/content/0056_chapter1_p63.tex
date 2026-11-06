@@ -1,0 +1,89 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0063}%
+\VerdierSemanticAnchor{ch1-1-6-5-continuation}
+ここから直ちに
+
+\VerdierSemanticAnchor{ch1-1-6-5-deduction}
+\VerdierSemanticAnchor{ch1-1-6-5-beta-s-coboundary}
+\begin{equation*}
+  \alpha_s(\sigma_1,\sigma_2)\alpha(\sigma_1,\sigma_2)^{-1}
+  =\beta_s(\sigma_2)\beta_s(\sigma_1+\sigma_2)^{-1}\beta_s(\sigma_1)
+\end{equation*}
+が従う。ただし
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq3}
+\VerdierSemanticAnchor{ch1-1-6-5-eq3-beta}
+\VerdierSemanticAnchor{ch1-1-6-5-eq3-basis}
+\begin{equation}
+  \begin{aligned}
+    \beta_s(\sigma_1)
+      &=(-1)^{\left(
+          \sum_{\substack{i<j\\s(i)>s(j)}}p_i p_j
+        \right)},\\
+    \beta_s(e_i)&=1,
+      \qquad \forall i\in[1,n].
+  \end{aligned}
+  \tag{1.6.5.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-5-application}
+したがって (1.6.2) により、次を満たす任意の写像
+$\beta\colon\mathbb Z^n\to\mathbb Z/2\mathbb Z$
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq4}
+\begin{equation}
+  \alpha_s(\sigma_1,\sigma_2)\alpha(\sigma_1,\sigma_2)^{-1}
+  =\beta(\sigma_2)\beta(\sigma_1+\sigma_2)^{-1}\beta(\sigma_1)
+  \tag{1.6.5.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq5-intro}
+は
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq5}
+\begin{equation}
+  \beta=\beta_s\eta
+  \tag{1.6.5.5}
+\end{equation}
+の形である。
+
+\VerdierSemanticAnchor{ch1-1-6-5-closure}
+ここで $\eta\colon\mathbb Z^n\to\mathbb Z/2\mathbb Z$ は
+$e_j\in\mathbb Z^n$ 上で $\beta(e_j)$ の値をとるただ一つの群準同型である。
+
+\VerdierSemanticAnchor{ch1-1-6-6}
+\VerdierSemanticAnchor{ch1-1-6-6-product-setup}
+\noindent\textbf{1.6.6.}\quad
+$(C_i,\mathbb Z,T_i,c_i)$、$1\leq i\leq n$ を $\mathbb Z$-圏とし、
+$(D,\mathbb Z,T,c)$ を加法的な $\mathbb Z$-圏とする。
+$(C,\mathbb Z^n,T,c)$ を $(C_i,\mathbb Z,T_i,c_i)$ の積圏とする。
+群 $\mathbb Z^n$ には順序付き基底 $e_1,\ldots,e_n$ が自然に備わる。
+これは次の公式によって同型を除いて $C$ に作用する（ここでは (1.3.12) で
+導入した右側の記法を用いる）：
+
+\VerdierSemanticAnchor{ch1-1-6-6-eq1}
+\begin{equation}
+  (X_1,\ldots,X_n)[\sigma]
+  =(X_1[l_1],\ldots,X_n[l_n]),
+  \qquad
+  \sigma=\sum_{i=1}^{n}l_i e_i.
+  \tag{1.6.6.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-6-phi-action}
+$\varphi\colon\mathbb Z^n\to\mathbb Z$ を
+$\varphi(\sum_{i=1}^{n}l_i e_i)=\sum_{i=1}^{n}l_i$ で定まる準同型とする。
+$\mathbb Z^n$ を $\varphi$ を通じて $D$ に作用させる (1.4.1)。この状況では
+常に次の規約を用いる：
+
+\VerdierSemanticAnchor{ch1-1-6-6-sign-rule-1}
+\noindent\textbf{符号規則 I：}
+\emph{明示的に別の指定がない限り、$C$ から $D$ への関手は常に順序付き基底
+$e_1,\ldots,e_n$ に関する Koszul 余サイクルで捩られた
+$\mathbb Z^n$-関手とする。}
+
+\VerdierSemanticAnchor{ch1-1-6-6-sign-rule-2}
+\noindent\textbf{符号規則 II：}
+\emph{明示的に別の指定がない限り、関手の射は常に自明な準同型
+$\beta\colon\mathbb Z^n\to\mathbb Z/2\mathbb Z$ に関する
+$\mathbb Z^n$-関手の射とする (1.4.6)。}

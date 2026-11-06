@@ -1,0 +1,89 @@
+\VerdierPhysicalPageAnchor{0112}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-1-3}
+\noindent\textbf{Definition 1.1.3.}\quad
+Let $\mathcal D$ and $\mathcal D'$ be two triangulated categories. An
+\emph{exact functor} from $\mathcal D$ to $\mathcal D'$ is a
+$\mathbb Z$-functor (not necessarily strict) (Chapter I, 1.2.4)
+$(F,p)\colon\mathcal D\longrightarrow\mathcal D'$ such that, for every
+distinguished triangle
+
+\VerdierSemanticAnchor{ch2-1-1-3-source-triangle}
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+\]
+in $\mathcal D$, the triangle
+
+\VerdierSemanticAnchor{ch2-1-1-3-image-triangle}
+\[
+  FX\xrightarrow{Fu}FY\xrightarrow{Fv}FZ
+  \xrightarrow{p(X)Fw}(FX)[1]
+\]
+is distinguished (1.1.4.2).
+
+\VerdierSemanticAnchor{ch2-1-1-4}
+\medskip
+\noindent\textbf{Definition 1.1.4.}\quad
+Let $\mathcal D_i$, $1\leq i\leq n$, and $\mathcal D$ be $n+1$
+triangulated categories. A \emph{multi-exact functor} from
+$\prod_i\mathcal D_i$ to $\mathcal D$ is a twisted $\mathbb Z^n$-functor
+(Chapter I, 1.4.4)
+$(F,p)\colon\prod_i\mathcal D_i\longrightarrow\mathcal D$ such that, for
+every family of objects $X_i$ belonging respectively to the categories
+$\mathcal D_i$, $i\ne j$, the $\mathbb Z$-functor
+
+\VerdierSemanticAnchor{ch2-1-1-4-partial-functor}
+\[
+  X\longmapsto F(X_1,\ldots,X,\ldots,X_n)\colon
+  \mathcal D_j\longrightarrow\mathcal D
+\]
+is an exact functor.
+
+\VerdierSemanticAnchor{ch2-1-1-4-1}
+\medskip
+\noindent\textbf{1.1.4.1.}\quad
+In Definition (1.1.4), the category $\prod_i\mathcal D_i$ is equipped
+with its canonical $\mathbb Z^n$-structure, and the group $\mathbb Z^n$
+acts on the category $\mathcal D$ through the homomorphism
+
+\VerdierSemanticAnchor{ch2-1-1-4-1-group-action}
+\[
+  \mathbb Z^n\longrightarrow\mathbb Z,
+\]
+the sum of the coordinates (Chapter I, 1.6.6).
+
+\VerdierSemanticAnchor{ch2-1-1-4-2}
+\medskip
+\noindent\textbf{1.1.4.2.}\quad
+In accordance with sign rule I (Chapter I, 1.6.6), the multi-exact
+functors will, unless expressly stated otherwise, be twisted by the
+Koszul cocycle relative to the canonical basis $e_1,\ldots,e_n$ of
+$\mathbb Z^n$ (Chapter I, 1.6.4).
+
+\VerdierSemanticAnchor{ch2-1-1-4-2-trivial-cocycle}
+In particular, this implies that exact functors from $\mathcal D$ to
+$\mathcal D'$ are twisted by the trivial cocycle.
+
+\VerdierSemanticAnchor{ch2-1-1-5}
+\medskip
+\noindent\textbf{Definition 1.1.5.}\quad
+Let $\mathcal D$ be a triangulated category and $\mathcal A$ an abelian
+category. A functor $H\colon\mathcal D\longrightarrow\mathcal A$ is
+called a \emph{cohomological functor} if, for every distinguished triangle
+
+\VerdierSemanticAnchor{ch2-1-1-5-source-triangle}
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1],
+\]
+the diagram
+
+\VerdierSemanticAnchor{ch2-1-1-5-image-sequence}
+\[
+  HX\xrightarrow{Hu}HY\xrightarrow{Hv}HZ\xrightarrow{Hw}H(X[1])
+\]
+is an exact sequence in $\mathcal A$.
+\endgroup

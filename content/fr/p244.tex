@@ -1,0 +1,74 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0244}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-exact-diagram}
+On en déduit un diagramme commutatif, où les lignes sont exactes :
+\[
+\begin{tikzcd}[column sep=2.7em,row sep=2.8em]
+F_1^{p+r-1}(Y) \arrow[r] \arrow[d] &
+F_1^p(L^\bullet) \arrow[r] \arrow[d,"{m(L^\bullet[p])}"'] &
+F_1^p(X) \arrow[r] \arrow[d,"{m(X[p])}"'] &
+F_1^{p+r}(Y) \arrow[d] \\
+F_2^{p+r-1}(Y) \arrow[r] &
+F_2^p(L^\bullet) \arrow[r] &
+F_2^p(X) \arrow[r] &
+F_2^{p+r}(Y).
+\end{tikzcd}
+\]
+L'entier $r$ a été choisi de telle façon que les objets $F_i^q(Y)$ soient
+nuls, pour $i=1,2$ et $q\geq p+r-1$, et, par suite, tout revient à montrer
+que $m(L^\bullet)$ est un isomorphisme, pour tout objet $L^\bullet$ de
+$\operatorname{comp}^{b}(\mathcal A)$ dont les composants sont des éléments
+de $M$.
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-spectral-sequence}
+Or le morphisme $m$ induit un morphisme entre les premières suites
+spectrales des foncteurs $F_1$ et $F_2$ relatives au complexe $L^\bullet$.
+Sur les termes initiaux, ce morphisme :
+\[
+m_1^{p,q}(L^\bullet)\colon F_1^q(L^p)\longrightarrow F_2^q(L^p),
+\]
+est, par hypothèse, un isomorphisme. Ces suites spectrales étant
+stationnaires (4.5.3), le morphisme $m$ induit un isomorphisme sur les
+aboutissements (chap.~II, 4.4.5) et, par suite (4.4.2), le morphisme
+$m(L^\bullet)$ est un isomorphisme.
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-end}
+Ceci achève la démonstration de l'assertion e). L'assertion f) se déduit de
+l'assertion e), en passant aux catégories opposées. Le théorème est
+démontré.
+
+\VerdierSemanticAnchor{ch4d-4-6}
+\medskip\noindent\textbf{4.6. Objet spectral de Cartan-Eilenberg.}
+
+\VerdierSemanticAnchor{ch4d-4-6-1}
+\noindent\textbf{Définition 4.6.1.}\quad
+On dit qu'un complexe $I^\bullet$ de $\mathcal A$ est un \emph{complexe
+injectif de Cartan-Eilenberg} si, pour tout entier $i$, les objets
+$\operatorname{Im}(d_{I^\bullet}^{i})$ et $H^i(I^\bullet)$ sont injectifs.
+
+\VerdierSemanticAnchor{ch4d-4-6-2}
+\noindent\textbf{4.6.2.}\quad
+On notera qu'un complexe injectif de Cartan-Eilenberg $I^\bullet$ est de
+type injectif (1.1.5), i.e.\ que ses composants sont des objets injectifs de
+$\mathcal A$ et que, pour tout entier $i$, l'objet
+$\operatorname{Ker}(d_{I^\bullet}^{i})$ est un objet injectif de
+$\mathcal A$. Ceci se vérifie immédiatement, en utilisant les suites exactes
+à trois termes qui relient ces différents objets.
+
+\VerdierSemanticAnchor{ch4d-4-6-3-a}
+\medskip\noindent\textbf{Proposition 4.6.3.}\quad
+\textit{Soit $I^\bullet$ un complexe injectif de Cartan-Eilenberg.}
+
+\noindent\textit{a) Pour tout complexe $Y$, le morphisme canonique :}
+\[
+\operatorname{Hom}_{K(\mathcal A)}(Y,I^\bullet)
+\longrightarrow
+\prod_{p\in\mathbb Z}
+\operatorname{Hom}_{\mathcal A}\bigl(H^p(Y),H^p(I^\bullet)\bigr)
+\]
+\textit{est un isomorphisme.}
+\endgroup

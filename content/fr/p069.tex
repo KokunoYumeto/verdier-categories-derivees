@@ -1,0 +1,78 @@
+\VerdierPhysicalPageAnchor{0069}%
+\VerdierSemanticAnchor{ch1-2-2-2-continuation}%
+forment un complexe $m$-uple de $C$.
+
+\VerdierSemanticAnchor{ch1-2-2-2-morphism}
+Soit maintenant $f\colon Y\longrightarrow Y'$ un morphisme de complexes
+$n$-uples de $C$, $\varphi$-sommables. Posons :
+
+\VerdierSemanticAnchor{ch1-2-2-2-eq6}
+\begin{equation}
+  \left(\int_\varphi f\right)^\tau
+  =\bigoplus_{\varphi(\sigma)=\tau}f^\sigma\colon
+  \left(\int_\varphi Y\right)^\tau
+  \longrightarrow
+  \left(\int_\varphi Y'\right)^\tau.
+  \tag{2.2.2.6}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-2-2-functoriality}
+Il est clair que les $\left(\int_\varphi f\right)^\tau$ commutent aux
+différentielles de $\int_\varphi Y$ et de $\int_\varphi Y'$ et que, par
+suite, une telle famille définit un morphisme de complexes $m$-uples
+$\int_\varphi f\colon\int_\varphi Y\longrightarrow\int_\varphi Y'$.
+Il est clair que
+$\int_\varphi fg=\int_\varphi f\,\int_\varphi g$ et que
+$\int_\varphi\operatorname{id}_Y
+=\operatorname{id}_{\int_\varphi Y}$. Par suite $\int_\varphi$ est un
+foncteur de la catégorie des complexes $n$-uples $\varphi$-sommables dans
+la catégorie des complexes $m$-uples. Ce foncteur est additif.
+
+\VerdierSemanticAnchor{ch1-2-2-3}
+\noindent\textbf{2.2.3.}\quad
+Soient $\varphi\colon[n]\longrightarrow[m]$ une application, $\tau$ un
+élément de $\mathbb Z[m]$ et $i$ un élément de $[m]$. Soient $E_1$
+(resp. $E_2$) les ensembles :
+
+\VerdierSemanticAnchor{ch1-2-2-3-fibers}
+\[
+  \begin{aligned}
+    E_1&=\{\sigma_1\in\mathbb Z[n]\mid\varphi(\sigma_1)=\tau\},\\
+    \text{(resp. }E_2
+      &=\{\sigma_2\in\mathbb Z[n]\mid
+          \varphi(\sigma_2)=\tau+e_i\}\text{)}.
+  \end{aligned}
+\]
+Soit enfin $Y$ un complexe $n$-uple de $C$. Posons, pour
+$\sigma_1\in E_1$, $\sigma_2\in E_2$ :
+
+\VerdierSemanticAnchor{ch1-2-2-3-eq1}
+\begin{equation}
+  u_{\sigma_2,\sigma_1}(Y)
+  =\begin{cases}
+    \varepsilon(\tau,i)\varepsilon(\sigma_1,j)d_Y^{\sigma_1,j},
+      &\text{si }\sigma_2-\sigma_1=e_j,\\
+    0,&\text{sinon},
+  \end{cases}
+  \tag{2.2.3.1}
+\end{equation}
+d'où une matrice de type $E_2\times E_1$ :
+
+\VerdierSemanticAnchor{ch1-2-2-3-eq2}
+\begin{equation}
+  M(\tau,i,Y)
+  =\bigl(u_{\sigma_2,\sigma_1}(Y)\bigr)_
+    {\sigma_2\in E_2,\,\sigma_1\in E_1}.
+  \tag{2.2.3.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-2-3-matrix-identification}
+Lorsque $Y$ est $\varphi$-sommable, cette matrice est la matrice du
+morphisme $d_{\int_\varphi Y}^{\tau,i}$.
+
+\VerdierSemanticAnchor{ch1-2-2-3-extensions}
+Remarquons que dans le cas général, cette matrice ne possède qu'un nombre
+fini de termes non nuls sur chaque ligne et sur chaque colonne. Il y a donc
+\emph{a priori} au moins deux extensions possibles du foncteur
+$\int_\varphi$ aux complexes quelconques lorsque, dans $C$, les produits
+dénombrables et les sommes directes

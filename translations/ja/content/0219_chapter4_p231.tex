@@ -1,0 +1,80 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0231}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-1-7-proof}
+まず、$X$ が二重複体で整数 $m=1$ の場合に命題が証明済みであると仮定し、
+この場合へ帰着する方法を示す。$\varphi\colon[n]\longrightarrow[2]$ を写像
+
+\VerdierSemanticAnchor{ch4d-4-1-7-1}
+\begin{equation}
+\left\{
+\begin{aligned}
+\varphi(m)&=1,\\
+\varphi(i)&=2,\qquad i\in[n],\quad i\neq m.
+\end{aligned}
+\right.
+\tag{4.1.7.1}
+\end{equation}
+
+とする。$\int_\varphi X=Z$（第 I 章、2.2.2）と置く。二重複体 $Z$ に
+(4.1.6.$i$)、$1\leq i\leq4$ で述べた構成を施すことができる。二重複体
+
+\VerdierSemanticAnchor{ch4d-4-1-7-2}
+\begin{equation}
+{}^{1}\!Z(p,q),\qquad
+(p,q)\in\mathcal{F}\ell_1(\widetilde{\mathbb Z}),
+\tag{4.1.7.2}
+\end{equation}
+
+および二重複体の射
+
+\VerdierSemanticAnchor{ch4d-4-1-7-3}
+\begin{equation}
+\begin{aligned}
+f_Z\bigl((p,q),(p',q')\bigr)&\colon
+{}^{1}\!Z(p,q)\longrightarrow{}^{1}\!Z(p',q'),\\
+g_Z(p,q,r)&\colon
+{}^{1}\!Z(q,r)\longrightarrow T_1\bigl({}^{1}\!Z(p,q)\bigr).
+\end{aligned}
+\tag{4.1.7.3}
+\end{equation}
+
+が得られる。このとき
+
+\VerdierSemanticAnchor{ch4d-4-1-7-4}
+\begin{equation}
+\left\{
+\begin{aligned}
+\int_\varphi{}^{m}\!X(p,q)
+  &={}^{1}\!Z(p,q),
+  &&(p,q)\in\mathcal{F}\ell_1(\widetilde{\mathbb Z}),\\
+\int_\varphi f\bigl((p,q),(p',q')\bigr)
+  &=f_Z\bigl((p,q),(p',q')\bigr),
+\end{aligned}
+\right.
+\tag{4.1.7.4}
+\end{equation}
+
+であり（直接確かめられる）、さらに射 $g_Z(p,q,r)$ は合成射
+
+\VerdierSemanticAnchor{ch4d-4-1-7-5}
+\begin{equation}
+\int_\varphi{}^{m}\!X(q,r)
+\xrightarrow{\int_\varphi g(p,q,r)}
+\int_\varphi T_m\bigl({}^{m}\!X(p,q)\bigr)
+\xrightarrow{(**)}
+T_1\left(\int_\varphi{}^{m}\!X(p,q)\right)
+\tag{4.1.7.5}
+\end{equation}
+
+である。ここで $(**)$ は関手 $\int_\varphi$ とシフトとの可換同型
+（第 I 章、2.3.2.1）である（これを確かめるには、$Z$ の微分の明示的な定義
+（第 I 章、2.2.2.5）と可換同型の定義（第 I 章、2.3.2.1）を用いる）。
+次に、第一次数でフィルター付けされた $Z$ によって定まるスペクトル対象を
+構成する。等式 $\int_2\int_\varphi=\int_n$、(4.1.7.4)、(4.1.7.5)、および
+（第 I 章、2.3.3）から、
+$\bigl({}^{m}\!Y(p,q),{}^{m}\!d(p,q,r)\bigr)$ はこのスペクトル対象に等しい。
+\endgroup

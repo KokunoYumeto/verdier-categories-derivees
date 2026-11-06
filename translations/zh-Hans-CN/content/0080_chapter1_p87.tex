@@ -1,0 +1,97 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0087}%
+\VerdierSemanticAnchor{ch1-3-2-2-dual-morphism}
+类似地，$\operatorname{tr}_1(C)$ 的态射：
+
+\VerdierSemanticAnchor{ch1-3-2-2-eq3}
+\begin{equation}
+  \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center)]
+    \node (Z)  at (0,1.35) {$0$};
+    \node (Y)  at (3.6,1.35) {$Y$};
+    \node (X)  at (0,0) {$X$};
+    \node (Yp) at (3.6,0) {$Y$};
+    \draw[->] (Z) -- (Y);
+    \draw[->] (Z) -- (X);
+    \draw[->] (Y) -- node[right] {$\operatorname{id}_Y$} (Yp);
+    \draw[->] (X) -- node[above] {$f$} (Yp);
+  \end{tikzpicture}
+  \tag{3.2.2.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-2-cone-entry-p}
+经映射锥函子作用后，得到 $\operatorname{comp}(C)$ 中关于
+$X\xrightarrow{f}Y$ 函子性的态射 (3.1.2.4)：
+
+\VerdierSemanticAnchor{ch1-3-2-2-eq4}
+\begin{equation}
+  p(f)\colon Y\longrightarrow c(f).
+  \tag{3.2.2.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-2-comp-triangle}
+因此，可对 $\operatorname{tr}_1(C)$ 的每个对象 $X\xrightarrow{f}Y$
+配以 $\operatorname{comp}(C)$ 的一个三角：
+
+\VerdierSemanticAnchor{ch1-3-2-2-eq5}
+\begin{equation}
+  X\xrightarrow{f}Y\xrightarrow{p(f)}c(f)\xrightarrow{q(f)}X[1].
+  \tag{3.2.2.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-2-nonfunctoriality}
+注意，这个三角并不以函子方式依赖于 $\operatorname{tr}_1(C)$ 的对象
+$X\xrightarrow{f}Y$。
+\VerdierSemanticAnchor{ch1-3-2-2-morphism-d-setup}
+事实上，设
+$D=(g,h,a)\colon(X\xrightarrow{f}Y)\longrightarrow
+(X'\xrightarrow{f'}Y')$
+是 $\operatorname{tr}_1(C)$ 的一个态射。于是得到图：
+
+\VerdierSemanticAnchor{ch1-3-2-2-eq6}
+\begin{equation}
+  \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center)]
+    \node (X)   at (0,1.8) {$X$};
+    \node (Y)   at (2.25,1.8) {$Y$};
+    \node (C)   at (4.65,1.8) {$c(f)$};
+    \node (Xs)  at (7.05,1.8) {$X[1]$};
+    \node (Xp)  at (0,0) {$X'$};
+    \node (Yp)  at (2.25,0) {$Y'$};
+    \node (Cp)  at (4.65,0) {$c(f')$};
+    \node (Xps) at (7.05,0) {$X'[1]$};
+    \node[anchor=base west,inner sep=0pt,xshift=.08em] at (Xps.base east) {$.$};
+    \draw[->] (X) -- node[above] {$f$} (Y);
+    \draw[->] (Y) -- node[above] {$p(f)$} (C);
+    \draw[->] (C) -- node[above] {$q(f)$} (Xs);
+    \draw[->] (Xp) -- node[below] {$f'$} (Yp);
+    \draw[->] (Yp) -- node[below] {$p(f')$} (Cp);
+    \draw[->] (Cp) -- node[below] {$q(f')$} (Xps);
+    \draw[->] (X) -- node[left] {$g$} (Xp);
+    \draw[->] (Y) -- node[left] {$h$} (Yp);
+    \draw[->] (C) -- node[left] {$c(D)$} (Cp);
+    \draw[->] (Xs) -- node[right] {$g[1]$} (Xps);
+    \draw[decorate,decoration={snake,amplitude=0.8pt,segment length=3.3pt}]
+      (1.20,0.18) -- (1.62,0.82);
+    \draw[->] (1.62,0.82) -- node[above left] {$a$} (2.10,1.48);
+  \end{tikzpicture}
+  \tag{3.2.2.6}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-2-square-commutativity}
+由于态射 $p(f)$ 和 $q(f)$ 关于 $f$ 函子性，此图的后两个方块交换，
+而第一个方块只在同伦意义下交换。
+\VerdierSemanticAnchor{ch1-3-2-2-quotient-triangle}
+对同伦取商后，可对 $\operatorname{Tr}_1(C)$ 的每个对象
+$X\xrightarrow{f}Y$ 配以 $K(C)$ 的一个三角：
+
+\VerdierSemanticAnchor{ch1-3-2-2-eq7}
+\begin{equation}
+  X\xrightarrow{\dot f}Y\xrightarrow{\dot p(f)}c(f)
+  \xrightarrow{\dot q(f)}X[1]
+  \tag{3.2.2.7}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-2-homotopy-class-notation}
+它以函子方式依赖于 $X\xrightarrow{f}Y$。（这里 $\dot f$、
+$\dot p(f)$、$\dot q(f)$ 分别表示态射 $f$、$p(f)$、$q(f)$ 的同伦类。）
+\VerdierSemanticAnchor{ch1-3-2-2-triangle-functor}
+于是得到一个从范畴 $\operatorname{Tr}_1(C)$ 到 $K(C)$ 中三角所成范畴的函子。

@@ -1,0 +1,106 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0134}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{1pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{1pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-1-15}
+\noindent\textbf{2.1.15.}\quad
+\VerdierSemanticAnchor{ch2-2-1-15-associated-system}%
+Let $\mathcal D'$ be a full triangulated subcategory of a triangulated
+category $\mathcal D$. The multiplicative system $S(\mathcal D')$ (2.1.7) is
+called the \emph{multiplicative system associated with the subcategory
+$\mathcal D'$}.
+
+\VerdierSemanticAnchor{ch2-2-1-16}
+\smallskip
+\noindent\textbf{Proposition 2.1.16.}\quad
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-1-16-setup}%
+Let $F\colon\mathcal D_1\to\mathcal D_2$ be an exact functor between two
+triangulated categories (1.1.3). Let $S(F)$ be the set of morphisms of
+$\mathcal D_1$ that are carried by $F$ to isomorphisms of $\mathcal D_2$.
+\VerdierSemanticAnchor{ch2-2-1-16-kernel-subcategory}%
+Let $\mathcal D'(F)$ be the full subcategory of $\mathcal D_1$ defined by the
+objects of $\mathcal D_1$ that are carried by $F$ to zero objects of
+$\mathcal D_2$.
+
+\VerdierSemanticAnchor{ch2-2-1-16-a}
+\par\noindent\hspace*{2em}a)\enspace The subcategory $\mathcal D'(F)$ is a
+strictly full triangulated subcategory (every object of $\mathcal D_1$
+isomorphic to an object of $\mathcal D'(F)$ is an object of
+$\mathcal D'(F)$) and is saturated.
+
+\VerdierSemanticAnchor{ch2-2-1-16-b}
+\par\noindent\hspace*{2em}b)\enspace The set $S(F)$ is a saturated
+multiplicative system of $\mathcal D_1$.
+
+\VerdierSemanticAnchor{ch2-2-1-16-c}
+\par\noindent\hspace*{2em}c)\enspace The set $S(F)$ is the multiplicative
+system associated with the subcategory $\mathcal D'(F)$ (2.1.15).
+\par\endgroup
+
+\VerdierSemanticAnchor{ch2-2-1-16-proof-omitted}
+\noindent The proof is easy and is left to the reader, who may prove the
+following proposition in the same way:
+
+\VerdierSemanticAnchor{ch2-2-1-17}
+\smallskip
+\noindent\textbf{Proposition 2.1.17.}\quad
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-1-17-setup}%
+Let $H\colon\mathcal D\to\mathcal A$ be a cohomological functor from a
+triangulated category to an abelian category. Let $S(H)$ be the set of
+morphisms of $\mathcal D$ that, together with their translates, are carried
+to isomorphisms of $\mathcal A$.
+\VerdierSemanticAnchor{ch2-2-1-17-kernel-subcategory}%
+Let $\mathcal D'(H)$ be the full subcategory of $\mathcal D$ defined by the
+objects of $\mathcal D$ that, together with their translates, are carried to
+zero objects of $\mathcal A$.
+
+\VerdierSemanticAnchor{ch2-2-1-17-a}
+\par\noindent\hspace*{2em}a)\enspace The subcategory $\mathcal D'(H)$ is a
+strictly full triangulated subcategory and is saturated.
+
+\VerdierSemanticAnchor{ch2-2-1-17-b}
+\par\noindent\hspace*{2em}b)\enspace The set $S(H)$ is a saturated
+multiplicative system of $\mathcal D$.
+
+\VerdierSemanticAnchor{ch2-2-1-17-c}
+\par\noindent\hspace*{2em}c)\enspace The set $S(H)$ is the multiplicative
+system associated with the subcategory $\mathcal D'(H)$ (2.1.15).
+\par\endgroup
+
+\VerdierSemanticAnchor{ch2-2-2}
+\medskip
+\noindent\textbf{2.2.\quad Construction of the localized category.}
+
+\VerdierSemanticAnchor{ch2-2-2-1}
+\smallskip
+\noindent\textbf{2.2.1.}\quad
+\VerdierSemanticAnchor{ch2-2-2-1-slice-categories}%
+Let $\mathcal C$ be a category (not necessarily additive) and $S$ a
+multiplicative system of $\mathcal C$. For every object $X$ of $\mathcal C$,
+denote by $S/X$ (resp. $X\backslash S$) the category whose objects are the
+morphisms in $S$ with target $X$ (resp. with source $X$)
+\VerdierSemanticAnchor{ch2-2-2-1-morphism-diagrams}%
+and whose morphisms are the commutative diagrams:
+
+\VerdierSemanticAnchor{ch2-2-2-1-s-over-x-diagram}
+\begin{center}
+  \begin{tikzpicture}[>=stealth,line width=.38pt,scale=.90,transform shape]
+    \node (Y)  at (-1.55,1.05) {$Y$};
+    \node (Yp) at ( 1.55,1.05) {$Y'$};
+    \node (X)  at ( 0,-.95) {$X$};
+    \draw[->] (Y) -- node[above=1pt] {$u$} (Yp);
+    \draw[->] (Y) -- node[left=2pt] {$s$} (X);
+    \draw[->] (Yp) -- node[right=2pt] {$t$} (X);
+    \node at (3.15,.05) {$s,t\in S$};
+  \end{tikzpicture}
+  \quad ,
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-2-1-p135-boundary}
+\endgroup

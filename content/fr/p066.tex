@@ -1,0 +1,94 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0066}%
+\VerdierSemanticAnchor{ch1-2}
+\section{Complexes d'une catégorie additive}
+
+\VerdierSemanticAnchor{ch1-2-1}
+\subsection{Complexes \texorpdfstring{$n$}{n}-uples}
+
+\VerdierSemanticAnchor{ch1-2-1-1}
+\noindent\textbf{2.1.1.}\quad
+Fixons d'abord quelques notations. On désigne par $[n]$ l'ensemble :
+
+\VerdierSemanticAnchor{ch1-2-1-1-set}
+\begin{equation*}
+  [n]=\{p\in\mathbb Z\mid 1\leq p\leq n\}.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-2-1-1-free-group}
+On désigne par $\mathbb Z[n]$ le groupe abélien libre engendré par
+l'ensemble $[n]$ et pour tout $i\in[n]$ par $e_i$ le générateur de
+$\mathbb Z[n]$ associé à $i$. Soit $\varphi\colon[n]\longrightarrow[m]$
+une application ; on désigne encore par
+$\varphi\colon\mathbb Z[n]\longrightarrow\mathbb Z[m]$ l'homomorphisme
+de groupes qui lui correspond. Dans ce paragraphe, $C$ désigne une
+catégorie additive.
+
+\VerdierSemanticAnchor{ch1-2-1-2}
+\VerdierSemanticAnchor{ch1-2-1-2-definition}
+\noindent\textbf{Définition 2.1.2.}\quad
+Un \emph{complexe $n$-uple d'objets de $C$} est un objet constitué par :
+
+\begin{enumerate}
+\renewcommand{\labelenumi}{\arabic{enumi})}
+\item \VerdierSemanticAnchor{ch1-2-1-2-objects}%
+  La donnée, pour tout $\sigma\in\mathbb Z[n]$, d'un objet $X^\sigma$ de
+  $C$.
+\item \VerdierSemanticAnchor{ch1-2-1-2-differentials}%
+  La donnée, pour tout $\sigma\in\mathbb Z[n]$ et tout $i\in[n]$, d'un
+  morphisme :
+  \VerdierSemanticAnchor{ch1-2-1-2-differential-map}%
+  \begin{equation*}
+    d^{\sigma,i}\colon X^\sigma\longrightarrow X^{\sigma+e_i},
+  \end{equation*}
+  ces morphismes étant soumis aux conditions suivantes :
+\end{enumerate}
+
+\VerdierSemanticAnchor{ch1-2-1-2-eq1}
+\begin{equation}
+  \begin{aligned}
+    d^{\sigma+e_i,i}d^{\sigma,i}&=0
+      &&\forall\sigma\in\mathbb Z[n],\ \forall i\in[n],\\
+    d^{\sigma+e_j,i}d^{\sigma,j}
+      &=d^{\sigma+e_i,j}d^{\sigma,i}
+      &&\forall\sigma\in\mathbb Z[n],\ \forall i,j\in[n].
+  \end{aligned}
+  \tag{2.1.2.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-1-3}
+\noindent\textbf{2.1.3.}\quad
+Un complexe $n$-uple d'objets de $C$ sera appelé le plus souvent un
+\emph{complexe $n$-uple de $C$}. Soit $(X^\sigma,d^{\sigma,i})$ un
+complexe $n$-uple de $C$.
+\VerdierSemanticAnchor{ch1-2-1-3-component}
+L'objet $X^\sigma$ est appelé le \emph{composant de degré $\sigma$} du
+complexe $(X^\sigma,d^{\sigma,i})$.
+\VerdierSemanticAnchor{ch1-2-1-3-differential}
+Le morphisme $d^{\sigma,i}$ est appelé la \emph{différentielle de degré
+$\sigma$ dans la direction $i$} du complexe
+$(X^\sigma,d^{\sigma,i})$.
+\VerdierSemanticAnchor{ch1-2-1-3-notation}
+Soit $Y$ un complexe $n$-uple de $C$. Le composant de degré $\sigma$ de
+$Y$ est noté $Y^\sigma$. La différentielle de degré $\sigma$ dans la
+direction $i$ de $Y$ est notée $d_Y^{\sigma,i}$.
+
+\VerdierSemanticAnchor{ch1-2-1-4}
+\VerdierSemanticAnchor{ch1-2-1-4-definition}
+\noindent\textbf{Définition 2.1.4.}\quad
+Soient $Y$ et $Y'$ deux complexes $n$-uples de $C$. Un \emph{morphisme
+de complexes de $Y$ dans $Y'$} est une famille de morphismes de $C$ :
+
+\VerdierSemanticAnchor{ch1-2-1-4-family}
+\begin{equation*}
+  \bigl(f^\sigma\colon Y^\sigma\longrightarrow Y'^{\sigma}\bigr)_{
+    \sigma\in\mathbb Z[n]}
+\end{equation*}
+qui commutent aux différentielles, \emph{i.e.} telle que :
+
+\VerdierSemanticAnchor{ch1-2-1-4-eq1}
+\begin{equation}
+  f^{\sigma+e_i}d_Y^{\sigma,i}
+  =d_{Y'}^{\sigma,i}f^\sigma.
+  \tag{2.1.4.1}
+\end{equation}

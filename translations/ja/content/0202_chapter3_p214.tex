@@ -1,0 +1,95 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0214}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-2-5-b}
+\noindent b) 次の図において：
+
+\VerdierSemanticAnchor{ch3d-3-2-5-4}
+\begin{equation}
+\resizebox{0.96\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=4.1em,row sep=3.0em]
+\&\& Z''^\bullet
+  \arrow[ddll,bend right=8,"{u(S^{m+n})}"']
+  \arrow[dl,"\rho"']
+  \arrow[dr,"\psi"]
+  \arrow[ddrr,bend left=8,"{v(S^{m+n})}"]
+\&\& \\
+\& Z^\bullet
+  \arrow[dl,"{u(S^n)}"']
+  \arrow[dr,"{v(S^n)}"]
+\&\& {Z'}^\bullet[n]
+  \arrow[dl,"{u(S^m)[n]}"']
+  \arrow[dr,"{v(S^m)[n]}"]
+\& \\
+X \&\& X'[n] \&\& X''[m+n]
+\end{tikzcd}$%
+}
+\tag{3.2.5.4}
+\end{equation}
+中央の正方形と両側の三角形は $\operatorname{comp}(\mathcal A)$ で
+可換である。
+
+\VerdierSemanticAnchor{ch3d-3-2-5-proof-conclusion}
+圏 $D(\mathcal A)$ に移ると、図 (3.2.5.4) から次の等式を得る：
+\[
+\bigl(\delta^m(S^m(X',X''))\bigr)[n]\,
+\delta^n(S^n(X,X'))
+=\delta^{m+n}(S^{m+n}(X,X'')).
+\]
+したがって (3.2.3.2) を用いれば証明が完了する。
+
+\VerdierSemanticAnchor{ch3d-3-2-6}
+\medskip\noindent\textbf{3.2.6.}\quad
+命題 (3.2.5) の特に重要な応用は次のものである。次を
+\[
+S^n(X,Y)=0\longrightarrow Y\xrightarrow{u_n}Z_{n-1}
+\xrightarrow{u_{n-1}}\cdots\xrightarrow{u_1}Z_0
+\xrightarrow{u_0}X\longrightarrow0
+\]
+$E_{\mathcal A}^{n}(X,Y)$ の元とする。各整数 $p$，
+$1\leq p\leq n$ に対して次のようにおく：
+
+\VerdierSemanticAnchor{ch3d-3-2-6-1}
+\begin{equation}
+S_p^1=0\longrightarrow\operatorname{Ker}(u_{p-1})
+\longrightarrow Z_{p-1}\longrightarrow\operatorname{Im}(u_{p-1})
+\longrightarrow0.
+\tag{3.2.6.1}
+\end{equation}
+このとき次の等式が成り立つ：
+
+\VerdierSemanticAnchor{ch3d-3-2-6-2}
+\begin{equation}
+\delta^n(S^n(X,Y))=(-1)^{\frac{n(n-1)}2}
+\delta^1(S_n^1)[n-1]\delta^1(S_{n-1}^1)[n-2]\cdots
+\delta^1(S_1^1),
+\tag{3.2.6.2}
+\end{equation}
+これは命題 (3.2.5) を用いれば直ちに従う。
+
+\VerdierSemanticAnchor{ch3d-3-2-7}
+\medskip\noindent\textbf{3.2.7.}\quad
+ここで苦杯を最後まで飲み干そう。$X$ と $Y$ を $\mathcal A$ の二つの
+対象、したがって $\mathcal A^o$、すなわち $\mathcal A$ の反対圏の
+対象とする。集合 $E_{\mathcal A}^{n}(X,Y)$ と
+$E_{\mathcal A^o}^{n}(Y,X)$ は等しく、二つの写像がある：
+
+\VerdierSemanticAnchor{ch3d-3-2-7-1}
+\begin{equation}
+\resizebox{0.74\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=5.0em,row sep=2.8em]
+E_{\mathcal A}^{n}(X,Y)
+  \arrow[r,"{\delta_{\mathcal A}^{n}}"]
+  \arrow[d,equal]
+\& \operatorname{Ext}_{\mathcal A}^{n}(X,Y) \\
+E_{\mathcal A^o}^{n}(Y,X)
+  \arrow[r,"{\delta_{\mathcal A^o}^{n}}"']
+\& \operatorname{Ext}_{\mathcal A^o}^{n}(Y,X)
+\end{tikzcd}$%
+}
+\tag{3.2.7.1}
+\end{equation}
+\endgroup

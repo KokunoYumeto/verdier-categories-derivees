@@ -1,0 +1,84 @@
+\VerdierPhysicalPageAnchor{0074}%
+\VerdierSemanticAnchor{ch1-2-4-1-pi-opposite}
+le foncteur opposé au foncteur défini en (2.2.3) et (2.2.4). De
+même, désignons par :
+
+\VerdierSemanticAnchor{ch1-2-4-1-eq4}
+\begin{equation}
+  \int_{\varphi,C^\circ}^{\Pi}\colon
+  \operatorname{comp}^{n}(C^\circ)
+  \longrightarrow
+  \operatorname{comp}^{m}(C^\circ),
+  \tag{2.4.1.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-1-pi-definition}
+le foncteur défini en (2.2.3) et (2.2.4). On vérifie immédiatement
+que le diagramme :
+
+\VerdierSemanticAnchor{ch1-2-4-1-eq5}
+\begin{equation}
+  \resizebox{0.82\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=6.5em,row sep=5.2em]
+      \operatorname{comp}^{n}(C)^\circ
+        \arrow[r,"\iota_n"]
+        \arrow[d,"{\left(\int_{\varphi,C}^{\Sigma}\right)^\circ}"']
+        \& \operatorname{comp}^{n}(C^\circ)
+          \arrow[d,"{\int_{\varphi,C^\circ}^{\Pi}}"] \\
+      \operatorname{comp}^{m}(C)^\circ
+        \arrow[r,"\iota_m"]
+        \& \operatorname{comp}^{m}(C^\circ)
+    \end{tikzcd}$%
+  }
+  \tag{2.4.1.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-1-eq5-commutative}
+est commutatif. En particulier, lorsque $\varphi$ est l'unique application
+$[n]\longrightarrow[1]$, on a un diagramme commutatif :
+
+\VerdierSemanticAnchor{ch1-2-4-1-eq6}
+\begin{equation}
+  \resizebox{0.82\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=6.5em,row sep=5.2em]
+      \operatorname{comp}^{n}(C)^\circ
+        \arrow[r,"\iota_n"]
+        \arrow[d,"{\left(\int_{n,C}^{\Sigma}\right)^\circ}"']
+        \& \operatorname{comp}^{n}(C^\circ)
+          \arrow[d,"{\int_{n,C^\circ}^{\Pi}}"] \\
+      \operatorname{comp}(C)^\circ
+        \arrow[r,"\iota_1"]
+        \& \operatorname{comp}(C^\circ)
+    \end{tikzcd}$%
+  }
+  \tag{2.4.1.6}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-1-twisted-isomorphism}
+et on vérifie immédiatement que le couple d'isomorphismes
+$(\iota_1,\iota_n)$ est un isomorphisme du $\mathbb Z[n]$-foncteur tordu
+$\left(\int_{n,C}^{\Sigma}\right)^\circ$ sur le $\mathbb Z[n]$-foncteur
+tordu $\int_{n,C^\circ}^{\Pi}$ (la structure graduée de
+$\int_{n,C^\circ}^{\Pi}$ est décrite en (2.3.4) ; la structure graduée de
+$\left(\int_{n,C}^{\Sigma}\right)^\circ$ est décrite en (2.3.4) et
+(1.4.8)).
+
+\VerdierSemanticAnchor{ch1-2-4-1-identification}
+Nous identifierons dorénavant par l'isomorphisme $\iota_n$ les catégories
+$\operatorname{comp}^{n}(C)^\circ$ et
+$\operatorname{comp}^{n}(C^\circ)$ et les foncteurs
+$\left(\int_{\varphi,C}^{\Sigma}\right)^\circ$ et
+$\int_{\varphi,C^\circ}^{\Pi}$.
+
+\VerdierSemanticAnchor{ch1-2-4-2}
+\noindent\textbf{2.4.2.}\quad
+Soient $C_i$, $i\in[n]$, une famille de catégories additives et
+$\prod_{i\in[n]}C_i$ leur produit. On désigne par
+$(X_1,X_2,\ldots,X_n)$ les objets de $\prod_{i\in[n]}C_i$ et on utilise
+la notation $(X_1,X_2,\ldots,f_i,\ldots,X_n)$ pour désigner le morphisme :
+
+\VerdierSemanticAnchor{ch1-2-4-2-component-morphism}
+\begin{equation*}
+  (\operatorname{id}_{X_1},\operatorname{id}_{X_2},\ldots,
+  f_i,\ldots,\operatorname{id}_{X_n}).
+\end{equation*}

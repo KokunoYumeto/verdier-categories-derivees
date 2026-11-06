@@ -1,0 +1,58 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0165}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch4-4-2-1-inclusions}
+这样便定义了从 $\mathcal{F}\ell_2(\mathcal J)$ 到 $\mathcal A$ 的两个函子。
+按照定义，有包含关系：
+\[
+B\!\left[\begin{smallmatrix}n\\f,g\end{smallmatrix}\right]\subset H^n(f),
+\qquad
+Z\!\left[\begin{smallmatrix}n\\f,g\end{smallmatrix}\right]\subset H^n(g).
+\]
+设
+$\omega_3=(\mathord\bullet\xrightarrow f\mathord\bullet\xrightarrow g
+\mathord\bullet\xrightarrow h\mathord\bullet)$ 为
+$\mathcal{F}\ell_3(\mathcal J)$ 的一个对象。
+
+\VerdierSemanticAnchor{ch4-4-2-2}
+\medskip\noindent\textbf{命题 4.2.2.}\quad
+\textit{有如下包含关系：}
+\[
+B\!\left[\begin{smallmatrix}n\\g,h\end{smallmatrix}\right]
+\subset
+Z\!\left[\begin{smallmatrix}n\\f,g\end{smallmatrix}\right]
+\subset H^n(g).
+\]
+第二个包含关系仅为备忘而列出。为证明第一个包含关系，只需证明下列序列中
+两个态射的复合为零：
+\VerdierSemanticAnchor{ch4-4-2-2-proof-sequence}
+\[
+H^{n-1}(h)\xrightarrow{\delta_1}H^n(g)
+\xrightarrow{\delta_2}H^{n+1}(f)
+\]
+然而，对象
+$(\mathord\bullet\xrightarrow g\mathord\bullet\xrightarrow h\mathord\bullet)$
+属于 $\mathcal{F}\ell_2(\mathcal J)$，并给出正合列
+\[
+H^{n-1}(h)\xrightarrow{\delta_1}H^n(g)
+\xrightarrow u H^n(hg),
+\]
+而 $\mathcal{F}\ell_2(\mathcal J)$ 中的态射
+\VerdierSemanticAnchor{ch4-4-2-2-fl2-morphism}
+\[
+\begin{tikzcd}[column sep=4em,row sep=2.2em]
+{}\arrow[r,"f"]\arrow[d,"\operatorname{id}"']&{}
+ \arrow[r,"g"]\arrow[d,"\operatorname{id}"']&{}\arrow[d,"h"]\\
+{}\arrow[r,"f"']&{}\arrow[r,"hg"']&{}
+\end{tikzcd}
+\]
+给出交换图
+\VerdierSemanticAnchor{ch4-4-2-2-commutative-triangle}
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.7em]
+H^n(g)\arrow[r,"\delta_2"]\arrow[d,"u"']&H^{n+1}(f)\\
+H^n(hg)\arrow[ur,"\delta_3"']&{}
+\end{tikzcd}
+\]
+命题得证。
+\endgroup

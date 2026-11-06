@@ -1,0 +1,111 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0113}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-1-5-additivity-announcement}
+\noindent (1.2.7) において、コホモロジー的関手が加法的であり、多重完全関手が
+多重加法的であることを示す。
+
+\VerdierSemanticAnchor{ch2-1-1-5-cohomology-notation}
+$H\colon\mathcal D\longrightarrow\mathcal A$ をコホモロジー的関手とする。
+通常、$H^0(X)=H(X)$、$H^n(X)=H(X[n])$ と書く。公理 TRII を用いると、
+コホモロジー的関手は任意の完全三角
+
+\VerdierSemanticAnchor{ch2-1-1-5-long-exact-setup}
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+\]
+に長完全列
+
+\VerdierSemanticAnchor{ch2-1-1-5-1}
+\begin{equation}
+  \cdots\longrightarrow H^{-1}(Z)
+  \xrightarrow{H^{-1}(-w)}H^0(X)
+  \xrightarrow{H^0(u)}H^0(Y)
+  \xrightarrow{H^0(v)}H^0(Z)
+  \xrightarrow{H^0(w)}\cdots
+  \tag{1.1.5.1}
+\end{equation}
+を対応させることが分かる。
+
+\VerdierSemanticAnchor{ch2-1-1-6}
+\medskip
+\noindent\textbf{1.1.6.}\quad
+$\mathcal D$ を三角圏とする。通常、次の用語を用いる。$\mathcal D$ の三角
+
+\VerdierSemanticAnchor{ch2-1-1-6-antidistinguished-triangle}
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+\]
+が\emph{反完全}であるとは、三角
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{-w}X[1]
+\]
+が完全三角であることをいう。
+
+\VerdierSemanticAnchor{ch2-1-1-6-antiexact-functor}
+三角圏 $\mathcal D'$ から $\mathcal D$ への $\mathbb Z$-関手が
+\emph{反完全}であるとは、それが $\mathcal D'$ の完全三角を
+$\mathcal D$ の反完全三角へ送ることをいう。
+
+\VerdierSemanticAnchor{ch2-1-1-6-exact-functor-notation}
+通常、$\mathcal D'$ から $\mathcal D$ への完全関手を記す際には、シフトと
+可換する同型を記号から省略する。
+
+\VerdierSemanticAnchor{ch2-1-1-7}
+\medskip
+\noindent\textbf{1.1.7.}\quad
+$\mathcal C$ を厳密な $\mathbb Z$-圏（第 I 章、1.2.2）とし、
+
+\VerdierSemanticAnchor{ch2-1-1-7-translations}
+\[
+  X\longmapsto X[n],\qquad n\in\mathbb Z,
+\]
+を $\mathcal C$ のシフト関手とする。$\mathcal C^\circ$ を反対
+$\mathbb Z$-圏（第 I 章、1.3.9）とする。
+
+\VerdierSemanticAnchor{ch2-1-1-7-opposite-morphism}
+$\mathcal C$ の任意の射 $u$ に対し、$\mathcal C^\circ$ の対応する射を
+$((u))$ と書く。$\mathcal C^\circ$ の対象の集合と射の集合は、それぞれ
+$\mathcal C$ の対象の集合と射の集合に等しいので、この記法は厳密には
+濫用である。$\mathcal C^\circ$ のシフト関手を
+
+\VerdierSemanticAnchor{ch2-1-1-7-opposite-translations}
+\[
+  X\longmapsto X[[n]],\qquad n\in\mathbb Z,
+\]
+と書く。
+
+\VerdierSemanticAnchor{ch2-1-1-7-translation-identity}
+$\mathcal C$ の任意の対象 $X$ と任意の整数 $n\in\mathbb Z$ に対し
+（第 I 章、1.3.9）、
+\[
+  X[-n]=X[[n]]
+\]
+であったことを思い出そう。
+
+\VerdierSemanticAnchor{ch2-1-1-7-opposite-category}
+三角圏 $\mathcal D$ の\emph{反対三角圏}とは、圏 $\mathcal D$ の厳密な
+反対 $\mathbb Z$-圏 $\mathcal D^\circ$（第 I 章、1.3.9）に、次の完全三角の
+族を入れたものと定義する。$\mathcal D^\circ$ の三角
+
+\VerdierSemanticAnchor{ch2-1-1-7-opposite-triangle}
+\[
+  X[[-1]]\xrightarrow{((w))}Z\xrightarrow{((v))}Y
+  \xrightarrow{((u))}X
+\]
+が完全三角であるための必要十分条件は、圏 $\mathcal D$ の対応する三角
+
+\VerdierSemanticAnchor{ch2-1-1-7-corresponding-antitriangle}
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+\]
+が反完全三角であることである。
+
+\VerdierSemanticAnchor{ch2-1-1-7-triangulated-axioms}
+このように定めた $\mathcal D^\circ$ の三角の族が三角圏の公理を満たすことは、
+容易に示される。
+\endgroup

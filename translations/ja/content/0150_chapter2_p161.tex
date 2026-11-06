@@ -1,0 +1,65 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0161}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch3-3-2-9-exactness-test}
+$\mathcal D^\wedge$ で完全である。(3.2.9.1) が完全であることは、
+$\mathcal D$ の任意の対象 $W$ に対して
+\[
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),h(X))\longrightarrow
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),h(Y))\longrightarrow
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),h(Z))
+\]
+が完全であることと同値である。これは $h$ の充満忠実性と (1.2.1) から
+従う。
+
+\VerdierSemanticAnchor{ch3-3-2-9-factorization}
+$\mathcal A$ をアーベル圏とする。$\mathcal H$ との合成をとる関手
+\[
+\mathcal E x(\mathrm A(\mathcal D),\mathcal A)
+\longrightarrow\mathcal H\!om(\mathcal D,\mathcal A)
+\]
+は明らかに充満忠実である。実際、完全関手間の射は、十分多くの射影対象上での値を
+知れば一意に定まる。任意のコホモロジー的関手
+$\Psi\colon\mathcal D\to\mathcal A$ を $\mathrm A(\mathcal D)$ を経由して
+分解することを示せばよい：
+\VerdierSemanticAnchor{ch3-3-2-9-2}
+\[
+\begin{tikzcd}[column sep=5em,row sep=3em]
+\mathcal D\arrow[r,"\mathcal H"]\arrow[dr,"\Psi"']&
+\mathrm A(\mathcal D)\arrow[d,"\Phi"]\\
+&\mathcal A
+\end{tikzcd}
+\tag{3.2.9.2}
+\]
+ここで $\Phi$ は完全である。$\mathrm A(\mathcal D)$ の各対象
+$X\xrightarrow fY$ に対し
+\begingroup\renewcommand{\thefootnote}{(*)}%
+\[
+\Phi(X\xrightarrow fY)=
+\operatorname{Image}_{\mathcal A}
+(\Psi(X)\xrightarrow{\Psi(f)}\Psi(Y)).\footnote{関手 $\Phi$ のこの構成では、
+$\mathcal A$ における「像」関手を選ぶ必要がある。この選択はもちろん、
+一意な同型を除いて一意である。また、以後そうすることにするが、この
+「像」関手が $\mathcal A$ の各恒等射 $\operatorname{id}_T$ に、射
+$T\xrightarrow{\operatorname{id}_T}T$ を備えた対象 $T$ を対応させるよう
+課してよい。}
+\]
+\endgroup
+と定める。これにより、図式 (3.2.9.2) を可換にする
+$\mathrm A(\mathcal D)$ から $\mathcal A$ への関手 $\Phi$ が定まる。$\Phi$ が完全で
+あることを示そう。(3.2.7) から $\Phi$ は直ちに左完全であり、反対圏を取れば、
+同様に右完全であることが分かる。これで定理 (3.2.1) の証明が完了する。
+
+\VerdierSemanticAnchor{ch3-3-2-10}
+\medskip\noindent\textbf{注意 3.2.10.}\quad
+1) 定理 (3.2.1, c)) に記された普遍性は、圏同値を除いて
+$\mathrm A(\mathcal D)$ を決定する。
+
+2) $\mathcal D$ で可算直和または可算直積が表現可能なら、
+$\mathrm A(\mathcal D)$ のすべての射影対象（それぞれ入射対象）は
+$\mathcal D$ の対象と同型である。実際、そのような対象は
+$\mathrm A(\mathcal D)$ において $\mathcal D$ のある対象の直和因子であり、
+従って $\mathcal D$ のある対象上の射影子の核である。
+上の仮定のもとでは、射影子は
+$\mathcal D$ において分解可能である (1.2.9)。
+\endgroup

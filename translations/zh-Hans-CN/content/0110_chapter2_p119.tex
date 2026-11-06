@@ -1,0 +1,82 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0119}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-8-splitting-complete}
+$fgf=f$ 且 $gfg=g$。一个态射称为\emph{可分裂的}，如果它具有一个分裂。
+可分解态射都是可分裂的；反之未必成立（例如：非主理想 Dedekind 环上
+自由模的范畴）。
+
+\VerdierSemanticAnchor{ch2-1-2-8-decomposable-category}
+一个加性范畴称为\emph{可分解的}，如果其中每个态射都可分解。
+可分解范畴是阿贝尔范畴。
+
+\VerdierSemanticAnchor{ch2-1-2-8-triangle-decomposition}
+设 $X\xrightarrow{f}Y$ 为三角范畴 $\mathcal D$ 中的态射，并设
+
+\VerdierSemanticAnchor{ch2-1-2-8-decomposition-diagram-repeat}
+\begin{equation*}
+  \begin{tikzcd}[ampersand replacement=\&,column sep=5.2em,row sep=3.4em]
+    X \arrow[r,"f"] \arrow[d,"\wr"']
+      \& Y \arrow[d,"\wr"] \\
+    Z\oplus W
+      \arrow[r,"{\left(\begin{smallmatrix}0&\operatorname{id}_W\\0&0\end{smallmatrix}\right)}"]
+      \& W\oplus Z'
+  \end{tikzcd}\,.
+\end{equation*}
+为 $f$ 的一个分解。每个包含 $f$ 的特异三角都同构于三角
+
+\VerdierSemanticAnchor{ch2-1-2-8-decomposed-triangle}
+\begin{equation*}
+  \begin{tikzcd}[ampersand replacement=\&,column sep=2.0em]
+    Z\oplus W
+      \arrow[r,"{\left(\begin{smallmatrix}0&\operatorname{id}_W\\0&0\end{smallmatrix}\right)}"]
+      \& W\oplus Z'
+      \arrow[r,"{\left(\begin{smallmatrix}0&\operatorname{id}_{Z'}\\0&0\end{smallmatrix}\right)}"]
+      \& Z'\oplus Z[1]
+      \arrow[r,"{\left(\begin{smallmatrix}0&\operatorname{id}_{Z[1]}\\0&0\end{smallmatrix}\right)}"]
+      \& Z[1]\oplus W[1]
+  \end{tikzcd}\,.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-8-decomposed-triangle-derivation}
+这立即由 (1.2.4)、(1.2.5) 以及公理 TRI、TRII 得到。
+
+\VerdierSemanticAnchor{ch2-1-2-9}
+\medskip
+\noindent\textbf{命题 1.2.9.}\quad
+\emph{设 $\mathcal D$ 为三角范畴，$f\colon X\longrightarrow Y$ 为
+$\mathcal D$ 中的态射。考虑 $f$ 的下列性质：}
+
+\VerdierSemanticAnchor{ch2-1-2-9-properties}
+\begin{enumerate}
+\renewcommand{\labelenumi}{\roman{enumi})}
+\item \emph{态射 $f$ 有核。}
+\item \emph{态射 $f$ 有余核。}
+\item \emph{态射 $f$ 可分解。}
+\item \emph{态射 $f$ 可分裂。}
+\end{enumerate}
+
+\noindent\emph{则有蕴含关系：}
+
+\VerdierSemanticAnchor{ch2-1-2-9-implications}
+\[
+  \mathrm{i)}\Longleftrightarrow\mathrm{ii)}
+  \Longleftrightarrow\mathrm{iii)}\Longrightarrow\mathrm{iv)}\,.
+\]
+
+\VerdierSemanticAnchor{ch2-1-2-9-countable-equivalence}
+\emph{如果可数积或可数直和在 $\mathcal D$ 中可表示，则性质
+\textnormal{i)}、\textnormal{ii)}、\textnormal{iii)}、\textnormal{iv)}
+等价。}
+
+\VerdierSemanticAnchor{ch2-1-2-9-proof-opening}
+首先，显然有蕴含
+$\mathrm{iii)}\Longrightarrow\mathrm{i)}$、
+$\mathrm{iii)}\Longrightarrow\mathrm{ii)}$、
+$\mathrm{iii)}\Longrightarrow\mathrm{iv)}$。蕴含
+$\mathrm{i)}\Longrightarrow\mathrm{iii)}$ 等价于蕴含
+\endgroup

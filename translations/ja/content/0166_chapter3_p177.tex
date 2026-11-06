@@ -1,0 +1,65 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0177}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-1-2-1-truncations-cont}
+\noindent（それぞれ
+\[
+\begin{aligned}
+i^q&=\operatorname{id},&&q<n-1,\\
+i^{n-1}&\colon\operatorname{Ker}(d_X^{n-1})\longrightarrow X^{n-1}
+  &&\text{（標準射）},\\
+i^q&=0,&&q\geq n
+\end{aligned}
+\]
+）。
+
+射 $p$（それぞれ $i$）は次数 $j\geq n$（それぞれ $j<n$）のコホモロジー
+対象上で同型を誘導し、$j<n$ のとき $H^j(X(n,+\infty))=0$
+（それぞれ $j\geq n$ のとき $H^j(X(-\infty,n))=0$）である。この構成を
+用いれば、命題 (1.2.1) のすべての主張が直ちに証明される。詳細な証明は
+読者に委ねる。
+
+\VerdierSemanticAnchor{ch3d-1-2-2}
+\medskip\noindent\textbf{定義 1.2.2.}\quad
+三角圏
+\[
+D(\mathcal A)=K(\mathcal A)/\operatorname{Ac}(\mathcal A)
+=K(\mathcal A)[\operatorname{Qis}(\mathcal A)^{-1}]
+\]
+を $\mathcal A$ の\emph{導来圏}と呼び、$D(\mathcal A)$ と書く
+（第 II 章，2.2.6 および 2.2.10）。
+
+定理 (2.2.6) により、標準コホモロジー的関手
+$H\colon K(\mathcal A)\longrightarrow\mathcal A$ は、やはり同じ記号で表す
+コホモロジー的関手を通じて一意に分解する：
+
+\VerdierSemanticAnchor{ch3d-1-2-2-cohomology}
+\begin{equation}
+H\colon D(\mathcal A)\longrightarrow\mathcal A.
+\tag{1.2.2.1}
+\end{equation}
+これも\emph{標準コホモロジー的関手}と呼ぶ。標準商関手を
+$Q\colon K(\mathcal A)\longrightarrow D(\mathcal A)$ と書く。
+
+\VerdierSemanticAnchor{ch3d-1-2-3}
+\medskip\noindent\textbf{定理 1.2.3.}\quad
+\textit{a) 次の図式に現れる自然関手は：}
+
+\VerdierSemanticAnchor{ch3d-1-2-3-a-diagram}
+\begin{center}
+  \resizebox{0.80\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=4.5em,row sep=3.0em]
+      \& K^{,+}(\mathcal A)/\operatorname{Ac}(\mathcal A)
+        \arrow[dr] \& \\
+      K^{,b}(\mathcal A)/\operatorname{Ac}(\mathcal A)
+        \arrow[ur] \arrow[dr]
+        \& \& D(\mathcal A) \\
+      \& K^{,-}(\mathcal A)/\operatorname{Ac}(\mathcal A)
+        \arrow[ur] \&
+    \end{tikzcd}$%
+  }
+\end{center}
+\endgroup

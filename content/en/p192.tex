@@ -1,0 +1,97 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0192}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-2-5-cont}
+If there are integers $n$ such that $M\text{-}\dim(X)\leq n$, the
+$M$-dimension of $X$, denoted $M\text{-}\dim(X)$, is the least integer
+$n$ such that $M\text{-}\dim(X)\leq n$. If there is no such integer, set
+$M\text{-}\dim(X)=+\infty$.
+
+\VerdierSemanticAnchor{ch3d-2-2-6}
+\medskip\noindent\textbf{Lemma 2.2.6.}\quad
+\textit{Let
+$0\longrightarrow X\longrightarrow L\xrightarrow{u}Y\longrightarrow0$
+be an exact sequence in $\mathcal A$ such that $L\in M$ and
+$X,Y\in M'$. Then}
+\[
+M\text{-}\dim(X)=\sup\{M\text{-}\dim(Y)-1,0\}.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-2-7}
+\medskip\noindent\textbf{Proposition 2.2.7.}\quad
+\textit{Let
+$0\longrightarrow X\longrightarrow Y\longrightarrow Z\longrightarrow0$
+be an exact sequence, with $X,Y,Z\in M'$.}
+
+\noindent\textit{a) If
+$M\text{-}\dim(Z)\leq
+\inf\{M\text{-}\dim(X),M\text{-}\dim(Y)\}$, then
+$M\text{-}\dim(X)=M\text{-}\dim(Y)$.}
+
+\noindent\textit{b) If
+$M\text{-}\dim(Y)\leq
+\inf\{M\text{-}\dim(X),M\text{-}\dim(Z)\}$, then}
+\[
+M\text{-}\dim(X)=
+\sup\{M\text{-}\dim(Z)-1,M\text{-}\dim(Y)\}.
+\]
+
+\noindent\textit{c) If
+$M\text{-}\dim(X)\leq
+\inf\{M\text{-}\dim(Y),M\text{-}\dim(Z)\}$, then
+$M\text{-}\dim(Z)=M\text{-}\dim(Y)$ or
+$M\text{-}\dim(Z)=M\text{-}\dim(Y)+1$.}
+
+\VerdierSemanticAnchor{ch3d-2-2-7-proof}
+The proposition is proved by induction, by constructing an epimorphism of
+exact sequences:
+
+\VerdierSemanticAnchor{ch3d-2-2-7-epimorphism-diagram}
+\begin{center}
+\begin{tikzcd}[column sep=2.8em,row sep=2.4em]
+0 \arrow[r] & L_2 \arrow[r] \arrow[d] & L_1 \arrow[r] \arrow[d]
+  & L_0 \arrow[r] \arrow[d] & 0 \\
+0 \arrow[r] & X \arrow[r] & Y \arrow[r] & Z \arrow[r] & 0
+\end{tikzcd}
+\end{center}
+\[
+L_i\in M,\qquad 0\leq i\leq2,
+\]
+and applying the induction hypothesis to the exact sequence of kernels,
+which is controlled by Lemma (2.2.6). It remains to prove the lemma.
+
+\VerdierSemanticAnchor{ch3d-2-2-6-proof}
+First, if $M\text{-}\dim(Y)=+\infty$ (respectively, $0$), then
+$M\text{-}\dim(X)=+\infty$ (respectively, $0$). We may therefore suppose
+that $M\text{-}\dim(Y)$ is finite and nonzero; it remains to prove that
+$M\text{-}\dim(X)=M\text{-}\dim(Y)-1$. Let
+
+\VerdierSemanticAnchor{ch3d-2-2-6-resolution}
+\[
+0\longrightarrow L_n\longrightarrow L_{n-1}\longrightarrow\cdots
+\longrightarrow L_0\xrightarrow{u}Y\longrightarrow0,
+\qquad n\geq1,
+\]
+be an $M$-resolution of $Y$. Set
+
+\VerdierSemanticAnchor{ch3d-2-2-6-v-complex}
+\[
+\begin{aligned}
+V^\bullet={}&0\longrightarrow0\longrightarrow\cdots\longrightarrow0
+\longrightarrow L_n\longrightarrow L_{n-1}\longrightarrow\cdots\\
+&\longrightarrow L_0\xrightarrow{u}Y\longrightarrow0
+\longrightarrow0\longrightarrow\cdots
+\end{aligned}
+\]
+($L_i$ is the component of degree $-i$), and
+
+\VerdierSemanticAnchor{ch3d-2-2-6-u0}
+\[
+U_0^\bullet=V^\bullet(u,1),
+\qquad
+p_0=p(u,1)\colon U_0^\bullet\longrightarrow V^\bullet.
+\]
+\endgroup

@@ -1,0 +1,67 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0240}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-4-5}
+\noindent\textbf{4.4.5.}\quad
+The data are the same as in (4.4.4), but in addition an object $X$ of
+$D(\mathcal A)$ is given. Let $\bigl(X(p,q),\delta(p,q,r)\bigr)$ be the
+second spectral object with values in $D(\mathcal A)$ associated with the
+complex $X$ (4.3.1). The functor $F$ takes this spectral object to a
+spectral object with values in $\mathcal B$. One thereby obtains a spectral
+sequence functorial in $F$ and in the argument $X$ as the latter varies in
+the category $D(\mathcal A)$ (4.3.3). This spectral sequence is called the
+\emph{second spectral sequence of the functor $F$ relative to the complex
+$X$}. For this spectral sequence we always use the indexing introduced in
+(Chapter~II, 4.3.3.2).
+
+\VerdierSemanticAnchor{ch4d-4-4-6}
+\medskip\noindent\textbf{Proposition 4.4.6.}\quad
+
+\VerdierSemanticAnchor{ch4d-4-4-6-a}
+\noindent\textit{a) The term $\mathrm{II}_2^{p,q}$ of the second spectral
+sequence of $F$ relative to the complex $X$ is given by}
+\[
+\mathrm{II}_2^{p,q}=F^p\bigl(H^q(X)\bigr).
+\]
+
+\VerdierSemanticAnchor{ch4d-4-4-6-b}
+\noindent\textit{b) The terms $\mathrm{II}_{\infty}^{p,q}$ are the
+associated graded objects of the suitably filtered objects $F^{p+q}(X)$.}
+
+\VerdierSemanticAnchor{ch4d-4-4-6-proof}
+Indeed, by (4.3.4.1), there is a canonical isomorphism
+\[
+X(p,p+1)\xrightarrow{\sim}H^p(X)[-p],
+\]
+whence, using (Chapter~II, 4.3.3.2),
+\[
+\mathrm{II}_2^{p,q}
+=F^{p+q}\bigl(H^q(X)[-q]\bigr)
+=F^p\bigl(H^q(X)\bigr),
+\]
+which gives the (abusive) equality in a). Assertion b) follows from
+(Chapter~II, 4.3.2).
+
+\VerdierSemanticAnchor{ch4d-4-5}
+\subsection{Convergence problems.}
+
+\VerdierSemanticAnchor{ch4d-4-5-1}
+\noindent\textbf{Definition 4.5.1.}\quad
+Let $\mathcal A$ and $\mathcal B$ be two abelian categories. A
+cohomological functor $F\colon D^*(\mathcal A)\longrightarrow\mathcal B$
+($*=+,-,b,{}$ ``empty'') is said to be \emph{stationary on the right}
+(respectively, \emph{on the left}) if there is an integer $n_0$ such that,
+for every object $X$ of $D^*(\mathcal A)$ satisfying $H^i(X)=0$ for every
+$i<0$ (respectively, $>0$), one has $F^n(X)=0$ for every $n<n_0$
+(respectively, $n>n_0$). The functor $F$ is said to be \emph{stationary} if
+it is stationary on the right and on the left. An exact functor
+$G\colon D^*(\mathcal A)\longrightarrow D^{*'}(\mathcal B)$ is said to be
+\emph{stationary on the right} (respectively, \emph{stationary on the
+left}, respectively, \emph{stationary}) if the cohomological functor
+obtained by composing $G$ with the canonical cohomological functor
+$D^{*'}(\mathcal B)\longrightarrow\mathcal B$ is stationary on the right
+(respectively, stationary on the left, respectively, stationary).
+\endgroup

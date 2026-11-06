@@ -1,0 +1,100 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0068}%
+\VerdierSemanticAnchor{ch1-2-2-1-continuation}%
+$j<i$ ならば $\varepsilon(e_j,i)=-1$、$i\leq j$ ならば
+$\varepsilon(e_j,i)=1$ であることが直ちに分かる。さらに、写像
+$(\sigma,i)\mapsto\varepsilon(\sigma,i)$ はこれらの性質によって一意に
+定まる。ここから関係式
+
+\VerdierSemanticAnchor{ch1-2-2-1-eq2}
+\begin{equation}
+  \varepsilon(\sigma,i)\varepsilon(\sigma+e_i,j)
+  =-\varepsilon(\sigma,j)\varepsilon(\sigma+e_j,i)
+  \tag{2.2.1.2}
+\end{equation}
+が直ちに従う。これは各 $\sigma\in\mathbb Z[n]$ および
+$(i,j)\in[n]\times[n]$、$i\neq j$ に対して成り立つ。
+
+\VerdierSemanticAnchor{ch1-2-2-2}
+\noindent\textbf{2.2.2.}\quad
+$Y$ を $C$ における $n$-重複複体とする。次のようにおく：
+
+\VerdierSemanticAnchor{ch1-2-2-2-eq1}
+\begin{equation}
+  \delta_Y^{\sigma,i}=\varepsilon(\sigma,i)d_Y^{\sigma,i}.
+  \tag{2.2.2.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-2-2-eq2}
+(2.2.1.2) から、関係式 (2.1.2.1) は次の関係式と同値である：
+\begin{equation}
+  \begin{aligned}
+    \delta_Y^{\sigma+e_i,i}\delta_Y^{\sigma,i}
+      &=0,
+      &&\forall\sigma\in\mathbb Z[n],\quad\forall i\in[n],\\
+    \delta_Y^{\sigma+e_j,i}\delta_Y^{\sigma,j}
+      +\delta_Y^{\sigma+e_i,j}\delta_Y^{\sigma,i}
+      &=0,
+      &&\forall\sigma\in\mathbb Z[n],\quad\forall i,j\in[n].
+  \end{aligned}
+  \tag{2.2.2.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-2-2-pushforward}
+ここで $\varphi\colon[n]\to[m]$ を写像とし、$Y$ が
+$\varphi$-総和可能であるとする。次の公式によって $m$-重複複体
+$\int_\varphi Y$ を定める：
+
+\VerdierSemanticAnchor{ch1-2-2-2-eq3}
+\begin{equation}
+  \left(\int_\varphi Y\right)^\tau
+  =\bigoplus_{\varphi(\sigma)=\tau}Y^\sigma,
+  \qquad \forall\tau\in\mathbb Z[m],
+  \tag{2.2.2.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-2-2-eq4}
+\begin{equation}
+  \begin{aligned}
+    \delta_{\int_\varphi Y}^{\tau,i}(y_\sigma)
+      &=\sum_{\varphi(j)=i}\delta_Y^{\sigma,j}(y_\sigma),\\[-1mm]
+    &\hspace{-18mm}
+      \sigma\in\mathbb Z[n],\quad i\in[m],\quad
+      y_\sigma\in Y^\sigma,\quad\tau=\varphi(\sigma).
+  \end{aligned}
+  \tag{2.2.2.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-2-2-additive-interpretation}
+$C$ がアーベル群の圏であるとき、公式 (2.2.2.4) は射
+\[
+  \left(\int_\varphi Y\right)^\tau
+  =\bigoplus_{\varphi(\sigma)=\tau}Y^\sigma
+  \longrightarrow
+  \left(\int_\varphi Y\right)^{\tau+e_i}
+  =\bigoplus_{\varphi(\sigma)=\tau+e_i}Y^\sigma
+\]
+を定める。
+$C$ が加法圏であるときも、$C$ 上のアーベル群値反変関手の圏で考えること、
+すなわち $y_\sigma$ を $C$ の任意の対象から $Y^\sigma$ への射と解釈する
+ことによって、$\left(\int_\varphi Y\right)^\tau$ から
+$\left(\int_\varphi Y\right)^{\tau+e_i}$ への射を定められる。
+
+\VerdierSemanticAnchor{ch1-2-2-2-verification}
+直ちに計算すれば、$\delta_{\int_\varphi Y}^{\tau,i}$ は関係式
+(2.2.2.2) を満たす。したがって微分に戻すと、(2.2.2.3) で定めた対象に
+次の射を備えたものは
+
+\VerdierSemanticAnchor{ch1-2-2-2-eq5}
+\begin{equation}
+  \begin{aligned}
+    d_{\int_\varphi Y}^{\tau,i}(y_\sigma)
+      &=\varepsilon(\tau,i)
+        \sum_{\varphi(j)=i}
+          \varepsilon(\sigma,j)d_Y^{\sigma,j}(y_\sigma),\\[-1mm]
+    &\hspace{-18mm}
+      \tau\in\mathbb Z[m],\quad i\in[m],\quad
+      \sigma\in\mathbb Z[n],\quad\varphi(\sigma)=\tau
+  \end{aligned}
+  \tag{2.2.2.5}
+\end{equation}

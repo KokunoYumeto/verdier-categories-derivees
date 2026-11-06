@@ -1,0 +1,86 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0119}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-8-splitting-complete}
+$fgf=f$ and $gfg=g$. A morphism is called \emph{splittable} if it has a
+splitting. Decomposable morphisms are splittable. The converse is not
+necessarily true (example: the category of free modules over a nonprincipal
+Dedekind ring).
+
+\VerdierSemanticAnchor{ch2-1-2-8-decomposable-category}
+An additive category is called \emph{decomposable} if every morphism in that
+category is decomposable. A decomposable category is abelian.
+
+\VerdierSemanticAnchor{ch2-1-2-8-triangle-decomposition}
+Let $X\xrightarrow{f}Y$ be a morphism in a triangulated category
+$\mathcal D$, and let
+
+\VerdierSemanticAnchor{ch2-1-2-8-decomposition-diagram-repeat}
+\begin{equation*}
+  \begin{tikzcd}[ampersand replacement=\&,column sep=5.2em,row sep=3.4em]
+    X \arrow[r,"f"] \arrow[d,"\wr"']
+      \& Y \arrow[d,"\wr"] \\
+    Z\oplus W
+      \arrow[r,"{\left(\begin{smallmatrix}0&\operatorname{id}_W\\0&0\end{smallmatrix}\right)}"]
+      \& W\oplus Z'
+  \end{tikzcd}\,.
+\end{equation*}
+be a decomposition of $f$. Every distinguished triangle containing $f$ is
+isomorphic to the triangle
+
+\VerdierSemanticAnchor{ch2-1-2-8-decomposed-triangle}
+\begin{equation*}
+  \begin{tikzcd}[ampersand replacement=\&,column sep=2.0em]
+    Z\oplus W
+      \arrow[r,"{\left(\begin{smallmatrix}0&\operatorname{id}_W\\0&0\end{smallmatrix}\right)}"]
+      \& W\oplus Z'
+      \arrow[r,"{\left(\begin{smallmatrix}0&\operatorname{id}_{Z'}\\0&0\end{smallmatrix}\right)}"]
+      \& Z'\oplus Z[1]
+      \arrow[r,"{\left(\begin{smallmatrix}0&\operatorname{id}_{Z[1]}\\0&0\end{smallmatrix}\right)}"]
+      \& Z[1]\oplus W[1]
+  \end{tikzcd}\,.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-8-decomposed-triangle-derivation}
+This follows immediately from (1.2.4), (1.2.5), and axioms TRI and TRII.
+
+\VerdierSemanticAnchor{ch2-1-2-9}
+\medskip
+\noindent\textbf{Proposition 1.2.9.}\quad
+\emph{Let $\mathcal D$ be a triangulated category and let
+$f\colon X\longrightarrow Y$ be a morphism in $\mathcal D$. Consider the
+following properties of the morphism $f$:}
+
+\VerdierSemanticAnchor{ch2-1-2-9-properties}
+\begin{enumerate}
+\renewcommand{\labelenumi}{\roman{enumi})}
+\item \emph{The morphism $f$ has a kernel.}
+\item \emph{The morphism $f$ has a cokernel.}
+\item \emph{The morphism $f$ is decomposable.}
+\item \emph{The morphism $f$ is splittable.}
+\end{enumerate}
+
+\noindent\emph{Then the following implications hold:}
+
+\VerdierSemanticAnchor{ch2-1-2-9-implications}
+\[
+  \mathrm{i)}\Longleftrightarrow\mathrm{ii)}
+  \Longleftrightarrow\mathrm{iii)}\Longrightarrow\mathrm{iv)}\,.
+\]
+
+\VerdierSemanticAnchor{ch2-1-2-9-countable-equivalence}
+\emph{If countable products or countable sums are representable in
+$\mathcal D$, properties \textnormal{i)}, \textnormal{ii)},
+\textnormal{iii)}, and \textnormal{iv)} are equivalent.}
+
+\VerdierSemanticAnchor{ch2-1-2-9-proof-opening}
+First, we plainly have the implications
+$\mathrm{iii)}\Longrightarrow\mathrm{i)}$,
+$\mathrm{iii)}\Longrightarrow\mathrm{ii)}$,
+$\mathrm{iii)}\Longrightarrow\mathrm{iv)}$. The implication
+$\mathrm{i)}\Longrightarrow\mathrm{iii)}$ is equivalent to the implication
+\endgroup

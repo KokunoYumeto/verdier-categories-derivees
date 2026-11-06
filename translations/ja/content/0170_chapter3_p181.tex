@@ -1,0 +1,65 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0181}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-1-2-10-proof-cont}
+このとき複体 $X(0,+\infty)$（(1.2.1) の証明）は $X$ と擬同型であり、標準射
+$H^0(X(0,+\infty))\longrightarrow X(0,+\infty)$ は擬同型である。これに
+より、$X$ は $D(\mathcal A)$ において $H^0(X)$ と同型である。
+
+b) を証明する。二つ目の等式は参照のために再掲したもので、$\mathcal A$ が
+$D(\mathcal A)$ の充満部分圏であることから従う。$D(\mathcal A)$ における
+$X[-n]$ から $Y$ への射は $Q(m)Q(s)^{-1}$ の形であり、ここで
+$m\colon Z^\bullet\longrightarrow Y$ は $K(\mathcal A)$ の射、
+$s\colon Z^\bullet\longrightarrow X[-n]$ は $K(\mathcal A)$ の擬同型である。
+このとき射 $i\colon Z^\bullet(-\infty,n+1)\longrightarrow Z^\bullet$
+（(1.2.1) の証明）は擬同型である。したがって
+\[
+Q(m)Q(s)^{-1}=Q(m)Q(i)Q(i)^{-1}Q(s)^{-1}=Q(mi)Q(si)^{-1}.
+\]
+$n$ が真に負であるとき、$mi=0$ である。したがって
+$Q(m)Q(s)^{-1}=0$ となる。
+
+\VerdierSemanticAnchor{ch3d-1-2-11}
+\medskip\noindent\textbf{定義 1.2.11.}\quad
+$\mathcal A$ の対象をシフトした対象によって定まる $D(\mathcal A)$ の充満
+部分圏を $\mathcal A^{\operatorname{Ext}}$ と書く。
+
+したがって圏 $\mathcal A^{\operatorname{Ext}}$ は（部分圏 $\mathcal A$ と
+異なり）$D(\mathcal A)$ の $\mathbb Z$-部分圏である。$D(\mathcal A)$ の
+対象が $\mathcal A^{\operatorname{Ext}}$ の対象と同型であるための必要十分
+条件は、その非零コホモロジー対象がただ一つであることである。
+
+\VerdierSemanticAnchor{ch3d-1-3}
+\subsection*{1.3. 標準 \texorpdfstring{$\delta$}{delta}-関手。}
+
+\VerdierSemanticAnchor{ch3d-1-3-1}
+\noindent\textbf{1.3.1.}\quad
+$\mathcal A$ をアーベル圏、$\mathcal D$ を三角圏とする。$\mathcal A$ から
+$\mathcal D$ への $\delta$-関手とは、次のデータからなる対象である：
+
+\noindent 1) 関手 $G\colon\mathcal A\longrightarrow\mathcal D$。
+
+\noindent 2) $\mathcal A$ の任意の完全列
+$S=0\longrightarrow X\longrightarrow Y\longrightarrow Z\longrightarrow0$
+に対して、$\mathcal D$ の射
+\[
+\delta(S)\colon G(Z)\longrightarrow G(X)[1]
+\]
+を指定すること。
+これらのデータは次の公理を満たすものとする：
+
+\noindent a) 完全列の任意の射：
+
+\VerdierSemanticAnchor{ch3d-1-3-1-exact-sequences}
+\begin{center}
+\resizebox{0.88\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=2.6em,row sep=2.2em]
+S={}\&0\arrow[r]\&X\arrow[r]\arrow[d,"u"']\&Y\arrow[r]\arrow[d,"v"']\&Z\arrow[r]\arrow[d,"w"']\&0\\
+S'={}\&0\arrow[r]\&X'\arrow[r]\&Y'\arrow[r]\&Z'\arrow[r]\&0
+\end{tikzcd}$%
+}
+\end{center}
+\endgroup

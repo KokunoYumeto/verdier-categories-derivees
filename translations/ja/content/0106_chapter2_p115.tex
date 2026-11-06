@@ -1,0 +1,82 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0115}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-3-proof-f1-f2}
+具体的に、$f_1\colon X\longrightarrow X'$ と
+$f_2\colon Y\longrightarrow Y'$ が同型である場合を考える。$\mathcal D$ の
+任意の対象 $W$ に対し、次の可換図式がある。
+
+\VerdierSemanticAnchor{ch2-1-2-3-five-lemma-diagram}
+\begin{equation*}
+  \resizebox{0.98\linewidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=2.15em,row sep=3em]
+      \cdots \arrow[r]
+        \& \operatorname{Hom}_{\mathcal D}(W,X) \arrow[r] \arrow[d,"{\operatorname{Hom}_{\mathcal D}(W,f_1)}"']
+        \& \operatorname{Hom}_{\mathcal D}(W,Y) \arrow[r] \arrow[d,"{\operatorname{Hom}_{\mathcal D}(W,f_2)}"']
+        \& \operatorname{Hom}_{\mathcal D}(W,Z) \arrow[r] \arrow[d,"{\operatorname{Hom}_{\mathcal D}(W,f_3)}"']
+        \& \operatorname{Hom}_{\mathcal D}(W,X[1]) \arrow[r] \arrow[d,"{\operatorname{Hom}_{\mathcal D}(W,f_1[1])}"']
+        \& \cdots \\
+      \cdots \arrow[r]
+        \& \operatorname{Hom}_{\mathcal D}(W,X') \arrow[r]
+        \& \operatorname{Hom}_{\mathcal D}(W,Y') \arrow[r]
+        \& \operatorname{Hom}_{\mathcal D}(W,Z') \arrow[r]
+        \& \operatorname{Hom}_{\mathcal D}(W,X'[1]) \arrow[r]
+        \& \cdots
+    \end{tikzcd}$%
+  }\,.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-3-five-lemma}
+各行は完全である。五項補題により、
+$\operatorname{Hom}_{\mathcal D}(W,f_3)$ は任意の $W$ に対して同型であり、
+したがって $f_3$ も同型である。系の残る二つの主張は、公理 TRII を用いて
+この場合から従う。
+
+\VerdierSemanticAnchor{ch2-1-2-4}
+\medskip
+\noindent\textbf{系 1.2.4.}\quad
+$X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]$ と
+$X\xrightarrow{u}Y\xrightarrow{v'}Z'\xrightarrow{w'}X[1]$ を二つの
+完全三角とする。このとき、次の図式を可換にする同型
+$f\colon Z\xrightarrow{\sim}Z'$ が存在する。
+
+\VerdierSemanticAnchor{ch2-1-2-4-1}
+\begin{equation}
+  \begin{tikzcd}[column sep=2.8em,row sep=1.7em]
+    && Z \arrow[dr,"w"] \arrow[dd,"f"',"\sim"] & \\
+    X \arrow[r,"u"] & Y \arrow[ur,"v"] \arrow[dr,"v'"'] && X[1] \\
+    && Z' \arrow[ur,"w'"'] &
+  \end{tikzcd}
+  \tag{1.2.4.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch2-1-2-4-proof}
+実際、公理 TRIII により、図式 (1.2.4.1) を可換にする射
+$f\colon Z\longrightarrow Z'$ が存在する。(1.2.3) により、この射は同型で
+ある。
+
+\VerdierSemanticAnchor{ch2-1-2-4-essential-uniqueness}
+したがって系 (1.2.4) は、与えられた射を含む完全三角が本質的に一意、
+すなわち同型を除いて定まることを示す。ただし、この同型自体は一意では
+ない。この点は (1.2.12) で明確にする。
+
+\VerdierSemanticAnchor{ch2-1-2-5}
+\medskip
+\noindent\textbf{系 1.2.5.}\quad
+二つの完全三角の直和は完全三角である。
+
+\VerdierSemanticAnchor{ch2-1-2-5-proof-start}
+次の二つをとる。
+
+\VerdierSemanticAnchor{ch2-1-2-5-input-triangles}
+\[
+  \begin{gathered}
+    X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1],\\
+    X'\xrightarrow{u'}Y'\xrightarrow{v'}Z'\xrightarrow{w'}X'[1]
+  \end{gathered}
+\]
+\endgroup

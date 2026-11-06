@@ -1,0 +1,65 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0196}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-1-construction}
+Once this has been done, it will suffice to set
+$L^\bullet=\varprojlim_n L_n^\bullet$ and
+$w=\varprojlim_n w_n$. For $n$ sufficiently small, set
+$L_n=Y$, $v_n=\operatorname{id}_Y$, and
+$w_n=\operatorname{id}_Y$. Suppose that, for every integer $n<q$ with
+$q\in\mathbf Z$, complexes $L_n^\bullet$ and morphisms $v_n$ and $w_n$
+having properties 1), 2), and 3) above have been constructed. The complex
+$X_n$ has the form
+
+\VerdierSemanticAnchor{ch3d-2-3-1-xn-shape}
+\[
+X_n=\cdots\longrightarrow Y^{-n-2}\longrightarrow Z^{-n-1}
+\longrightarrow X^{-n}\longrightarrow X^{-n+1}\longrightarrow\cdots
+\]
+and the complex $L_n^\bullet$ has the form
+
+\VerdierSemanticAnchor{ch3d-2-3-1-ln-shape}
+\[
+L_n^\bullet=\cdots\longrightarrow Y^{-n-2}\longrightarrow Z'^{-n-1}
+\longrightarrow L^{-n}\longrightarrow L^{-n+1}\longrightarrow\cdots,
+\]
+where the $Y^i$ (respectively, the $X^i$) are the components of the complex
+$Y$ (respectively, $X$). We thus have a diagram
+
+\VerdierSemanticAnchor{ch3d-2-3-1-degree-q-diagram}
+\begin{center}
+\begin{tikzcd}[column sep=5.2em,row sep=2.8em]
+  & X^{-q} \arrow[d,"(\dot u_q)^{-q}"] \\
+Z'^{-q} \arrow[r,"(w_{q-1})^{-q}"] & Z^{-q},
+\end{tikzcd}
+\end{center}
+where $(\dot u_q)^{-q}$ is an epimorphism and $Z'^{-q}\in M^\wedge$.
+Since the set $M^\wedge$ has property $(E_2)$ (2.2.4), this diagram can be
+completed to a commutative diagram
+
+\VerdierSemanticAnchor{ch3d-2-3-1-lifting-square}
+\begin{center}
+\begin{tikzcd}[column sep=5.2em,row sep=2.8em]
+L^{-q} \arrow[r,"\beta"] \arrow[d,"\alpha"']
+  & X^{-q} \arrow[d,"(\dot u_q)^{-q}"] \\
+Z'^{-q} \arrow[r,"(w_{q-1})^{-q}"] & Z^{-q},
+\end{tikzcd}
+\end{center}
+in which $\alpha$ is an epimorphism and $L^{-q}$ belongs to $M$. Using the
+notation of (2.1.1.2) and (2.1.1.3), we deduce a commutative diagram of
+complexes
+
+\VerdierSemanticAnchor{ch3d-2-3-1-complex-square}
+\begin{center}
+\begin{tikzcd}[column sep=4.8em,row sep=3.0em]
+L_{q-1}^\bullet(\alpha,-q) \arrow[r,"\varphi"]
+  \arrow[d,"{p(\alpha,-q)}"']
+  & X_{q-1}((\dot u_q)^{-q},-q)\simeq X_q
+    \arrow[d,"{p((\dot u_q)^{-q},-q)\simeq\dot u_q}"] \\
+L_{q-1}^\bullet \arrow[r,"w_{q-1}"] & X_{q-1}.
+\end{tikzcd}
+\end{center}
+\endgroup

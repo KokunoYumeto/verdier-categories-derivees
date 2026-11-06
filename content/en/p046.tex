@@ -1,0 +1,81 @@
+\VerdierPhysicalPageAnchor{0046}%
+\VerdierSemanticAnchor{ch1-1-4-3-canonical}
+This operation is called the \emph{canonical operation}. We propose to
+study the $H$-functors
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq3}
+\begin{equation}
+  (F,m)\colon(\mathcal C,H,T_f,c_f)
+  \longrightarrow(\mathcal C',H,T'_f,c'_f)
+  \tag{1.4.3.3}
+\end{equation}
+that induce the canonical operation of the group
+$\mathbb Z/2\mathbb Z$ on the functor $F$.
+
+\VerdierSemanticAnchor{ch1-1-4-3-extension}
+Let $\dot\alpha\in H^2(G,\mathbb Z/2\mathbb Z)$ be the element
+describing the extension
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq4}
+\begin{equation}
+  1\longrightarrow\mathbb Z/2\mathbb Z
+  \xrightarrow{n}H\xrightarrow{f}G\longrightarrow e.
+  \tag{1.4.3.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-3-cocycle}
+Let $\alpha_s\in Z^2(G,\mathbb Z/2\mathbb Z)$ be a normalized
+inhomogeneous cocycle in the class $\dot\alpha$, defined by a normalized
+section $s$ of $f$. We have
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq5}
+\begin{equation}
+  \begin{aligned}
+    \alpha_s(\sigma_1,\sigma_2)
+      &=s(\sigma_2)s(\sigma_1\sigma_2)^{-1}s(\sigma_1),
+      & \sigma_1,\sigma_2&\in G,\\
+    s(e)&=\text{the identity element of }H,\\
+    \alpha_s(\sigma_1,e)&=\alpha_s(e,\sigma_1)=1,\\
+    \delta\alpha_s(\sigma_1,\sigma_2,\sigma_3)
+      &=\alpha_s(\sigma_2,\sigma_3)
+        \alpha_s(\sigma_1\sigma_2,\sigma_3)^{-1}\\
+      &\quad{}\alpha_s(\sigma_1,\sigma_2\sigma_3)
+        \alpha_s(\sigma_1,\sigma_2)^{-1}=1,
+      & \sigma_1,\sigma_2,\sigma_3&\in G.
+  \end{aligned}
+  \tag{1.4.3.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-3-bijection}
+The section $s\colon G\to H$ defines an isomorphism of sets
+\[
+  H\xrightarrow{\sim}\mathbb Z/2\mathbb Z\times G,
+\]
+and by transporting the group law of $H$ to
+$\mathbb Z/2\mathbb Z\times G$ through this isomorphism, we obtain the
+group law
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq6}
+\begin{equation}
+  (\varepsilon_1,\sigma_1)(\varepsilon_2,\sigma_2)
+  =\bigl(\varepsilon_1\varepsilon_2
+    \alpha_s(\sigma_1,\sigma_2),\sigma_1\sigma_2\bigr).
+  \tag{1.4.3.6}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-3-identification}
+Let us now identify $H$ with the group described by (1.4.3.6). For
+every $(\varepsilon_1,\sigma_1),(\varepsilon_2,\sigma_2)\in H$, we have
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq7}
+\begin{equation}
+  \begin{aligned}
+    T_f(\varepsilon_1,\sigma_1)&=T(\sigma_1),\\
+    T'_f(\varepsilon_1,\sigma_1)&=T'(\sigma_1),\\
+    c_f\bigl((\varepsilon_1,\sigma_1),(\varepsilon_2,\sigma_2)\bigr)
+      &=c(\sigma_1,\sigma_2),\\
+    c'_f\bigl((\varepsilon_1,\sigma_1),(\varepsilon_2,\sigma_2)\bigr)
+      &=c'(\sigma_1,\sigma_2)
+  \end{aligned}
+  \tag{1.4.3.7}
+\end{equation}

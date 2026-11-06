@@ -1,0 +1,82 @@
+\VerdierPhysicalPageAnchor{0052}%
+\VerdierSemanticAnchor{ch1-1-5-3}
+\noindent\textbf{1.5.3. Existence in the case $n=1$.}\quad
+Set
+
+\VerdierSemanticAnchor{ch1-1-5-3-eq1}
+\begin{equation}
+  \begin{aligned}
+    p(0)&=\text{identity},\\
+    p(e_1)&=p_1.
+  \end{aligned}
+  \tag{1.5.3.1}
+\end{equation}
+Then
+
+\VerdierSemanticAnchor{ch1-1-5-3-eq2}
+\begin{equation}
+  \begin{aligned}
+    p(-e_1)={}&\alpha(e_1,-e_1)
+      \bigl(T'(-e_1)F*c^{-1}(-e_1,e_1)\bigr)\\
+      &{}\bigl(T'(-e_1)*p^{-1}(e_1)*T(-e_1)\bigr)
+      \bigl(c'(e_1,-e_1)*FT(-e_1)\bigr),
+  \end{aligned}
+  \tag{1.5.3.2}
+\end{equation}
+that is, $p(-e_1)$ is, up to sign (this sign being
+$\alpha(e_1,-e_1)$), the composite morphism
+
+\VerdierSemanticAnchor{ch1-1-5-3-eq2-composite}
+\begin{center}
+  \resizebox{0.94\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=7.2em,row sep=4.2em]
+      FT(-e_1)
+        \arrow[r,"{c'(e_1,-e_1)*FT(-e_1)}"]
+        \& T'(-e_1)T'(e_1)FT(-e_1)
+        \arrow[d,"{T'(-e_1)*p^{-1}(e_1)*T(-e_1)}"] \\
+      {} \& T'(-e_1)FT(e_1)T(-e_1)
+        \arrow[r,"{T'(-e_1)F*c^{-1}(-e_1,e_1)}"]
+        \& T'(-e_1)F
+    \end{tikzcd}$%
+  }\;.
+\end{center}
+
+\VerdierSemanticAnchor{ch1-1-5-3-recursive-definition}
+We shall define the isomorphisms $p(qe_1)$ by induction on $|q|$.
+For this purpose, consider diagrams $D(q,q')$ of type (1.4.3.11), in
+which the isomorphisms $p(re_1)$ to be defined must occur:
+
+\VerdierSemanticAnchor{ch1-1-5-3-eq3}
+\begin{center}
+  \resizebox{0.88\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=7.2em,row sep=3.8em]
+      FT((q+q')e_1)
+        \arrow[r,"{p((q+q')e_1)}"]
+        \arrow[d,"{F*c(q'e_1,qe_1)}"']
+        \& T'((q+q')e_1)F
+        \arrow[dd,"{c'(q'e_1,qe_1)*F}"'] \\
+      FT(qe_1)T(q'e_1)
+        \arrow[d,"{p(qe_1)*T(q'e_1)}"']
+        \& {} \\
+      T'(qe_1)FT(q'e_1)
+        \arrow[r,"{T'(qe_1)*p(q'e_1)}"']
+        \& T'(qe_1)T'(q'e_1)F
+    \end{tikzcd}$%
+  }
+  \hfill\textup{(1.5.3.3)}
+\end{center}
+
+\VerdierSemanticAnchor{ch1-1-5-3-recursive-step}
+and suppose that the isomorphisms $p(qe_1)$ have been defined for
+integers $q$ such that $|q|<r$. We then define $p(re_1)$ to be the
+unique isomorphism making diagram $D(r-1,1)$
+$\alpha(r-1,1)$-commutative, and $p(-re_1)$ to be the unique
+isomorphism making diagram $D(-r+1,-1)$
+$\alpha(-r+1,-1)$-commutative. The isomorphisms $p(qe_1)$ now being
+defined, we may consider the property
+
+\VerdierSemanticAnchor{ch1-1-5-3-property}
+\begin{equation}
+  \text{\emph{The diagram $D(q,q')$ is $\alpha(q,q')$-commutative.}}
+  \tag{P(q,q')}
+\end{equation}

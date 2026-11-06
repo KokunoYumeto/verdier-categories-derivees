@@ -1,0 +1,67 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0028}
+\VerdierSemanticAnchor{intro-7-locally-compact-model}
+局所コンパクト空間という特に簡単な場合が、得られる主張のモデルを与える。
+$X,Y$ を二つの局所コンパクト空間（たとえば有限コホモロジー次元をもつ
+もの）、$A$ を（Noether）環、$X_A,Y_A$ をそれぞれ $X,Y$ 上の
+$A$-加群の層の圏、$\mathbf D(X_A),\mathbf D(Y_A)$ をその導来圏とし、
+$f\colon X\longrightarrow Y$ を連続写像とする。この状況で次を定義できる：
+
+\VerdierSemanticAnchor{intro-7-f-shriek}
+\begin{enumerate}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\item 関手
+\[
+f_!\colon X_A\longrightarrow Y_A,
+\]
+すなわち固有台付き順像と、それに対応する全導来関手
+\VerdierSemanticAnchor{intro-7-rf-shriek}
+\[
+\mathrm Rf_!\colon \mathbf D(X_A)\longrightarrow \mathbf D(Y_A).
+\]
+（$f\colon X\longrightarrow Y$ が固有写像ならば、$f_!$ は通常の順像関手
+である。）
+
+\VerdierSemanticAnchor{intro-7-f-upper-shriek}
+\item 関手
+\[
+f^!\colon \mathbf D^+(Y_A)\longrightarrow \mathbf D^+(X_A)
+\]
+（記号 $+$ は下に有界な複体に限ることを表す）。その厳密な定義はかなり
+技術的だが、性質 c) によって一意同型を除いて特徴付けられる。
+
+\VerdierSemanticAnchor{intro-7-duality-adjunction}
+\item 二変数関手的な同型
+\VerdierSemanticAnchor{intro-7-delta-f}
+\[
+\Delta_f(F,G)\colon
+\operatorname{RHom}(\mathrm Rf_!F,G)
+\longrightarrow
+\operatorname{RHom}(F,f^!G)
+\]
+これは $\mathbf D(X_A)$ の任意の対象 $F$ と $\mathbf D^+(Y_A)$ の任意
+の対象 $G$ に対して定義される（$\operatorname{RHom}$ は「準同型の複体」
+関手の全導来関手を表す）。
+\end{enumerate}
+
+重要な現象は次のとおりである：
+
+\VerdierSemanticAnchor{intro-7-duality-D1}
+\noindent\textit{D1)} $f$ を変化させるとき、$f^!$ の形成は推移的である。
+
+\VerdierSemanticAnchor{intro-7-duality-D2}
+\noindent\textit{D2)} 同型 $\Delta_f$ は写像の合成と両立する。
+
+\VerdierSemanticAnchor{intro-7-duality-D3}
+\noindent\textit{D3)} $X$ が $Y$ 上相対次元 $n$ で滑らかなとき、すなわち
+$X$ 上局所的に、$X$ が $Y$ のある開部分と位相空間 $\mathbf R^n$ との
+積に $Y$ 上同型であるとき（例：$Y$ は一点、$X$ は位相多様体）、
+$\mathbf D^+(Y_A)$ の任意の対象 $G$ に対して標準同型
+\VerdierSemanticAnchor{intro-7-relative-orientation}
+\[
+f^!(G)\simeq f^*(G)\otimes\omega_{X/Y}[n]
+\]
+がある。ここで $f^*(G)$ は通常の逆像、$\omega_{X/Y}$ は階数 $1$ の
+局所自由層、すなわち $Y$ 上の $X$ の相対向き付け層であり、
+$\omega_{X/Y}[n]$ は複体 $\omega_{X/Y}$ の次数を $n$ だけシフトして
+得られる複体である。

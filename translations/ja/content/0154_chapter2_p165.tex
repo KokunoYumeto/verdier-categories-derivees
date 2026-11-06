@@ -1,0 +1,57 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0165}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch4-4-2-1-inclusions}
+こうして $\mathcal{F}\ell_2(\mathcal J)$ から $\mathcal A$ への二つの
+関手を定義した。定義により、次の包含関係がある：
+\[
+B\!\left[\begin{smallmatrix}n\\f,g\end{smallmatrix}\right]\subset H^n(f),
+\qquad
+Z\!\left[\begin{smallmatrix}n\\f,g\end{smallmatrix}\right]\subset H^n(g).
+\]
+$\omega_3=(\mathord\bullet\xrightarrow f\mathord\bullet\xrightarrow g
+\mathord\bullet\xrightarrow h\mathord\bullet)$ を
+$\mathcal{F}\ell_3(\mathcal J)$ の対象とする。
+
+\VerdierSemanticAnchor{ch4-4-2-2}
+\medskip\noindent\textbf{命題 4.2.2.}\quad
+\textit{次の包含関係がある：}
+\[
+B\!\left[\begin{smallmatrix}n\\g,h\end{smallmatrix}\right]
+\subset
+Z\!\left[\begin{smallmatrix}n\\f,g\end{smallmatrix}\right]
+\subset H^n(g).
+\]
+第二の包含関係は参照のために記した。第一の包含関係を証明するには、次の列の
+二つの射の合成が零であることを示せば十分である：
+\VerdierSemanticAnchor{ch4-4-2-2-proof-sequence}
+\[
+H^{n-1}(h)\xrightarrow{\delta_1}H^n(g)
+\xrightarrow{\delta_2}H^{n+1}(f)
+\]
+ところが、対象
+$(\mathord\bullet\xrightarrow g\mathord\bullet\xrightarrow h\mathord\bullet)$
+は $\mathcal{F}\ell_2(\mathcal J)$ の対象であり、完全列
+\[
+H^{n-1}(h)\xrightarrow{\delta_1}H^n(g)
+\xrightarrow u H^n(hg),
+\]
+を与え、$\mathcal{F}\ell_2(\mathcal J)$ の射
+\VerdierSemanticAnchor{ch4-4-2-2-fl2-morphism}
+\[
+\begin{tikzcd}[column sep=4em,row sep=2.2em]
+{}\arrow[r,"f"]\arrow[d,"\operatorname{id}"']&{}
+ \arrow[r,"g"]\arrow[d,"\operatorname{id}"']&{}\arrow[d,"h"]\\
+{}\arrow[r,"f"']&{}\arrow[r,"hg"']&{}
+\end{tikzcd}
+\]
+は可換図式
+\VerdierSemanticAnchor{ch4-4-2-2-commutative-triangle}
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.7em]
+H^n(g)\arrow[r,"\delta_2"]\arrow[d,"u"']&H^{n+1}(f)\\
+H^n(hg)\arrow[ur,"\delta_3"']&{}
+\end{tikzcd}
+\]
+を与える。したがって命題が従う。
+\endgroup

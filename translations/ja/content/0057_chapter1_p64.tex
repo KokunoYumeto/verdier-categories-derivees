@@ -1,0 +1,69 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0064}%
+\VerdierSemanticAnchor{ch1-1-6-6-functor-characterization}
+命題 (1.5.2) により、$C$ から $D$ への関手を指定することは、関手
+
+\VerdierSemanticAnchor{ch1-1-6-6-eq2}
+\begin{equation}
+  (X_1,\ldots,X_n)\longmapsto F(X_1,\ldots,X_n)
+  \tag{1.6.6.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-6-transition-isomorphisms}
+と関手の同型
+
+\VerdierSemanticAnchor{ch1-1-6-6-eq3}
+\begin{equation}
+  p_i\colon
+  F(X_1,\ldots,X_i[1],\ldots,X_n)
+  \xrightarrow{\ \sim\ }
+  F(X_1,\ldots,X_n)[1]
+  \tag{1.6.6.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-6-anticommutativity}
+を指定し、図式 (1.5.1.2)
+
+\VerdierSemanticAnchor{ch1-1-6-6-anticommutativity-diagram}
+\begin{equation*}
+  \resizebox{\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=2.8em,row sep=3.8em]
+      F(X_1,\ldots,X_i[1],\ldots,X_j[1],\ldots,X_n)
+        \arrow[r,"{p_i}"]
+        \arrow[d,"{p_j}"]
+        \& F(X_1,\ldots,X_i,\ldots,X_j[1],\ldots,X_n)[1]
+          \arrow[d,"{p_j[1]}"] \\
+      F(X_1,\ldots,X_i[1],\ldots,X_j,\ldots,X_n)[1]
+        \arrow[r,"{p_i[1]}"]
+        \& F(X_1,\ldots,X_i,\ldots,X_j,\ldots,X_n)[2]
+    \end{tikzcd}$%
+  }
+\end{equation*}
+
+が $i<j$ に対して反可換となるようにすることに等しい。（図式 (1.5.1.2) を
+簡単にするため、$D$ の遷移同型を恒等射と仮定した。本書では常にそうである。）
+
+\VerdierSemanticAnchor{ch1-1-6-6-morphism-characterization}
+同様に命題 (1.5.10) により、ここで考える関手の射
+$u\colon F\to F'$ は次の条件に従う。すなわち下の図式は可換である：
+
+\VerdierSemanticAnchor{ch1-1-6-6-eq4}
+\begin{equation}
+  \resizebox{0.92\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=5.0em,row sep=3.8em]
+      F(X_1,\ldots,X_i[1],\ldots,X_n)
+        \arrow[r,"u"]
+        \arrow[d,"{p_i}"]
+        \& F'(X_1,\ldots,X_i[1],\ldots,X_n)
+          \arrow[d,"{p'_i}"] \\
+      F(X_1,\ldots,X_i,\ldots,X_n)[1]
+        \arrow[r,"{u[1]}"]
+        \& F'(X_1,\ldots,X_i,\ldots,X_n)[1]
+    \end{tikzcd}$%
+  }
+  \tag{1.6.6.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-6-underlying-convention}
+文脈上混同のおそれがないとき、$\mathbb Z$-圏をその基礎圏で表し、捩られた
+$\mathbb Z^n$-関手をその基礎関手で表す。

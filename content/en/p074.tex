@@ -1,0 +1,84 @@
+\VerdierPhysicalPageAnchor{0074}%
+\VerdierSemanticAnchor{ch1-2-4-1-pi-opposite}
+the functor opposite to the functor defined in (2.2.3) and (2.2.4).
+Similarly, let us denote by:
+
+\VerdierSemanticAnchor{ch1-2-4-1-eq4}
+\begin{equation}
+  \int_{\varphi,C^\circ}^{\Pi}\colon
+  \operatorname{comp}^{n}(C^\circ)
+  \longrightarrow
+  \operatorname{comp}^{m}(C^\circ),
+  \tag{2.4.1.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-1-pi-definition}
+the functor defined in (2.2.3) and (2.2.4). One verifies immediately that
+the diagram:
+
+\VerdierSemanticAnchor{ch1-2-4-1-eq5}
+\begin{equation}
+  \resizebox{0.82\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=6.5em,row sep=5.2em]
+      \operatorname{comp}^{n}(C)^\circ
+        \arrow[r,"\iota_n"]
+        \arrow[d,"{\left(\int_{\varphi,C}^{\Sigma}\right)^\circ}"']
+        \& \operatorname{comp}^{n}(C^\circ)
+          \arrow[d,"{\int_{\varphi,C^\circ}^{\Pi}}"] \\
+      \operatorname{comp}^{m}(C)^\circ
+        \arrow[r,"\iota_m"]
+        \& \operatorname{comp}^{m}(C^\circ)
+    \end{tikzcd}$%
+  }
+  \tag{2.4.1.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-1-eq5-commutative}
+is commutative. In particular, when $\varphi$ is the unique map
+$[n]\longrightarrow[1]$, there is a commutative diagram:
+
+\VerdierSemanticAnchor{ch1-2-4-1-eq6}
+\begin{equation}
+  \resizebox{0.82\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=6.5em,row sep=5.2em]
+      \operatorname{comp}^{n}(C)^\circ
+        \arrow[r,"\iota_n"]
+        \arrow[d,"{\left(\int_{n,C}^{\Sigma}\right)^\circ}"']
+        \& \operatorname{comp}^{n}(C^\circ)
+          \arrow[d,"{\int_{n,C^\circ}^{\Pi}}"] \\
+      \operatorname{comp}(C)^\circ
+        \arrow[r,"\iota_1"]
+        \& \operatorname{comp}(C^\circ)
+    \end{tikzcd}$%
+  }
+  \tag{2.4.1.6}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-1-twisted-isomorphism}
+and one verifies immediately that the pair of isomorphisms
+$(\iota_1,\iota_n)$ is an isomorphism from the twisted
+$\mathbb Z[n]$-functor $\left(\int_{n,C}^{\Sigma}\right)^\circ$ onto the
+twisted $\mathbb Z[n]$-functor $\int_{n,C^\circ}^{\Pi}$ (the graded
+structure on $\int_{n,C^\circ}^{\Pi}$ is described in (2.3.4); the graded
+structure on $\left(\int_{n,C}^{\Sigma}\right)^\circ$ is described in
+(2.3.4) and (1.4.8)).
+
+\VerdierSemanticAnchor{ch1-2-4-1-identification}
+Hereafter, by means of the isomorphism $\iota_n$, we identify the
+categories $\operatorname{comp}^{n}(C)^\circ$ and
+$\operatorname{comp}^{n}(C^\circ)$, and the functors
+$\left(\int_{\varphi,C}^{\Sigma}\right)^\circ$ and
+$\int_{\varphi,C^\circ}^{\Pi}$.
+
+\VerdierSemanticAnchor{ch1-2-4-2}
+\noindent\textbf{2.4.2.}\quad
+Let $C_i$, $i\in[n]$, be a family of additive categories, and let
+$\prod_{i\in[n]}C_i$ be their product. We denote the objects of
+$\prod_{i\in[n]}C_i$ by $(X_1,X_2,\ldots,X_n)$ and use the notation
+$(X_1,X_2,\ldots,f_i,\ldots,X_n)$ to denote the morphism:
+
+\VerdierSemanticAnchor{ch1-2-4-2-component-morphism}
+\begin{equation*}
+  (\operatorname{id}_{X_1},\operatorname{id}_{X_2},\ldots,
+  f_i,\ldots,\operatorname{id}_{X_n}).
+\end{equation*}

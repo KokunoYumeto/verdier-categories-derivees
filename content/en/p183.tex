@@ -1,0 +1,78 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0183}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-1-3-2-morphism-m-cont}
+The morphism $m$ is a monomorphism, and there is an exact sequence:
+
+\VerdierSemanticAnchor{ch3d-1-3-2-exact-sequence}
+\begin{equation}
+0\longrightarrow c(\operatorname{id}_X)
+\xrightarrow{m}c(\mu(S))[-1]
+\longrightarrow c(\operatorname{id}_Z)[-1]
+\longrightarrow0.
+\tag{1.3.2.3}
+\end{equation}
+The complexes $c(\operatorname{id}_X)$ and $c(\operatorname{id}_Z)$ are
+homotopic to zero. Consequently, the complex $c(\mu(S))$ is acyclic. The
+morphism $\mu(S)$ is therefore a quasi-isomorphism.
+
+\VerdierSemanticAnchor{ch3d-1-3-2-k-diagram}
+Passing to the category $K(\mathcal A)$, we obtain a diagram (Chap. I,
+3.2.2.7):
+\begin{center}
+\resizebox{0.84\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=3.2em,row sep=2.6em]
+X \arrow[r,"\dot u"]
+  \& Y \arrow[r,"\dot{p}(u)"] \arrow[dr,"\dot v"']
+  \& c(\dot u) \arrow[r,"\dot{q}(u)"] \arrow[d,"\dot\mu(S)"]
+  \& X[1] \\
+\& \& Z \&
+\end{tikzcd}$%
+}
+\end{center}
+We then set:
+
+\VerdierSemanticAnchor{ch3d-1-3-2-connecting}
+\begin{equation}
+\delta(S)=[q(u)][\mu(S)]^{-1}.
+\tag{1.3.2.4}
+\end{equation}
+It follows from the definitions of the triangulated structures on
+$K(\mathcal A)$ (Chap. I, 3.3.1) and $D(\mathcal A)$ (Chap. II, 2.2.6)
+that the triangle $(X,Y,Z,[u],[v],\delta(S))$ is distinguished in
+$D(\mathcal A)$. Moreover, one checks immediately that the morphism
+$\delta(S)$ is functorial in $S$ ((1.3.1), property a)). We have therefore
+endowed the canonical functor
+$\operatorname{comp}(\mathcal A)\longrightarrow D(\mathcal A)$ with a
+$\delta$-functor structure. The resulting $\delta$-functor is called the
+\emph{canonical $\delta$-functor}. The morphism $\delta(S)$ is called the
+\emph{connecting morphism} associated with the exact sequence $S$.
+
+\VerdierSemanticAnchor{ch3d-1-3-3}
+\medskip\noindent\textbf{1.3.3.}\quad
+Let $\mathcal A^o$ be the category opposite to $\mathcal A$. For every exact
+sequence $S$ in $\operatorname{comp}(\mathcal A^o)$, denote the associated
+connecting morphism by $\delta^o(S)$. Let $C$ be a category, let $X$ be an
+object of $C$, and let $u$ be a morphism of $C$. In the following
+proposition, by abuse of notation, we denote by $X^o$ and $u^o$ the
+corresponding object and morphism of the opposite category of $C$ (recall
+that the opposite category of $C$ has the same sets of objects and
+morphisms as $C$).
+
+\VerdierSemanticAnchor{ch3d-1-3-4}
+\medskip\noindent\textbf{Proposition 1.3.4.}\quad
+\textit{a) For every exact sequence $S$ in
+$\operatorname{comp}(\mathcal A)$, one has:}
+\[
+\delta(S[1])=-\delta(S)[1].
+\]
+\noindent\textit{b) For every exact sequence $S$ in
+$\operatorname{comp}(\mathcal A)$, taking the identification (1.2.8) into
+account, one has:}
+\[
+\delta^o(S^o)=\delta(S)^o[1].
+\]
+\endgroup

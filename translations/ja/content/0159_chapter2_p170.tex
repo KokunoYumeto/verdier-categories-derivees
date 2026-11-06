@@ -1,0 +1,69 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0170}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{2.5em}
+\VerdierSemanticAnchor{ch4-4-2-7-second-diagram}
+同じ考察を図式
+\[
+\begin{tikzcd}[column sep=4.6em,row sep=2.8em]
+&H^n(f_2f_1)\arrow[d]\arrow[dr]&\\
+H^n(f_1)\arrow[ur]\arrow[r]&
+H^n(f_3f_2f_1)\arrow[r]&H^n(f_3f_2),
+\end{tikzcd}
+\]
+に適用すると、同型
+\VerdierSemanticAnchor{ch4-4-2-7-2}
+\[
+E\!\begin{bmatrix}n\\ f_1,f_2,f_3\end{bmatrix}
+\xrightarrow{\ \sim\ }
+\operatorname{Im}\bigl(H^n(f_2f_1)\longrightarrow H^n(f_3f_2f_1)\bigr)
+\Big/
+\operatorname{Im}\bigl(H^n(f_1)\longrightarrow H^n(f_3f_2f_1)\bigr).
+\tag{4.2.7.2}
+\]
+を得る。
+
+\VerdierSemanticAnchor{ch4-4-3}
+\medskip\noindent\textbf{4.3. 項
+$E\!\begin{bmatrix}n\\ -\infty,p,q,+\infty\end{bmatrix}$。}
+
+\VerdierSemanticAnchor{ch4-4-3-1}
+\medskip\noindent\textbf{4.3.1.}
+$\widetilde{\mathbb Z}$ を、順序集合 $\mathbb Z$ に最小元 $-\infty$ と
+最大元 $+\infty$ を付け加えた順序集合とする。記法を濫用して、順序集合
+$\widetilde{\mathbb Z}$ に付随する圏も $\widetilde{\mathbb Z}$ で表す。
+$\widetilde{\mathbb Z}$ の射とは、したがって組 $p\leq q$ のことである。
+ここで $p$ と $q$ は $\widetilde{\mathbb Z}$ の元である。順序付けられた列
+$p_1\leq p_2\leq\cdots\leq p_n$ は
+$\mathcal{F}\ell_{n-1}(\widetilde{\mathbb Z})$ の対象を定め、これを
+$(p_1,p_2,\ldots,p_n)$ と記す。$\widetilde{\mathbb Z}$ の射で、その始域と
+終域が $\mathbb Z$ に属するものを\textit{有限}という。
+$\mathcal{F}\ell_n(\widetilde{\mathbb Z})$ の対象で、それを構成する射が
+有限であるものを\textit{有限}という。
+
+\VerdierSemanticAnchor{ch4-4-3-2}
+\medskip\noindent\textbf{4.3.2.}
+\textit{本稿では型 $\widetilde{\mathbb Z}$ のスペクトル対象のみを用い、
+以後これらを単にスペクトル対象と呼ぶ。}こうして [1] 第 XV 章 §7 の概念を
+再び得る。
+$(H^n(p,q),\delta,\ p\leq q\in\widetilde{\mathbb Z})$ を、アーベル圏
+$\mathcal A$ に値をとるスペクトル対象とする。次のように置く：
+\VerdierSemanticAnchor{ch4-4-3-2-1}
+\[
+F^pH^n(-\infty,+\infty)
+=\operatorname{Im}\bigl(H^n(-\infty,p)\longrightarrow
+H^n(-\infty,+\infty)\bigr).
+\tag{4.3.2.1}
+\]
+$F^{+\infty}H^n(-\infty,+\infty)=H^n(-\infty,+\infty)$ かつ
+$F^{-\infty}H^n(-\infty,+\infty)=0$ である。項
+$F^pH^n(-\infty,+\infty)$ は $\widetilde{\mathbb Z}$ 型の
+$H^n(-\infty,+\infty)$ 上の増大フィルトレーションをなす。さらに、各組
+$p\leq q$ に対して同型 (4.2.7.2)
+\VerdierSemanticAnchor{ch4-4-3-2-filtration-quotient}
+\[
+E\!\begin{bmatrix}n\\ -\infty,p,q,+\infty\end{bmatrix}
+\simeq
+F^qH^n(-\infty,+\infty)\big/F^pH^n(-\infty,+\infty).
+\]
+がある。
+\endgroup

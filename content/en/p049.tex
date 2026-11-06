@@ -1,0 +1,79 @@
+\VerdierPhysicalPageAnchor{0049}%
+For every element $\sigma\in G$, the diagram
+
+\VerdierSemanticAnchor{ch1-1-4-5-eq4}
+\begin{center}
+  \resizebox{0.78\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=6em,row sep=4em]
+      F_1T(\sigma)
+        \arrow[r,"{p_1(\sigma)}"]
+        \arrow[d,"{u*T(\sigma)}"']
+        \& T'(\sigma)F_1
+          \arrow[d,"{T'(\sigma)*u}"] \\
+      F_2T(\sigma)
+        \arrow[r,"{p_2(\sigma)}"]
+        \& T'(\sigma)F_2
+    \end{tikzcd}$%
+  }
+  \hfill\textup{(1.4.5.4)}
+\end{center}
+is $\beta(\sigma)$-commutative.
+
+\VerdierSemanticAnchor{ch1-1-4-6}
+\noindent\textbf{Definition 1.4.6.}\quad
+Let $(\mathcal C,G,T,c)$ be a $G$-category and
+$(\mathcal C',G,T',c')$ an additive $G$-category. Let $\alpha_1$ and
+$\alpha_2$ be two normalized inhomogeneous cocycles in
+$Z^2(G,\mathbb Z/2\mathbb Z)$, and let
+$\beta\colon G\to\mathbb Z/2\mathbb Z$ be a map such that
+
+\VerdierSemanticAnchor{ch1-1-4-6-eq1}
+\begin{equation}
+  \alpha_2(\sigma_1,\sigma_2)\alpha_1^{-1}(\sigma_1,\sigma_2)
+  =\beta(\sigma_2)\beta(\sigma_1\sigma_2)^{-1}\beta(\sigma_1).
+  \tag{1.4.6.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-6-beta-morphism}
+Finally, let
+$(F_1,p_1),(F_2,p_2)\colon(\mathcal C,G,T,c)
+\to(\mathcal C',G,T',c')$ be two $G$-functors twisted respectively
+by the cocycles $\alpha_1$ and $\alpha_2$. A
+\emph{$\beta$-morphism from the functor $(F_1,p_1)$ to the functor
+$(F_2,p_2)$} is a morphism $u\colon F_1\to F_2$ of functors such that,
+for every $\sigma\in G$, the diagram (1.4.5.4) is
+$\beta(\sigma)$-commutative.
+
+\VerdierSemanticAnchor{ch1-1-4-7}
+\noindent\textbf{1.4.7.}\quad
+We showed in (1.4.5) that the choice of two normalized sections makes
+it possible to associate, to a morphism of $H$-functors inducing the
+canonical operation of the group of signs, a $\beta$-morphism between
+the corresponding twisted $G$-functors. One verifies immediately that
+this correspondence is bijective. Moreover, given three $H$-functors
+$(F_1,m_1)$, $(F_2,m_2)$, $(F_3,m_3)$ inducing the canonical operation
+of the group of signs, three normalized sections $s_1$, $s_2$, $s_3$,
+and two morphisms of $H$-functors $u$, $v$ and their composite $vu$:
+
+\VerdierSemanticAnchor{ch1-1-4-7-eq1}
+\begin{equation}
+  \begin{aligned}
+    u&\colon(F_1,m_1)\longrightarrow(F_2,m_2),\\
+    v&\colon(F_2,m_2)\longrightarrow(F_3,m_3),\\
+    vu&\colon(F_1,m_1)\longrightarrow(F_3,m_3),
+  \end{aligned}
+  \tag{1.4.7.1}
+\end{equation}
+the morphisms
+
+\VerdierSemanticAnchor{ch1-1-4-7-eq2}
+\begin{equation}
+  \begin{aligned}
+    u&\colon(F_1,p_1)\longrightarrow(F_2,p_2),\\
+    v&\colon(F_2,p_2)\longrightarrow(F_3,p_3),\\
+    vu&\colon(F_1,p_1)\longrightarrow(F_3,p_3),
+  \end{aligned}
+  \tag{1.4.7.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-7-open-seam}

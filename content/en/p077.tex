@@ -1,0 +1,106 @@
+\VerdierPhysicalPageAnchor{0077}%
+\VerdierSemanticAnchor{ch1-2-4-3-simple-complex-morphisms}
+Whence, on passing to the simple complexes, two morphisms of functors:
+
+\VerdierSemanticAnchor{ch1-2-4-3-eq2}
+\begin{equation}
+  \begin{aligned}
+    \operatorname{comp}_{\Pi}h\colon
+      \operatorname{comp}_{\Pi}F
+      &\longrightarrow \operatorname{comp}_{\Pi}F',\\
+    \operatorname{comp}_{\Sigma}h\colon
+      \operatorname{comp}_{\Sigma}F
+      &\longrightarrow \operatorname{comp}_{\Sigma}F'.
+  \end{aligned}
+  \tag{2.4.3.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-3-composition}
+If $h$ and $h'$ are two composable morphisms of multiadditive functors, one
+has:
+\begin{equation*}
+  \begin{aligned}
+    \operatorname{comp}_{\Pi}hh'
+      &=\operatorname{comp}_{\Pi}h\,\operatorname{comp}_{\Pi}h',\\
+    \operatorname{comp}_{\Sigma}hh'
+      &=\operatorname{comp}_{\Sigma}h\,\operatorname{comp}_{\Sigma}h'.
+  \end{aligned}
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-2-4-3-sign-rule-ii}
+The morphism $\operatorname{comp}_{\Pi}h$ (respectively,
+$\operatorname{comp}_{\Sigma}h$) is a morphism of
+$\mathbb Z[n]$-functors that obeys Sign Rule II (1.6.6).
+
+\VerdierSemanticAnchor{ch1-2-4-4}
+\noindent\textbf{2.4.4.}\quad
+When the functor $F$ is contravariant in certain variables, i.e. when one
+has equalities $C_i=(C_i')^\circ$, for $i\in J\subset[n]$, the functors
+$\operatorname{comp}_{\Pi}F$ and $\operatorname{comp}_{\Sigma}F$ are,
+modulo the identifications made in (2.4.1), contravariant in the
+corresponding variables.
+
+\VerdierSemanticAnchor{ch1-2-5}
+\subsection{Homotopies}
+
+\VerdierSemanticAnchor{ch1-2-5-1}
+\noindent\textbf{2.5.1.}\quad
+Let $X$ and $Y$ be two $n$-fold complexes of $C$, and let
+$f,g\colon X\rightrightarrows Y$ be two morphisms of complexes. A
+\emph{homotopy} connecting $f$ to $g$ is a family of morphisms
+
+\VerdierSemanticAnchor{ch1-2-5-1-family}
+\begin{equation*}
+  a=\bigl(a^{\sigma,i}\colon X^{\sigma+e_i}\longrightarrow Y^\sigma,
+    \ \sigma\in\mathbb Z[n],\ i\in[n]\bigr)
+\end{equation*}
+such that:
+
+\VerdierSemanticAnchor{ch1-2-5-1-eq1}
+\begin{equation}
+  \begin{aligned}
+    a^{\sigma+e_i-e_j,j}d_X^{\sigma,i}
+      &=d_Y^{\sigma-e_j,i}a^{\sigma-e_j,j},
+      &&\forall\sigma\in\mathbb Z[n],\
+        \ \forall i,j\in[n],\ i\ne j,\\
+    g^\sigma-f^\sigma
+      &=\sum_{i\in[n]}\Bigl(
+          a^{\sigma,i}d_X^{\sigma,i}
+          +d_Y^{\sigma-e_i,i}a^{\sigma-e_i,i}\Bigr),
+      &&\forall\sigma\in\mathbb Z[n].
+  \end{aligned}
+  \tag{2.5.1.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-5-1-notation}
+We use the notation $a\colon f\rightsquigarrow g$ to denote homotopies $a$
+connecting $f$ to $g$.
+
+\VerdierSemanticAnchor{ch1-2-5-2}
+\noindent\textbf{2.5.2.}\quad
+Let $f,g,h\colon X\longrightarrow Y$ be three morphisms,
+$a\colon f\rightsquigarrow g$ and $b\colon g\rightsquigarrow h$ two
+homotopies. We denote by $b+a\colon f\rightsquigarrow h$ the homotopy
+
+\VerdierSemanticAnchor{ch1-2-5-2-sum}
+\begin{equation*}
+  (b+a)^{\sigma,i}=b^{\sigma,i}+a^{\sigma,i},
+  \qquad \sigma\in\mathbb Z[n],\ i\in[n].
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-2-5-3}
+\noindent\textbf{2.5.3.}\quad
+Let $f,g\colon X\rightrightarrows Y$ be two morphisms of complexes,
+$a\colon f\rightsquigarrow g$ a homotopy, and let
+$u\colon Y\longrightarrow Y'$ (respectively, $v\colon X'\longrightarrow X$)
+be a morphism of complexes. We denote by
+$u\star a\colon uf\rightsquigarrow ug$ (respectively,
+$a\star v\colon fv\rightsquigarrow gv$) the homotopy
+
+\VerdierSemanticAnchor{ch1-2-5-3-whiskering}
+\begin{equation*}
+  (u\star a)^{\sigma,i}=u^\sigma a^{\sigma,i}
+  \qquad
+  \text{(respectively, }(a\star v)^{\sigma,i}
+    =a^{\sigma,i}v^{\sigma+e_i}\text{)}.
+\end{equation*}

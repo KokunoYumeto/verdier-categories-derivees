@@ -1,0 +1,93 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0153}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+
+\VerdierSemanticAnchor{ch3-3-1-3}
+\noindent\textbf{3.1.3.}\quad
+Suppose that $\mathcal D$ is a strict $\mathbb Z$-category. The translation
+functors of $\mathcal D$, $X\longmapsto X[n]$, $n\in\mathbb Z$, extend to
+automorphisms of $\mathcal{F}\ell_1(\mathcal D)$:
+
+\VerdierSemanticAnchor{ch3-3-1-3-translation-extension}
+\[
+\bigl(X\xrightarrow{f}Y\bigr)
+\longmapsto
+\bigl(X[n]\xrightarrow{f[n]}Y[n]\bigr).
+\]
+It follows immediately from the universal property of
+$\mathrm A(\mathcal D)$ (3.1.1.1) that these automorphisms descend to the
+quotient and define on $\mathrm A(\mathcal D)$ the structure of a strict
+$\mathbb Z$-category. The functor
+$\mathcal H\colon\mathcal D\to\mathrm A(\mathcal D)$ is a strict
+$\mathbb Z$-functor.
+
+\VerdierSemanticAnchor{ch3-3-1-4}
+\medskip
+\noindent\textbf{3.1.4.}\quad
+Let $\mathcal D$ and $\mathcal D'$ be additive strict $\mathbb Z$-categories,
+and let $F\colon\mathcal D\to\mathcal D'$ be an additive $\mathbb Z$-functor
+(twisted by the trivial cocycle). Let $\mathcal{F}\ell_1(F)$ be the extension
+of $F$ to the categories of morphisms:
+\[
+\mathcal{F}\ell_1(F)\bigl(X\xrightarrow{f}Y\bigr)
+=\bigl(FX\xrightarrow{Ff}FY\bigr).
+\]
+The functor $\mathcal{F}\ell_1(F)$ sends negligible morphisms of
+$\mathcal{F}\ell_1(\mathcal D)$ to negligible morphisms of
+$\mathcal{F}\ell_1(\mathcal D')$. It therefore defines a functor
+
+\VerdierSemanticAnchor{ch3-3-1-4-1}
+\[
+\mathrm A(F)\colon\mathrm A(\mathcal D)\longrightarrow\mathrm A(\mathcal D').
+\tag{3.1.4.1}
+\]
+The functor $\mathrm A(F)$ is additive. It follows immediately from the
+universal properties of $\mathrm A(\mathcal D)$ and
+$\mathrm A(\mathcal D')$ that it is canonically endowed with the structure of
+a $\mathbb Z$-functor.
+
+\VerdierSemanticAnchor{ch3-3-1-4-composition}
+Let $F'\colon\mathcal D'\to\mathcal D''$ be an additive $\mathbb Z$-functor
+between additive strict $\mathbb Z$-categories. Then
+
+\VerdierSemanticAnchor{ch3-3-1-4-2}
+\[
+\mathrm A(F')\mathrm A(F)=\mathrm A(F'F).
+\tag{3.1.4.2}
+\]
+
+\VerdierSemanticAnchor{ch3-3-1-4-3}
+The following diagram is commutative:
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.5em]
+\mathcal D \arrow[r,"F"] \arrow[d,"\mathcal H"'] &
+\mathcal D' \arrow[d,"\mathcal H'"] \\
+\mathrm A(\mathcal D) \arrow[r,"\mathrm A(F)"'] &
+\mathrm A(\mathcal D')
+\end{tikzcd}
+\tag{3.1.4.3}
+\]
+(the functors $\mathcal H$ and $\mathcal H'$ are defined in (3.1.2)).
+
+\VerdierSemanticAnchor{ch3-3-1-4-natural-transformation}
+Likewise, let $m\colon F\to F''$ be a morphism of additive
+$\mathbb Z$-functors between $\mathcal D$ and $\mathcal D'$. The same
+arguments yield a morphism of $\mathbb Z$-functors
+
+\VerdierSemanticAnchor{ch3-3-1-4-4}
+\[
+\mathrm A(m)\colon\mathrm A(F)\longrightarrow\mathrm A(F'').
+\tag{3.1.4.4}
+\]
+If $m$ and $m'$ are composable morphisms of additive $\mathbb Z$-functors,
+then
+
+\VerdierSemanticAnchor{ch3-3-1-4-5}
+\[
+\mathrm A(m')\mathrm A(m)=\mathrm A(m'm).
+\tag{3.1.4.5}
+\]
+\endgroup

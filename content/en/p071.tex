@@ -1,0 +1,100 @@
+\VerdierPhysicalPageAnchor{0071}%
+\VerdierSemanticAnchor{ch1-2-3}
+\subsection{Graded structure on the categories of complexes}
+
+\VerdierSemanticAnchor{ch1-2-3-1}
+\noindent\textbf{2.3.1.}\quad
+Let $Y$ be an $n$-fold complex and let $i\in[n]$. Set:
+
+\VerdierSemanticAnchor{ch1-2-3-1-eq1}
+\begin{equation}
+  \begin{aligned}
+    (T_iY)^\sigma&=Y^{\sigma+e_i},
+      &&\sigma\in\mathbb Z[n],\\
+    d_{T_iY}^{\sigma,j}&=\nu(i,j)d_Y^{\sigma+e_i,j},
+      &&j\in[n],
+  \end{aligned}
+  \tag{2.3.1.1}
+\end{equation}
+where $\nu(i,j)=1$ if $i\ne j$, and $\nu(i,j)=-1$ if $i=j$.
+
+\VerdierSemanticAnchor{ch1-2-3-1-morphism-shift}
+For every morphism of $n$-fold complexes
+$f\colon Y\longrightarrow Y'$, set:
+
+\VerdierSemanticAnchor{ch1-2-3-1-eq2}
+\begin{equation}
+  (T_if)^\sigma=f^{\sigma+e_i},
+  \qquad \sigma\in\mathbb Z[n].
+  \tag{2.3.1.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-3-1-translation-functor}
+This defines a functor
+$T_i\colon\operatorname{comp}^{n}(C)\longrightarrow
+\operatorname{comp}^{n}(C)$, called the
+\emph{translation functor in direction $i$}.
+
+\VerdierSemanticAnchor{ch1-2-3-1-n-equals-one}
+When $n=1$, we use the notation $TY$, $Tf$, or else $Y[1]$, $f[1]$.
+The translation functor in direction $i$ is an automorphism of
+$\operatorname{comp}^{n}(C)$.
+
+\VerdierSemanticAnchor{ch1-2-3-1-eq3}
+The functors $T_i$, $i\in[n]$, commute pairwise:
+\begin{equation}
+  T_iT_j=T_jT_i,
+  \qquad \forall i,j\in[n].
+  \tag{2.3.1.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-3-1-action}
+We can therefore define an action of the group $\mathbb Z[n]$ on the category
+$\operatorname{comp}^{n}(C)$:
+
+\VerdierSemanticAnchor{ch1-2-3-1-eq4}
+\begin{equation}
+  \sigma=\sum_{i\in[n]}l_ie_i,
+  \qquad
+  T(\sigma)=T_1^{l_1}\cdots T_n^{l_n}.
+  \tag{2.3.1.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-3-1-strict-graded-category}
+Henceforth the notation $\operatorname{comp}^{n}(C)$ will denote the category
+$\operatorname{comp}^{n}(C)$ endowed with the strict $\mathbb Z[n]$-category
+structure described above.
+
+\VerdierSemanticAnchor{ch1-2-3-2}
+\noindent\textbf{2.3.2.}\quad
+Let $\varphi\colon[n]\longrightarrow[m]$ be a map, let $Y$ be an $n$-fold
+complex in $C$, and let $i$ be an element of $[n]$. We suppose, to fix ideas,
+that countable sums are representable in $C$.
+
+\VerdierSemanticAnchor{ch1-2-3-2-equal-objects}
+First observe that the objects
+$\left(\int_\varphi^\Sigma T_iY\right)^\tau$ and
+$\left(T_{\varphi(i)}\int_\varphi^\Sigma Y\right)^\tau$ are equal.
+Indeed, by definition they are both equal to:
+
+\VerdierSemanticAnchor{ch1-2-3-2-direct-sum}
+\begin{equation*}
+  \bigoplus_{\varphi(\sigma)=\tau+e_{\varphi(i)}}Y^\sigma.
+\end{equation*}
+Now set:
+
+\VerdierSemanticAnchor{ch1-2-3-2-eq1}
+\begin{equation}
+  \begin{aligned}
+    \bigl(p_{i,\varphi}(Y)\bigr)^\tau\colon
+    \left(\int_\varphi^\Sigma T_iY\right)^\tau
+      &\longrightarrow
+    \left(T_{\varphi(i)}\int_\varphi^\Sigma Y\right)^\tau,
+      &&\tau\in\mathbb Z[m],\\[2pt]
+    \bigl(p_{i,\varphi}(Y)\bigr)^\tau
+      &=\bigoplus_{\varphi(\sigma)=\tau+e_{\varphi(i)}}
+        \varepsilon(\sigma,i)\varepsilon(\varphi(\sigma),\varphi(i))
+        \operatorname{id}_{Y^\sigma}.
+  \end{aligned}
+  \tag{2.3.2.1}
+\end{equation}

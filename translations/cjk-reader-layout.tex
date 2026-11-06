@@ -1,0 +1,75 @@
+% Shared continuous-reading layout for the Chinese and Japanese editions.
+% The source-page-mirrored main.tex files remain the archival editions.
+\RequirePackage{xcolor}
+\RequirePackage{marginnote}
+\RequirePackage{marginfix}
+\RequirePackage{needspace}
+
+\setlength{\marginparpush}{5pt}
+\emergencystretch=1.5em
+\providecommand{\marginfont}{}
+\renewcommand*{\marginfont}{\scriptsize\sffamily\color{gray}}
+
+\providecommand{\VerdierSourcePageLabel}[1]{source p.~#1}
+\providecommand{\VerdierSourceRomanLabel}[1]{source p.~#1}
+\providecommand{\VerdierSourcePdfLabel}[1]{source PDF p.~#1}
+\newcommand{\VerdierSemanticAnchor}[1]{%
+  \hypertarget{verdier-semantic-#1}{}% 
+}
+\newcommand{\VerdierPhysicalPageAnchor}[1]{%
+  \hypertarget{verdier-physical-#1}{}% 
+}
+
+\newcommand{\VerdierSourcePageNote}[1]{%
+  \marginnote{%
+    \ifodd\value{page}\raggedright\else\raggedleft\fi
+    \marginfont
+    \ifnum#1<6
+      \VerdierSourcePdfLabel{\number\numexpr#1\relax}%
+    \else\ifnum#1<15
+      \VerdierSourceRomanLabel{\romannumeral\numexpr#1-5\relax}%
+    \else\ifnum#1<18
+      \VerdierSourcePdfLabel{\number\numexpr#1\relax}%
+    \else
+      \VerdierSourcePageLabel{\number\numexpr#1-17\relax}%
+    \fi\fi\fi
+  }% 
+}
+
+% A hard source boundary has already flushed floats before this command.  Use
+% the class's unnumbered chapter heading without its second, redundant clear.
+\newcommand{\VerdierReaderChapterStar}[1]{%
+  \begingroup
+    \let\clearpage\relax
+    \let\cleardoublepage\relax
+    \chapter*{#1}%
+  \endgroup
+}
+
+% A block milestone begins a genuine new paragraph or block in the source.
+\newcommand{\VerdierSourcePageBlock}[1]{%
+  \VerdierPhysicalPageAnchor{#1}%
+  \VerdierSourcePageNote{#1}%
+  \ignorespaces
+}
+
+% A continuation milestone occurs inside the same source paragraph.
+\newcommand{\VerdierSourcePageContinue}[1]{%
+  \VerdierPhysicalPageAnchor{#1}%
+  \VerdierSourcePageNote{#1}%
+  \ignorespaces
+}
+
+% Blank authority pages keep a machine destination but create neither a
+% visible note nor a blank page in the continuous-reading edition.
+\newcommand{\VerdierSourcePageSilent}[1]{%
+  \VerdierPhysicalPageAnchor{#1}%
+  \ignorespaces
+}
+
+% Natural-size commutative diagrams must never be stranded below the text
+% block.  The generator inserts this only at independently identified tall
+% Japanese diagrams; the source modules and mathematical labels stay intact.
+\newcommand{\VerdierReaderDiagramPageFit}{%
+  \par\Needspace{18\baselineskip}%
+}

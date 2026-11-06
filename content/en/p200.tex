@@ -1,0 +1,88 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0200}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-3-condition-2}
+\noindent\textit{2) The sequence $i\longmapsto i-M\text{-}\dim(Y^i)$ tends
+to $+\infty$ as $i$ tends to $+\infty$.}
+
+\VerdierSemanticAnchor{ch3d-2-3-3-quasi-isomorphism}
+\textit{Then there is a complex
+$X\in\operatorname{Ob}\operatorname{comp}(\mathcal A)$ whose components
+belong to $M$, and a quasi-isomorphism}
+\[
+u\colon X\longrightarrow Y.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-3-bounded-cases}
+\textit{If, in addition, all the components of $Y$ have finite
+$M$-dimension and
+$Y\in\operatorname{Ob}(\operatorname{comp}^{b}(\mathcal A))$
+(respectively, $\operatorname{Ob}(\operatorname{comp}^{+}(\mathcal A))$),
+then $X$ may be taken in $\operatorname{comp}^{b}(\mathcal A)$
+(respectively, $\operatorname{comp}^{+}(\mathcal A)$).}
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof}
+Let $n_0$ be an integer such that
+$i>n_0\Rightarrow M\text{-}\dim(Y^i)<+\infty$. We propose to construct:
+
+\VerdierSemanticAnchor{ch3d-2-3-3-induction-data}
+\noindent a) A sequence of complexes $X_i$, for $i\geq n_0$.
+
+\noindent b) A sequence of morphisms
+$u_i\colon X_i\longrightarrow X_{i-1}$ for $i>n_0$, and
+$u_{n_0}\colon X_{n_0}\longrightarrow Y$, such that:
+
+\VerdierSemanticAnchor{ch3d-2-3-3-properties}
+\noindent $1)_i$ $(X_i)^j\in M$ for $j\leq i$.
+
+\noindent $2)_i$ $(X_i)^j=Y^j$ for $j>i$.
+
+\noindent $3)_i$ The morphism $u_i$ is a quasi-isomorphism.
+
+\noindent $4)_i$ $(u_i)^j=\operatorname{id}$ for $j>i$.
+
+\noindent $5)_i$ $(u_i)^j=\operatorname{id}$ for
+$j\leq i-M\text{-}\dim(Y^i)$; this last property is asserted only for
+$i>n_0$.
+
+\VerdierSemanticAnchor{ch3d-2-3-3-projective-limit}
+Once this construction has been made, observe that the inverse system $X_i$
+has an inverse limit in $\operatorname{comp}(\mathcal A)$: the inverse
+systems induced on the components of any fixed degree are stationary, since
+$i-M\text{-}\dim(Y^i)$ tends to $+\infty$ with $i$. It will therefore suffice
+to set $X=\varprojlim_i X_i$ and take as
+$u\colon X\longrightarrow Y$ the canonical morphism. The components of the
+complex $X$ belong to $M$, and $u$ is a quasi-isomorphism.
+
+\VerdierSemanticAnchor{ch3d-2-3-3-un0}
+First construct the morphism $u_{n_0}\colon X_{n_0}\longrightarrow Y$.
+Proceed inductively, and suppose that for every integer $i$ with
+$-n_0\leq i<q$, complexes $X_{n_0,i}$ and morphisms
+$v_{n_0,i}\colon X_{n_0,i}\longrightarrow X_{n_0,i-1}$ for $i>-n_0$, and
+$v_{n_0,-n_0}\colon X_{n_0,-n_0}\longrightarrow Y$, have been constructed
+such that:
+
+\VerdierSemanticAnchor{ch3d-2-3-3-inner-properties}
+\noindent $I)_{n_0,i}$ The components $(X_{n_0,i})^j$ belong to $M$ for
+$-i\leq j\leq n_0$.
+
+\noindent $II)_{n_0,i}$ The components $(X_{n_0,i})^j$ belong to $M'$ for
+every integer $j$.
+
+\noindent $III)_{n_0,i}$ The morphism $v_{n_0,i}$ is an elementary morphism
+of height $-i$ (2.1.3).
+
+\VerdierSemanticAnchor{ch3d-2-3-3-xn0qminus1-shape}
+The complex $X_{n_0,q-1}$ then has the form
+\[
+\resizebox{\textwidth}{!}{$\displaystyle
+\cdots\longrightarrow Y^{-q-1}\longrightarrow Z^{-q}
+\longrightarrow L^{-q+1}\longrightarrow L^{-q+2}\longrightarrow\cdots
+\longrightarrow L^{n_0-1}\longrightarrow L^{n_0}
+\longrightarrow Y^{n_0+1}\longrightarrow Y^{n_0+2}\longrightarrow\cdots,
+$}
+\]
+\endgroup

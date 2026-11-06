@@ -1,0 +1,65 @@
+\chapter{導来圏。}
+\VerdierPhysicalPageAnchor{0174}%
+\VerdierSemanticAnchor{ch3d}
+\begingroup
+\small
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-1}
+\section*{1. 導来圏の定義。}
+
+\noindent\textit{この節では、特に断らない限り、$\mathcal A$ はアーベル圏を表す。}
+
+\VerdierSemanticAnchor{ch3d-1-1}
+\subsection*{1.1. 記法と用語。}
+
+\VerdierSemanticAnchor{ch3d-1-1-1}
+\noindent\textbf{1.1.1.}\quad
+$\mathcal A$ を加法圏（必ずしもアーベル圏でなくてよい）とする。
+$\operatorname{comp}^{b}(\mathcal A)$（それぞれ
+$\operatorname{comp}^{+}(\mathcal A)$、
+$\operatorname{comp}^{-}(\mathcal A)$）を、$|i|$ が十分大きいとき
+$X^i=0$（それぞれ $i$ が十分小さいとき、$i$ が十分大きいとき）を満たす
+複体 $X$ で定まる $\operatorname{comp}(\mathcal A)$ の充満部分圏とする。
+$K^{b}(\mathcal A)$（それぞれ $K^{+}(\mathcal A)$、
+$K^{-}(\mathcal A)$）を、$\operatorname{comp}^{b}(\mathcal A)$
+（それぞれ $\operatorname{comp}^{+}(\mathcal A)$、
+$\operatorname{comp}^{-}(\mathcal A)$）の対象で定まる $K(\mathcal A)$ の
+充満部分圏とする。
+
+\VerdierSemanticAnchor{ch3d-1-1-2}
+\noindent\textbf{1.1.2.}\quad
+次に $\mathcal A$ を（アーベル）圏とし、$*$ を活字記号
+$b$、$+$、$-$、「空」のいずれかとする。
+$\operatorname{comp}^{*,b}(\mathcal A)$（それぞれ
+$\operatorname{comp}^{*,+}(\mathcal A)$、
+$\operatorname{comp}^{*,-}(\mathcal A)$）を、
+$\operatorname{comp}^{*}(\mathcal A)$ の対象であって、$|i|$ が大きいとき
+$H^i(X)=0$（それぞれ $i$ が小さいとき、$i$ が大きいとき）を満たす
+複体 $X$ で定まる $\operatorname{comp}^{*}(\mathcal A)$ の充満部分圏とする。
+同様に、$K^{*,b}(\mathcal A)$（それぞれ $K^{*,+}(\mathcal A)$、
+$K^{*,-}(\mathcal A)$）を、$K^{*}(\mathcal A)$ の対象であって、$|i|$
+が大きいとき $H^i(X)=0$（それぞれ $i$ が小さいとき、$i$ が大きいとき）
+を満たす複体 $X$ で定まる $K^{*}(\mathcal A)$ の充満部分圏とする。
+このようにして $K(\mathcal A)$ の八つの部分圏を得る：
+
+\VerdierSemanticAnchor{ch3d-1-1-2-diagram}
+\begin{center}
+  \resizebox{0.88\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=3.5em,row sep=1.7em]
+      \& \& K^{+}(\mathcal A) \arrow[dr] \& \& \\
+      \& K^{+,b}(\mathcal A) \arrow[ur] \arrow[dr]
+        \& \& K^{,+}(\mathcal A) \arrow[dr] \& \\
+      K^{b}(\mathcal A) \arrow[ur] \arrow[dr]
+        \& \& K^{,b}(\mathcal A) \arrow[ur] \arrow[dr]
+        \& \& K(\mathcal A) \\
+      \& K^{-,b}(\mathcal A) \arrow[ur] \arrow[dr]
+        \& \& K^{,-}(\mathcal A) \arrow[ur] \& \\
+      \& \& K^{-}(\mathcal A) \arrow[ur] \& \&
+    \end{tikzcd}$%
+  }\hfill\textup{(1.1.2.1)}
+\end{center}
+\endgroup

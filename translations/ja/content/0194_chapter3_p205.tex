@@ -1,0 +1,66 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0205}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-a-conclusion}
+したがって、$X$ は $\mathcal A$ の射影対象である。
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-b}
+b) を証明する。$L^\bullet$ を $K^{-}(\mathcal A)$ の対象である射影型複体とし、
+$u\colon L^\bullet\longrightarrow Y$ を非輪状複体への射とする。
+すべての整数 $i>n$ に対して、
+$u^i=d_Y^{i-1}s^i+s^{i+1}d_{L^\bullet}^{i}$ を満たす射
+$s^i\colon L^i\longrightarrow Y^{i-1}$ が構成されたと仮定する
+（$L^\bullet$ は $K^{-}(\mathcal A)$ の対象なので、十分大きい $n$ に対して
+この構成は常に可能である）。すると
+$d_Y^n\bigl(u^n-s^{n+1}d_{L^\bullet}^{n}\bigr)=0$ であり、したがって射
+$u^n-s^{n+1}d_{L^\bullet}^{n}$ は $\operatorname{Ker}(d_Y^n)$ を経由して分解する。
+複体 $Y$ は非輪状なので、射
+$Y^{n-1}\longrightarrow\operatorname{Ker}(d_Y^n)$ はエピ射である。
+また $L^n$ は射影対象なので、
+$d_Y^{n-1}s^n=u^n-s^{n+1}d_{L^\bullet}^{n}$ を満たす射
+$s^n\colon L^n\longrightarrow Y^{n-1}$ が存在する。
+このように帰納法により、すべての整数 $i$ に対して
+$u^i=d_Y^{i-1}s^i+s^{i+1}d_{L^\bullet}^{i}$ を満たす射 $s^i$ が存在する。
+したがって射 $u$ は零複体にホモトピックである。
+（第 II 章，2.3.3）から、$L^\bullet$ は $Q$-左自由対象である。
+b) の最後の主張も（第 II 章，2.3.3）から従う。
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-c-projective-complexes}
+c) を証明する。主張 1) は b) と (2.3.1) から直ちに従う。
+主張 1) の「それぞれ」の場合を証明するため、まずすべての射影型複体が
+$Q$-左自由であることを示す。$L^\bullet$ を射影型複体とし、
+$u\colon X\longrightarrow L^\bullet$ を擬同型とする。
+$u$ が切断をもつことを示せば十分である（第 II 章，2.3.3）。
+したがって、射影型複体 ${L'}^\bullet$ と擬同型
+$v\colon {L'}^\bullet\longrightarrow X$ で、その合成射
+$uv\colon {L'}^\bullet\longrightarrow L^\bullet$ が $K(\mathcal A)$ における
+同型となるものが存在することを示せば十分である。(2.3.3) により、
+射影型複体 ${L'}^\bullet$ と擬同型
+$v\colon {L'}^\bullet\longrightarrow X$ は常に存在する。
+よって擬同型 $uv\colon {L'}^\bullet\longrightarrow L^\bullet$ が同型であることだけを
+示せばよい。ここで完全三角
+$({L'}^\bullet,L^\bullet,{L''}^\bullet,uv,w,m)$ が存在し、
+${L''}^\bullet$ は非輪状な射影型複体である。
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-c-acyclic-projective-complexes}
+残るのは、非輪状な射影型複体が零複体にホモトピックであることを示すことである。
+${L''}^\bullet$ を非輪状な射影型複体とする。$\mathcal A$ の対象の射影次元には
+上界があるので、${L''}^\bullet$ の微分の核は射影対象である (2.2.6)。
+したがって、${L''}^\bullet$ のすべての微分は分解可能射であり
+（第 II 章，1.2.8）、ゆえに ${L''}^\bullet$ は零複体にホモトピックである。
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-c-conclusion}
+いま（第 II 章，2.3.3）から、自然関手
+$K^{*}(P)\longrightarrow D(\mathcal A)$ は充満忠実である。
+したがって、関手 $K^{*}(P)\longrightarrow D^{*}(\mathcal A)$ も充満忠実である。
+(2.3.3) により、この関手は本質的全射でもあり、したがって圏同値である。
+主張 2) と 3) は（第 II 章，2.3.3）の直接の適用にすぎない。
+主張 4) も明らかである。すなわち、$K^{-}(\mathcal A)$
+（それぞれ $K^{*}(\mathcal A)$）の $Q$-左自由対象は、(2.3.1)
+（それぞれ (2.3.3)）により、$K^{-}(\mathcal A)$
+（それぞれ $K^{*}(\mathcal A)$）における射影型複体による左分解をもち、
+$Q$-左自由対象間の擬同型は $K(\mathcal A)$ における同型である。
+\endgroup

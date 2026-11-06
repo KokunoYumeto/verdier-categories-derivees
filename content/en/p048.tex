@@ -1,0 +1,80 @@
+\VerdierPhysicalPageAnchor{0048}%
+\VerdierSemanticAnchor{ch1-1-4-4}
+\noindent\textbf{Definition 1.4.4.}\quad
+Let $(\mathcal C,G,T,c)$ and $(\mathcal C',G,T',c')$ be two
+$G$-categories, with $\mathcal C'$ an additive category. Let
+$\alpha\in Z^2(G,\mathbb Z/2\mathbb Z)$ be a normalized
+inhomogeneous cocycle. A \emph{$G$-functor twisted by the cocycle
+$\alpha$} is an object $(F,p)$ consisting of a functor
+
+\VerdierSemanticAnchor{ch1-1-4-4-functor}
+\[
+  F\colon\mathcal C\longrightarrow\mathcal C'
+\]
+and functor isomorphisms
+
+\VerdierSemanticAnchor{ch1-1-4-4-twisting-data}
+\[
+  p(\sigma)\colon FT(\sigma)\longrightarrow T'(\sigma)F,
+  \qquad \sigma\in G,
+\]
+such that, for every pair $\sigma_1,\sigma_2\in G$, the diagram
+(1.4.3.11) is $\alpha(\sigma_1,\sigma_2)$-commutative.
+
+\VerdierSemanticAnchor{ch1-1-4-4-correspondence}
+The choice of a normalized section $s$ of the extension (1.4.3.4)
+therefore establishes a bijective correspondence between the
+$H$-functors
+\[
+  (F,m)\colon(\mathcal C,H,T_f,c_f)
+  \longrightarrow(\mathcal C',H,T'_f,c'_f)
+\]
+that induce the canonical operation of the group of signs on $F$, and
+the $G$-functors twisted by the cocycle $\alpha_s$ defined by the
+section $s$.
+
+\VerdierSemanticAnchor{ch1-1-4-5}
+\noindent\textbf{1.4.5.}\quad
+We use the notation of (1.4.3). Let
+
+\VerdierSemanticAnchor{ch1-1-4-5-eq1}
+\begin{equation}
+  \begin{gathered}
+    (F_1,m_1),(F_2,m_2)\colon
+    (\mathcal C,H,T_f,c_f)\\[-0.2em]
+    \longrightarrow(\mathcal C',H,T'_f,c'_f)
+  \end{gathered}
+  \tag{1.4.5.1}
+\end{equation}
+be two $H$-functors inducing the canonical operation of the group of
+signs, and let
+
+\VerdierSemanticAnchor{ch1-1-4-5-eq2}
+\begin{equation}
+  u\colon(F_1,m_1)\longrightarrow(F_2,m_2)
+  \tag{1.4.5.2}
+\end{equation}
+be a morphism of functors compatible with the operations of $H$.
+
+\VerdierSemanticAnchor{ch1-1-4-5-sections}
+Let $s_1$ and $s_2$ be two normalized sections of the map $f$ in the
+exact sequence (1.4.3.4) ($s_1(e)=s_2(e)=e$). Let
+$\alpha_{s_1},\alpha_{s_2}\in Z^2(G,\mathbb Z/2\mathbb Z)$ be the
+corresponding normalized cocycles. Let
+$\beta\colon G\to\mathbb Z/2\mathbb Z$ be the map
+
+\VerdierSemanticAnchor{ch1-1-4-5-eq3}
+\begin{equation}
+  \beta(\sigma)=s_2(\sigma)s_1(\sigma)^{-1},
+  \qquad \sigma\in G.
+  \tag{1.4.5.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-5-induced}
+By (1.4.3), the functors $(F_1,m_1)$ and $(F_2,m_2)$ define
+$G$-functors $(F_1,p_1)$ and $(F_2,p_2)$ twisted respectively by the
+cocycles $\alpha_{s_1}$ and $\alpha_{s_2}$. One verifies immediately
+that the morphism $u\colon F_1\to F_2$ between the underlying functors
+has the following property:
+
+\VerdierSemanticAnchor{ch1-1-4-5-property}

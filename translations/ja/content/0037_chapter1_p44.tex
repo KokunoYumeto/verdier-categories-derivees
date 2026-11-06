@@ -1,0 +1,94 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0044}%
+\VerdierSemanticAnchor{ch1-1-4}
+\subsection{群の変更}
+
+\VerdierSemanticAnchor{ch1-1-4-1}
+\noindent\textbf{1.4.1.}\quad
+$f\colon H\to G$ を群準同型とする。各 $G$-圏 $(\mathcal C,G,T,c)$ に対し、
+$f$ を介して $H$ を $\mathcal C$ に作用させる。すなわち
+
+\VerdierSemanticAnchor{ch1-1-4-1-eq1}
+\begin{equation}
+  \begin{aligned}
+    T_f(h)&=T\bigl(f(h)\bigr),
+      & h&\in H,\\
+    c_f(h,h')&=c\bigl(f(h),f(h')\bigr),
+      & h,h'&\in H
+  \end{aligned}
+  \tag{1.4.1.1}
+\end{equation}
+とおくことにより、$H$-圏 $(\mathcal C,H,T_f,c_f)$ を対応させる。
+
+\VerdierSemanticAnchor{ch1-1-4-1-gfunctor}
+同様に、$G$-関手
+\[
+  (F,m)\colon(\mathcal C,G,T,c)
+  \longrightarrow(\mathcal C',G,T',c')
+\]
+が与えられたとき、
+
+\VerdierSemanticAnchor{ch1-1-4-1-eq2}
+\begin{equation}
+  m_f(h)=m\bigl(f(h)\bigr)
+  \tag{1.4.1.2}
+\end{equation}
+とおいて、対応する $H$-圏の間の $H$-関手 $(F,m_f)$ を対応させる。
+
+\VerdierSemanticAnchor{ch1-1-4-1-morphisms}
+最後に、$G$ の作用と両立する $G$-関手の射は $H$ の作用とも両立する。
+
+\VerdierSemanticAnchor{ch1-1-4-1-eq3}
+以上は明らかに一つの関手を定める。これを\emph{群の変更関手}という：
+\begin{equation}
+  f^*\colon G\text{-}\operatorname{Cat}
+  \longrightarrow H\text{-}\operatorname{Cat}.
+  \tag{1.4.1.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-1-eq4}
+より正確には、$\mathcal C,\mathcal C'$ を二つの $G$-圏とすると、関手 $f^*$
+は写像
+\begin{equation}
+  \begin{aligned}
+    f^*(\mathcal C,\mathcal C')\colon\quad
+      &\operatorname{Hom}_{G\text{-}\operatorname{Cat}}
+        (\mathcal C,\mathcal C')\\
+      &\longrightarrow
+        \operatorname{Hom}_{H\text{-}\operatorname{Cat}}
+        \bigl(f^*(\mathcal C),f^*(\mathcal C')\bigr)
+  \end{aligned}
+  \tag{1.4.1.4}
+\end{equation}
+を定める。
+
+\VerdierSemanticAnchor{ch1-1-4-1-homcategories}
+しかし集合\allowbreak
+$\operatorname{Hom}_{G\text{-}\operatorname{Cat}}(\mathcal C,\mathcal C')$\allowbreak
+と\allowbreak
+$\operatorname{Hom}_{H\text{-}\operatorname{Cat}}
+\bigl(f^*(\mathcal C),f^*(\mathcal C')\bigr)$\allowbreak
+は、それぞれ圏\hfill\break
+$\mathcal H\!om_{G\text{-}\operatorname{Cat}}(\mathcal C,\mathcal C')$\allowbreak
+と\allowbreak
+$\mathcal H\!om_{H\text{-}\operatorname{Cat}}
+\bigl(f^*(\mathcal C),f^*(\mathcal C')\bigr)$\allowbreak
+の対象集合であり、その射は群作用と両立する関手の射である。また写像
+$f^*(\mathcal C,\mathcal C')$ は自然に関手
+
+\VerdierSemanticAnchor{ch1-1-4-1-eq5}
+\begin{equation}
+  \begin{aligned}
+    f^*(\mathcal C,\mathcal C')\colon\quad
+      &\mathcal H\!om_{G\text{-}\operatorname{Cat}}
+        (\mathcal C,\mathcal C')\\
+      &\longrightarrow
+        \mathcal H\!om_{H\text{-}\operatorname{Cat}}
+        \bigl(f^*(\mathcal C),f^*(\mathcal C')\bigr)
+  \end{aligned}
+  \tag{1.4.1.5}
+\end{equation}
+へ拡張される。
+
+\VerdierSemanticAnchor{ch1-1-4-1-faithful}
+この関手は忠実である。

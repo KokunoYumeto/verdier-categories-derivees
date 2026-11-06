@@ -1,0 +1,85 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0238}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-3-4}
+\noindent\textbf{4.3.4.}\quad
+The functor from $D(\mathcal A)$ to the category of spectral objects of
+$D(\mathcal A)$ is still called, by an abuse of terminology, the
+\emph{second canonical spectral-object functor}.
+
+Let $X$ be a complex in $\mathcal A$, and let
+$\bigl(X(p,q),\delta(p,q,r)\bigr)$ be the second spectral object associated
+with $X$. It follows from (4.3.2) and (1.2.10) that there is a canonical
+isomorphism in $D(\mathcal A)$:
+
+\VerdierSemanticAnchor{ch4d-4-3-4-1}
+\begin{equation}
+X(p,p+1)\xrightarrow{\sim}H^p(X)[-p].
+\tag{4.3.4.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch4d-4-3-4-boundedness}
+Notice also that when $X$ is an object of $D^*(\mathcal A)$
+($*=-,+,b,$ or ``blank''), the second spectral object associated with $X$
+in fact has values in $D^*(\mathcal A)$.
+
+\VerdierSemanticAnchor{ch4d-4-4}
+\medskip\noindent\textbf{4.4. Usual spectral sequences.}
+
+\VerdierSemanticAnchor{ch4d-4-4-1}
+\medskip\noindent\textbf{4.4.1.}\quad
+Let $\mathcal A$ be an additive category, not necessarily abelian, let
+$F\colon K(\mathcal A)\longrightarrow\mathcal B$ be a cohomological
+functor into an abelian category $\mathcal B$, and let
+$F^p\colon K(\mathcal A)\longrightarrow\mathcal B$ be the functors
+obtained from $F$ by composition with the translation functor of
+$K(\mathcal A)$ ($F^p(X)=F(X[p])$). In addition, let $Y$ be a complex in
+$\mathcal A$. The functor $F$ takes the first spectral object with values
+in $K(\mathcal A)$ associated with $Y$ (4.1.4) to a spectral object with
+values in $\mathcal B$. This yields (Chapter~II, 4.3.3) a spectral sequence
+with values in $\mathcal B$, functorial in $F$ and in $Y$ (when the latter
+varies in $\operatorname{comp}(\mathcal A)$), called the \emph{first
+spectral sequence of the functor $F$ relative to the complex $Y$}. For
+this spectral sequence we always use the indexing introduced in
+(Chapter~II, 4.3.3.1).
+
+\VerdierSemanticAnchor{ch4d-4-4-2}
+\medskip\noindent\textbf{Proposition 4.4.2.}\quad
+
+\VerdierSemanticAnchor{ch4d-4-4-2-a}
+\noindent\textit{a) The term $\mathrm I_1^{p,q}$ of the first spectral
+sequence of the functor $F$ relative to the complex $Y$ is given by}
+\[
+\mathrm I_1^{p,q}=F^q(Y^p)
+\]
+\noindent\textit{(here $Y^p$ denotes the complex whose only nonzero
+component is, in degree zero, the $p$-th component of the complex $Y$).
+The corresponding differential is}
+
+\VerdierSemanticAnchor{ch4d-4-4-2-a-differential}
+\[
+\begin{aligned}
+d_1&\colon\mathrm I_1^{p,q}\longrightarrow\mathrm I_1^{p+1,q},\\
+d_1&=F^q(-d_Y^p)\colon F^q(Y^p)\longrightarrow F^q(Y^{p+1}).
+\end{aligned}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-4-2-b}
+\noindent\textit{b) The term $\mathrm I_2^{p,q}$ of this same spectral
+sequence can therefore be described as follows: denote by
+$F^{q,\bullet}\colon\operatorname{comp}(K(\mathcal A))
+\longrightarrow\operatorname{comp}(\mathcal B)$ the extension of $F^q$
+to complexes, by $H_{\mathcal B}^p\colon\operatorname{comp}(\mathcal B)
+\longrightarrow\mathcal B$ the $p$-th cohomology-object functor, and by
+$Y^\bullet$ the following object of $\operatorname{comp}(K(\mathcal A))$:}
+
+\VerdierSemanticAnchor{ch4d-4-4-2-b-complex}
+\[
+Y^\bullet=\cdots\longrightarrow Y^{p-1}
+\xrightarrow{d_Y^{p-1}}Y^p\xrightarrow{d_Y^p}Y^{p+1}
+\longrightarrow\cdots.
+\]
+\endgroup

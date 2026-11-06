@@ -1,0 +1,118 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0136}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{1pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{1pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-2-1-fl-source-target-maps}
+\noindent $\mathbf{s}$ および $\mathbf{b}\colon
+\operatorname{Fl}(\mathcal C(S^{-1}))\rightrightarrows
+\operatorname{Ob}(\mathcal C)$ により次の写像を表す：
+
+\VerdierSemanticAnchor{ch2-2-2-1-source-target-formula}
+\[
+  m\in\operatorname{Hom}_{\mathcal C(S^{-1})}(X,Y),\qquad
+  \mathbf{s}(m)=X,\qquad \mathbf{b}(m)=Y,
+\]
+
+\VerdierSemanticAnchor{ch2-2-2-1-identity-map}
+\noindent また $\mathbf{id}\colon\operatorname{Ob}(\mathcal C)
+\to\operatorname{Fl}(\mathcal C(S^{-1}))$ により写像
+$X\mapsto Q(\mathbf{id}_X)$ を表す。
+\VerdierSemanticAnchor{ch2-2-2-1-category-diagram}%
+こうして図式
+$\mathcal C(S^{-1})=(\operatorname{Ob}(\mathcal C),
+\operatorname{Fl}(\mathcal C(S^{-1})),\mathbf{s},\mathbf{b},\mathbf{id})$
+を定める。さらに、記号を濫用して次のように書く写像の対がある：
+
+\VerdierSemanticAnchor{ch2-2-2-1-q-pair}
+\[
+  Q=\bigl(\mathbf{id}_{\operatorname{Ob}(\mathcal C)}\colon
+  \operatorname{Ob}(\mathcal C)\to\operatorname{Ob}(\mathcal C),\;
+  Q\colon\operatorname{Fl}(\mathcal C)\to
+  \operatorname{Fl}(\mathcal C(S^{-1}))\bigr)\,.
+\]
+
+\VerdierSemanticAnchor{ch2-2-2-2}
+\smallskip
+\noindent\textbf{定理 2.2.2.}\quad
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-2-2-a}%
+a) $\operatorname{Fl}(\mathcal C(S^{-1}))$ 上には、次を満たす部分的に
+定義された合成則がただ一つ存在する：
+
+\VerdierSemanticAnchor{ch2-2-2-2-a-1}
+\par\noindent\hspace*{2em}1) $\mathcal C(S^{-1})$ は圏である。
+
+\VerdierSemanticAnchor{ch2-2-2-2-a-2}
+\par\noindent\hspace*{2em}2) $Q(s)$ は同型であり、$Q(s)^{-1}$ はその逆
+$(s\in S)$ である。
+
+\VerdierSemanticAnchor{ch2-2-2-2-a-3}
+\par\noindent\hspace*{2em}3) 各図式
+$D=X\xleftarrow{s}X'\xrightarrow{m}Y$、$s\in S$ に対し、
+$\overline D=Q(m)Q(s)^{-1}$ が成り立つ
+$(\overline D\in\operatorname{Hom}_{\mathcal C(S^{-1})}(X,Y)$ は $D$ の
+同値類である）。
+
+\VerdierSemanticAnchor{ch2-2-2-2-a-4}
+\par\noindent\hspace*{2em}4) $Q$ は関手である。
+
+\VerdierSemanticAnchor{ch2-2-2-2-b}
+\par\noindent b) $\mathcal C(S^{-1})$ の各射は合成
+$Q(t)^{-1}Q(m)$、$m\in\operatorname{Fl}(\mathcal C)$、$t\in S$
+（それぞれ $Q(p)Q(s)^{-1}$、$p\in\operatorname{Fl}(\mathcal C)$、
+$s\in S$）と書ける。
+
+\VerdierSemanticAnchor{ch2-2-2-2-c}
+\par\noindent c) 関手 $Q$ は有限射影極限および有限帰納極限と可換である。
+
+\VerdierSemanticAnchor{ch2-2-2-2-d}
+\par\noindent d) 各圏 $\mathcal A$ に対し、関手 $Q$ との合成は関手
+
+\VerdierSemanticAnchor{ch2-2-2-2-hom-q-a}
+\[
+  \mathcal{H}\!om(Q,\mathcal A)\colon
+  \mathcal{H}\!om(\mathcal C(S^{-1}),\mathcal A)
+  \longrightarrow \mathcal{H}\!om(\mathcal C,\mathcal A)
+\]
+
+\noindent\textup{を定める（$\mathcal{H}\!om$ は関手圏を表す）。}
+\VerdierSemanticAnchor{ch2-2-2-2-universal-image}%
+関手 $\mathcal{H}\!om(Q,\mathcal A)$ は対象上単射かつ充満忠実であり、
+$\mathcal{H}\!om(\mathcal C(S^{-1}),\mathcal A)$ の像は、$S$ の射を
+同型へ送る $\mathcal C$ から $\mathcal A$ への関手によって定まる
+$\mathcal{H}\!om(\mathcal C,\mathcal A)$ の厳密充満部分圏である。
+\par\endgroup
+
+\VerdierSemanticAnchor{ch2-2-2-2-proof-omitted}
+この定理の証明は読者に委ねる。[16] を参照してもよい。
+\VerdierSemanticAnchor{ch2-2-2-2-composition-setup}%
+ここでは $\mathcal C(S^{-1})$ における射の合成を記述するにとどめる。
+$\overline D_1\in\operatorname{Hom}_{\mathcal C(S^{-1})}(X,Y)$ と
+$\overline D_2\in\operatorname{Hom}_{\mathcal C(S^{-1})}(Y,Z)$ を
+$\mathcal C(S^{-1})$ の合成可能な二射とする。
+
+\VerdierSemanticAnchor{ch2-2-2-2-roof-pair}
+$D_1=X\xleftarrow{s}X'\xrightarrow{m}Y$ と
+$D_2=Y\xleftarrow{t}Y'\xrightarrow{p}Z$ を、それぞれ同値類
+$\overline D_1$ と $\overline D_2$ に属する $\mathcal C$ の二図式とする。
+\VerdierSemanticAnchor{ch2-2-2-2-sm2-completion-input}%
+SM2) を用いて、次の図式を補完する：
+
+\begin{center}
+  \begin{tikzpicture}[>=stealth,line width=.38pt,x=1.42cm,y=.90cm,
+    scale=.92,transform shape]
+    \node (Xp) at (-1.20,1.10) {$X'$};
+    \node (Yp) at ( 1.20,1.10) {$Y'$};
+    \node (Y)  at ( 0,-.70) {$Y$};
+    \draw[->] (Xp) -- node[left=2pt] {$m$} (Y);
+    \draw[->] (Yp) -- node[right=2pt] {$t$} (Y);
+    \node at (3.00,.25) {$t\in S$};
+  \end{tikzpicture}
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-2-2-p137-boundary}
+\endgroup

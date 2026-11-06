@@ -1,0 +1,81 @@
+\VerdierPhysicalPageAnchor{0037}%
+\VerdierSemanticAnchor{ch1-1-2-1-coherence}
+and for every triple $(g,h,k)$ of elements of $G$, the relation
+
+\VerdierSemanticAnchor{ch1-1-2-1-eq3}
+\begin{equation}
+  \bigl(T(g)\star c(k,h)\bigr)c(kh,g)
+  =\bigl(c(h,g)\star T(k)\bigr)c(k,hg).
+  \tag{1.2.1.3}
+\end{equation}
+holds.
+
+\VerdierSemanticAnchor{ch1-1-2-2}
+\noindent\textbf{Definition 1.2.2.}\quad
+Let $G$ be a group. A $G^\circ$-\emph{category}
+($G^\circ$ being the group opposite to $G$) is a category $\mathcal C_e$
+equipped with a family of functors $T(g)$ ($g\in G$) and isomorphisms of
+functors $c(h,g)$ ($g,h\in G$) satisfying properties (1.2.1.1),
+(1.2.1.2), and (1.2.1.3).
+
+\VerdierSemanticAnchor{ch1-1-2-2-transition}
+A $G^\circ$-category is therefore a category $\mathcal C_e$ equipped with
+an action up to isomorphism of a group $G^\circ$. We use the notation
+$(\mathcal C_e,G^\circ,T,c)$ for the $G^\circ$-category; the isomorphisms
+$c(h,g)$ are called the \emph{transition isomorphisms}.
+
+\VerdierSemanticAnchor{ch1-1-2-2-strict}
+When the transition isomorphisms are identity isomorphisms, which in
+particular implies $T(hg)=T(g)T(h)$ for every pair $g,h\in G$, the
+$G^\circ$-category is said to be \emph{strict}. Such an object is therefore
+specified by a representation of $G^\circ$ in the automorphism group of
+the category $\mathcal C_e$.
+
+\VerdierSemanticAnchor{ch1-1-2-3}
+\noindent\textbf{1.2.3.}\quad
+Now let $\mathcal C$ and $\mathcal C'$ be two $G$-graded categories and let
+$F\colon\mathcal C\to\mathcal C'$ be a graded functor. Choose normalized
+cleavages on $\mathcal C$ and $\mathcal C'$. The choice of these cleavages
+determines isomorphisms of functors
+
+\VerdierSemanticAnchor{ch1-1-2-3-eq1}
+\begin{equation}
+  m(g)\colon F_eT(g)\longrightarrow T'(g)F_e,\qquad
+  g\in G,\qquad m(e)=\text{the identity on }F_e
+  \tag{1.2.3.1}
+\end{equation}
+such that for every pair $g,h\in G$ the following diagram commutes:
+
+\VerdierSemanticAnchor{ch1-1-2-3-eq2}
+\begin{equation}
+\begin{tikzcd}[column sep=huge,row sep=large]
+F_eT(hg)
+  \arrow[r,"m(hg)"]
+  \arrow[d,"{F_e\star c(h,g)}",swap]
+&
+T^{\prime}(hg)F_e
+  \arrow[dd,"{c^{\prime}(h,g)\star F_e}"]
+\\
+F_eT(g)T(h)
+  \arrow[d,"m(g)\star T(h)",swap]
+&
+{}
+\\
+T^{\prime}(g)F_eT(h)
+  \arrow[r,"T^{\prime}(g)\star m(h)"]
+&
+T^{\prime}(g)T^{\prime}(h)F_e\mathpunct{.}
+\end{tikzcd}
+\tag{1.2.3.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-2-4}
+\noindent\textbf{Definition 1.2.4.}\quad
+Let $(\mathcal C_e,G^\circ,T,c)$ and
+$(\mathcal C'_e,G^\circ,T',c')$ be two $G^\circ$-categories. A
+$G^\circ$-\emph{functor} is the datum of a functor
+
+\VerdierSemanticAnchor{ch1-1-2-4-fe}
+\[
+  F_e\colon\mathcal C_e\longrightarrow\mathcal C'_e
+\]

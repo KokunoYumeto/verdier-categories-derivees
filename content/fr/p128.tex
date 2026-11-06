@@ -1,0 +1,75 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0128}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{3pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-2}
+\section{Localisation dans les catégories triangulées.}
+
+\VerdierSemanticAnchor{ch2-2-1}
+\subsection{Systèmes multiplicatifs de morphismes [16].}
+
+\VerdierSemanticAnchor{ch2-2-1-1}
+\noindent\textbf{2.1.1.}\quad
+\VerdierSemanticAnchor{ch2-2-1-1-multiplicative-system}
+Soit $C$ une catégorie (non nécessairement additive). Un ensemble $S$
+de morphismes de $C$ est appelé un \emph{système multiplicatif} si il
+possède les propriétés suivantes :
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm1}
+\smallskip
+\noindent\textbf{SM1)} Le composé de deux morphismes composables de $S$
+est un élément de $S$. Pour tout objet $X$ de $C$, le morphisme identique
+de $X$ est un élément de $S$.
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm2}
+\smallskip
+\noindent\textbf{SM2)} Tout diagramme :
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm2-right-input}
+\begin{center}
+  \begin{tikzcd}[column sep=4.1em,row sep=2.5em]
+    & {} \arrow[d,"s\in S"] \\
+    {} \arrow[r,"f"'] & {}
+  \end{tikzcd}
+\end{center}
+\noindent peut se compléter en un diagramme commutatif :
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm2-right-completion}
+\begin{center}
+  \begin{tikzcd}[column sep=4.1em,row sep=2.5em]
+    {} \arrow[r,dashed,"g"] \arrow[d,dashed,"t\in S"']
+      & {} \arrow[d,"s\in S"] \\
+    {} \arrow[r,"f"'] & {}
+  \end{tikzcd}
+  \quad .
+\end{center}
+\noindent Tout diagramme :
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm2-left-input}
+\begin{center}
+  \begin{tikzcd}[column sep=4.1em,row sep=2.5em]
+    {} \arrow[r,"g"] \arrow[d,"t\in S"'] & {} \\
+    {} & {}
+  \end{tikzcd}
+\end{center}
+\noindent peut se compléter en un diagramme commutatif :
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm2-left-completion}
+\begin{center}
+  \begin{tikzcd}[column sep=4.1em,row sep=2.5em]
+    {} \arrow[r,"g"] \arrow[d,"t\in S"']
+      & {} \arrow[d,dashed,"s\in S"] \\
+    {} \arrow[r,dashed,"f"'] & {}
+  \end{tikzcd}
+  \quad .
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm3-boundary}
+\noindent\textbf{SM3)} Pour tout couple de morphismes
+$f,g\colon X\rightrightarrows Y$, les propriétés suivantes sont
+équivalentes :
+\endgroup

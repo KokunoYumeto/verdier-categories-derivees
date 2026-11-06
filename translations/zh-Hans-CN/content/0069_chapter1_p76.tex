@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0076}%
+\VerdierSemanticAnchor{ch1-2-4-2-countable-products-sums}
+现在假设 $C$ 中的可数乘积（相应地，可数直和）可表示。规定：
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq6}
+\begin{equation}
+  \begin{aligned}
+    \operatorname{comp}_{\Pi}F
+      &=\int_n^{\Pi}F^{[n]},\\
+    \text{（相应地，}\operatorname{comp}_{\Sigma}F
+      &=\int_n^{\Sigma}F^{[n]}\text{）}.
+  \end{aligned}
+  \tag{2.4.2.6}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-2-pi-sigma-extension}
+函子
+$\operatorname{comp}_{\Pi}F$（相应地，$\operatorname{comp}_{\Sigma}F$）：
+$\prod_{i\in[n]}\operatorname{comp}(C_i)\longrightarrow
+\operatorname{comp}(C)$ 称为函子 $F$ 在复形上的 $\Pi$-扩张
+（相应地，$\Sigma$-扩张）。
+
+\VerdierSemanticAnchor{ch1-2-4-2-koszul-twist}
+由于 $F$ 是严格 $\mathbb Z[n]$-函子，而函子
+$\int_n^{\Pi}$（相应地，$\int_n^{\Sigma}$）是由
+$\mathbb Z[n]$ 的有序基 $e_1,\ldots,e_n$ 所对应的 Koszul 余循环扭曲的
+$\mathbb Z[n]$-函子，函子
+$\operatorname{comp}_{\Pi}F$（相应地，$\operatorname{comp}_{\Sigma}F$）
+也是由同一有序基所对应的 Koszul 余循环扭曲的
+$\mathbb Z[n]$-函子，这与符号规则 I (1.6.6) 一致。因此，对每个
+$i\in[n]$，都有典范同构：
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq7}
+\begin{equation}
+  \begin{aligned}
+    \operatorname{comp}_{\Pi}F(X_1,\ldots,X_i[1],\ldots,X_n)
+      &\xrightarrow{\sim}
+      \operatorname{comp}_{\Pi}F(X_1,\ldots,X_i,\ldots,X_n)[1],\\
+    \text{（相应地，}\operatorname{comp}_{\Sigma}F(X_1,\ldots,X_i[1],\ldots,X_n)
+      &\xrightarrow{\sim}
+      \operatorname{comp}_{\Sigma}F(X_1,\ldots,X_i,\ldots,X_n)[1]\text{）}
+  \end{aligned}
+  \tag{2.4.2.7}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-2-canonical-pi}
+并将它们记为 $p_i$。
+
+\VerdierSemanticAnchor{ch1-2-4-2-anticommutativity}
+这些同构具有 (1.6.6.3) 所述的反交换性质。
+
+\VerdierSemanticAnchor{ch1-2-4-2-summable-restriction-equality}
+函子 $\operatorname{comp}_{\Pi}F$ 与
+$\operatorname{comp}_{\Sigma}F$ 在
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$ 的可求和对象上的限制相等；
+这一限制总能定义，而无须对范畴 $C$ 作任何假设。
+
+\VerdierSemanticAnchor{ch1-2-4-3}
+\subsection*{2.4.3.}
+现设
+$F,F'\colon\prod_{i\in[n]}C_i\longrightarrow C$ 为两个多加法函子，
+$h\colon F\longrightarrow F'$ 为一个函子态射。由此得到一个函子态射：
+
+\VerdierSemanticAnchor{ch1-2-4-3-induced-morphism}
+\begin{equation*}
+  h^{[n]}\colon F^{[n]}\longrightarrow F'^{[n]},
+\end{equation*}
+其定义为：
+
+\VerdierSemanticAnchor{ch1-2-4-3-eq1}
+\begin{equation}
+  \begin{aligned}
+    h^{[n]}(X_1,\ldots,X_n)^{\sigma}
+      &=h(X_1^{l_1},\ldots,X_n^{l_n}),\\
+    \sigma&=\sum_{i\in[n]}l_i e_i\in\mathbb Z[n],\\
+    (X_1,\ldots,X_n)&\in
+      \operatorname{Ob}\!\left(\prod_{i\in[n]}\operatorname{comp}(C_i)\right).
+  \end{aligned}
+  \tag{2.4.3.1}
+\end{equation}

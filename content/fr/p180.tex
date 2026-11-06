@@ -1,0 +1,72 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0180}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-1-2-8-duality-cont}
+On identifiera dorénavant, sauf mention du contraire, les catégories
+$D(\mathcal A)^o$ et $D(\mathcal A^o)$ à l'aide de l'isomorphisme $i$.
+Notons que cette identification identifie la catégorie $D^b(\mathcal A)^o$
+avec la catégorie $D^b(\mathcal A^o)$, la catégorie $D^+(\mathcal A)^o$
+avec la catégorie $D^-(\mathcal A^o)$ et la catégorie $D^-(\mathcal A)^o$
+avec la catégorie $D^+(\mathcal A^o)$.
+
+\VerdierSemanticAnchor{ch3d-1-2-9}
+\medskip\noindent\textbf{1.2.9.}\quad
+Le foncteur canonique $\mathcal A\longrightarrow K(\mathcal A)$
+(chap. II, 1.3.3), composé avec le foncteur
+$Q\colon K(\mathcal A)\longrightarrow D(\mathcal A)$, fournit un foncteur
+$\mathcal A\longrightarrow D(\mathcal A)$ qui est pleinement fidèle : en
+effet, soient $X$ et $Y$ deux objets de $\mathcal A$. Un morphisme dans
+$D(\mathcal A)$ de $X$ dans $Y$ est (chap. II, 2.2.2) la classe
+$\overline D$ d'un diagramme de $K(\mathcal A)$ :
+
+\VerdierSemanticAnchor{ch3d-1-2-9-roof}
+\[
+\overline D=X\xleftarrow{\ s\ }Z^\bullet\xrightarrow{\ m\ }Y,
+\]
+où $s$ est un quasi-isomorphisme de $K(\mathcal A)$. Par suite,
+$s\colon Z^\bullet\longrightarrow X$ induit un isomorphisme
+$H^0(s)\colon H^0(Z^\bullet)\xrightarrow{\sim}H(X)=X$ et on vérifie
+aussitôt que
+$\overline D=Q\bigl(H^0(m)H^0(s)^{-1}\bigr)$. Ceci montre que
+l'homomorphisme :
+\[
+\operatorname{Hom}_{\mathcal A}(X,Y)\longrightarrow
+\operatorname{Hom}_{D(\mathcal A)}(X,Y)
+\]
+est surjectif. Montrons qu'il est injectif. Un morphisme
+$f\colon X\longrightarrow Y$ dans $\mathcal A$ définit un morphisme nul dans
+la catégorie $D(\mathcal A)$ si et seulement s'il existe un
+quasi-isomorphisme $s\colon Z^\bullet\longrightarrow X$ dans $K(\mathcal A)$
+tel que $fs=0$. On en déduit que $H^0(f)H^0(s)=0$. Comme $H^0(s)$ est un
+isomorphisme, on en déduit que $H^0(f)=f=0$.
+
+Notons que le foncteur $\mathcal A\longrightarrow D(\mathcal A)$ est de plus
+injectif sur les ensembles d'objets et réalise par suite $\mathcal A$ comme
+sous-catégorie pleine de $D(\mathcal A)$. Dorénavant, la catégorie
+$\mathcal A$ sera toujours considérée comme une sous-catégorie de sa
+catégorie dérivée par l'intermédiaire de ce foncteur. Le foncteur
+cohomologique canonique $D(\mathcal A)\xrightarrow{H}\mathcal A$, restreint
+à la sous-catégorie $\mathcal A$, est le foncteur identique.
+
+\VerdierSemanticAnchor{ch3d-1-2-10}
+\medskip\noindent\textbf{Proposition 1.2.10.}\quad
+\textit{a) Un objet $X$ de $D(\mathcal A)$ est isomorphe à un objet de
+$\mathcal A$ si et seulement si $H^i(X)=0$, pour tout $i\neq0$. Il est alors
+canoniquement isomorphe à $H^0(X)$.}
+
+\noindent\textit{b) Soient $X$ et $Y$ deux objets de $\mathcal A$. On a :}
+\[
+\operatorname{Ext}_{\mathcal A}^{n}(X,Y)=0,\quad\text{pour }n<0,
+\qquad
+\operatorname{Ext}_{\mathcal A}^{0}(X,Y)
+=\operatorname{Hom}_{\mathcal A}(X,Y).
+\]
+
+\VerdierSemanticAnchor{ch3d-1-2-10-proof}
+Démontrons a). Il est clair que $H^i(X)=0$, pour $i\neq0$, lorsque $X$ est
+un objet de $\mathcal A$. Soit $X$ un objet de $D(\mathcal A)$ tel que
+$H^i(X)$ soit nul, pour $i\neq0$.
+\endgroup

@@ -1,0 +1,99 @@
+\VerdierPhysicalPageAnchor{0068}%
+\VerdierSemanticAnchor{ch1-2-2-1-continuation}%
+groups and that $\varepsilon(e_j,i)=-1$ if $j<i$,
+$\varepsilon(e_j,i)=1$ if $i\leq j$. The map
+$(\sigma,i)\longmapsto\varepsilon(\sigma,i)$ is moreover uniquely
+determined by these properties. One immediately deduces the relation
+
+\VerdierSemanticAnchor{ch1-2-2-1-eq2}
+\begin{equation}
+  \varepsilon(\sigma,i)\varepsilon(\sigma+e_i,j)
+  =-\varepsilon(\sigma,j)\varepsilon(\sigma+e_j,i)
+  \tag{2.2.1.2}
+\end{equation}
+valid for every $\sigma\in\mathbb Z[n]$ and every pair
+$(i,j)\in[n]\times[n]$, $i\neq j$.
+
+\VerdierSemanticAnchor{ch1-2-2-2}
+\noindent\textbf{2.2.2.}\quad
+Let $Y$ be an $n$-fold complex in $C$. Put
+
+\VerdierSemanticAnchor{ch1-2-2-2-eq1}
+\begin{equation}
+  \delta_Y^{\sigma,i}=\varepsilon(\sigma,i)d_Y^{\sigma,i}.
+  \tag{2.2.2.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-2-2-eq2}
+It then follows from (2.2.1.2) that relations (2.1.2.1) are equivalent to
+the relations
+\begin{equation}
+  \begin{aligned}
+    \delta_Y^{\sigma+e_i,i}\delta_Y^{\sigma,i}
+      &=0,
+      &&\forall\sigma\in\mathbb Z[n],\quad\forall i\in[n],\\
+    \delta_Y^{\sigma+e_j,i}\delta_Y^{\sigma,j}
+      +\delta_Y^{\sigma+e_i,j}\delta_Y^{\sigma,i}
+      &=0,
+      &&\forall\sigma\in\mathbb Z[n],\quad\forall i,j\in[n].
+  \end{aligned}
+  \tag{2.2.2.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-2-2-pushforward}
+Now let $\varphi\colon[n]\longrightarrow[m]$ be a map and suppose that
+$Y$ is $\varphi$-summable. We then define an $m$-fold complex
+$\int_\varphi Y$ by the formulas
+
+\VerdierSemanticAnchor{ch1-2-2-2-eq3}
+\begin{equation}
+  \left(\int_\varphi Y\right)^\tau
+  =\bigoplus_{\varphi(\sigma)=\tau}Y^\sigma,
+  \qquad \forall\tau\in\mathbb Z[m],
+  \tag{2.2.2.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-2-2-eq4}
+\begin{equation}
+  \begin{aligned}
+    \delta_{\int_\varphi Y}^{\tau,i}(y_\sigma)
+      &=\sum_{\varphi(j)=i}\delta_Y^{\sigma,j}(y_\sigma),\\[-1mm]
+    &\hspace{-18mm}
+      \sigma\in\mathbb Z[n],\quad i\in[m],\quad
+      y_\sigma\in Y^\sigma,\quad\tau=\varphi(\sigma).
+  \end{aligned}
+  \tag{2.2.2.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-2-2-additive-interpretation}
+Formula (2.2.2.4) defines a morphism from
+$\left(\int_\varphi Y\right)^\tau
+=\bigoplus_{\varphi(\sigma)=\tau}Y^\sigma$ to
+$\left(\int_\varphi Y\right)^{\tau+e_i}
+=\bigoplus_{\varphi(\sigma)=\tau+e_i}Y^\sigma$ when $C$ is the category
+of abelian groups. It also makes it possible to define a morphism from
+$\left(\int_\varphi Y\right)^\tau$ to
+$\left(\int_\varphi Y\right)^{\tau+e_i}$ when $C$ is an additive category,
+by working in the category of contravariant functors on $C$ with values
+in the category of abelian groups, i.e. by interpreting $y_\sigma$ as a
+morphism from an arbitrary object of $C$ to $Y^\sigma$.
+
+\VerdierSemanticAnchor{ch1-2-2-2-verification}
+An immediate calculation shows that the
+$\delta_{\int_\varphi Y}^{\tau,i}$ satisfy relations (2.2.2.2), whence,
+on returning to the differentials, the objects defined by (2.2.2.3)
+equipped with the morphisms defined by
+
+\VerdierSemanticAnchor{ch1-2-2-2-eq5}
+\begin{equation}
+  \begin{aligned}
+    d_{\int_\varphi Y}^{\tau,i}(y_\sigma)
+      &=\varepsilon(\tau,i)
+        \sum_{\varphi(j)=i}
+          \varepsilon(\sigma,j)d_Y^{\sigma,j}(y_\sigma),\\[-1mm]
+    &\hspace{-18mm}
+      \tau\in\mathbb Z[m],\quad i\in[m],\quad
+      \sigma\in\mathbb Z[n],\quad\varphi(\sigma)=\tau
+  \end{aligned}
+  \tag{2.2.2.5}
+\end{equation}

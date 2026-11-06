@@ -1,0 +1,107 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0246}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-6-4}
+\noindent\textbf{4.6.4.}\quad
+设 $X^{\bullet\bullet}$ 是 $\mathcal A$ 的一个双复形（第一章，2.1.2）。
+双复形 $X^{\bullet\bullet}$ 定义了
+$\operatorname{comp}(\operatorname{comp}(\mathcal A))$ 的一个对象：
+
+\VerdierSemanticAnchor{ch4d-4-6-4-double-complex}
+\[
+X^{\bullet\bullet}\colon\quad
+\cdots\longrightarrow X^{\bullet,n-1}
+\xrightarrow{d_2^{\bullet,n-1}}X^{\bullet,n}
+\xrightarrow{d_2^{\bullet,n}}X^{\bullet,n+1}
+\longrightarrow\cdots.
+\]
+（采用 (4.1.9) 的记号。注意符号！）
+
+\VerdierSemanticAnchor{ch4d-4-6-4-b1}
+以 $B_1^p(X^{\bullet\bullet})$ 表示如下单复形：
+
+\VerdierSemanticAnchor{ch4d-4-6-4-1}
+\[
+\left\{
+\begin{aligned}
+B_1^p(X^{\bullet\bullet})^i
+  &=\operatorname{Im}(d_1^{p-1,i}),\\
+d_{B_1^p(X^{\bullet\bullet})}^{i}
+  &\text{由以下微分诱导： }d_2^{p,i}.
+\end{aligned}
+\right.
+\tag{4.6.4.1}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-4-z1}
+以 $Z_1^p(X^{\bullet\bullet})$ 表示如下单复形：
+
+\VerdierSemanticAnchor{ch4d-4-6-4-2}
+\[
+\left\{
+\begin{aligned}
+Z_1^p(X^{\bullet\bullet})^i
+  &=\operatorname{Ker}(d_1^{p,i}),\\
+d_{Z_1^p(X^{\bullet\bullet})}^{i}
+  &\text{由以下微分诱导： }d_2^{p,i}.
+\end{aligned}
+\right.
+\tag{4.6.4.2}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-4-h1}
+以 $H_1^p(X^{\bullet\bullet})$ 表示如下单复形：
+
+\VerdierSemanticAnchor{ch4d-4-6-4-3}
+\[
+\left\{
+\begin{aligned}
+H_1^p(X^{\bullet\bullet})^i
+  &=Z_1^p(X^{\bullet\bullet})^i/B_1^p(X^{\bullet\bullet})^i,\\
+d_{H_1^p(X^{\bullet\bullet})}^{i}
+  &\text{由以下微分诱导： }d_2^{p,i}.
+\end{aligned}
+\right.
+\tag{4.6.4.3}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-4-simple-as-double}
+最后，若 $Y$ 是 $\mathcal A$ 的一个单复形，我们仍以 $Y$ 表示如下双复形：
+其第二次数非零时的分量均为零，而第二次数为零时的分量及第一微分就是 $Y$
+的分量及微分。
+
+\VerdierSemanticAnchor{ch4d-4-6-5}
+\medskip\noindent\textbf{定义 4.6.5.}\quad
+设 $Y$ 是 $\mathcal A$ 的一个单复形。$Y$ 的一个
+\emph{Cartan--Eilenberg 内射分解}是一个双复形
+
+\VerdierSemanticAnchor{ch4d-4-6-5-double-complex}
+\[
+I^{\bullet\bullet}\colon\quad
+\cdots\longrightarrow0\longrightarrow I^{\bullet,0}
+\longrightarrow I^{\bullet,1}\longrightarrow I^{\bullet,2}
+\longrightarrow\cdots,
+\]
+并配有一个称为\emph{增广}的态射
+
+\VerdierSemanticAnchor{ch4d-4-6-5-augmentation}
+\[
+\varepsilon\colon Y\longrightarrow I^{\bullet\bullet}
+\]
+使得对每个整数 $p$，单复形
+$B_1^p(I^{\bullet\bullet})$ (4.6.4.1) 和
+$H_1^p(I^{\bullet\bullet})$ (4.6.4.3)，连同增广
+
+\VerdierSemanticAnchor{ch4d-4-6-5-augmentations}
+\[
+B_1^p(\varepsilon)\colon
+\operatorname{Im}(d_Y^{p-1})\longrightarrow B_1^p(I^{\bullet\bullet}),
+\]
+\[
+H_1^p(\varepsilon)\colon
+H^p(Y)\longrightarrow H_1^p(I^{\bullet\bullet})
+\]
+\endgroup

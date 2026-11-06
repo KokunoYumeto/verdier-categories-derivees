@@ -1,0 +1,72 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0197}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-step-conclusion}
+于是令 $L_q^\bullet=L_{q-1}^\bullet(\alpha,-q)$、
+$w_q=\varphi$、$v_q=p(\alpha,-q)$。复形 $L_n^\bullet$ 与复形态射
+$w_n$、$v_n$，对 $n\leq q$，具有性质 2) 与 3)。还需证明
+$L_q^\bullet$ 具有上述性质 1)。这是因为集合 $M^\wedge$ 是正合的，
+即满足 $(E_6)$（2.2.4）。
+
+\VerdierSemanticAnchor{ch3d-2-3-1-proof-b}
+下面证明 b)。设 $L$ 属于 $M$，且
+$\dot u\colon X\longrightarrow L$ 是满态射。将 $Y$ 定义为
+$\dot u$ 的核。存在拟同构
+
+\VerdierSemanticAnchor{ch3d-2-3-1-kernel-quasi-isomorphism}
+\begin{center}
+\begin{tikzcd}[column sep=2.25em,row sep=2.6em]
+\cdots \arrow[r] & 0 \arrow[r] \arrow[d] & Y \arrow[r] \arrow[d]
+  & X \arrow[r] \arrow[d,"\dot u"] & 0 \arrow[r] \arrow[d] & \cdots \\
+\cdots \arrow[r] & 0 \arrow[r] & 0 \arrow[r] & L \arrow[r] & 0 \arrow[r]
+  & \cdots.
+\end{tikzcd}
+\end{center}
+于是存在拟同构
+
+\VerdierSemanticAnchor{ch3d-2-3-1-resolution-quasi-isomorphism}
+\begin{center}
+\begin{tikzcd}[column sep=2.25em,row sep=2.6em]
+\cdots \arrow[r] & L^{-1} \arrow[r] \arrow[d] & L^0 \arrow[r] \arrow[d,"v"]
+  & L^1 \arrow[r] \arrow[d] & L^2 \arrow[r] \arrow[d] & \cdots \\
+\cdots \arrow[r] & Y \arrow[r] & X \arrow[r] & 0 \arrow[r] & 0 \arrow[r]
+  & \cdots,
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-2-3-1-e2}
+其中 $L^i$ 均属于 $M$。因此态射 $\dot u v$ 是满态射，这证明了性质
+$(E_2)$。现在设
+
+\VerdierSemanticAnchor{ch3d-2-3-1-exact-resolution}
+\[
+0\longrightarrow X\xrightarrow{\dot u}L_n\longrightarrow L_{n-1}
+\longrightarrow\cdots\longrightarrow L_0\longrightarrow0
+\]
+是一条正合列，其中 $L_i$ 均属于 $M$。于是有拟同构
+\begin{center}
+\begin{tikzcd}[column sep=1.35em,row sep=2.6em]
+\cdots \arrow[r] & 0 \arrow[r] \arrow[d] & 0 \arrow[r] \arrow[d]
+  & X \arrow[r] \arrow[d,"\dot u"] & 0 \arrow[r] \arrow[d]
+  & \cdots \arrow[r] & 0 \arrow[r] \arrow[d] & 0 \arrow[r] \arrow[d]
+  & \cdots \\
+\cdots \arrow[r] & 0 \arrow[r] & 0 \arrow[r] & L_n \arrow[r]
+  & L_{n-1} \arrow[r] & \cdots \arrow[r] & L_0 \arrow[r] & 0 \arrow[r]
+  & \cdots.
+\end{tikzcd}
+\end{center}
+从而存在拟同构
+
+\VerdierSemanticAnchor{ch3d-2-3-1-e3-quasi-isomorphism}
+\begin{center}
+\begin{tikzcd}[column sep=2.7em,row sep=2.6em]
+\cdots \arrow[r] & L^{-n-1} \arrow[r] \arrow[d]
+  & L^{-n} \arrow[r] \arrow[d,"v"] & L^{-n+1} \arrow[r] \arrow[d]
+  & \cdots \\
+\cdots \arrow[r] & 0 \arrow[r] & X \arrow[r] & 0 \arrow[r] & \cdots
+\end{tikzcd}
+\end{center}
+\endgroup

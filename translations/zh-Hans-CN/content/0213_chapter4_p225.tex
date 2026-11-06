@@ -1,0 +1,87 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0225}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-1-1-cont}
+这样就定义了一个函子
+$\mathcal{F}\ell_1(\widetilde{\mathbb Z})\longrightarrow K(\mathcal A)$。
+
+设 $(p,q,r)$ 是 $\mathcal{F}\ell_2(\widetilde{\mathbb Z})$ 的元素。定义
+
+\VerdierSemanticAnchor{ch4d-4-1-1-6}
+\begin{equation}
+\delta(p,q,r)\colon\mathcal Y(q,r)\longrightarrow\mathcal Y(p,q)[1],
+\tag{4.1.1.6}
+\end{equation}
+为如下复形态射的同伦类：
+
+\VerdierSemanticAnchor{ch4d-4-1-1-7}
+\begin{equation}
+d(p,q,r)\colon\mathcal Y(q,r)\longrightarrow\mathcal Y(p,q)[1],
+\tag{4.1.1.7}
+\end{equation}
+该态射由下式定义：
+
+\VerdierSemanticAnchor{ch4d-4-1-1-8}
+\begin{equation}
+d(p,q,r)^i=
+\begin{pmatrix}
+0 & \operatorname{id}_{Y(q)}^{i+1}\\
+0 & 0
+\end{pmatrix}.
+\tag{4.1.1.8}
+\end{equation}
+
+已知（第一章，3.3.6），$K(\mathcal A)$ 中的如下三角：
+
+\VerdierSemanticAnchor{ch4d-4-1-1-distinguished-triangle}
+\begin{center}
+\resizebox{\textwidth}{!}{%
+$\bigl(\mathcal Y(p,q),\mathcal Y(p,r),\mathcal Y(q,r),
+\Phi((p,q),(p,r)),\Phi((p,r),(q,r)),\delta(p,q,r)\bigr)$%
+}
+\end{center}
+是特异三角，并函子性地依赖于 $(p,q,r)$。因此，我们构造了一个取值于
+$K(\mathcal A)$ 的谱对象 $(\mathcal Y(p,q),\delta(p,q,r))$。
+
+设 $Y\colon\widetilde{\mathbb Z}\longrightarrow
+\operatorname{comp}(\mathcal A)$ 与
+$Y'\colon\widetilde{\mathbb Z}\longrightarrow
+\operatorname{comp}(\mathcal A)$ 是两个函子，并设
+$m\colon Y\longrightarrow Y'$ 是函子态射。态射 $m$ 诱导相应谱对象之间的态射：
+
+\VerdierSemanticAnchor{ch4d-4-1-1-9}
+\begin{equation}
+\mathcal M(p,q)\colon\mathcal Y(p,q)\longrightarrow\mathcal Y'(p,q).
+\tag{4.1.1.9}
+\end{equation}
+
+\VerdierSemanticAnchor{ch4d-4-1-2}
+\medskip\noindent\textbf{4.1.2.}\quad
+设 $Y$ 是 $\operatorname{comp}(\mathcal A)$ 的对象。置
+
+\VerdierSemanticAnchor{ch4d-4-1-2-1}
+\begin{equation}
+q\in\mathbb Z,\qquad
+Y(q)=0\longrightarrow0\longrightarrow Y^{-q}\longrightarrow
+Y^{-q+1}\longrightarrow Y^{-q+2}\longrightarrow\cdots,
+\tag{4.1.2.1}
+\end{equation}
+其中这个复形的微分由 $Y$ 的微分诱导。类似地，置
+
+\VerdierSemanticAnchor{ch4d-4-1-2-2}
+\begin{equation}
+Y(-\infty)=0,\qquad Y(+\infty)=Y.
+\tag{4.1.2.2}
+\end{equation}
+于是有单态射：
+
+\VerdierSemanticAnchor{ch4d-4-1-2-filtration-chain}
+\[
+0=Y(-\infty)\hookrightarrow\cdots\hookrightarrow Y(q)
+\hookrightarrow Y(q+1)\hookrightarrow Y(q+2)\hookrightarrow\cdots
+\hookrightarrow Y(+\infty)=Y,
+\]
+\endgroup

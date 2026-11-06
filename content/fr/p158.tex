@@ -1,0 +1,48 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0158}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch3-3-2-5-kernel-triangle}
+Soit $(Z,X,Y',u,f'g,v)$ un triangle distingué de $\mathcal D$. Le diagramme
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.1em]
+h(Z)\arrow[r,"h(fu)"]\arrow[d,"h(u)"']&h(Y)\arrow[d,"\operatorname{id}_{h(Y)}"]\\
+h(X)\arrow[r,"h(f)"]\arrow[d,"h(g)"']&h(Y)\arrow[d,"h(g')"]\\
+h(X')\arrow[r,"h(f')"']&h(Y')
+\end{tikzcd}
+\]
+donne, en prenant les images horizontales,
+\VerdierSemanticAnchor{ch3-3-2-5-1}
+\[
+\operatorname{Im}(fu)\xrightarrow{\beta}V\xrightarrow{\alpha}V'.
+\tag{3.2.5.1}
+\]
+\VerdierSemanticAnchor{ch3-3-2-5-kernel-proof}
+Montrons que le morphisme $\operatorname{Im}(fu)\to V$ est le noyau de
+$\alpha$. Tout d'abord, $\beta$ est un monomorphisme : en effet,
+$\operatorname{Im}(fu)$ et $V$ sont des sous-objets de $h(Y)$. Ensuite,
+$\alpha\beta=0$ : le morphisme canonique
+$h(Z)\to\operatorname{Im}(fu)$ est un épimorphisme, le morphisme canonique
+$V'\to h(Y')$ est un monomorphisme, et $h(f'gu)$ est l'image par $h$ du
+composé de deux morphismes consécutifs d'un triangle distingué ; il est donc
+nul (1.2.2). Il reste à montrer que la suite (3.2.5.1) est exacte en $V$.
+Soit $W$ un objet de
+$\mathcal D$. Tout morphisme $\sigma\colon h(W)\to V$ provient d'un morphisme
+de $h(W)$ dans $h(X)$, puisque $h(W)$ est projectif dans
+$\mathcal D^\wedge$, c'est-à-dire d'un morphisme $m\colon W\to X$. Son
+composé avec $\alpha$ est nul si et seulement si $f'gm=0$, puisque $V'$ est
+un sous-objet de $h(Y')$. Par (1.2.1), il existe alors
+$n\colon W\to Z$ tel que $un=m$. Ainsi $\sigma$ se factorise par
+$\operatorname{Im}(fu)$.
+
+\VerdierSemanticAnchor{ch3-3-2-5-cokernel-setup}
+Montrons maintenant que le conoyau de $\alpha$ dans $\mathcal D^\wedge$ est
+un objet admissible de $\mathcal D^\wedge$. Soit
+$(X,Y',Z',g'f,u',v')$ un triangle distingué de $\mathcal D$. Le diagramme
+\[
+\begin{tikzcd}[column sep=5em,row sep=2em]
+h(X)\arrow[r,"h(f)"]\arrow[d,"h(g)"']&h(Y)\arrow[d,"h(g')"]\\
+h(X')\arrow[r,"h(f')"]\arrow[d,"\operatorname{id}_{h(X')}"']&h(Y')\arrow[d,"h(u')"]\\
+h(X')\arrow[r,"h(u'f')"']&h(Z')
+\end{tikzcd}
+\]
+\endgroup

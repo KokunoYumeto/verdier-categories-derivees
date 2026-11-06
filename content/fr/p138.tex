@@ -1,0 +1,108 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0138}%
+\begingroup
+\small
+\setlength{\emergencystretch}{2em}%
+\setlength{\parskip}{0pt}%
+\setlength{\abovedisplayskip}{1pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{1pt plus 1pt minus 1pt}%
+
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-2-4-b}
+\noindent b) Lorsque la catégorie $\mathcal C$ est additive, la catégorie
+$\mathcal C(S^{-1})$ est additive et le foncteur $Q$ est additif.
+
+\VerdierSemanticAnchor{ch2-2-2-4-c}
+\par\noindent c) Soit $\widehat S$ l'ensemble des morphismes de $\mathcal C$
+qui sont transformés par $Q$ en isomorphismes de $\mathcal C(S^{-1})$.
+\VerdierSemanticAnchor{ch2-2-2-4-c-saturation}%
+L'ensemble $\widehat S$ est un système multiplicatif saturé de $\mathcal C$.
+Tout système multiplicatif saturé de $\mathcal C$ qui contient $S$ contient
+$\widehat S$.
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-2-4-proof-b}
+\par\noindent La première assertion résulte immédiatement de la propriété
+universelle de $\mathcal C(S^{-1})$ : la catégorie
+$\bigl(\mathcal C^\circ(S^{-1})\bigr)^\circ$ est une solution de ce problème.
+La deuxième assertion résulte immédiatement des assertions b) et c) du
+théorème (2.2.2).
+\VerdierSemanticAnchor{ch2-2-2-4-proof-c-characterization}%
+Il résulte immédiatement de la description des morphismes de
+$\mathcal C(S^{-1})$ qu'un morphisme $f$ de $\mathcal C$ est transformé par
+$Q$ en isomorphisme si et seulement s'il existe deux morphismes de
+$\mathcal C$, $g$ et $h$, tels que $gf$ et $fh$ soient définis et
+appartiennent à $S$.
+\VerdierSemanticAnchor{ch2-2-2-4-proof-c-sm2-sm3}%
+On en déduit immédiatement que l'ensemble $\widehat S$ possède les
+propriétés SM2) et SM3).
+\VerdierSemanticAnchor{ch2-2-2-4-proof-c-sm1-sm4}%
+De plus, il résulte de la définition de $\widehat S$ que cet ensemble possède
+les propriétés SM1) et SM4).
+\VerdierSemanticAnchor{ch2-2-2-4-proof-c-conclusion}%
+L'ensemble $\widehat S$ est donc un système multiplicatif saturé de
+$\mathcal C$. La dernière assertion de (2.2.4) est triviale.
+
+\VerdierSemanticAnchor{ch2-2-2-5}
+\smallskip
+\noindent\textbf{2.2.5.} Soient $\mathcal C$ une catégorie et $S$ un système
+multiplicatif de $\mathcal C$.
+\VerdierSemanticAnchor{ch2-2-2-5-localized-category}%
+La catégorie $\mathcal C(S^{-1})$ est appelée la \emph{catégorie localisée}
+de $\mathcal C$ par rapport au système $S$.
+\VerdierSemanticAnchor{ch2-2-2-5-localization-functor}%
+Le foncteur $Q\colon\mathcal C\longrightarrow\mathcal C(S^{-1})$ est appelé
+le \emph{foncteur de localisation}.
+\VerdierSemanticAnchor{ch2-2-2-5-saturation}%
+Le système multiplicatif $\widehat S$ est appelé le \emph{saturé} du système
+$S$.
+
+\VerdierSemanticAnchor{ch2-2-2-6}
+\smallskip
+\noindent\textbf{Théorème 2.2.6.}\quad
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-2-6-setup}%
+Soient $\mathcal D$ une catégorie triangulée et $S$ un système multiplicatif
+de $\mathcal D$ (2.1.4). Désignons par $\mathcal D(S^{-1})$ la catégorie
+localisée de $\mathcal D$ et
+$Q\colon\mathcal D\longrightarrow\mathcal D(S^{-1})$ le foncteur de
+localisation.
+
+\VerdierSemanticAnchor{ch2-2-2-6-a}
+\par\noindent a) Il existe sur $\mathcal D(S^{-1})$ une et une seule structure
+de $\mathbb Z$-catégorie stricte telle que $Q$ soit un $\mathbb Z$-foncteur
+strict.
+
+\VerdierSemanticAnchor{ch2-2-2-6-b}
+\par\noindent b) Il existe sur $\mathcal D(S^{-1})$ une et une seule structure
+triangulée telle que $Q$ soit un foncteur exact. Les triangles distingués
+pour cette structure sont les triangles isomorphes aux images par $Q$ des
+triangles distingués de $\mathcal D$.
+
+\VerdierSemanticAnchor{ch2-2-2-6-c-factorization}
+\par\noindent c) Tout foncteur exact (resp. cohomologique)
+$F\colon\mathcal D\longrightarrow\mathcal D'$ dans une catégorie triangulée
+(resp. abélienne) qui transforme les morphismes de $S$ en isomorphismes se
+factorise d'une manière unique par
+$Q\colon\mathcal D\longrightarrow\mathcal D(S^{-1})$ en un foncteur exact
+(resp. cohomologique)
+$G\colon\mathcal D(S^{-1})\longrightarrow\mathcal D'$.
+\VerdierSemanticAnchor{ch2-2-2-6-c-morphism-lifting}%
+Soient $F_1,F_2\colon\mathcal D\rightrightarrows\mathcal D'$ deux foncteurs
+exacts (resp. cohomologiques) qui transforment les morphismes de $S$ en
+isomorphismes ;
+$G_1,G_2\colon\mathcal D(S^{-1})\rightrightarrows\mathcal D'$ leurs
+factorisations respectives et
+$m\colon F_1\longrightarrow F_2$ un morphisme de foncteurs exacts
+(resp. cohomologiques). Il existe un et un seul morphisme de foncteurs
+$p\colon G_1\longrightarrow G_2$ tel que $m=p\star Q$.
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-2-6-proof-a}
+\par\noindent La première assertion est une conséquence immédiate du théorème
+(2.2.2) et de SM5).
+\VerdierSemanticAnchor{ch2-2-2-6-proof-c-p139-boundary}%
+La troisième assertion est une conséquence immédiate de la
+
+\VerdierSemanticAnchor{ch2-2-2-6-p139-boundary}
+\endgroup

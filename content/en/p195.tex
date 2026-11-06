@@ -1,0 +1,60 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0195}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-1-proof-cont}
+where the $X_n$ are objects of $\operatorname{comp}^{-}(\mathcal A)$,
+the $u_n$ are elementary morphisms of height $-n$, and the following
+diagram is commutative up to homotopy:
+
+\VerdierSemanticAnchor{ch3d-2-3-1-limits-square}
+\begin{center}
+\begin{tikzcd}[column sep=5.5em,row sep=3.0em]
+\displaystyle\varprojlim_n X_n \arrow[r] \arrow[d]
+  & X \arrow[d,"m"] \\
+\displaystyle\varinjlim_n X_n \arrow[r,"\sim"'] & Y
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-2-3-1-normalization}
+To prove the proposition, we may therefore suppose that
+$X=\varprojlim_n X_n$ and that $X_n=Y$ and
+$u_n=\operatorname{id}$ for $n$ sufficiently small. We shall construct
+inductively on $n$:
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-data}
+\noindent a) A sequence of elementary morphisms
+\[
+v_n\colon L_n^\bullet\longrightarrow L_{n-1}^\bullet,
+\qquad n\in\mathbf Z,\qquad
+v_n\text{ elementary of height }-n.
+\]
+
+\noindent b) A sequence of morphisms
+\[
+w_n\colon L_n^\bullet\longrightarrow X_n
+\]
+such that:
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-condition-1}
+\noindent 1) For every $n\in\mathbf Z$, the components of degree $i$ with
+$i\geq -n$ in $L_n^\bullet$ belong to $M$, and the components of degree $i$
+with $i<-n$ belong to $M^\wedge$.
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-square}
+\noindent 2) The following diagrams are commutative:
+\begin{center}
+\begin{tikzcd}[column sep=5.0em,row sep=2.8em]
+L_n^\bullet \arrow[r,"w_n"] \arrow[d,"v_n"']
+  & X_n \arrow[d,"u_n"] \\
+L_{n-1}^\bullet \arrow[r,"w_{n-1}"'] & X_{n-1}
+\end{tikzcd}
+\end{center}
+for every $n\in\mathbf Z$.
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-condition-3}
+\noindent 3) The object $L_n^\bullet$ equals $Y$, and the morphisms $v_n$
+and $w_n$ are the identity for $n$ sufficiently small.
+\endgroup

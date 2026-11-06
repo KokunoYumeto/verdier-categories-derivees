@@ -1,0 +1,109 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0114}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2}
+\medskip
+\noindent\textbf{1.2. 三角范畴的初步性质。}
+
+\VerdierSemanticAnchor{ch2-1-2-1}
+\medskip
+\noindent\textbf{命题 1.2.1.}\quad
+设 $\mathcal D$ 为一个三角范畴。对于 $\mathcal D$ 的每个对象 $X$，函子
+$\operatorname{Hom}_{\mathcal D}(X,\mathord\cdot)$ 与
+$\operatorname{Hom}_{\mathcal D}(\mathord\cdot,X)$ 都是取值于阿贝尔群范畴的
+上同调函子。
+
+\VerdierSemanticAnchor{ch2-1-2-1-hom-functors}
+\noindent\emph{证明。}\quad
+先证明函子 $\operatorname{Hom}_{\mathcal D}(X,\mathord\cdot)$ 是上同调函子
+就够了。另一个断言随后可由取反范畴 $\mathcal D^\circ$ (1.1.7) 得到。
+因此，设
+
+\VerdierSemanticAnchor{ch2-1-2-1-source-triangle}
+\[
+  X'\xrightarrow{u'}Y'\xrightarrow{v'}Z'\xrightarrow{w'}X'[1]
+\]
+为一个特异三角。只需证明在图式
+
+\VerdierSemanticAnchor{ch2-1-2-1-1}
+\begin{equation}
+  \resizebox{0.98\linewidth}{!}{$
+    \operatorname{Hom}_{\mathcal D}(X,X')
+    \xrightarrow{\operatorname{Hom}_{\mathcal D}(X,u')}
+    \operatorname{Hom}_{\mathcal D}(X,Y')
+    \xrightarrow{\operatorname{Hom}_{\mathcal D}(X,v')}
+    \operatorname{Hom}_{\mathcal D}(X,Z')
+    \xrightarrow{\operatorname{Hom}_{\mathcal D}(X,w')}
+    \operatorname{Hom}_{\mathcal D}(X,X'[1])
+  $}
+  \tag{1.2.1.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch2-1-2-1-exactness-reduction}
+中有
+\[
+  \operatorname{Hom}_{\mathcal D}(X,v')
+  \operatorname{Hom}_{\mathcal D}(X,u')=0
+\]
+并且该图式在 $\operatorname{Hom}_{\mathcal D}(X,Y')$ 处正合。事实上，公理
+TRII 随后会在 $\operatorname{Hom}_{\mathcal D}(X,Z')$ 处给出同一结论。
+设 $f\colon X\longrightarrow X'$。由 TRI，三角
+
+\VerdierSemanticAnchor{ch2-1-2-1-identity-triangle}
+\[
+  X\xrightarrow{\operatorname{id}_X}X\longrightarrow0\longrightarrow X[1]
+\]
+是特异三角；由 TRII 与 TRIII，存在态射 $g\colon X\longrightarrow Y'$，使下图
+交换：
+
+\VerdierSemanticAnchor{ch2-1-2-1-2}
+\begin{equation}
+  \begin{tikzcd}[column sep=3.2em,row sep=2.5em]
+    X \arrow[r,"{\operatorname{id}_X}"] \arrow[d,"f"']
+      & X \arrow[r] \arrow[d,"g"']
+      & 0 \arrow[r] \arrow[d]
+      & X[1] \arrow[d,"{f[1]}"] \\
+    X' \arrow[r,"u'"']
+      & Y' \arrow[r,"v'"']
+      & Z' \arrow[r,"w'"']
+      & X'[1]
+  \end{tikzcd}
+  \tag{1.2.1.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch2-1-2-1-zero-composite}
+由此得到 $u'f=g$ 以及 $v'u'f=v'g=0$，从而证明
+$\operatorname{Hom}_{\mathcal D}(X,v')
+\operatorname{Hom}_{\mathcal D}(X,u')=0$。
+
+\VerdierSemanticAnchor{ch2-1-2-1-lifting}
+现设 $g\colon X\longrightarrow Y'$ 为满足 $v'g=0$ 的态射。由 TRII 与
+TRIII，存在态射 $f\colon X\longrightarrow X'$，使图 (1.2.1.2) 交换。
+于是 $g=u'f$，因此列 (1.2.1.1) 在
+$\operatorname{Hom}_{\mathcal D}(X,Y')$ 处正合。
+
+\VerdierSemanticAnchor{ch2-1-2-2}
+\medskip
+\noindent\textbf{推论 1.2.2.}\quad
+在一个特异三角
+$X'\xrightarrow{u'}Y'\xrightarrow{v'}Z'\xrightarrow{w'}X'[1]$ 中，
+任意两个相继态射的复合为零。
+
+\VerdierSemanticAnchor{ch2-1-2-2-proof}
+\noindent\emph{证明。}\quad
+由 TRII，只需证明 $v'u'=0$。为此，在正合列 (1.2.1.1) 中取
+$X=X'$，并考察
+$\operatorname{id}_{X'}\in\operatorname{Hom}_{\mathcal D}(X',X')$ 的
+相继像即可。
+
+\VerdierSemanticAnchor{ch2-1-2-3}
+\medskip
+\noindent\textbf{推论 1.2.3.}\quad
+设 $(X,Y,Z,u,v,w)$ 与 $(X',Y',Z',u',v',w')$ 为 $\mathcal D$ 中两个
+特异三角，$(f_1,f_2,f_3)$ 为三角的一个态射。如果三个 $f_i$ 中的两个
+（$1\leq i\leq3$）是同构，则第三个也是同构。
+\endgroup

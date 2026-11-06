@@ -1,0 +1,90 @@
+\VerdierPhysicalPageAnchor{0063}%
+\VerdierSemanticAnchor{ch1-1-6-5-continuation}
+from which it follows immediately:
+
+\VerdierSemanticAnchor{ch1-1-6-5-deduction}
+\VerdierSemanticAnchor{ch1-1-6-5-beta-s-coboundary}
+\begin{equation*}
+  \alpha_s(\sigma_1,\sigma_2)\alpha(\sigma_1,\sigma_2)^{-1}
+  =\beta_s(\sigma_2)\beta_s(\sigma_1+\sigma_2)^{-1}\beta_s(\sigma_1),
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq3}
+\VerdierSemanticAnchor{ch1-1-6-5-eq3-beta}
+\VerdierSemanticAnchor{ch1-1-6-5-eq3-basis}
+\begin{equation}
+  \begin{aligned}
+    \beta_s(\sigma_1)
+      &=(-1)^{\left(
+          \sum_{\substack{i<j\\s(i)>s(j)}}p_i p_j
+        \right)},\\
+    \beta_s(e_i)&=1,
+      \qquad \forall i\in[1,n].
+  \end{aligned}
+  \tag{1.6.5.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-5-application}
+Consequently, by (1.6.2), every map
+$\beta\colon\mathbb Z^n\longrightarrow\mathbb Z/2\mathbb Z$ such that
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq4}
+\begin{equation}
+  \alpha_s(\sigma_1,\sigma_2)\alpha(\sigma_1,\sigma_2)^{-1}
+  =\beta(\sigma_2)\beta(\sigma_1+\sigma_2)^{-1}\beta(\sigma_1)
+  \tag{1.6.5.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq5-intro}
+is of the form
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq5}
+\begin{equation}
+  \beta=\beta_s\eta,
+  \tag{1.6.5.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-5-closure}
+where $\eta\colon\mathbb Z^n\longrightarrow\mathbb Z/2\mathbb Z$ is
+the unique group homomorphism whose values on the
+$e_j\in\mathbb Z^n$ are $\beta(e_j)$.
+
+\VerdierSemanticAnchor{ch1-1-6-6}
+\VerdierSemanticAnchor{ch1-1-6-6-product-setup}
+\noindent\textbf{1.6.6.}\quad
+Let $(C_i,\mathbb Z,T_i,c_i)$, $1\leq i\leq n$, be
+$\mathbb Z$-categories, and let $(D,\mathbb Z,T,c)$ be an additive
+$\mathbb Z$-category. Denote by $(C,\mathbb Z^n,T,c)$ the product
+category of the $(C_i,\mathbb Z,T_i,c_i)$. The group $\mathbb Z^n$ is
+naturally equipped with an ordered basis $e_1,\ldots,e_n$. It acts up
+to isomorphism on $C$ by the formula (we use here the right-hand
+notation introduced in (1.3.12)):
+
+\VerdierSemanticAnchor{ch1-1-6-6-eq1}
+\begin{equation}
+  (X_1,\ldots,X_n)[\sigma]
+  =(X_1[l_1],\ldots,X_n[l_n]),
+  \qquad
+  \sigma=\sum_{i=1}^{n}l_i e_i.
+  \tag{1.6.6.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-6-phi-action}
+Let $\varphi\colon\mathbb Z^n\longrightarrow\mathbb Z$ be the
+homomorphism
+$\varphi(\sum_{i=1}^{n}l_i e_i)=\sum_{i=1}^{n}l_i$.
+Let $\mathbb Z^n$ act on $D$ through $\varphi$ (1.4.1). In this
+situation, we shall always use the following conventions:
+
+\VerdierSemanticAnchor{ch1-1-6-6-sign-rule-1}
+\noindent\textbf{Sign rule I:}
+\emph{Functors from $C$ to $D$ will always, unless expressly stated
+otherwise, be $\mathbb Z^n$-functors twisted by the Koszul cocycle
+relative to the ordered basis $e_1,\ldots,e_n$.}
+
+\VerdierSemanticAnchor{ch1-1-6-6-sign-rule-2}
+\noindent\textbf{Sign rule II:}
+\emph{morphisms of functors will, unless expressly stated otherwise,
+be morphisms of $\mathbb Z^n$-functors relative to the trivial
+homomorphism
+$\beta\colon\mathbb Z^n\longrightarrow\mathbb Z/2\mathbb Z$ (1.4.6).}

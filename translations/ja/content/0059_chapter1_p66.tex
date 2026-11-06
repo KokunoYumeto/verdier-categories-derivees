@@ -1,0 +1,90 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0066}%
+\VerdierSemanticAnchor{ch1-2}
+\section{加法圏における複体}
+
+\VerdierSemanticAnchor{ch1-2-1}
+\subsection{\texorpdfstring{$n$}{n}-重複複体}
+
+\VerdierSemanticAnchor{ch1-2-1-1}
+\noindent\textbf{2.1.1.}\quad
+まず記法を定める。集合
+
+\VerdierSemanticAnchor{ch1-2-1-1-set}
+\begin{equation*}
+  [n]=\{p\in\mathbb Z\mid 1\leq p\leq n\}
+\end{equation*}
+を $[n]$ と記す。
+
+\VerdierSemanticAnchor{ch1-2-1-1-free-group}
+集合 $[n]$ が生成する自由アーベル群を $\mathbb Z[n]$ と記し、各
+$i\in[n]$ に対して、$i$ に対応する $\mathbb Z[n]$ の生成元を $e_i$ と
+記す。写像 $\varphi\colon[n]\to[m]$ に対し、対応する群準同型
+$\mathbb Z[n]\to\mathbb Z[m]$ も $\varphi$ と記す。この節では $C$ を
+加法圏とする。
+
+\VerdierSemanticAnchor{ch1-2-1-2}
+\VerdierSemanticAnchor{ch1-2-1-2-definition}
+\noindent\textbf{定義 2.1.2.}\quad
+$C$ の対象からなる\emph{$n$-重複複体}とは、次のデータからなる対象である：
+
+\begin{enumerate}
+\renewcommand{\labelenumi}{\arabic{enumi})}
+\item \VerdierSemanticAnchor{ch1-2-1-2-objects}%
+  各 $\sigma\in\mathbb Z[n]$ に対して $C$ の対象 $X^\sigma$；
+\item \VerdierSemanticAnchor{ch1-2-1-2-differentials}%
+  各 $\sigma\in\mathbb Z[n]$ と各 $i\in[n]$ に対して射
+  \VerdierSemanticAnchor{ch1-2-1-2-differential-map}%
+  \begin{equation*}
+    d^{\sigma,i}\colon X^\sigma\longrightarrow X^{\sigma+e_i},
+  \end{equation*}
+  ただし、これらの射は次の条件に従う：
+\end{enumerate}
+
+\VerdierSemanticAnchor{ch1-2-1-2-eq1}
+\begin{equation}
+  \begin{aligned}
+    d^{\sigma+e_i,i}d^{\sigma,i}&=0
+      &&\forall\sigma\in\mathbb Z[n],\ \forall i\in[n],\\
+    d^{\sigma+e_j,i}d^{\sigma,j}
+      &=d^{\sigma+e_i,j}d^{\sigma,i}
+      &&\forall\sigma\in\mathbb Z[n],\ \forall i,j\in[n].
+  \end{aligned}
+  \tag{2.1.2.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-1-3}
+\noindent\textbf{2.1.3.}\quad
+$C$ の対象からなる $n$-重複複体を、通常は単に $C$ における
+\emph{$n$-重複複体}と呼ぶ。$(X^\sigma,d^{\sigma,i})$ を $C$ における
+$n$-重複複体とする。
+\VerdierSemanticAnchor{ch1-2-1-3-component}
+対象 $X^\sigma$ を複体 $(X^\sigma,d^{\sigma,i})$ の
+\emph{次数 $\sigma$ の成分}と呼ぶ。
+\VerdierSemanticAnchor{ch1-2-1-3-differential}
+射 $d^{\sigma,i}$ を複体 $(X^\sigma,d^{\sigma,i})$ の
+\emph{方向 $i$ における次数 $\sigma$ の微分}と呼ぶ。
+\VerdierSemanticAnchor{ch1-2-1-3-notation}
+$Y$ を $C$ における $n$-重複複体とする。$Y$ の次数 $\sigma$ の成分を
+$Y^\sigma$、方向 $i$ における次数 $\sigma$ の微分を $d_Y^{\sigma,i}$ と
+記す。
+
+\VerdierSemanticAnchor{ch1-2-1-4}
+\VerdierSemanticAnchor{ch1-2-1-4-definition}
+\noindent\textbf{定義 2.1.4.}\quad
+$Y$ と $Y'$ を $C$ における二つの $n$-重複複体とする。$Y$ から $Y'$ への
+\emph{複体の射}とは、微分と可換する $C$ の射の族
+
+\VerdierSemanticAnchor{ch1-2-1-4-family}
+\begin{equation*}
+  \bigl(f^\sigma\colon Y^\sigma\longrightarrow Y'^{\sigma}\bigr)_{
+    \sigma\in\mathbb Z[n]}
+\end{equation*}
+すなわち次を満たす族である：
+
+\VerdierSemanticAnchor{ch1-2-1-4-eq1}
+\begin{equation}
+  f^{\sigma+e_i}d_Y^{\sigma,i}
+  =d_{Y'}^{\sigma,i}f^\sigma.
+  \tag{2.1.4.1}
+\end{equation}

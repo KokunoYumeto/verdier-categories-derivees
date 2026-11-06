@@ -1,0 +1,107 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0246}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-6-4}
+\noindent\textbf{4.6.4.}\quad
+$X^{\bullet\bullet}$ を $\mathcal A$ の二重複体とする（第 I 章、2.1.2）。
+二重複体 $X^{\bullet\bullet}$ は
+$\operatorname{comp}(\operatorname{comp}(\mathcal A))$ の対象を定める：
+
+\VerdierSemanticAnchor{ch4d-4-6-4-double-complex}
+\[
+X^{\bullet\bullet}\colon\quad
+\cdots\longrightarrow X^{\bullet,n-1}
+\xrightarrow{d_2^{\bullet,n-1}}X^{\bullet,n}
+\xrightarrow{d_2^{\bullet,n}}X^{\bullet,n+1}
+\longrightarrow\cdots.
+\]
+（(4.1.9) の記法を用いる。符号に注意せよ！）
+
+\VerdierSemanticAnchor{ch4d-4-6-4-b1}
+$B_1^p(X^{\bullet\bullet})$ を次の単純複体と記す：
+
+\VerdierSemanticAnchor{ch4d-4-6-4-1}
+\[
+\left\{
+\begin{aligned}
+B_1^p(X^{\bullet\bullet})^i
+  &=\operatorname{Im}(d_1^{p-1,i}),\\
+d_{B_1^p(X^{\bullet\bullet})}^{i}
+  &\text{次の微分から誘導される： }d_2^{p,i}.
+\end{aligned}
+\right.
+\tag{4.6.4.1}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-4-z1}
+$Z_1^p(X^{\bullet\bullet})$ を次の単純複体と記す：
+
+\VerdierSemanticAnchor{ch4d-4-6-4-2}
+\[
+\left\{
+\begin{aligned}
+Z_1^p(X^{\bullet\bullet})^i
+  &=\operatorname{Ker}(d_1^{p,i}),\\
+d_{Z_1^p(X^{\bullet\bullet})}^{i}
+  &\text{次の微分から誘導される： }d_2^{p,i}.
+\end{aligned}
+\right.
+\tag{4.6.4.2}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-4-h1}
+$H_1^p(X^{\bullet\bullet})$ を次の単純複体と記す：
+
+\VerdierSemanticAnchor{ch4d-4-6-4-3}
+\[
+\left\{
+\begin{aligned}
+H_1^p(X^{\bullet\bullet})^i
+  &=Z_1^p(X^{\bullet\bullet})^i/B_1^p(X^{\bullet\bullet})^i,\\
+d_{H_1^p(X^{\bullet\bullet})}^{i}
+  &\text{次の微分から誘導される： }d_2^{p,i}.
+\end{aligned}
+\right.
+\tag{4.6.4.3}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-4-simple-as-double}
+最後に、$Y$ が $\mathcal A$ の単純複体であるとき、第二次数が零でない成分は
+零であり、第二次数が零である成分と第一微分は $Y$ の成分と微分であるような
+二重複体も $Y$ と記す。
+
+\VerdierSemanticAnchor{ch4d-4-6-5}
+\medskip\noindent\textbf{定義 4.6.5.}\quad
+$Y$ を $\mathcal A$ の単純複体とする。$Y$ の
+\emph{Cartan--Eilenberg 入射分解}とは、二重複体
+
+\VerdierSemanticAnchor{ch4d-4-6-5-double-complex}
+\[
+I^{\bullet\bullet}\colon\quad
+\cdots\longrightarrow0\longrightarrow I^{\bullet,0}
+\longrightarrow I^{\bullet,1}\longrightarrow I^{\bullet,2}
+\longrightarrow\cdots,
+\]
+と、\emph{増大写像}と呼ばれる射
+
+\VerdierSemanticAnchor{ch4d-4-6-5-augmentation}
+\[
+\varepsilon\colon Y\longrightarrow I^{\bullet\bullet}
+\]
+であって、各整数 $p$ に対し、単純複体
+$B_1^p(I^{\bullet\bullet})$ (4.6.4.1) および
+$H_1^p(I^{\bullet\bullet})$ (4.6.4.3) は、それぞれ増大写像
+
+\VerdierSemanticAnchor{ch4d-4-6-5-augmentations}
+\[
+B_1^p(\varepsilon)\colon
+\operatorname{Im}(d_Y^{p-1})\longrightarrow B_1^p(I^{\bullet\bullet}),
+\]
+\[
+H_1^p(\varepsilon)\colon
+H^p(Y)\longrightarrow H_1^p(I^{\bullet\bullet})
+\]
+\endgroup

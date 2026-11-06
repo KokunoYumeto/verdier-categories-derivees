@@ -1,0 +1,80 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0187}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-1-1-base-change}
+Soit alors $m\colon Z\longrightarrow X$ un morphisme de complexes. Il est
+clair que le complexe $Z'$ au-dessus de $Z$ obtenu par le changement de
+base $Z\xrightarrow{m}X$ :
+
+\VerdierSemanticAnchor{ch3d-2-1-1-base-change-square}
+\begin{center}
+\begin{tikzcd}[column sep=4.2em,row sep=2.6em]
+Z' \arrow[r] \arrow[d] & X(u,i) \arrow[d,"{p(u,i)}"] \\
+Z \arrow[r,"m"'] & X
+\end{tikzcd}
+\end{center}
+est isomorphe à un complexe
+$p(w,i)\colon Z(w,i)\longrightarrow Z$ pour un morphisme $w$ convenable.
+
+\VerdierSemanticAnchor{ch3d-2-1-2}
+\medskip\noindent\textbf{Lemme 2.1.2.}\quad
+\textit{a) Le morphisme
+$H^j(p(u,i))\colon H^j(X(u,i))\longrightarrow H^j(X)$ est un
+isomorphisme pour $j\neq i,i+1$.}
+
+\noindent\textit{b) On a des suites exactes :}
+
+\VerdierSemanticAnchor{ch3d-2-1-2-exact-sequences}
+\[
+0\longrightarrow H^i(X(u,i))\longrightarrow H^i(X)
+\longrightarrow
+\frac{\operatorname{Ker}(d_X^i)+\operatorname{Im}(u)}
+ {\operatorname{Im}(d_X^{i-1})+\operatorname{Im}(u)}
+\longrightarrow0,
+\]
+\[
+\begin{aligned}
+0\longrightarrow{}&
+\frac{\operatorname{Ker}(d_X^i)+\operatorname{Im}(u)}
+ {\operatorname{Im}(d_X^{i-1})+\operatorname{Im}(u)}
+\longrightarrow
+\frac{X^i}{\operatorname{Im}(d_X^{i-1})+\operatorname{Im}(u)}\\
+&\longrightarrow
+\frac{X^i}{\operatorname{Ker}(d_X^i)+\operatorname{Im}(u)}
+\longrightarrow0,
+\end{aligned}
+\]
+\[
+0\longrightarrow
+\frac{X^i}{\operatorname{Ker}(d_X^i)+\operatorname{Im}(u)}
+\longrightarrow H^{i+1}(X(u,i))
+\longrightarrow H^{i+1}(X)\longrightarrow0.
+\]
+
+\noindent\textit{c) Pour que $p(u,i)$ soit un quasi-isomorphisme, il
+faut et il suffit que :}
+\[
+\operatorname{Im}(d_X^{i-1})+\operatorname{Im}(u)=X^i.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-1-2-proof}
+La ``chasse au diagramme'' est laissée au lecteur.
+
+\VerdierSemanticAnchor{ch3d-2-1-3}
+\medskip\noindent\textbf{Définition 2.1.3.}\quad
+Un morphisme de complexes $m\colon Z\longrightarrow X$ est appelé un
+\emph{morphisme élémentaire de hauteur $i$} s'il est isomorphe dans
+$\mathcal{F}\ell_1(\operatorname{comp}(\mathcal A))$ à un morphisme du type
+$p(u,i)$, où $u$ est un épimorphisme.
+
+\VerdierSemanticAnchor{ch3d-2-1-3-properties}
+Un morphisme élémentaire est donc, en particulier, un quasi-isomorphisme
+((2.1.2), c)). Un morphisme élémentaire est un épimorphisme de
+$\operatorname{comp}(\mathcal A)$. Un épimorphisme de
+$\operatorname{comp}(\mathcal A)$ est un morphisme élémentaire si et seulement
+si son noyau est un complexe acyclique comportant au plus deux composants
+non nuls. Le composé de deux morphismes élémentaires de même hauteur est
+\endgroup

@@ -1,0 +1,75 @@
+\documentclass[10pt,a4paper,twoside,openany]{book}
+\usepackage[
+  a4paper,
+  top=22mm,
+  bottom=23mm,
+  inner=22mm,
+  outer=23.5mm,
+  marginparwidth=16.5mm,
+  marginparsep=3.5mm
+]{geometry}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz-cd}
+\usetikzlibrary{decorations.pathmorphing}
+\usepackage{enumitem}
+\usepackage[hidelinks,unicode,hypertexnames=false]{hyperref}
+\usepackage{microtype}
+\input{../cjk-reader-layout.tex}
+
+\setmainfont{Noto Serif}
+\setsansfont{Noto Sans}
+\setCJKmainfont[
+  BoldFont=Microsoft YaHei,
+  ItalicFont=SimSun,
+  BoldItalicFont=Microsoft YaHei,
+  ItalicFeatures={FakeSlant=0.18},
+  BoldItalicFeatures={FakeSlant=0.18}
+]{SimSun}
+\setCJKsansfont[BoldFont=Microsoft YaHei]{Microsoft YaHei}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip=0pt plus 1pt
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.15em}
+\setlist[description]{style=multiline,labelwidth=2.6em,leftmargin=3.2em,itemsep=0.25em,parsep=0pt,topsep=0.25em}
+
+\renewcommand{\VerdierSourcePageLabel}[1]{原书第\,#1\,页}
+\renewcommand{\VerdierSourceRomanLabel}[1]{原书第\,#1\,页}
+\renewcommand{\VerdierSourcePdfLabel}[1]{原书 PDF 第\,#1\,页}
+\newcommand{\LocalizedChapterLabel}{第\kern0pt\thechapter\kern0pt章}
+\makeatletter
+\renewcommand{\chaptermark}[1]{\markright{\LocalizedChapterLabel\quad #1}}
+\renewcommand{\@makechapterhead}[1]{%
+  \vspace*{50\p@}%
+  {\parindent \z@ \raggedright \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+      \if@mainmatter
+        \huge\bfseries \LocalizedChapterLabel\par\nobreak
+        \vskip 20\p@
+      \fi
+    \fi
+    \interlinepenalty\@M
+    \Huge\bfseries #1\par\nobreak
+    \vskip 40\p@
+  }}
+\makeatother
+
+\title{阿贝尔范畴的导出范畴}
+\author{Jean-Louis Verdier}
+\date{1996}
+\hypersetup{
+  pdftitle={阿贝尔范畴的导出范畴},
+  pdfauthor={Jean-Louis Verdier},
+  pdfsubject={简体中文连续阅读版；保留原书页码里程标记}
+}
+
+\begin{document}
+\pagenumbering{roman}
+\input{reader-front.generated.tex}
+\clearpage
+\edef\VerdierReaderFirstArabicPage{\number\numexpr\ReadonlyShipoutCounter+1\relax}
+\pagenumbering{arabic}
+\setcounter{page}{\VerdierReaderFirstArabicPage}
+\input{reader-content.generated.tex}
+\end{document}

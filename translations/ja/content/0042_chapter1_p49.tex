@@ -1,0 +1,77 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0049}%
+各 $\sigma\in G$ に対して、図式
+
+\VerdierSemanticAnchor{ch1-1-4-5-eq4}
+\begin{center}
+  \resizebox{0.78\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=6em,row sep=4em]
+      F_1T(\sigma)
+        \arrow[r,"{p_1(\sigma)}"]
+        \arrow[d,"{u*T(\sigma)}"']
+        \& T'(\sigma)F_1
+          \arrow[d,"{T'(\sigma)*u}"] \\
+      F_2T(\sigma)
+        \arrow[r,"{p_2(\sigma)}"]
+        \& T'(\sigma)F_2
+    \end{tikzcd}$%
+  }
+  \hfill\textup{(1.4.5.4)}
+\end{center}
+は $\beta(\sigma)$-可換である。
+
+\VerdierSemanticAnchor{ch1-1-4-6}
+\noindent\textbf{定義 1.4.6.}\quad
+$(\mathcal C,G,T,c)$ を $G$-圏、$(\mathcal C',G,T',c')$ を加法的な
+$G$-圏とする。$\alpha_1,\alpha_2$ を
+$Z^2(G,\mathbb Z/2\mathbb Z)$ の正規化された二つの非斉次余サイクルとし、
+$\beta\colon G\to\mathbb Z/2\mathbb Z$ を
+
+\VerdierSemanticAnchor{ch1-1-4-6-eq1}
+\begin{equation}
+  \alpha_2(\sigma_1,\sigma_2)\alpha_1^{-1}(\sigma_1,\sigma_2)
+  =\beta(\sigma_2)\beta(\sigma_1\sigma_2)^{-1}\beta(\sigma_1)
+  \tag{1.4.6.1}
+\end{equation}
+を満たす写像とする。
+
+\VerdierSemanticAnchor{ch1-1-4-6-beta-morphism}
+最後に
+$(F_1,p_1),(F_2,p_2)\colon(\mathcal C,G,T,c)
+\to(\mathcal C',G,T',c')$
+を、それぞれ余サイクル $\alpha_1,\alpha_2$ で捩られた二つの $G$-関手と
+する。関手の射 $u\colon F_1\to F_2$ で、各 $\sigma\in G$ に対して図式
+(1.4.5.4) が $\beta(\sigma)$-可換となるものを、\emph{関手 $(F_1,p_1)$ から
+関手 $(F_2,p_2)$ への $\beta$-射}という。
+
+\VerdierSemanticAnchor{ch1-1-4-7}
+\noindent\textbf{1.4.7.}\quad
+(1.4.5) で示したように、正規化された二つの切断を選ぶことにより、符号群の
+標準作用を誘導する $H$-関手の射に、対応する捩れ $G$-関手の間の
+$\beta$-射を対応させられる。この対応が全単射であることは直ちに確かめられる。
+さらに、符号群の標準作用を誘導する三つの $H$-関手
+$(F_1,m_1)$、$(F_2,m_2)$、$(F_3,m_3)$、正規化された三つの切断
+$s_1,s_2,s_3$、二つの $H$-関手の射 $u,v$ とその合成 $vu$：
+
+\VerdierSemanticAnchor{ch1-1-4-7-eq1}
+\begin{equation}
+  \begin{aligned}
+    u&\colon(F_1,m_1)\longrightarrow(F_2,m_2),\\
+    v&\colon(F_2,m_2)\longrightarrow(F_3,m_3),\\
+    vu&\colon(F_1,m_1)\longrightarrow(F_3,m_3)
+  \end{aligned}
+  \tag{1.4.7.1}
+\end{equation}
+が与えられたとき、射
+
+\VerdierSemanticAnchor{ch1-1-4-7-eq2}
+\begin{equation}
+  \begin{aligned}
+    u&\colon(F_1,p_1)\longrightarrow(F_2,p_2),\\
+    v&\colon(F_2,p_2)\longrightarrow(F_3,p_3),\\
+    vu&\colon(F_1,p_1)\longrightarrow(F_3,p_3)
+  \end{aligned}
+  \tag{1.4.7.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-7-open-seam}

@@ -1,0 +1,85 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0238}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-3-4}
+\noindent\textbf{4.3.4.}\quad
+Le foncteur de $D(\mathcal A)$ dans la catégorie des objets spectraux de
+$D(\mathcal A)$ est encore appelé, abusivement, le \emph{foncteur deuxième
+objet spectral canonique}.
+
+Soient $X$ un complexe de $\mathcal A$,
+$\bigl(X(p,q),\delta(p,q,r)\bigr)$ le deuxième objet spectral associé à
+$X$. Il résulte de (4.3.2) et (1.2.10) qu'on a un isomorphisme canonique
+dans $D(\mathcal A)$ :
+
+\VerdierSemanticAnchor{ch4d-4-3-4-1}
+\begin{equation}
+X(p,p+1)\xrightarrow{\sim}H^p(X)[-p].
+\tag{4.3.4.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch4d-4-3-4-boundedness}
+Notons aussi que lorsque $X$ est un objet de $D^*(\mathcal A)$
+($*=-,+,b,$ ``vide''), le deuxième objet spectral associé à $X$ est en
+fait à valeurs dans $D^*(\mathcal A)$.
+
+\VerdierSemanticAnchor{ch4d-4-4}
+\medskip\noindent\textbf{4.4. Suites spectrales usuelles.}
+
+\VerdierSemanticAnchor{ch4d-4-4-1}
+\medskip\noindent\textbf{4.4.1.}\quad
+Soient $\mathcal A$ une catégorie additive, non nécessairement abélienne,
+$F\colon K(\mathcal A)\longrightarrow\mathcal B$ un foncteur cohomologique
+dans une catégorie abélienne $\mathcal B$,
+$F^p\colon K(\mathcal A)\longrightarrow\mathcal B$ les foncteurs déduits
+de $F$ en composant avec le foncteur de translation de $K(\mathcal A)$
+($F^p(X)=F(X[p])$). Soit, de plus, $Y$ un complexe de $\mathcal A$. Le
+foncteur $F$ transforme le premier objet spectral, à valeurs dans
+$K(\mathcal A)$, associé à $Y$ (4.1.4) en un objet spectral à valeurs dans
+$\mathcal B$. On en déduit (chap.~II, 4.3.3) une suite spectrale à valeurs
+dans $\mathcal B$, fonctorielle en $F$ et en $Y$ (lorsque celui-ci varie
+dans $\operatorname{comp}(\mathcal A)$), qu'on appelle la \emph{première
+suite spectrale du foncteur $F$, relative au complexe $Y$}. On utilise
+toujours, pour cette suite spectrale, l'indexation introduite au
+(chap.~II, 4.3.3.1).
+
+\VerdierSemanticAnchor{ch4d-4-4-2}
+\medskip\noindent\textbf{Proposition 4.4.2.}\quad
+
+\VerdierSemanticAnchor{ch4d-4-4-2-a}
+\noindent\textit{a) Le terme $\mathrm I_1^{p,q}$ de la première suite
+spectrale du foncteur $F$ relative au complexe $Y$ est donné par :}
+\[
+\mathrm I_1^{p,q}=F^q(Y^p)
+\]
+\noindent\textit{($Y^p$ désigne ici le complexe dont le seul composant non
+nul est, en degré zéro, le $p$-ième composant du complexe $Y$). La
+différentielle correspondante est :}
+
+\VerdierSemanticAnchor{ch4d-4-4-2-a-differential}
+\[
+\begin{aligned}
+d_1&\colon\mathrm I_1^{p,q}\longrightarrow\mathrm I_1^{p+1,q},\\
+d_1&=F^q(-d_Y^p)\colon F^q(Y^p)\longrightarrow F^q(Y^{p+1}).
+\end{aligned}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-4-2-b}
+\noindent\textit{b) Le terme $\mathrm I_2^{p,q}$ de cette même suite
+spectrale peut donc se décrire comme suit : désignons par
+$F^{q,\bullet}\colon\operatorname{comp}(K(\mathcal A))
+\longrightarrow\operatorname{comp}(\mathcal B)$ l'extension de $F^q$ aux
+complexes, $H_{\mathcal B}^p\colon\operatorname{comp}(\mathcal B)
+\longrightarrow\mathcal B$ le foncteur $p$-ième objet de cohomologie et
+$Y^\bullet$ l'objet de $\operatorname{comp}(K(\mathcal A))$ :}
+
+\VerdierSemanticAnchor{ch4d-4-4-2-b-complex}
+\[
+Y^\bullet=\cdots\longrightarrow Y^{p-1}
+\xrightarrow{d_Y^{p-1}}Y^p\xrightarrow{d_Y^p}Y^{p+1}
+\longrightarrow\cdots.
+\]
+\endgroup

@@ -1,0 +1,96 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0090}%
+\VerdierSemanticAnchor{ch1-3-2-7-representing-functor-continuation}
+すなわち、(3.1.3) と (3.1.7) により $X[1]$ から $W$ への射を対応させる。
+こうして $W$ に関して関手的に、$c(p(f))$ から $W$ への各射に $X[1]$ から
+$W$ への射を対応させたので、射
+\VerdierSemanticAnchor{ch1-3-2-7-h-defined}
+$H\colon X[1]\longrightarrow c(p(f))$ が定まった。
+
+命題 (3.2.6) の a) を証明するには、次を示せば十分である：
+
+\VerdierSemanticAnchor{ch1-3-2-7-eq2}
+\begin{equation}
+  \textit{射 }JH\colon X[1]\longrightarrow X[1]
+  \textit{ は恒等射である。}
+  \tag{3.2.7.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-7-eq3}
+\begin{equation}
+  \textit{射 }HJ\colon c(p(f))\longrightarrow c(p(f))
+  \textit{ は恒等射とホモトピックである。}
+  \tag{3.2.7.3}
+\end{equation}
+
+命題 (3.2.6) の b) を証明するには、さらに次を示せば十分である：
+
+\VerdierSemanticAnchor{ch1-3-2-7-eq4}
+\begin{equation}
+  \begin{gathered}
+    \textit{次の図式：}\\[0.35em]
+    \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center)]
+      \node (Xs)  at (0,1.55) {$X[1]$};
+      \node (Ys1) at (4.2,1.55) {$Y[1]$};
+      \node (Cpf) at (0,0) {$c(p(f))$};
+      \node (Ys2) at (4.2,0) {$Y[1]$};
+      \draw[->] (Xs) -- node[above] {$f[1]$} (Ys1);
+      \draw[->] (Xs) -- node[left] {$H$} (Cpf);
+      \draw[->] (Ys1) -- node[right] {$\operatorname{id}_{Y[1]}$} (Ys2);
+      \draw[->] (Cpf) -- node[above] {$q(p(f))$} (Ys2);
+    \end{tikzpicture}\\[-0.15em]
+    \textit{は反可換である。}
+  \end{gathered}
+  \tag{3.2.7.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-8}
+\noindent\textbf{3.2.8. 主張 (3.2.7.2) の証明。}\quad
+\VerdierSemanticAnchor{ch1-3-2-8-jh-identity-proof}
+射 $JH\colon X[1]\longrightarrow X[1]$ が恒等射であることを示そう。
+そのためには、射 $JH$ が $X[1]$ によって表現される関手の恒等自己準同型を
+誘導することを確かめれば十分である。
+\VerdierSemanticAnchor{ch1-3-2-8-represented-hom-functor}
+(3.1.3) と (3.1.7) により、関手
+\begin{equation*}
+  W\longmapsto
+  \operatorname{Hom}_{\operatorname{comp}(C)}(X[1],W)
+\end{equation*}
+は次の関手にほかならない：
+
+\VerdierSemanticAnchor{ch1-3-2-8-eq1}
+\begin{equation}
+  W\longmapsto
+  \left\{\,
+  \vcenter{\hbox{%
+    \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center)]
+      \node (X)  at (0,1.45) {$X$};
+      \node (Z1) at (3.5,1.45) {$0$};
+      \node (Z2) at (0,0) {$0$};
+      \node (W)  at (3.5,0) {$W$};
+      \draw[->] (X) -- (Z1);
+      \draw[->] (X) -- (Z2);
+      \draw[->] (Z1) -- (W);
+      \draw[->] (Z2) -- (W);
+      \draw[decorate,decoration={snake,amplitude=0.8pt,segment length=3.3pt}]
+        (1.45,0.18) -- (2.00,0.56);
+      \draw[->] (2.00,0.56) -- node[above left] {$\alpha$} (3.25,1.24);
+    \end{tikzpicture}%
+  }}\,\right\}.
+  \tag{3.2.8.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-8-cpf-represented-functor}
+一方、(3.2.7) により、$\operatorname{comp}(C)$ の対象 $c(p(f))$ は関手
+
+\VerdierSemanticAnchor{ch1-3-2-8-eq2}
+\begin{equation}
+  W\longmapsto
+  \left\{\,
+  \bigl(m\colon Y\longrightarrow W,\quad
+  a\colon0\rightsquigarrow m,\quad
+  b\colon0\rightsquigarrow mf\bigr)
+  \,\right\}
+  \tag{3.2.8.2}
+\end{equation}
+を表現する。

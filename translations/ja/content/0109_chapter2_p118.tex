@@ -1,0 +1,80 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0118}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-6-exactness-complete}
+は完全である。$W=Z$ とすると、恒等射
+$\operatorname{id}_Z\in\operatorname{Hom}_{\mathcal D}(Z,Z)$ はある射
+$s\colon Z\longrightarrow Y$ から来る。よって切断が存在する。
+この切断により次の可換図式が得られる。
+
+\VerdierSemanticAnchor{ch2-1-2-6-section-diagram}
+\begin{equation*}
+  \begin{tikzcd}[column sep=3.5em,row sep=3.0em]
+    X \arrow[r,"{\binom{\operatorname{id}}{0}}"]
+      \arrow[d,"{\operatorname{id}}"']
+      & X\oplus Z \arrow[r,"{(0,\operatorname{id})}"]
+        \arrow[d,"{(u,s)}"]
+      & Z \arrow[d,"{\operatorname{id}}"] \\
+    X \arrow[r,"u"'] & Y \arrow[r,"v"'] & Z
+  \end{tikzcd}\,.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-6-hom-five-lemma}
+関手 $\operatorname{Hom}_{\mathcal D}(W,\mathord\cdot)$ を適用すると、
+列 (1.2.6.2) の完全性と五項補題により、射
+
+\VerdierSemanticAnchor{ch2-1-2-6-hom-isomorphism}
+\[
+  \operatorname{Hom}_{\mathcal D}\bigl(W,(u,s)\bigr)\colon
+  \operatorname{Hom}_{\mathcal D}(W,X\oplus Z)
+  \longrightarrow \operatorname{Hom}_{\mathcal D}(W,Y)
+\]
+は同型である。\space したがって射 $(u,s)$ は同型である。
+
+\VerdierSemanticAnchor{ch2-1-2-7}
+\medskip
+\noindent\textbf{注意 1.2.7.}\quad
+系 (1.2.6) により、任意の完全関手
+$\mathcal D'\xrightarrow{F}\mathcal D$ が加法的であることを示せる。
+まず、三角 $0\longrightarrow0\longrightarrow0\longrightarrow0$ は
+$\mathcal D'$ の完全三角である。したがって三角
+
+\VerdierSemanticAnchor{ch2-1-2-7-zero-triangle}
+\[
+  F(0)\xrightarrow{\operatorname{id}_{F(0)}}F(0)
+  \xrightarrow{\operatorname{id}_{F(0)}}F(0)
+  \longrightarrow F(0)[1]
+\]
+は $\mathcal D$ の完全三角である。(1.2.2) から $F(0)=0$ が従う。
+$F$ を (1.2.6.1) の形の完全三角に適用し、さらに (1.2.6) を用いると、
+$F$ が加法的であることが分かる。同様の議論により、任意の
+コホモロジー的関手も加法的である。
+
+\VerdierSemanticAnchor{ch2-1-2-8}
+\medskip
+\noindent\textbf{定義 1.2.8.}\quad
+加法圏における射 $f\colon X\longrightarrow Y$ の\emph{分解}とは、
+次の可換図式をいう。
+
+\VerdierSemanticAnchor{ch2-1-2-8-decomposition-diagram}
+\begin{equation*}
+  \begin{tikzcd}[ampersand replacement=\&,column sep=5.2em,row sep=3.4em]
+    X \arrow[r,"f"] \arrow[d,"\wr"']
+      \& Y \arrow[d,"\wr"] \\
+    Z\oplus W
+      \arrow[r,"{\left(\begin{smallmatrix}0&\operatorname{id}_W\\0&0\end{smallmatrix}\right)}"]
+      \& W\oplus Z'
+  \end{tikzcd}\,.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-8-decomposable}
+射は分解をもつとき\emph{分解可能}であるという。
+
+\VerdierSemanticAnchor{ch2-1-2-8-splitting}
+射 $f\colon X\longrightarrow Y$ の\emph{分裂}とは、次を満たす射
+$g\colon Y\longrightarrow X$ をいう。
+\endgroup

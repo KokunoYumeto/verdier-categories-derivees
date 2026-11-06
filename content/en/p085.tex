@@ -1,0 +1,109 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0085}%
+\VerdierSemanticAnchor{ch1-3-1-4-homotopy-definition-continuation}
+be two morphisms of $\operatorname{tr}_1(C)$. A \emph{homotopy} connecting
+$(g,h,a)$ to $(g',h',a')$ is a triple $(b,b',\alpha)$, where
+$b\colon g\rightsquigarrow g'$ and $b'\colon h\rightsquigarrow h'$ are
+homotopies and where
+
+\VerdierSemanticAnchor{ch1-3-1-4-second-order-condition}
+\begin{equation*}
+  \alpha\colon f'\star b+a'\rightsquigarrow b'\star f+a
+\end{equation*}
+is a second-order homotopy (2.5.12).
+
+\VerdierSemanticAnchor{ch1-3-1-4-homotopic-morphisms}
+Two morphisms of $\operatorname{tr}_1(C)$ will be said to be \emph{homotopic}
+if there exists a homotopy connecting them.
+\VerdierSemanticAnchor{ch1-3-1-4-equivalence-relation}
+The relation ``$(g,h,a)$ and $(g',h',a')$ are homotopic'' is an equivalence
+relation compatible with direct sum and composition of morphisms.
+\VerdierSemanticAnchor{ch1-3-1-4-tr1-homotopy-category}
+We may therefore introduce the category $\operatorname{Tr}_1(C)$, whose
+objects are the objects of $\operatorname{tr}_1(C)$ and whose morphisms are the
+morphisms of $\operatorname{tr}_1(C)$ up to homotopy.
+
+\VerdierSemanticAnchor{ch1-3-1-5}
+\noindent\textbf{Proposition 3.1.5.}\quad
+\emph{Let
+$D,D'\colon (X\xrightarrow{f}Y)\rightrightarrows
+(X'\xrightarrow{f'}Y')$ be two morphisms of $\operatorname{tr}_1(C)$. If the
+morphisms $D$ and $D'$ are homotopic in $\operatorname{tr}_1(C)$, then the
+morphisms $c(D)$ and $c(D')$ are homotopic in $\operatorname{comp}(C)$.}
+
+\VerdierSemanticAnchor{ch1-3-1-5-proof-setup}
+Let $D=(g,h,a)$ and $D'=(g',h',a')$. Suppose that $D$ and $D'$ are homotopic
+in $\operatorname{tr}_1(C)$. Thus there exist homotopies $b$ and $b'$ such
+that:
+
+\VerdierSemanticAnchor{ch1-3-1-5-eq1}
+\begin{equation}
+  \begin{aligned}
+    g'-g&=bd+db,\\
+    h'-h&=b'd+db'.
+  \end{aligned}
+  \tag{3.1.5.1}
+\end{equation}
+
+(To lighten the notation, in this calculation we have omitted the exponents
+indicating the degree of the components.)
+\VerdierSemanticAnchor{ch1-3-1-5-second-order-homotopy}
+Moreover, there exists a second-order homotopy $\alpha$ such that:
+\begin{equation*}
+  \alpha d-d\alpha=b'f+a-(f'b+a').
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-3-1-5-cone-homotopy}
+An immediate calculation then shows that
+\begin{equation*}
+  \begin{pmatrix}
+    b' & \alpha\\
+    0  & -b
+  \end{pmatrix}
+\end{equation*}
+is a homotopy connecting $c(D)$ to $c(D')$.
+
+\VerdierSemanticAnchor{ch1-3-1-6}
+\noindent\textbf{Corollary 3.1.6.}\quad
+\emph{The functors}
+\begin{equation*}
+  c\colon\operatorname{tr}_1(C)\longrightarrow\operatorname{comp}(C)
+  \qquad\text{and}\qquad
+  s\colon\operatorname{comp}(C)\longrightarrow\operatorname{tr}_1(C)
+\end{equation*}
+\emph{are compatible with the homotopies of $\operatorname{tr}_1(C)$ and
+$\operatorname{comp}(C)$ and, upon passing to the quotient, define functors
+still denoted}
+
+\VerdierSemanticAnchor{ch1-3-1-6-descended-functors}
+\begin{equation*}
+  c\colon\operatorname{Tr}_1(C)\longrightarrow K(C)
+  \qquad\text{and}\qquad
+  s\colon K(C)\longrightarrow\operatorname{Tr}_1(C).
+\end{equation*}
+\VerdierSemanticAnchor{ch1-3-1-6-adjunction}
+\emph{The functor $c\colon\operatorname{Tr}_1(C)\longrightarrow K(C)$ is left
+adjoint to the functor
+$s\colon K(C)\longrightarrow\operatorname{Tr}_1(C)$.}
+
+\VerdierSemanticAnchor{ch1-3-1-6-proof}
+This follows formally from (3.1.5) and (3.1.3).
+
+\VerdierSemanticAnchor{ch1-3-1-7}
+\noindent\textbf{3.1.7.}\quad
+\VerdierSemanticAnchor{ch1-3-1-7-s-prime}
+Denote by
+$s'\colon\operatorname{comp}(C)\longrightarrow\operatorname{tr}_1(C)$ the
+functor $X\longmapsto(X\longrightarrow 0)$.
+\VerdierSemanticAnchor{ch1-3-1-7-comp-translation}
+The functor
+$cs'\colon\operatorname{comp}(C)\longrightarrow\operatorname{comp}(C)$ is
+equal to the translation functor of $\operatorname{comp}(C)$.
+\VerdierSemanticAnchor{ch1-3-1-7-descended-s-prime}
+The functor $s'$ sends two homotopic morphisms of $\operatorname{comp}(C)$ to
+homotopic morphisms of $\operatorname{tr}_1(C)$ and consequently defines a
+functor, which we shall still denote by
+$s'\colon K(C)\longrightarrow\operatorname{Tr}_1(C)$.
+\VerdierSemanticAnchor{ch1-3-1-7-k-translation}
+The functor $cs'\colon K(C)\longrightarrow K(C)$ is equal to the translation
+functor of $K(C)$.

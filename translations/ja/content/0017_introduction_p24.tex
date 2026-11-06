@@ -1,0 +1,88 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0024}
+スペクトル系列の機構は、現象の簡潔さをしばしば覆い隠す。この点で
+Künneth 関係の初等的な例は示唆的である。
+
+\VerdierSemanticAnchor{intro-5}
+\noindent\textbf{5.}\quad
+$X$ と $Y$ を二つのコンパクト空間、$A$ を単位元をもつ可換環
+（簡単のため）とし、$F$ と $G$ をそれぞれ $X$ と $Y$ 上の $A$-加群の
+層とする。$A$ が体ならば、外積 [23] が次数付きベクトル空間の同型
+
+\VerdierSemanticAnchor{intro-5-kunneth-field}
+\begin{equation}
+\mathrm H^*(X,F)\otimes_A\mathrm H^*(Y,G)
+\xrightarrow{\sim}
+\mathrm H^*(X\times Y,F\otimes_A G)
+\tag{$\text{Kü}_{\mathrm{coh}}^{1}$}
+\end{equation}
+を定めることが知られている。
+
+$A=\mathbb Z$ で、層 $F$ または層 $G$ が捩れをもたないとき、分裂完全列
+が存在する：
+
+\VerdierSemanticAnchor{intro-5-kunneth-torsion-free}
+\begin{equation}
+\begin{aligned}
+0 &\longrightarrow
+\bigoplus_{p+q=n}\mathrm H^p(X,F)\otimes_A\mathrm H^q(Y,G)
+\longrightarrow \mathrm H^n(X\times Y,F\otimes_A G) \longrightarrow \\
+&\longrightarrow
+\bigoplus_{p+q=n+1}
+\operatorname{Tor}^{\mathbb Z}\bigl(\mathrm H^p(X,F),\mathrm H^q(Y,G)\bigr)
+\longrightarrow 0.
+\end{aligned}
+\tag{$\text{Kü}_{\mathrm{coh}}^{2}$}
+\end{equation}
+
+$A=\mathbb Z$ で $F,G$ に何も仮定しないとき、二族の分裂完全列がある：
+
+\VerdierSemanticAnchor{intro-5-kunneth-general-split}
+\begin{equation}
+\begin{aligned}
+0 &\longrightarrow
+\bigoplus_{p+q=n}\mathrm H^p(X,F)\otimes_A\mathrm H^q(Y,G)
+\longrightarrow \mathbb H^n \longrightarrow \\
+&\longrightarrow
+\bigoplus_{p+q=n+1}
+\operatorname{Tor}^{\mathbb Z}\bigl(\mathrm H^p(X,F),\mathrm H^q(Y,G)\bigr)
+\longrightarrow 0, \\
+0 &\longrightarrow
+\mathrm H^{n+1}\bigl(X\times Y,\mathcal T\!or^A(F,G)\bigr)
+\longrightarrow \mathbb H^n
+\longrightarrow \mathrm H^n(X\times Y,F\otimes_A G)
+\longrightarrow 0.
+\end{aligned}
+\tag{$\text{Kü}_{\mathrm{coh}}^{3}$}
+\end{equation}
+
+このように最初の定式化 $\text{(Kü)}_{\mathrm{coh}}^{1}$ は複雑になるが、
+なお明示的に計算できる。環 $A$ がさらに複雑で、たとえば
+$A=\mathbb Z/\ell^r\mathbb Z$（$\ell$ は素数、$r>1$）のように大域
+コホモロジー次元が無限の環である場合、伝統的には、同じ収束先をもつ二つ
+のスペクトル系列だけが得られ、その初期項は
+
+\VerdierSemanticAnchor{intro-5-kunneth-spectral-sequences}
+\begin{equation}
+\begin{aligned}
+{}'K_2^{p,q}
+  &=\bigoplus_{r+s=q}
+    \operatorname{Tor}_{-p}^{A}
+    \bigl(\mathrm H^r(X,F),\mathrm H^s(Y,G)\bigr), \\
+{}''K_2^{p,q}
+  &=\mathrm H^p\bigl(X\times Y,\mathcal T\!or_{-q}^{A}(F,G)\bigr).
+\end{aligned}
+\tag{$\text{Kü}_{\mathrm{coh}}^{4}$}
+\end{equation}
+である。
+
+しかし、これらのスペクトル系列とその収束先の間の同型は、$A$-加群の圏の
+導来圏における次の関係の帰結であり、不完全な表現にすぎない：
+
+\VerdierSemanticAnchor{intro-5-kunneth-derived}
+\begin{equation}
+\mathrm{RH}(X,F)\overset{\mathrm L}{\otimes}_A\mathrm{RH}(Y,G)
+\xrightarrow{\sim}
+\mathrm{RH}\bigl(X\times Y,F\overset{\mathrm L}{\otimes}_A G\bigr).
+\tag{$\text{Kü}_{\mathrm{Der}}$}
+\end{equation}

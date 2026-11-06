@@ -1,0 +1,87 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0153}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+
+\VerdierSemanticAnchor{ch3-3-1-3}
+\noindent\textbf{3.1.3.}\quad
+$\mathcal D$ が厳密な $\mathbb Z$-圏であるとする。$\mathcal D$ のシフト関手
+$X\longmapsto X[n]$（$n\in\mathbb Z$）は
+$\mathcal{F}\ell_1(\mathcal D)$ の自己同型へ拡張される：
+
+\VerdierSemanticAnchor{ch3-3-1-3-translation-extension}
+\[
+\bigl(X\xrightarrow{f}Y\bigr)
+\longmapsto
+\bigl(X[n]\xrightarrow{f[n]}Y[n]\bigr).
+\]
+$\mathrm A(\mathcal D)$ の普遍性 (3.1.1.1) から、これらの自己同型は商に
+降下し、$\mathrm A(\mathcal D)$ に厳密な $\mathbb Z$-圏の構造を定める。
+関手 $\mathcal H\colon\mathcal D\to\mathrm A(\mathcal D)$ は厳密な
+$\mathbb Z$-関手である。
+
+\VerdierSemanticAnchor{ch3-3-1-4}
+\medskip
+\noindent\textbf{3.1.4.}\quad
+$\mathcal D$ と $\mathcal D'$ を二つの加法的な厳密 $\mathbb Z$-圏とし、
+$F\colon\mathcal D\to\mathcal D'$ を加法 $\mathbb Z$-関手（自明な余サイクル
+で捩られたもの）とする。$F$ の射の圏への拡張を
+$\mathcal{F}\ell_1(F)$ と書く：
+\[
+\mathcal{F}\ell_1(F)\bigl(X\xrightarrow{f}Y\bigr)
+=\bigl(FX\xrightarrow{Ff}FY\bigr).
+\]
+$\mathcal{F}\ell_1(F)$ は $\mathcal{F}\ell_1(\mathcal D)$ の無視可能射を
+$\mathcal{F}\ell_1(\mathcal D')$ の無視可能射へ送る。したがって関手
+
+\VerdierSemanticAnchor{ch3-3-1-4-1}
+\[
+\mathrm A(F)\colon\mathrm A(\mathcal D)\longrightarrow\mathrm A(\mathcal D').
+\tag{3.1.4.1}
+\]
+を定める。$\mathrm A(F)$ は加法関手である。$\mathrm A(\mathcal D)$ と
+$\mathrm A(\mathcal D')$ の普遍性から、これは標準的に $\mathbb Z$-関手の
+構造をもつ。
+
+\VerdierSemanticAnchor{ch3-3-1-4-composition}
+$F'\colon\mathcal D'\to\mathcal D''$ を加法的な厳密 $\mathbb Z$-圏の間の
+加法 $\mathbb Z$-関手とする。このとき
+
+\VerdierSemanticAnchor{ch3-3-1-4-2}
+\[
+\mathrm A(F')\mathrm A(F)=\mathrm A(F'F).
+\tag{3.1.4.2}
+\]
+
+\VerdierSemanticAnchor{ch3-3-1-4-3}
+次の図式は可換である：
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.5em]
+\mathcal D \arrow[r,"F"] \arrow[d,"\mathcal H"'] &
+\mathcal D' \arrow[d,"\mathcal H'"] \\
+\mathrm A(\mathcal D) \arrow[r,"\mathrm A(F)"'] &
+\mathrm A(\mathcal D')
+\end{tikzcd}
+\tag{3.1.4.3}
+\]
+（関手 $\mathcal H$ と $\mathcal H'$ は (3.1.2) で定義した）。
+
+\VerdierSemanticAnchor{ch3-3-1-4-natural-transformation}
+同様に、$m\colon F\to F''$ を $\mathcal D$ と $\mathcal D'$ の間の加法
+$\mathbb Z$-関手の射とする。先と同じ議論から $\mathbb Z$-関手の射
+
+\VerdierSemanticAnchor{ch3-3-1-4-4}
+\[
+\mathrm A(m)\colon\mathrm A(F)\longrightarrow\mathrm A(F'').
+\tag{3.1.4.4}
+\]
+を得る。$m$ と $m'$ が加法 $\mathbb Z$-関手の合成可能な射ならば
+
+\VerdierSemanticAnchor{ch3-3-1-4-5}
+\[
+\mathrm A(m')\mathrm A(m)=\mathrm A(m'm).
+\tag{3.1.4.5}
+\]
+\endgroup

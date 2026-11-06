@@ -1,0 +1,68 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0161}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch3-3-2-9-exactness-test}
+est exacte dans $\mathcal D^\wedge$. La suite (3.2.9.1) est exacte si et
+seulement si, pour tout objet $W$ de $\mathcal D$, la suite
+\[
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),h(X))\longrightarrow
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),h(Y))\longrightarrow
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),h(Z))
+\]
+est exacte. Or ceci résulte de ce que $h$ est pleinement fidèle et de (1.2.1).
+
+\VerdierSemanticAnchor{ch3-3-2-9-factorization}
+Soit alors $\mathcal A$ une catégorie abélienne et
+\[
+\mathcal E x(\mathrm A(\mathcal D),\mathcal A)
+\longrightarrow\mathcal H\!om(\mathcal D,\mathcal A)
+\]
+le foncteur « composition avec $\mathcal H$ ». Il est clair que ce foncteur
+est pleinement fidèle : un morphisme entre foncteurs exacts est uniquement
+déterminé lorsqu'on connaît ses valeurs sur suffisamment d'objets
+projectifs. Il reste à démontrer que tout foncteur cohomologique
+$\Psi\colon\mathcal D\to\mathcal A$ se factorise à travers
+$\mathrm A(\mathcal D)$ :
+\VerdierSemanticAnchor{ch3-3-2-9-2}
+\[
+\begin{tikzcd}[column sep=5em,row sep=3em]
+\mathcal D\arrow[r,"\mathcal H"]\arrow[dr,"\Psi"']&
+\mathrm A(\mathcal D)\arrow[d,"\Phi"]\\
+&\mathcal A
+\end{tikzcd}
+\tag{3.2.9.2}
+\]
+le foncteur $\Phi$ étant exact. Pour tout objet
+$X\xrightarrow fY$ de $\mathrm A(\mathcal D)$, posons
+\begingroup\renewcommand{\thefootnote}{(*)}%
+\[
+\Phi(X\xrightarrow fY)=
+\operatorname{Image}_{\mathcal A}
+(\Psi(X)\xrightarrow{\Psi(f)}\Psi(Y)).\footnote{On remarquera que la
+construction du foncteur $\Phi$ fait intervenir le choix d'un foncteur
+« image » dans $\mathcal A$. Ce choix est bien entendu unique à isomorphisme
+unique près. On peut toujours imposer, ce que nous ferons désormais, que le
+foncteur « image » associe à tout morphisme identique
+$\operatorname{id}_T$ dans $\mathcal A$ l'objet $T$ muni du morphisme
+$T\xrightarrow{\operatorname{id}_T}T$.}
+\]
+\endgroup
+On détermine ainsi un foncteur de $\mathrm A(\mathcal D)$ dans $\mathcal A$
+tel que le diagramme (3.2.9.2) soit commutatif. Montrons que $\Phi$ est un
+foncteur exact. Il résulte immédiatement de (3.2.7) que $\Phi$ est exact à
+gauche. En passant aux catégories opposées, on montre de même que $\Phi$ est
+exact à droite. Ceci achève la démonstration du théorème (3.2.1).
+
+\VerdierSemanticAnchor{ch3-3-2-10}
+\medskip\noindent\textbf{Remarque 3.2.10.}\quad
+1) La propriété universelle décrite dans le théorème (3.2.1, c)) détermine
+la catégorie $\mathrm A(\mathcal D)$ à équivalence près.
+
+2) Lorsque dans $\mathcal D$ les sommes dénombrables ou bien les produits
+dénombrables sont représentables, tous les objets projectifs
+(resp. injectifs) de $\mathrm A(\mathcal D)$ sont isomorphes à des objets de
+$\mathcal D$. En effet, un tel objet est facteur direct dans
+$\mathrm A(\mathcal D)$ d'un objet de $\mathcal D$. Il est donc noyau d'un
+projecteur d'un objet de $\mathcal D$. Or, sous les hypothèses faites, les
+projecteurs sont décomposables dans $\mathcal D$ (1.2.9).
+\endgroup

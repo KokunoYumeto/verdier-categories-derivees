@@ -1,0 +1,59 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0157}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch3-3-2-4-proof}
+Pour démontrer le lemme (3.2.4), remarquons que le morphisme
+$h(X')\xrightarrow{\operatorname{Im}((\operatorname{id}_{X'};f'))}
+\operatorname{Im}(f')$ est un épimorphisme de $\mathcal D^\wedge$. Les
+foncteurs représentables étant des objets projectifs de $\mathcal D^\wedge$,
+il existe un morphisme $g\colon X\to X'$ tel
+que (3.2.4.1) soit commutatif.
+
+Passons maintenant à la construction du morphisme $g'\colon Y\to Y'$.
+Il résulte des axiomes TRI et TRII des
+catégories triangulées qu'il existe deux triangles distingués
+$(Z,X,Y,u,f,v)$ et $(Z',X',Y',u',f',v')$. Comme, pour tout objet $W$ de
+$\mathcal D$, le foncteur
+$\operatorname{Hom}_{\mathcal D}(W,\mathord\cdot)$ est un foncteur
+cohomologique (1.2.1), les
+suites
+\VerdierSemanticAnchor{ch3-3-2-4-exact-sequences}
+\[
+\begin{tikzcd}[column sep=3.7em]
+h(Z)\arrow[r,"h(u)"]&h(X)\arrow[r,"\operatorname{Im}((\operatorname{id}_X;f))"]&\operatorname{Im}(f)\arrow[r]&0\\
+h(Z')\arrow[r,"h(u')"']&h(X')\arrow[r,"\operatorname{Im}((\operatorname{id}_{X'};f'))"']&\operatorname{Im}(f')\arrow[r]&0
+\end{tikzcd}
+\]
+sont exactes. Comme $h(Z)$ est un objet projectif de $\mathcal D^\wedge$, il
+existe un morphisme $g''\colon Z\to Z'$ tel
+que
+\VerdierSemanticAnchor{ch3-3-2-4-triii-square}
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.3em]
+h(Z)\arrow[r,"h(u)"]\arrow[d,"h(g'')"']&h(X)\arrow[d,"h(g)"]\\
+h(Z')\arrow[r,"h(u')"']&h(X')
+\end{tikzcd}
+\]
+soit commutatif. Il résulte alors de l'axiome TRIII qu'il existe un morphisme
+$g'$ tel que $(g'',g,g')$ soit un morphisme de triangle. En particulier, le
+diagramme (3.2.4.2) est commutatif. Ceci achève la démonstration du lemme
+(3.2.4) et de la proposition (3.2.3).
+
+\VerdierSemanticAnchor{ch3-3-2-5}
+\medskip\noindent\textbf{Proposition 3.2.5.}\quad
+\textit{Soient $V$ et $V'$ deux objets admissibles de $\mathcal D^\wedge$ et
+$\alpha\colon V\to V'$ un morphisme de $\mathcal D^\wedge$. Le noyau de
+$\alpha$ dans $\mathcal D^\wedge$ (resp. le conoyau de $\alpha$ dans
+$\mathcal D^\wedge$) est un objet admissible de $\mathcal D^\wedge$.}
+
+\VerdierSemanticAnchor{ch3-3-2-5-setup}
+D'après (3.2.3), on peut supposer que $V=\operatorname{Im}(f)$ et
+$V'=\operatorname{Im}(f')$ et que $\alpha$ est le morphisme induit sur les
+images des morphismes $h(f)$ et $h(f')$ par un diagramme commutatif :
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.4em]
+h(X)\arrow[r,"h(f)"]\arrow[d,"h(g)"']&h(Y)\arrow[d,"h(g')"]\\
+h(X')\arrow[r,"h(f')"']&h(Y').
+\end{tikzcd}
+\]
+\endgroup

@@ -1,0 +1,82 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0117}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-5-combined-diagram}
+On en déduit que le diagramme ci-après est commutatif :
+\begin{equation*}
+  \resizebox{0.98\linewidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=2.1em,row sep=3.1em]
+      X\oplus X' \arrow[r,"{u\oplus u'}"] \arrow[d,"{\operatorname{id}}"']
+        \& Y\oplus Y' \arrow[r,"{v\oplus v'}"] \arrow[d,"{\operatorname{id}}"']
+        \& Z\oplus Z' \arrow[r,"{w\oplus w'}"] \arrow[d,"{(f,f')}"']
+        \& (X\oplus X')[1] \arrow[d,"{\operatorname{id}}"] \\
+      X\oplus X' \arrow[r,"{u\oplus u'}"']
+        \& Y\oplus Y' \arrow[r,"m"']
+        \& L \arrow[r,"n"']
+        \& (X\oplus X')[1]
+    \end{tikzcd}$%
+  }\,.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-5-sum-cone-map}
+Pour démontrer le corollaire, il suffit de montrer que le morphisme :
+\[
+  (f,f')\colon Z\oplus Z'\longrightarrow L
+\]
+est un isomorphisme. Il suffit donc de montrer que, pour tout objet $M$, le
+morphisme :
+
+\VerdierSemanticAnchor{ch2-1-2-5-hom-test}
+\[
+  \operatorname{Hom}_{\mathcal D}\bigl(M,(f,f')\bigr)
+\]
+est un isomorphisme de groupes abéliens ; ceci résulte immédiatement de
+(1.2.1) et du lemme des cinq.
+
+\VerdierSemanticAnchor{ch2-1-2-5-proof-complete}
+
+\VerdierSemanticAnchor{ch2-1-2-6}
+\medskip
+\noindent\textbf{Corollaire 1.2.6.}\quad
+Soit
+$X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]$
+un triangle distingué de $\mathcal D$ tel que $w=0$. Il existe alors une
+section $s\colon Z\longrightarrow Y$ du morphisme $v$. Toute section
+$s\colon Z\longrightarrow Y$ définit un isomorphisme :
+
+\VerdierSemanticAnchor{ch2-1-2-6-split-isomorphism}
+\[
+  X\oplus Z\xrightarrow[\sim]{(u,s)}Y\,.
+\]
+
+\VerdierSemanticAnchor{ch2-1-2-6-converse}
+Réciproquement, tout triangle du type :
+
+\VerdierSemanticAnchor{ch2-1-2-6-1}
+\begin{equation}
+  X\xrightarrow{\binom{\operatorname{id}}{0}}X\oplus Z
+  \xrightarrow{(0,\operatorname{id})}Z\xrightarrow{0}X[1]
+  \tag{1.2.6.1}
+\end{equation}
+est distingué.
+
+\VerdierSemanticAnchor{ch2-1-2-6-third-assertion}
+La troisième assertion résulte immédiatement de TRI, de TRII et de (1.2.5).
+
+\VerdierSemanticAnchor{ch2-1-2-6-first-assertion}
+Démontrons la première assertion. Il résulte de (1.2.1) que, pour tout $W$,
+la suite :
+
+\VerdierSemanticAnchor{ch2-1-2-6-2}
+\begin{equation}
+  0\longrightarrow\operatorname{Hom}_{\mathcal D}(W,X)
+  \longrightarrow\operatorname{Hom}_{\mathcal D}(W,Y)
+  \longrightarrow\operatorname{Hom}_{\mathcal D}(W,Z)
+  \longrightarrow0
+  \tag{1.2.6.2}
+\end{equation}
+\endgroup

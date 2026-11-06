@@ -1,0 +1,108 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0246}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-6-4}
+\noindent\textbf{4.6.4.}\quad
+Let $X^{\bullet\bullet}$ be a double complex of $\mathcal A$
+(Chapter~I, 2.1.2). The double complex $X^{\bullet\bullet}$ defines an
+object of $\operatorname{comp}(\operatorname{comp}(\mathcal A))$:
+
+\VerdierSemanticAnchor{ch4d-4-6-4-double-complex}
+\[
+X^{\bullet\bullet}\colon\quad
+\cdots\longrightarrow X^{\bullet,n-1}
+\xrightarrow{d_2^{\bullet,n-1}}X^{\bullet,n}
+\xrightarrow{d_2^{\bullet,n}}X^{\bullet,n+1}
+\longrightarrow\cdots.
+\]
+(We use the notation of (4.1.9). Note the sign!)
+
+\VerdierSemanticAnchor{ch4d-4-6-4-b1}
+Denote by $B_1^p(X^{\bullet\bullet})$ the simple complex
+
+\VerdierSemanticAnchor{ch4d-4-6-4-1}
+\[
+\left\{
+\begin{aligned}
+B_1^p(X^{\bullet\bullet})^i
+  &=\operatorname{Im}(d_1^{p-1,i}),\\
+d_{B_1^p(X^{\bullet\bullet})}^{i}
+  &\text{ induced by }d_2^{p,i}.
+\end{aligned}
+\right.
+\tag{4.6.4.1}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-4-z1}
+Denote by $Z_1^p(X^{\bullet\bullet})$ the simple complex
+
+\VerdierSemanticAnchor{ch4d-4-6-4-2}
+\[
+\left\{
+\begin{aligned}
+Z_1^p(X^{\bullet\bullet})^i
+  &=\operatorname{Ker}(d_1^{p,i}),\\
+d_{Z_1^p(X^{\bullet\bullet})}^{i}
+  &\text{ induced by }d_2^{p,i}.
+\end{aligned}
+\right.
+\tag{4.6.4.2}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-4-h1}
+Denote by $H_1^p(X^{\bullet\bullet})$ the simple complex
+
+\VerdierSemanticAnchor{ch4d-4-6-4-3}
+\[
+\left\{
+\begin{aligned}
+H_1^p(X^{\bullet\bullet})^i
+  &=Z_1^p(X^{\bullet\bullet})^i/B_1^p(X^{\bullet\bullet})^i,\\
+d_{H_1^p(X^{\bullet\bullet})}^{i}
+  &\text{ induced by }d_2^{p,i}.
+\end{aligned}
+\right.
+\tag{4.6.4.3}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-4-simple-as-double}
+Finally, if $Y$ is a simple complex of $\mathcal A$, we also denote by
+$Y$ the double complex whose components in nonzero second degree are zero
+and whose components and first differentials in second degree zero are
+those of $Y$.
+
+\VerdierSemanticAnchor{ch4d-4-6-5}
+\medskip\noindent\textbf{Definition 4.6.5.}\quad
+Let $Y$ be a simple complex of $\mathcal A$. A \emph{Cartan--Eilenberg
+injective resolution} of $Y$ is a double complex
+
+\VerdierSemanticAnchor{ch4d-4-6-5-double-complex}
+\[
+I^{\bullet\bullet}\colon\quad
+\cdots\longrightarrow0\longrightarrow I^{\bullet,0}
+\longrightarrow I^{\bullet,1}\longrightarrow I^{\bullet,2}
+\longrightarrow\cdots,
+\]
+equipped with a morphism called an \emph{augmentation}
+
+\VerdierSemanticAnchor{ch4d-4-6-5-augmentation}
+\[
+\varepsilon\colon Y\longrightarrow I^{\bullet\bullet}
+\]
+such that, for every integer $p$, the simple complexes
+$B_1^p(I^{\bullet\bullet})$ (4.6.4.1) and
+$H_1^p(I^{\bullet\bullet})$ (4.6.4.3), equipped with the augmentations
+
+\VerdierSemanticAnchor{ch4d-4-6-5-augmentations}
+\[
+B_1^p(\varepsilon)\colon
+\operatorname{Im}(d_Y^{p-1})\longrightarrow B_1^p(I^{\bullet\bullet}),
+\]
+\[
+H_1^p(\varepsilon)\colon
+H^p(Y)\longrightarrow H_1^p(I^{\bullet\bullet})
+\]
+\endgroup

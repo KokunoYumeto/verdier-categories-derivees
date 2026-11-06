@@ -1,0 +1,79 @@
+
+\clearpage
+\VerdierPhysicalPageAnchor{0130}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{2pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{2pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-1-3-2-sm2-completion}
+\noindent 都可补成交换图：
+
+\VerdierSemanticAnchor{ch2-2-1-3-2-completion-diagram}
+\begin{center}
+  $t\in S$\qquad
+  \begin{tikzcd}[column sep=4.0em,row sep=2.5em,baseline=(current bounding box.center)]
+    Z' \arrow[r,dashed,"g"] \arrow[d,dashed,"t"'] &
+    X' \arrow[d,"s"] \\
+    Z \arrow[r,"f"'] & X
+  \end{tikzcd}
+  \quad ,
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-1-3-2-opposite-reduction}
+\noindent 因为这样一来，SM2) 的第二个断言可由取反范畴得到。
+
+\VerdierSemanticAnchor{ch2-2-1-3-2-triangle-construction}
+由 TRI) 与 TRII)，存在特异三角 $(X,Y,Z[1],u,v,f[1])$；由 TRI)，
+存在特异三角 $(X',Y,Z',us,v',w')$。于是有交换图：
+
+\VerdierSemanticAnchor{ch2-2-1-3-2-us-square}
+\begin{center}
+  \begin{tikzcd}[column sep=4.2em,row sep=2.5em]
+    X' \arrow[r,"us"] \arrow[d,"s"'] &
+    Y \arrow[d,"\operatorname{id}_Y"] \\
+    X \arrow[r,"u"'] & Y
+  \end{tikzcd}
+  \quad .
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-1-3-2-sm6-application}
+\noindent 态射 $\operatorname{id}_Y$ 属于 $S$ (SM1)；由 SM6)，得到属于
+$S$ 的态射 $s'\colon Z'\to Z[1]$，使 $(s,\operatorname{id}_Y,s')$ 是三角
+的态射。特别地，下图交换：
+
+\VerdierSemanticAnchor{ch2-2-1-3-2-shift-square}
+\begin{center}
+  \begin{tikzcd}[column sep=4.2em,row sep=2.5em]
+    Z' \arrow[r,"{w'}"] \arrow[d,"{s'}"'] &
+    X'[1] \arrow[d,"{s[1]}"] \\
+    Z[1] \arrow[r,"{f[1]}"'] & X[1]
+  \end{tikzcd}
+  \quad ,
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-1-3-2-proof-complete}
+\noindent 由此再利用 SM5)，便得到 SM2) 的第一个断言。
+
+\VerdierSemanticAnchor{ch2-2-1-4}
+\medskip
+\noindent\textbf{2.1.4.}\quad
+\VerdierSemanticAnchor{ch2-2-1-4-convention}
+\emph{除非另有明确说明，三角范畴的乘法系总是与三角结构相容。因此，作为
+一种术语上的简写，我们将它们简称为乘法系。}
+
+\VerdierSemanticAnchor{ch2-2-1-5}
+\medskip
+\noindent\textbf{2.1.5.}\quad
+\VerdierSemanticAnchor{ch2-2-1-5-full-triangulated-subcategory}
+设 $\mathcal D$ 为三角范畴。$\mathcal D$ 的一个\emph{满三角子范畴}，
+是在平移下稳定的 $\mathcal D$ 的满子范畴，并配有一个三角结构，使包含函子
+成为正合函子（与平移严格交换）。
+
+\VerdierSemanticAnchor{ch2-2-1-5-additive-subcategory}
+$\mathcal D$ 的满三角子范畴是 $\mathcal D$ 的加性子范畴 (1.2.7)。
+
+\VerdierSemanticAnchor{ch2-2-1-5-boundary}
+$\mathcal D$ 的一个满子范畴
+\endgroup

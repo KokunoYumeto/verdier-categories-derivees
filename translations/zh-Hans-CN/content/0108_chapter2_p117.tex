@@ -1,0 +1,78 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0117}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-5-combined-diagram}
+由此可知下图交换：
+\begin{equation*}
+  \resizebox{0.98\linewidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=2.1em,row sep=3.1em]
+      X\oplus X' \arrow[r,"{u\oplus u'}"] \arrow[d,"{\operatorname{id}}"']
+        \& Y\oplus Y' \arrow[r,"{v\oplus v'}"] \arrow[d,"{\operatorname{id}}"']
+        \& Z\oplus Z' \arrow[r,"{w\oplus w'}"] \arrow[d,"{(f,f')}"']
+        \& (X\oplus X')[1] \arrow[d,"{\operatorname{id}}"] \\
+      X\oplus X' \arrow[r,"{u\oplus u'}"']
+        \& Y\oplus Y' \arrow[r,"m"']
+        \& L \arrow[r,"n"']
+        \& (X\oplus X')[1]
+    \end{tikzcd}$%
+  }\,.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-5-sum-cone-map}
+为证明该推论，只需证明态射
+\[
+  (f,f')\colon Z\oplus Z'\longrightarrow L
+\]
+是同构。因此只需证明，对于任意对象 $M$，态射
+
+\VerdierSemanticAnchor{ch2-1-2-5-hom-test}
+\[
+  \operatorname{Hom}_{\mathcal D}\bigl(M,(f,f')\bigr)
+\]
+是阿贝尔群的同构；这立即由 (1.2.1) 与五引理得到。
+
+\VerdierSemanticAnchor{ch2-1-2-5-proof-complete}
+
+\VerdierSemanticAnchor{ch2-1-2-6}
+\medskip
+\noindent\textbf{推论 1.2.6.}\quad
+设 $X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]$ 为
+$\mathcal D$ 中满足 $w=0$ 的特异三角。那么态射 $v$ 存在一个截面
+$s\colon Z\longrightarrow Y$。每个截面 $s\colon Z\longrightarrow Y$
+都定义一个同构：
+
+\VerdierSemanticAnchor{ch2-1-2-6-split-isomorphism}
+\[
+  X\oplus Z\xrightarrow[\sim]{(u,s)}Y\,.
+\]
+
+\VerdierSemanticAnchor{ch2-1-2-6-converse}
+反之，任何形如
+
+\VerdierSemanticAnchor{ch2-1-2-6-1}
+\begin{equation}
+  X\xrightarrow{\binom{\operatorname{id}}{0}}X\oplus Z
+  \xrightarrow{(0,\operatorname{id})}Z\xrightarrow{0}X[1]
+  \tag{1.2.6.1}
+\end{equation}
+的三角都是特异三角。
+
+\VerdierSemanticAnchor{ch2-1-2-6-third-assertion}
+第三个断言立即由 TRI、TRII 与 (1.2.5) 得到。
+
+\VerdierSemanticAnchor{ch2-1-2-6-first-assertion}
+下面证明第一个断言。由 (1.2.1)，对于每个 $W$，列
+
+\VerdierSemanticAnchor{ch2-1-2-6-2}
+\begin{equation}
+  0\longrightarrow\operatorname{Hom}_{\mathcal D}(W,X)
+  \longrightarrow\operatorname{Hom}_{\mathcal D}(W,Y)
+  \longrightarrow\operatorname{Hom}_{\mathcal D}(W,Z)
+  \longrightarrow0
+  \tag{1.2.6.2}
+\end{equation}
+\endgroup

@@ -1,0 +1,94 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0132}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{2pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{2pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-1-10-continuation}
+\noindent suite, SM3).
+\VerdierSemanticAnchor{ch2-2-1-10-triangle-setup}%
+Par hypothèse, il existe un triangle distingué
+$(X,Y,N,s,h,u)$, où $N$ est un objet de $\mathcal D'$. Comme on a $fs=0$, il
+résulte de (1.2.1) qu'il existe un morphisme $g\colon N\to Z$ tel que $f=gh$.
+
+\VerdierSemanticAnchor{ch2-2-1-10-factorization}
+Soit alors $(N,Z,W,g,t,v)$ un triangle distingué contenant $g$ (TRI). On a
+alors $tg=0$ (1.2.2) et, par suite, $tf=tgh=0$.
+
+\VerdierSemanticAnchor{ch2-2-1-10-closure-conclusion}
+Tout revient donc à montrer que $t$ est un élément de $S(\mathcal D')$, ce
+qui résulte immédiatement de TRII).
+
+\VerdierSemanticAnchor{ch2-2-1-11}
+\medskip
+\noindent\textbf{2.1.11.}\quad
+\VerdierSemanticAnchor{ch2-2-1-11-sm5}
+\emph{L'ensemble $S(\mathcal D')$ possède la propriété} SM5).
+\VerdierSemanticAnchor{ch2-2-1-11-proof}
+Résulte immédiatement de TRII) et du fait que la sous-catégorie $\mathcal D'$
+est stable par translation.
+
+\VerdierSemanticAnchor{ch2-2-1-12}
+\medskip
+\noindent\textbf{2.1.12.}\quad
+\VerdierSemanticAnchor{ch2-2-1-12-sm6}
+\emph{L'ensemble $S(\mathcal D')$ possède la propriété} SM6).
+\VerdierSemanticAnchor{ch2-2-1-12-triangle-pair}
+Soient $(X,Y,Z,u,v,w)$ et $(X',Y',Z',u',v',w')$ deux triangles distingués de
+$\mathcal D$ et :
+
+\VerdierSemanticAnchor{ch2-2-1-12-input-square}
+\begin{center}
+  \begin{tikzcd}[column sep=4.2em,row sep=2.5em]
+    X \arrow[r,"u"] \arrow[d,"s"'] &
+    Y \arrow[d,"{s'}"] \\
+    X' \arrow[r,"{u'}"] & Y'
+  \end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-1-12-completion-goal}
+\noindent un diagramme commutatif, où $s$ et $s'$ appartiennent à
+$S(\mathcal D')$. Il s'agit de trouver un morphisme $s''\colon Z\to Z'$ de
+$S(\mathcal D')$ tel que $(s,s',s'')$ soit un morphisme de triangles.
+
+\VerdierSemanticAnchor{ch2-2-1-12-case-reduction}
+On peut tout d'abord supposer qu'on est dans l'un des deux cas suivants :
+
+\begin{enumerate}
+\renewcommand{\labelenumi}{\emph{\alph{enumi})}}
+  \item \VerdierSemanticAnchor{ch2-2-1-12-case-a}%
+  On a $X=X'$ et $s=\operatorname{id}_X$.
+  \item \VerdierSemanticAnchor{ch2-2-1-12-case-b}%
+  On a $Y=Y'$ et $s'=\operatorname{id}_Y$.
+\end{enumerate}
+
+\VerdierSemanticAnchor{ch2-2-1-12-factorization}
+En effet, tout morphisme de morphismes se factorise :
+
+\VerdierSemanticAnchor{ch2-2-1-12-factorization-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=4.2em,row sep=1.7em]
+    X \arrow[r,"u"] \arrow[d,"\operatorname{id}_X"'] &
+    Y \arrow[d,"{s'}"] \\
+    X \arrow[r,"{s'u}"] \arrow[d,"s"'] &
+    Y' \arrow[d,"\operatorname{id}_{Y'}"] \\
+    X' \arrow[r,"{u'}"] & Y'
+  \end{tikzcd}
+  \quad ,
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-1-12-composition}
+\noindent et on obtiendra le morphisme $s''$ en composant (on a déjà montré
+que l'ensemble $S(\mathcal D')$ est stable par composition).
+
+\VerdierSemanticAnchor{ch2-2-1-12-opposite-category}
+Ensuite, le cas b) se déduit du cas a) en passant aux catégories opposées.
+
+\VerdierSemanticAnchor{ch2-2-1-12-triv-conclusion}
+Il suffit donc de traiter le cas a), qui est alors une conséquence immédiate
+de TRIV).
+
+\VerdierSemanticAnchor{ch2-2-1-13-p133-boundary}
+\endgroup

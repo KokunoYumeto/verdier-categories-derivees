@@ -1,0 +1,85 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0146}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+\sloppy
+
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-3-3-f}
+\noindent f) $\mathcal D$ の対象 $Z$ が
+$Q^{-1}(\operatorname{Lib}_R(Q))$ に属するための必要十分条件は、右自由な対象
+$Y$ と射 $s\colon Z\longrightarrow Y$ が存在し、
+$s$ が $\widehat{S_{\mathcal D}(\mathcal B)}$ に属することである。ここで後者は
+$S_{\mathcal D}(\mathcal B)$ の飽和化である (2.2.4, (c))。
+\VerdierSemanticAnchor{ch2-2-3-3-g}
+\par\noindent g) 包含関手
+$L_R(Q)\subset Q^{-1}(\operatorname{Lib}_R(Q))$ は左随伴
+\[
+  \mathcal R\colon Q^{-1}(\operatorname{Lib}_R(Q))\longrightarrow L_R(Q)
+  .
+\]
+をもつ。
+\VerdierSemanticAnchor{ch2-2-3-3-adjunction-diagram}
+\begin{center}
+\begin{tikzcd}[column sep=3.2em,row sep=3.1em]
+L_R(Q) \arrow[r,shift left=.7ex] \arrow[dr,"{Q|_{L_R(Q)}}"'] &
+Q^{-1}(\operatorname{Lib}_R(Q))
+ \arrow[l,dashed,bend right=28,"{\mathcal R}"'] \arrow[r,hook]
+ \arrow[d,"{Q_1}"] & \mathcal D \arrow[d,"Q"] \\
+& \operatorname{Lib}_R(Q) \arrow[ul,dashed,bend left=10,"{\Psi}"']
+ \arrow[r,hook] & \mathcal D/\mathcal B
+\end{tikzcd}
+\end{center}
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-3-3-adjunction-explanation}
+$\Psi\colon\operatorname{Lib}_R(Q)\longrightarrow L_R(Q)$ を
+$Q|_{L_R(Q)}$ の擬逆関手とする（c), e) 参照）。
+$\mathcal R=\Psi Q_1$ ととれる。ここで
+$Q_1\colon Q^{-1}(\operatorname{Lib}_R(Q))\longrightarrow
+\operatorname{Lib}_R(Q)$ は $Q$ から誘導される関手である。関手 $\Psi$ は
+関手 $Q_1$ の右随伴である。
+
+\VerdierSemanticAnchor{ch2-2-3-4}
+\medskip\noindent\textbf{2.3.4. 命題 2.3.3 の証明：}\quad
+\VerdierSemanticAnchor{ch2-2-3-4-a-proof}
+a) を示す。まず $Y$ が $Q$-右自由ならば、関手
+$X\longmapsto\operatorname{Hom}_{\mathcal D}(X,Y)$ は、
+$\mathcal D/\mathcal B$ の適当な対象 $Z$ に対する関手
+$X\longmapsto\operatorname{Hom}_{\mathcal D/\mathcal B}(Q(X),Z)$ と同型で
+ある。よって関手 $X\longmapsto\operatorname{Hom}_{\mathcal D}(X,Y)$ は
+$S_{\mathcal D}(\mathcal B)$ の射を同型に送る。これで
+i) $\Rightarrow$ ii) が従う。ii) $\Rightarrow$ iii) は
+$B\longrightarrow0$ が $S_{\mathcal D}(\mathcal B)$ に属することから従い、iii)
+$\Rightarrow$ iv) は $S_{\mathcal D}(\mathcal B)$ の定義と (1.2.6) から
+従う。iv) $\Rightarrow$ v) は次の同型 (2.2.4) から従う：
+\VerdierSemanticAnchor{ch2-2-3-4-colimit-isomorphism}
+\[
+  \operatorname{Hom}_{\mathcal D/\mathcal B}(Q(X),Q(Y))
+  \xrightarrow{\sim}
+  \varinjlim_{Y\backslash S_{\mathcal D}(\mathcal B)}
+  \operatorname{Hom}_{\mathcal D}(X,\mathord\cdot)\, .
+\]
+\VerdierSemanticAnchor{ch2-2-3-4-a-proof-complete}
+最後に v) $\Rightarrow$ i) は明らかである。実際、$Y$ は $Q(Y)$ 上
+右自由である。
+\VerdierSemanticAnchor{ch2-2-3-4-b-c-e-proof}
+b) は a), iii) から、c) は a), v) から従う。さらに a), v) により、
+$\mathcal D/\mathcal B$ の右自由化可能な対象は、$\mathcal D/\mathcal B$ で
+$Q$-右自由な対象の $Q$ による像と同型な $\mathcal D/\mathcal B$ の対象に
+ほかならない。自由矢は同型で
+ある。これで e) が従い、$\operatorname{Lib}_R(Q)$ は厳密充満三角部分圏で
+あることも明らかである。
+\VerdierSemanticAnchor{ch2-2-3-4-d-proof}
+$Z=Z_1\oplus Z_2$ を $\operatorname{Lib}_R(Q)$ の対象とする。
+$Q$-右自由な対象 $Y$ と同型 $Q(Y)\xrightarrow{\sim}Z_1\oplus Z_2$ が
+存在する。したがって関手 $X\longmapsto\operatorname{Hom}_{\mathcal D}(X,Y)$
+は射影子をもち、$Z$ の直和分解は $Y$ 上の射影子を定める。$Z$ の直和因子が
+$\operatorname{Lib}_R(Q)$ に属するための必要十分条件はこの射影子が分解可能
+であることであり、可算直和または可算積が $\mathcal D$ で表現可能ならば
+そうなる (1.2.9)。
+\endgroup

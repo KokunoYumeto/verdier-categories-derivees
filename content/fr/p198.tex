@@ -1,0 +1,75 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0198}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-1-proof-b-conclusion}
+et par suite $v$ est un épimorphisme, ce qui démontre la propriété $(E_3)$
+et achève la démonstration de la proposition.
+
+\VerdierSemanticAnchor{ch3d-2-3-2}
+\medskip\noindent\textbf{Proposition 2.3.2.}
+\textit{Soit $M$ un ensemble d'objets de $\mathcal A$ possédant les
+propriétés $(E_1)$, $(E_2)$ et $(E_3)$. Soit
+$Y\in\operatorname{Ob}\operatorname{comp}(\mathcal A)$ un complexe tel que,
+pour tout entier $n$, $H^n(Y)\in M$ et tel qu'il existe un entier $n_0$ tel
+que $H^n(Y)=0$, pour $n\geq n_0$. Il existe alors un complexe
+$X\in\operatorname{Ob}\operatorname{comp}^{-}(\mathcal A)$ dont les
+composants sont des éléments de $M$ et un quasi-isomorphisme :}
+\[
+\dot u\colon X\longrightarrow Y.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-2-proof}
+Tout d'abord, il existe (1.2.1) un complexe
+$Y'\in\operatorname{Ob}\operatorname{comp}^{-}(\mathcal A)$ et un
+quasi-isomorphisme $Y'\longrightarrow Y$. On peut donc se ramener au cas où
+$Y$ est un objet de $\operatorname{comp}^{-}(\mathcal A)$. Nous allons
+construire par récurrence sur $n$, une suite de morphismes :
+
+\VerdierSemanticAnchor{ch3d-2-3-2-induction}
+\[
+u_n\colon X_n\longrightarrow X_{n-1}
+\]
+possédant les propriétés suivantes :
+
+\VerdierSemanticAnchor{ch3d-2-3-2-induction-properties}
+\noindent 1) Pour $n$ assez petit $X_n=Y$ et $u_n=\operatorname{id}$.
+
+\noindent 2) Les composants de degré $i\geq -n$ du complexe $X_n$ sont des
+éléments de $M$. Les noyaux et images des différentielles de degré
+$i\geq -n$ de $X_n$ sont des éléments de $M^\wedge$ (2.1.1).
+
+\noindent 3) Le morphisme $u_n$ est un quasi-isomorphisme. Il est isomorphe
+au morphisme $p((\dot u_n)^{-n},-n)$ (2.1.1.3).
+
+\VerdierSemanticAnchor{ch3d-2-3-2-limits}
+Ceci fait, il suffit de poser $X=\varprojlim_n X_n$ et de prendre pour
+morphisme $\dot u$ le morphisme canonique :
+\[
+\dot u\colon X=\varprojlim_n X_n\longrightarrow\varinjlim_n X_n=Y.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-2-induction-step}
+Pour $n$ assez petit, on pose $X_n=Y$ et $\dot u_n=\operatorname{id}_Y$.
+Supposons que l'on ait construit pour tout entier $n<q$ des complexes $X_n$
+et des morphismes $\dot u_n$ possédant les propriétés 1), 2) et 3) ci-dessus. Le
+complexe $X_{q-1}$ est de la forme :
+
+\VerdierSemanticAnchor{ch3d-2-3-2-xqminus1}
+\[
+X_{q-1}=\cdots\longrightarrow Y^{-q-2}\longrightarrow Y^{-q-1}
+\longrightarrow Z^{-q}\longrightarrow L^{-q+1}\longrightarrow L^{-q+2}
+\longrightarrow\cdots,
+\]
+où les $Y^i$ sont les composants du complexe $Y$ et les $L^i$ sont des
+éléments de $M$. On a alors un épimorphisme :
+
+\VerdierSemanticAnchor{ch3d-2-3-2-quotient}
+\[
+Z^{-q}\longrightarrow
+Z^{-q}/\operatorname{Im}(Y^{-q-1}\longrightarrow Z^{-q})
+\longrightarrow0
+\]
+\endgroup

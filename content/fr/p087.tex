@@ -1,0 +1,100 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0087}%
+\VerdierSemanticAnchor{ch1-3-2-2-dual-morphism}
+De même, le morphisme de $\operatorname{tr}_1(C)$ :
+
+\VerdierSemanticAnchor{ch1-3-2-2-eq3}
+\begin{equation}
+  \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center)]
+    \node (Z)  at (0,1.35) {$0$};
+    \node (Y)  at (3.6,1.35) {$Y$};
+    \node (X)  at (0,0) {$X$};
+    \node (Yp) at (3.6,0) {$Y$};
+    \draw[->] (Z) -- (Y);
+    \draw[->] (Z) -- (X);
+    \draw[->] (Y) -- node[right] {$\operatorname{id}_Y$} (Yp);
+    \draw[->] (X) -- node[above] {$f$} (Yp);
+  \end{tikzpicture}
+  \tag{3.2.2.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-2-cone-entry-p}
+fournit, en appliquant le foncteur cône, un morphisme, fonctoriel en
+$X\xrightarrow{f}Y$, de $\operatorname{comp}(C)$ (3.1.2.4) :
+
+\VerdierSemanticAnchor{ch1-3-2-2-eq4}
+\begin{equation}
+  p(f)\colon Y\longrightarrow c(f).
+  \tag{3.2.2.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-2-comp-triangle}
+On peut donc associer à tout objet $X\xrightarrow{f}Y$ de
+$\operatorname{tr}_1(C)$ un triangle de $\operatorname{comp}(C)$ :
+
+\VerdierSemanticAnchor{ch1-3-2-2-eq5}
+\begin{equation}
+  X\xrightarrow{f}Y\xrightarrow{p(f)}c(f)\xrightarrow{q(f)}X[1].
+  \tag{3.2.2.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-2-nonfunctoriality}
+On notera que ce triangle ne dépend pas fonctoriellement de l'objet
+$X\xrightarrow{f}Y$ de $\operatorname{tr}_1(C)$.
+\VerdierSemanticAnchor{ch1-3-2-2-morphism-d-setup}
+Soit, en effet,
+$D=(g,h,a)\colon(X\xrightarrow{f}Y)\longrightarrow
+(X'\xrightarrow{f'}Y')$
+un morphisme de $\operatorname{tr}_1(C)$. On obtient alors le diagramme :
+
+\VerdierSemanticAnchor{ch1-3-2-2-eq6}
+\begin{equation}
+  \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center)]
+    \node (X)   at (0,1.8) {$X$};
+    \node (Y)   at (2.25,1.8) {$Y$};
+    \node (C)   at (4.65,1.8) {$c(f)$};
+    \node (Xs)  at (7.05,1.8) {$X[1]$};
+    \node (Xp)  at (0,0) {$X'$};
+    \node (Yp)  at (2.25,0) {$Y'$};
+    \node (Cp)  at (4.65,0) {$c(f')$};
+    \node (Xps) at (7.05,0) {$X'[1]$};
+    \node[anchor=base west,inner sep=0pt,xshift=.08em] at (Xps.base east) {$.$};
+    \draw[->] (X) -- node[above] {$f$} (Y);
+    \draw[->] (Y) -- node[above] {$p(f)$} (C);
+    \draw[->] (C) -- node[above] {$q(f)$} (Xs);
+    \draw[->] (Xp) -- node[below] {$f'$} (Yp);
+    \draw[->] (Yp) -- node[below] {$p(f')$} (Cp);
+    \draw[->] (Cp) -- node[below] {$q(f')$} (Xps);
+    \draw[->] (X) -- node[left] {$g$} (Xp);
+    \draw[->] (Y) -- node[left] {$h$} (Yp);
+    \draw[->] (C) -- node[left] {$c(D)$} (Cp);
+    \draw[->] (Xs) -- node[right] {$g[1]$} (Xps);
+    \draw[decorate,decoration={snake,amplitude=0.8pt,segment length=3.3pt}]
+      (1.20,0.18) -- (1.62,0.82);
+    \draw[->] (1.62,0.82) -- node[above left] {$a$} (2.10,1.48);
+  \end{tikzpicture}
+  \tag{3.2.2.6}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-2-square-commutativity}
+Les morphismes $p(f)$ et $q(f)$ étant fonctoriels en $f$, les deux derniers
+carrés de ce diagramme sont commutatifs, mais le premier carré est commutatif
+à homotopie près seulement.
+\VerdierSemanticAnchor{ch1-3-2-2-quotient-triangle}
+En passant au quotient par les homotopies, on peut associer à tout objet
+$X\xrightarrow{f}Y$ de $\operatorname{Tr}_1(C)$ un triangle de $K(C)$ :
+
+\VerdierSemanticAnchor{ch1-3-2-2-eq7}
+\begin{equation}
+  X\xrightarrow{\dot f}Y\xrightarrow{\dot p(f)}c(f)
+  \xrightarrow{\dot q(f)}X[1]
+  \tag{3.2.2.7}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-2-homotopy-class-notation}
+qui dépend fonctoriellement de $X\xrightarrow{f}Y$. (On désigne par
+$\dot f$, $\dot p(f)$, $\dot q(f)$ les classes modulo homotopie des morphismes
+$f$, $p(f)$, $q(f)$ respectivement.)
+\VerdierSemanticAnchor{ch1-3-2-2-triangle-functor}
+On a donc ainsi un foncteur de la catégorie $\operatorname{Tr}_1(C)$ dans la
+catégorie des triangles de $K(C)$.

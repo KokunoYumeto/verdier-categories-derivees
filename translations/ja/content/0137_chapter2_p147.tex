@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0147}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-3-4-d-complete}
+\noindent これで d) が示された。次に f) を示す。
+\VerdierSemanticAnchor{ch2-2-3-4-f}
+$\mathcal D$ の対象 $Z$ が $Q^{-1}(\operatorname{Lib}_R(Q))$ に属するための
+必要十分条件は、$Q$-右自由な対象 $Y$ と $\mathcal D/\mathcal B$ における
+同型 $Q(Z)\xrightarrow[\sim]{m}Q(Y)$ が存在することである。
+\VerdierSemanticAnchor{ch2-2-3-4-f-fraction}
+この同型は $m=Q(s)^{-1}Q(t)$ と書ける。ここで
+$s\in S_{\mathcal D}(\mathcal B)$、
+$t\in\widehat{S_{\mathcal D}(\mathcal B)}$ である（(2.2.2) と
+(2.2.4)）。よって $\mathcal D$ に次の図式がある：
+\VerdierSemanticAnchor{ch2-2-3-4-f-diagram}
+\begin{center}
+ \begin{tikzcd}[column sep=4.1em,row sep=2.5em]
+ Z \arrow[r,"t"] & X & Y \arrow[l,"s"']
+ \end{tikzcd}\quad .
+\end{center}
+\VerdierSemanticAnchor{ch2-2-3-4-f-retraction}
+a), iv) により、$s$ は $S_{\mathcal D}(\mathcal B)$ に属するレトラクション
+$s'\colon X\longrightarrow Y$ をもつ (1.2.6)。したがって
+$t'\colon Z\longrightarrow Y$、$t'\in\widehat{S_{\mathcal D}(\mathcal B)}$
+が存在する。
+\VerdierSemanticAnchor{ch2-2-3-4-f-converse}
+逆にこのような射が存在すれば $Q(t')\colon Q(Z)\longrightarrow Q(Y)$ は
+同型である。
+\VerdierSemanticAnchor{ch2-2-3-4-g}
+残る g) を示す。a), v) により双関手的同型
+\VerdierSemanticAnchor{ch2-2-3-4-g-q1-adjunction}
+\[
+ \operatorname{Hom}_{Q^{-1}(\operatorname{Lib}_R(Q))}(Z,\Psi(W))
+ \xrightarrow{\sim}
+ \operatorname{Hom}_{\operatorname{Lib}_R(Q)}(Q_1(Z),W),
+\]
+があり、$\Psi$ は $Q_1$ の右随伴である。
+\VerdierSemanticAnchor{ch2-2-3-4-g-inclusion-adjunction}
+したがって包含関手を $i\colon L_R(Q)\lhook\joinrel\longrightarrow
+Q^{-1}(\operatorname{Lib}_R(Q))$ と書けば、双関手的同型
+\[
+ \operatorname{Hom}_{Q^{-1}(\operatorname{Lib}_R(Q))}(Z,i(Y))
+ \xrightarrow{\sim}
+ \operatorname{Hom}_{L_R(Q)}(\Psi Q_1(Z),Y)\, .
+\]
+を得る。
+\VerdierSemanticAnchor{ch2-2-3-4-g-proof-complete}
+これは $\mathcal R=\Psi Q_1$ が包含関手の左随伴であることを示し、命題
+(2.3.3) の証明を完了する。
+
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-3-5}
+\medskip\noindent\textbf{命題 2.3.5.}\quad
+\VerdierSemanticAnchor{ch2-2-3-5-setup}
+$\mathcal D$ を三角圏、$\mathcal A$ と $\mathcal B$ を二つの充満三角部分圏
+（$\mathcal B$ は厳密充満）とし、$S_{\mathcal D}(\mathcal B)$ と
+$S_{\mathcal A}(\mathcal A\cap\mathcal B)$ をそれぞれ $\mathcal B$ と
+$\mathcal A\cap\mathcal B$ に対応する $\mathcal D$ と $\mathcal A$ の
+乗法的系とする。
+\VerdierSemanticAnchor{ch2-2-3-5-a}
+\par\noindent a) 次の条件は同値である：
+\VerdierSemanticAnchor{ch2-2-3-5-a-i}
+\par\noindent\hspace{1.2em}i) $X\in\operatorname{Ob}(\mathcal A)$、
+$s\in S_{\mathcal D}(\mathcal B)$ である任意の射
+$X\xrightarrow{s}X'$ は次の可換図式に組み込まれる：
+\VerdierSemanticAnchor{ch2-2-3-5-a-i-diagram}
+\begin{center}
+ \begin{tikzcd}[column sep=4.1em,row sep=2.6em]
+ X \arrow[r,"s"] \arrow[dr,"{s'}"'] & X' \arrow[d] &
+ {s'\in S_{\mathcal A}(\mathcal A\cap\mathcal B)} \\
+ & X'' &
+ \end{tikzcd}\quad .
+\end{center}
+\endgroup
+\endgroup

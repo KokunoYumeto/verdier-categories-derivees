@@ -1,0 +1,62 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0166}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch4-4-2-3}
+\medskip\noindent\textbf{4.2.3.}\quad Set:
+\VerdierSemanticAnchor{ch4-4-2-3-1}
+\[
+E\!\left[\begin{smallmatrix}n\\\omega_3\end{smallmatrix}\right]
+=E\!\left[\begin{smallmatrix}n\\f,g,h\end{smallmatrix}\right]
+=Z\!\left[\begin{smallmatrix}n\\f,g\end{smallmatrix}\right]
+\big/
+B\!\left[\begin{smallmatrix}n\\g,h\end{smallmatrix}\right].
+\tag{4.2.3.1}
+\]
+We have thus defined a functor from $\mathcal{F}\ell_3(\mathcal J)$ to
+$\mathcal A$.
+
+Now let
+$\omega_3=(\mathord\bullet\xrightarrow{f_2}\mathord\bullet
+\xrightarrow{f_3}\mathord\bullet\xrightarrow{f_4}\mathord\bullet)$
+be an object of $\mathcal{F}\ell_3(\mathcal J)$. The object
+$(\mathord\bullet\xrightarrow{f_3}\mathord\bullet\xrightarrow{f_4}\mathord\bullet)$
+of $\mathcal{F}\ell_2(\mathcal J)$ yields the exact sequence:
+\[
+H^n(f_3)\xrightarrow u H^n(f_4f_3)\longrightarrow H^n(f_4)
+\xrightarrow\delta H^{n+1}(f_3).
+\]
+Moreover, the morphism in $\mathcal{F}\ell_2(\mathcal J)$:
+\VerdierSemanticAnchor{ch4-4-2-3-psi-source}
+\[
+\begin{tikzcd}[column sep=4em,row sep=2.2em]
+{}\arrow[r,"f_2"]\arrow[d,"\operatorname{id}"']&{}
+ \arrow[r,"f_3"]\arrow[d,"\operatorname{id}"']&{}\arrow[d,"f_4"]\\
+{}\arrow[r,"f_2"']&{}\arrow[r,"f_4f_3"']&{}
+\end{tikzcd}
+\]
+yields the commutative diagram:
+\[
+\begin{tikzcd}[column sep=5.5em,row sep=2.7em]
+H^n(f_4f_3)\arrow[r,"\delta"]&H^{n+1}(f_2)\\
+H^n(f_3)\arrow[u,"u"]\arrow[ur,"\delta"']&{}
+\end{tikzcd}
+\]
+Consequently, the diagram:
+\VerdierSemanticAnchor{ch4-4-2-3-psi-diagrams}
+\[
+\begin{tikzcd}[column sep=4.5em,row sep=2.7em]
+H^n(f_4f_3)\arrow[r]\arrow[dr,"\delta"']&
+H^n(f_4)\arrow[r,"\delta"]&H^{n+1}(f_3)\\
+H^n(f_3)\arrow[u,"u"]\arrow[r,"\delta"']&H^{n+1}(f_2)&{}
+\end{tikzcd}
+\]
+defines a morphism:
+\VerdierSemanticAnchor{ch4-4-2-3-psi}
+\[
+\Psi^n(\omega_3)\colon
+Z\!\left[\begin{smallmatrix}n\\f_3,f_4\end{smallmatrix}\right]
+\longrightarrow
+H^{n+1}(f_2)\big/
+B\!\left[\begin{smallmatrix}n+1\\f_2,f_3\end{smallmatrix}\right].
+\]
+\endgroup

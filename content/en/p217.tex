@@ -1,0 +1,80 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0217}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-2-11}
+\medskip\noindent\textbf{3.2.11.}\quad
+Let $f=\delta^n(S^n(X,Y))$ and $g=\delta^n({S'}^n(X,Y))$ be two elements
+of $\operatorname{Ext}_{\mathcal A}^{n}(X,Y)$. The morphism
+$f+g\in\operatorname{Ext}_{\mathcal A}^{n}(X,Y)$ is, by definition, the
+composite morphism:
+
+\VerdierSemanticAnchor{ch3d-3-2-11-sum-composite}
+\[
+X\xrightarrow{\binom{\operatorname{id}}{\operatorname{id}}}X\oplus X
+\xrightarrow{\begin{pmatrix}f&0\\0&g\end{pmatrix}}
+Y[n]\oplus Y[n]
+\xrightarrow{(\operatorname{id},\operatorname{id})}Y[n].
+\]
+
+\VerdierSemanticAnchor{ch3d-3-2-11-construction}
+Paragraphs (3.2.9) and (3.2.10) then make it possible, starting from the
+elements $S^n(X,Y)$ and ${S'}^n(X,Y)$, to construct an element
+${S''}^n(X,Y)\in E_{\mathcal A}^{n}(X,Y)$ such that
+$\delta^n({S''}^n(X,Y))=f+g$. We leave it to the reader to make this
+construction explicit.
+
+\VerdierSemanticAnchor{ch3d-3-2-12}
+\medskip\noindent\textbf{3.2.12.}\quad
+We have therefore shown in this subsection that the groups
+$\operatorname{Ext}_{\mathcal A}^{n}(X,Y)$ ($X$ and $Y$ objects of
+$\mathcal A$) can be interpreted as quotients of the sets
+$E_{\mathcal A}^{n}(X,Y)$ by the equivalence relation described in (3.2.2).
+Moreover, the composition of extensions and their sum can be described by
+means of simple operations on the elements of the
+$E_{\mathcal A}^{n}(X,Y)$. We thus recover a description due to Yoneda [3].
+
+\VerdierSemanticAnchor{ch3d-3-3}
+\subsection{The category
+\texorpdfstring{$\mathcal A^{\operatorname{Ext}}$}{A Ext}.}
+
+\VerdierSemanticAnchor{ch3d-3-3-1}
+\medskip\noindent\textbf{Lemma 3.3.1.}\quad
+\textit{a) Let $X$ and $Y$ be two objects of $\mathcal A$, and let
+$\xi\in\operatorname{Ext}_{\mathcal A}^{0}(X[p],Y[q])\simeq
+\operatorname{Ext}_{\mathcal A}^{q-p}(X,Y)$, $q>p$. There exist $q-p$ exact
+sequences of length $1$, $S_i^1$, $1\leq i\leq q-p$, such that the exact
+sequence of length $n$,
+$S_{q-p}^1*S_{q-p-1}^1*\cdots*S_1^1$, is defined (3.2.4) and such that:}
+
+\VerdierSemanticAnchor{ch3d-3-3-1-1}
+\begin{equation}
+\delta^{q-p}\bigl(S_{q-p}^1*S_{q-p-1}^1*\cdots*S_1^1\bigr)[p]=\xi.
+\tag{3.3.1.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-3-1-b-factorizations}
+\noindent\textit{b) Let $S^n$ and ${S'}^n$ be two elements of
+$E_{\mathcal A}^{n}(X,Y)$ that can be written, using the notation of
+(3.2.6), as}
+\[
+S^n=S_n^1*S_{n-1}^1*\cdots*S_1^1,
+\]
+\[
+{S'}^n={S'}_n^1*{S'}_{n-1}^1*\cdots*{S'}_1^1,
+\]
+\noindent\textit{where the $S_i^1$ and ${S'}_i^1$, $1\leq i\leq n$, are
+exact sequences of length $1$.}
+
+\VerdierSemanticAnchor{ch3d-3-3-1-b-equivalence}
+\noindent\textit{The following properties are equivalent:}
+
+\noindent\textit{i) $\delta^n(S^n)=\delta^n({S'}^n)$.}
+
+\noindent\textit{ii) There exist $n$ exact sequences of length $1$,
+${S''}_i^1$, $1\leq i\leq n$, and $2n-2$ morphisms of $\mathcal A$,
+$f_i$, $1\leq i\leq n-1$, and $g_i$, $1\leq i\leq n-1$, such that the
+sequences}
+\endgroup

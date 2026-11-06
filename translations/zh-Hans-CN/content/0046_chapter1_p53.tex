@@ -1,0 +1,69 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0053}%
+\VerdierSemanticAnchor{ch1-1-5-3-eq4}
+由定义或直接验证，性质 $P(q,q')$ 在下列情形成立：
+
+\begin{equation}
+  \begin{gathered}
+    q=0,\\
+    q'=0,\\
+    q\leq 0\ \text{且}\ q'=-1,\\
+    q\geq 0\ \text{且}\ q'=1,\\
+    q=1\ \text{且}\ q'=-1,\\
+    q=-1\ \text{且}\ q'=1.
+  \end{gathered}
+  \tag{1.5.3.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-5-3-eq5}
+此外，考察由三个整数 $q,q',q''$ 所能组成的各个图 $D(q,q')$，立即得到
+(1.5.3.5)：
+
+\begin{quote}
+  \noindent\textup{(1.5.3.5)}\quad
+  \emph{若四个性质
+  $P(q',q'')$、$P(q+q',q'')$、$P(q,q'+q'')$、$P(q,q')$
+  中有三个成立，则第四个也成立。}
+\end{quote}
+
+\VerdierSemanticAnchor{ch1-1-5-3-conclusion}
+由 (1.5.3.4) 可知，性质 $P(q,q')$ 对任意一对整数 $q,q'$ 都成立，
+从而完成 $n=1$ 情形的证明。
+
+\VerdierSemanticAnchor{ch1-1-5-4}
+\noindent\textbf{1.5.4. 一般情形下的存在性。}\quad
+以 $\mathbb Z^{n-1}\hookrightarrow\mathbb Z^n$ 表示由
+$\mathbb Z^n$ 的基的前 $n-1$ 个元素生成的子群；于是
+$\mathbb Z^n=\mathbb Z^{n-1}\oplus\mathbb Z e_n$。
+由归纳假设，存在同构
+
+\VerdierSemanticAnchor{ch1-1-5-4-initial-isomorphisms}
+\[
+  \begin{aligned}
+    p(\sigma)&\colon FT(\sigma)\longrightarrow T'(\sigma)F,
+      &\sigma&\in\mathbb Z^{n-1},\\
+    p(\tau)&\colon FT(\tau)\longrightarrow T'(\tau)F,
+      &\tau&\in\mathbb Z e_n,
+  \end{aligned}
+\]
+使得图
+
+\VerdierSemanticAnchor{ch1-1-5-4-eq1}
+\begin{equation}
+  \resizebox{0.76\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=7.0em,row sep=3.8em]
+      FT(\lambda+\mu)
+        \arrow[r,"{p(\lambda+\mu)}"]
+        \arrow[d,"{F*c(\mu,\lambda)}"']
+        \& T'(\lambda+\mu)F
+        \arrow[dd,"{c'(\mu,\lambda)*F}"] \\
+      FT(\lambda)T(\mu)
+        \arrow[d,"{p(\lambda)*T(\mu)}"']
+        \& {} \\
+      T'(\lambda)FT(\mu)
+        \arrow[r,"{T'(\lambda)*p(\mu)}"']
+        \& T'(\lambda)T'(\mu)F
+    \end{tikzcd}$%
+  }
+  \tag*{\(\textup{(1.5.4.1)}_{\lambda,\mu}\)}
+\end{equation}

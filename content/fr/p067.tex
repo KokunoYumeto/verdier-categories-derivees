@@ -1,0 +1,77 @@
+\VerdierPhysicalPageAnchor{0067}%
+\VerdierSemanticAnchor{ch1-2-1-5}
+\noindent\textbf{2.1.5.}\quad
+Le morphisme $f^\sigma\colon Y^\sigma\longrightarrow Y'^\sigma$ est appelé
+le \emph{composant de degré $\sigma$} du morphisme $(f^\sigma)$. Soit
+$f\colon Y\longrightarrow Y'$ un morphisme de complexes $n$-uples. Le
+composant de degré $\sigma$ de $f$ est noté $f^\sigma$.
+\VerdierSemanticAnchor{ch1-2-1-5-composition}
+Les morphismes de complexes $n$-uples se composent de manière évidente :
+composant par composant.
+\VerdierSemanticAnchor{ch1-2-1-5-category}
+Les complexes $n$-uples d'objets de $C$ forment une catégorie qui est notée
+$\operatorname{comp}^{n}(C)$. Lorsque $n=1$, on utilise la notation simplifiée
+$\operatorname{comp}^{1}(C)=\operatorname{comp}(C)$. Les objets de
+$\operatorname{comp}(C)$ sont appelés les \emph{complexes simples de $C$} ou
+même, lorsqu'aucune confusion n'en résulte, les \emph{complexes de $C$}. Les
+catégories $\operatorname{comp}^{n}(C)$ sont additives.
+
+\VerdierSemanticAnchor{ch1-2-1-6}
+\noindent\textbf{2.1.6.}\quad
+Soit $Y$ un complexe $n$-uple de $C$. On utilise parfois, pour désigner le
+composant de degré $\sigma$ de $Y$, la notation $Y_{-\sigma}$, et, pour
+désigner la différentielle de degré $\sigma$ de $Y$ dans la direction $i$,
+la notation $d^Y_{-\sigma,i}$.
+\VerdierSemanticAnchor{ch1-2-1-6-positive-finite}
+Cette notation est surtout utilisée lorsque $Y$ est un complexe simple dont
+tous les composants de degré positif sont nuls sauf un nombre fini d'entre
+eux. Soit de même $f\colon Y\longrightarrow Y'$ un morphisme de complexes
+$n$-uples. On utilise parfois la notation $f_{-\sigma}$ pour désigner le
+composant de degré $\sigma$ du morphisme $f$.
+
+\VerdierSemanticAnchor{ch1-2-1-7}
+\noindent\textbf{2.1.7.}\quad
+Soit $\varphi\colon[n]\longrightarrow[m]$ une application.
+\VerdierSemanticAnchor{ch1-2-1-7-summable}
+Un complexe $n$-uple $Y$ de $C$ est dit \emph{$\varphi$-sommable}, si pour
+tout $\tau\in\mathbb Z[m]$, l'ensemble des $\sigma\in\mathbb Z[n]$ tels que
+$\varphi(\sigma)=\tau$ et $Y^\sigma$ soit différent de $0$, est fini. Lorsque
+$\varphi$ est l'unique application $[n]\longrightarrow[1]$, on dit simplement
+\emph{sommable}.
+\VerdierSemanticAnchor{ch1-2-1-7-composition}
+Soient $[n]\xrightarrow{\varphi}[m]\xrightarrow{\psi}[p]$ deux applications.
+Tout complexe $n$-uple $Y$ qui est $\psi\varphi$-sommable est aussi
+$\varphi$-sommable. En particulier, tout complexe $n$-uple sommable est
+$\varphi$-sommable pour toute application
+$[n]\xrightarrow{\varphi}[m]$.
+\VerdierSemanticAnchor{ch1-2-1-7-injective}
+Lorsque $\varphi$ est une injection, tous les complexes sont
+$\varphi$-sommables.
+\VerdierSemanticAnchor{ch1-2-1-7-category}
+On appelle \emph{catégorie des complexes $n$-uples $\varphi$-sommables}, la
+sous-catégorie pleine de $\operatorname{comp}^{n}(C)$ définie par les
+complexes $\varphi$-sommables.
+
+\VerdierSemanticAnchor{ch1-2-2}
+\subsection{Complexe simple associé}
+
+\VerdierSemanticAnchor{ch1-2-2-1}
+\noindent\textbf{2.2.1.}\quad
+Pour tout $\sigma\in\mathbb Z[n]$,
+$\sigma=\sum_{j\in[n]}l_je_j$, $l_j\in\mathbb Z$, et pour tout $i\in[n]$
+posons :
+
+\VerdierSemanticAnchor{ch1-2-2-1-eq1}
+\begin{equation}
+  \varepsilon(\sigma,i)=(-1)^{\left(\sum_{j<i}l_j\right)}.
+  \tag{2.2.1.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-2-1-sign-map}
+La formule (2.2.1.1) définit une application :
+\begin{equation*}
+  (\sigma,i)\longmapsto\varepsilon(\sigma,i)
+\end{equation*}
+de $\mathbb Z[n]\times[n]$ dans le groupe des signes $\{-1,1\}$. On vérifie
+immédiatement que pour tout $i\in[n]$, l'application
+$\sigma\longmapsto\varepsilon(\sigma,i)$ est un homomorphisme de

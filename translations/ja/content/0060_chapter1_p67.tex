@@ -1,0 +1,70 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0067}%
+\VerdierSemanticAnchor{ch1-2-1-5}
+\noindent\textbf{2.1.5.}\quad
+射 $f^\sigma\colon Y^\sigma\to Y'^\sigma$ を射 $(f^\sigma)$ の
+\emph{次数 $\sigma$ の成分}と呼ぶ。$f\colon Y\to Y'$ を $n$-重複複体の
+射とするとき、$f$ の次数 $\sigma$ の成分を $f^\sigma$ と記す。
+\VerdierSemanticAnchor{ch1-2-1-5-composition}
+$n$-重複複体の射は明らかな仕方で、成分ごとに合成される。
+\VerdierSemanticAnchor{ch1-2-1-5-category}
+$C$ の対象からなる $n$-重複複体は、$\operatorname{comp}^{n}(C)$ と記す
+圏をなす。$n=1$ のときは簡略記法
+$\operatorname{comp}^{1}(C)=\operatorname{comp}(C)$ を用いる。
+$\operatorname{comp}(C)$ の対象を $C$ における\emph{単純複体}、また混同の
+おそれがなければ単に $C$ における\emph{複体}と呼ぶ。圏
+$\operatorname{comp}^{n}(C)$ は加法圏である。
+
+\VerdierSemanticAnchor{ch1-2-1-6}
+\noindent\textbf{2.1.6.}\quad
+$Y$ を $C$ における $n$-重複複体とする。$Y$ の次数 $\sigma$ の成分を
+$Y_{-\sigma}$、方向 $i$ における次数 $\sigma$ の微分を
+$d^Y_{-\sigma,i}$ と記すこともある。
+\VerdierSemanticAnchor{ch1-2-1-6-positive-finite}
+この記法は、とくに $Y$ が単純複体で、正の次数の成分が有限個を除いて
+消える場合に用いる。同様に、$f\colon Y\to Y'$ を $n$-重複複体の射と
+すると、射 $f$ の次数 $\sigma$ の成分を $f_{-\sigma}$ と記すことがある。
+
+\VerdierSemanticAnchor{ch1-2-1-7}
+\noindent\textbf{2.1.7.}\quad
+$\varphi\colon[n]\to[m]$ を写像とする。
+\VerdierSemanticAnchor{ch1-2-1-7-summable}
+各 $\tau\in\mathbb Z[m]$ に対して、$\varphi(\sigma)=\tau$ かつ
+$Y^\sigma\neq0$ となる $\sigma\in\mathbb Z[n]$ が有限個しかないとき、
+$C$ における $n$-重複複体 $Y$ を\emph{$\varphi$-総和可能}という。
+$\varphi$ が唯一の写像 $[n]\to[1]$ であるときは、単に\emph{総和可能}という。
+\VerdierSemanticAnchor{ch1-2-1-7-composition}
+$[n]\xrightarrow{\varphi}[m]\xrightarrow{\psi}[p]$ を二つの写像とする。
+$\psi\varphi$-総和可能な任意の $n$-重複複体 $Y$ は $\varphi$-総和可能でも
+ある。とくに、総和可能な任意の $n$-重複複体は、任意の写像
+$[n]\xrightarrow{\varphi}[m]$ に対して $\varphi$-総和可能である。
+\VerdierSemanticAnchor{ch1-2-1-7-injective}
+$\varphi$ が単射ならば、すべての複体は $\varphi$-総和可能である。
+\VerdierSemanticAnchor{ch1-2-1-7-category}
+\emph{$\varphi$-総和可能な $n$-重複複体の圏}とは、
+$\varphi$-総和可能な複体によって定まる $\operatorname{comp}^{n}(C)$ の
+充満部分圏である。
+
+\VerdierSemanticAnchor{ch1-2-2}
+\subsection{付随する単純複体}
+
+\VerdierSemanticAnchor{ch1-2-2-1}
+\noindent\textbf{2.2.1.}\quad
+各 $\sigma\in\mathbb Z[n]$ を
+$\sigma=\sum_{j\in[n]}l_je_j$、$l_j\in\mathbb Z$ と書き、各
+$i\in[n]$ に対して
+
+\VerdierSemanticAnchor{ch1-2-2-1-eq1}
+\begin{equation}
+  \varepsilon(\sigma,i)=(-1)^{\left(\sum_{j<i}l_j\right)}
+  \tag{2.2.1.1}
+\end{equation}
+とおく。
+
+\VerdierSemanticAnchor{ch1-2-2-1-sign-map}
+公式 (2.2.1.1) は $\mathbb Z[n]\times[n]$ から符号群 $\{-1,1\}$ への写像
+\begin{equation*}
+  (\sigma,i)\longmapsto\varepsilon(\sigma,i)
+\end{equation*}
+を定める。各 $i\in[n]$ について
+$\sigma\longmapsto\varepsilon(\sigma,i)$ が群準同型であり、

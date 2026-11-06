@@ -1,0 +1,91 @@
+\VerdierPhysicalPageAnchor{0063}%
+\VerdierSemanticAnchor{ch1-1-6-5-continuation}
+d'où on déduit immédiatement :
+
+\VerdierSemanticAnchor{ch1-1-6-5-deduction}
+\VerdierSemanticAnchor{ch1-1-6-5-beta-s-coboundary}
+\begin{equation*}
+  \alpha_s(\sigma_1,\sigma_2)\alpha(\sigma_1,\sigma_2)^{-1}
+  =\beta_s(\sigma_2)\beta_s(\sigma_1+\sigma_2)^{-1}\beta_s(\sigma_1),
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq3}
+\VerdierSemanticAnchor{ch1-1-6-5-eq3-beta}
+\VerdierSemanticAnchor{ch1-1-6-5-eq3-basis}
+\begin{equation}
+  \begin{aligned}
+    \beta_s(\sigma_1)
+      &=(-1)^{\left(
+          \sum_{\substack{i<j\\s(i)>s(j)}}p_i p_j
+        \right)},\\
+    \beta_s(e_i)&=1,
+      \qquad \forall i\in[1,n].
+  \end{aligned}
+  \tag{1.6.5.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-5-application}
+Par suite, d'après (1.6.2), toute application
+$\beta\colon\mathbb Z^n\longrightarrow\mathbb Z/2\mathbb Z$ telle que
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq4}
+\begin{equation}
+  \alpha_s(\sigma_1,\sigma_2)\alpha(\sigma_1,\sigma_2)^{-1}
+  =\beta(\sigma_2)\beta(\sigma_1+\sigma_2)^{-1}\beta(\sigma_1)
+  \tag{1.6.5.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq5-intro}
+est du type :
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq5}
+\begin{equation}
+  \beta=\beta_s\eta,
+  \tag{1.6.5.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-5-closure}
+où $\eta\colon\mathbb Z^n\longrightarrow\mathbb Z/2\mathbb Z$ est
+l'unique homomorphisme de groupes qui prend sur les
+$e_j\in\mathbb Z^n$ les valeurs $\beta(e_j)$.
+
+\VerdierSemanticAnchor{ch1-1-6-6}
+\VerdierSemanticAnchor{ch1-1-6-6-product-setup}
+\noindent\textbf{1.6.6.}\quad
+Soient $(C_i,\mathbb Z,T_i,c_i)$, $1\leq i\leq n$, des
+$\mathbb Z$-catégories et $(D,\mathbb Z,T,c)$ une $\mathbb Z$-catégorie
+additive. Désignons par $(C,\mathbb Z^n,T,c)$ la catégorie produit des
+$(C_i,\mathbb Z,T_i,c_i)$. Le groupe $\mathbb Z^n$ est muni
+naturellement d'une base ordonnée $e_1,\ldots,e_n$. Il opère à
+isomorphisme près sur $C$ par la formule (on utilise ici la notation à
+droite introduite en (1.3.12)) :
+
+\VerdierSemanticAnchor{ch1-1-6-6-eq1}
+\begin{equation}
+  (X_1,\ldots,X_n)[\sigma]
+  =(X_1[l_1],\ldots,X_n[l_n]),
+  \qquad
+  \sigma=\sum_{i=1}^{n}l_i e_i.
+  \tag{1.6.6.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-6-phi-action}
+Soit $\varphi\colon\mathbb Z^n\longrightarrow\mathbb Z$
+l'homomorphisme
+$\varphi(\sum_{i=1}^{n}l_i e_i)=\sum_{i=1}^{n}l_i$.
+Faisons opérer $\mathbb Z^n$ sur $D$ par l'intermédiaire de $\varphi$
+(1.4.1). Dans cette situation, nous utiliserons toujours les
+conventions suivantes :
+
+\VerdierSemanticAnchor{ch1-1-6-6-sign-rule-1}
+\noindent\textbf{Règle des signes I :}
+\emph{Les foncteurs de $C$ dans $D$ seront toujours, sauf mention
+expresse du contraire, des $\mathbb Z^n$-foncteurs tordus par le
+cocycle de Koszul relatif à la base ordonnée $e_1,\ldots,e_n$.}
+
+\VerdierSemanticAnchor{ch1-1-6-6-sign-rule-2}
+\noindent\textbf{Règle des signes II :}
+\emph{les morphismes de foncteurs seront, sauf mention expresse du
+contraire, des morphismes de $\mathbb Z^n$-foncteurs relatifs à
+l'homomorphisme trivial
+$\beta\colon\mathbb Z^n\longrightarrow\mathbb Z/2\mathbb Z$ (1.4.6).}

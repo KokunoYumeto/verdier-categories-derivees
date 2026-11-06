@@ -1,0 +1,75 @@
+
+\clearpage
+\VerdierPhysicalPageAnchor{0128}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{3pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-2}
+\section{三角范畴中的局部化。}
+
+\VerdierSemanticAnchor{ch2-2-1}
+\subsection{态射的乘法系 [16]。}
+
+\VerdierSemanticAnchor{ch2-2-1-1}
+\noindent\textbf{2.1.1.}\quad
+\VerdierSemanticAnchor{ch2-2-1-1-multiplicative-system}
+设 $C$ 为一个范畴（不必加性）。$C$ 的一个态射集 $S$ 称为
+\emph{乘法系}，如果它具有下列性质：
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm1}
+\smallskip
+\noindent\textbf{SM1)} $S$ 中两个可复合态射的复合属于 $S$。对于 $C$
+的每个对象 $X$，$X$ 的恒等态射属于 $S$。
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm2}
+\smallskip
+\noindent\textbf{SM2)} 任意图式：
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm2-right-input}
+\begin{center}
+  \begin{tikzcd}[column sep=4.1em,row sep=2.5em]
+    & {} \arrow[d,"s\in S"] \\
+    {} \arrow[r,"f"'] & {}
+  \end{tikzcd}
+\end{center}
+\noindent 都可补成交换图：
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm2-right-completion}
+\begin{center}
+  \begin{tikzcd}[column sep=4.1em,row sep=2.5em]
+    {} \arrow[r,dashed,"g"] \arrow[d,dashed,"t\in S"']
+      & {} \arrow[d,"s\in S"] \\
+    {} \arrow[r,"f"'] & {}
+  \end{tikzcd}
+  \quad .
+\end{center}
+\noindent 任意图式：
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm2-left-input}
+\begin{center}
+  \begin{tikzcd}[column sep=4.1em,row sep=2.5em]
+    {} \arrow[r,"g"] \arrow[d,"t\in S"'] & {} \\
+    {} & {}
+  \end{tikzcd}
+\end{center}
+\noindent 都可补成交换图：
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm2-left-completion}
+\begin{center}
+  \begin{tikzcd}[column sep=4.1em,row sep=2.5em]
+    {} \arrow[r,"g"] \arrow[d,"t\in S"']
+      & {} \arrow[d,dashed,"s\in S"] \\
+    {} \arrow[r,dashed,"f"'] & {}
+  \end{tikzcd}
+  \quad .
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm3-boundary}
+\noindent\textbf{SM3)} 对于任意一对态射
+$f,g\colon X\rightrightarrows Y$，下列性质等价：
+\endgroup
+
+

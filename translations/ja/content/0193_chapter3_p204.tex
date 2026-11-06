@@ -1,0 +1,90 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0204}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-4-4-b}
+\noindent\textit{b) $P$ を $\mathcal A$ の射影対象全体の集合とする。
+三角圏 $K^{-}(P)$ は $Q$-左自由対象の圏の部分圏である。自然関手}
+\[
+K^{-}(P)\longrightarrow D(\mathcal A)
+\]
+\noindent\textit{は充満忠実である。}
+
+\VerdierSemanticAnchor{ch3d-2-4-4-c}
+\noindent\textit{c) $\mathcal A$ の各対象がある射影対象の商対象であるとする
+（それぞれ、さらに $\mathcal A$ の対象の射影次元を上から抑える整数
+$n\in\mathbb N$ が存在するとする）。このとき次が成り立つ：}
+
+\noindent\textit{1) 自然関手
+$K^{-}(P)\longrightarrow D^{-}(\mathcal A)$（それぞれ
+$K^{*}(P)\longrightarrow D^{*}(\mathcal A)$）は圏同値である。
+$L^{-}\colon D^{-}(\mathcal A)\longrightarrow K^{-}(P)$（それぞれ
+$L^{*}\colon D^{*}(\mathcal A)\longrightarrow K^{*}(P)$）を擬逆関手とする。}
+
+\noindent\textit{2) 関手
+$L^{-}Q^{-}\colon K^{-}(\mathcal A)\longrightarrow K^{-}(P)$
+（それぞれ
+$L^{*}Q^{*}\colon K^{*}(\mathcal A)\longrightarrow K^{*}(P)$）は次の包含関手の右随伴である：}
+\[
+K^{-}(P)\longrightarrow K^{-}(\mathcal A)
+\qquad
+(\text{それぞれ、}K^{*}(P)\longrightarrow K^{*}(\mathcal A)).
+\]
+\noindent\textit{随伴射
+$\operatorname{id}_{K^{-}(\mathcal A)}\longrightarrow L^{-}Q^{-}$
+（それぞれ
+$\operatorname{id}_{K^{*}(\mathcal A)}\longrightarrow L^{*}Q^{*}$）は
+``擬同型'' である。}
+
+\noindent\textit{3) 関手 $L^{-}$（それぞれ $L^{*}$）は関手 $Q^{-}$
+（それぞれ $Q^{*}$）の左随伴である。}
+
+\noindent\textit{4) $K^{-}(\mathcal A)$（それぞれ $K^{*}(\mathcal A)$）の対象が
+$Q$-左自由であるための必要十分条件は、それが $K^{-}(P)$
+（それぞれ $K^{*}(P)$）のある対象と同型であることである。}
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-a}
+a) を証明する。$\mathcal A$ の任意の対象 $Y$ に対して
+\[
+\operatorname{Hom}_{K(\mathcal A)}(X,Y[n])=0,
+\qquad\text{ただし }n\neq0,
+\]
+である。したがって、$X$ は $Q$-左自由であるから（第 II 章，2.3.3）、
+\[
+\operatorname{Hom}_{D(\mathcal A)}(X,Y[n])=0,
+\qquad\text{ただし }n\neq0.
+\]
+また、
+$\operatorname{Hom}_{D(\mathcal A)}(X,Y)
+=\operatorname{Hom}_{\mathcal A}(X,Y)$ (1.2.9) である。次を
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-a-short-exact}
+\[
+S=0\longrightarrow Y'\xrightarrow{u}Y\xrightarrow{v}Y''
+\longrightarrow0
+\]
+$\mathcal A$ の完全列とする。標準コホモロジー的関手
+$\operatorname{comp}(\mathcal A)\longrightarrow D(\mathcal A)$ (1.3.2) は
+完全三角 $(Y',Y,Y'',[u],[v],\delta(S))$ を与える。したがって、
+次の完全列がある（第 II 章，1.2.1）：
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-a-hom-exact}
+\[
+\cdots\longrightarrow0\longrightarrow
+\operatorname{Hom}_{D(\mathcal A)}(X,Y')\longrightarrow
+\operatorname{Hom}_{D(\mathcal A)}(X,Y)\longrightarrow
+\operatorname{Hom}_{D(\mathcal A)}(X,Y'')\longrightarrow0
+\longrightarrow\cdots,
+\]
+すなわち次の完全列である：
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-a-hom-a-exact}
+\[
+0\longrightarrow\operatorname{Hom}_{\mathcal A}(X,Y')
+\longrightarrow\operatorname{Hom}_{\mathcal A}(X,Y)
+\longrightarrow\operatorname{Hom}_{\mathcal A}(X,Y'')
+\longrightarrow0,
+\]
+\endgroup

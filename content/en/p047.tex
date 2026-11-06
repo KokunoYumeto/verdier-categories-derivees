@@ -1,0 +1,84 @@
+\VerdierPhysicalPageAnchor{0047}%
+\VerdierSemanticAnchor{ch1-1-4-3-compatibility}
+and consequently, by (1.2.3.2), for every pair
+$(\varepsilon,\sigma)$, the following diagram is commutative:
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq8}
+\begin{center}
+  $\begin{tikzcd}[ampersand replacement=\&,column sep=6em,row sep=3.5em]
+    FT(\sigma)
+      \arrow[rr,"{m((\varepsilon,\sigma))}"]
+      \arrow[dr,"{m((1,\sigma))}"']
+      \& \& T'(\sigma)F \\
+      \& T'(\sigma)F
+        \arrow[ur,"{T'(\sigma)*m(\varepsilon)}"'] \&
+  \end{tikzcd}$
+  \hfill\textup{(1.4.3.8)},
+\end{center}
+
+\noindent\emph{i.e.}
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq9}
+\begin{equation}
+  m((\varepsilon,\sigma))=\varepsilon m((1,\sigma)).
+  \tag{1.4.3.9}
+\end{equation}
+Set then:
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq10}
+\begin{equation}
+  m((1,\sigma))=p(\sigma)\colon
+  FT(\sigma)\longrightarrow T'(\sigma)F.
+  \tag{1.4.3.10}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-3-cocycle-compatibility}
+The family of isomorphisms $p(\sigma)$, $\sigma\in G$, then has the
+following property: for every pair $\sigma_1,\sigma_2\in G$, the
+following diagram is $\alpha_s(\sigma_1,\sigma_2)$-commutative
+(\emph{i.e.} commutative if $\alpha_s(\sigma_1,\sigma_2)=+1$ and
+anticommutative if $\alpha_s(\sigma_1,\sigma_2)=-1$):
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq11}
+\begin{center}
+  \resizebox{0.94\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=5em,row sep=3.5em]
+      FT(\sigma_1\sigma_2)
+        \arrow[rr,"{p(\sigma_1\sigma_2)}"]
+        \arrow[d,"{F*c(\sigma_2,\sigma_1)}"']
+        \& \& T'(\sigma_1\sigma_2)F
+          \arrow[dd,"{c'(\sigma_2,\sigma_1)*F}"'] \\
+      FT(\sigma_1)T(\sigma_2)
+        \arrow[d,"{p(\sigma_1)*T(\sigma_2)}"']
+        \& \& {} \\
+      T'(\sigma_1)FT(\sigma_2)
+        \arrow[rr,"{T'(\sigma_1)*p(\sigma_2)}"]
+        \& \& T'(\sigma_1)T'(\sigma_2)F\mathpunct{.}
+    \end{tikzcd}$%
+  }
+  \hfill\textup{(1.4.3.11)}
+\end{center}
+
+\VerdierSemanticAnchor{ch1-1-4-3-converse}
+Conversely, given a functor $F\colon\mathcal C\to\mathcal C'$ and a
+family of isomorphisms
+$p(\sigma)\colon FT(\sigma)\to T'(\sigma)F$, $\sigma\in G$, such that
+for every pair $(\sigma_1,\sigma_2)\in G\times G$ the diagram
+(1.4.3.11) is $\alpha_s(\sigma_1,\sigma_2)$-commutative, one can
+reconstruct uniquely an $H$-functor
+\[
+  (F,m)\colon(\mathcal C,H,T_f,c_f)
+  \longrightarrow(\mathcal C',H,T'_f,c'_f)
+\]
+inducing the canonical operation of the group of signs on $F$, by
+setting (via the identification of $H$ with the group described by
+(1.4.3.6)):
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq12}
+\begin{equation}
+  m((\varepsilon,\sigma))=\varepsilon p(\sigma).
+  \tag{1.4.3.12}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-3-closure}
+The immediate verification is left to the reader.

@@ -1,0 +1,77 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0059}%
+\VerdierSemanticAnchor{ch1-1-5-13}
+\noindent\textbf{1.5.13.}\quad
+本书将使用的 $\mathbb Z^n$-范畴都是严格范畴。因此，我们不打算在一般情形下
+讨论 (1.5.12) 所指出的问题。不过，(1.5.12) 的例子表明，在一个范畴
+$\mathcal C$ 上确定 $\mathbb Z$-范畴结构格外简单。事实确实如此。
+以 $E\text{-}\operatorname{Cat}$ 表示如下 $U$-范畴：其对象是属于 $U$
+且装备了一个等价
+
+\VerdierSemanticAnchor{ch1-1-5-13-eq1}
+\begin{equation}
+  T\colon\mathcal C\longrightarrow\mathcal C
+  \tag{1.5.13.1}
+\end{equation}
+的范畴；其态射是装备了同构
+
+\VerdierSemanticAnchor{ch1-1-5-13-eq2}
+\begin{equation}
+  m\colon FT\longrightarrow T'F
+  \tag{1.5.13.2}
+\end{equation}
+的函子 $F\colon\mathcal C\to\mathcal C'$。
+
+于是显然有从 $U$-范畴 $\mathbb Z\text{-}\operatorname{Cat}$ 到
+$U$-范畴 $E\text{-}\operatorname{Cat}$ 的函子
+
+\VerdierSemanticAnchor{ch1-1-5-13-eq3}
+\begin{equation}
+  R\colon \mathbb Z\text{-}\operatorname{Cat}
+  \longrightarrow E\text{-}\operatorname{Cat}.
+  \tag{1.5.13.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-5-13-action}
+函子 $R$ 把 $\mathbb Z$-范畴 $(\mathcal C,\mathbb Z,T,c)$ 映到装备了等价
+$T(1)\colon\mathcal C\to\mathcal C$ 的范畴 $\mathcal C$，并把每个
+$\mathbb Z$-函子
+\[
+  (F,m)\colon(\mathcal C,\mathbb Z,T,c)
+  \longrightarrow(\mathcal C',\mathbb Z,T',c')
+\]
+映到装备了同构 $m(1)\colon FT(1)\to T'(1)F$ 的函子 $F$。
+
+\VerdierSemanticAnchor{ch1-1-5-14}
+\VerdierSemanticAnchor{ch1-1-5-14-proposition}
+\noindent\textbf{命题 1.5.14.}\quad
+\emph{函子 $R$ 是范畴的等价。}
+
+\VerdierSemanticAnchor{ch1-1-5-14-proof}
+我们只给出证明的若干说明。命题 (1.5.2) 与注 (1.5.8) 表明 $R$ 充分忠实，
+因此只需证明 $R$ 本质满。设
+$(\mathcal C,T\colon\mathcal C\to\mathcal C)$ 为装备了一个等价的范畴。
+取 $T$ 的一个拟逆函子 $T^{-1}\colon\mathcal C\to\mathcal C$，并令
+
+\VerdierSemanticAnchor{ch1-1-5-14-eq1}
+\begin{equation}
+  \begin{aligned}
+    u&\colon\operatorname{id}_{\mathcal C}\longrightarrow TT^{-1},\\
+    v&\colon\operatorname{id}_{\mathcal C}\longrightarrow T^{-1}T
+  \end{aligned}
+  \tag{1.5.14.1}
+\end{equation}
+为伴随同构。
+
+对每个整数 $n>0$，函子 $T^n$ 与 $(T^{-1})^n$ 互为伴随，因而有伴随同构
+
+\VerdierSemanticAnchor{ch1-1-5-14-eq2}
+\begin{equation}
+  \begin{aligned}
+    u^{(n)}&\colon\operatorname{id}_{\mathcal C}
+      \longrightarrow T^n(T^{-1})^n,\\
+    v^{(n)}&\colon\operatorname{id}_{\mathcal C}
+      \longrightarrow (T^{-1})^nT^n.
+  \end{aligned}
+  \tag{1.5.14.2}
+\end{equation}

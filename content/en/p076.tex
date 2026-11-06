@@ -1,0 +1,85 @@
+\VerdierPhysicalPageAnchor{0076}%
+\VerdierSemanticAnchor{ch1-2-4-2-countable-products-sums}
+Suppose now that countable products (respectively, direct sums) are
+representable in $C$. Set:
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq6}
+\begin{equation}
+  \begin{aligned}
+    \operatorname{comp}_{\Pi}F
+      &=\int_n^{\Pi}F^{[n]},\\
+    \text{(respectively, }\operatorname{comp}_{\Sigma}F
+      &=\int_n^{\Sigma}F^{[n]}\text{)}.
+  \end{aligned}
+  \tag{2.4.2.6}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-2-pi-sigma-extension}
+The functor
+$\operatorname{comp}_{\Pi}F$ (respectively,
+$\operatorname{comp}_{\Sigma}F$) :
+$\prod_{i\in[n]}\operatorname{comp}(C_i)\longrightarrow
+\operatorname{comp}(C)$ is called the $\Pi$-extension (respectively, the
+$\Sigma$-extension) of the functor $F$ to complexes.
+
+\VerdierSemanticAnchor{ch1-2-4-2-koszul-twist}
+Since $F$ is a strict $\mathbb Z[n]$-functor and the functor
+$\int_n^{\Pi}$ (respectively, $\int_n^{\Sigma}$) is a
+$\mathbb Z[n]$-functor twisted by the Koszul cocycle relative to the ordered
+basis $e_1,\ldots,e_n$ of $\mathbb Z[n]$, the functor
+$\operatorname{comp}_{\Pi}F$ (respectively,
+$\operatorname{comp}_{\Sigma}F$) is a $\mathbb Z[n]$-functor twisted by the
+Koszul cocycle relative to the ordered basis $e_1,\ldots,e_n$ of
+$\mathbb Z[n]$, in accordance with Sign Rule I (1.6.6). Thus, for every
+$i\in[n]$, one has canonical isomorphisms:
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq7}
+\begin{equation}
+  \begin{aligned}
+    \operatorname{comp}_{\Pi}F(X_1,\ldots,X_i[1],\ldots,X_n)
+      &\xrightarrow{\sim}
+      \operatorname{comp}_{\Pi}F(X_1,\ldots,X_i,\ldots,X_n)[1],\\
+    \text{(respectively, }\operatorname{comp}_{\Sigma}F(X_1,\ldots,X_i[1],\ldots,X_n)
+      &\xrightarrow{\sim}
+      \operatorname{comp}_{\Sigma}F(X_1,\ldots,X_i,\ldots,X_n)[1]\text{)}
+  \end{aligned}
+  \tag{2.4.2.7}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-2-canonical-pi}
+which will be denoted by $p_i$.
+
+\VerdierSemanticAnchor{ch1-2-4-2-anticommutativity}
+These isomorphisms have the anticommutativity properties described in
+(1.6.6.3).
+
+\VerdierSemanticAnchor{ch1-2-4-2-summable-restriction-equality}
+The restrictions of the functors $\operatorname{comp}_{\Pi}F$ and
+$\operatorname{comp}_{\Sigma}F$ to the summable objects of
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$ are equal, and this restriction
+can always be defined without hypotheses on the category $C$.
+
+\VerdierSemanticAnchor{ch1-2-4-3}
+\subsection*{2.4.3.}
+Now let
+$F,F'\colon\prod_{i\in[n]}C_i\longrightarrow C$ be two multiadditive
+functors, and let $h\colon F\longrightarrow F'$ be a morphism of functors.
+From it one obtains a morphism of functors:
+
+\VerdierSemanticAnchor{ch1-2-4-3-induced-morphism}
+\begin{equation*}
+  h^{[n]}\colon F^{[n]}\longrightarrow F'^{[n]},
+\end{equation*}
+by setting:
+
+\VerdierSemanticAnchor{ch1-2-4-3-eq1}
+\begin{equation}
+  \begin{aligned}
+    h^{[n]}(X_1,\ldots,X_n)^{\sigma}
+      &=h(X_1^{l_1},\ldots,X_n^{l_n}),\\
+    \sigma&=\sum_{i\in[n]}l_i e_i\in\mathbb Z[n],\\
+    (X_1,\ldots,X_n)&\in
+      \operatorname{Ob}\!\left(\prod_{i\in[n]}\operatorname{comp}(C_i)\right).
+  \end{aligned}
+  \tag{2.4.3.1}
+\end{equation}

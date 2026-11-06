@@ -1,0 +1,67 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0181}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-1-2-10-proof-cont}
+The complex $X(0,+\infty)$ (proof of (1.2.1)) is then quasi-isomorphic to
+$X$, and the canonical morphism
+$H^0(X(0,+\infty))\longrightarrow X(0,+\infty)$ is a quasi-isomorphism.
+This shows that $X$ is isomorphic to $H^0(X)$ in $D(\mathcal A)$.
+
+Let us prove b). The second equality is recalled for reference and follows
+from the fact that $\mathcal A$ is a full subcategory of $D(\mathcal A)$.
+A morphism from $X[-n]$ to $Y$ in $D(\mathcal A)$ has the form
+$Q(m)Q(s)^{-1}$, where $m\colon Z^\bullet\longrightarrow Y$ is a morphism in
+$K(\mathcal A)$ and $s\colon Z^\bullet\longrightarrow X[-n]$ is a
+quasi-isomorphism in $K(\mathcal A)$. The morphism
+$i\colon Z^\bullet(-\infty,n+1)\longrightarrow Z^\bullet$ (proof of
+(1.2.1)) is then a quasi-isomorphism. Consequently,
+\[
+Q(m)Q(s)^{-1}=Q(m)Q(i)Q(i)^{-1}Q(s)^{-1}=Q(mi)Q(si)^{-1}.
+\]
+When $n$ is strictly negative, $mi=0$. Hence $Q(m)Q(s)^{-1}=0$.
+
+\VerdierSemanticAnchor{ch3d-1-2-11}
+\medskip\noindent\textbf{Definition 1.2.11.}\quad
+We denote by $\mathcal A^{\operatorname{Ext}}$ the full subcategory of
+$D(\mathcal A)$ defined by the translates of the objects of $\mathcal A$.
+
+Thus the category $\mathcal A^{\operatorname{Ext}}$ is (unlike the
+subcategory $\mathcal A$) a $\mathbb Z$-subcategory of $D(\mathcal A)$. An
+object of $D(\mathcal A)$ is isomorphic to an object of
+$\mathcal A^{\operatorname{Ext}}$ if and only if it has only one nonzero
+cohomology object.
+
+\VerdierSemanticAnchor{ch3d-1-3}
+\subsection{The canonical \texorpdfstring{$\delta$}{delta}-functor.}
+
+\VerdierSemanticAnchor{ch3d-1-3-1}
+\noindent\textbf{1.3.1.}\quad
+Let $\mathcal A$ be an abelian category and $\mathcal D$ a triangulated
+category. A $\delta$-functor from $\mathcal A$ to $\mathcal D$ is an object
+consisting of:
+
+\noindent 1) A functor $G\colon\mathcal A\longrightarrow\mathcal D$.
+
+\noindent 2) For every exact sequence
+$S=0\longrightarrow X\longrightarrow Y\longrightarrow Z\longrightarrow0$
+in $\mathcal A$, the choice of a morphism in $\mathcal D$:
+\[
+\delta(S)\colon G(Z)\longrightarrow G(X)[1].
+\]
+These data are subject to the following axioms:
+
+\noindent a) For every morphism of exact sequences:
+
+\VerdierSemanticAnchor{ch3d-1-3-1-exact-sequences}
+\begin{center}
+\resizebox{0.88\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=2.6em,row sep=2.2em]
+S={}\&0\arrow[r]\&X\arrow[r]\arrow[d,"u"']\&Y\arrow[r]\arrow[d,"v"']\&Z\arrow[r]\arrow[d,"w"']\&0\\
+S'={}\&0\arrow[r]\&X'\arrow[r]\&Y'\arrow[r]\&Z'\arrow[r]\&0
+\end{tikzcd}$%
+}
+\end{center}
+\endgroup

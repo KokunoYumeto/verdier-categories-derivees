@@ -1,0 +1,101 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0193}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-2-6-proof-cont}
+(2.1.1). The morphism $p_0$ is an elementary morphism of height $1$.
+The complex $U_0^\bullet$ has the form:
+
+\VerdierSemanticAnchor{ch3d-2-2-6-u0-complex}
+\[
+\begin{aligned}
+U_0^\bullet={}&0\longrightarrow0\longrightarrow\cdots\longrightarrow0
+\longrightarrow L_n\longrightarrow L_{n-1}\longrightarrow\cdots\\
+&\longrightarrow L_1\longrightarrow Z_0\longrightarrow L
+\longrightarrow0\longrightarrow0\longrightarrow\cdots.
+\end{aligned}
+\]
+By property $(E_4)$, the object $Z_0$ belongs to $M'$. Consequently,
+there is an epimorphism $u_0\colon L'_0\longrightarrow Z_0$ with
+$L'_0\in M$. Set, as in (2.1.1),
+$U_1^\bullet=U_0^\bullet(u_0,0)$ and
+$p_1=p(u_0,0)\colon U_1^\bullet\longrightarrow U_0^\bullet$.
+
+\VerdierSemanticAnchor{ch3d-2-2-6-iterated-elementary-morphisms}
+Continuing in this way, induction gives a sequence of morphisms
+\[
+p_i\colon U_i^\bullet\longrightarrow U_{i-1}^\bullet,
+\qquad 1\leq i\leq n-1,
+\]
+\[
+p_0\colon U_0^\bullet\longrightarrow V^\bullet,
+\]
+where $p_i$ is an elementary morphism of height $-i+1$ and
+$U_i^\bullet$ has the form:
+
+\VerdierSemanticAnchor{ch3d-2-2-6-ui-complex}
+\[
+\begin{aligned}
+U_i^\bullet={}&0\longrightarrow0\longrightarrow\cdots
+\longrightarrow L_n\longrightarrow L_{n-1}\longrightarrow\cdots
+\longrightarrow L_{i+1}\longrightarrow Z_i\\
+&\longrightarrow L'_{i-1}\longrightarrow\cdots\longrightarrow L'_0
+\longrightarrow L\longrightarrow0\longrightarrow\cdots ,
+\end{aligned}
+\]
+where $L'_j\in M$, $0\leq j\leq i-1$. Composing these morphisms $p_i$
+therefore gives an epimorphic quasi-isomorphism
+
+\VerdierSemanticAnchor{ch3d-2-2-6-composite}
+\[
+p\colon U_{n-1}^\bullet\longrightarrow V^\bullet.
+\]
+Now observe that in the complex
+
+\VerdierSemanticAnchor{ch3d-2-2-6-unminus1-complex}
+\[
+\begin{aligned}
+U_{n-1}^\bullet={}&0\longrightarrow0\longrightarrow\cdots
+\longrightarrow L_n\longrightarrow Z_{n-1}\longrightarrow L'_{n-2}
+\longrightarrow\cdots\\
+&\longrightarrow L'_0\longrightarrow L\longrightarrow0
+\longrightarrow\cdots ,
+\end{aligned}
+\]
+the object $Z_{n-1}$ appears, by property $(E_4)$, as an extension of two
+objects of $M$ and hence belongs to $M$ by property $(E_5)$. Set
+
+\VerdierSemanticAnchor{ch3d-2-2-6-l-complexes}
+\[
+L^\bullet=0\longrightarrow0\longrightarrow L_n\longrightarrow L_{n-1}
+\longrightarrow\cdots\longrightarrow L_0\longrightarrow0
+\longrightarrow0\longrightarrow\cdots ,
+\]
+\[
+\begin{aligned}
+{L'}^\bullet={}&0\longrightarrow0\longrightarrow L_n
+\longrightarrow Z_{n-1}\longrightarrow L'_{n-2}
+\longrightarrow\cdots\\
+&\longrightarrow L'_0\longrightarrow0\longrightarrow0
+\longrightarrow\cdots ,
+\end{aligned}
+\]
+and let $m\colon {L'}^\bullet\longrightarrow L^\bullet$ be the morphism
+induced by $p$. The only nonzero cohomology object of $L^\bullet$
+(respectively, ${L'}^\bullet$) is $Y$ in degree $0$ (respectively, $L$ in
+degree $0$), and the morphism induced by $m$ on these objects is $u$.
+Consider the cone $c(m)$ of the morphism $m$:
+
+\VerdierSemanticAnchor{ch3d-2-2-6-cone}
+\[
+\begin{aligned}
+c(m)={}&\cdots\longrightarrow0\longrightarrow L_n
+\longrightarrow L_n\oplus Z_{n-1}
+\longrightarrow L_{n-1}\oplus L'_{n-2}\longrightarrow\cdots\\
+&\longrightarrow L_1\oplus L'_0\longrightarrow L_0
+\longrightarrow0\longrightarrow\cdots.
+\end{aligned}
+\]
+\endgroup

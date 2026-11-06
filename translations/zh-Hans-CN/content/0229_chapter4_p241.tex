@@ -1,0 +1,70 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0241}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-5-2}
+\noindent\textbf{4.5.2.}\quad
+设 $F\colon D(\mathcal A)\longrightarrow\mathcal B$ 是右定常的上同调函子，
+$p$ 是整数，$X$ 是 $\operatorname{comp}(\mathcal A)$ 的对象，并设
+
+\VerdierSemanticAnchor{ch4d-4-5-2-second-filtration}
+\[
+0=X(-\infty)\longrightarrow\cdots\longrightarrow X(q)
+\longrightarrow X(q+1)\longrightarrow\cdots
+\longrightarrow X(+\infty)=X
+\]
+为 $X$ 的第二典范滤过 (4.3.1)。归纳系 $F^p(X(q))$ 是定常的，即存在整数
+$q_0$，使得对每个满足 $q_0\leq q\leq+\infty$ 的 $q$，态射
+\[
+F^p(X(q))\longrightarrow F^p(X)
+\]
+都是同构。事实上，使用 (4.2.3) 的记号，有正合列
+\[
+F^{p-1}\bigl(X(q,+\infty)\bigr)\longrightarrow F^p(X(q))
+\longrightarrow F^p(X)\longrightarrow F^p\bigl(X(q,+\infty)\bigr),
+\]
+而函子 $F$ 右定常，所以存在整数 $q_0$，使得对每个 $q>q_0$，对象
+$F^p(X(q,+\infty))$ 与 $F^{p-1}(X(q,+\infty))$ 都为零。
+
+\VerdierSemanticAnchor{ch4d-4-5-2-first-filtration}
+同样地，设 $F\colon D(\mathcal A)\longrightarrow\mathcal B$ 是右定常的
+上同调函子，$p$ 是整数，$Y$ 是 $\operatorname{comp}(\mathcal A)$ 的对象，
+并设
+\[
+0=Y(-\infty)\longrightarrow\cdots\longrightarrow Y(q)
+\longrightarrow Y(q+1)\longrightarrow\cdots
+\longrightarrow Y(+\infty)=Y,
+\]
+为 $Y$ 的第一滤过 (4.1.2)。存在整数 $q_0$，使得对每个 $q<q_0$，对象
+$F^p(Y(q))$ 都为零。与前面类似的验证留给读者；读者也可以转到反范畴，
+研究左定常函子的类似性质。
+
+\VerdierSemanticAnchor{ch4d-4-5-3}
+\medskip\noindent\textbf{命题 4.5.3.}\quad
+
+\VerdierSemanticAnchor{ch4d-4-5-3-a}
+\noindent\textit{a) 设 $Y$ 是 $\operatorname{comp}^{*}(\mathcal A)$ 的对象
+(1.1.1)（$*=+,-,b,{}$ ``空''）。设
+$F\colon D^*(\mathcal A)\longrightarrow\mathcal B$ 是上同调函子。函子
+$F$ 关于复形 $Y$ 的第一谱序列 (4.4.1) 的初始项为 (4.4.2)：}
+\[
+\textit{$\mathrm{I}_1^{p,q}=F^q(Y^p)$}
+\]
+\textit{它在下列情形中是定常的（第二章，4.4.2）：}
+
+\begin{enumerate}
+\item[1)] \textit{$Y$ 是 $\operatorname{comp}^{b}(\mathcal A)$ 的对象。}
+\item[2)] \textit{$Y$ 是 $\operatorname{comp}^{+}(\mathcal A)$ 的对象，
+且 $F$ 右定常。}
+\item[3)] \textit{$Y$ 是 $\operatorname{comp}^{-}(\mathcal A)$ 的对象，
+且 $F$ 左定常。}
+\item[4)] \textit{函子 $F$ 定常。}
+\end{enumerate}
+
+\VerdierSemanticAnchor{ch4d-4-5-3-b}
+\noindent\textit{b) 设 $X$ 是 $D^*(\mathcal A)$ 的对象 (1.2.4)，且
+$F\colon D^*(\mathcal A)\longrightarrow\mathcal B$ 是上同调函子。函子
+$F$ 关于复形 $X$ 的第二谱序列 (4.4.5) 在下列情形中是定常的：}
+\endgroup

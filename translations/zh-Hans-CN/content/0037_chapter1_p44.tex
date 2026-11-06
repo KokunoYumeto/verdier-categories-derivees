@@ -1,0 +1,92 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0044}%
+\VerdierSemanticAnchor{ch1-1-4}
+\subsection{群的变换}
+
+\VerdierSemanticAnchor{ch1-1-4-1}
+\noindent\textbf{1.4.1.}\quad
+设 $f\colon H\to G$ 为一个群同态。对每个 $G$-范畴
+$(\mathcal C,G,T,c)$，令 $H$ 通过 $f$ 作用于 $\mathcal C$，即置
+
+\VerdierSemanticAnchor{ch1-1-4-1-eq1}
+\begin{equation}
+  \begin{aligned}
+    T_f(h)&=T\bigl(f(h)\bigr),
+      & h&\in H,\\
+    c_f(h,h')&=c\bigl(f(h),f(h')\bigr),
+      & h,h'&\in H.
+  \end{aligned}
+  \tag{1.4.1.1}
+\end{equation}
+便得到一个 $H$-范畴 $(\mathcal C,H,T_f,c_f)$。
+
+\VerdierSemanticAnchor{ch1-1-4-1-gfunctor}
+同样，给定一个 $G$-函子
+\[
+  (F,m)\colon(\mathcal C,G,T,c)
+  \longrightarrow(\mathcal C',G,T',c'),
+\]
+置
+
+\VerdierSemanticAnchor{ch1-1-4-1-eq2}
+\begin{equation}
+  m_f(h)=m\bigl(f(h)\bigr),
+  \tag{1.4.1.2}
+\end{equation}
+便得到相应 $H$-范畴之间的一个 $H$-函子 $(F,m_f)$。
+
+\VerdierSemanticAnchor{ch1-1-4-1-morphisms}
+最后，一个与 $G$ 的作用相容的 $G$-函子态射也与 $H$ 的作用相容。
+
+\VerdierSemanticAnchor{ch1-1-4-1-eq3}
+上述构造显然定义了一个函子，称为\emph{换群函子}：
+\begin{equation}
+  f^*\colon G\text{-}\operatorname{Cat}
+  \longrightarrow H\text{-}\operatorname{Cat}.
+  \tag{1.4.1.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-1-eq4}
+更精确地，设 $\mathcal C$ 与 $\mathcal C'$ 为两个 $G$-范畴；函子 $f^*$
+定义一个映射
+\begin{equation}
+  \begin{aligned}
+    f^*(\mathcal C,\mathcal C')\colon\quad
+      &\operatorname{Hom}_{G\text{-}\operatorname{Cat}}
+        (\mathcal C,\mathcal C')\\
+      &\longrightarrow
+        \operatorname{Hom}_{H\text{-}\operatorname{Cat}}
+        \bigl(f^*(\mathcal C),f^*(\mathcal C')\bigr).
+  \end{aligned}
+  \tag{1.4.1.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-1-homcategories}
+但集合\allowbreak
+$\operatorname{Hom}_{G\text{-}\operatorname{Cat}}(\mathcal C,\mathcal C')$\allowbreak
+与\allowbreak
+$\operatorname{Hom}_{H\text{-}\operatorname{Cat}}
+\bigl(f^*(\mathcal C),f^*(\mathcal C')\bigr)$\allowbreak
+分别是范畴\hfill\break
+$\mathcal H\!om_{G\text{-}\operatorname{Cat}}(\mathcal C,\mathcal C')$\allowbreak
+与\allowbreak
+$\mathcal H\!om_{H\text{-}\operatorname{Cat}}
+\bigl(f^*(\mathcal C),f^*(\mathcal C')\bigr)$\allowbreak
+的对象集；这些范畴的态射是与群作用相容的函子态射，而且映射
+$f^*(\mathcal C,\mathcal C')$ 自然地延拓为函子
+
+\VerdierSemanticAnchor{ch1-1-4-1-eq5}
+\begin{equation}
+  \begin{aligned}
+    f^*(\mathcal C,\mathcal C')\colon\quad
+      &\mathcal H\!om_{G\text{-}\operatorname{Cat}}
+        (\mathcal C,\mathcal C')\\
+      &\longrightarrow
+        \mathcal H\!om_{H\text{-}\operatorname{Cat}}
+        \bigl(f^*(\mathcal C),f^*(\mathcal C')\bigr).
+  \end{aligned}
+  \tag{1.4.1.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-1-faithful}
+这个函子是忠实的。

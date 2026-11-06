@@ -1,0 +1,78 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0222}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-3-7-cases-cont}
+\noindent$c_3)$ $m=0$ means that the former morphism has degree 0, and $m'<0$ means that the latter has degree less than 0;
+
+\noindent$c_4)$ $m$ has degree 0, and $m'=0$ means that the latter morphism also has degree 0;
+
+\noindent$c_5)$ $m=1$ means that the former morphism has degree 1, and $m'<0$ means that the latter has degree less than 0;
+
+\noindent$c_6)$ $m<0$ means that the former morphism has degree less than 0, and $m'=1$ means that the latter has degree 1;
+
+\noindent$c_7)$ $m=1$ means that the former morphism has degree 1, and $m'=0$ means that the latter has degree 0;
+
+\noindent$c_8)$ $m=0$ means that the former morphism has degree 0, and $m'=1$ means that the latter has degree 1;
+
+\VerdierSemanticAnchor{ch3d-3-3-7-c8}
+We shall consider only case $c_8)$; case $c_7)$ is handled in the same way,
+and cases $c_i)$, $1\leq i\leq 6$, are trivial. Let
+\[
+S=0\longrightarrow X''\longrightarrow Y\longrightarrow X'\longrightarrow0
+\]
+be an exact sequence such that $\delta^1(S)[p]=m'$, and let
+$f\colon X\longrightarrow X'$ be a morphism of $\mathcal A$ such that
+$f[p]=m$. Then $F(m)=F^p(f)$, $F(m')=\delta_F^p(S)$, and
+$F(m'')=\delta_F^p(S*f)$ (3.2.9). Now there is a commutative diagram:
+
+\VerdierSemanticAnchor{ch3d-3-3-7-c8-extension-square}
+\begin{center}
+\resizebox{0.92\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=2.6em,row sep=2.7em]
+{S*f=0} \arrow[r]
+  \& X'' \arrow[r] \arrow[d,"{\operatorname{id}}"']
+  \& Y' \arrow[r] \arrow[d]
+  \& X \arrow[r] \arrow[d,"f"]
+  \& 0 \\
+{S=0} \arrow[r]
+  \& X'' \arrow[r]
+  \& Y \arrow[r]
+  \& X' \arrow[r]
+  \& 0
+\end{tikzcd}\quad\mathpunct{.}$%
+}
+\end{center}
+Hence a commutative diagram (SFL I):
+
+\VerdierSemanticAnchor{ch3d-3-3-7-c8-sfl-square}
+\begin{center}
+\begin{tikzcd}[column sep=5.5em,row sep=2.8em]
+F^p(X) \arrow[r,"{\delta_F^p(S*f)}"] \arrow[d,"{F^p(f)}"']
+  & F^{p+1}(X'') \arrow[d,"{\operatorname{id}}"] \\
+F^p(X') \arrow[r,"{\delta_F^p(S)}"']
+  & F^{p+1}(X'')
+\end{tikzcd}
+\hspace{1em},
+\end{center}
+that is,
+\[
+F(m'')=F(m')F(m).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-3-8}
+\medskip\noindent\textbf{3.3.8. Proof of Proposition 3.3.6.}\quad
+Let $m\colon X[p]\longrightarrow Y[p+n]$, with $X$ and $Y$ objects of
+$\mathcal A$, $n>0$, be a morphism of $\mathcal A^{\operatorname{Ext}}$.
+By Lemma (3.3.1), there exist $n+1$ objects
+$X_i[p+i]$, $0\leq i\leq n$, with $X_0[p]=X[p]$ and
+$X_n[p+n]=Y[p+n]$, and $n$ morphisms:
+
+\VerdierSemanticAnchor{ch3d-3-3-8-factorization}
+\[
+X[p]\xrightarrow{m_1}X_1[p+1]\xrightarrow{m_2}X_2[p+2]
+\xrightarrow{m_3}\cdots\xrightarrow{m_n}Y[p+n]
+\]
+\endgroup

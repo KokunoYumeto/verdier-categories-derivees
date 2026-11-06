@@ -1,0 +1,83 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0047}%
+\VerdierSemanticAnchor{ch1-1-4-3-compatibility}
+したがって (1.2.3.2) により、各 $(\varepsilon,\sigma)$ に対して次の図式は
+可換である：
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq8}
+\begin{center}
+  $\begin{tikzcd}[ampersand replacement=\&,column sep=6em,row sep=3.5em]
+    FT(\sigma)
+      \arrow[rr,"{m((\varepsilon,\sigma))}"]
+      \arrow[dr,"{m((1,\sigma))}"']
+      \& \& T'(\sigma)F \\
+      \& T'(\sigma)F
+        \arrow[ur,"{T'(\sigma)*m(\varepsilon)}"'] \&
+  \end{tikzcd}$
+  \hfill\textup{(1.4.3.8)},
+\end{center}
+
+\noindent すなわち
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq9}
+\begin{equation}
+  m((\varepsilon,\sigma))=\varepsilon m((1,\sigma))
+  \tag{1.4.3.9}
+\end{equation}
+である。そこで
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq10}
+\begin{equation}
+  m((1,\sigma))=p(\sigma)\colon
+  FT(\sigma)\longrightarrow T'(\sigma)F
+  \tag{1.4.3.10}
+\end{equation}
+とおく。
+
+\VerdierSemanticAnchor{ch1-1-4-3-cocycle-compatibility}
+同型族 $p(\sigma)$（$\sigma\in G$）は次の性質をもつ。各
+$\sigma_1,\sigma_2\in G$ に対して、次の図式は
+$\alpha_s(\sigma_1,\sigma_2)$-可換である（すなわち
+$\alpha_s(\sigma_1,\sigma_2)=+1$ なら可換、$-1$ なら反可換である）：
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq11}
+\begin{center}
+  \resizebox{0.94\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=5em,row sep=3.5em]
+      FT(\sigma_1\sigma_2)
+        \arrow[rr,"{p(\sigma_1\sigma_2)}"]
+        \arrow[d,"{F*c(\sigma_2,\sigma_1)}"']
+        \& \& T'(\sigma_1\sigma_2)F
+          \arrow[dd,"{c'(\sigma_2,\sigma_1)*F}"'] \\
+      FT(\sigma_1)T(\sigma_2)
+        \arrow[d,"{p(\sigma_1)*T(\sigma_2)}"']
+        \& \& {} \\
+      T'(\sigma_1)FT(\sigma_2)
+        \arrow[rr,"{T'(\sigma_1)*p(\sigma_2)}"]
+        \& \& T'(\sigma_1)T'(\sigma_2)F\mathpunct{.}
+    \end{tikzcd}$%
+  }
+  \hfill\textup{(1.4.3.11)}
+\end{center}
+
+\VerdierSemanticAnchor{ch1-1-4-3-converse}
+逆に、関手 $F\colon\mathcal C\to\mathcal C'$ と同型族
+$p(\sigma)\colon FT(\sigma)\to T'(\sigma)F$（$\sigma\in G$）が与えられ、
+各 $(\sigma_1,\sigma_2)\in G\times G$ に対して図式 (1.4.3.11) が
+$\alpha_s(\sigma_1,\sigma_2)$-可換であるなら、符号群の標準作用を $F$ 上に
+誘導する $H$-関手
+\[
+  (F,m)\colon(\mathcal C,H,T_f,c_f)
+  \longrightarrow(\mathcal C',H,T'_f,c'_f)
+\]
+を一意に復元できる。$H$ を (1.4.3.6) で記述された群と同一視して、
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq12}
+\begin{equation}
+  m((\varepsilon,\sigma))=\varepsilon p(\sigma)
+  \tag{1.4.3.12}
+\end{equation}
+とおけばよい。
+
+\VerdierSemanticAnchor{ch1-1-4-3-closure}
+直ちにできる検証は読者に委ねる。

@@ -1,0 +1,66 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0243}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-a-bcd}
+\noindent $D^b(\mathcal A)$. The morphism $m$ induces a morphism between
+the second canonical spectral sequences of the functors $F_1$ and $F_2$
+relative to the complex $X$. The morphism induced between the initial terms
+\[
+m_2^{p,q}(X)\colon F_1^p\bigl(H^q(X)\bigr)
+\longrightarrow F_2^p\bigl(H^q(X)\bigr)
+\]
+is an isomorphism by hypothesis. Moreover, the two spectral sequences are
+stationary (4.5.3). It follows (Chapter~II, 4.4.5) that the morphism $m$
+induces an isomorphism between the abutments of the two spectral sequences
+and hence that $m(X)$ is an isomorphism. Assertions b), c), and d) are
+proved similarly: it suffices to observe that, under the hypotheses made,
+the second canonical spectral sequences are stationary (4.5.3).
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e}
+We prove e). By c), it suffices to show that every object of $\mathcal A$
+is an object of $\operatorname{Is}(m)$. Let $X$ be an object of
+$\mathcal A$ and $p$ an integer, and let us show that the morphism
+\[
+m(X[p])\colon F_1^p(X)\longrightarrow F_2^p(X)
+\]
+is an isomorphism. Since the functors $F_1$ and $F_2$ are stationary on the
+left, there is an integer $r$ such that $F_i^q(Y)=0$ for $i=1,2$, every
+object $Y$ of $\mathcal A$, and every integer $q\geq p+r-1$. Property
+$\alpha$) implies that $X$ is quasi-isomorphic to a complex
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-complex-w}
+\[
+W^\bullet=
+\cdots\longrightarrow0\longrightarrow Y\longrightarrow L^{-r+1}
+\longrightarrow L^{-r+2}\longrightarrow\cdots\longrightarrow L^{-1}
+\longrightarrow L^0\longrightarrow0\longrightarrow\cdots,
+\]
+where the components $L^i$, $-r+1\leq i\leq0$, are elements of $M$.
+Denote by $L^\bullet$ the complex
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-complex-l}
+\[
+\cdots\longrightarrow0\longrightarrow L^{-r+1}
+\longrightarrow L^{-r+2}\longrightarrow\cdots\longrightarrow L^{-1}
+\longrightarrow L^0\longrightarrow0\longrightarrow\cdots.
+\]
+There is an exact sequence of complexes
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-exact-sequence}
+\[
+0\longrightarrow L^\bullet\longrightarrow W^\bullet
+\longrightarrow Y[r]\longrightarrow0,
+\]
+and hence (1.3.2) a distinguished triangle in $D^*(\mathcal A)$:
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-triangle}
+\[
+\begin{tikzcd}[column sep=5.2em,row sep=2.8em]
+{} & Y[r] \arrow[dl] \\
+L^\bullet \arrow[r] & X \arrow[u]
+\end{tikzcd}
+\]
+\endgroup

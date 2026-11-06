@@ -1,0 +1,97 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0090}%
+\VerdierSemanticAnchor{ch1-3-2-7-representing-functor-continuation}
+i.e.\ ((3.1.3) and (3.1.7)) a morphism from $X[1]$ to $W$. We have thus
+associated, functorially in $W$, with every morphism from $c(p(f))$ to $W$ a
+morphism from $X[1]$ to $W$, and hence have defined a morphism
+\VerdierSemanticAnchor{ch1-3-2-7-h-defined}
+$H\colon X[1]\longrightarrow c(p(f))$.
+
+To prove part a) of proposition (3.2.6), it suffices to show that:
+
+\VerdierSemanticAnchor{ch1-3-2-7-eq2}
+\begin{equation}
+  \textit{The morphism }JH\colon X[1]\longrightarrow X[1]
+  \textit{ is the identity.}
+  \tag{3.2.7.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-7-eq3}
+\begin{equation}
+  \textit{The morphism }HJ\colon c(p(f))\longrightarrow c(p(f))
+  \textit{ is homotopic to the identity.}
+  \tag{3.2.7.3}
+\end{equation}
+
+To prove part b) of proposition (3.2.6), it suffices to show in addition
+that:
+
+\VerdierSemanticAnchor{ch1-3-2-7-eq4}
+\begin{equation}
+  \begin{gathered}
+    \textit{The diagram:}\\[0.35em]
+    \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center)]
+      \node (Xs)  at (0,1.55) {$X[1]$};
+      \node (Ys1) at (4.2,1.55) {$Y[1]$};
+      \node (Cpf) at (0,0) {$c(p(f))$};
+      \node (Ys2) at (4.2,0) {$Y[1]$};
+      \draw[->] (Xs) -- node[above] {$f[1]$} (Ys1);
+      \draw[->] (Xs) -- node[left] {$H$} (Cpf);
+      \draw[->] (Ys1) -- node[right] {$\operatorname{id}_{Y[1]}$} (Ys2);
+      \draw[->] (Cpf) -- node[above] {$q(p(f))$} (Ys2);
+    \end{tikzpicture}\\[-0.15em]
+    \textit{is anticommutative.}
+  \end{gathered}
+  \tag{3.2.7.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-8}
+\noindent\textbf{3.2.8. Proof of assertion (3.2.7.2).}\quad
+\VerdierSemanticAnchor{ch1-3-2-8-jh-identity-proof}
+Let us show that the morphism $JH\colon X[1]\longrightarrow X[1]$ is the
+identity. It suffices for this to see that the morphism $JH$ induces the
+identity endomorphism of the functor represented by $X[1]$.
+\VerdierSemanticAnchor{ch1-3-2-8-represented-hom-functor}
+By (3.1.3) and (3.1.7), the functor
+\begin{equation*}
+  W\longmapsto
+  \operatorname{Hom}_{\operatorname{comp}(C)}(X[1],W)
+\end{equation*}
+is nothing other than the functor:
+
+\VerdierSemanticAnchor{ch1-3-2-8-eq1}
+\begin{equation}
+  W\longmapsto
+  \left\{\,
+  \vcenter{\hbox{%
+    \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center)]
+      \node (X)  at (0,1.45) {$X$};
+      \node (Z1) at (3.5,1.45) {$0$};
+      \node (Z2) at (0,0) {$0$};
+      \node (W)  at (3.5,0) {$W$};
+      \draw[->] (X) -- (Z1);
+      \draw[->] (X) -- (Z2);
+      \draw[->] (Z1) -- (W);
+      \draw[->] (Z2) -- (W);
+      \draw[decorate,decoration={snake,amplitude=0.8pt,segment length=3.3pt}]
+        (1.45,0.18) -- (2.00,0.56);
+      \draw[->] (2.00,0.56) -- node[above left] {$\alpha$} (3.25,1.24);
+    \end{tikzpicture}%
+  }}\,\right\}.
+  \tag{3.2.8.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-8-cpf-represented-functor}
+On the other hand, by (3.2.7), the object $c(p(f))$ of
+$\operatorname{comp}(C)$ represents the functor:
+
+\VerdierSemanticAnchor{ch1-3-2-8-eq2}
+\begin{equation}
+  W\longmapsto
+  \left\{\,
+  \bigl(m\colon Y\longrightarrow W,\quad
+  a\colon0\rightsquigarrow m,\quad
+  b\colon0\rightsquigarrow mf\bigr)
+  \,\right\}.
+  \tag{3.2.8.2}
+\end{equation}

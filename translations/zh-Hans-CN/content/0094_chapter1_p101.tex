@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0101}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\jot}{2pt}%
+\VerdierSemanticAnchor{ch1-3-3-6-two-arrow-object}
+现在设 $i\xrightarrow{f}j\xrightarrow{g}k$ 是
+$\mathcal{F}\ell_2(\mathcal{J})$ 的对象。将其对应于 $\operatorname{Tr}_1(C)$ 中的
+下图：
+
+\VerdierSemanticAnchor{ch1-3-3-6-2}
+\begin{equation}
+\begin{tikzpicture}[>=stealth,baseline=(current bounding box.center),scale=0.66,
+  every node/.style={transform shape}]
+  \node (Fi1) at (0,2.55) {$F(i)$};
+  \node (Fj1) at (3.15,2.55) {$F(j)$};
+  \node (Fi2) at (0,1.25) {$F(i)$};
+  \node (Fk1) at (3.15,1.25) {$F(k)$};
+  \node (Fj2) at (0,0) {$F(j)$};
+  \node (Fk2) at (3.15,0) {$F(k)$};
+  \draw[->] (Fi1) -- node[above] {$F(f)$} (Fj1);
+  \draw[->] (Fi2) -- node[above] {$F(gf)$} (Fk1);
+  \draw[->] (Fj2) -- node[above] {$F(g)$} (Fk2);
+  \draw[->] (Fi1) -- node[left] {$\mathrm{id}$} (Fi2);
+  \draw[->] (Fj1) -- node[right] {$F(g)$} (Fk1);
+  \draw[->] (Fi2) -- node[left] {$F(f)$} (Fj2);
+  \draw[->] (Fk1) -- node[right] {$\mathrm{id}$} (Fk2);
+  \node[anchor=base west,inner sep=0pt,xshift=.08em] at (Fk2.base east) {$.$};
+\end{tikzpicture}
+\tag{3.3.6.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-3-6-delta}
+定义
+\begin{equation}
+\begin{aligned}
+  \delta(f,g)&\colon S(g)\longrightarrow S(f)[1],\\
+  \delta(f,g)&=\dot p(F(f))[1]\dot q(F(g)).
+\end{aligned}
+\tag{3.3.6.3}
+\end{equation}
+对图 (3.3.6.2) 应用映射锥函子，得到从
+$\mathcal{F}\ell_2(\mathcal{J})$ 到 $K(C)$ 中三角范畴的函子：
+
+\VerdierSemanticAnchor{ch1-3-3-6-4}
+\begin{equation}
+  \bigl(i\xrightarrow{f}j\xrightarrow{g}k\bigr)
+  \longmapsto
+  S(f)\longrightarrow S(gf)\longrightarrow S(g)
+  \xrightarrow{\delta(f,g)}S(f)[1].
+  \tag{3.3.6.4}
+\end{equation}
+\VerdierSemanticAnchor{ch1-3-3-6-distinguished-conclusion}
+(3.3.5) 证明的末尾表明三角
+\[
+  S(f)\longrightarrow S(gf)\longrightarrow S(g)
+  \xrightarrow{\delta(f,g)}S(f)[1]
+\]
+是特异三角。
+
+\VerdierSemanticAnchor{ch1-3-4}
+\subsection{特异三角的函子性质}
+
+\VerdierSemanticAnchor{ch1-3-4-1}
+\noindent\textbf{命题 3.4.1.}\quad
+设 $\iota_1\colon K(C)^{\circ}\longrightarrow K(C^{\circ})$ 是典范同构
+(2.5.13)，并设
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+\]
+是 $K(C)$ 中的特异三角。则 $K(C^{\circ})$ 中的三角
+\VerdierSemanticAnchor{ch1-3-4-1-opposite-triangle}
+\[
+  (\iota_1X)[-1]\xrightarrow{\iota_1w}\iota_1Z
+  \xrightarrow{\iota_1v}\iota_1Y
+  \xrightarrow{-\iota_1u}\iota_1X
+\]
+是特异三角。
+\endgroup

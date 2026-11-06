@@ -1,0 +1,68 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0155}%
+\begingroup\small
+\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+
+\VerdierSemanticAnchor{ch3-3-2-2-admissible}
+$\mathcal D^\wedge$ の対象が二つの表現可能関手の間の射の像であるとき、
+これを\emph{許容対象}という。関手
+$\operatorname{Im}\colon\mathcal{F}\ell_1(\mathcal D)\to\mathcal D^\wedge$
+を
+\VerdierSemanticAnchor{ch3-3-2-2-1}
+\[
+\operatorname{Im}\bigl(X\xrightarrow fY\bigr)=h(f)\text{ の像}.
+\tag{3.2.2.1}
+\]
+で定める。$\operatorname{Im}$ は加法的で、無視可能射を零射へ送るので、
+一意的に加法関手（同じ記号を濫用する）
+\VerdierSemanticAnchor{ch3-3-2-2-2}
+\[
+\operatorname{Im}\colon\mathrm A(\mathcal D)\longrightarrow\mathcal D^\wedge.
+\tag{3.2.2.2}
+\]
+を経由する。合成関手
+$\operatorname{Im}\circ\mathcal H\colon
+\mathcal D\longrightarrow\mathrm A(\mathcal D)
+\longrightarrow\mathcal D^\wedge$
+はほかならぬ関手 $h$ であり、
+$\mathcal D^\wedge$ の対象が $\mathrm A(\mathcal D)$ の対象の
+$\operatorname{Im}$ による像と同型である
+ことと、それが許容対象であることは同値である。
+
+\VerdierSemanticAnchor{ch3-3-2-3}
+\medskip\noindent\textbf{命題 3.2.3.}\quad
+\textit{関手 $\operatorname{Im}\colon\mathrm A(\mathcal D)\to
+\mathcal D^\wedge$ は充満忠実である。}
+
+\VerdierSemanticAnchor{ch3-3-2-3-morphism-square}
+\[
+\begin{tikzcd}[column sep=4em,row sep=2.4em]
+X\arrow[r,"f"]\arrow[d,"g"']&Y\arrow[d,"g'"]\\
+X'\arrow[r,"f'"']&Y'
+\end{tikzcd}
+\qquad=(g;g')
+\]
+を $\mathcal{F}\ell_1(\mathcal D)$ の射とし、その像を
+$\operatorname{Im}((g;g'))$ と書く。図式
+\VerdierSemanticAnchor{ch3-3-2-3-canonical-diagram}
+\[
+\begin{tikzcd}[column sep=4em,row sep=2.2em]
+X\arrow[r,"\operatorname{id}_X"]\arrow[d,"\operatorname{id}_X"']&X\arrow[d,"f"]\\
+X\arrow[r,"f"]\arrow[d,"f"']&Y\arrow[d,"\operatorname{id}_Y"]\\
+Y\arrow[r,"\operatorname{id}_Y"']&Y
+\end{tikzcd}
+\]
+に $\operatorname{Im}$ を適用すると
+\[
+h(X)\xrightarrow{\operatorname{Im}((\operatorname{id}_X;f))}
+\operatorname{Im}(f)\xrightarrow{\operatorname{Im}((f;\operatorname{id}_Y))}h(Y).
+\]
+を得る。
+\VerdierSemanticAnchor{ch3-3-2-3-1}
+したがって
+\[
+\operatorname{Im}((f;\operatorname{id}_Y))\circ
+\operatorname{Im}((\operatorname{id}_X;f))=h(f).
+\tag{3.2.3.1}
+\]
+\endgroup

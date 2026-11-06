@@ -1,0 +1,77 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0147}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-3-4-d-complete}
+\noindent 这证明了 d)；现在证明 f)。
+\VerdierSemanticAnchor{ch2-2-3-4-f}
+$\mathcal D$ 的对象 $Z$ 属于 $Q^{-1}(\operatorname{Lib}_R(Q))$，当且仅当
+存在 $Q$-右自由对象 $Y$ 与 $\mathcal D/\mathcal B$ 中的同构
+$Q(Z)\xrightarrow[\sim]{m}Q(Y)$。
+\VerdierSemanticAnchor{ch2-2-3-4-f-fraction}
+这种同构形如 $m=Q(s)^{-1}Q(t)$，其中
+$s\in S_{\mathcal D}(\mathcal B)$ 且
+$t\in\widehat{S_{\mathcal D}(\mathcal B)}$（(2.2.2) 与 (2.2.4)）。
+因此在 $\mathcal D$ 中有图式：
+\VerdierSemanticAnchor{ch2-2-3-4-f-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=4.1em,row sep=2.5em]
+    Z \arrow[r,"t"] & X & Y \arrow[l,"s"']
+  \end{tikzcd}\quad .
+\end{center}
+\VerdierSemanticAnchor{ch2-2-3-4-f-retraction}
+由 a), iv)，态射 $s$ 有收缩 $s'\colon X\longrightarrow Y$，且该收缩
+属于 $S_{\mathcal D}(\mathcal B)$ (1.2.6)。因此存在态射
+$t'\colon Z\longrightarrow Y$，$t'\in\widehat{S_{\mathcal D}(\mathcal B)}$。
+\VerdierSemanticAnchor{ch2-2-3-4-f-converse}
+反之，若存在这样的态射，则 $Q(t')\colon Q(Z)\longrightarrow Q(Y)$ 是同构。
+\VerdierSemanticAnchor{ch2-2-3-4-g}
+还需证明 g)。由 a), v)，有双函子同构：
+\VerdierSemanticAnchor{ch2-2-3-4-g-q1-adjunction}
+\[
+ \operatorname{Hom}_{Q^{-1}(\operatorname{Lib}_R(Q))}(Z,\Psi(W))
+ \xrightarrow{\sim}
+ \operatorname{Hom}_{\operatorname{Lib}_R(Q)}(Q_1(Z),W),
+\]
+这表明 $\Psi$ 是 $Q_1$ 的右伴随。
+\VerdierSemanticAnchor{ch2-2-3-4-g-inclusion-adjunction}
+因此，若以 $i\colon L_R(Q)\lhook\joinrel\longrightarrow
+Q^{-1}(\operatorname{Lib}_R(Q))$ 表示包含函子，则有双函子同构：
+\[
+ \operatorname{Hom}_{Q^{-1}(\operatorname{Lib}_R(Q))}(Z,i(Y))
+ \xrightarrow{\sim}
+ \operatorname{Hom}_{L_R(Q)}(\Psi Q_1(Z),Y)\, .
+\]
+\VerdierSemanticAnchor{ch2-2-3-4-g-proof-complete}
+这表明 $\mathcal R=\Psi Q_1$ 是包含函子的左伴随，并完成命题 (2.3.3)
+的证明。
+
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-3-5}
+\medskip\noindent\textbf{命题 2.3.5.}\quad
+\VerdierSemanticAnchor{ch2-2-3-5-setup}
+设 $\mathcal D$ 为三角范畴，$\mathcal A$ 与 $\mathcal B$ 为两个满三角子范畴
+（$\mathcal B$ 严格满），并设 $S_{\mathcal D}(\mathcal B)$ 与
+$S_{\mathcal A}(\mathcal A\cap\mathcal B)$ 分别为 $\mathcal D$ 与
+$\mathcal A$ 中与 $\mathcal B$ 和 $\mathcal A\cap\mathcal B$ 关联的乘法系。
+\VerdierSemanticAnchor{ch2-2-3-5-a}
+\par\noindent a) 下列条件等价：
+\VerdierSemanticAnchor{ch2-2-3-5-a-i}
+\par\noindent\hspace{1.2em}i) 每个态射 $X\xrightarrow{s}X'$，其中
+$X\in\operatorname{Ob}(\mathcal A)$ 且 $s\in S_{\mathcal D}(\mathcal B)$，
+都可嵌入交换图：
+\VerdierSemanticAnchor{ch2-2-3-5-a-i-diagram}
+\begin{center}
+ \begin{tikzcd}[column sep=4.1em,row sep=2.6em]
+ X \arrow[r,"s"] \arrow[dr,"{s'}"'] & X' \arrow[d] &
+ {s'\in S_{\mathcal A}(\mathcal A\cap\mathcal B)} \\
+ & X'' &
+ \end{tikzcd}\quad .
+\end{center}
+\endgroup
+\endgroup

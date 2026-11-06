@@ -1,0 +1,72 @@
+\VerdierPhysicalPageAnchor{0064}%
+\VerdierSemanticAnchor{ch1-1-6-6-functor-characterization}
+By Proposition (1.5.2), specifying a functor from $C$ to $D$ amounts
+to specifying a functor:
+
+\VerdierSemanticAnchor{ch1-1-6-6-eq2}
+\begin{equation}
+  (X_1,\ldots,X_n)\longmapsto F(X_1,\ldots,X_n)
+  \tag{1.6.6.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-6-transition-isomorphisms}
+and isomorphisms of functors:
+
+\VerdierSemanticAnchor{ch1-1-6-6-eq3}
+\begin{equation}
+  p_i\colon
+  F(X_1,\ldots,X_i[1],\ldots,X_n)
+  \xrightarrow{\ \sim\ }
+  F(X_1,\ldots,X_n)[1]
+  \tag{1.6.6.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-6-anticommutativity}
+such that the diagrams (1.5.1.2):
+
+\VerdierSemanticAnchor{ch1-1-6-6-anticommutativity-diagram}
+\begin{equation*}
+  \resizebox{\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=2.8em,row sep=3.8em]
+      F(X_1,\ldots,X_i[1],\ldots,X_j[1],\ldots,X_n)
+        \arrow[r,"{p_i}"]
+        \arrow[d,"{p_j}"]
+        \& F(X_1,\ldots,X_i,\ldots,X_j[1],\ldots,X_n)[1]
+          \arrow[d,"{p_j[1]}"] \\
+      F(X_1,\ldots,X_i[1],\ldots,X_j,\ldots,X_n)[1]
+        \arrow[r,"{p_i[1]}"]
+        \& F(X_1,\ldots,X_i,\ldots,X_j,\ldots,X_n)[2]
+    \end{tikzcd}$%
+  }
+\end{equation*}
+
+are anticommutative (for $i<j$). (To simplify diagram (1.5.1.2), we
+have assumed, as will always be the case in this work, that the
+transition isomorphisms of $D$ are identities.)
+
+\VerdierSemanticAnchor{ch1-1-6-6-morphism-characterization}
+Similarly, by Proposition (1.5.10), the morphisms of functors
+$u\colon F\longrightarrow F'$ that we consider are subject to the
+following conditions: the diagrams below are commutative:
+
+\VerdierSemanticAnchor{ch1-1-6-6-eq4}
+\begin{equation}
+  \resizebox{0.92\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=5.0em,row sep=3.8em]
+      F(X_1,\ldots,X_i[1],\ldots,X_n)
+        \arrow[r,"u"]
+        \arrow[d,"{p_i}"]
+        \& F'(X_1,\ldots,X_i[1],\ldots,X_n)
+          \arrow[d,"{p'_i}"] \\
+      F(X_1,\ldots,X_i,\ldots,X_n)[1]
+        \arrow[r,"{u[1]}"]
+        \& F'(X_1,\ldots,X_i,\ldots,X_n)[1]
+    \end{tikzcd}$%
+  }
+  \tag{1.6.6.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-6-underlying-convention}
+When the context leaves no room for confusion, we shall denote
+$\mathbb Z$-categories by their underlying categories and twisted
+$\mathbb Z^n$-functors by their underlying functors.

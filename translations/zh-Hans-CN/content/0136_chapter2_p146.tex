@@ -1,0 +1,79 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0146}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-3-3-f}
+\noindent f) $\mathcal D$ 的对象 $Z$ 属于
+$Q^{-1}(\operatorname{Lib}_R(Q))$，当且仅当存在右自由对象 $Y$ 与态射
+$s\colon Z\longrightarrow Y$，其中 $s$ 属于
+$\widehat{S_{\mathcal D}(\mathcal B)}$，后者是
+$S_{\mathcal D}(\mathcal B)$ 的饱和化 (2.2.4, (c))。
+\VerdierSemanticAnchor{ch2-2-3-3-g}
+\par\noindent g) 包含函子
+$L_R(Q)\subset Q^{-1}(\operatorname{Lib}_R(Q))$ 有左伴随
+\[
+  \mathcal R\colon Q^{-1}(\operatorname{Lib}_R(Q))\longrightarrow L_R(Q).
+\]
+\VerdierSemanticAnchor{ch2-2-3-3-adjunction-diagram}
+\begin{center}
+\begin{tikzcd}[column sep=3.2em,row sep=3.1em]
+L_R(Q) \arrow[r,shift left=.7ex] \arrow[dr,"{Q|_{L_R(Q)}}"'] &
+Q^{-1}(\operatorname{Lib}_R(Q))
+ \arrow[l,dashed,bend right=28,"{\mathcal R}"'] \arrow[r,hook]
+ \arrow[d,"{Q_1}"] & \mathcal D \arrow[d,"Q"] \\
+& \operatorname{Lib}_R(Q) \arrow[ul,dashed,bend left=10,"{\Psi}"']
+ \arrow[r,hook] & \mathcal D/\mathcal B
+\end{tikzcd}
+\end{center}
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-3-3-adjunction-explanation}
+设 $\Psi\colon\operatorname{Lib}_R(Q)\longrightarrow L_R(Q)$ 为
+$Q|_{L_R(Q)}$ 的拟逆函子（参见 c) 与 e)）。可取
+$\mathcal R=\Psi Q_1$，其中
+$Q_1\colon Q^{-1}(\operatorname{Lib}_R(Q))\longrightarrow
+\operatorname{Lib}_R(Q)$ 表示由 $Q$ 诱导的函子。函子 $\Psi$ 是函子
+$Q_1$ 的右伴随。
+
+\VerdierSemanticAnchor{ch2-2-3-4}
+\medskip\noindent\textbf{2.3.4. 命题 2.3.3 的证明：}\quad
+\VerdierSemanticAnchor{ch2-2-3-4-a-proof}
+下面证明 a)。首先，若 $Y$ 是 $Q$-右自由的，则函子
+$X\longmapsto\operatorname{Hom}_{\mathcal D}(X,Y)$ 同构于函子
+$X\longmapsto\operatorname{Hom}_{\mathcal D/\mathcal B}(Q(X),Z)$，其中
+$Z$ 是 $\mathcal D/\mathcal B$ 的某个适当对象。因此函子
+$X\longmapsto\operatorname{Hom}_{\mathcal D}(X,Y)$ 把
+$S_{\mathcal D}(\mathcal B)$ 中的态射变为同构。这证明了 i)
+$\Rightarrow$ ii)。ii) $\Rightarrow$ iii) 由
+$B\longrightarrow0$ 属于 $S_{\mathcal D}(\mathcal B)$ 得到。iii)
+$\Rightarrow$ iv) 由 $S_{\mathcal D}(\mathcal B)$ 的定义与 (1.2.6)
+得到。iv) $\Rightarrow$ v) 由同构 (2.2.4) 得到：
+\VerdierSemanticAnchor{ch2-2-3-4-colimit-isomorphism}
+\[
+  \operatorname{Hom}_{\mathcal D/\mathcal B}(Q(X),Q(Y))
+  \xrightarrow{\sim}
+  \varinjlim_{Y\backslash S_{\mathcal D}(\mathcal B)}
+  \operatorname{Hom}_{\mathcal D}(X,\mathord\cdot)\, .
+\]
+\VerdierSemanticAnchor{ch2-2-3-4-a-proof-complete}
+最后，v) $\Rightarrow$ i) 是显然的：$Y$ 在 $Q(Y)$ 上右自由。
+\VerdierSemanticAnchor{ch2-2-3-4-b-c-e-proof}
+b) 由 a), iii) 得到；c) 由 a), v) 得到。a), v) 还表明，
+$\mathcal D/\mathcal B$ 中的右可自由化对象，恰是 $\mathcal D/\mathcal B$ 中在
+$\mathcal D/\mathcal B$ 里同构于某个
+$Q$-右自由对象之 $Q$-像的对象。自由箭头是同构。这证明了 e)。因而
+$\operatorname{Lib}_R(Q)$ 显然是严格满三角子范畴。
+\VerdierSemanticAnchor{ch2-2-3-4-d-proof}
+设 $Z=Z_1\oplus Z_2$ 是 $\operatorname{Lib}_R(Q)$ 的对象。存在
+$Q$-右自由对象 $Y$ 与同构 $Q(Y)\xrightarrow{\sim}Z_1\oplus Z_2$。
+因此函子 $X\longmapsto\operatorname{Hom}_{\mathcal D}(X,Y)$ 有投影态射，
+从而 $Z$ 的直和分解在 $Y$ 上定义一个投影态射。$Z$ 的直和项属于
+$\operatorname{Lib}_R(Q)$，当且仅当该投影态射可分解；若可数直和或可数积在
+$\mathcal D$ 中可表示，这一条件成立 (1.2.9)。
+\endgroup

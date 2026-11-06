@@ -1,0 +1,75 @@
+\VerdierPhysicalPageAnchor{0058}%
+\VerdierSemanticAnchor{ch1-1-5-10-converse}
+\noindent\textbf{Réciproquement :}\par
+
+\VerdierSemanticAnchor{ch1-1-5-10}
+\VerdierSemanticAnchor{ch1-1-5-10-proposition}
+\noindent\textbf{Proposition 1.5.10.}\quad
+\emph{Tout morphisme $u\colon F_1\to F_2$ entre les foncteurs
+sous-jacents, tels que pour tout $i\in[1,n]$ le diagramme (1.5.9.2)
+soit $\beta(e_i)$-commutatif, est un $\beta$-morphisme de foncteurs.}
+
+\VerdierSemanticAnchor{ch1-1-5-10-proof}
+En effet, pour tout $\sigma\in\mathbb Z^n$, désignons par $R(\sigma)$
+la propriété :
+
+\VerdierSemanticAnchor{ch1-1-5-10-property}
+\noindent\emph{$(R(\sigma))$\qquad Le diagramme ci-après est
+$\beta(\sigma)$-commutatif :}
+
+\VerdierSemanticAnchor{ch1-1-5-10-eq1}
+\begin{equation}
+  \resizebox{0.78\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=6em,row sep=4em]
+      F_1T(\sigma)
+        \arrow[r,"{p_1(\sigma)}"]
+        \arrow[d,"{u*T(\sigma)}"']
+        \& T'(\sigma)F_1
+          \arrow[d,"{T'(\sigma)*u}"] \\
+      F_2T(\sigma)
+        \arrow[r,"{p_2(\sigma)}"]
+        \& T'(\sigma)F_2
+    \end{tikzcd}$%
+  }\;.
+  \tag*{\ensuremath{(1.5.10.1)_{\sigma}}}
+\end{equation}
+
+L'examen des différents diagrammes
+$(1.5.10.1)_{\sigma_1}$, $(1.5.10.1)_{\sigma_2}$,
+$(1.5.10.1)_{\sigma_1+\sigma_2}$ montre immédiatement qu'on a :
+
+\VerdierSemanticAnchor{ch1-1-5-10-closure}
+\noindent\emph{Si deux des propriétés $R(\sigma_1)$, $R(\sigma_2)$,
+$R(\sigma_1+\sigma_2)$ sont vraies, la troisième l'est aussi.}
+
+\VerdierSemanticAnchor{ch1-1-5-10-conclusion}
+De plus par hypothèse, on a les propriétés $R(e_i)$, $i\in[1,n]$ et
+$R(0)$. On en déduit immédiatement que la propriété $R(\sigma)$ est
+vraie pour tout $\sigma\in\mathbb Z^n$.
+
+\VerdierSemanticAnchor{ch1-1-5-11}
+\noindent\textbf{1.5.11.}\quad
+Une $\mathbb Z^n$-catégorie stricte est une catégorie munie d'une
+représentation de $\mathbb Z^n$ dans son groupe des automorphismes. Pour
+définir une telle représentation, il suffit bien entendu de se donner
+$n$ automorphismes :
+$T(e_1),\ldots,T(e_n)$ qui commutent deux à deux.
+
+\VerdierSemanticAnchor{ch1-1-5-12}
+\noindent\textbf{1.5.12.}\quad
+Le problème consistant à déterminer sur une catégorie donnée les
+structures de $\mathbb Z^n$-catégorie (non nécessairement stricte) est
+beaucoup moins simple. Ainsi, si on se borne à déterminer, sur une
+catégorie $\mathcal C$, les structures de $\mathbb Z^n$-catégorie
+telles que pour tout $\sigma\in\mathbb Z^n$ on ait
+$T(\sigma)=\text{identité de }\mathcal C$, on a alors à se donner,
+pour tout couple $\sigma_1,\sigma_2$ d'éléments de $\mathbb Z^n$, un
+élément $c(\sigma_1,\sigma_2)$ du groupe des automorphismes du foncteur
+identique de $\mathcal C$ (ce groupe est commutatif), cette donnée étant
+soumise à vérifier les identités (1.2.1.3). Par suite, pour se donner une
+telle structure, il faut se donner un 2-cocycle normalisé non homogène de
+$\mathbb Z^n$ à valeurs dans le groupe des automorphismes du foncteur
+identique de $\mathcal C$. On vérifie d'ailleurs immédiatement que deux
+telles structures sont isomorphes, par un $\mathbb Z^n$-foncteur
+$(F,m)$ tel que $F=\text{identité de }\mathcal C$, si et seulement si
+les cocycles correspondants sont dans la même classe de cohomologie.

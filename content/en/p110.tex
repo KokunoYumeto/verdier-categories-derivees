@@ -1,0 +1,70 @@
+\chapter{Triangulated Categories.}
+\VerdierPhysicalPageAnchor{0110}%
+\VerdierSemanticAnchor{ch2}
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1}
+\section{Definitions and First Properties.}
+
+\VerdierSemanticAnchor{ch2-1-1}
+\subsection{Definition of Triangulated Categories.}
+
+\VerdierSemanticAnchor{ch2-1-1-1}
+\noindent\textbf{Definition 1.1.1.}\quad
+A \emph{triangulated category} $\mathcal D$ is a strict additive
+$\mathbb Z$-category (Chap. I, 1.5.11) endowed with a set of triangles
+(Chap. I, 3.2.1), called \emph{distinguished triangles}, possessing the
+following properties:
+
+\VerdierSemanticAnchor{ch2-1-1-1-tri}
+\smallskip
+\noindent\textbf{TRI:}
+Every triangle of $\mathcal D$ isomorphic to a distinguished triangle is a
+distinguished triangle. For every object $X$ of $\mathcal D$, the triangle
+\[
+  X\xrightarrow{\operatorname{id}_X}X\longrightarrow 0
+  \longrightarrow X[1]
+\]
+is distinguished. Every morphism $u\colon X\longrightarrow Y$ of
+$\mathcal D$ is contained in a distinguished triangle
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1].
+\]
+
+\VerdierSemanticAnchor{ch2-1-1-1-trii}
+\noindent\textbf{TRII:}
+A triangle of $\mathcal D$
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+\]
+is distinguished if and only if the triangle
+\[
+  Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+  \xrightarrow{-u[1]}Y[1]
+\]
+is distinguished.
+
+\VerdierSemanticAnchor{ch2-1-1-1-triii}
+\noindent\textbf{TRIII:}
+For every pair of distinguished triangles
+
+\VerdierSemanticAnchor{ch2-1-1-1-triii-triangles}
+\[
+  \begin{aligned}
+    X  &\xrightarrow{u}  Y  \xrightarrow{v}  Z  \xrightarrow{w}  X[1],\\
+    X' &\xrightarrow{u'} Y' \xrightarrow{v'} Z' \xrightarrow{w'} X'[1]
+  \end{aligned}
+\]
+and every commutative diagram
+
+\VerdierSemanticAnchor{ch2-1-1-1-triii-square}
+\begin{center}
+  \begin{tikzcd}[column sep=4.5em,row sep=3em]
+    X \arrow[r,"u"] \arrow[d,"f"'] & Y \arrow[d,"g"] \\
+    X' \arrow[r,"u'"] & Y'\,,
+  \end{tikzcd}
+\end{center}
+\endgroup

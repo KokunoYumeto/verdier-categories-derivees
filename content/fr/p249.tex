@@ -1,0 +1,87 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0249}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-6-9-first-differentials}
+\noindent et les premières différentielles sont (4.1.9.1) :
+\[
+\begin{aligned}
+d_1^{p,q}\colon(\mathrm{C.E.})_1^{p,q}
+  &\longrightarrow(\mathrm{C.E.})_1^{p+1,q},\\
+d_1^{p,q}&=F^q(-d_2^{\bullet,p}).
+\end{aligned}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-9-column-decomposition}
+Les complexes $I^{\bullet,p}$ sont des complexes injectifs de
+Cartan--Eilenberg (4.6.1) et, par suite (4.6.3), on a un isomorphisme
+canonique dans $D(\mathcal A)$ :
+\[
+I^{\bullet,p}\xrightarrow{\sim}
+\prod_{r\in\mathbb Z}H^r(I^{\bullet,p})[-r].
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-9-h1-components}
+Utilisons alors le complexe $H_1^r(I^{\bullet\bullet})$ introduit en
+(4.6.4.3). Pour tout entier $r$ on a :
+\[
+H_1^r(I^{\bullet\bullet})^p=H^r(I^{\bullet,p}),
+\]
+d'où un isomorphisme canonique dans $D(\mathcal A)$ :
+
+\VerdierSemanticAnchor{ch4d-4-6-9-h1-decomposition}
+\[
+I^{\bullet,p}\xrightarrow{\sim}
+\prod_{r\in\mathbb Z}H_1^r(I^{\bullet\bullet})^p[-r],
+\]
+et, modulo cet isomorphisme, le morphisme de complexes :
+\[
+d_2^{\bullet,p}\colon
+I^{\bullet,p}\longrightarrow I^{\bullet,p+1}
+\]
+est isomorphe au morphisme :
+
+\VerdierSemanticAnchor{ch4d-4-6-9-d2-decomposition}
+\[
+\prod_{r\in\mathbb Z}
+d_{H_1^r(I^{\bullet\bullet})}^{p}[-r],
+\]
+d'où l'expression définitive des termes initiaux :
+
+\VerdierSemanticAnchor{ch4d-4-6-9-1}
+\[
+(\mathrm{C.E.})_1^{p,q}
+=F^q\left(
+\prod_{r\in\mathbb Z}H_1^r(I^{\bullet\bullet})^p[-r]
+\right),
+\tag{4.6.9.1}
+\]
+et des premières différentielles :
+
+\VerdierSemanticAnchor{ch4d-4-6-9-2}
+\[
+d_1^{p,q}
+=-F^q\left(
+\prod_{r\in\mathbb Z}d_{H_1^r(I^{\bullet\bullet})}^{p}[-r]
+\right).
+\tag{4.6.9.2}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-9-3-prelude}
+Soit alors $F^{q,\bullet}(H_1^r(I^{\bullet\bullet}))$ le complexe d'objets
+de $\mathcal B$ obtenu en appliquant le foncteur $F^q$ aux composants et
+aux différentielles du complexe $H_1^r(I^{\bullet\bullet})$. Les formules
+(4.6.9.1) et (4.6.9.2) définissent un morphisme :
+
+\VerdierSemanticAnchor{ch4d-4-6-9-3}
+\[
+(\mathrm{C.E.})_2^{p,q}\longrightarrow
+\prod_{r\in\mathbb Z}
+H_{\mathcal B}^{p}\left(
+F^{q-r,\bullet}(H_1^r(I^{\bullet\bullet}))
+\right).
+\tag{4.6.9.3}
+\]
+\endgroup

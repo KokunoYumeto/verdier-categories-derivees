@@ -1,0 +1,76 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0236}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-2-4}
+\noindent\textbf{4.2.4.}\quad
+$\operatorname{comp}(\mathcal A)$ の $\widetilde{\mathbb Z}$ 型フィルター付き
+対象の射は、命題 (4.2.3) a) で述べた対応するスペクトル対象の間の射を
+明らかな仕方で誘導する。したがって命題 (4.2.3) は、
+$\operatorname{comp}(\mathcal A)$ のフィルター付き対象の圏から、
+$D(\mathcal A)$ に値をとるスペクトル対象の圏への関手を定める。
+
+\VerdierSemanticAnchor{ch4d-4-2-4-first-canonical}
+$X$ を $\operatorname{comp}(\mathcal A)$ の対象とし、
+$X(q)\subset X$、$q\in\mathbb Z$ をその第一標準フィルトレーション
+とする。この場合、命題 (4.2.3) がフィルター付き対象
+$\bigl(X,X(q),q\in\mathbb Z\bigr)$ に対応させるスペクトル対象は、複体
+$X$ に付随する、$D(\mathcal A)$ に値をとる第一スペクトル対象 (4.1.5)
+にほかならない。
+
+\VerdierSemanticAnchor{ch4d-4-2-4-nfold}
+同様に、$X$ を $\mathcal A$ の $n$-重複複体、$\int_n X=Y$ を付随する
+単純複体とし、$m$ を整数、$1\leq m\leq n$ とする。また
+\[
+0={}^{m}\!Y(-\infty)\subset\cdots\subset{}^{m}\!Y(q)
+\subset\cdots\subset{}^{m}\!Y(+\infty)=Y
+\]
+を、$X$ の第 $m$ 次数により定まるフィルトレーション (4.1.6.9) とする。
+この場合、命題 (4.2.3) がフィルター付き対象
+$\bigl(Y,{}^{m}\!Y(q),q\in\mathbb Z\bigr)$ に対応させるスペクトル対象は、
+第 $m$ 次数でフィルター付けされた $X$ によって定まる、$D(\mathcal A)$
+に値をとるスペクトル対象 (4.1.8) にほかならない。
+
+\VerdierSemanticAnchor{ch4d-4-3}
+\medskip\noindent\textbf{4.3. 第二標準スペクトル対象。}
+
+\VerdierSemanticAnchor{ch4d-4-3-1}
+\noindent\textbf{4.3.1.}\quad
+$X$ を $\operatorname{comp}(\mathcal A)$ の対象とする。次のようにおく：
+
+\VerdierSemanticAnchor{ch4d-4-3-1-1}
+\begin{equation}
+\begin{aligned}
+X(-\infty)&=0,\qquad X(+\infty)=X,\\
+X(q)&=\cdots\longrightarrow X^{q-3}\longrightarrow X^{q-2}
+\longrightarrow\operatorname{Ker}(d_X^{q-1})
+\longrightarrow0\longrightarrow0\longrightarrow\cdots,
+\qquad q\in\mathbb Z,
+\end{aligned}
+\tag{4.3.1.1}
+\end{equation}
+後者の複体の微分は $X$ の微分から誘導される。標準モノ射
+
+\VerdierSemanticAnchor{ch4d-4-3-1-2}
+\begin{equation}
+0=X(-\infty)\subset\cdots\subset X(q)\subset X(q+1)
+\subset\cdots\subset X(+\infty)=X
+\tag{4.3.1.2}
+\end{equation}
+があり、これらは $X$ 上に $\widetilde{\mathbb Z}$ 型フィルトレーションを
+定める。これを $X$ の\emph{第二標準フィルトレーション}という。命題
+(4.2.3) によりスペクトル対象 $\bigl(X(p,q),\delta(p,q,r)\bigr)$ を得る。これを複体
+$X$ に付随する、$D(\mathcal A)$ に値をとる\emph{第二スペクトル対象}という。
+
+\VerdierSemanticAnchor{ch4d-4-3-1-associated-functor}
+$\operatorname{comp}(\mathcal A)$ の射 $X\longrightarrow Y$ は第二標準
+フィルトレーションを保つので、関手
+\[
+X\longmapsto\bigl(X(p,q),\delta(p,q,r)\bigr)
+\]
+は $\operatorname{comp}(\mathcal A)$ から $D(\mathcal A)$ に値をとる
+スペクトル対象の圏への関手である。この関手を\emph{第二標準スペクトル対象関手}
+という。
+\endgroup

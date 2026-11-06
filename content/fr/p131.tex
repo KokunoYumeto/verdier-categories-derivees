@@ -1,0 +1,106 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0131}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{2pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{2pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-1-5-continuation}
+\noindent pleine de $\mathcal D$ admet au plus une structure triangulée
+compatible avec le foncteur d'inclusion.
+
+\VerdierSemanticAnchor{ch2-2-1-5-criterion}
+Soit $\mathcal D'$ une sous-catégorie pleine de $\mathcal D$ stable par
+translations. Pour que $\mathcal D'$ admette une structure triangulée faisant
+de $\mathcal D'$ une sous-catégorie triangulée pleine de $\mathcal D$, il faut
+et il suffit que pour tout couple $X,Y$ d'objets de $\mathcal D'$ et tout
+morphisme $f\colon X\to Y$, il existe un triangle distingué de $\mathcal D$ :
+$(X,Y,Z,f,g,h)$, où $Z$ est un objet de $\mathcal D'$.
+
+\VerdierSemanticAnchor{ch2-2-1-6}
+\medskip
+\noindent\textbf{2.1.6.}\quad
+\VerdierSemanticAnchor{ch2-2-1-6-saturated}
+Soit $\mathcal D$ une catégorie triangulée. Une sous-catégorie triangulée
+pleine $\mathcal D'$ de $\mathcal D$ est dite \emph{saturée} si elle possède
+la propriété suivante :
+
+\VerdierSemanticAnchor{ch2-2-1-6-direct-summand}
+\par\smallskip
+\noindent\makebox[0pt][l]{(2.1.6.1)}%
+\begin{minipage}[t]{\linewidth}
+  \centering\itshape
+  Tout facteur direct dans $\mathcal D$ d'un objet de $\mathcal D'$\\[-1pt]
+  est isomorphe à un objet de $\mathcal D'$.
+\end{minipage}
+\par\smallskip
+
+\VerdierSemanticAnchor{ch2-2-1-6-direct-summand-definition}
+\noindent (Un facteur direct d'un objet $Y$ est un objet $X$ tel qu'il existe
+un objet $Z$ et un isomorphisme $X\oplus Z\xrightarrow{\sim}Y$).
+
+\VerdierSemanticAnchor{ch2-2-1-7}
+\medskip
+\noindent\textbf{2.1.7.}\quad
+\VerdierSemanticAnchor{ch2-2-1-7-denominator-set}
+Soit $\mathcal D'$ une sous-catégorie triangulée pleine d'une catégorie
+triangulée $\mathcal D$. Désignons par $S(\mathcal D')$ l'ensemble de
+morphismes de $\mathcal D$ défini de la manière suivante :
+
+\VerdierSemanticAnchor{ch2-2-1-7-characterization}
+\par\smallskip
+\noindent\makebox[0pt][l]{(2.1.7.1)}%
+\begin{minipage}[t]{\linewidth}
+  \centering\itshape
+  Un morphisme $f\colon X\to Y$ appartient à $S(\mathcal D')$ si et seulement s'il existe\\[-1pt]
+  un triangle distingué de $\mathcal D$ : $(X,Y,Z,f,g,h)$, où $Z$ est un objet de $\mathcal D'$.
+\end{minipage}
+\par\smallskip
+
+\VerdierSemanticAnchor{ch2-2-1-8}
+\medskip
+\noindent\textbf{Proposition 2.1.8.}\quad
+\VerdierSemanticAnchor{ch2-2-1-8-proposition}
+\emph{L'ensemble $S(\mathcal D')$ (2.1.7.1) est un système multiplicatif
+(2.1.4) de $\mathcal D$. Il est saturé si et seulement si la sous-catégorie
+$\mathcal D'$ est saturée.}
+
+\VerdierSemanticAnchor{ch2-2-1-8-proof-plan}
+Pour prouver la première assertion, il suffit en vertu de (2.1.3), de montrer
+que l'ensemble $S(\mathcal D')$ possède les propriétés SM1), SM3), SM5) et
+SM6). Nous allons montrer successivement que l'ensemble $S(\mathcal D')$
+possède ces propriétés, et nous démontrerons ensuite la dernière assertion.
+
+\VerdierSemanticAnchor{ch2-2-1-9}
+\medskip
+\noindent\textbf{2.1.9.}\quad
+\VerdierSemanticAnchor{ch2-2-1-9-sm1}
+\emph{L'ensemble $S(\mathcal D')$ possède la propriété SM1).}
+
+\VerdierSemanticAnchor{ch2-2-1-9-identity}
+Tout d'abord, il est clair que pour tout objet $X$ de $\mathcal D$, le
+morphisme $\operatorname{id}_X$ est un élément de $S(\mathcal D')$. Ceci
+résulte immédiatement de TRI) et du fait que les objets nuls de $\mathcal D'$
+sont des objets nuls de $\mathcal D$.
+
+\VerdierSemanticAnchor{ch2-2-1-9-composition}
+Le fait que l'ensemble $S(\mathcal D')$ est stable par composition résulte
+immédiatement de l'axiome TRIV) et de (1.2.4). Nous laissons au lecteur le soin
+de faire les vérifications.
+
+\VerdierSemanticAnchor{ch2-2-1-10}
+\medskip
+\noindent\textbf{2.1.10.}\quad
+\VerdierSemanticAnchor{ch2-2-1-10-sm3}
+\emph{L'ensemble $S(\mathcal D')$ possède la propriété SM3).}
+
+\VerdierSemanticAnchor{ch2-2-1-10-reduction}
+Il suffit tout d'abord de montrer que lorsqu'on a un diagramme
+$X\xrightarrow{s}Y\xrightarrow{f}Z$, avec $s\in S(\mathcal D')$, $fs=0$, il
+existe un diagramme $Y\xrightarrow{f}Z\xrightarrow{t}W$, avec
+$t\in S(\mathcal D')$, $tf=0$. Car alors, en passant aux catégories opposées,
+on obtiendra la réciproque et, par
+
+\VerdierSemanticAnchor{ch2-2-1-10-p132-boundary}
+\endgroup

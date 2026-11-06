@@ -1,0 +1,88 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0125}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-3-5}
+\noindent\textbf{Proposition 1.3.5.}\quad
+\emph{Let $C$ be an abelian category. The functor}
+
+\VerdierSemanticAnchor{ch2-1-3-5-h0-functor}
+\[
+  H^0\colon K(C)\longrightarrow C
+\]
+\noindent\emph{is a cohomological functor.}
+
+\VerdierSemanticAnchor{ch2-1-3-5-first-exact-sequence}
+Indeed, by (Chapter I, 3.3.1), it suffices to show that, for every object
+$X\xrightarrow{f}Y$ of $\operatorname{tr}_1(C)$ (Chapter I, 3.1.1), the
+sequence
+\[
+  H^0(X)\xrightarrow{H^0(f)}H^0(Y)
+  \xrightarrow{H^0(p(f))}H^0(c(f))
+  \xrightarrow{H^0(q(f))}H^0(X[1])
+\]
+\noindent is exact.
+
+\VerdierSemanticAnchor{ch2-1-3-5-trii-reduction}
+Using property TRII (1.1.1), one sees that it suffices to show that the
+sequence
+
+\VerdierSemanticAnchor{ch2-1-3-5-reduced-exact-sequence}
+\[
+  H^0(Y)\xrightarrow{H^0(p(f))}H^0(c(f))
+  \xrightarrow{H^0(q(f))}H^0(X[1])
+\]
+\noindent is exact, which follows immediately from the definitions
+(Chapter I, 3.1.2 and 3.2.2).
+
+\VerdierSemanticAnchor{ch2-1-3-5-proof-complete}
+The functor $H^0\colon K(C)\longrightarrow C$ is called the
+\emph{canonical cohomological functor}.
+
+\VerdierSemanticAnchor{ch2-1-3-5-shifted-cohomology}
+In accordance with usage, put $H^n(X)=H^0(X[n])$.
+
+\VerdierSemanticAnchor{ch2-1-3-6}
+\medskip
+\noindent\textbf{Proposition 1.3.6.}\quad
+\emph{Let $C$ be an abelian category. The following conditions are
+equivalent:}
+
+\VerdierSemanticAnchor{ch2-1-3-6-equivalent-conditions}
+\begin{enumerate}
+\renewcommand{\labelenumi}{\roman{enumi})}
+\item \emph{The category $K(C)$ is abelian.}
+\item \emph{The category $K(C)$ is decomposable (1.2.8).}
+\item \emph{The category $C$ is decomposable.}
+\end{enumerate}
+
+\VerdierSemanticAnchor{ch2-1-3-6-i-iff-ii}
+The equivalence
+$\mathrm{i)}\Longleftrightarrow\mathrm{ii)}$ follows from (1.2.9).
+
+\VerdierSemanticAnchor{ch2-1-3-6-ii-implies-iii}
+The implication $\mathrm{ii)}\Longrightarrow\mathrm{iii)}$ is clear because
+$C$ is a full subcategory of $K(C)$.
+
+\VerdierSemanticAnchor{ch2-1-3-6-hstar-complex}
+For every complex $X$ in $C$, denote by $H^*(X)$ the complex
+\[
+  H^*(X)^l=H^l(X),\qquad l\in\mathbb Z,
+\]
+\[
+  d_{H^*(X)}^l=0,\qquad l\in\mathbb Z.
+\]
+
+\VerdierSemanticAnchor{ch2-1-3-6-hstar-equivalence}
+One checks that the functor
+$H^*\colon K(C)\longrightarrow K(C)$ is an equivalence of categories when
+$C$ is decomposable.
+
+\VerdierSemanticAnchor{ch2-1-3-6-proof-complete}
+It follows that
+$\mathrm{iii)}\Longrightarrow\mathrm{ii)}$.
+\endgroup

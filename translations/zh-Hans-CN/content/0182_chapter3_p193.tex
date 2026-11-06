@@ -1,0 +1,96 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0193}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-2-6-proof-cont}
+(2.1.1)。态射 $p_0$ 是高度为 $1$ 的初等态射。复形 $U_0^\bullet$ 具有形式：
+
+\VerdierSemanticAnchor{ch3d-2-2-6-u0-complex}
+\[
+\begin{aligned}
+U_0^\bullet={}&0\longrightarrow0\longrightarrow\cdots\longrightarrow0
+\longrightarrow L_n\longrightarrow L_{n-1}\longrightarrow\cdots\\
+&\longrightarrow L_1\longrightarrow Z_0\longrightarrow L
+\longrightarrow0\longrightarrow0\longrightarrow\cdots.
+\end{aligned}
+\]
+由性质 $(E_4)$，对象 $Z_0$ 属于 $M'$。因此存在满态射
+$u_0\colon L'_0\longrightarrow Z_0$，其中 $L'_0\in M$。如 (2.1.1) 那样，令
+$U_1^\bullet=U_0^\bullet(u_0,0)$ 以及
+$p_1=p(u_0,0)\colon U_1^\bullet\longrightarrow U_0^\bullet$。
+
+\VerdierSemanticAnchor{ch3d-2-2-6-iterated-elementary-morphisms}
+依此继续，归纳地得到一列态射
+\[
+p_i\colon U_i^\bullet\longrightarrow U_{i-1}^\bullet,
+\qquad 1\leq i\leq n-1,
+\]
+\[
+p_0\colon U_0^\bullet\longrightarrow V^\bullet,
+\]
+其中 $p_i$ 是高度为 $-i+1$ 的初等态射，而 $U_i^\bullet$ 具有形式：
+
+\VerdierSemanticAnchor{ch3d-2-2-6-ui-complex}
+\[
+\begin{aligned}
+U_i^\bullet={}&0\longrightarrow0\longrightarrow\cdots
+\longrightarrow L_n\longrightarrow L_{n-1}\longrightarrow\cdots
+\longrightarrow L_{i+1}\longrightarrow Z_i\\
+&\longrightarrow L'_{i-1}\longrightarrow\cdots\longrightarrow L'_0
+\longrightarrow L\longrightarrow0\longrightarrow\cdots ,
+\end{aligned}
+\]
+其中 $L'_j\in M$，$0\leq j\leq i-1$。因此，将这些态射 $p_i$ 复合起来便得到既为满态射又为拟同构的态射
+
+\VerdierSemanticAnchor{ch3d-2-2-6-composite}
+\[
+p\colon U_{n-1}^\bullet\longrightarrow V^\bullet.
+\]
+现在注意，在复形
+
+\VerdierSemanticAnchor{ch3d-2-2-6-unminus1-complex}
+\[
+\begin{aligned}
+U_{n-1}^\bullet={}&0\longrightarrow0\longrightarrow\cdots
+\longrightarrow L_n\longrightarrow Z_{n-1}\longrightarrow L'_{n-2}
+\longrightarrow\cdots\\
+&\longrightarrow L'_0\longrightarrow L\longrightarrow0
+\longrightarrow\cdots ,
+\end{aligned}
+\]
+中，对象 $Z_{n-1}$ 由性质 $(E_4)$ 表为 $M$ 中两个对象的扩张，故它属于
+$M$（由性质 $(E_5)$）。令
+
+\VerdierSemanticAnchor{ch3d-2-2-6-l-complexes}
+\[
+L^\bullet=0\longrightarrow0\longrightarrow L_n\longrightarrow L_{n-1}
+\longrightarrow\cdots\longrightarrow L_0\longrightarrow0
+\longrightarrow0\longrightarrow\cdots ,
+\]
+\[
+\begin{aligned}
+{L'}^\bullet={}&0\longrightarrow0\longrightarrow L_n
+\longrightarrow Z_{n-1}\longrightarrow L'_{n-2}
+\longrightarrow\cdots\\
+&\longrightarrow L'_0\longrightarrow0\longrightarrow0
+\longrightarrow\cdots ,
+\end{aligned}
+\]
+并令 $m\colon {L'}^\bullet\longrightarrow L^\bullet$ 为 $p$ 诱导的态射。
+$L^\bullet$（分别地，${L'}^\bullet$）唯一非零的上同调对象是 $Y$，位于次数
+$0$（分别地，是 $L$，位于次数 $0$），而 $m$ 在这些对象上诱导的态射是 $u$。
+考虑态射 $m$ 的映射锥 $c(m)$：
+
+\VerdierSemanticAnchor{ch3d-2-2-6-cone}
+\[
+\begin{aligned}
+c(m)={}&\cdots\longrightarrow0\longrightarrow L_n
+\longrightarrow L_n\oplus Z_{n-1}
+\longrightarrow L_{n-1}\oplus L'_{n-2}\longrightarrow\cdots\\
+&\longrightarrow L_1\oplus L'_0\longrightarrow L_0
+\longrightarrow0\longrightarrow\cdots.
+\end{aligned}
+\]
+\endgroup

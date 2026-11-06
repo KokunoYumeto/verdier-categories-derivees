@@ -1,0 +1,77 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0148}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-3-5-a-ii}
+\noindent\hspace{1.2em}ii) $B\in\operatorname{Ob}(\mathcal B)$、
+$X\in\operatorname{Ob}(\mathcal A)$ である任意の射 $B\longrightarrow X$ は
+次の可換図式に組み込まれる：
+\VerdierSemanticAnchor{ch2-2-3-5-a-ii-diagram}
+\begin{center}
+ \begin{tikzcd}[column sep=4.2em,row sep=2.6em]
+ B \arrow[r] \arrow[dr] & X & {B'\in\operatorname{Ob}(\mathcal A\cap\mathcal B)} \\
+ & B' \arrow[u] &
+ \end{tikzcd}\quad .
+\end{center}
+\VerdierSemanticAnchor{ch2-2-3-5-a-definition}
+上の二つの同値な性質をもつ $\mathcal D$ の充満三角部分圏 $\mathcal A$ を
+\emph{右 $\mathcal B$-局所化部分圏}という。
+\VerdierSemanticAnchor{ch2-2-3-5-b}
+\par\noindent b) $\mathcal A$ が右 $\mathcal B$-局所化ならば、標準関手
+\VerdierSemanticAnchor{ch2-2-3-5-b-functor}
+\[
+ \mathcal A/(\mathcal A\cap\mathcal B)\longrightarrow\mathcal D/\mathcal B
+\]
+は充満忠実で、対象上単射である。
+\VerdierSemanticAnchor{ch2-2-3-5-c}
+\par\noindent c) 次の条件は同値である：
+\VerdierSemanticAnchor{ch2-2-3-5-c-i}
+\par\noindent\hspace{1.2em}i) $\mathcal A$ は右 $\mathcal B$-局所化である。
+\VerdierSemanticAnchor{ch2-2-3-5-c-ii}
+\par\noindent\hspace{1.2em}ii) 標準関手
+$Q\colon\mathcal D/(\mathcal A\cap\mathcal B)\longrightarrow
+\mathcal D/\mathcal B$ に対し、部分圏
+$\mathcal A/(\mathcal A\cap\mathcal B)\longrightarrow
+\mathcal D/(\mathcal A\cap\mathcal B)$ は $Q$-右自由な対象からなる。
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-3-5-proof-a}
+a) の同値性は TRIII と乗法的系 $S_{\mathcal D}(\mathcal B)$、
+$S_{\mathcal A}(\mathcal A\cap\mathcal B)$ の定義 (2.1.7) から直ちに従う。
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-setup}
+b) を示す。$X$ と $Y$ を $\mathcal A$ の二対象（したがって
+$\mathcal A/(\mathcal A\cap\mathcal B)$ の対象）とする。
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-injectivity}
+まず準同型
+\[
+ \operatorname{Hom}_{\mathcal A/(\mathcal A\cap\mathcal B)}(X,Y)
+ \longrightarrow\operatorname{Hom}_{\mathcal D/\mathcal B}(X,Y)
+\]
+が単射であることを示す。
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-quotient-functors}
+$Q_1\colon\mathcal A\longrightarrow\mathcal A/(\mathcal A\cap\mathcal B)$ と
+$Q_2\colon\mathcal D\longrightarrow\mathcal D/\mathcal B$ を標準商関手とする。
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-fraction}
+任意の元 $m\in\operatorname{Hom}_{\mathcal A/(\mathcal A\cap\mathcal B)}(X,Y)$
+は $m=Q_1(s)^{-1}Q_1(f)$、
+$s\in S_{\mathcal A}(\mathcal A\cap\mathcal B)$ と書ける (2.2.2)。その
+$\operatorname{Hom}_{\mathcal D/\mathcal B}(X,Y)$ における像は
+$Q_2(s)^{-1}Q_2(f)$ である。
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-zero-criterion}
+(2.2.4, a)) により、この像が零となるための必要十分条件は次の可換図式が
+存在することである：
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-zero-diagram}
+\begin{center}
+ \begin{tikzcd}[column sep=3.7em,row sep=2.5em]
+ & {} \arrow[r,"u"] & {} \\
+ X \arrow[ur,"f"] && Y \arrow[ul,"s"] \arrow[u,"t"'] &
+ {t\in S_{\mathcal D}(\mathcal B)}
+ \end{tikzcd}
+\end{center}
+\endgroup

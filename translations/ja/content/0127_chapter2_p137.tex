@@ -1,0 +1,95 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0137}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{1pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{1pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-2-2-sm2-completion-diagram}
+\noindent 次の可換図式に補完する：
+
+\begin{center}
+  \begin{tikzpicture}[>=stealth,line width=.38pt,x=1.30cm,y=1.45cm,
+    scale=.92,transform shape]
+    \node (Zpp) at (0,2.20) {$Z''$};
+    \node (Xp)  at (-1.25,1.10) {$X'$};
+    \node (Yp)  at ( 1.25,1.10) {$Y'$};
+    \node (Y)   at (0,0) {$Y$};
+    \draw[->] (Zpp) -- node[above left=-1pt] {$t'\in S$} (Xp);
+    \draw[->] (Zpp) -- node[above right=-1pt] {$m'$} (Yp);
+    \draw[->] (Xp)  -- node[below left=-1pt] {$m$} (Y);
+    \draw[->] (Yp)  -- node[below right=-1pt] {$t\in S$} (Y);
+    \node at (2.50,-.05) {$.$};
+  \end{tikzpicture}
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-2-2-composite-roof-d3}
+\noindent このとき図式
+$D_3=X\xleftarrow{st'}Z''\xrightarrow{pm'}Z$ を得る。合成 $st'$ は
+$S$ に属する (SM1)。
+\VerdierSemanticAnchor{ch2-2-2-2-composite-class-independence}%
+$D_3$ の $\operatorname{Hom}_{\mathcal C(S^{-1})}(X,Z)$ における同値類
+$\overline D_3$ は、同値類 $\overline D_1$ と $\overline D_2$ のみに
+依存することが分かる。
+\VerdierSemanticAnchor{ch2-2-2-2-composition-conclusion}%
+射 $\overline D_3$ は $\mathcal C(S^{-1})$ における射
+$\overline D_1$ と $\overline D_2$ の合成である。
+
+\VerdierSemanticAnchor{ch2-2-2-3}
+\smallskip
+\noindent\textbf{注意 2.2.3.}
+\VerdierSemanticAnchor{ch2-2-2-3-a}%
+a) 定理 (2.2.2) の第四の主張から、関手
+$Q\colon\mathcal C\longrightarrow\mathcal C(S^{-1})$ を備えた圏
+$\mathcal C(S^{-1})$ が次の普遍問題の解であることが従う：
+\VerdierSemanticAnchor{ch2-2-2-3-a-universal-problem}%
+関手 $Q$ はこの系の射を同型へ送り、$S$ の射を同型へ送る
+$\mathcal C$ から任意の圏 $\mathcal A$ への各関手は $Q$ を通じて一意に
+分解する。
+\VerdierSemanticAnchor{ch2-2-2-3-a-unique-isomorphism}%
+したがって、関手 $Q$ を備えた圏 $\mathcal C(S^{-1})$ は、この性質に
+よって一意な同型を除いて決定される。
+
+\VerdierSemanticAnchor{ch2-2-2-3-b}
+\par\noindent b) $\mathcal C$ を圏、$S$ を $\mathcal C$ の射の集合とし、
+$S$ が $\mathcal C$ の乗法的系であることは仮定しない。
+\VerdierSemanticAnchor{ch2-2-2-3-b-general-localization}%
+$S$ の射を同型へ送る圏 $\mathcal C(S^{-1})$ と関手
+$Q\colon\mathcal C\longrightarrow\mathcal C(S^{-1})$ であって、$S$ の
+射を同型へ送る $\mathcal C$ から任意の圏 $\mathcal A$ への各関手が
+$Q$ を通じて一意に分解するものが常に存在する。
+\VerdierSemanticAnchor{ch2-2-2-3-b-multiplicative-comparison}%
+$S$ が $\mathcal C$ の乗法的系であるとき、定理 (2.2.2) は圏
+$\mathcal C(S^{-1})$ の簡単な記述を与える。また、一般には成り立たない
+関手 $Q$ の付加的性質（主張 b)、c)）も与える。
+
+\VerdierSemanticAnchor{ch2-2-2-4}
+\smallskip
+\noindent\textbf{系 2.2.4.}\quad
+\begingroup\itshape
+$\mathcal C$ を圏、$S$ を $\mathcal C$ の乗法的系とする。
+
+\VerdierSemanticAnchor{ch2-2-2-4-a}
+\par\noindent a) 集合 $S$ は $\mathcal C$ の反対圏
+$\mathcal C^\circ$ の乗法的系である。
+\VerdierSemanticAnchor{ch2-2-2-4-a-opposite-system}%
+次の標準的な圏の同型が存在する：
+
+\VerdierSemanticAnchor{ch2-2-2-4-a-canonical-isomorphism}
+\[
+  \bigl(\mathcal C^\circ(S^{-1})\bigr)^\circ
+  \longrightarrow \mathcal C(S^{-1})\,.
+\]
+
+\VerdierSemanticAnchor{ch2-2-2-4-a-hom-colimit-isomorphism}
+\noindent 特に、この同型は次の同型を誘導する：
+\[
+  \operatorname{Hom}_{\mathcal C(S^{-1})}(X,Y)
+  \longrightarrow
+  \varinjlim_{Y\backslash S}\operatorname{Hom}_{\mathcal C}(X,\mathord\cdot)\,.
+\]
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-2-4-p138-boundary}
+\endgroup

@@ -1,0 +1,79 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0238}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-3-4}
+\noindent\textbf{4.3.4.}\quad
+从 $D(\mathcal A)$ 到 $D(\mathcal A)$ 的谱对象范畴的函子，仍滥用术语称为
+\emph{第二典范谱对象函子}。
+
+设 $X$ 是 $\mathcal A$ 中的复形，
+$\bigl(X(p,q),\delta(p,q,r)\bigr)$ 是与 $X$ 相联系的第二谱对象。
+由 (4.3.2) 和 (1.2.10)，在 $D(\mathcal A)$ 中有典范同构：
+
+\VerdierSemanticAnchor{ch4d-4-3-4-1}
+\begin{equation}
+X(p,p+1)\xrightarrow{\sim}H^p(X)[-p].
+\tag{4.3.4.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch4d-4-3-4-boundedness}
+还要注意，当 $X$ 是 $D^*(\mathcal A)$ 的对象
+（$*=-,+,b,$ 或“空白”）时，与 $X$ 相联系的第二谱对象事实上取值于
+$D^*(\mathcal A)$。
+
+\VerdierSemanticAnchor{ch4d-4-4}
+\medskip\noindent\textbf{4.4. 通常的谱序列。}
+
+\VerdierSemanticAnchor{ch4d-4-4-1}
+\noindent\textbf{4.4.1.}\quad
+设 $\mathcal A$ 是加法范畴，不一定是阿贝尔范畴；设
+$F\colon K(\mathcal A)\longrightarrow\mathcal B$ 是到阿贝尔范畴
+$\mathcal B$ 的上同调函子，并设
+$F^p\colon K(\mathcal A)\longrightarrow\mathcal B$ 是由 $F$ 与
+$K(\mathcal A)$ 的平移函子复合所得的函子
+（$F^p(X)=F(X[p])$）。此外，设 $Y$ 是 $\mathcal A$ 中的复形。
+函子 $F$ 把与 $Y$ 相联系的、取值于 $K(\mathcal A)$ 的第一谱对象
+(4.1.4) 变为取值于 $\mathcal B$ 的谱对象。由此得到（第二章 4.3.3）一个
+取值于 $\mathcal B$ 的谱序列，它对 $F$ 和 $Y$ 都是函子性的（当后者在
+$\operatorname{comp}(\mathcal A)$ 中变化时），称为\emph{函子 $F$ 相对于
+复形 $Y$ 的第一谱序列}。对此谱序列，我们始终采用（第二章 4.3.3.1）所引入
+的指标方式。
+
+\VerdierSemanticAnchor{ch4d-4-4-2}
+\medskip\noindent\textbf{命题 4.4.2.}\quad
+
+\VerdierSemanticAnchor{ch4d-4-4-2-a}
+\noindent\textit{a) 函子 $F$ 相对于复形 $Y$ 的第一谱序列的项
+$\mathrm I_1^{p,q}$ 由下式给出：}
+\[
+\mathrm I_1^{p,q}=F^q(Y^p)
+\]
+\noindent\textit{（这里 $Y^p$ 表示只有一个非零分量的复形；该分量位于
+零次，且等于复形 $Y$ 的第 $p$ 个分量）。相应的微分是：}
+
+\VerdierSemanticAnchor{ch4d-4-4-2-a-differential}
+\[
+\begin{aligned}
+d_1&\colon\mathrm I_1^{p,q}\longrightarrow\mathrm I_1^{p+1,q},\\
+d_1&=F^q(-d_Y^p)\colon F^q(Y^p)\longrightarrow F^q(Y^{p+1}).
+\end{aligned}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-4-2-b}
+\noindent\textit{b) 因而，同一谱序列的项 $\mathrm I_2^{p,q}$ 可如下描述：
+记 $F^{q,\bullet}\colon\operatorname{comp}(K(\mathcal A))
+\longrightarrow\operatorname{comp}(\mathcal B)$ 为 $F^q$ 到复形的扩张，
+$H_{\mathcal B}^p\colon\operatorname{comp}(\mathcal B)
+\longrightarrow\mathcal B$ 为第 $p$ 个上同调对象函子，并记 $Y^\bullet$ 为
+$\operatorname{comp}(K(\mathcal A))$ 的下列对象：}
+
+\VerdierSemanticAnchor{ch4d-4-4-2-b-complex}
+\[
+Y^\bullet=\cdots\longrightarrow Y^{p-1}
+\xrightarrow{d_Y^{p-1}}Y^p\xrightarrow{d_Y^p}Y^{p+1}
+\longrightarrow\cdots.
+\]
+\endgroup

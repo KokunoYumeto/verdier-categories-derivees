@@ -1,0 +1,82 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0120}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-9-opposite-category}
+$\mathrm{ii)}\Longrightarrow\mathrm{iii)}$ と同値である。したがって、
+すべての三角圏に対する $\mathrm{i)}\Longrightarrow\mathrm{iii)}$ は、
+すべての三角圏に対する $\mathrm{ii)}\Longrightarrow\mathrm{iii)}$ と
+同値である。ゆえに含意
+
+\VerdierSemanticAnchor{ch2-1-2-9-reduction-implication}
+\[
+  \mathrm{i)}\Longleftrightarrow\mathrm{ii)}
+  \Longleftrightarrow\mathrm{iii)}\Longrightarrow\mathrm{iv)}\,,
+\]
+を証明するには $\mathrm{i)}\Longrightarrow\mathrm{iii)}$ を示せば十分である。
+
+\VerdierSemanticAnchor{ch2-1-2-10}
+\medskip
+\noindent\textbf{1.2.10. 命題 1.2.9 の証明（続き）}\quad
+まず、モノ射が分解可能であることを示す。
+$f\colon X\longrightarrow Y$ をモノ射とし、
+$X\xrightarrow{f}Y\xrightarrow{v}Z\xrightarrow{w}X[1]$
+を $f$ を含む完全三角とする (TRI)。
+
+\VerdierSemanticAnchor{ch2-1-2-10-monomorphism}
+$f$ がモノ射なので $f[1]$ もモノ射である。TRII と (1.2.2) から
+$w=0$ が従い、さらに (1.2.6) から $f$ が分解可能であることが従う。
+
+\VerdierSemanticAnchor{ch2-1-2-10-kernel-decomposition}
+一般の場合に $\mathrm{i)}\Longrightarrow\mathrm{iii)}$ を証明しよう。
+$f\colon X\longrightarrow Y$ が核
+$\operatorname{Ker}(f)\longrightarrow X$ をもつと仮定する。
+射 $\operatorname{Ker}(f)\longrightarrow X$ はモノ射なので分解可能である。
+したがって $f$ は次の形の射
+
+\VerdierSemanticAnchor{ch2-1-2-10-kernel-normal-form}
+\[
+  \operatorname{Ker}(f)\oplus X'
+  \xrightarrow{(0,g)}Y\,,
+\]
+と同型であり、その核は
+
+\VerdierSemanticAnchor{ch2-1-2-10-kernel-inclusion}
+\[
+  \operatorname{Ker}(f)
+  \xrightarrow{\left(\begin{smallmatrix}\operatorname{id}\\0\end{smallmatrix}\right)}
+  \operatorname{Ker}(f)\oplus X'.
+\]
+である。これより $g$ がモノ射であることが直ちに従い、したがって $g$ は
+分解可能である。ゆえに射 $f\colon X\longrightarrow Y$ は次の形の射
+
+\VerdierSemanticAnchor{ch2-1-2-10-final-matrix}
+\[
+  \operatorname{Ker}(f)\oplus X'
+  \xrightarrow{\left(\begin{smallmatrix}0&\operatorname{id}\\0&0\end{smallmatrix}\right)}
+  X'\oplus Y'.
+\]
+と同型である。したがって $f$ は分解可能である。
+
+\VerdierSemanticAnchor{ch2-1-2-11}
+\medskip
+\noindent\textbf{1.2.11. 命題 1.2.9 の証明
+（終）\footnote{ここでは Freyd による議論を用いる。}}\quad
+追加の仮定の下で $\mathrm{iv)}\Longrightarrow\mathrm{iii)}$ を
+証明することが残っている。
+
+\VerdierSemanticAnchor{ch2-1-2-11-duality-reduction}
+まず、$\mathcal D$ において可算直和が表現可能であるための必要十分条件は、
+$\mathcal D^\circ$ において可算積が表現可能であることである。
+さらに、圏 $\mathcal D$ に対する含意
+$\mathrm{iv)}\Longrightarrow\mathrm{iii)}$ は、その反対圏に対する同じ含意と
+同値である。
+
+\VerdierSemanticAnchor{ch2-1-2-11-product-case-boundary}
+したがって、$\mathcal D$ において可算積が表現可能な場合に
+$\mathrm{iv)}\Longrightarrow\mathrm{iii)}$ を証明すれば十分である。
+すなわち、以上を考慮すれば、含意
+\endgroup

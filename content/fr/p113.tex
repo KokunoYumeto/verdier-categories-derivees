@@ -1,0 +1,116 @@
+\VerdierPhysicalPageAnchor{0113}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-1-5-additivity-announcement}
+\noindent On montrera (1.2.7) que les foncteurs cohomologiques sont
+additifs et que les foncteurs multi-exacts sont multi-additifs.
+
+\VerdierSemanticAnchor{ch2-1-1-5-cohomology-notation}
+Soit $H\colon\mathcal D\longrightarrow\mathcal A$ un foncteur
+cohomologique. On utilise le plus souvent la notation
+$H^0(X)=H(X)$, $H^n(X)=H(X[n])$. En utilisant l'axiome TRII, on voit
+qu'un foncteur cohomologique associe à tout triangle distingué
+
+\VerdierSemanticAnchor{ch2-1-1-5-long-exact-setup}
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+\]
+une suite exacte longue :
+
+\VerdierSemanticAnchor{ch2-1-1-5-1}
+\begin{equation}
+  \cdots\longrightarrow H^{-1}(Z)
+  \xrightarrow{H^{-1}(-w)}H^0(X)
+  \xrightarrow{H^0(u)}H^0(Y)
+  \xrightarrow{H^0(v)}H^0(Z)
+  \xrightarrow{H^0(w)}\cdots
+  \tag{1.1.5.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch2-1-1-6}
+\medskip
+\noindent\textbf{1.1.6.}\quad
+Soit $\mathcal D$ une catégorie triangulée. On emploie le plus souvent
+la terminologie suivante : un triangle
+
+\VerdierSemanticAnchor{ch2-1-1-6-antidistinguished-triangle}
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+\]
+de $\mathcal D$ est dit \emph{antidistingué} si le triangle
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{-w}X[1]
+\]
+est distingué.
+
+\VerdierSemanticAnchor{ch2-1-1-6-antiexact-functor}
+Un $\mathbb Z$-foncteur d'une catégorie triangulée $\mathcal D'$ dans
+$\mathcal D$ est dit \emph{antiexact} s'il transforme les triangles
+distingués de $\mathcal D'$ en triangles antidistingués de $\mathcal D$.
+
+\VerdierSemanticAnchor{ch2-1-1-6-exact-functor-notation}
+Le plus souvent, pour désigner un foncteur exact de $\mathcal D'$ dans
+$\mathcal D$, on omet de faire figurer dans la notation les isomorphismes
+de commutation aux translations.
+
+\VerdierSemanticAnchor{ch2-1-1-7}
+\medskip
+\noindent\textbf{1.1.7.}\quad
+Soient $\mathcal C$ une $\mathbb Z$-catégorie stricte (chap. I, 1.2.2)
+et :
+
+\VerdierSemanticAnchor{ch2-1-1-7-translations}
+\[
+  X\longmapsto X[n],\qquad n\in\mathbb Z,
+\]
+les foncteurs de translation de $\mathcal C$. Soit $\mathcal C^\circ$ la
+$\mathbb Z$-catégorie opposée (chap. I, 1.3.9).
+
+\VerdierSemanticAnchor{ch2-1-1-7-opposite-morphism}
+Pour tout morphisme $u$ de $\mathcal C$, notons $((u))$ le morphisme
+correspondant de $\mathcal C^\circ$. Cette notation est abusive car
+l'ensemble des objets et l'ensemble des morphismes de $\mathcal C^\circ$
+sont égaux respectivement à l'ensemble des objets et l'ensemble des
+morphismes de $\mathcal C$. Désignons par :
+
+\VerdierSemanticAnchor{ch2-1-1-7-opposite-translations}
+\[
+  X\longmapsto X[[n]],\qquad n\in\mathbb Z,
+\]
+les foncteurs de translations de $\mathcal C^\circ$.
+
+\VerdierSemanticAnchor{ch2-1-1-7-translation-identity}
+Rappelons qu'on a, pour tout objet $X$ de $\mathcal C$ et tout entier
+$n\in\mathbb Z$ (chap. I, 1.3.9) :
+\[
+  X[-n]=X[[n]].
+\]
+
+\VerdierSemanticAnchor{ch2-1-1-7-opposite-category}
+On appelle \emph{catégorie triangulée opposée} à une catégorie triangulée
+$\mathcal D$ la $\mathbb Z$-catégorie stricte $\mathcal D^\circ$ opposée
+à la catégorie $\mathcal D$ (chap. I, 1.3.9) munie de l'ensemble de
+triangles distingués suivant. Un triangle de $\mathcal D^\circ$ :
+
+\VerdierSemanticAnchor{ch2-1-1-7-opposite-triangle}
+\[
+  X[[-1]]\xrightarrow{((w))}Z\xrightarrow{((v))}Y
+  \xrightarrow{((u))}X
+\]
+est distingué si et seulement si le triangle correspondant de la catégorie
+$\mathcal D$ :
+
+\VerdierSemanticAnchor{ch2-1-1-7-corresponding-antitriangle}
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+\]
+est \emph{antidistingué}.
+
+\VerdierSemanticAnchor{ch2-1-1-7-triangulated-axioms}
+On démontre aisément que la famille de triangles de $\mathcal D^\circ$
+ainsi définie vérifie les axiomes des catégories triangulées.
+\endgroup
+

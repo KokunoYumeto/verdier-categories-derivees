@@ -1,0 +1,103 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0148}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-3-5-a-ii}
+\noindent\hspace{1.2em}ii) Every morphism $B\longrightarrow X$, with
+$B\in\operatorname{Ob}(\mathcal B)$ and $X\in\operatorname{Ob}(\mathcal A)$,
+fits into a commutative diagram:
+
+\VerdierSemanticAnchor{ch2-2-3-5-a-ii-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=4.2em,row sep=2.6em]
+    B \arrow[r] \arrow[dr] & X &
+    {B'\in\operatorname{Ob}(\mathcal A\cap\mathcal B)} \\
+    & B' \arrow[u] &
+  \end{tikzcd}
+  \quad .
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-3-5-a-definition}
+The full triangulated subcategories $\mathcal A$ of $\mathcal D$ having the
+two equivalent properties above are called \emph{right
+$\mathcal B$-localizing subcategories}.
+
+\VerdierSemanticAnchor{ch2-2-3-5-b}
+\par\noindent b) If $\mathcal A$ is right $\mathcal B$-localizing, the
+canonical functor
+
+\VerdierSemanticAnchor{ch2-2-3-5-b-functor}
+\[
+  \mathcal A/(\mathcal A\cap\mathcal B)
+  \longrightarrow\mathcal D/\mathcal B
+\]
+is fully faithful and injective on objects.
+
+\VerdierSemanticAnchor{ch2-2-3-5-c}
+\par\noindent c) The following conditions are equivalent:
+
+\VerdierSemanticAnchor{ch2-2-3-5-c-i}
+\par\noindent\hspace{1.2em}i) $\mathcal A$ is right
+$\mathcal B$-localizing.
+
+\VerdierSemanticAnchor{ch2-2-3-5-c-ii}
+\par\noindent\hspace{1.2em}ii) Let
+$Q\colon\mathcal D/(\mathcal A\cap\mathcal B)\longrightarrow
+\mathcal D/\mathcal B$ be the canonical functor. The subcategory
+$\mathcal A/(\mathcal A\cap\mathcal B)\longrightarrow
+\mathcal D/(\mathcal A\cap\mathcal B)$ consists of objects that are
+$Q$-free on the right.
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-3-5-proof-a}
+The equivalence in a) follows immediately from TRIII and the definitions
+of the systems $S_{\mathcal D}(\mathcal B)$ and
+$S_{\mathcal A}(\mathcal A\cap\mathcal B)$ (2.1.7).
+
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-setup}
+We prove b). Let $X$ and $Y$ be two objects of $\mathcal A$ (and hence of
+$\mathcal A/(\mathcal A\cap\mathcal B)$).
+
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-injectivity}
+First we show that the homomorphism
+\[
+  \operatorname{Hom}_{\mathcal A/(\mathcal A\cap\mathcal B)}(X,Y)
+  \longrightarrow
+  \operatorname{Hom}_{\mathcal D/\mathcal B}(X,Y)
+\]
+is injective.
+
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-quotient-functors}
+Denote by
+$Q_1\colon\mathcal A\longrightarrow
+\mathcal A/(\mathcal A\cap\mathcal B)$ and
+$Q_2\colon\mathcal D\longrightarrow\mathcal D/\mathcal B$ the canonical
+quotient functors.
+
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-fraction}
+An element
+$m\in\operatorname{Hom}_{\mathcal A/(\mathcal A\cap\mathcal B)}(X,Y)$ can
+always be written in the form $m=Q_1(s)^{-1}Q_1(f)$,
+$s\in S_{\mathcal A}(\mathcal A\cap\mathcal B)$ (2.2.2). Its image in
+$\operatorname{Hom}_{\mathcal D/\mathcal B}(X,Y)$ is then
+$Q_2(s)^{-1}Q_2(f)$.
+
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-zero-criterion}
+By (2.2.4, a)), this image is zero if and only if there exists a
+commutative diagram:
+
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-zero-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=3.7em,row sep=2.5em]
+    & {} \arrow[r,"u"] & {} \\
+    X \arrow[ur,"f"] && Y \arrow[ul,"s"] \arrow[u,"t"'] &
+    {t\in S_{\mathcal D}(\mathcal B)}
+  \end{tikzcd}
+\end{center}
+\endgroup

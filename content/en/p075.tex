@@ -1,0 +1,84 @@
+\VerdierPhysicalPageAnchor{0075}%
+\VerdierSemanticAnchor{ch1-2-4-2-continuation}
+These conventions apply in particular to the category
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$.
+
+\VerdierSemanticAnchor{ch1-2-4-2-graded-product-category}
+Observe that the category
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$ is endowed with a
+$\mathbb Z[n]$-category structure (1.3.11). For every
+$\sigma=\sum_{i\in[n]}l_i e_i$, $\sigma\in\mathbb Z[n]$, one has:
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq1}
+\begin{equation}
+  T(\sigma)(X_1,X_2,\ldots,X_n)
+  = (X_1[l_1],X_2[l_2],\ldots,X_n[l_n]).
+  \tag{2.4.2.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-2-summable-object}
+An object $(X_1,\ldots,X_n)$ of
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$ is called \emph{summable} if,
+for every $l\in\mathbb Z$, the set of
+$\sigma=\sum_{i\in[n]}l_i e_i\in\mathbb Z[n]$ such that
+$\sum_{i\in[n]}l_i=l$ and $X_i^{l_i}\neq0$ for at least one
+$i\in[n]$ is finite.
+
+\VerdierSemanticAnchor{ch1-2-4-2-multiadditive-functor}
+Now let $F\colon\prod_{i\in[n]}C_i\longrightarrow C$ be a multiadditive
+(covariant) functor. For every object $(X_1,\ldots,X_n)$ of
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$, set:
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq2}
+\begin{equation}
+  F^{[n]}(X_1,\ldots,X_n)^\sigma
+  =F(X_1^{l_1},\ldots,X_n^{l_n}),
+  \tag{2.4.2.2}
+\end{equation}
+for every $\sigma=\sum_{i\in[n]}l_i e_i\in\mathbb Z[n]$,
+\VerdierSemanticAnchor{ch1-2-4-2-eq2-differential}
+\begin{equation*}
+  d^{\sigma,i}_{F^{[n]}(X_1,\ldots,X_n)}
+  =F(X_1^{l_1},\ldots,d_{X_i}^{l_i},\ldots,X_n^{l_n}),
+  \qquad \forall i\in[n].
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-2-4-2-nfold-complex}
+We have thus defined an $n$-fold complex of $C$.
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq3}
+For every morphism $(f_1,\ldots,f_n)$ of
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$, set:
+\begin{equation}
+  F^{[n]}(f_1,\ldots,f_n)^\sigma
+  =F(f_1^{l_1},\ldots,f_n^{l_n}),
+  \tag{2.4.2.3}
+\end{equation}
+for every $\sigma=\sum_{i\in[n]}l_i e_i\in\mathbb Z[n]$.
+
+\VerdierSemanticAnchor{ch1-2-4-2-morphism-of-complexes}
+We have thus defined a morphism of $n$-fold complexes.
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq4}
+The foregoing clearly defines a functor:
+\begin{equation}
+  F^{[n]}\colon
+  \prod_{i\in[n]}\operatorname{comp}(C_i)
+  \longrightarrow \operatorname{comp}^{n}(C).
+  \tag{2.4.2.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq5}
+Observe that, for every $\sigma\in\mathbb Z[n]$, one has:
+\begin{equation}
+  F^{[n]}T(\sigma)=T(\sigma)F^{[n]}.
+  \tag{2.4.2.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-2-strict-graded-functor}
+Consequently, the functor $F^{[n]}$ is a strict $\mathbb Z[n]$-functor.
+
+\VerdierSemanticAnchor{ch1-2-4-2-preserves-summability}
+The functor $F^{[n]}$ sends the summable objects of
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$ to summable objects of
+$\operatorname{comp}^{n}(C)$.

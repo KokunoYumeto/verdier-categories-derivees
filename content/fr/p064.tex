@@ -1,0 +1,72 @@
+\VerdierPhysicalPageAnchor{0064}%
+\VerdierSemanticAnchor{ch1-1-6-6-functor-characterization}
+D'après la proposition (1.5.2), se donner un foncteur de $C$ dans
+$D$ revient à se donner un foncteur :
+
+\VerdierSemanticAnchor{ch1-1-6-6-eq2}
+\begin{equation}
+  (X_1,\ldots,X_n)\longmapsto F(X_1,\ldots,X_n)
+  \tag{1.6.6.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-6-transition-isomorphisms}
+et des isomorphismes de foncteurs :
+
+\VerdierSemanticAnchor{ch1-1-6-6-eq3}
+\begin{equation}
+  p_i\colon
+  F(X_1,\ldots,X_i[1],\ldots,X_n)
+  \xrightarrow{\ \sim\ }
+  F(X_1,\ldots,X_n)[1]
+  \tag{1.6.6.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-6-anticommutativity}
+tels que les diagrammes (1.5.1.2) :
+
+\VerdierSemanticAnchor{ch1-1-6-6-anticommutativity-diagram}
+\begin{equation*}
+  \resizebox{\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=2.8em,row sep=3.8em]
+      F(X_1,\ldots,X_i[1],\ldots,X_j[1],\ldots,X_n)
+        \arrow[r,"{p_i}"]
+        \arrow[d,"{p_j}"]
+        \& F(X_1,\ldots,X_i,\ldots,X_j[1],\ldots,X_n)[1]
+          \arrow[d,"{p_j[1]}"] \\
+      F(X_1,\ldots,X_i[1],\ldots,X_j,\ldots,X_n)[1]
+        \arrow[r,"{p_i[1]}"]
+        \& F(X_1,\ldots,X_i,\ldots,X_j,\ldots,X_n)[2]
+    \end{tikzcd}$%
+  }
+\end{equation*}
+
+soient anticommutatifs (pour $i<j$). (Pour simplifier le diagramme
+(1.5.1.2), on a supposé, ce qui sera toujours le cas dans ce travail,
+que les isomorphismes de transition de $D$ sont des identités).
+
+\VerdierSemanticAnchor{ch1-1-6-6-morphism-characterization}
+De même, d'après la proposition (1.5.10), les morphismes de foncteurs
+$u\colon F\longrightarrow F'$ que nous considérons sont soumis aux
+conditions suivantes : les diagrammes ci-après sont commutatifs :
+
+\VerdierSemanticAnchor{ch1-1-6-6-eq4}
+\begin{equation}
+  \resizebox{0.92\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=5.0em,row sep=3.8em]
+      F(X_1,\ldots,X_i[1],\ldots,X_n)
+        \arrow[r,"u"]
+        \arrow[d,"{p_i}"]
+        \& F'(X_1,\ldots,X_i[1],\ldots,X_n)
+          \arrow[d,"{p'_i}"] \\
+      F(X_1,\ldots,X_i,\ldots,X_n)[1]
+        \arrow[r,"{u[1]}"]
+        \& F'(X_1,\ldots,X_i,\ldots,X_n)[1]
+    \end{tikzcd}$%
+  }
+  \tag{1.6.6.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-6-underlying-convention}
+Lorsque le contexte ne prêtera à aucune confusion, nous désignerons les
+$\mathbb Z$-catégories par les catégories sous-jacentes et les
+$\mathbb Z^n$-foncteurs tordus par leurs foncteurs sous-jacents.

@@ -1,0 +1,84 @@
+\VerdierPhysicalPageAnchor{0057}%
+\VerdierSemanticAnchor{ch1-1-5-7-continuation}
+exhibits five vertical diagrams, respectively:
+
+\VerdierSemanticAnchor{ch1-1-5-7-vertical}
+\[
+  T'(\sigma')\Delta(\sigma,\tau),\quad
+  T'(\sigma)\Delta(\sigma',\tau),\quad
+  \Delta(\sigma,\tau)T(\sigma'),\quad
+  \Delta(\sigma',\tau)T(\sigma),\quad
+  \Delta(\sigma+\sigma',\tau).
+\]
+
+It likewise exhibits four horizontal diagrams, respectively:
+
+\VerdierSemanticAnchor{ch1-1-5-7-horizontal}
+\[
+  D(\sigma,\sigma')T(\tau),\quad
+  D(\sigma',\sigma)T(\tau),\quad
+  T'(\tau)D(\sigma,\sigma'),\quad
+  T'(\tau)D(\sigma',\sigma).
+\]
+
+\VerdierSemanticAnchor{ch1-1-5-7-conclusion}
+By the induction hypothesis, the diagrams $D(\sigma,\sigma')$ and
+$D(\sigma',\sigma)$ are respectively $\alpha(\sigma,\sigma')$- and
+$\alpha(\sigma',\sigma)$-commutative. The first part of assertion
+(1.5.4.3) follows by considering the three possible cases. The second
+part of assertion (1.5.4.3) is obtained by interchanging the roles of
+$\sigma$ and $\tau$. In the general case, the diagram that must be
+introduced is more complicated. But, using identities (1.2.1.3), the
+argument reduces to that given above.
+
+\VerdierSemanticAnchor{ch1-1-5-8}
+\noindent\textbf{Remark 1.5.8.}\quad
+Proposition (1.5.2) applies in particular when the cocycle $\alpha$ is
+trivial. One then checks that the proposition and its proof extend
+\emph{verbatim} to the case where the category $\mathcal C'$ is no
+longer necessarily additive.
+
+\VerdierSemanticAnchor{ch1-1-5-9}
+\noindent\textbf{1.5.9.}\quad
+Let
+
+\VerdierSemanticAnchor{ch1-1-5-9-functors}
+\[
+  (F_1,p_1),(F_2,p_2)\colon
+  (\mathcal C,\mathbb Z^n,T,c)
+  \longrightarrow
+  (\mathcal C',\mathbb Z^n,T',c')
+\]
+be two $\mathbb Z^n$-functors twisted respectively by two normalized
+cocycles $\alpha_1,\alpha_2\in
+Z^2(\mathbb Z^n,\mathbb Z/2\mathbb Z)$, and let
+$\beta\colon\mathbb Z^n\to\mathbb Z/2\mathbb Z$ be a map such that
+
+\VerdierSemanticAnchor{ch1-1-5-9-eq1}
+\begin{equation}
+  \alpha_2(\sigma_1,\sigma_2)\alpha_1^{-1}(\sigma_1,\sigma_2)
+  =\beta(\sigma_2)\beta(\sigma_1\sigma_2)^{-1}\beta(\sigma_1),
+  \qquad \sigma_1,\sigma_2\in\mathbb Z^n,
+  \tag{1.5.9.1}
+\end{equation}
+and let $u\colon(F_1,p_1)\to(F_2,p_2)$ be a $\beta$-morphism of
+functors (1.4.6). Let $e_1,\ldots,e_n$ be the canonical basis of
+$\mathbb Z^n$. For every $i\in[1,n]$, the following diagram is
+$\beta(e_i)$-commutative:
+
+\VerdierSemanticAnchor{ch1-1-5-9-eq2}
+\begin{equation}
+  \resizebox{0.78\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=6em,row sep=4em]
+      F_1T(e_i)
+        \arrow[r,"{p_1(e_i)}"]
+        \arrow[d,"{u*T(e_i)}"']
+        \& T'(e_i)F_1
+          \arrow[d,"{T'(e_i)*u}"] \\
+      F_2T(e_i)
+        \arrow[r,"{p_2(e_i)}"]
+        \& T'(e_i)F_2
+    \end{tikzcd}$%
+  }\;.
+  \tag{1.5.9.2}
+\end{equation}

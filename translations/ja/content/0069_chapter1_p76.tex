@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0076}%
+\VerdierSemanticAnchor{ch1-2-4-2-countable-products-sums}
+ここで $C$ において可算積（それぞれ、可算直和）が表現可能であると仮定する。
+次のようにおく：
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq6}
+\begin{equation}
+  \begin{aligned}
+    \operatorname{comp}_{\Pi}F
+      &=\int_n^{\Pi}F^{[n]},\\
+    \text{（それぞれ、}\operatorname{comp}_{\Sigma}F
+      &=\int_n^{\Sigma}F^{[n]}\text{）}.
+  \end{aligned}
+  \tag{2.4.2.6}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-2-pi-sigma-extension}
+関手
+$\operatorname{comp}_{\Pi}F$（それぞれ、$\operatorname{comp}_{\Sigma}F$）：
+$\prod_{i\in[n]}\operatorname{comp}(C_i)\longrightarrow
+\operatorname{comp}(C)$ を、関手 $F$ の複体への $\Pi$-拡張
+（それぞれ、$\Sigma$-拡張）と呼ぶ。
+
+\VerdierSemanticAnchor{ch1-2-4-2-koszul-twist}
+$F$ は厳密な $\mathbb Z[n]$-関手であり、関手
+$\int_n^{\Pi}$（それぞれ、$\int_n^{\Sigma}$）は
+$\mathbb Z[n]$ の順序付き基底 $e_1,\ldots,e_n$ に関する Koszul 余サイクルで
+捩れた $\mathbb Z[n]$-関手である。したがって、関手
+$\operatorname{comp}_{\Pi}F$（それぞれ、$\operatorname{comp}_{\Sigma}F$）
+も同じ順序付き基底に関する Koszul 余サイクルで捩れた
+$\mathbb Z[n]$-関手であり、これは符号規則 I (1.6.6) に従う。ゆえに、
+各 $i\in[n]$ に対して標準同型
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq7}
+\begin{equation}
+  \begin{aligned}
+    \operatorname{comp}_{\Pi}F(X_1,\ldots,X_i[1],\ldots,X_n)
+      &\xrightarrow{\sim}
+      \operatorname{comp}_{\Pi}F(X_1,\ldots,X_i,\ldots,X_n)[1],\\
+    \text{（それぞれ、}\operatorname{comp}_{\Sigma}F(X_1,\ldots,X_i[1],\ldots,X_n)
+      &\xrightarrow{\sim}
+      \operatorname{comp}_{\Sigma}F(X_1,\ldots,X_i,\ldots,X_n)[1]\text{）}
+  \end{aligned}
+  \tag{2.4.2.7}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-2-canonical-pi}
+が存在し、これらを $p_i$ と記す。
+
+\VerdierSemanticAnchor{ch1-2-4-2-anticommutativity}
+これらの同型は (1.6.6.3) に述べた反可換性をもつ。
+
+\VerdierSemanticAnchor{ch1-2-4-2-summable-restriction-equality}
+関手 $\operatorname{comp}_{\Pi}F$ と $\operatorname{comp}_{\Sigma}F$ の
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$ の総和可能な対象への制限は一致する。
+この制限は、圏 $C$ に何の仮定も置かずに常に定義できる。
+
+\VerdierSemanticAnchor{ch1-2-4-3}
+\subsection*{2.4.3.}
+ここで
+$F,F'\colon\prod_{i\in[n]}C_i\longrightarrow C$ を二つの多加法的関手、
+$h\colon F\longrightarrow F'$ を関手の射とする。これから関手の射
+
+\VerdierSemanticAnchor{ch1-2-4-3-induced-morphism}
+\begin{equation*}
+  h^{[n]}\colon F^{[n]}\longrightarrow F'^{[n]}
+\end{equation*}
+が、次のように定められる：
+
+\VerdierSemanticAnchor{ch1-2-4-3-eq1}
+\begin{equation}
+  \begin{aligned}
+    h^{[n]}(X_1,\ldots,X_n)^{\sigma}
+      &=h(X_1^{l_1},\ldots,X_n^{l_n}),\\
+    \sigma&=\sum_{i\in[n]}l_i e_i\in\mathbb Z[n],\\
+    (X_1,\ldots,X_n)&\in
+      \operatorname{Ob}\!\left(\prod_{i\in[n]}\operatorname{comp}(C_i)\right).
+  \end{aligned}
+  \tag{2.4.3.1}
+\end{equation}

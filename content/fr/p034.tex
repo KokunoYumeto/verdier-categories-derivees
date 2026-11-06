@@ -1,0 +1,53 @@
+\chapter{Les catégories de complexes des catégories additives}
+\VerdierPhysicalPageAnchor{0034}
+\VerdierSemanticAnchor{ch1}
+
+\VerdierSemanticAnchor{ch1-1}
+\section{Catégories graduées}
+
+\VerdierSemanticAnchor{ch1-1-1}
+\subsection{Catégories graduées de type \texorpdfstring{$G$}{G}}
+
+\VerdierSemanticAnchor{ch1-1-1-1}
+\noindent\textbf{1.1.1.}\quad
+À tout groupe $G$ on associe une catégorie, que nous notons $\mathcal G$,
+définie de la manière suivante :
+
+\VerdierSemanticAnchor{ch1-1-1-1-group-category}
+\noindent\textnormal{(1.1.1.1)}
+\begin{list}{--}{%
+  \setlength{\leftmargin}{2em}%
+  \setlength{\itemsep}{0.25em}%
+  \setlength{\topsep}{0.25em}%
+}
+  \item \VerdierSemanticAnchor{ch1-1-1-1-group-category-ob}%
+    $\operatorname{Ob}(\mathcal G)$ est un ensemble réduit à un élément
+    choisi une fois pour toutes.
+  \item \VerdierSemanticAnchor{ch1-1-1-1-group-category-fl}%
+    $\operatorname{Fl}(\mathcal G)$ est l'ensemble sous-jacent à $G$.
+  \item \VerdierSemanticAnchor{ch1-1-1-1-group-category-maps}%
+    Les applications source et but sont les uniques applications de
+    $\operatorname{Fl}(\mathcal G)$ dans $\operatorname{Ob}(\mathcal G)$.
+    L'application identité envoie l'unique élément de
+    $\operatorname{Ob}(\mathcal G)$ sur l'élément neutre de $G$.
+  \item \VerdierSemanticAnchor{ch1-1-1-1-group-category-composition}%
+    Le composé de deux flèches
+    ${}\xrightarrow{g}{}\xrightarrow{h}{}$ est la flèche $hg$, produit dans
+    le groupe $G$ des éléments $h$ et $g$.
+\end{list}
+
+\VerdierSemanticAnchor{ch1-1-1-1-graded-category}
+On appelle \emph{catégorie graduée de type $G$} une catégorie fibrée sur
+$\mathcal G$ [18]. Une catégorie $(\mathcal C,G)$ graduée de type $G$ est
+donc une catégorie $\mathcal C$ munie d'un foncteur
+$\deg\colon\mathcal C\to\mathcal G$ faisant de $\mathcal C$ une catégorie
+fibrée au-dessus de $\mathcal G$.
+
+\VerdierSemanticAnchor{ch1-1-1-1-degree-functor}
+Le foncteur $\deg\colon\mathcal C\to\mathcal G$ est appelé
+\emph{foncteur degré}. L'image par $\deg$ d'un morphisme de $\mathcal C$ est
+appelé le \emph{degré de ce morphisme}.
+\VerdierSemanticAnchor{ch1-1-1-1-fiber-category}
+Soit $e$ l'élément neutre de $G$.
+On désigne par $\mathcal C_e$ la catégorie fibre de $(\mathcal C,G)$. La
+catégorie $\mathcal C_e$ est

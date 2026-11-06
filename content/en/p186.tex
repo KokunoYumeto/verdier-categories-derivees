@@ -1,0 +1,84 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0186}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2}
+\section{Resolutions.}
+
+\noindent\textit{Throughout this section, $\mathcal A$ denotes an abelian
+category.}
+
+\VerdierSemanticAnchor{ch3d-2-1}
+\subsection{Elementary morphisms.}
+
+\VerdierSemanticAnchor{ch3d-2-1-1}
+\noindent\textbf{2.1.1.}\quad
+Let $X$ be a complex in $\mathcal A$, and let $X^i$ be its component of
+degree $i$. Let $u\colon Y\longrightarrow X^i$ be a morphism in
+$\mathcal A$. Construct the following commutative diagram:
+
+\VerdierSemanticAnchor{ch3d-2-1-1-diagram}
+\begin{equation}
+\begin{tikzcd}[column sep=1.45em,row sep=2.25em]
+{} & {} & X'^{i-1} \arrow[r,"v_2"] \arrow[d,"u'"']
+  & Y \arrow[d,"u"] \arrow[dr,"v_3"] & {} & {} \\
+X^{i-3} \arrow[r,"{d_X^{i-3}}"]
+  & X^{i-2} \arrow[r,"{d_X^{i-2}}"] \arrow[ur,"v_1"]
+  & X^{i-1} \arrow[r,"{d_X^{i-1}}"]
+  & X^i \arrow[r,"{d_X^i}"]
+  & X^{i+1} \arrow[r,"{d_X^{i+1}}"]
+  & X^{i+2}
+\end{tikzcd}
+\tag{2.1.1.1}
+\end{equation}
+where the square
+
+\VerdierSemanticAnchor{ch3d-2-1-1-cartesian-square}
+\begin{center}
+\begin{tikzcd}[column sep=4.2em,row sep=2.5em]
+X'^{i-1} \arrow[r,"v_2"] \arrow[d,"u'"']
+  & Y \arrow[d,"u"] \\
+X^{i-1} \arrow[r,"{d_X^{i-1}}"'] & X^i
+\end{tikzcd}
+\end{center}
+is cartesian, and the morphisms $v_1$ and $v_3$ are defined by the
+equalities
+
+\VerdierSemanticAnchor{ch3d-2-1-1-relations}
+\[
+v_2v_1=0,
+\qquad
+u'v_1=d_X^{i-2},
+\qquad
+v_3=d_X^iu.
+\]
+We then denote by $X(u,i)$ the complex
+
+\VerdierSemanticAnchor{ch3d-2-1-1-complex}
+\begin{equation}
+\begin{aligned}
+X(u,i)={}&\cdots\longrightarrow X^{i-3}
+\xrightarrow{d_X^{i-3}}X^{i-2}
+\xrightarrow{v_1}X'^{i-1}
+\xrightarrow{v_2}Y\\
+&\xrightarrow{v_3}X^{i+1}
+\xrightarrow{d_X^{i+1}}X^{i+2}\longrightarrow\cdots,
+\end{aligned}
+\tag{2.1.1.2}
+\end{equation}
+and by $p(u,i)\colon X(u,i)\longrightarrow X$ the morphism of
+complexes given by
+
+\VerdierSemanticAnchor{ch3d-2-1-1-projection}
+\begin{equation}
+\begin{aligned}
+p(u,i)^j&=\operatorname{id},
+  &&\text{for }j\neq i-1,i,\\
+p(u,i)^{i-1}&=u',\\
+p(u,i)^i&=u.
+\end{aligned}
+\tag{2.1.1.3}
+\end{equation}
+\endgroup

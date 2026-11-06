@@ -1,0 +1,76 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0149}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-3-5-injectivity-p149-continuation}
+\noindent 使得 $uf=0$。再用 a), i)，可知存在交换图：
+\VerdierSemanticAnchor{ch2-2-3-5-injectivity-refinement-diagram}
+\begin{center}
+ \begin{tikzcd}[column sep=3.7em,row sep=2.3em]
+ && {} \\
+ & {} \arrow[ur,"v"] && {t'\in S_{\mathcal A}(\mathcal A\cap\mathcal B)} \\
+ X \arrow[ur,"f"] && Y \arrow[ul,"s"] \arrow[uu,"{t'}"'] &
+ \end{tikzcd}
+\end{center}
+\VerdierSemanticAnchor{ch2-2-3-5-injectivity-conclusion}
+\noindent 使得 $vf=0$。于是 $m=Q_1(t')^{-1}Q_1(vf)=0$。
+\VerdierSemanticAnchor{ch2-2-3-5-surjectivity-map}
+现在证明同态
+\[
+ \operatorname{Hom}_{\mathcal A/(\mathcal A\cap\mathcal B)}(X,Y)
+ \longrightarrow\operatorname{Hom}_{\mathcal D/\mathcal B}(X,Y)
+\]
+是满射。
+\VerdierSemanticAnchor{ch2-2-3-5-surjectivity-roof}
+任意元素 $p\in\operatorname{Hom}_{\mathcal D/\mathcal B}(X,Y)$ 可写成
+\[
+ p=Q_2(t)^{-1}Q_2(g),\qquad t\in S_{\mathcal D}(\mathcal B).
+\]
+\VerdierSemanticAnchor{ch2-2-3-5-surjectivity-refinement}
+利用 a), i)，这种元素总可写成
+\[
+ p=Q_2(s)^{-1}Q_2(g'),\qquad
+ s\in S_{\mathcal A}(\mathcal A\cap\mathcal B),
+\]
+\VerdierSemanticAnchor{ch2-2-3-5-surjectivity-conclusion}
+\noindent 因而来自
+$\operatorname{Hom}_{\mathcal A/(\mathcal A\cap\mathcal B)}(X,Y)$ 的元素。
+\VerdierSemanticAnchor{ch2-2-3-5-c-proof-i-implies-ii}
+还需证明 c) 中的等价性。先证明 i) $\Rightarrow$ ii)。
+\VerdierSemanticAnchor{ch2-2-3-5-iterated-quotient}
+由 (2.3.1)，范畴 $\mathcal D/\mathcal B$ 典范同构于
+$(\mathcal D/(\mathcal A\cap\mathcal B))
+/(\mathcal B/(\mathcal A\cap\mathcal B))$，且典范函子
+\VerdierSemanticAnchor{ch2-2-3-5-q-functor}
+\[
+ Q\colon\mathcal D/(\mathcal A\cap\mathcal B)\longrightarrow\mathcal D/\mathcal B
+\]
+是商函子。
+\VerdierSemanticAnchor{ch2-2-3-5-q-free-reduction}
+因此由命题 (2.3.3, a))，为证明 i) $\Rightarrow$ ii)，只需证明：
+对 $\mathcal A$ 的每个对象 $X$ 与
+$\mathcal B$ 的每个对象 $B$，
+$\operatorname{Hom}_{\mathcal D/(\mathcal A\cap\mathcal B)}(B,X)=0$。
+\VerdierSemanticAnchor{ch2-2-3-5-m-representation}
+$\operatorname{Hom}_{\mathcal D/(\mathcal A\cap\mathcal B)}(B,X)$ 的任意元素
+$m$ 可写成 $Q_3(f)Q_3(s)^{-1}$，其中
+\VerdierSemanticAnchor{ch2-2-3-5-q3-functor}
+\[
+ Q_3\colon\mathcal D\longrightarrow\mathcal D/(\mathcal A\cap\mathcal B)
+\]
+是典范函子，且 $s$ 属于 $S_{\mathcal D}(\mathcal A\cap\mathcal B)$；后者是
+$\mathcal D$ 中与 $\mathcal A\cap\mathcal B$ 关联的乘法系 (2.2.2)。
+于是 $\mathcal D$ 中有图式：
+\VerdierSemanticAnchor{ch2-2-3-5-w-diagram}
+\begin{center}
+ \begin{tikzcd}[column sep=4em,row sep=2.4em]
+ & W \arrow[dl,"s"'] \arrow[dr,"f"] & \\
+ B && X
+ \end{tikzcd}\quad ,
+\end{center}
+\endgroup

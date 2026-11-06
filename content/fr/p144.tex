@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0144}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-c-bis-converse}
+\noindent saturée. La sous-catégorie $Q(Q^{-1}(\mathcal C))$ est strictement
+pleine saturée d'après la démonstration de d). Or la catégorie
+$Q(Q^{-1}(\mathcal C))$ est la clôture strictement pleine de $\mathcal C$.
+Par suite, $\mathcal C$ est saturée. Ceci démontre l'assertion
+c)$^{\mathrm{bis}}$.
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-d-bis}
+Il reste à démontrer la dernière assertion. Il est clair que lorsque
+$\mathcal C$ est strictement pleine, on a $Q(Q^{-1}(\mathcal C))=\mathcal C$.
+Soit $\mathcal A$ une catégorie triangulée strictement pleine contenant
+$\widehat{\mathcal B}$. Il nous faut montrer que
+$\mathcal A=Q^{-1}(Q(\mathcal A))$. Quitte à remplacer $\mathcal B$ par
+$\widehat{\mathcal B}$, ce qui ne change pas la catégorie
+$\mathcal D/\mathcal B$ (2.2.11), on peut supposer que $\mathcal B$ est
+saturée, et par suite que $\mathcal B=\widehat{\mathcal B}$. Comme on a
+évidemment l'inclusion
+$\mathcal A\subset Q^{-1}(Q(\mathcal A))$, il suffit de montrer que tout
+objet de $\mathcal D$ qui devient isomorphe dans $\mathcal D/\mathcal B$ à
+un objet de $\mathcal A$ est un objet de $\mathcal A$.
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-d-bis-roof-setup}
+Soient donc $X$ un objet de $\mathcal A$, $Y$ un objet de $\mathcal D$ et
+$m\colon Q(X)\xrightarrow{\sim}Q(Y)$ un isomorphisme. Le morphisme $m$ se
+décompose en $m=Q(f)Q(s)^{-1}$, où
+$s\in S_{\mathcal D}(\mathcal B)$ (2.2.2), et où $Q(f)$ est un
+isomorphisme. Donc $f\in S_{\mathcal D}(\mathcal B)$ car $\mathcal B$ est
+saturée ((2.1.8) et (2.2.4)). On a donc un diagramme dans $\mathcal D$ :
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-d-bis-roof}
+\begin{center}
+  \begin{tikzcd}[column sep=4.2em,row sep=2.5em,baseline=(current bounding box.center)]
+    & Z \arrow[dl,"s"'] \arrow[dr,"f"] & \\
+    X && Y
+  \end{tikzcd}
+  \qquad $s,f\in S_{\mathcal D}(\mathcal B)$\quad .
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-d-bis-complete}
+Le morphisme $s$ étant un élément de $S_{\mathcal D}(\mathcal B)$, il
+existe un triangle distingué $(Z,X,W,s,u,v)$, où $W$ est un objet de
+$\mathcal B$ (2.1.7). Par suite, $W$ est un objet de $\mathcal A$, et comme
+$\mathcal A$ est strictement pleine, l'objet $Z$ appartient aussi à
+$\mathcal A$ (1.2.4). Le même argument montre alors que $Y$ est un objet de
+$\mathcal A$, ce qui achève la démonstration de la proposition.
+
+\VerdierSemanticAnchor{ch2-2-3-2}
+\medskip
+\noindent\textbf{2.3.2.}\quad
+\VerdierSemanticAnchor{ch2-2-3-2-free-object}
+Soient $F\colon C\longrightarrow C'$ un foncteur et $X$ un objet de $C'$.
+Rappelons qu'un objet $Y$ de $C$ est dit \emph{$F$-libre à droite sur
+$X$}, ou simplement \emph{libre à droite sur $X$}, s'il existe un
+morphisme $u\colon F(Y)\longrightarrow X$ tel que pour tout morphisme
+$F(Z)\xrightarrow{v}X$, il existe un et un seul morphisme
+$w\colon Z\longrightarrow Y$ tel que le diagramme ci-après soit
+commutatif :
+
+\VerdierSemanticAnchor{ch2-2-3-2-free-object-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=4.7em,row sep=2.7em]
+    F(Y) \arrow[rr,"u"] && X \\
+    & F(Z) \arrow[ul,"{F(w)}"] \arrow[ur,"v"'] &
+  \end{tikzcd}
+  \quad .
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-3-2-freedom-arrow-boundary}
+La flèche $u\colon F(Y)\longrightarrow X$ s'appelle \emph{flèche de
+liberté} pour le couple $(X,Y)$ (relativement au foncteur $F$). Cela peut
+encore s'interpréter, en prenant un
+\endgroup

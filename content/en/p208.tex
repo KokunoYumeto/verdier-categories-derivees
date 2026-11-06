@@ -1,0 +1,103 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0208}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3}
+\section{Study of \texorpdfstring{$\operatorname{Ext}$}{Ext}.}
+
+\VerdierSemanticAnchor{ch3d-3-preamble}
+\noindent\textit{In this section, $\mathcal A$ denotes an abelian category.}
+
+\VerdierSemanticAnchor{ch3d-3-1}
+\subsection{Different equivalent definitions.}
+
+\VerdierSemanticAnchor{ch3d-3-1-1}
+\noindent\textbf{3.1.1.}\quad
+We say that the \emph{cohomological dimension of $\mathcal A$ is less than
+or equal to $n$} if, for every pair $X$ and $Y$ of objects of $\mathcal A$
+and every integer $p>n$, we have
+$\operatorname{Ext}_{\mathcal A}^{p}(X,Y)=0$ ((1.2.5), (1.2.9)). The
+\emph{cohomological dimension of $\mathcal A$}, denoted
+$\operatorname{dimcoh}(\mathcal A)$, is the least integer $n$ for which the
+cohomological dimension of $\mathcal A$ is less than or equal to $n$. If
+there is no integer $n$ for which the cohomological dimension of $\mathcal A$
+is less than or equal to $n$, we say that the cohomological dimension of
+$\mathcal A$ is infinite and write
+$\operatorname{dimcoh}(\mathcal A)=+\infty$.
+
+\VerdierSemanticAnchor{ch3d-3-1-2}
+\noindent\textbf{3.1.2.}\quad
+Recall (1.1.3) that $\operatorname{Qis}^{*}$ denotes the set of
+quasi-isomorphisms of $K^{*}(\mathcal A)$
+($*=b,-,+,{}$ ``empty''). Let $X$ be an object of $K^{*}(\mathcal A)$;
+$\operatorname{Qis}^{*}/X$ (respectively,
+$X\backslash\operatorname{Qis}^{*}$) denotes the category of
+quasi-isomorphisms with target $X$ (respectively, with source $X$)
+(Chap. II, 2.2.1). Since $\operatorname{Qis}^{*}$ is a multiplicative system
+of morphisms, the category $\operatorname{Qis}^{*}/X$ (respectively,
+$X\backslash\operatorname{Qis}^{*}$) is filtered on the left (respectively,
+on the right) (Chap. II, 2.2.1). The category
+$\operatorname{Qis}^{*}/X$ (respectively,
+$X\backslash\operatorname{Qis}^{*}$) has an initial (respectively, final)
+object $u\colon Y\longrightarrow X$ (respectively,
+$u\colon X\longrightarrow Y$) if and only if there is an object that is
+$Q^{*}$-free on the left (respectively, on the right), say $Y$, and a quasi-isomorphism
+$u\colon Y\longrightarrow X$ (respectively,
+$u\colon X\longrightarrow Y$), as follows immediately by using
+(Chap. II, 2.3.3).
+
+\VerdierSemanticAnchor{ch3d-3-1-3}
+\medskip\noindent\textbf{Proposition 3.1.3.}\quad
+\textit{Let $X$ and $Y$ be two complexes of $\mathcal A$.}
+
+\VerdierSemanticAnchor{ch3d-3-1-3-1}
+\[
+\textit{(1)}\qquad
+\operatorname{Ext}_{\mathcal A}^{0}(X,Y)=
+\varinjlim_{(\operatorname{Qis}/X)^o}
+\operatorname{Hom}_{K(\mathcal A)}(\mathord\cdot,Y).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-1-3-2}
+\[
+\textit{(2)}\qquad
+\operatorname{Ext}_{\mathcal A}^{0}(X,Y)\simeq
+\varinjlim_{Y\backslash\operatorname{Qis}}
+\operatorname{Hom}_{K(\mathcal A)}(X,\mathord\cdot).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-1-3-3}
+\[
+\textit{(3)}\qquad
+\operatorname{Ext}_{\mathcal A}^{0}(X,Y)\simeq
+\varinjlim_{(\operatorname{Qis}/X)^o\times
+  (Y\backslash\operatorname{Qis})}
+\operatorname{Hom}_{K(\mathcal A)}(\mathord\cdot,\mathord\cdot).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-1-3-4}
+\[
+\textit{(4)}\qquad
+\operatorname{Ext}_{\mathcal A}^{n}(X,Y)\simeq
+\operatorname{Ext}_{\mathcal A}^{0}(X[p],Y[n+p]),
+\qquad\textit{for every integer $p$.}
+\]
+
+\VerdierSemanticAnchor{ch3d-3-1-3-5}
+\[
+\textit{(5) For every $X$ in $K^{-}(\mathcal A)$,}\qquad
+\operatorname{Ext}_{\mathcal A}^{0}(X,Y)\simeq
+\varinjlim_{(\operatorname{Qis}^{-}/X)^o}
+\operatorname{Hom}_{K(\mathcal A)}(\mathord\cdot,Y).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-1-3-6}
+\[
+\textit{(6) For every $Y$ in $K^{+}(\mathcal A)$,}\qquad
+\operatorname{Ext}_{\mathcal A}^{0}(X,Y)\simeq
+\varinjlim_{Y\backslash\operatorname{Qis}^{+}}
+\operatorname{Hom}_{K(\mathcal A)}(X,\mathord\cdot).
+\]
+\endgroup

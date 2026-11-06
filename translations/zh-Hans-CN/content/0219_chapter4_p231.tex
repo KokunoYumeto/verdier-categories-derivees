@@ -1,0 +1,79 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0231}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-1-7-proof}
+首先假设，当 $X$ 是双复形且整数 $m=1$ 时命题已经得到证明，并说明如何归约到
+这一情形。设 $\varphi\colon[n]\longrightarrow[2]$ 为映射
+
+\VerdierSemanticAnchor{ch4d-4-1-7-1}
+\begin{equation}
+\left\{
+\begin{aligned}
+\varphi(m)&=1,\\
+\varphi(i)&=2,\qquad i\in[n],\quad i\neq m.
+\end{aligned}
+\right.
+\tag{4.1.7.1}
+\end{equation}
+
+置 $\int_\varphi X=Z$（第一章，2.2.2）。于是可对双复形 $Z$ 施行
+(4.1.6.$i$) 所述的构造，其中 $1\leq i\leq4$。得到双复形
+
+\VerdierSemanticAnchor{ch4d-4-1-7-2}
+\begin{equation}
+{}^{1}\!Z(p,q),\qquad
+(p,q)\in\mathcal{F}\ell_1(\widetilde{\mathbb Z}),
+\tag{4.1.7.2}
+\end{equation}
+
+以及双复形之间的态射
+
+\VerdierSemanticAnchor{ch4d-4-1-7-3}
+\begin{equation}
+\begin{aligned}
+f_Z\bigl((p,q),(p',q')\bigr)&\colon
+{}^{1}\!Z(p,q)\longrightarrow{}^{1}\!Z(p',q'),\\
+g_Z(p,q,r)&\colon
+{}^{1}\!Z(q,r)\longrightarrow T_1\bigl({}^{1}\!Z(p,q)\bigr).
+\end{aligned}
+\tag{4.1.7.3}
+\end{equation}
+
+于是可见
+
+\VerdierSemanticAnchor{ch4d-4-1-7-4}
+\begin{equation}
+\left\{
+\begin{aligned}
+\int_\varphi{}^{m}\!X(p,q)
+  &={}^{1}\!Z(p,q),
+  &&(p,q)\in\mathcal{F}\ell_1(\widetilde{\mathbb Z}),\\
+\int_\varphi f\bigl((p,q),(p',q')\bigr)
+  &=f_Z\bigl((p,q),(p',q')\bigr),
+\end{aligned}
+\right.
+\tag{4.1.7.4}
+\end{equation}
+
+（这可直接验证），并且态射 $g_Z(p,q,r)$ 是复合态射
+
+\VerdierSemanticAnchor{ch4d-4-1-7-5}
+\begin{equation}
+\int_\varphi{}^{m}\!X(q,r)
+\xrightarrow{\int_\varphi g(p,q,r)}
+\int_\varphi T_m\bigl({}^{m}\!X(p,q)\bigr)
+\xrightarrow{(**)}
+T_1\left(\int_\varphi{}^{m}\!X(p,q)\right)
+\tag{4.1.7.5}
+\end{equation}
+
+其中 $(**)$ 是函子 $\int_\varphi$ 与平移交换的同构（第一章，2.3.2.1）
+（要验证这一点，要使用 $Z$ 的微分的明确定义（第一章，2.2.2.5）以及交换
+同构的定义（第一章，2.3.2.1））。现在构造由按第一次数滤过的 $Z$ 所定义的
+谱对象。由等式 $\int_2\int_\varphi=\int_n$、(4.1.7.4)、(4.1.7.5) 以及
+（第一章，2.3.3）可知，
+$\bigl({}^{m}\!Y(p,q),{}^{m}\!d(p,q,r)\bigr)$ 等于这个谱对象。
+\endgroup

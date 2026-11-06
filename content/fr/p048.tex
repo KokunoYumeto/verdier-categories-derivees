@@ -1,0 +1,79 @@
+\VerdierPhysicalPageAnchor{0048}%
+\VerdierSemanticAnchor{ch1-1-4-4}
+\noindent\textbf{Définition 1.4.4.}\quad
+Soient $(\mathcal C,G,T,c)$ et $(\mathcal C',G,T',c')$ deux
+$G$-catégories, $\mathcal C'$ étant une catégorie additive. Soit
+$\alpha\in Z^2(G,\mathbb Z/2\mathbb Z)$ un cocycle normalisé non
+homogène. On appelle \emph{$G$-foncteur tordu par le cocycle $\alpha$}
+l'objet $(F,p)$ constitué par un foncteur :
+
+\VerdierSemanticAnchor{ch1-1-4-4-functor}
+\[
+  F\colon\mathcal C\longrightarrow\mathcal C'
+\]
+et des isomorphismes de foncteurs :
+
+\VerdierSemanticAnchor{ch1-1-4-4-twisting-data}
+\[
+  p(\sigma)\colon FT(\sigma)\longrightarrow T'(\sigma)F,
+  \qquad \sigma\in G,
+\]
+tels que, pour tout couple $\sigma_1,\sigma_2\in G$, le diagramme
+(1.4.3.11) soit $\alpha(\sigma_1,\sigma_2)$-commutatif.
+
+\VerdierSemanticAnchor{ch1-1-4-4-correspondence}
+Le choix d'une section normalisée $s$ de l'extension (1.4.3.4) permet
+donc d'établir une correspondance biunivoque entre les $H$-foncteurs :
+\[
+  (F,m)\colon(\mathcal C,H,T_f,c_f)
+  \longrightarrow(\mathcal C',H,T'_f,c'_f)
+\]
+qui induisent l'opération canonique du groupe des signes sur $F$, et
+les $G$-foncteurs tordus par le cocycle $\alpha_s$ défini par la
+section $s$.
+
+\VerdierSemanticAnchor{ch1-1-4-5}
+\noindent\textbf{1.4.5.}\quad
+On utilise les notations de (1.4.3). Soient :
+
+\VerdierSemanticAnchor{ch1-1-4-5-eq1}
+\begin{equation}
+  \begin{gathered}
+    (F_1,m_1),(F_2,m_2)\colon
+    (\mathcal C,H,T_f,c_f)\\[-0.2em]
+    \longrightarrow(\mathcal C',H,T'_f,c'_f)
+  \end{gathered}
+  \tag{1.4.5.1}
+\end{equation}
+deux $H$-foncteurs induisant l'opération canonique du groupe des
+signes et :
+
+\VerdierSemanticAnchor{ch1-1-4-5-eq2}
+\begin{equation}
+  u\colon(F_1,m_1)\longrightarrow(F_2,m_2)
+  \tag{1.4.5.2}
+\end{equation}
+un morphisme de foncteurs compatible avec les opérations de $H$.
+
+\VerdierSemanticAnchor{ch1-1-4-5-sections}
+Soient $s_1$ et $s_2$ deux sections normalisées de l'application $f$
+de la suite exacte (1.4.3.4) ($s_1(e)=s_2(e)=e$). Soient
+$\alpha_{s_1},\alpha_{s_2}\in Z^2(G,\mathbb Z/2\mathbb Z)$ les
+cocycles normalisés correspondants. Soit
+$\beta\colon G\to\mathbb Z/2\mathbb Z$, l'application :
+
+\VerdierSemanticAnchor{ch1-1-4-5-eq3}
+\begin{equation}
+  \beta(\sigma)=s_2(\sigma)s_1(\sigma)^{-1},
+  \qquad \sigma\in G.
+  \tag{1.4.5.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-5-induced}
+Les foncteurs $(F_1,m_1)$ et $(F_2,m_2)$ définissent, d'après (1.4.3),
+des $G$-foncteurs $(F_1,p_1)$, $(F_2,p_2)$ tordus respectivement par
+les cocycles $\alpha_{s_1}$, $\alpha_{s_2}$. On vérifie immédiatement
+que le morphisme $u\colon F_1\to F_2$ entre les foncteurs sous-jacents
+possède la propriété suivante :
+
+\VerdierSemanticAnchor{ch1-1-4-5-property}

@@ -1,0 +1,76 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0219}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-3-2-sfl-i-induced-square}
+où les lignes sont exactes fournit, pour tout entier $n$, un diagramme
+commutatif :
+\begin{center}
+\begin{tikzcd}[column sep=5.2em,row sep=3.0em]
+F^n(Z) \arrow[r,"{\delta_F^n(S)}"] \arrow[d,"{F^n(g)}"']
+  & F^{n+1}(X) \arrow[d,"{F^{n+1}(f)}"] \\
+F^n(Z') \arrow[r,"{\delta_F^n(S')}"']
+  & F^{n+1}(X')
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-3-3-2-sfl-ii}
+\noindent\textbf{SFL II)} Lorsque
+$S=0\longrightarrow0\longrightarrow0\longrightarrow0\longrightarrow0$,
+le morphisme $\delta_F^n(S)$ est, pour tout entier $n$, un isomorphisme.
+
+\VerdierSemanticAnchor{ch3d-3-3-2-msfl}
+Soit maintenant $m\colon F\longrightarrow F'$ un morphisme de foncteurs
+$F,F'\colon\mathcal A^{\operatorname{Ext}}\longrightarrow\mathcal C$.
+On en déduit de façon évidente une suite de morphismes de foncteurs
+$m^n\colon F^n\longrightarrow {F'}^n$. Cette suite de morphismes possède la
+propriété :
+
+\noindent\textbf{MSFL)} Pour toute suite exacte
+$S=0\longrightarrow X\longrightarrow Y\longrightarrow Z\longrightarrow0$,
+et pour tout entier $n$, le diagramme ci-après est commutatif :
+
+\VerdierSemanticAnchor{ch3d-3-3-2-msfl-square}
+\begin{center}
+\begin{tikzcd}[column sep=5.2em,row sep=3.0em]
+F^n(Z) \arrow[r,"{\delta_F^n(S)}"] \arrow[d,"{m^n(Z)}"']
+  & F^{n+1}(X) \arrow[d,"{m^{n+1}(X)}"] \\
+{F'}^n(Z) \arrow[r,"{\delta_{F'}^n(S)}"']
+  & {F'}^{n+1}(X)
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-3-3-3}
+\medskip\noindent\textbf{Définition 3.3.3.}\quad
+Une suite de foncteurs $F^n\colon\mathcal A\longrightarrow\mathcal C$ munie
+de la donnée, pour toute suite exacte
+$S=0\longrightarrow X\longrightarrow Y\longrightarrow Z\longrightarrow0$,
+d'un morphisme
+$\delta_F^n(S)\colon F^n(Z)\longrightarrow F^{n+1}(X)$ possédant les
+propriétés SFL I) et SFL II) est appelée une \emph{suite de foncteurs liés}.
+Soient $(F^n,\delta_F^n)$ et $({F'}^n,\delta_{F'}^n)$ deux suites de
+foncteurs liés. Une suite de morphismes de foncteurs
+$m^n\colon F^n\longrightarrow {F'}^n$ est appelée un \emph{morphisme de
+suites de foncteurs liés} si elle possède la propriété MSFL).
+
+\VerdierSemanticAnchor{ch3d-3-3-4}
+\medskip\noindent\textbf{Proposition 3.3.4.}\quad
+\textit{Soient
+$\mathcal H\!om(\mathcal A^{\operatorname{Ext}},\mathcal C)$ la catégorie
+des foncteurs de $\mathcal A^{\operatorname{Ext}}$ dans $\mathcal C$ et
+$\mathcal{SFL}(\mathcal A,\mathcal C)$ la catégorie dont les objets sont les
+suites de foncteurs liés et les morphismes, les morphismes de suites de
+foncteurs liés. Ce qui précède définit un foncteur :}
+
+\VerdierSemanticAnchor{ch3d-3-3-4-functor}
+\[
+\Phi\colon
+\mathcal H\!om(\mathcal A^{\operatorname{Ext}},\mathcal C)
+\longrightarrow\mathcal{SFL}(\mathcal A,\mathcal C).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-3-4-a}
+\noindent\textit{a) Ce foncteur est une équivalence de catégories.}
+\endgroup

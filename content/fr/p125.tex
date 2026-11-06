@@ -1,0 +1,87 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0125}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-3-5}
+\noindent\textbf{Proposition 1.3.5.}\quad
+\emph{Soit $C$ une catégorie abélienne. Le foncteur :}
+
+\VerdierSemanticAnchor{ch2-1-3-5-h0-functor}
+\[
+  H^0\colon K(C)\longrightarrow C
+\]
+\noindent\emph{est un foncteur cohomologique.}
+
+\VerdierSemanticAnchor{ch2-1-3-5-first-exact-sequence}
+En effet, d'après (chap. I, 3.3.1), il suffit de montrer que, pour tout objet
+$X\xrightarrow{f}Y$ de $\operatorname{tr}_1(C)$ (chap. I, 3.1.1), la suite :
+\[
+  H^0(X)\xrightarrow{H^0(f)}H^0(Y)
+  \xrightarrow{H^0(p(f))}H^0(c(f))
+  \xrightarrow{H^0(q(f))}H^0(X[1])
+\]
+\noindent est exacte.
+
+\VerdierSemanticAnchor{ch2-1-3-5-trii-reduction}
+En utilisant la propriété TRII (1.1.1), on voit qu'il suffit de montrer que
+la suite :
+
+\VerdierSemanticAnchor{ch2-1-3-5-reduced-exact-sequence}
+\[
+  H^0(Y)\xrightarrow{H^0(p(f))}H^0(c(f))
+  \xrightarrow{H^0(q(f))}H^0(X[1])
+\]
+\noindent est exacte, ce qui résulte immédiatement des définitions
+(chap. I, 3.1.2 et 3.2.2).
+
+\VerdierSemanticAnchor{ch2-1-3-5-proof-complete}
+Le foncteur $H^0\colon K(C)\longrightarrow C$ est appelé le
+\emph{foncteur cohomologique canonique}.
+
+\VerdierSemanticAnchor{ch2-1-3-5-shifted-cohomology}
+On pose $H^n(X)=H^0(X[n])$ conformément à l'usage.
+
+\VerdierSemanticAnchor{ch2-1-3-6}
+\medskip
+\noindent\textbf{Proposition 1.3.6.}\quad
+\emph{Soit $C$ une catégorie abélienne. Les conditions suivantes sont
+équivalentes :}
+
+\VerdierSemanticAnchor{ch2-1-3-6-equivalent-conditions}
+\begin{enumerate}
+\renewcommand{\labelenumi}{\roman{enumi})}
+\item \emph{La catégorie $K(C)$ est abélienne.}
+\item \emph{La catégorie $K(C)$ est décomposable (1.2.8).}
+\item \emph{La catégorie $C$ est décomposable.}
+\end{enumerate}
+
+\VerdierSemanticAnchor{ch2-1-3-6-i-iff-ii}
+L'équivalence
+$\mathrm{i)}\Longleftrightarrow\mathrm{ii)}$ résulte de (1.2.9).
+
+\VerdierSemanticAnchor{ch2-1-3-6-ii-implies-iii}
+L'implication $\mathrm{ii)}\Longrightarrow\mathrm{iii)}$ est évidente car
+$C$ est une sous-catégorie pleine de $K(C)$.
+
+\VerdierSemanticAnchor{ch2-1-3-6-hstar-complex}
+Pour tout complexe $X$ de $C$, désignons par $H^*(X)$ le complexe :
+\[
+  H^*(X)^l=H^l(X),\qquad l\in\mathbb Z,
+\]
+\[
+  d_{H^*(X)}^l=0,\qquad l\in\mathbb Z.
+\]
+
+\VerdierSemanticAnchor{ch2-1-3-6-hstar-equivalence}
+On vérifie que le foncteur
+$H^*\colon K(C)\longrightarrow K(C)$ est une équivalence de catégories
+lorsque $C$ est décomposable.
+
+\VerdierSemanticAnchor{ch2-1-3-6-proof-complete}
+On en déduit l'implication
+$\mathrm{iii)}\Longrightarrow\mathrm{ii)}$.
+\endgroup

@@ -1,0 +1,76 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0210}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-1-4-proof}
+Seule reste à démontrer la troisième assertion. Les autres assertions sont
+des conséquences immédiates de la proposition (2.4.4). L'assertion 2) montre
+aussitôt que la dimension cohomologique de $\mathcal A$ est inférieure ou
+égale à la borne supérieure des dimensions injectives (resp.\ projectives) des
+objets de $\mathcal A$. Supposons que la dimension cohomologique de
+$\mathcal A$ soit égale à $n$ et soit :
+
+\VerdierSemanticAnchor{ch3d-3-1-4-proof-resolution}
+\[
+I^\bullet=\cdots\longrightarrow0\longrightarrow0\longrightarrow I^0
+\longrightarrow I^1\longrightarrow I^2\longrightarrow I^3
+\longrightarrow\cdots
+\]
+une résolution de type injectif d'un objet $Y$ de $\mathcal A$. Pour tout
+objet $X$ de $\mathcal A$, on a
+$\operatorname{Hom}_{K(\mathcal A)}(X[-n-1],I^\bullet)=0$. En particulier,
+en prenant $X=\operatorname{Ker}d_{I^\bullet}^{n+1}$, on montre aussitôt que
+le morphisme canonique
+$\operatorname{Ker}d_{I^\bullet}^{n+1}\longrightarrow I^{n+1}$ se factorise
+à travers $I^n$ :
+
+\VerdierSemanticAnchor{ch3d-3-1-4-proof-factorization}
+\[
+\begin{tikzcd}[column sep=4.8em,row sep=2.8em]
+{} & \operatorname{Ker}d_{I^\bullet}^{n+1}
+  \arrow[dl,dashed] \arrow[d] & {} \\
+I^n \arrow[r] & I^{n+1} \arrow[r] & \cdots
+\end{tikzcd}
+\]
+
+\VerdierSemanticAnchor{ch3d-3-1-4-proof-truncation}
+Par suite, $\operatorname{Ker}d_{I^\bullet}^{n+1}$ et
+$\operatorname{Ker}d_{I^\bullet}^{n}$ sont des facteurs directs de $I^n$ et
+sont donc injectifs. Le complexe :
+\[
+\cdots\longrightarrow0\longrightarrow I^0\longrightarrow I^1
+\longrightarrow\cdots\longrightarrow I^{n-1}
+\longrightarrow\operatorname{Ker}d_{I^\bullet}^{n}
+\longrightarrow0\longrightarrow\cdots
+\]
+est une résolution injective de $Y$ ; ce qui montre que la dimension
+injective de $Y$ est inférieure ou égale à $n$. On démontre de même que la
+dimension projective de tout objet $X$ de $\mathcal A$ est inférieure ou
+égale à $n$.
+
+\VerdierSemanticAnchor{ch3d-3-1-5}
+\medskip\noindent\textbf{3.1.5.}\quad
+Soient $X$ et $Y$ deux objets de $\mathcal A$. La proposition (3.1.4) montre
+que lorsque la catégorie $\mathcal A$ possède suffisamment d'objets injectifs
+ou projectifs les groupes $\operatorname{Ext}_{\mathcal A}^{i}(X,Y)$ que
+nous avons définis ici coïncident avec ceux qui sont définis classiquement.
+
+\VerdierSemanticAnchor{ch3d-3-2}
+\subsection{La construction de Yoneda.}
+
+\VerdierSemanticAnchor{ch3d-3-2-1}
+\noindent\textbf{3.2.1.}\quad
+Soient $X$ et $Y$ deux objets de $\mathcal A$. Désignons par
+$E_{\mathcal A}^{n}(X,Y)$ ($n\geq1$) l'ensemble des suites exactes :
+
+\VerdierSemanticAnchor{ch3d-3-2-1-sequence}
+\[
+S^n(X,Y)=0\longrightarrow Y\longrightarrow Z_{n-1}
+\longrightarrow Z_{n-2}\longrightarrow\cdots\longrightarrow Z_0
+\xrightarrow{u_0}X\longrightarrow0.
+\]
+L'entier $n$ est appelé la longueur de la suite $S^n(X,Y)$. Associons à tout
+élément $S^n(X,Y)$ de $E_{\mathcal A}^{n}(X,Y)$ trois complexes :
+\endgroup

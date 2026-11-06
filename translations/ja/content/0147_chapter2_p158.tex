@@ -1,0 +1,46 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0158}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch3-3-2-5-kernel-triangle}
+$(Z,X,Y',u,f'g,v)$ を $\mathcal D$ の完全三角とする。図式
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.1em]
+h(Z)\arrow[r,"h(fu)"]\arrow[d,"h(u)"']&h(Y)\arrow[d,"\operatorname{id}_{h(Y)}"]\\
+h(X)\arrow[r,"h(f)"]\arrow[d,"h(g)"']&h(Y)\arrow[d,"h(g')"]\\
+h(X')\arrow[r,"h(f')"']&h(Y')
+\end{tikzcd}
+\]
+の横射の像をとると
+\VerdierSemanticAnchor{ch3-3-2-5-1}
+\[
+\operatorname{Im}(fu)\xrightarrow{\beta}V\xrightarrow{\alpha}V'.
+\tag{3.2.5.1}
+\]
+を得る。
+\VerdierSemanticAnchor{ch3-3-2-5-kernel-proof}
+射 $\operatorname{Im}(fu)\to V$ が $\alpha$ の核であることを示す。
+まず $\beta$ はモノ射である。実際、$\operatorname{Im}(fu)$ と $V$ は
+$h(Y)$ の部分対象である。次に $\alpha\beta=0$ である。標準射
+$h(Z)\to\operatorname{Im}(fu)$ はエピ射、標準射
+$V'\to h(Y')$ はモノ射であり、$h(f'gu)$ は完全三角の連続する
+二射の合成の $h$ による像だから零である (1.2.2)。
+残るは $V$ での完全性である。$W$ を $\mathcal D$ の対象とする。
+任意の射 $\sigma\colon h(W)\to V$ は、$h(W)$ が $\mathcal D^\wedge$ で射影的なので、
+$h(W)$ から $h(X)$ への射、すなわち射 $m\colon W\to X$ から得られる。
+$\alpha$ との合成が零であることと $f'gm=0$ は同値である。これは
+$V'$ が $h(Y')$ の部分対象だからである。(1.2.1) により
+$un=m$ なる $n\colon W\to Z$ が存在する。よって $\sigma$ は
+$\operatorname{Im}(fu)$ を経由する。
+
+\VerdierSemanticAnchor{ch3-3-2-5-cokernel-setup}
+次に $\mathcal D^\wedge$ における $\alpha$ の余核が
+$\mathcal D^\wedge$ の許容対象であることを示す。
+$(X,Y',Z',g'f,u',v')$ を $\mathcal D$ の完全三角とする。図式
+\[
+\begin{tikzcd}[column sep=5em,row sep=2em]
+h(X)\arrow[r,"h(f)"]\arrow[d,"h(g)"']&h(Y)\arrow[d,"h(g')"]\\
+h(X')\arrow[r,"h(f')"]\arrow[d,"\operatorname{id}_{h(X')}"']&h(Y')\arrow[d,"h(u')"]\\
+h(X')\arrow[r,"h(u'f')"']&h(Z')
+\end{tikzcd}
+\]
+\endgroup

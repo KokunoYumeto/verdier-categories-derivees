@@ -1,0 +1,80 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0115}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-3-proof-f1-f2}
+不妨设 $f_1\colon X\longrightarrow X'$ 与
+$f_2\colon Y\longrightarrow Y'$ 是同构。对于 $\mathcal D$ 的任意对象 $W$，
+都有交换图式：
+
+\VerdierSemanticAnchor{ch2-1-2-3-five-lemma-diagram}
+\begin{equation*}
+  \resizebox{0.98\linewidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=2.15em,row sep=3em]
+      \cdots \arrow[r]
+        \& \operatorname{Hom}_{\mathcal D}(W,X) \arrow[r] \arrow[d,"{\operatorname{Hom}_{\mathcal D}(W,f_1)}"']
+        \& \operatorname{Hom}_{\mathcal D}(W,Y) \arrow[r] \arrow[d,"{\operatorname{Hom}_{\mathcal D}(W,f_2)}"']
+        \& \operatorname{Hom}_{\mathcal D}(W,Z) \arrow[r] \arrow[d,"{\operatorname{Hom}_{\mathcal D}(W,f_3)}"']
+        \& \operatorname{Hom}_{\mathcal D}(W,X[1]) \arrow[r] \arrow[d,"{\operatorname{Hom}_{\mathcal D}(W,f_1[1])}"']
+        \& \cdots \\
+      \cdots \arrow[r]
+        \& \operatorname{Hom}_{\mathcal D}(W,X') \arrow[r]
+        \& \operatorname{Hom}_{\mathcal D}(W,Y') \arrow[r]
+        \& \operatorname{Hom}_{\mathcal D}(W,Z') \arrow[r]
+        \& \operatorname{Hom}_{\mathcal D}(W,X'[1]) \arrow[r]
+        \& \cdots
+    \end{tikzcd}$%
+  }\,.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-3-five-lemma}
+两行均正合。由五引理，
+$\operatorname{Hom}_{\mathcal D}(W,f_3)$ 对每个 $W$ 都是同构，因而 $f_3$
+是同构。推论的另外两个断言可由这一断言结合公理 TRII 得到。
+
+\VerdierSemanticAnchor{ch2-1-2-4}
+\medskip
+\noindent\textbf{推论 1.2.4.}\quad
+设
+$X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]$ 与
+$X\xrightarrow{u}Y\xrightarrow{v'}Z'\xrightarrow{w'}X[1]$
+为两个特异三角。存在一个同构 $f\colon Z\xrightarrow{\sim}Z'$，使下图交换：
+
+\VerdierSemanticAnchor{ch2-1-2-4-1}
+\begin{equation}
+  \begin{tikzcd}[column sep=2.8em,row sep=1.7em]
+    && Z \arrow[dr,"w"] \arrow[dd,"f"',"\sim"] & \\
+    X \arrow[r,"u"] & Y \arrow[ur,"v"] \arrow[dr,"v'"'] && X[1] \\
+    && Z' \arrow[ur,"w'"'] &
+  \end{tikzcd}
+  \tag{1.2.4.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch2-1-2-4-proof}
+事实上，由公理 TRIII，存在态射 $f\colon Z\longrightarrow Z'$ 使图
+(1.2.4.1) 交换。由 (1.2.3)，这个态射是同构。
+
+\VerdierSemanticAnchor{ch2-1-2-4-essential-uniqueness}
+因此，推论 (1.2.4) 表明，包含给定态射的特异三角在本质上唯一：它们在同构
+意义下确定。不过应当注意，这个同构并不唯一。我们将在 (1.2.12) 精确说明
+这一点。
+
+\VerdierSemanticAnchor{ch2-1-2-5}
+\medskip
+\noindent\textbf{推论 1.2.5.}\quad
+两个特异三角的直和是一个特异三角。
+
+\VerdierSemanticAnchor{ch2-1-2-5-proof-start}
+设：
+
+\VerdierSemanticAnchor{ch2-1-2-5-input-triangles}
+\[
+  \begin{gathered}
+    X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1],\\
+    X'\xrightarrow{u'}Y'\xrightarrow{v'}Z'\xrightarrow{w'}X'[1]
+  \end{gathered}
+\]
+\endgroup

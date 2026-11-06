@@ -1,0 +1,54 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0156}%
+\begingroup\small
+\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+
+\VerdierSemanticAnchor{ch3-3-2-3-hom-map}
+$(X,Y,f)$ と $(X',Y',f')$ を $\mathrm A(\mathcal D)$ の二対象とする。命題
+(3.2.3) を示すには、関手 $\operatorname{Im}$ によって定まる準同型
+\[
+\operatorname{Hom}_{\mathrm A(\mathcal D)}((X,Y,f),(X',Y',f'))
+\longrightarrow
+\operatorname{Hom}_{\mathcal D^\wedge}(\operatorname{Im}(f),\operatorname{Im}(f'))
+\tag{3.2.3.2}
+\]
+が同型であることを示せばよい。
+
+\VerdierSemanticAnchor{ch3-3-2-3-injectivity}
+まず単射性を示す。
+$(g;g')\colon(X,Y,f)\to(X',Y',f')$ が
+$\mathcal{F}\ell_1(\mathcal D)$ の射であり、
+$\operatorname{Im}((g;g'))=0$ を満たすなら
+\[
+\operatorname{Im}((f';\operatorname{id}_{Y'}))\circ
+\operatorname{Im}((g;g'))\circ
+\operatorname{Im}((\operatorname{id}_X;f))=h(g'f)=0.
+\]
+$h$ は充満忠実なので $g'f=0$、ゆえに $(g;g')$ は無視可能である。
+全射性は次の補題から従う。
+
+\VerdierSemanticAnchor{ch3-3-2-4}
+\medskip\noindent\textbf{補題 3.2.4.}\quad
+\textit{$\alpha\colon\operatorname{Im}(f)\to\operatorname{Im}(f')$ を
+$\mathcal D^\wedge$ の射とする。次の図式を可換にする $\mathcal D$ の二つの射
+$g\colon X\to X'$ と $g'\colon Y\to Y'$ が存在する：}
+\VerdierSemanticAnchor{ch3-3-2-4-1}
+\[
+\begin{tikzcd}[column sep=6em,row sep=2.3em]
+h(X)\arrow[r,"\operatorname{Im}((\operatorname{id}_X;f))"]\arrow[d,"h(g)"']&
+\operatorname{Im}(f)\arrow[d,"\alpha"]\\
+h(X')\arrow[r,"\operatorname{Im}((\operatorname{id}_{X'};f'))"']&\operatorname{Im}(f')
+\end{tikzcd}\tag{3.2.4.1}
+\]
+\VerdierSemanticAnchor{ch3-3-2-4-2}
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.3em]
+h(X)\arrow[r,"h(f)"]\arrow[d,"h(g)"']&h(Y)\arrow[d,"h(g')"]\\
+h(X')\arrow[r,"h(f')"']&h(Y')
+\end{tikzcd}\tag{3.2.4.2}
+\]
+\VerdierSemanticAnchor{ch3-3-2-4-consequence}
+実際、(3.2.3.1) と $\operatorname{Im}((\operatorname{id}_X;f))$ が
+$\mathcal D^\wedge$ におけるエピ射
+であることから、補題は $\alpha=\operatorname{Im}((g;g'))$ を与える。
+\endgroup

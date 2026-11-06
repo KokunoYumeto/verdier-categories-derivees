@@ -1,0 +1,75 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0198}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-1-proof-b-conclusion}
+したがって $v$ はエピ射である。これで性質 $(E_3)$ が示され、命題の証明が完了した。
+
+\VerdierSemanticAnchor{ch3d-2-3-2}
+\medskip\noindent\textbf{命題 2.3.2.}
+\textit{$M$ を $\mathcal A$ の対象の集合で、性質
+$(E_1)$、$(E_2)$、$(E_3)$ を満たすものとする。
+$Y\in\operatorname{Ob}\operatorname{comp}(\mathcal A)$ を、各整数 $n$ に対して
+$H^n(Y)\in M$ であり、かつある整数 $n_0$ が存在して
+$n\geq n_0$ なら $H^n(Y)=0$ となる複体とする。このとき、各成分が
+$M$ に属する複体
+$X\in\operatorname{Ob}\operatorname{comp}^{-}(\mathcal A)$ と擬同型}
+\[
+\dot u\colon X\longrightarrow Y.
+\]
+\textit{が存在する。}
+
+\VerdierSemanticAnchor{ch3d-2-3-2-proof}
+まず、(1.2.1) により複体
+$Y'\in\operatorname{Ob}\operatorname{comp}^{-}(\mathcal A)$ と擬同型
+$Y'\longrightarrow Y$ が存在する。したがって、$Y$ が
+$\operatorname{comp}^{-}(\mathcal A)$ の対象である場合に帰着できる。
+$n$ に関する帰納法により、射の列
+
+\VerdierSemanticAnchor{ch3d-2-3-2-induction}
+\[
+u_n\colon X_n\longrightarrow X_{n-1}
+\]
+で次の性質をもつものを構成する：
+
+\VerdierSemanticAnchor{ch3d-2-3-2-induction-properties}
+\noindent 1) $n$ が十分小さいとき、$X_n=Y$ かつ
+$u_n=\operatorname{id}$ である。
+
+\noindent 2) 複体 $X_n$ の次数 $i\geq -n$ の成分は $M$ に属する。
+$X_n$ の次数 $i\geq -n$ の微分の核と像は $M^\wedge$ に属する（2.1.1）。
+
+\noindent 3) 射 $u_n$ は擬同型である。これは射
+$p((\dot u_n)^{-n},-n)$（2.1.1.3）と同型である。
+
+\VerdierSemanticAnchor{ch3d-2-3-2-limits}
+この構成ができれば、$X=\varprojlim_n X_n$ とおき、標準射
+$\dot u$ として次をとればよい：
+\[
+\dot u\colon X=\varprojlim_n X_n\longrightarrow\varinjlim_n X_n=Y.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-2-induction-step}
+$n$ が十分小さいとき、$X_n=Y$ かつ
+$\dot u_n=\operatorname{id}_Y$ とおく。各整数 $n<q$ に対して、
+複体 $X_n$ と、上の性質 1)、2)、3) をもつ射 $\dot u_n$ が構成されたと仮定する。
+複体 $X_{q-1}$ は次の形をする：
+
+\VerdierSemanticAnchor{ch3d-2-3-2-xqminus1}
+\[
+X_{q-1}=\cdots\longrightarrow Y^{-q-2}\longrightarrow Y^{-q-1}
+\longrightarrow Z^{-q}\longrightarrow L^{-q+1}\longrightarrow L^{-q+2}
+\longrightarrow\cdots,
+\]
+ここで $Y^i$ は複体 $Y$ の成分であり、$L^i$ は $M$ に属する。
+このとき、次のエピ射がある：
+
+\VerdierSemanticAnchor{ch3d-2-3-2-quotient}
+\[
+Z^{-q}\longrightarrow
+Z^{-q}/\operatorname{Im}(Y^{-q-1}\longrightarrow Z^{-q})
+\longrightarrow0
+\]
+\endgroup

@@ -1,0 +1,95 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0132}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{2pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{2pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-1-10-continuation}
+\noindent consequence, SM3).
+\VerdierSemanticAnchor{ch2-2-1-10-triangle-setup}%
+By hypothesis, there exists a distinguished
+triangle $(X,Y,N,s,h,u)$, where $N$ is an object of $\mathcal D'$. Since
+$fs=0$, it follows from (1.2.1) that there exists a morphism
+$g\colon N\to Z$ such that $f=gh$.
+
+\VerdierSemanticAnchor{ch2-2-1-10-factorization}
+Let $(N,Z,W,g,t,v)$ then be a distinguished triangle containing $g$ (TRI).
+We then have $tg=0$ (1.2.2), and consequently $tf=tgh=0$.
+
+\VerdierSemanticAnchor{ch2-2-1-10-closure-conclusion}
+It therefore remains only to show that $t$ is an element of $S(\mathcal D')$,
+which follows immediately from TRII).
+
+\VerdierSemanticAnchor{ch2-2-1-11}
+\medskip
+\noindent\textbf{2.1.11.}\quad
+\VerdierSemanticAnchor{ch2-2-1-11-sm5}
+\emph{The set $S(\mathcal D')$ has property} SM5).
+\VerdierSemanticAnchor{ch2-2-1-11-proof}
+This follows immediately from TRII) and from the fact that the subcategory
+$\mathcal D'$ is stable under translation.
+
+\VerdierSemanticAnchor{ch2-2-1-12}
+\medskip
+\noindent\textbf{2.1.12.}\quad
+\VerdierSemanticAnchor{ch2-2-1-12-sm6}
+\emph{The set $S(\mathcal D')$ has property} SM6).
+\VerdierSemanticAnchor{ch2-2-1-12-triangle-pair}
+Let $(X,Y,Z,u,v,w)$ and $(X',Y',Z',u',v',w')$ be two distinguished triangles
+in $\mathcal D$, and let
+
+\VerdierSemanticAnchor{ch2-2-1-12-input-square}
+\begin{center}
+  \begin{tikzcd}[column sep=4.2em,row sep=2.5em]
+    X \arrow[r,"u"] \arrow[d,"s"'] &
+    Y \arrow[d,"{s'}"] \\
+    X' \arrow[r,"{u'}"] & Y'
+  \end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-1-12-completion-goal}
+\noindent be a commutative diagram in which $s$ and $s'$ belong to
+$S(\mathcal D')$. We must find a morphism $s''\colon Z\to Z'$ in
+$S(\mathcal D')$ such that $(s,s',s'')$ is a morphism of triangles.
+
+\VerdierSemanticAnchor{ch2-2-1-12-case-reduction}
+We may first suppose that we are in one of the following two cases:
+
+\begin{enumerate}
+\renewcommand{\labelenumi}{\emph{\alph{enumi})}}
+  \item \VerdierSemanticAnchor{ch2-2-1-12-case-a}%
+  We have $X=X'$ and $s=\operatorname{id}_X$.
+  \item \VerdierSemanticAnchor{ch2-2-1-12-case-b}%
+  We have $Y=Y'$ and $s'=\operatorname{id}_Y$.
+\end{enumerate}
+
+\VerdierSemanticAnchor{ch2-2-1-12-factorization}
+Indeed, every morphism of morphisms factors as follows:
+
+\VerdierSemanticAnchor{ch2-2-1-12-factorization-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=4.2em,row sep=1.7em]
+    X \arrow[r,"u"] \arrow[d,"\operatorname{id}_X"'] &
+    Y \arrow[d,"{s'}"] \\
+    X \arrow[r,"{s'u}"] \arrow[d,"s"'] &
+    Y' \arrow[d,"\operatorname{id}_{Y'}"] \\
+    X' \arrow[r,"{u'}"] & Y'
+  \end{tikzcd}
+  \quad ,
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-1-12-composition}
+\noindent and the morphism $s''$ will be obtained by composing (we have already
+shown that the set $S(\mathcal D')$ is stable under composition).
+
+\VerdierSemanticAnchor{ch2-2-1-12-opposite-category}
+Next, case b) follows from case a) by passing to the opposite categories.
+
+\VerdierSemanticAnchor{ch2-2-1-12-triv-conclusion}
+It therefore suffices to treat case a), which is then an immediate consequence
+of TRIV).
+
+\VerdierSemanticAnchor{ch2-2-1-13-p133-boundary}
+\endgroup

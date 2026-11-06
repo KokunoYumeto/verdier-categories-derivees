@@ -1,0 +1,69 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0067}%
+\VerdierSemanticAnchor{ch1-2-1-5}
+\noindent\textbf{2.1.5.}\quad
+态射 $f^\sigma\colon Y^\sigma\to Y'^\sigma$ 称为态射 $(f^\sigma)$ 的
+\emph{$\sigma$ 次分量}。设 $f\colon Y\to Y'$ 为 $n$-重复形的态射，
+$f$ 的 $\sigma$ 次分量记作 $f^\sigma$。
+\VerdierSemanticAnchor{ch1-2-1-5-composition}
+$n$-重复形的态射以显然的方式逐分量复合。
+\VerdierSemanticAnchor{ch1-2-1-5-category}
+$C$ 中对象的 $n$-重复形组成一个范畴，记作 $\operatorname{comp}^{n}(C)$。
+当 $n=1$ 时，我们采用简化记号
+$\operatorname{comp}^{1}(C)=\operatorname{comp}(C)$。
+$\operatorname{comp}(C)$ 的对象称为 $C$ 中的\emph{单复形}；在不会混淆时，
+也简称为 $C$ 中的\emph{复形}。各范畴 $\operatorname{comp}^{n}(C)$ 都是
+加法范畴。
+
+\VerdierSemanticAnchor{ch1-2-1-6}
+\noindent\textbf{2.1.6.}\quad
+设 $Y$ 为 $C$ 中的一个 $n$-重复形。我们有时以 $Y_{-\sigma}$ 表示 $Y$ 的
+$\sigma$ 次分量，并以 $d^Y_{-\sigma,i}$ 表示 $Y$ 的 $i$ 方向上的
+$\sigma$ 次微分。
+\VerdierSemanticAnchor{ch1-2-1-6-positive-finite}
+当 $Y$ 是单复形，且其正次数分量除有限多个外都为零时，尤其使用这种记号。
+同样，设 $f\colon Y\to Y'$ 为 $n$-重复形的态射；我们有时以
+$f_{-\sigma}$ 表示态射 $f$ 的 $\sigma$ 次分量。
+
+\VerdierSemanticAnchor{ch1-2-1-7}
+\noindent\textbf{2.1.7.}\quad
+设 $\varphi\colon[n]\to[m]$ 为一个映射。
+\VerdierSemanticAnchor{ch1-2-1-7-summable}
+若对每个 $\tau\in\mathbb Z[m]$，满足 $\varphi(\sigma)=\tau$ 且
+$Y^\sigma\neq0$ 的 $\sigma\in\mathbb Z[n]$ 只有有限多个，则称 $C$ 中的
+$n$-重复形 $Y$ 为\emph{$\varphi$-可求和的}。当 $\varphi$ 是唯一的映射
+$[n]\to[1]$ 时，简称 $Y$ 为\emph{可求和的}。
+\VerdierSemanticAnchor{ch1-2-1-7-composition}
+设 $[n]\xrightarrow{\varphi}[m]\xrightarrow{\psi}[p]$ 为两个映射。
+每个 $\psi\varphi$-可求和的 $n$-重复形 $Y$ 也都是 $\varphi$-可求和的。
+特别地，每个可求和的 $n$-重复形，对任意映射
+$[n]\xrightarrow{\varphi}[m]$ 都是 $\varphi$-可求和的。
+\VerdierSemanticAnchor{ch1-2-1-7-injective}
+当 $\varphi$ 为单射时，所有复形都是 $\varphi$-可求和的。
+\VerdierSemanticAnchor{ch1-2-1-7-category}
+\emph{$\varphi$-可求和 $n$-重复形的范畴}，是
+$\operatorname{comp}^{n}(C)$ 中由 $\varphi$-可求和复形所确定的全子范畴。
+
+\VerdierSemanticAnchor{ch1-2-2}
+\subsection{关联单复形}
+
+\VerdierSemanticAnchor{ch1-2-2-1}
+\noindent\textbf{2.2.1.}\quad
+对每个 $\sigma\in\mathbb Z[n]$，写作
+$\sigma=\sum_{j\in[n]}l_je_j$，$l_j\in\mathbb Z$，并对每个
+$i\in[n]$，令
+
+\VerdierSemanticAnchor{ch1-2-2-1-eq1}
+\begin{equation}
+  \varepsilon(\sigma,i)=(-1)^{\left(\sum_{j<i}l_j\right)}.
+  \tag{2.2.1.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-2-1-sign-map}
+公式 (2.2.1.1) 定义了从 $\mathbb Z[n]\times[n]$ 到符号群
+$\{-1,1\}$ 的映射
+\begin{equation*}
+  (\sigma,i)\longmapsto\varepsilon(\sigma,i).
+\end{equation*}
+立即可验证，对每个 $i\in[n]$，映射
+$\sigma\longmapsto\varepsilon(\sigma,i)$ 是群同态，并且

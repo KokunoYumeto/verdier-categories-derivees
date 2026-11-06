@@ -1,0 +1,83 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0046}%
+\VerdierSemanticAnchor{ch1-1-4-3-canonical}
+この作用を\emph{標準作用}という。関手 $F$ 上に群 $\mathbb Z/2\mathbb Z$ の
+標準作用を誘導する $H$-関手
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq3}
+\begin{equation}
+  (F,m)\colon(\mathcal C,H,T_f,c_f)
+  \longrightarrow(\mathcal C',H,T'_f,c'_f)
+  \tag{1.4.3.3}
+\end{equation}
+を調べる。
+
+\VerdierSemanticAnchor{ch1-1-4-3-extension}
+$\dot\alpha\in H^2(G,\mathbb Z/2\mathbb Z)$ を拡大
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq4}
+\begin{equation}
+  1\longrightarrow\mathbb Z/2\mathbb Z
+  \xrightarrow{n}H\xrightarrow{f}G\longrightarrow e
+  \tag{1.4.3.4}
+\end{equation}
+を記述する元とする。
+
+\VerdierSemanticAnchor{ch1-1-4-3-cocycle}
+$\alpha_s\in Z^2(G,\mathbb Z/2\mathbb Z)$ を、$f$ の正規化された切断 $s$
+によって定まる、類 $\dot\alpha$ に属する正規化された非斉次余サイクルとする。
+このとき
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq5}
+\begin{equation}
+  \begin{aligned}
+    \alpha_s(\sigma_1,\sigma_2)
+      &=s(\sigma_2)s(\sigma_1\sigma_2)^{-1}s(\sigma_1),
+      & \sigma_1,\sigma_2&\in G,\\
+    s(e)&=H\text{ の単位元},\\
+    \alpha_s(\sigma_1,e)&=\alpha_s(e,\sigma_1)=1,\\
+    \delta\alpha_s(\sigma_1,\sigma_2,\sigma_3)
+      &=\alpha_s(\sigma_2,\sigma_3)
+        \alpha_s(\sigma_1\sigma_2,\sigma_3)^{-1}\\
+      &\quad{}\alpha_s(\sigma_1,\sigma_2\sigma_3)
+        \alpha_s(\sigma_1,\sigma_2)^{-1}=1,
+      & \sigma_1,\sigma_2,\sigma_3&\in G
+  \end{aligned}
+  \tag{1.4.3.5}
+\end{equation}
+である。
+
+\VerdierSemanticAnchor{ch1-1-4-3-bijection}
+切断 $s\colon G\to H$ は集合の同型
+\[
+  H\xrightarrow{\sim}\mathbb Z/2\mathbb Z\times G
+\]
+を定める。この同型によって $H$ の群法則を
+$\mathbb Z/2\mathbb Z\times G$ に移すと、群法則
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq6}
+\begin{equation}
+  (\varepsilon_1,\sigma_1)(\varepsilon_2,\sigma_2)
+  =\bigl(\varepsilon_1\varepsilon_2
+    \alpha_s(\sigma_1,\sigma_2),\sigma_1\sigma_2\bigr)
+  \tag{1.4.3.6}
+\end{equation}
+を得る。
+
+\VerdierSemanticAnchor{ch1-1-4-3-identification}
+以下 $H$ を (1.4.3.6) で記述された群と同一視する。任意の
+$(\varepsilon_1,\sigma_1),(\varepsilon_2,\sigma_2)\in H$ に対して
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq7}
+\begin{equation}
+  \begin{aligned}
+    T_f(\varepsilon_1,\sigma_1)&=T(\sigma_1),\\
+    T'_f(\varepsilon_1,\sigma_1)&=T'(\sigma_1),\\
+    c_f\bigl((\varepsilon_1,\sigma_1),(\varepsilon_2,\sigma_2)\bigr)
+      &=c(\sigma_1,\sigma_2),\\
+    c'_f\bigl((\varepsilon_1,\sigma_1),(\varepsilon_2,\sigma_2)\bigr)
+      &=c'(\sigma_1,\sigma_2)
+  \end{aligned}
+  \tag{1.4.3.7}
+\end{equation}
+である。

@@ -1,0 +1,74 @@
+\VerdierPhysicalPageAnchor{0022}%
+up to homotopy by the complex $Y^{\bullet}$. The cohomology objects
+$\mathrm R^nF(Y^{\bullet})$ of the complex
+$\int F(I^{\bullet\bullet})$ are therefore defined up to canonical
+isomorphism, and one sees that they depend functorially on the complex
+$Y^{\bullet}$. The resulting functors $\mathrm R^nF$ are the
+\emph{right hyperderived functors} of $F$.
+
+\VerdierSemanticAnchor{intro-2-spectral-sequences}
+One also obtains two spectral sequences, functorial in $Y^{\bullet}$, whose
+initial terms are:
+
+\VerdierSemanticAnchor{intro-2-spectral-sequence-one}
+\begin{equation}
+\mathrm I_2^{p,q}=\mathrm H^p\bigl(\mathrm R^qF(Y^{\bullet})\bigr)
+\tag{*}
+\end{equation}
+
+\VerdierSemanticAnchor{intro-2-spectral-sequence-two}
+\begin{equation}
+\mathrm{II}_2^{p,q}=\mathrm R^pF\bigl(\mathrm H^q(Y^{\bullet})\bigr),
+\tag{**}
+\end{equation}
+and whose limiting terms are the graded objects associated with the suitably
+filtered objects $\mathrm R^nF(Y^{\bullet})$. For simplicity, let us restrict
+to the case in which the components of the complexes under consideration
+vanish in sufficiently small degree. One then sees that the spectral
+sequences (*) and (**) converge. A morphism
+$m:Y^{\bullet}\to Z^{\bullet}$ of complexes induces morphisms
+
+\VerdierSemanticAnchor{intro-2-hyperderived-morphism}
+\[
+\mathrm R^nF(m):\mathrm R^nF(Y^{\bullet})
+\longrightarrow \mathrm R^nF(Z^{\bullet})
+\]
+and morphisms of the corresponding spectral sequences.
+
+\VerdierSemanticAnchor{intro-2-quasi-isomorphism-invariance}
+In particular, \emph{when $m$ is a quasi-isomorphism}, spectral sequence (**)
+shows that \emph{the morphisms $\mathrm R^nF(m)$ are isomorphisms}. Thus the
+objects $\mathrm R^nF(Y^{\bullet})$ are determined once the complex
+$Y^{\bullet}$ is known ``up to quasi-isomorphism''. Since, moreover, we have
+observed that the usual methods of homological algebra most often furnish
+only complexes determined up to quasi-isomorphism, it appears that the
+natural objects studied by hyperhomology are the ``classes of complexes up to
+quasi-isomorphism''.
+
+\VerdierSemanticAnchor{intro-3}
+\noindent\textbf{3.}\quad
+The approach we follow is thus dictated naturally. For every abelian category
+$\mathcal A$, we introduce the category $\operatorname{comp}(\mathcal A)$ of
+complexes of objects of $\mathcal A$. We then construct from
+$\operatorname{comp}(\mathcal A)$ a new category by formally inverting the
+quasi-isomorphisms of $\operatorname{comp}(\mathcal A)$.
+
+\VerdierSemanticAnchor{intro-3-derived-category}
+We thereby obtain a category $\mathbf D(\mathcal A)$: the
+\emph{``derived category'' of the abelian category $\mathcal A$}. By means of
+right resolutions, which need not be specified in this introduction, one
+associates to an additive functor between two abelian categories
+$F:\mathcal A\to\mathcal B$ a functor
+$\mathrm RF:\mathbf D(\mathcal A)\to\mathbf D(\mathcal B)$ (which most often
+is defined only on a suitable subcategory
+$\mathbf D^*(\mathcal A)\subset\mathbf D(\mathcal A)$, obtained by imposing
+bounds on the degrees of the complexes considered), called the
+\emph{total right derived functor} of $F$.
+
+\VerdierSemanticAnchor{intro-3-total-right-derived-functor}
+For every object $X$ of $\mathbf D^*(\mathcal A)$, the object $\mathrm RF(X)$
+of $\mathbf D(\mathcal B)$ is thus a complex of objects of $\mathcal B$
+defined ``up to quasi-isomorphism''; consequently, the cohomology objects
+$\mathrm R^nF(X)$ of this complex are well defined. The functors
+$X\longmapsto\mathrm R^nF(X)$ are the ``right hyperderived functors'' of $F$,
+defined here without necessarily assuming that

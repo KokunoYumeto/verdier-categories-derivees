@@ -1,0 +1,51 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0157}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch3-3-2-4-proof}
+補題 3.2.4 を示すため、
+$h(X')\xrightarrow{\operatorname{Im}((\operatorname{id}_{X'};f'))}
+\operatorname{Im}(f')$ が $\mathcal D^\wedge$ のエピ射であることに注意する。表現可能関手は
+$\mathcal D^\wedge$ の射影対象なので、(3.2.4.1) を可換にする
+$g\colon X\to X'$ が存在する。
+
+次に射 $g'\colon Y\to Y'$ の構成に移る。三角圏の公理 TRI と TRII により、
+二つの完全三角 $(Z,X,Y,u,f,v)$ と $(Z',X',Y',u',f',v')$ が存在する。
+$\mathcal D$ の任意の対象 $W$ に対して、
+$\operatorname{Hom}_{\mathcal D}(W,\mathord\cdot)$ はコホモロジー的関手 (1.2.1)
+なので次の列は完全である：
+\VerdierSemanticAnchor{ch3-3-2-4-exact-sequences}
+\[
+\begin{tikzcd}[column sep=3.7em]
+h(Z)\arrow[r,"h(u)"]&h(X)\arrow[r,"\operatorname{Im}((\operatorname{id}_X;f))"]&\operatorname{Im}(f)\arrow[r]&0\\
+h(Z')\arrow[r,"h(u')"']&h(X')\arrow[r,"\operatorname{Im}((\operatorname{id}_{X'};f'))"']&\operatorname{Im}(f')\arrow[r]&0
+\end{tikzcd}
+\]
+$h(Z)$ は $\mathcal D^\wedge$ で射影的なので、次を可換にする
+$g''\colon Z\to Z'$ が存在する：
+\VerdierSemanticAnchor{ch3-3-2-4-triii-square}
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.3em]
+h(Z)\arrow[r,"h(u)"]\arrow[d,"h(g'')"']&h(X)\arrow[d,"h(g)"]\\
+h(Z')\arrow[r,"h(u')"']&h(X')
+\end{tikzcd}
+\]
+TRIII は $(g'',g,g')$ が三角の射となる $g'$ を与え、(3.2.4.2) が
+可換になる。補題と命題 3.2.3 が従う。
+
+\VerdierSemanticAnchor{ch3-3-2-5}
+\medskip\noindent\textbf{命題 3.2.5.}\quad
+\textit{$V$ と $V'$ を $\mathcal D^\wedge$ の二つの許容対象とし、
+$\alpha\colon V\to V'$ を $\mathcal D^\wedge$ の射とする。
+$\mathcal D^\wedge$ における $\alpha$ の核（それぞれ、$\mathcal D^\wedge$ に
+おける $\alpha$ の余核）は $\mathcal D^\wedge$ の許容対象である。}
+
+\VerdierSemanticAnchor{ch3-3-2-5-setup}
+(3.2.3) により $V=\operatorname{Im}(f)$、$V'=\operatorname{Im}(f')$ とし、
+$\alpha$ が射 $h(f)$ と $h(f')$ の像上に次の可換図式から誘導されるとしてよい：
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.4em]
+h(X)\arrow[r,"h(f)"]\arrow[d,"h(g)"']&h(Y)\arrow[d,"h(g')"]\\
+h(X')\arrow[r,"h(f')"']&h(Y').
+\end{tikzcd}
+\]
+\endgroup

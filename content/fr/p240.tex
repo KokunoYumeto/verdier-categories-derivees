@@ -1,0 +1,66 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0240}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-4-5}
+\noindent\textbf{4.4.5.}\quad
+Les données sont les mêmes qu'en (4.4.4) mais on se donne, de plus, un
+objet $X$ de $D(\mathcal A)$. Soit
+$\bigl(X(p,q),\delta(p,q,r)\bigr)$ le deuxième objet spectral à valeurs
+dans $D(\mathcal A)$ associé au complexe $X$ (4.3.1). Le foncteur $F$
+transforme cet objet spectral en un objet spectral à valeurs dans
+$\mathcal B$. On en déduit une suite spectrale fonctorielle en $F$ et en
+l'argument $X$ lorsque celui-ci varie dans la catégorie $D(\mathcal A)$
+(4.3.3). Cette suite spectrale est appelée la \emph{deuxième suite
+spectrale du foncteur $F$, relative au complexe $X$}. On utilise toujours,
+pour cette suite spectrale, l'indexation introduite au (chap.~II, 4.3.3.2).
+
+\VerdierSemanticAnchor{ch4d-4-4-6}
+\medskip\noindent\textbf{Proposition 4.4.6.}\quad
+
+\VerdierSemanticAnchor{ch4d-4-4-6-a}
+\noindent\textit{a) Le terme $\mathrm{II}_2^{p,q}$ de la deuxième suite
+spectrale de $F$ relative au complexe $X$ est donné par :}
+\[
+\mathrm{II}_2^{p,q}=F^p\bigl(H^q(X)\bigr).
+\]
+
+\VerdierSemanticAnchor{ch4d-4-4-6-b}
+\noindent\textit{b) Les termes $\mathrm{II}_{\infty}^{p,q}$ sont les
+gradués associés aux objets $F^{p+q}(X)$ convenablement filtrés.}
+
+\VerdierSemanticAnchor{ch4d-4-4-6-proof}
+En effet (4.3.4.1), on a un isomorphisme canonique :
+\[
+X(p,p+1)\xrightarrow{\sim}H^p(X)[-p],
+\]
+d'où en utilisant (chap.~II, 4.3.3.2) :
+\[
+\mathrm{II}_2^{p,q}
+=F^{p+q}\bigl(H^q(X)[-q]\bigr)
+=F^p\bigl(H^q(X)\bigr),
+\]
+d'où l'égalité (abusive) de a). L'assertion b) résulte de
+(chap.~II, 4.3.2).
+
+\VerdierSemanticAnchor{ch4d-4-5}
+\subsection{Problèmes de convergence.}
+
+\VerdierSemanticAnchor{ch4d-4-5-1}
+\noindent\textbf{Définition 4.5.1.}\quad
+Soient $\mathcal A$ et $\mathcal B$ deux catégories abéliennes. Un foncteur
+cohomologique $F\colon D^*(\mathcal A)\longrightarrow\mathcal B$
+($*=+,-,b,{}$ ``vide'') est dit \emph{stationnaire à droite} (resp.\
+\emph{à gauche}) s'il existe un entier $n_0$ tel que, pour tout objet $X$
+de $D^*(\mathcal A)$ tel que $H^i(X)=0$, pour tout $i<0$ (resp. $>0$), on
+ait $F^n(X)=0$, pour tout $n<n_0$ (resp. $n>n_0$). Le foncteur $F$ est dit
+\emph{stationnaire} s'il est stationnaire à droite et à gauche. Un foncteur
+exact $G\colon D^*(\mathcal A)\longrightarrow D^{*'}(\mathcal B)$ est dit
+\emph{stationnaire à droite} (resp.\ \emph{stationnaire à gauche}, resp.\
+\emph{stationnaire}) si le foncteur cohomologique obtenu en composant le
+foncteur $G$ avec le foncteur cohomologique canonique
+$D^{*'}(\mathcal B)\longrightarrow\mathcal B$ est stationnaire à droite
+(resp.\ stationnaire à gauche, resp.\ stationnaire).
+\endgroup

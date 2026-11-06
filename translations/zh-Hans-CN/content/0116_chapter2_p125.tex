@@ -1,0 +1,83 @@
+
+\clearpage
+\VerdierPhysicalPageAnchor{0125}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-3-5}
+\noindent\textbf{命题 1.3.5.}\quad
+\emph{设 $C$ 为一个阿贝尔范畴。函子}
+
+\VerdierSemanticAnchor{ch2-1-3-5-h0-functor}
+\[
+  H^0\colon K(C)\longrightarrow C
+\]
+\noindent\emph{是一个上同调函子。}
+
+\VerdierSemanticAnchor{ch2-1-3-5-first-exact-sequence}
+事实上，由（第一章，3.3.1），只需证明对于 $\operatorname{tr}_1(C)$
+（第一章，3.1.1）的每个对象 $X\xrightarrow{f}Y$，序列
+\[
+  H^0(X)\xrightarrow{H^0(f)}H^0(Y)
+  \xrightarrow{H^0(p(f))}H^0(c(f))
+  \xrightarrow{H^0(q(f))}H^0(X[1])
+\]
+\noindent 是正合的。
+
+\VerdierSemanticAnchor{ch2-1-3-5-trii-reduction}
+利用性质 TRII (1.1.1)，可见只需证明序列
+
+\VerdierSemanticAnchor{ch2-1-3-5-reduced-exact-sequence}
+\[
+  H^0(Y)\xrightarrow{H^0(p(f))}H^0(c(f))
+  \xrightarrow{H^0(q(f))}H^0(X[1])
+\]
+\noindent 是正合的；这立即由定义（第一章，3.1.2 与 3.2.2）得到。
+
+\VerdierSemanticAnchor{ch2-1-3-5-proof-complete}
+函子 $H^0\colon K(C)\longrightarrow C$ 称为\emph{典范上同调函子}。
+
+\VerdierSemanticAnchor{ch2-1-3-5-shifted-cohomology}
+按照惯例，令 $H^n(X)=H^0(X[n])$。
+
+\VerdierSemanticAnchor{ch2-1-3-6}
+\medskip
+\noindent\textbf{命题 1.3.6.}\quad
+\emph{设 $C$ 为一个阿贝尔范畴。下列条件等价：}
+
+\VerdierSemanticAnchor{ch2-1-3-6-equivalent-conditions}
+\begin{enumerate}
+\renewcommand{\labelenumi}{\roman{enumi})}
+\item \emph{范畴 $K(C)$ 是阿贝尔范畴。}
+\item \emph{范畴 $K(C)$ 可分解 (1.2.8)。}
+\item \emph{范畴 $C$ 可分解。}
+\end{enumerate}
+
+\VerdierSemanticAnchor{ch2-1-3-6-i-iff-ii}
+等价关系 $\mathrm{i)}\Longleftrightarrow\mathrm{ii)}$ 由 (1.2.9) 得到。
+
+\VerdierSemanticAnchor{ch2-1-3-6-ii-implies-iii}
+由于 $C$ 是 $K(C)$ 的满子范畴，蕴含
+$\mathrm{ii)}\Longrightarrow\mathrm{iii)}$ 是显然的。
+
+\VerdierSemanticAnchor{ch2-1-3-6-hstar-complex}
+对于 $C$ 中每个复形 $X$，用 $H^*(X)$ 表示复形
+\[
+  H^*(X)^l=H^l(X),\qquad l\in\mathbb Z,
+\]
+\[
+  d_{H^*(X)}^l=0,\qquad l\in\mathbb Z.
+\]
+
+\VerdierSemanticAnchor{ch2-1-3-6-hstar-equivalence}
+可以验证：当 $C$ 可分解时，函子
+$H^*\colon K(C)\longrightarrow K(C)$ 是范畴等价。
+
+\VerdierSemanticAnchor{ch2-1-3-6-proof-complete}
+由此得到 $\mathrm{iii)}\Longrightarrow\mathrm{ii)}$。
+\endgroup
+
+

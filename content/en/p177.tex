@@ -1,0 +1,67 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0177}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-1-2-1-truncations-cont}
+\noindent(respectively,
+\[
+\begin{aligned}
+i^q&=\operatorname{id},&&q<n-1,\\
+i^{n-1}&\colon\operatorname{Ker}(d_X^{n-1})\longrightarrow X^{n-1}
+  &&\text{(canonical morphism)},\\
+i^q&=0,&&q\geq n
+\end{aligned}
+\]
+).
+
+Notice that the morphism $p$ (respectively, $i$) induces an isomorphism on
+the cohomology objects in degree $j\geq n$ (respectively, $j<n$), and that
+$H^j(X(n,+\infty))=0$ for $j<n$ (respectively,
+$H^j(X(-\infty,n))=0$ for $j\geq n$). All the assertions of Proposition
+(1.2.1) now follow immediately from this construction. We leave the
+detailed proof to the reader.
+
+\VerdierSemanticAnchor{ch3d-1-2-2}
+\medskip\noindent\textbf{Definition 1.2.2.}\quad
+The triangulated category
+\[
+D(\mathcal A)=K(\mathcal A)/\operatorname{Ac}(\mathcal A)
+=K(\mathcal A)[\operatorname{Qis}(\mathcal A)^{-1}]
+\]
+is called the \emph{derived category of $\mathcal A$} and is denoted by
+$D(\mathcal A)$ (Chap. II, 2.2.6 and 2.2.10).
+
+It follows from Theorem (2.2.6) that the canonical cohomological functor
+$H\colon K(\mathcal A)\longrightarrow\mathcal A$ factors uniquely through
+a cohomological functor, still denoted by
+
+\VerdierSemanticAnchor{ch3d-1-2-2-cohomology}
+\begin{equation}
+H\colon D(\mathcal A)\longrightarrow\mathcal A,
+\tag{1.2.2.1}
+\end{equation}
+and likewise called the \emph{canonical cohomological functor}. The
+canonical quotient functor is denoted by
+$Q\colon K(\mathcal A)\longrightarrow D(\mathcal A)$.
+
+\VerdierSemanticAnchor{ch3d-1-2-3}
+\medskip\noindent\textbf{Theorem 1.2.3.}\quad
+\textit{a) The natural functors appearing in the diagram:}
+
+\VerdierSemanticAnchor{ch3d-1-2-3-a-diagram}
+\begin{center}
+  \resizebox{0.80\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=4.5em,row sep=3.0em]
+      \& K^{,+}(\mathcal A)/\operatorname{Ac}(\mathcal A)
+        \arrow[dr] \& \\
+      K^{,b}(\mathcal A)/\operatorname{Ac}(\mathcal A)
+        \arrow[ur] \arrow[dr]
+        \& \& D(\mathcal A) \\
+      \& K^{,-}(\mathcal A)/\operatorname{Ac}(\mathcal A)
+        \arrow[ur] \&
+    \end{tikzcd}$%
+  }
+\end{center}
+\endgroup

@@ -1,0 +1,107 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0103}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\jot}{2pt}%
+
+\VerdierSemanticAnchor{ch1-3-4-2-variable-specialization}
+$j\in[n]$ とし、各 $i\neq j$ に対して $X_i$ を $K(C_i)$ の対象とする。
+\[
+  G\colon K(C_j)\longrightarrow K(C)
+\]
+で関手
+
+\VerdierSemanticAnchor{ch1-3-4-2-1}
+\begingroup
+\makeatletter
+\tagsleft@true
+\let\veqno\@@leqno
+\makeatother
+\begin{equation}
+  X\longmapsto G(X)=K_{\Pi}F(X_1,\ldots,X,\ldots,X_n),
+  \tag{3.4.2.1}
+\end{equation}
+\endgroup
+\VerdierSemanticAnchor{ch1-3-4-2-translation-isomorphism}
+を表し、
+\[
+  m\colon G(X[1])\xrightarrow{\sim}G(X)[1]
+\]
+で $p_j$ から導かれる関手同型を表す。
+
+\VerdierSemanticAnchor{ch1-3-4-3}
+\noindent\textbf{命題 3.4.3.}\quad
+\emph{$K(C_j)$ における任意の完全三角}
+\VerdierSemanticAnchor{ch1-3-4-3-input-triangle}
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+\]
+\emph{に対し、$K(C)$ における三角}
+\VerdierSemanticAnchor{ch1-3-4-3-image-triangle}
+\[
+  G(X)\xrightarrow{G(u)}G(Y)\xrightarrow{G(v)}G(Z)
+  \xrightarrow{mG(w)}G(X)[1]
+\]
+\emph{は完全三角である。}
+
+\VerdierSemanticAnchor{ch1-3-4-3-proof}
+まず、$K(C_j)$ における完全三角が (3.3.1) の形
+\VerdierSemanticAnchor{ch1-3-4-3-cone-model}
+\[
+  X\xrightarrow{\dot f}Y\xrightarrow{\dot p(f)}c(f)
+  \xrightarrow{\dot q(f)}X[1],
+\]
+をしていると仮定できる。ここで $f\colon X\longrightarrow Y$ は
+$\operatorname{comp}(C_j)$ における射である。
+\VerdierSemanticAnchor{ch1-3-4-3-complex-functor}
+\[
+  H\colon\operatorname{comp}(C_j)\longrightarrow\operatorname{comp}(C)
+\]
+で関手
+\[
+  X\longmapsto H(X)=\operatorname{comp}_{\Pi}F
+  (X_1,\ldots,X,\ldots,X_n),
+\]
+\VerdierSemanticAnchor{ch1-3-4-3-complex-translation-isomorphism}
+を表し、
+\[
+  m\colon H(X[1])\xrightarrow{\sim}H(X)[1]
+\]
+で方向 $j$ のシフトと可換な関手同型を表す。関手 $(G,m)$ は関手 $(H,m)$
+を複体のホモトピー圏へ移すことによって得られる。命題を証明するには、
+$\operatorname{comp}(C)$ における複体の同型
+
+\VerdierSemanticAnchor{ch1-3-4-3-cone-isomorphism}
+\[
+  J\colon H(c(f))\xrightarrow{\sim}c(H(f))
+\]
+で、次の図式を可換にするものが存在することを示せば十分である。
+
+\VerdierSemanticAnchor{ch1-3-4-3-1}
+\begin{equation}
+\begin{tikzpicture}[>=stealth,scale=0.62,every node/.style={transform shape}]
+  \node (x1) at (0,1.85) {$H(X)$};
+  \node (y1) at (3.05,1.85) {$H(Y)$};
+  \node (c1) at (6.45,1.85) {$H(c(f))$};
+  \node (s1) at (9.65,1.85) {$H(X[1])$};
+  \node (x2) at (0,0) {$H(X)$};
+  \node (y2) at (3.05,0) {$H(Y)$};
+  \node (c2) at (6.45,0) {$c(H(f))$};
+  \node (s2) at (9.65,0) {$H(X)[1]$};
+  \draw[->] (x1) -- node[above] {$H(f)$} (y1);
+  \draw[->] (y1) -- node[above] {$H(\dot p(f))$} (c1);
+  \draw[->] (c1) -- node[above] {$H(\dot q(f))$} (s1);
+  \draw[->] (x2) -- node[above] {$H(f)$} (y2);
+  \draw[->] (y2) -- node[above] {$\dot p(H(f))$} (c2);
+  \draw[->] (c2) -- node[above] {$\dot q(H(f))$} (s2);
+  \draw[->] (x1) -- node[left] {$\mathrm{id}$} (x2);
+  \draw[->] (y1) -- node[left] {$\mathrm{id}$} (y2);
+  \draw[->] (c1) -- node[left] {$J$} (c2);
+  \draw[->] (s1) -- node[left] {$m$} (s2);
+  \node[anchor=west,inner sep=0pt] at ([xshift=0.35em]s2.east) {$.$};
+\end{tikzpicture}
+\tag{3.4.3.1}
+\end{equation}
+\endgroup

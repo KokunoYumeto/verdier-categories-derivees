@@ -1,0 +1,84 @@
+\VerdierPhysicalPageAnchor{0115}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-3-proof-f1-f2}
+Supposons, pour fixer les idées, que $f_1\colon X\longrightarrow X'$ et
+$f_2\colon Y\longrightarrow Y'$ soient des isomorphismes. Pour tout objet
+$W$ de $\mathcal D$, on a un diagramme commutatif :
+
+\VerdierSemanticAnchor{ch2-1-2-3-five-lemma-diagram}
+\begin{equation*}
+  \resizebox{0.98\linewidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=2.15em,row sep=3em]
+      \cdots \arrow[r]
+        \& \operatorname{Hom}_{\mathcal D}(W,X) \arrow[r] \arrow[d,"{\operatorname{Hom}_{\mathcal D}(W,f_1)}"']
+        \& \operatorname{Hom}_{\mathcal D}(W,Y) \arrow[r] \arrow[d,"{\operatorname{Hom}_{\mathcal D}(W,f_2)}"']
+        \& \operatorname{Hom}_{\mathcal D}(W,Z) \arrow[r] \arrow[d,"{\operatorname{Hom}_{\mathcal D}(W,f_3)}"']
+        \& \operatorname{Hom}_{\mathcal D}(W,X[1]) \arrow[r] \arrow[d,"{\operatorname{Hom}_{\mathcal D}(W,f_1[1])}"']
+        \& \cdots \\
+      \cdots \arrow[r]
+        \& \operatorname{Hom}_{\mathcal D}(W,X') \arrow[r]
+        \& \operatorname{Hom}_{\mathcal D}(W,Y') \arrow[r]
+        \& \operatorname{Hom}_{\mathcal D}(W,Z') \arrow[r]
+        \& \operatorname{Hom}_{\mathcal D}(W,X'[1]) \arrow[r]
+        \& \cdots
+    \end{tikzcd}$%
+  }\,.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-3-five-lemma}
+où les lignes sont exactes. On en déduit, par le lemme des cinq, que
+$\operatorname{Hom}_{\mathcal D}(W,f_3)$ est un isomorphisme pour tout $W$,
+et par suite que $f_3$ est un isomorphisme. Les deux autres assertions du
+corollaire se déduisent de celle-ci en utilisant l'axiome TRII.
+
+\VerdierSemanticAnchor{ch2-1-2-4}
+\medskip
+\noindent\textbf{Corollaire 1.2.4.}\quad
+Soient
+$X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]$ et
+$X\xrightarrow{u}Y\xrightarrow{v'}Z'\xrightarrow{w'}X[1]$
+deux triangles distingués. Il existe un isomorphisme
+$f\colon Z\xrightarrow{\sim}Z'$ tel que le diagramme ci-après soit
+commutatif :
+
+\VerdierSemanticAnchor{ch2-1-2-4-1}
+\begin{equation}
+  \begin{tikzcd}[column sep=2.8em,row sep=1.7em]
+    && Z \arrow[dr,"w"] \arrow[dd,"f"',"\sim"] & \\
+    X \arrow[r,"u"] & Y \arrow[ur,"v"] \arrow[dr,"v'"'] && X[1] \\
+    && Z' \arrow[ur,"w'"'] &
+  \end{tikzcd}
+  \tag{1.2.4.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch2-1-2-4-proof}
+En effet, d'après l'axiome TRIII, il existe un morphisme
+$f\colon Z\longrightarrow Z'$ tel que le diagramme (1.2.4.1) soit
+commutatif. D'après (1.2.3), ce morphisme est un isomorphisme.
+
+\VerdierSemanticAnchor{ch2-1-2-4-essential-uniqueness}
+Le corollaire (1.2.4) montre donc que les triangles distingués contenant un
+morphisme donné sont essentiellement uniques : ils sont déterminés à
+isomorphisme près. Mais il convient de noter que cet isomorphisme n'est pas
+unique. Nous préciserons ce point en (1.2.12).
+
+\VerdierSemanticAnchor{ch2-1-2-5}
+\medskip
+\noindent\textbf{Corollaire 1.2.5.}\quad
+La somme directe de deux triangles distingués est un triangle distingué.
+
+\VerdierSemanticAnchor{ch2-1-2-5-proof-start}
+Soient :
+
+\VerdierSemanticAnchor{ch2-1-2-5-input-triangles}
+\[
+  \begin{gathered}
+    X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1],\\
+    X'\xrightarrow{u'}Y'\xrightarrow{v'}Z'\xrightarrow{w'}X'[1]
+  \end{gathered}
+\]
+\endgroup

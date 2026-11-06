@@ -1,0 +1,55 @@
+\VerdierPhysicalPageAnchor{0019}%
+diagram commutes:
+
+\VerdierSemanticAnchor{intro-1-resolution-comparison-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X \arrow[r,"\varepsilon'"] \arrow[dr,"\varepsilon"']
+  & \mathcal R(X) \arrow[d,"\rho"] \\
+  & I^{\bullet}(X)
+\end{tikzcd}
+\]
+
+\VerdierSemanticAnchor{intro-1-f-acyclic-morphism}
+Moreover, given a morphism of $F$-acyclic resolutions:
+
+\VerdierSemanticAnchor{intro-1-f-acyclic-morphism-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X \arrow[r,"\varepsilon_1"] \arrow[dr,"\varepsilon_2"']
+  & \mathcal R_1(X) \arrow[d,"\rho'"] \\
+  & \mathcal R_2(X)
+\end{tikzcd}
+\qquad\text{,}
+\]
+the morphism of complexes of objects of $\mathcal B$:
+
+\VerdierSemanticAnchor{intro-1-f-rho-prime}
+\[
+F(\rho') : F(\mathcal R_1(X)) \longrightarrow F(\mathcal R_2(X))
+\]
+is a quasi-isomorphism.
+
+\VerdierSemanticAnchor{intro-1-inductive-system}
+Observe that here one obtains in $\mathcal B$ a direct system of complexes and
+quasi-isomorphisms having a unique maximal element up to homotopy: the image
+under $F$ of an injective resolution of $X$. This phenomenon no longer occurs
+in the second example, which we now discuss.
+
+\VerdierSemanticAnchor{intro-1-left-derived-tensor}
+The method of defining derived functors by resolutions sometimes generalizes
+to the case where $\mathcal A$ does not necessarily have enough injective or
+projective objects. Consider the case where $\mathcal A$ is the category of
+sheaves of abelian groups on a topological space $E$. This category does not,
+in general, have enough projective objects. We nevertheless propose to define
+the \emph{left derived functors} of the right exact functor from $\mathcal A$
+to $\mathcal A$ that associates to each sheaf $G$ the sheaf
+$F\otimes_{\mathbb Z}G$ ($F$ a fixed sheaf). Naturally, we require this
+definition to yield functors having the usual properties of left derived
+functors (behavior with respect to exact sequences and a certain universal
+property) and to recover, in the known cases (for example when $E$ is reduced
+to a point), the usual torsion products.
+
+\VerdierSemanticAnchor{intro-1-left-resolution}
+One can proceed as follows. Every sheaf $G$ admits a left resolution
+$L^{\bullet}\to G$ of finite length (in fact, of length 2) by

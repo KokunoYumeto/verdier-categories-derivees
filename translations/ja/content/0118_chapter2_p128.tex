@@ -1,0 +1,72 @@
+
+\clearpage
+\VerdierPhysicalPageAnchor{0128}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{3pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-2}
+\section{三角圏における局所化。}
+
+\VerdierSemanticAnchor{ch2-2-1}
+\subsection{射の乗法的系 [16]。}
+
+\VerdierSemanticAnchor{ch2-2-1-1}
+\noindent\textbf{2.1.1.}\quad
+\VerdierSemanticAnchor{ch2-2-1-1-multiplicative-system}
+$C$ を圏（加法的であるとは限らない）とする。$C$ の射の集合 $S$ が次の
+性質をもつとき、これを\emph{乗法的系}と呼ぶ。
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm1}
+\smallskip
+\noindent\textbf{SM1)} $S$ に属する合成可能な二つの射の合成は $S$ に
+属する。$C$ の各対象 $X$ に対し、$X$ の恒等射は $S$ に属する。
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm2}
+\smallskip
+\noindent\textbf{SM2)} 任意の図式
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm2-right-input}
+\begin{center}
+  \begin{tikzcd}[column sep=4.1em,row sep=2.5em]
+    & {} \arrow[d,"s\in S"] \\
+    {} \arrow[r,"f"'] & {}
+  \end{tikzcd}
+\end{center}
+\noindent は次の可換図式に補完できる：
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm2-right-completion}
+\begin{center}
+  \begin{tikzcd}[column sep=4.1em,row sep=2.5em]
+    {} \arrow[r,dashed,"g"] \arrow[d,dashed,"t\in S"']
+      & {} \arrow[d,"s\in S"] \\
+    {} \arrow[r,"f"'] & {}
+  \end{tikzcd}
+  \quad .
+\end{center}
+\noindent 任意の図式
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm2-left-input}
+\begin{center}
+  \begin{tikzcd}[column sep=4.1em,row sep=2.5em]
+    {} \arrow[r,"g"] \arrow[d,"t\in S"'] & {} \\
+    {} & {}
+  \end{tikzcd}
+\end{center}
+\noindent は次の可換図式に補完できる：
+
+\VerdierSemanticAnchor{ch2-2-1-1-sm2-left-completion}
+\begin{center}
+  \begin{tikzcd}[column sep=4.1em,row sep=2.5em]
+    {} \arrow[r,"g"] \arrow[d,"t\in S"']
+      & {} \arrow[d,dashed,"s\in S"] \\
+    {} \arrow[r,dashed,"f"'] & {}
+  \end{tikzcd}
+  \quad .
+\end{center}
+\VerdierSemanticAnchor{ch2-2-1-1-sm3-boundary}
+\noindent\textbf{SM3)} 任意の二射 $f,g\colon X\rightrightarrows Y$ に
+対し、次の性質は同値である。
+\endgroup

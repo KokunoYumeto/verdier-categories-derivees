@@ -1,0 +1,107 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0113}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-1-5-additivity-announcement}
+\noindent 我们将在 (1.2.7) 证明，上同调函子是加性函子，而多正合函子是
+多加法函子。
+
+\VerdierSemanticAnchor{ch2-1-1-5-cohomology-notation}
+设 $H\colon\mathcal D\longrightarrow\mathcal A$ 为一个上同调函子。我们通常
+采用记号 $H^0(X)=H(X)$、$H^n(X)=H(X[n])$。利用公理 TRII 可见，一个
+上同调函子把每个特异三角
+
+\VerdierSemanticAnchor{ch2-1-1-5-long-exact-setup}
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+\]
+对应到一个长正合列：
+
+\VerdierSemanticAnchor{ch2-1-1-5-1}
+\begin{equation}
+  \cdots\longrightarrow H^{-1}(Z)
+  \xrightarrow{H^{-1}(-w)}H^0(X)
+  \xrightarrow{H^0(u)}H^0(Y)
+  \xrightarrow{H^0(v)}H^0(Z)
+  \xrightarrow{H^0(w)}\cdots
+  \tag{1.1.5.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch2-1-1-6}
+\medskip
+\noindent\textbf{1.1.6.}\quad
+设 $\mathcal D$ 为一个三角范畴。我们通常采用下列术语：$\mathcal D$ 中的三角
+
+\VerdierSemanticAnchor{ch2-1-1-6-antidistinguished-triangle}
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+\]
+称为\emph{反特异的}，如果三角
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{-w}X[1]
+\]
+是特异三角。
+
+\VerdierSemanticAnchor{ch2-1-1-6-antiexact-functor}
+从三角范畴 $\mathcal D'$ 到 $\mathcal D$ 的一个 $\mathbb Z$-函子称为
+\emph{反正合的}，如果它把 $\mathcal D'$ 的特异三角变为 $\mathcal D$ 的
+反特异三角。
+
+\VerdierSemanticAnchor{ch2-1-1-6-exact-functor-notation}
+通常，在记述从 $\mathcal D'$ 到 $\mathcal D$ 的正合函子时，我们从记号中
+省略与平移交换的同构。
+
+\VerdierSemanticAnchor{ch2-1-1-7}
+\medskip
+\noindent\textbf{1.1.7.}\quad
+设 $\mathcal C$ 为一个严格 $\mathbb Z$-范畴（第一章，1.2.2），并以
+
+\VerdierSemanticAnchor{ch2-1-1-7-translations}
+\[
+  X\longmapsto X[n],\qquad n\in\mathbb Z,
+\]
+表示 $\mathcal C$ 的平移函子。设 $\mathcal C^\circ$ 为其反
+$\mathbb Z$-范畴（第一章，1.3.9）。
+
+\VerdierSemanticAnchor{ch2-1-1-7-opposite-morphism}
+对于 $\mathcal C$ 的每个态射 $u$，以 $((u))$ 表示 $\mathcal C^\circ$ 中
+对应的态射。严格说来，这一记号有所滥用，因为 $\mathcal C^\circ$ 的对象集
+和态射集分别等于 $\mathcal C$ 的对象集和态射集。以
+
+\VerdierSemanticAnchor{ch2-1-1-7-opposite-translations}
+\[
+  X\longmapsto X[[n]],\qquad n\in\mathbb Z,
+\]
+表示 $\mathcal C^\circ$ 的平移函子。
+
+\VerdierSemanticAnchor{ch2-1-1-7-translation-identity}
+回忆：对于 $\mathcal C$ 的每个对象 $X$ 和每个整数
+$n\in\mathbb Z$（第一章，1.3.9），
+\[
+  X[-n]=X[[n]].
+\]
+
+\VerdierSemanticAnchor{ch2-1-1-7-opposite-category}
+一个三角范畴 $\mathcal D$ 的\emph{反三角范畴}，定义为范畴 $\mathcal D$ 的
+严格反 $\mathbb Z$-范畴 $\mathcal D^\circ$（第一章，1.3.9），并配以下列
+特异三角类。$\mathcal D^\circ$ 中的三角
+
+\VerdierSemanticAnchor{ch2-1-1-7-opposite-triangle}
+\[
+  X[[-1]]\xrightarrow{((w))}Z\xrightarrow{((v))}Y
+  \xrightarrow{((u))}X
+\]
+是特异三角，当且仅当范畴 $\mathcal D$ 中对应的三角
+
+\VerdierSemanticAnchor{ch2-1-1-7-corresponding-antitriangle}
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+\]
+是反特异三角。
+
+\VerdierSemanticAnchor{ch2-1-1-7-triangulated-axioms}
+容易证明，如此定义的 $\mathcal D^\circ$ 中的三角族满足三角范畴的各条公理。
+\endgroup

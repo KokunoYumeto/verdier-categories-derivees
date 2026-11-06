@@ -1,0 +1,85 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0063}%
+\VerdierSemanticAnchor{ch1-1-6-5-continuation}
+由此立即得到：
+
+\VerdierSemanticAnchor{ch1-1-6-5-deduction}
+\VerdierSemanticAnchor{ch1-1-6-5-beta-s-coboundary}
+\begin{equation*}
+  \alpha_s(\sigma_1,\sigma_2)\alpha(\sigma_1,\sigma_2)^{-1}
+  =\beta_s(\sigma_2)\beta_s(\sigma_1+\sigma_2)^{-1}\beta_s(\sigma_1),
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq3}
+\VerdierSemanticAnchor{ch1-1-6-5-eq3-beta}
+\VerdierSemanticAnchor{ch1-1-6-5-eq3-basis}
+\begin{equation}
+  \begin{aligned}
+    \beta_s(\sigma_1)
+      &=(-1)^{\left(
+          \sum_{\substack{i<j\\s(i)>s(j)}}p_i p_j
+        \right)},\\
+    \beta_s(e_i)&=1,
+      \qquad \forall i\in[1,n].
+  \end{aligned}
+  \tag{1.6.5.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-5-application}
+因此，由 (1.6.2)，每个满足下式的映射
+$\beta\colon\mathbb Z^n\to\mathbb Z/2\mathbb Z$
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq4}
+\begin{equation}
+  \alpha_s(\sigma_1,\sigma_2)\alpha(\sigma_1,\sigma_2)^{-1}
+  =\beta(\sigma_2)\beta(\sigma_1+\sigma_2)^{-1}\beta(\sigma_1)
+  \tag{1.6.5.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq5-intro}
+都形如
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq5}
+\begin{equation}
+  \beta=\beta_s\eta,
+  \tag{1.6.5.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-5-closure}
+其中 $\eta\colon\mathbb Z^n\to\mathbb Z/2\mathbb Z$ 是唯一一个在
+$e_j\in\mathbb Z^n$ 上取值为 $\beta(e_j)$ 的群同态。
+
+\VerdierSemanticAnchor{ch1-1-6-6}
+\VerdierSemanticAnchor{ch1-1-6-6-product-setup}
+\noindent\textbf{1.6.6.}\quad
+设 $(C_i,\mathbb Z,T_i,c_i)$，$1\leq i\leq n$，为 $\mathbb Z$-范畴，
+并设 $(D,\mathbb Z,T,c)$ 为加法 $\mathbb Z$-范畴。以
+$(C,\mathbb Z^n,T,c)$ 表示各 $(C_i,\mathbb Z,T_i,c_i)$ 的乘积范畴。
+群 $\mathbb Z^n$ 自然装备了有序基 $e_1,\ldots,e_n$。它依下式在同构意义下
+作用于 $C$（这里采用 (1.3.12) 引入的右侧记号）：
+
+\VerdierSemanticAnchor{ch1-1-6-6-eq1}
+\begin{equation}
+  (X_1,\ldots,X_n)[\sigma]
+  =(X_1[l_1],\ldots,X_n[l_n]),
+  \qquad
+  \sigma=\sum_{i=1}^{n}l_i e_i.
+  \tag{1.6.6.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-6-phi-action}
+设 $\varphi\colon\mathbb Z^n\to\mathbb Z$ 为同态
+$\varphi(\sum_{i=1}^{n}l_i e_i)=\sum_{i=1}^{n}l_i$。
+让 $\mathbb Z^n$ 通过 $\varphi$ 作用于 $D$（1.4.1）。在此情形中，我们总采用
+以下约定：
+
+\VerdierSemanticAnchor{ch1-1-6-6-sign-rule-1}
+\noindent\textbf{符号规则 I：}
+\emph{除非另有明确说明，从 $C$ 到 $D$ 的函子总是相对于有序基
+$e_1,\ldots,e_n$ 的 Koszul 余循环所扭曲的 $\mathbb Z^n$-函子。}
+
+\VerdierSemanticAnchor{ch1-1-6-6-sign-rule-2}
+\noindent\textbf{符号规则 II：}
+\emph{除非另有明确说明，函子的态射总是相对于平凡同态
+$\beta\colon\mathbb Z^n\to\mathbb Z/2\mathbb Z$ 的 $\mathbb Z^n$-函子态射
+（1.4.6）。}

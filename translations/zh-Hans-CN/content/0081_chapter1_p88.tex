@@ -1,0 +1,86 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0088}%
+\VerdierSemanticAnchor{ch1-3-2-3}
+\noindent\textbf{3.2.3.}\quad
+\VerdierSemanticAnchor{ch1-3-2-3-translation-automorphism}
+$\operatorname{comp}(C)$ 的平移自同构自然延拓为自同构
+$T\colon\operatorname{tr}_1(C)\longrightarrow\operatorname{tr}_1(C)$：
+
+\VerdierSemanticAnchor{ch1-3-2-3-eq1}
+\begin{equation}
+  \begin{aligned}
+    T\bigl(X\xrightarrow{f}Y\bigr)
+      &=X[1]\xrightarrow{f[1]}Y[1],\\
+    T((g,h,a))&=(g[1],h[1],-a[1]).
+  \end{aligned}
+  \tag{3.2.3.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-3-cone-z-functor}
+于是，通过定义同构
+\VerdierSemanticAnchor{ch1-3-2-3-psi-isomorphism}
+$\Psi(f)\colon c(f[1])\xrightarrow{\sim}c(f)[1]$，使映射锥函子成为一个
+$\mathbb Z$-函子 (1.5.2)：
+
+\VerdierSemanticAnchor{ch1-3-2-3-eq2}
+\begin{equation}
+  \Psi(f)^i=
+  \begin{pmatrix}
+    \operatorname{id}_{Y^{i+1}} & 0\\
+    0 & -\operatorname{id}_{X^{i+2}}
+  \end{pmatrix}
+  \colon Y^{i+1}\oplus X^{i+2}
+  \longrightarrow Y^{i+1}\oplus X^{i+2}.
+  \tag{3.2.3.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-3-reader-verification}
+读者将验证 (3.2.3.2) 确实定义了复形的同构，并证明下述命题：
+
+\VerdierSemanticAnchor{ch1-3-2-4}
+\noindent\textbf{命题 3.2.4.}\quad
+\VerdierSemanticAnchor{ch1-3-2-4-zero-source}
+\emph{当 $f=0\longrightarrow Y$ 时，典范同构}
+\begin{equation*}
+  c(f[n])\xrightarrow{\sim}c(f)[n]
+\end{equation*}
+\emph{就是 $Y[n]$ 的恒等映射。当 $f=X\longrightarrow0$ 时，典范同构}
+\VerdierSemanticAnchor{ch1-3-2-4-zero-target}
+\begin{equation*}
+  c(f[n])\xrightarrow{\sim}c(f)[n]
+\end{equation*}
+\emph{就是同构}
+\begin{equation*}
+  X[n+1]\xrightarrow{(-1)^n\operatorname{id}_{X[n+1]}}X[n+1].
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-3-2-5}
+\noindent\textbf{3.2.5.}\quad
+设 $X\xrightarrow{f}Y$ 是 $\operatorname{tr}_1(C)$ 的一个对象。
+可对其配以 $\operatorname{comp}(C)$ 的一个三角：
+
+\VerdierSemanticAnchor{ch1-3-2-5-triangle}
+\VerdierSemanticAnchor{ch1-3-2-5-eq1}
+\begin{equation}
+  Y\xrightarrow{p(f)}c(f)\xrightarrow{q(f)}X[1]
+  \xrightarrow{f[1]}Y[1].
+  \tag{3.2.5.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-5-composite}
+态射 $q(f)p(f)\colon Y\longrightarrow X[1]$ 是下述态射在映射锥函子下的像：
+
+\VerdierSemanticAnchor{ch1-3-2-5-cone-morphism-diagram}
+\begin{equation*}
+  \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center)]
+    \node (Z1) at (0,1.45) {$0$};
+    \node (Y)  at (3.5,1.45) {$Y$};
+    \node (X)  at (0,0) {$X$};
+    \node (Z2) at (3.5,0) {$0$};
+    \node[anchor=base west,inner sep=0pt,xshift=.08em] at (Z2.base east) {$.$};
+    \draw[->] (Z1) -- (Y);
+    \draw[->] (Z1) -- (X);
+    \draw[->] (Y) -- (Z2);
+    \draw[->] (X) -- (Z2);
+  \end{tikzpicture}
+\end{equation*}

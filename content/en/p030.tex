@@ -1,0 +1,63 @@
+\VerdierPhysicalPageAnchor{0030}%
+\VerdierSemanticAnchor{intro-8-local-invariants}
+where the $\chi_P(\Phi)$ are \emph{local invariants}, which can be determined
+when the sheaf $F$ and the endomorphism $\Phi$ are known in a neighborhood
+of $P$. When $X$ is a topological manifold and the sheaf $F$ is constant
+and free of rank 1, one recovers the usual Lefschetz formula.
+
+\VerdierSemanticAnchor{intro-8-coherent-case}
+In the setting of coherent-sheaf cohomology, there is an analogous formula.
+One must take $X$ to be a scheme of finite type and proper over a field $k$,
+and $F$ to be a coherent sheaf of finite Tor-dimension, or more generally a
+perfect complex. The local invariants that then arise have been studied only
+in certain special cases. When the field $k$ is algebraically closed, the
+scheme $X$ is smooth over $k$, the sheaf $F$ is locally free, and the fixed
+point $P$ is transverse, one obtains
+\VerdierSemanticAnchor{intro-8-normal-crossing-formula}
+\[
+\chi_P(\Phi)
+=\frac{\operatorname{Tr}(\Phi_{F,P})}
+       {\det\bigl(1-d\Phi_{X,P}\bigr)}
+\]
+
+\VerdierSemanticAnchor{intro-8-normal-crossing-data}
+Here $\Phi_{F,P}$ denotes the endomorphism induced by $\Phi$ on the reduced
+fiber of the sheaf $F$ at $P$ (which is a finite-dimensional $k$-vector
+space), and $d\Phi_{X,P}$ denotes the differential of the morphism $\Phi_X$
+at $P$.
+
+\VerdierSemanticAnchor{intro-8-residue-extension}
+When the fixed point $P$ is no longer assumed to be transverse, i.e. when
+the endomorphism $1-d\Phi_{X,P}$ is no longer assumed to be invertible, the
+local invariants can still be determined by a residue calculation in the
+sense of [4].
+
+\VerdierSemanticAnchor{intro-8-relative-lefschetz}
+The Lefschetz theorem in the context of algebraic geometry can moreover be
+generalized to relative situations.
+\VerdierSemanticAnchor{intro-8-relative-setup}
+Let $X\xrightarrow{f}Y$ be a $Y$-scheme proper and smooth over a locally
+noetherian scheme $Y$, and let $F$ be a coherent sheaf of finite
+Tor-dimension on $X$. The complex of sheaves $\mathrm{R}f_*(F)$ on $Y$ is
+then a \emph{perfect complex}. Let
+$\Phi\colon(X,F)\longrightarrow(X,F)$ be a $Y$-endomorphism of the scheme
+$X$ equipped with the sheaf $F$, and suppose that the scheme $P$ of fixed
+points of $\Phi$ is finite over $Y$. The endomorphism $\Phi$ induces an
+endomorphism
+\VerdierSemanticAnchor{intro-8-relative-rf-phi}
+\[
+\mathrm{R}f_*(\Phi)\colon
+\mathrm{R}f_*(F)\longrightarrow\mathrm{R}f_*(F),
+\]
+
+\VerdierSemanticAnchor{intro-8-relative-lefschetz-number}
+and since the complex $\mathrm{R}f_*(F)$ is \emph{perfect}, one can define
+the Lefschetz number $\chi(\mathrm{R}f_*(\Phi))$, which here is a section of
+the structure sheaf of $Y$. With this understood, one has the equality
+\VerdierSemanticAnchor{intro-8-relative-formula}
+\[
+\chi\bigl(\mathrm{R}f_*(\Phi)\bigr)=\chi_P(\Phi),
+\]
+where $\chi_P(\Phi)$ is a local invariant, which can again be determined by
+a residue calculation.
+

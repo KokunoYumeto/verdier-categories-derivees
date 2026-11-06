@@ -1,0 +1,83 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0218}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-3-1-2}
+\noindent\textit{exact sequences $S_i^1*f_{i-1}$, $1<i\leq n$,
+$f_i*{S''}_i^1$, $1\leq i<n$, ${S'}_i^1*g_{i-1}$, $1<i\leq n$,
+$g_i*{S''}_i^1$, $1\leq i<n$, are defined ((3.2.8.1) and (3.2.8.2)) and
+such that:}
+
+\begin{equation}
+\left\{
+\begin{aligned}
+\delta^1({S''}_n^1)
+  &=\delta^1(S_n^1*f_{n-1}),\\
+\delta^1({S''}_n^1)
+  &=\delta^1({S'}_n^1*g_{n-1}),\\
+\delta^1(f_i*{S''}_i^1)
+  &=\delta^1(S_i^1*f_{i-1}),&&1<i\leq n-1,\\
+\delta^1(g_i*{S''}_i^1)
+  &=\delta^1({S'}_i^1*g_{i-1}),&&1<i\leq n-1,\\
+\delta^1(f_1*{S''}_1^1)
+  &=\delta^1(S_1^1),\\
+\delta^1(g_1*{S''}_1^1)
+  &=\delta^1({S'}_1^1).
+\end{aligned}
+\right.
+\tag{3.3.1.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-3-1-proof}
+Indeed, assertion a) follows immediately from (3.2.2) and (3.2.5), and
+assertion b) follows from the description of the equivalence relation
+induced by the map
+$E_{\mathcal A}^{n}(X,Y)\longrightarrow
+\operatorname{Ext}_{\mathcal A}^{n}(X,Y)$ ((3.2.2) and (3.2.9)).
+
+\VerdierSemanticAnchor{ch3d-3-3-2}
+\medskip\noindent\textbf{3.3.2.}\quad
+Recall (1.2.11) that the category $\mathcal A^{\operatorname{Ext}}$ is the
+full subcategory of $D(\mathcal A)$ defined by the translates of the
+objects of $\mathcal A$. Let
+$F\colon\mathcal A^{\operatorname{Ext}}\longrightarrow\mathcal C$ be a
+functor (with values in a category that is not necessarily additive). For
+every integer $n$, denote by
+$F^n\colon\mathcal A\longrightarrow\mathcal C$ the functor
+$X\longmapsto F(X[n])$. Likewise, for every exact sequence in $\mathcal A$,
+$S^1=0\longrightarrow X\longrightarrow Y\longrightarrow Z
+\longrightarrow0$, denote by
+$\delta_F^n(S^1)\colon F^n(Z)\longrightarrow F^{n+1}(X)$ the morphism
+
+\VerdierSemanticAnchor{ch3d-3-3-2-delta-definition}
+\[
+F\bigl(\delta^1(S^1)[n]\bigr)
+\colon F(Z[n])\longrightarrow F(X[n+1]).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-3-2-sfl}
+The sequence of functors $F^n$, $n\in\mathbb Z$, equipped with the
+morphisms $\delta_F^\ast$, has the following properties (3.2.9):
+
+\noindent\textbf{SFL I)} Every commutative diagram
+
+\VerdierSemanticAnchor{ch3d-3-3-2-sfl-i-source-diagram}
+\begin{center}
+\resizebox{0.86\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=3.0em,row sep=2.8em]
+S=0 \arrow[r]
+  \& X \arrow[r] \arrow[d,"f"']
+  \& Y \arrow[r] \arrow[d]
+  \& Z \arrow[r] \arrow[d,"g"]
+  \& 0 \\
+{S'}=0 \arrow[r]
+  \& X' \arrow[r]
+  \& Y' \arrow[r]
+  \& Z' \arrow[r]
+  \& 0
+\end{tikzcd}$%
+}
+\end{center}
+\endgroup

@@ -1,0 +1,82 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0245}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-6-3-b}
+\noindent\textit{b) 设
+$Q\colon K(\mathcal A)\longrightarrow D(\mathcal A)$ 是商函子。复形
+$I^\bullet$ 是 $Q$-右自由的（第二章，2.3.3），即对每个复形 $Y$，典范态射}
+\[
+\operatorname{Hom}_{K(\mathcal A)}(Y,I^\bullet)
+\longrightarrow\operatorname{Hom}_{D(\mathcal A)}(Y,I^\bullet)
+\]
+\textit{是同构。}
+
+\VerdierSemanticAnchor{ch4d-4-6-3-c}
+\noindent\textit{c) 设}
+\[
+H^*(I^\bullet)\colon\cdots\longrightarrow H^p(I^\bullet)
+\longrightarrow H^{p+1}(I^\bullet)\longrightarrow\cdots
+\]
+\textit{为分量是 $H^p(I^\bullet)$、$p\in\mathbb Z$，且微分均为零的复形。
+$K(\mathcal A)$ 中存在唯一的同构
+$I^\bullet\longrightarrow H^*(I^\bullet)$，它在上同调对象上诱导恒等态射。}
+
+\VerdierSemanticAnchor{ch4d-4-6-3-d}
+\noindent\textit{d) 典范态射
+$H^*(I^\bullet)\longrightarrow H^p(I^\bullet)[-p]$ 在 $K(\mathcal A)$ 与
+$D(\mathcal A)$ 中定义同构：}
+\[
+H^*(I^\bullet)\xrightarrow{\sim}
+\prod_{p\in\mathbb Z}H^p(I^\bullet)[-p].
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-3-proof-abcd}
+证明 a) 蕴涵 b)。事实上，只须证明（第二章，2.3.3）：对每个无环复形 $Y$，
+$\operatorname{Hom}_{K(\mathcal A)}(Y,I^\bullet)=0$；这由 a) 得到。证明 a)
+蕴涵 c)。事实上，只须在 a) 的同构中，把复形 $Y$ 替换为 $I^\bullet$，
+并把复形 $I^\bullet$ 替换为 $H^*(I^\bullet)$。类似地，在 a) 的同构中
+把复形 $I^\bullet$ 替换为复形 $H^*(I^\bullet)$，即可看出 a) 蕴涵 d)。
+证明 a)。由定义立即可知，复形 $I^\bullet$ 同构于如下类型的复形：
+
+\VerdierSemanticAnchor{ch4d-4-6-3-proof-a-decomposition}
+\[
+\resizebox{0.98\linewidth}{!}{$
+\displaystyle
+\cdots\longrightarrow
+J^{n-2}\oplus H^{n-1}\oplus J^{n-1}
+\xrightarrow{\left(\begin{smallmatrix}
+0&0&\mathrm{id}\\0&0&0\\0&0&0
+\end{smallmatrix}\right)}
+J^{n-1}\oplus H^n\oplus J^n
+\xrightarrow{\left(\begin{smallmatrix}
+0&0&\mathrm{id}\\0&0&0\\0&0&0
+\end{smallmatrix}\right)}
+J^n\oplus H^{n+1}\oplus J^{n+1}
+\longrightarrow\cdots
+$}.
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-3-proof-a-homotopy}
+因此，$I^\bullet$ 与复形 $H^*(I^\bullet)$ 之间存在同伦等价。为证明 a)，
+可假设 $I^\bullet=H^*(I^\bullet)$。这时显然有同构：
+
+\VerdierSemanticAnchor{ch4d-4-6-3-proof-a-hom}
+\[
+\operatorname{Hom}_{K(\mathcal A)}\bigl(Y,H^*(I^\bullet)\bigr)
+\xrightarrow{\sim}
+\prod_{p\in\mathbb Z}
+\operatorname{Hom}_{K(\mathcal A)}
+\bigl(Y,H^p(I^\bullet)[-p]\bigr).
+\]
+此外，由于对象 $H^p(I^\bullet)$ 是内射对象，典范态射
+\[
+\operatorname{Hom}_{K(\mathcal A)}
+\bigl(Y,H^p(I^\bullet)[-p]\bigr)
+\longrightarrow
+\operatorname{Hom}_{\mathcal A}\bigl(H^p(Y),H^p(I^\bullet)\bigr)
+\]
+是同构。
+\endgroup

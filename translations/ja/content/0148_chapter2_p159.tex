@@ -1,0 +1,54 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0159}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch3-3-2-5-2}
+前頁の図式で像をとると
+\[
+V\xrightarrow{\alpha}V'\xrightarrow{\gamma}\operatorname{Im}(u'f').
+\tag{3.2.5.2}
+\]
+を得る。
+\VerdierSemanticAnchor{ch3-3-2-5-cokernel-proof}
+まず、$V'$ と $\operatorname{Im}(u'f')$ は $h(X')$ の商対象なので
+$\gamma$ はエピ射である。次に $\gamma\alpha=0$ である。実際、標準射
+$h(X)\to V$ はエピ射、標準射 $\operatorname{Im}(u'f')\to h(Z')$ はモノ射で、
+$h(u'g'f)$ は完全三角の連続する二射の合成を $h$ で移したものだから、
+(1.2.2) により零である。残るのは (3.2.5.2) が $V'$ で完全であることの
+証明である。$\mathcal D^\wedge$ の完全列の性質により、$\mathcal D$ の任意の
+対象 $W$ に対して次の列が完全であることを示せばよい：
+\[
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),V)\longrightarrow
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),V')\longrightarrow
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),\operatorname{Im}(u'f'))
+\]
+$\sigma\colon h(W)\to V'$ をとる。これを標準射 $V'\to h(Y')$ と合成すると、
+$h(W)$ から $h(Y')$ への射、すなわち射 $m\colon W\to Y'$ を得る。
+$\operatorname{Im}(u'f')$ は $h(Z')$ の部分対象なので、$\gamma\sigma=0$ と
+$u'm=0$ は同値である。したがって (1.2.1) により $g'fn=m$ となる
+$n\colon W\to X$ が存在する。これを標準射 $h(X)\to V$ と合成して
+$\sigma'\colon h(W)\to V$ を得る。$V'$ は $h(Y')$ の部分対象だから
+$\alpha\sigma'=\sigma$ である。これで (3.2.5) が従う。
+
+\VerdierSemanticAnchor{ch3-3-2-6}
+\medskip\noindent\textbf{3.2.6.}\quad
+(3.2.3) により $\mathrm A(\mathcal D)$ は $\mathcal D^\wedge$ の許容対象
+からなる充満部分圏と同値である。(3.2.5) によりこれはアーベル部分圏で、
+$\mathrm A(\mathcal D)$ はアーベル圏である。
+
+\VerdierSemanticAnchor{ch3-3-2-7}
+\medskip\noindent\textbf{命題 3.2.7.}\quad
+\textit{$\mathrm A(\mathcal D)$ の任意の完全列}
+\[
+0\longrightarrow V_1\longrightarrow V_2\longrightarrow V_3
+\]
+\textit{は、$\mathcal D$ の次の可換図式が定める $\mathrm A(\mathcal D)$ の列と同型である：}
+\VerdierSemanticAnchor{ch3-3-2-7-diagram}
+\[
+\begin{tikzcd}[column sep=3.3em,row sep=2.4em]
+0\arrow[r]&X_1\arrow[r,"u_1"]\arrow[d,"f_1"']&X_2\arrow[r,"u_2"]\arrow[d,"f_2"']&X_3\arrow[d,"f_3"]\\
+0\arrow[r]&Y_1\arrow[r,"\operatorname{id}_{Y_1}"']&Y_2=Y_1\arrow[r]&Y_3
+\end{tikzcd}
+\qquad
+(X_i\xrightarrow{f_i}Y_i)\simeq V_i,\quad1\leq i\leq3.
+\]
+\endgroup

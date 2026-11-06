@@ -1,0 +1,46 @@
+\chapter{加性范畴中的复形范畴}
+\VerdierPhysicalPageAnchor{0034}
+\VerdierSemanticAnchor{ch1}
+
+\VerdierSemanticAnchor{ch1-1}
+\section{分次范畴}
+
+\VerdierSemanticAnchor{ch1-1-1}
+\subsection{\texorpdfstring{$G$}{G}-分次范畴}
+
+\VerdierSemanticAnchor{ch1-1-1-1}
+\noindent\textbf{1.1.1.}\quad
+对每个群 $G$，我们关联一个记作 $\mathcal G$ 的范畴，其定义如下：
+
+\VerdierSemanticAnchor{ch1-1-1-1-group-category}
+\noindent\textnormal{(1.1.1.1)}
+\begin{list}{--}{%
+  \setlength{\leftmargin}{2em}%
+  \setlength{\itemsep}{0.25em}%
+  \setlength{\topsep}{0.25em}%
+}
+  \item \VerdierSemanticAnchor{ch1-1-1-1-group-category-ob}%
+    $\operatorname{Ob}(\mathcal G)$ 是一个单点集，其唯一元素固定选定。
+  \item \VerdierSemanticAnchor{ch1-1-1-1-group-category-fl}%
+    $\operatorname{Fl}(\mathcal G)$ 是 $G$ 的底集。
+  \item \VerdierSemanticAnchor{ch1-1-1-1-group-category-maps}%
+    源映射和靶映射都是从 $\operatorname{Fl}(\mathcal G)$ 到
+    $\operatorname{Ob}(\mathcal G)$ 的唯一映射。恒等映射把
+    $\operatorname{Ob}(\mathcal G)$ 的唯一元素送到 $G$ 的单位元。
+  \item \VerdierSemanticAnchor{ch1-1-1-1-group-category-composition}%
+    两个箭头 ${}\xrightarrow{g}{}\xrightarrow{h}{}$ 的复合是箭头 $hg$，
+    即群 $G$ 中元素 $h$ 与 $g$ 的乘积。
+\end{list}
+
+\VerdierSemanticAnchor{ch1-1-1-1-graded-category}
+纤维化于 $\mathcal G$ 之上的范畴 [18] 称为一个\emph{$G$-分次范畴}。
+因而，一个 $G$-分次范畴 $(\mathcal C,G)$ 是一个范畴 $\mathcal C$，连同一个使
+$\mathcal C$ 成为 $\mathcal G$ 上纤维化范畴的函子
+$\deg\colon\mathcal C\to\mathcal G$。
+
+\VerdierSemanticAnchor{ch1-1-1-1-degree-functor}
+函子 $\deg\colon\mathcal C\to\mathcal G$ 称为\emph{次数函子}。范畴
+$\mathcal C$ 的一个态射在 $\deg$ 下的像称为该态射的\emph{次数}。
+\VerdierSemanticAnchor{ch1-1-1-1-fiber-category}
+设 $e$ 为 $G$ 的单位元。我们以 $\mathcal C_e$ 表示 $(\mathcal C,G)$ 的纤维范畴。
+范畴 $\mathcal C_e$ 是

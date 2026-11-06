@@ -1,0 +1,67 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0161}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch3-3-2-9-exactness-test}
+is exact in $\mathcal D^\wedge$. The sequence (3.2.9.1) is exact if and only
+if, for every object $W$ in $\mathcal D$, the sequence
+\[
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),h(X))\longrightarrow
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),h(Y))\longrightarrow
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),h(Z))
+\]
+is exact. This follows from full faithfulness of $h$ and (1.2.1).
+
+\VerdierSemanticAnchor{ch3-3-2-9-factorization}
+Let $\mathcal A$ be an abelian category, and let
+\[
+\mathcal E x(\mathrm A(\mathcal D),\mathcal A)
+\longrightarrow\mathcal H\!om(\mathcal D,\mathcal A)
+\]
+be the functor “composition with $\mathcal H$.” This functor is clearly fully
+faithful: a morphism between exact functors is uniquely determined once its
+values on sufficiently many projective objects are known. It remains to show
+that every cohomological functor
+$\Psi\colon\mathcal D\to\mathcal A$ factors through
+$\mathrm A(\mathcal D)$:
+\VerdierSemanticAnchor{ch3-3-2-9-2}
+\[
+\begin{tikzcd}[column sep=5em,row sep=3em]
+\mathcal D\arrow[r,"\mathcal H"]\arrow[dr,"\Psi"']&
+\mathrm A(\mathcal D)\arrow[d,"\Phi"]\\
+&\mathcal A
+\end{tikzcd}
+\tag{3.2.9.2}
+\]
+with $\Phi$ exact. For every object
+$X\xrightarrow fY$ of $\mathrm A(\mathcal D)$, set
+\begingroup\renewcommand{\thefootnote}{(*)}%
+\[
+\Phi(X\xrightarrow fY)=
+\operatorname{Image}_{\mathcal A}
+(\Psi(X)\xrightarrow{\Psi(f)}\Psi(Y)).\footnote{Note that the construction
+of $\Phi$ involves choosing an “image” functor in $\mathcal A$. This choice
+is, of course, unique up to unique isomorphism. We may always require, as we
+shall henceforth, that the “image” functor associate to every identity
+morphism $\operatorname{id}_T$ in $\mathcal A$ the object $T$ equipped with
+the morphism $T\xrightarrow{\operatorname{id}_T}T$.}
+\]
+\endgroup
+This defines a functor from $\mathrm A(\mathcal D)$ to $\mathcal A$ for
+which diagram (3.2.9.2) is commutative. We show that $\Phi$ is exact. It
+follows immediately from (3.2.7) that $\Phi$ is left exact. Passing to
+opposite categories shows in the same way that $\Phi$ is right exact. This
+completes the proof of Theorem (3.2.1).
+
+\VerdierSemanticAnchor{ch3-3-2-10}
+\medskip\noindent\textbf{Remark 3.2.10.}\quad
+1) The universal property described in Theorem (3.2.1, c)) determines
+$\mathrm A(\mathcal D)$ up to equivalence.
+
+2) When countable direct sums or countable products are representable in
+$\mathcal D$, all projective (respectively, injective) objects of
+$\mathrm A(\mathcal D)$ are isomorphic to objects of $\mathcal D$. Indeed,
+such an object is a direct summand in $\mathrm A(\mathcal D)$ of an object
+of $\mathcal D$. It is therefore the kernel of a projector of an object of
+$\mathcal D$. Under the stated hypotheses, projectors are decomposable in
+$\mathcal D$ (1.2.9).
+\endgroup

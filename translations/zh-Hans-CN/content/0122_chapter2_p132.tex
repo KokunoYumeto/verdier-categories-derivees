@@ -1,0 +1,89 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0132}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{2pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{2pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-1-10-continuation}
+\noindent 得到 SM3)。
+\VerdierSemanticAnchor{ch2-2-1-10-triangle-setup}%
+由假设，存在特异三角 $(X,Y,N,s,h,u)$，其中 $N$ 是 $\mathcal D'$ 的对象。
+由于 $fs=0$，由 (1.2.1) 得到态射 $g\colon N\to Z$，使 $f=gh$。
+
+\VerdierSemanticAnchor{ch2-2-1-10-factorization}
+设 $(N,Z,W,g,t,v)$ 为包含 $g$ 的特异三角 (TRI)。于是 $tg=0$
+(1.2.2)，从而 $tf=tgh=0$。
+
+\VerdierSemanticAnchor{ch2-2-1-10-closure-conclusion}
+所以只需证明 $t$ 属于 $S(\mathcal D')$；这立即由 TRII) 得到。
+
+\VerdierSemanticAnchor{ch2-2-1-11}
+\medskip
+\noindent\textbf{2.1.11.}\quad
+\VerdierSemanticAnchor{ch2-2-1-11-sm5}
+\emph{集合 $S(\mathcal D')$ 具有性质} SM5)。
+\VerdierSemanticAnchor{ch2-2-1-11-proof}
+这立即由 TRII) 以及子范畴 $\mathcal D'$ 在平移下稳定这一事实得到。
+
+\VerdierSemanticAnchor{ch2-2-1-12}
+\medskip
+\noindent\textbf{2.1.12.}\quad
+\VerdierSemanticAnchor{ch2-2-1-12-sm6}
+\emph{集合 $S(\mathcal D')$ 具有性质} SM6)。
+\VerdierSemanticAnchor{ch2-2-1-12-triangle-pair}
+设 $(X,Y,Z,u,v,w)$ 与 $(X',Y',Z',u',v',w')$ 为 $\mathcal D$ 中的两个
+特异三角，并设
+
+\VerdierSemanticAnchor{ch2-2-1-12-input-square}
+\begin{center}
+  \begin{tikzcd}[column sep=4.2em,row sep=2.5em]
+    X \arrow[r,"u"] \arrow[d,"s"'] &
+    Y \arrow[d,"{s'}"] \\
+    X' \arrow[r,"{u'}"] & Y'
+  \end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-1-12-completion-goal}
+\noindent 为交换图，其中 $s$ 与 $s'$ 属于 $S(\mathcal D')$。需要找到
+$S(\mathcal D')$ 中的态射 $s''\colon Z\to Z'$，使 $(s,s',s'')$ 是三角的态射。
+
+\VerdierSemanticAnchor{ch2-2-1-12-case-reduction}
+首先可以假设处于下列两种情形之一：
+
+\begin{enumerate}
+\renewcommand{\labelenumi}{\emph{\alph{enumi})}}
+  \item \VerdierSemanticAnchor{ch2-2-1-12-case-a}%
+  $X=X'$ 且 $s=\operatorname{id}_X$。
+  \item \VerdierSemanticAnchor{ch2-2-1-12-case-b}%
+  $Y=Y'$ 且 $s'=\operatorname{id}_Y$。
+\end{enumerate}
+
+\VerdierSemanticAnchor{ch2-2-1-12-factorization}
+事实上，态射范畴中的每个态射都可作如下因式分解：
+
+\VerdierSemanticAnchor{ch2-2-1-12-factorization-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=4.2em,row sep=1.7em]
+    X \arrow[r,"u"] \arrow[d,"\operatorname{id}_X"'] &
+    Y \arrow[d,"{s'}"] \\
+    X \arrow[r,"{s'u}"] \arrow[d,"s"'] &
+    Y' \arrow[d,"\operatorname{id}_{Y'}"] \\
+    X' \arrow[r,"{u'}"] & Y'
+  \end{tikzcd}
+  \quad ,
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-1-12-composition}
+\noindent 而态射 $s''$ 可通过复合得到（已经证明 $S(\mathcal D')$ 对复合
+封闭）。
+
+\VerdierSemanticAnchor{ch2-2-1-12-opposite-category}
+其次，取反范畴便可由情形 a) 得到情形 b)。
+
+\VerdierSemanticAnchor{ch2-2-1-12-triv-conclusion}
+因此只需处理情形 a)，而它是 TRIV) 的直接推论。
+
+\VerdierSemanticAnchor{ch2-2-1-13-p133-boundary}
+\endgroup

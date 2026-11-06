@@ -1,0 +1,86 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0215}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-2-7-cont}
+另一方面，在 (1.2.8) 中我们已将范畴 $D(\mathcal A)^o$ 与范畴
+$D(\mathcal A^o)$ 等同，因而可以等同集合
+$\operatorname{Ext}_{\mathcal A^o}^{n}(Y,X)$ 与
+$\operatorname{Ext}_{\mathcal A}^{n}(X,Y)$（第一章，1.3.9）。在这些
+等同下，便有两个源与靶都相同的映射：
+
+\VerdierSemanticAnchor{ch3d-3-2-7-2}
+\begin{equation}
+\resizebox{0.74\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=5.0em,row sep=2.8em]
+E_{\mathcal A}^{n}(X,Y)
+  \arrow[r,"{\delta_{\mathcal A}^{n}}"]
+  \arrow[d,equal]
+\& \operatorname{Ext}_{\mathcal A}^{n}(X,Y)
+  \arrow[d,equal] \\
+E_{\mathcal A^o}^{n}(Y,X)
+  \arrow[r,"{\delta_{\mathcal A^o}^{n}}"']
+\& \operatorname{Ext}_{\mathcal A^o}^{n}(Y,X)
+\end{tikzcd}$%
+}
+\tag{3.2.7.2}
+\end{equation}
+并有关系：
+
+\VerdierSemanticAnchor{ch3d-3-2-7-3}
+\begin{equation}
+\delta_{\mathcal A}^{n}=\delta_{\mathcal A^o}^{n}.
+\tag{3.2.7.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-2-7-proof}
+当 $n=1$ 时，这个关系成立（1.3.4）。再利用 (3.2.5) 对 $n$ 归纳，
+即可证明它。
+
+\VerdierSemanticAnchor{ch3d-3-2-8}
+\medskip\noindent\textbf{3.2.8.}\quad
+设：
+\[
+S^n(X,Y)=0\longrightarrow Y\xrightarrow{u_n}Z_{n-1}
+\xrightarrow{u_{n-1}}\cdots\xrightarrow{u_2}Z_1
+\xrightarrow{u_1}Z_0\xrightarrow{u_0}X\longrightarrow0
+\]
+是 $E_{\mathcal A}^{n}(X,Y)$ 的一个元素，并设
+$f\colon X'\longrightarrow X$ 与 $g\colon Y\longrightarrow Y''$ 是
+$\mathcal A$ 的两个态射。置：
+
+\VerdierSemanticAnchor{ch3d-3-2-8-1}
+\begin{equation}
+\begin{aligned}
+S^n(X,Y)*f={}&0\longrightarrow Y\xrightarrow{u_n}Z_{n-1}
+\xrightarrow{u_{n-1}}\cdots\xrightarrow{u_2}Z_1
+\xrightarrow{u'_1}Z'_0\\
+&\xrightarrow{u'_0}X'\longrightarrow0,
+\end{aligned}
+\tag{3.2.8.1}
+\end{equation}
+其中 $Z'_0$ 是纤维积：
+
+\VerdierSemanticAnchor{ch3d-3-2-8-pullback-square}
+\begin{center}
+\begin{tikzcd}[column sep=4.2em,row sep=2.8em]
+Z'_0 \arrow[r,"u'_0"] \arrow[d,"f'"']
+  & X' \arrow[d,"f"] \\
+Z_0 \arrow[r,"u_0"'] & X
+\end{tikzcd}
+\end{center}
+而 $u'_1$ 是由等式 $f'u'_1=u_1$ 与 $u'_0u'_1=0$ 唯一确定的态射。
+同样，置：
+
+\VerdierSemanticAnchor{ch3d-3-2-8-2}
+\begin{equation}
+\begin{aligned}
+g*S^n(X,Y)={}&0\longrightarrow Y''\xrightarrow{u''_n}Z''_{n-1}
+\xrightarrow{u''_{n-1}}Z_{n-2}\xrightarrow{u_{n-2}}\cdots\\
+&\cdots\xrightarrow{u_1}Z_0\xrightarrow{u_0}X\longrightarrow0.
+\end{aligned}
+\tag{3.2.8.2}
+\end{equation}
+\endgroup

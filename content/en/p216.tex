@@ -1,0 +1,93 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0216}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-2-8-cont}
+where $Z''_{n-1}$ is the pushout:
+
+\VerdierSemanticAnchor{ch3d-3-2-8-pushout-square}
+\begin{center}
+\begin{tikzcd}[column sep=4.2em,row sep=2.8em]
+Y \arrow[r,"u_n"] \arrow[d,"g"']
+  & Z_{n-1} \arrow[d,"g''"] \\
+Y'' \arrow[r,"u''_n"'] & Z''_{n-1}
+\end{tikzcd}
+\end{center}
+and $u''_{n-1}$ is the unique morphism determined by the equalities
+$u''_{n-1}g''=u_{n-1}$ and $u''_{n-1}u''_n=0$.
+
+\VerdierSemanticAnchor{ch3d-3-2-9}
+\medskip\noindent\textbf{Proposition 3.2.9.}\quad
+\textit{a) The following equalities hold:}
+\[
+\delta^n(S^n(X,Y)*f)=\delta^n(S^n(X,Y))f,
+\]
+\[
+\delta^n(g*S^n(X,Y))=g[n]\,\delta^n(S^n(X,Y)).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-2-9-b-diagram}
+\noindent\textit{b) Every commutative diagram}
+\begin{center}
+\resizebox{\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=1.75em,row sep=2.7em]
+S^n(X,Y)=0 \arrow[r]
+  \& Y \arrow[r] \arrow[d,"g"']
+  \& Z_{n-1} \arrow[r] \arrow[d]
+  \& \cdots \arrow[r]
+  \& Z_1 \arrow[r] \arrow[d]
+  \& Z_0 \arrow[r] \arrow[d]
+  \& X \arrow[r] \arrow[d,"f"]
+  \& 0 \\
+{S'}^n(X',Y')=0 \arrow[r]
+  \& Y' \arrow[r]
+  \& Z'_{n-1} \arrow[r]
+  \& \cdots \arrow[r]
+  \& Z'_1 \arrow[r]
+  \& Z'_0 \arrow[r]
+  \& X' \arrow[r]
+  \& 0
+\end{tikzcd}$%
+}
+\end{center}
+\noindent\textit{gives the equality}
+
+\VerdierSemanticAnchor{ch3d-3-2-9-1}
+\begin{equation}
+\delta^n(g*S^n(X,Y))=\delta^n({S'}^n(X',Y')*f).
+\tag{3.2.9.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-2-9-proof}
+When $n=1$, these properties follow from the properties of the canonical
+$\delta$-functor
+$\operatorname{comp}(\mathcal A)\longrightarrow D(\mathcal A)$ (1.3).
+The general case follows by induction on $n$, using (3.2.5).
+
+\VerdierSemanticAnchor{ch3d-3-2-10}
+\medskip\noindent\textbf{3.2.10.}\quad
+Let $S^n(X,Y)$ and ${S'}^n(X',Y')$ be two elements belonging respectively
+to the sets $E_{\mathcal A}^{n}(X,Y)$ and
+$E_{\mathcal A}^{n}(X',Y')$, and consider the morphism
+
+\VerdierSemanticAnchor{ch3d-3-2-10-direct-sum-map}
+\[
+\delta^n\bigl(S^n(X,Y)\oplus {S'}^n(X',Y')\bigr)
+\colon X\oplus X'\longrightarrow (Y\oplus Y')[n].
+\]
+Then
+
+\VerdierSemanticAnchor{ch3d-3-2-10-1}
+\begin{equation}
+\delta^n\bigl(S^n(X,Y)\oplus {S'}^n(X',Y')\bigr)
+=
+\begin{pmatrix}
+\delta^n(S^n(X,Y))&0\\
+0&\delta^n({S'}^n(X',Y'))
+\end{pmatrix},
+\tag{3.2.10.1}
+\end{equation}
+as follows immediately from the definition of the maps $\delta_n$.
+\endgroup

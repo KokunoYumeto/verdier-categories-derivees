@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0218}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-3-1-2}
+\noindent\textit{$S_i^1*f_{i-1}$、$1<i\leq n$、
+$f_i*{S''}_i^1$、$1\leq i<n$、${S'}_i^1*g_{i-1}$、$1<i\leq n$、
+$g_i*{S''}_i^1$、$1\leq i<n$ であり、これらが ((3.2.8.1) と
+(3.2.8.2)) により定義され、次を満たすものとする：}
+
+\begin{equation}
+\left\{
+\begin{aligned}
+\delta^1({S''}_n^1)
+  &=\delta^1(S_n^1*f_{n-1}),\\
+\delta^1({S''}_n^1)
+  &=\delta^1({S'}_n^1*g_{n-1}),\\
+\delta^1(f_i*{S''}_i^1)
+  &=\delta^1(S_i^1*f_{i-1}),&&1<i\leq n-1,\\
+\delta^1(g_i*{S''}_i^1)
+  &=\delta^1({S'}_i^1*g_{i-1}),&&1<i\leq n-1,\\
+\delta^1(f_1*{S''}_1^1)
+  &=\delta^1(S_1^1),\\
+\delta^1(g_1*{S''}_1^1)
+  &=\delta^1({S'}_1^1).
+\end{aligned}
+\right.
+\tag{3.3.1.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-3-1-proof}
+実際、主張 a) は (3.2.2) と (3.2.5) から直ちに従い、主張 b) は写像
+$E_{\mathcal A}^{n}(X,Y)\longrightarrow
+\operatorname{Ext}_{\mathcal A}^{n}(X,Y)$ が誘導する同値関係の記述
+（(3.2.2) と (3.2.9)）から従う。
+
+\VerdierSemanticAnchor{ch3d-3-3-2}
+\medskip\noindent\textbf{3.3.2.}\quad
+(1.2.11) を思い出すと、圏 $\mathcal A^{\operatorname{Ext}}$ は
+$D(\mathcal A)$ の充満部分圏であり、$\mathcal A$ の対象をシフトした
+対象によって定まる。
+$F\colon\mathcal A^{\operatorname{Ext}}\longrightarrow\mathcal C$ を関手
+（値をとる圏は加法圏とは限らない）とする。各整数 $n$ に対し、
+$F^n\colon\mathcal A\longrightarrow\mathcal C$ を関手
+$X\longmapsto F(X[n])$ とする。同様に、$\mathcal A$ の任意の完全列
+$S^1=0\longrightarrow X\longrightarrow Y\longrightarrow Z
+\longrightarrow0$ に対して、
+$\delta_F^n(S^1)\colon F^n(Z)\longrightarrow F^{n+1}(X)$ を次の射とする：
+
+\VerdierSemanticAnchor{ch3d-3-3-2-delta-definition}
+\[
+F\bigl(\delta^1(S^1)[n]\bigr)
+\colon F(Z[n])\longrightarrow F(X[n+1]).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-3-2-sfl}
+関手列 $F^n$、$n\in\mathbb Z$ は射 $\delta_F^\ast$ とともに、次の性質を
+もつ (3.2.9)：
+
+\noindent\textbf{SFL I)} 任意の可換図式：
+
+\VerdierSemanticAnchor{ch3d-3-3-2-sfl-i-source-diagram}
+\begin{center}
+\resizebox{0.86\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=3.0em,row sep=2.8em]
+S=0 \arrow[r]
+  \& X \arrow[r] \arrow[d,"f"']
+  \& Y \arrow[r] \arrow[d]
+  \& Z \arrow[r] \arrow[d,"g"]
+  \& 0 \\
+{S'}=0 \arrow[r]
+  \& X' \arrow[r]
+  \& Y' \arrow[r]
+  \& Z' \arrow[r]
+  \& 0
+\end{tikzcd}$%
+}
+\end{center}
+\endgroup

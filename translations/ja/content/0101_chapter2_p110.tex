@@ -1,0 +1,69 @@
+\chapter{三角圏}
+\VerdierPhysicalPageAnchor{0110}%
+\VerdierSemanticAnchor{ch2}
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1}
+\section{定義と初歩的性質}
+
+\VerdierSemanticAnchor{ch2-1-1}
+\subsection{三角圏の定義}
+
+\VerdierSemanticAnchor{ch2-1-1-1}
+\noindent\textbf{定義 1.1.1.}\quad
+\emph{三角圏} $\mathcal D$ とは、三角（第 I 章、3.2.1）の族を備えた厳密な
+加法的 $\mathbb Z$-圏（第 I 章、1.5.11）であって、それらの三角を
+\emph{完全三角}と呼び、次の性質を満たすものをいう。
+
+\VerdierSemanticAnchor{ch2-1-1-1-tri}
+\smallskip
+\noindent\textbf{TRI:}
+$\mathcal D$ の三角で完全三角に同型なものは、すべて完全三角である。任意の
+対象 $X$（$\mathcal D$ の対象）に対し、三角
+\[
+  X\xrightarrow{\operatorname{id}_X}X\longrightarrow 0
+  \longrightarrow X[1]
+\]
+は完全三角である。任意の射 $u\colon X\longrightarrow Y$（$\mathcal D$ の射）は、
+次の完全三角に含まれる。
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1].
+\]
+
+\VerdierSemanticAnchor{ch2-1-1-1-trii}
+\noindent\textbf{TRII:}
+$\mathcal D$ の三角
+\[
+  X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+\]
+が完全三角であるための必要十分条件は、三角
+\[
+  Y\xrightarrow{v}Z\xrightarrow{w}X[1]
+  \xrightarrow{-u[1]}Y[1]
+\]
+が完全三角であることである。
+
+\VerdierSemanticAnchor{ch2-1-1-1-triii}
+\noindent\textbf{TRIII:}
+任意の二つの完全三角
+
+\VerdierSemanticAnchor{ch2-1-1-1-triii-triangles}
+\[
+  \begin{aligned}
+    X  &\xrightarrow{u}  Y  \xrightarrow{v}  Z  \xrightarrow{w}  X[1],\\
+    X' &\xrightarrow{u'} Y' \xrightarrow{v'} Z' \xrightarrow{w'} X'[1]
+  \end{aligned}
+\]
+と任意の可換図式
+
+\VerdierSemanticAnchor{ch2-1-1-1-triii-square}
+\begin{center}
+  \begin{tikzcd}[column sep=4.5em,row sep=3em]
+    X \arrow[r,"u"] \arrow[d,"f"'] & Y \arrow[d,"g"] \\
+    X' \arrow[r,"u'"] & Y'\,,
+  \end{tikzcd}
+\end{center}
+\endgroup

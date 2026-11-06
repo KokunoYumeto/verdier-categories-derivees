@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0080}%
+\VerdierSemanticAnchor{ch1-2-5-10}
+\noindent\textbf{2.5.10.}\quad
+\VerdierSemanticAnchor{ch1-2-5-10-multiadditive-setup}
+设
+$F\colon\prod_{i\in[n]}C_i\longrightarrow C$ 是一个多加法函子。记
+
+\VerdierSemanticAnchor{ch1-2-5-10-quotient-functors}
+\begin{equation*}
+  Q_i\colon\operatorname{comp}(C_i)\longrightarrow K(C_i)
+\end{equation*}
+为典范函子。由 (2.5.6) 与 (2.5.7) 可知，当 $C$ 中的可数乘积可表示时，
+存在唯一的函子
+
+\VerdierSemanticAnchor{ch1-2-5-10-pi-extension}
+\begin{equation*}
+  K_{\Pi}(F)\colon
+  \prod_{i\in[n]}K(C_i)\longrightarrow K(C)
+\end{equation*}
+使下图交换：
+
+\VerdierSemanticAnchor{ch1-2-5-10-eq1}
+\begin{equation}
+  \resizebox{0.84\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=6.8em,row sep=5.0em]
+      \displaystyle\prod_{i\in[n]}\operatorname{comp}(C_i)
+        \arrow[r,"{\operatorname{comp}_{\Pi}F}"]
+        \arrow[d,"{\prod_{i\in[n]}Q_i}"']
+        \& \operatorname{comp}(C)
+          \arrow[d,"Q"] \\
+      \displaystyle\prod_{i\in[n]}K(C_i)
+        \arrow[r,"{K_{\Pi}F}"]
+        \& K(C)\mathpunct{.}
+    \end{tikzcd}$%
+  }
+  \tag{2.5.10.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-5-10-twisted-structure}
+此外，由于函子 $\prod_{i\in[n]}Q_i$ 是严格 $\mathbb Z[n]$-函子，
+函子 $K_{\Pi}F$ 上存在唯一的、由 $\mathbb Z[n]$ 的有序基
+$e_1,\ldots,e_n$ 所对应的 Koszul 余循环扭曲的分次
+$\mathbb Z[n]$-函子结构，使下列扭曲 $\mathbb Z[n]$-函子之间的等式成立：
+
+\VerdierSemanticAnchor{ch1-2-5-10-eq2}
+\begin{equation}
+  K_{\Pi}F\prod_{i\in[n]}Q_i
+  =Q\operatorname{comp}_{\Pi}F.
+  \tag{2.5.10.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-5-10-morphism-setup}
+最后，设 $F$ 与 $F'$ 是两个多加法函子，
+$m\colon F\longrightarrow F'$ 是一个函子态射。由 (2.5.7) 可知，
+存在唯一的函子态射：
+
+\VerdierSemanticAnchor{ch1-2-5-10-eq3}
+\begin{equation}
+  K_{\Pi}m\colon K_{\Pi}F\longrightarrow K_{\Pi}F'
+  \tag{2.5.10.3}
+\end{equation}
+使得：
+
+\VerdierSemanticAnchor{ch1-2-5-10-eq4}
+\begin{equation}
+  K_{\Pi}m\star\prod_{i\in[n]}Q_i
+  =Q\star\operatorname{comp}_{\Pi}m.
+  \tag{2.5.10.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-5-10-pi-terminology}
+函子 $K_{\Pi}F$ 称为函子 $F$ 在复形同伦范畴上的
+$\Pi$-\emph{扩张}。态射 $K_{\Pi}m$ 称为态射 $m$
+在复形同伦范畴上的 $\Pi$-\emph{扩张}。
+
+\VerdierSemanticAnchor{ch1-2-5-10-sigma-analogue}
+当 $C$ 中的可数直和可表示时，以类似方式定义函子 $K_{\Sigma}F$，
+即函子 $F$ 在复形同伦范畴上的 $\Sigma$-\emph{扩张}；以及态射
+$K_{\Sigma}m$，即态射 $m$ 在复形同伦范畴上的
+$\Sigma$-\emph{扩张}。

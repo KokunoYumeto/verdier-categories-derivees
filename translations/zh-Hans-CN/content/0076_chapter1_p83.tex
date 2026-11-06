@@ -1,0 +1,87 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0083}%
+\VerdierSemanticAnchor{ch1-3-1-1-additivity}
+范畴 $\operatorname{tr}_1(C)$ 是加法范畴。$X\xrightarrow{f}Y$ 与
+$X'\xrightarrow{f'}Y'$ 的直和为：
+
+\VerdierSemanticAnchor{ch1-3-1-1-direct-sum}
+\begin{equation*}
+  X\oplus X'
+  \xrightarrow{\left(\begin{smallmatrix}f&0\\0&f'\end{smallmatrix}\right)}
+  Y\oplus Y'.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-3-1-2}
+\noindent\textbf{3.1.2.}\quad
+设 $X\xrightarrow{f}Y$ 是 $\operatorname{tr}_1(C)$ 的对象。规定：
+
+\VerdierSemanticAnchor{ch1-3-1-2-cone-object}
+\begin{equation*}
+  c(f)^i=Y^i\oplus X^{i+1},
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-3-1-2-eq1}
+\begin{equation}
+  d_{c(f)}^i=
+  \begin{pmatrix}
+    d_Y^i & f^{i+1}\\
+    0 & -d_X^{i+1}
+  \end{pmatrix}
+  \colon Y^i\oplus X^{i+1}\longrightarrow Y^{i+1}\oplus X^{i+2}.
+  \tag{3.1.2.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-1-2-cone-verification}
+可验证，这样定义了一个 $C$ 中对象的复形。
+\VerdierSemanticAnchor{ch1-3-1-2-cone-name}
+此复形记作 $c(f)$，称为态射 $f$ 的\emph{映射锥}。现设
+
+\VerdierSemanticAnchor{ch1-3-1-2-morphism-setup}
+\begin{equation*}
+  \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center)]
+    \node (X)  at (0,1.8) {$X$};
+    \node (Y)  at (4.2,1.8) {$Y$};
+    \node (Xp) at (0,0) {$X'$};
+    \node (Yp) at (4.2,0) {$Y'$};
+    \draw[->] (X) -- node[above] {$f$} (Y);
+    \draw[->] (X) -- node[left] {$g$} (Xp);
+    \draw[->] (Y) -- node[right] {$h$} (Yp);
+    \draw[->] (Xp) -- node[below] {$f'$} (Yp);
+    \draw[decorate,decoration={snake,amplitude=0.8pt,segment length=3.3pt}]
+      (2.25,0.18) -- (3.10,0.83);
+    \draw[->] (3.10,0.83) -- node[above left] {$a$} (3.95,1.48);
+  \end{tikzpicture}
+\end{equation*}
+是 $\operatorname{tr}_1(C)$ 的一个态射。规定：
+
+\VerdierSemanticAnchor{ch1-3-1-2-eq2}
+\begin{equation}
+  c((g,h,a))^i=
+  \begin{pmatrix}
+    h^i & a^i\\
+    0 & g^{i+1}
+  \end{pmatrix}
+  \colon Y^i\oplus X^{i+1}\longrightarrow Y'^i\oplus X'^{i+1}.
+  \tag{3.1.2.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-1-2-complex-morphism}
+这些态射与 $c(f)$ 和 $c(f')$ 的微分交换，因而定义复形态射：
+
+\VerdierSemanticAnchor{ch1-3-1-2-eq3}
+\begin{equation}
+  c((g,h,a))\colon c(f)\longrightarrow c(f').
+  \tag{3.1.2.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-1-2-cone-functor}
+可验证，这样定义了函子
+$c\colon\operatorname{tr}_1(C)\longrightarrow\operatorname{comp}(C)$，
+称为\emph{映射锥函子}。
+
+\VerdierSemanticAnchor{ch1-3-1-2-s-functor}
+以 $s\colon\operatorname{comp}(C)\longrightarrow\operatorname{tr}_1(C)$
+表示函子 $X\longmapsto(0\longrightarrow X)$。
+\VerdierSemanticAnchor{ch1-3-1-2-phi-setup}
+对 $\operatorname{tr}_1(C)$ 的每个对象 $X\xrightarrow{f}Y$，以
+$\Phi(f)\colon(X\xrightarrow{f}Y)\longrightarrow s c(f)$ 表示

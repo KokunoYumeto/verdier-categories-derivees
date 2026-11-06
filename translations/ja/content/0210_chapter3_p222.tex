@@ -1,0 +1,78 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0222}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-3-7-cases-cont}
+\noindent$c_3)$ $m=0$ は前者の射の次数が 0 であることを、$m'<0$ は後者の射の次数が 0 より小さいことを表す；
+
+\noindent$c_4)$ $m$ の次数は 0 であり、$m'=0$ も後者の射の次数が 0 であることを表す；
+
+\noindent$c_5)$ $m=1$ は前者の射の次数が 1 であることを、$m'<0$ は後者の射の次数が 0 より小さいことを表す；
+
+\noindent$c_6)$ $m<0$ は前者の射の次数が 0 より小さいことを、$m'=1$ は後者の射の次数が 1 であることを表す；
+
+\noindent$c_7)$ $m=1$ は前者の射の次数が 1 であることを、$m'=0$ は後者の射の次数が 0 であることを表す；
+
+\noindent$c_8)$ $m=0$ は前者の射の次数が 0 であることを、$m'=1$ は後者の射の次数が 1 であることを表す；
+
+\VerdierSemanticAnchor{ch3d-3-3-7-c8}
+場合 $c_8)$ のみを考える。場合 $c_7)$ も同様に扱え、場合 $c_i)$、
+$1\leq i\leq 6$ は自明である。次の完全列をとる：
+\[
+S=0\longrightarrow X''\longrightarrow Y\longrightarrow X'\longrightarrow0
+\]
+ここで $\delta^1(S)[p]=m'$ とし、$f\colon X\longrightarrow X'$ を
+$\mathcal A$ の射で $f[p]=m$ を満たすものとする。このとき
+$F(m)=F^p(f)$、$F(m')=\delta_F^p(S)$、
+$F(m'')=\delta_F^p(S*f)$ (3.2.9) である。さて、次の可換図式がある：
+
+\VerdierSemanticAnchor{ch3d-3-3-7-c8-extension-square}
+\begin{center}
+\resizebox{0.92\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=2.6em,row sep=2.7em]
+{S*f=0} \arrow[r]
+  \& X'' \arrow[r] \arrow[d,"{\operatorname{id}}"']
+  \& Y' \arrow[r] \arrow[d]
+  \& X \arrow[r] \arrow[d,"f"]
+  \& 0 \\
+{S=0} \arrow[r]
+  \& X'' \arrow[r]
+  \& Y \arrow[r]
+  \& X' \arrow[r]
+  \& 0
+\end{tikzcd}\quad\mathpunct{.}$%
+}
+\end{center}
+したがって、次の可換図式 (SFL I) を得る：
+
+\VerdierSemanticAnchor{ch3d-3-3-7-c8-sfl-square}
+\begin{center}
+\begin{tikzcd}[column sep=5.5em,row sep=2.8em]
+F^p(X) \arrow[r,"{\delta_F^p(S*f)}"] \arrow[d,"{F^p(f)}"']
+  & F^{p+1}(X'') \arrow[d,"{\operatorname{id}}"] \\
+F^p(X') \arrow[r,"{\delta_F^p(S)}"']
+  & F^{p+1}(X'')
+\end{tikzcd}
+\hspace{1em}，
+\end{center}
+すなわち、
+\[
+F(m'')=F(m')F(m).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-3-8}
+\medskip\noindent\textbf{3.3.8. 命題 3.3.6 の証明。}\quad
+$m\colon X[p]\longrightarrow Y[p+n]$ をとり、$X$ と $Y$ は
+$\mathcal A$ の対象、$n>0$ であり、$\mathcal A^{\operatorname{Ext}}$ の
+射であるとする。補題 (3.3.1) により、$n+1$ 個の対象
+$X_i[p+i]$、$0\leq i\leq n$ で $X_0[p]=X[p]$、
+$X_n[p+n]=Y[p+n]$ を満たすものと、$n$ 個の射が存在する：
+
+\VerdierSemanticAnchor{ch3d-3-3-8-factorization}
+\[
+X[p]\xrightarrow{m_1}X_1[p+1]\xrightarrow{m_2}X_2[p+2]
+\xrightarrow{m_3}\cdots\xrightarrow{m_n}Y[p+n]
+\]
+\endgroup

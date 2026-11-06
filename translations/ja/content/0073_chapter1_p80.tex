@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0080}%
+\VerdierSemanticAnchor{ch1-2-5-10}
+\noindent\textbf{2.5.10.}\quad
+\VerdierSemanticAnchor{ch1-2-5-10-multiadditive-setup}
+$F\colon\prod_{i\in[n]}C_i\longrightarrow C$ を多加法的関手とする。
+
+\VerdierSemanticAnchor{ch1-2-5-10-quotient-functors}
+\begin{equation*}
+  Q_i\colon\operatorname{comp}(C_i)\longrightarrow K(C_i)
+\end{equation*}
+を標準関手とする。(2.5.6) と (2.5.7) から、$C$ において可算積が
+表現可能ならば、唯一の関手
+
+\VerdierSemanticAnchor{ch1-2-5-10-pi-extension}
+\begin{equation*}
+  K_{\Pi}(F)\colon
+  \prod_{i\in[n]}K(C_i)\longrightarrow K(C)
+\end{equation*}
+が存在し、次の図式が可換になることが分かる：
+
+\VerdierSemanticAnchor{ch1-2-5-10-eq1}
+\begin{equation}
+  \resizebox{0.84\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=6.8em,row sep=5.0em]
+      \displaystyle\prod_{i\in[n]}\operatorname{comp}(C_i)
+        \arrow[r,"{\operatorname{comp}_{\Pi}F}"]
+        \arrow[d,"{\prod_{i\in[n]}Q_i}"']
+        \& \operatorname{comp}(C)
+          \arrow[d,"Q"] \\
+      \displaystyle\prod_{i\in[n]}K(C_i)
+        \arrow[r,"{K_{\Pi}F}"]
+        \& K(C)\mathpunct{.}
+    \end{tikzcd}$%
+  }
+  \tag{2.5.10.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-5-10-twisted-structure}
+さらに、関手 $\prod_{i\in[n]}Q_i$ は厳密な $\mathbb Z[n]$-関手であるから、
+関手 $K_{\Pi}F$ 上には、$\mathbb Z[n]$ の順序付き基底
+$e_1,\ldots,e_n$ に関する Koszul 余サイクルで捩れた次数付き
+$\mathbb Z[n]$-関手構造がただ一つ存在し、捩れ $\mathbb Z[n]$-関手の間で
+次の等式が成り立つ：
+
+\VerdierSemanticAnchor{ch1-2-5-10-eq2}
+\begin{equation}
+  K_{\Pi}F\prod_{i\in[n]}Q_i
+  =Q\operatorname{comp}_{\Pi}F.
+  \tag{2.5.10.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-5-10-morphism-setup}
+最後に、$F$ と $F'$ を二つの多加法的関手、
+$m\colon F\longrightarrow F'$ を関手の射とする。(2.5.7) から、
+唯一の関手の射
+
+\VerdierSemanticAnchor{ch1-2-5-10-eq3}
+\begin{equation}
+  K_{\Pi}m\colon K_{\Pi}F\longrightarrow K_{\Pi}F'
+  \tag{2.5.10.3}
+\end{equation}
+が存在し、次を満たす：
+
+\VerdierSemanticAnchor{ch1-2-5-10-eq4}
+\begin{equation}
+  K_{\Pi}m\star\prod_{i\in[n]}Q_i
+  =Q\star\operatorname{comp}_{\Pi}m.
+  \tag{2.5.10.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-5-10-pi-terminology}
+関手 $K_{\Pi}F$ を、関手 $F$ の複体のホモトピー圏への
+$\Pi$-\emph{拡張}と呼ぶ。射 $K_{\Pi}m$ を、射 $m$ の複体の
+ホモトピー圏への $\Pi$-\emph{拡張}と呼ぶ。
+
+\VerdierSemanticAnchor{ch1-2-5-10-sigma-analogue}
+$C$ において可算直和が表現可能ならば、同様に関手 $K_{\Sigma}F$、
+すなわち関手 $F$ の複体のホモトピー圏への $\Sigma$-\emph{拡張}と、
+射 $K_{\Sigma}m$、すなわち射 $m$ の複体のホモトピー圏への
+$\Sigma$-\emph{拡張}を定める。

@@ -1,0 +1,73 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0152}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+
+\VerdierSemanticAnchor{ch3}
+\section{三角范畴的阿贝尔化。}
+
+\VerdierSemanticAnchor{ch3-3-1}
+\subsection{范畴 \texorpdfstring{$\mathrm A(\mathcal D)$}{A(D)} 的构造。}
+
+\VerdierSemanticAnchor{ch3-3-1-1}
+\noindent\textbf{3.1.1.}\quad
+设 $\mathcal D$ 为加法范畴，$\mathcal{F}\ell_1(\mathcal D)$ 为
+$\mathcal D$ 的态射范畴（第一章，3.3.6）。考虑下列交换图：
+
+\VerdierSemanticAnchor{ch3-3-1-1-square}
+\[
+\begin{tikzcd}[column sep=4.2em,row sep=2.5em]
+X \arrow[r,"f"] \arrow[d,"g"'] & Y \arrow[d,"h"] \\
+X' \arrow[r,"f'"'] & Y'
+\end{tikzcd}
+\]
+
+\VerdierSemanticAnchor{ch3-3-1-1-negligible-morphism}
+\noindent 上述 $\mathcal{F}\ell_1(\mathcal D)$ 中的态射在
+$f'g=hf=0$ 成立时称为\emph{可忽略态射}。可忽略态射与任意态射
+按任一顺序复合，所得态射仍可忽略；两个可忽略态射的直和仍可忽略。
+
+\VerdierSemanticAnchor{ch3-3-1-1-quotient-category}
+以 $\mathrm A(\mathcal D)$ 表示如下范畴：其对象就是
+$\mathcal{F}\ell_1(\mathcal D)$ 的对象，其态射则是
+$\mathcal{F}\ell_1(\mathcal D)$ 的态射模去可忽略态射。换言之，对
+$\mathrm A(\mathcal D)$ 的任意对象 $U,V$，群
+$\operatorname{Hom}_{\mathrm A(\mathcal D)}(U,V)$ 是
+$\operatorname{Hom}_{\mathcal{F}\ell_1(\mathcal D)}(U,V)$ 对可忽略态射
+子群的商。范畴 $\mathrm A(\mathcal D)$ 是加法范畴。
+
+\VerdierSemanticAnchor{ch3-3-1-1-canonical-quotient}
+设 $C$ 为一个范畴。与典范函子
+\[
+\mathcal{F}\ell_1(\mathcal D)\longrightarrow\mathrm A(\mathcal D)
+\]
+复合给出函子
+
+\VerdierSemanticAnchor{ch3-3-1-1-1}
+\[
+\mathcal H\!om(\mathrm A(\mathcal D),C)
+\longrightarrow
+\mathcal H\!om(\mathcal{F}\ell_1(\mathcal D),C).
+\tag{3.1.1.1}
+\]
+该函子充分忠实，并且在对象上单射。它的像是如下满子范畴：其对象为从
+$\mathcal{F}\ell_1(\mathcal D)$ 到 $C$ 的函子，这些函子把相差一个可忽略态射的
+态射送到相等的态射。
+
+\VerdierSemanticAnchor{ch3-3-1-2}
+\medskip
+\noindent\textbf{3.1.2.}\quad
+从 $\mathcal D$ 到 $\mathcal{F}\ell_1(\mathcal D)$ 的典范函子
+$X\longmapsto(X\xrightarrow{\operatorname{id}_X}X)$ 与典范函子
+$\mathcal{F}\ell_1(\mathcal D)\longrightarrow\mathrm A(\mathcal D)$ 复合，所得函子记为
+
+\VerdierSemanticAnchor{ch3-3-1-2-1}
+\[
+\mathcal H\colon\mathcal D\longrightarrow\mathrm A(\mathcal D).
+\tag{3.1.2.1}
+\]
+函子 $\mathcal H$ 是加法函子；它充分忠实，并且在对象上单射。因此，它把
+$\mathcal D$ 实现为 $\mathrm A(\mathcal D)$ 的满子范畴。
+\endgroup

@@ -1,0 +1,69 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0181}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-1-2-10-proof-cont}
+Le complexe $X(0,+\infty)$ (démonstration de (1.2.1)) est alors
+quasi-isomorphe à $X$, et le morphisme canonique
+$H^0(X(0,+\infty))\longrightarrow X(0,+\infty)$ est un
+quasi-isomorphisme. Ce qui montre que $X$ est isomorphe dans
+$D(\mathcal A)$ à $H^0(X)$.
+
+Démontrons b). La deuxième égalité est mise pour mémoire et résulte de ce
+que $\mathcal A$ est une sous-catégorie pleine de $D(\mathcal A)$. Un
+morphisme dans $D(\mathcal A)$ de $X[-n]$ dans $Y$ est de la forme
+$Q(m)Q(s)^{-1}$, où $m\colon Z^\bullet\longrightarrow Y$ est un morphisme
+de $K(\mathcal A)$ et $s\colon Z^\bullet\longrightarrow X[-n]$ est un
+quasi-isomorphisme de $K(\mathcal A)$. Le morphisme
+$i\colon Z^\bullet(-\infty,n+1)\longrightarrow Z^\bullet$ (démonstration de
+(1.2.1)) est alors un quasi-isomorphisme. Par suite, on a :
+\[
+Q(m)Q(s)^{-1}=Q(m)Q(i)Q(i)^{-1}Q(s)^{-1}=Q(mi)Q(si)^{-1}.
+\]
+Lorsque $n$ est strictement négatif, $mi=0$. Par suite,
+$Q(m)Q(s)^{-1}=0$.
+
+\VerdierSemanticAnchor{ch3d-1-2-11}
+\medskip\noindent\textbf{Définition 1.2.11.}\quad
+On désigne par $\mathcal A^{\operatorname{Ext}}$ la sous-catégorie pleine de
+$D(\mathcal A)$ définie par les translatés des objets de $\mathcal A$.
+
+La catégorie $\mathcal A^{\operatorname{Ext}}$ est donc (contrairement à la
+sous-catégorie $\mathcal A$) une sous-$\mathbb Z$-catégorie de
+$D(\mathcal A)$. Un objet de $D(\mathcal A)$ est isomorphe à un objet de
+$\mathcal A^{\operatorname{Ext}}$ si et seulement s'il ne possède qu'un seul
+objet de cohomologie non nul.
+
+\VerdierSemanticAnchor{ch3d-1-3}
+\subsection{Le \texorpdfstring{$\delta$}{delta}-foncteur canonique.}
+
+\VerdierSemanticAnchor{ch3d-1-3-1}
+\noindent\textbf{1.3.1.}\quad
+Soit $\mathcal A$ une catégorie abélienne et $\mathcal D$ une catégorie
+triangulée. Un $\delta$-foncteur de $\mathcal A$ dans $\mathcal D$ est un
+objet constitué par :
+
+\noindent 1) Un foncteur $G\colon\mathcal A\longrightarrow\mathcal D$.
+
+\noindent 2) La donnée, pour toute suite exacte
+$S=0\longrightarrow X\longrightarrow Y\longrightarrow Z\longrightarrow0$
+de $\mathcal A$, d'un morphisme de $\mathcal D$ :
+\[
+\delta(S)\colon G(Z)\longrightarrow G(X)[1].
+\]
+Ces données étant soumises aux axiomes suivants :
+
+\noindent a) Pour tout morphisme de suites exactes :
+
+\VerdierSemanticAnchor{ch3d-1-3-1-exact-sequences}
+\begin{center}
+\resizebox{0.88\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=2.6em,row sep=2.2em]
+S={}\&0\arrow[r]\&X\arrow[r]\arrow[d,"u"']\&Y\arrow[r]\arrow[d,"v"']\&Z\arrow[r]\arrow[d,"w"']\&0\\
+S'={}\&0\arrow[r]\&X'\arrow[r]\&Y'\arrow[r]\&Z'\arrow[r]\&0
+\end{tikzcd}$%
+}
+\end{center}
+\endgroup

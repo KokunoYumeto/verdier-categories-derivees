@@ -1,0 +1,81 @@
+\VerdierPhysicalPageAnchor{0046}%
+\VerdierSemanticAnchor{ch1-1-4-3-canonical}
+Cette opération est appelée l'\emph{opération canonique}. On se propose
+d'étudier les $H$-foncteurs :
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq3}
+\begin{equation}
+  (F,m)\colon(\mathcal C,H,T_f,c_f)
+  \longrightarrow(\mathcal C',H,T'_f,c'_f)
+  \tag{1.4.3.3}
+\end{equation}
+qui induisent l'opération canonique du groupe $\mathbb Z/2\mathbb Z$
+sur le foncteur $F$.
+
+\VerdierSemanticAnchor{ch1-1-4-3-extension}
+Soit $\dot\alpha\in H^2(G,\mathbb Z/2\mathbb Z)$ l'élément décrivant
+l'extension :
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq4}
+\begin{equation}
+  1\longrightarrow\mathbb Z/2\mathbb Z
+  \xrightarrow{n}H\xrightarrow{f}G\longrightarrow e.
+  \tag{1.4.3.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-3-cocycle}
+Soit $\alpha_s\in Z^2(G,\mathbb Z/2\mathbb Z)$ un cocycle normalisé
+non homogène dans la classe $\dot\alpha$ défini par une section
+normalisée $s$ de $f$. On a :
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq5}
+\begin{equation}
+  \begin{aligned}
+    \alpha_s(\sigma_1,\sigma_2)
+      &=s(\sigma_2)s(\sigma_1\sigma_2)^{-1}s(\sigma_1),
+      & \sigma_1,\sigma_2&\in G,\\
+    s(e)&=\text{unité de }H,\\
+    \alpha_s(\sigma_1,e)&=\alpha_s(e,\sigma_1)=1,\\
+    \delta\alpha_s(\sigma_1,\sigma_2,\sigma_3)
+      &=\alpha_s(\sigma_2,\sigma_3)
+        \alpha_s(\sigma_1\sigma_2,\sigma_3)^{-1}\\
+      &\quad{}\alpha_s(\sigma_1,\sigma_2\sigma_3)
+        \alpha_s(\sigma_1,\sigma_2)^{-1}=1,
+      & \sigma_1,\sigma_2,\sigma_3&\in G.
+  \end{aligned}
+  \tag{1.4.3.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-3-bijection}
+La section $s\colon G\to H$ définit un isomorphisme d'ensembles :
+\[
+  H\xrightarrow{\sim}\mathbb Z/2\mathbb Z\times G,
+\]
+et en transportant la loi de groupe de $H$ sur
+$\mathbb Z/2\mathbb Z\times G$ par cet isomorphisme, on obtient la loi
+de groupe :
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq6}
+\begin{equation}
+  (\varepsilon_1,\sigma_1)(\varepsilon_2,\sigma_2)
+  =\bigl(\varepsilon_1\varepsilon_2
+    \alpha_s(\sigma_1,\sigma_2),\sigma_1\sigma_2\bigr).
+  \tag{1.4.3.6}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-3-identification}
+Identifions alors le groupe $H$ et le groupe décrit par (1.4.3.6). On
+a, pour tout $(\varepsilon_1,\sigma_1),(\varepsilon_2,\sigma_2)\in H$ :
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq7}
+\begin{equation}
+  \begin{aligned}
+    T_f(\varepsilon_1,\sigma_1)&=T(\sigma_1),\\
+    T'_f(\varepsilon_1,\sigma_1)&=T'(\sigma_1),\\
+    c_f\bigl((\varepsilon_1,\sigma_1),(\varepsilon_2,\sigma_2)\bigr)
+      &=c(\sigma_1,\sigma_2),\\
+    c'_f\bigl((\varepsilon_1,\sigma_1),(\varepsilon_2,\sigma_2)\bigr)
+      &=c'(\sigma_1,\sigma_2)
+  \end{aligned}
+  \tag{1.4.3.7}
+\end{equation}

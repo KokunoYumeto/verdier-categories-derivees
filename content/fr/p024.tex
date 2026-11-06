@@ -1,0 +1,90 @@
+\VerdierPhysicalPageAnchor{0024}%
+déduit pour les objets de cohomologie. Le mécanisme des suites spectrales cache
+le plus souvent la simplicité des phénomènes. L'exemple élémentaire des
+relations de Künneth est à cet égard significatif.
+
+\VerdierSemanticAnchor{intro-5}
+\noindent\textbf{5.}\quad
+Soient $X$ et $Y$ deux espaces compacts, $A$ un anneau à élément unité
+commutatif (pour simplifier), $F$ et $G$ deux faisceaux de $A$-modules sur $X$
+et $Y$ respectivement. Lorsque $A$ est un corps, on sait que le produit
+cartésien [23] définit un isomorphisme d'espaces vectoriels gradués :
+
+\VerdierSemanticAnchor{intro-5-kunneth-field}
+\begin{equation}
+\mathrm H^*(X,F)\otimes_A\mathrm H^*(Y,G)
+\xrightarrow{\sim}
+\mathrm H^*(X\times Y,F\otimes_A G).
+\tag{$\text{Kü}_{\mathrm{coh}}^{1}$}
+\end{equation}
+
+Lorsque $A=\mathbb Z$ et que le faisceau $F$ ou le faisceau $G$ est sans
+torsion, on a des suites exactes scindables :
+
+\VerdierSemanticAnchor{intro-5-kunneth-torsion-free}
+\begin{equation}
+\begin{aligned}
+0 &\longrightarrow
+\bigoplus_{p+q=n}\mathrm H^p(X,F)\otimes_A\mathrm H^q(Y,G)
+\longrightarrow \mathrm H^n(X\times Y,F\otimes_A G) \longrightarrow \\
+&\longrightarrow
+\bigoplus_{p+q=n+1}
+\operatorname{Tor}^{\mathbb Z}\bigl(\mathrm H^p(X,F),\mathrm H^q(Y,G)\bigr)
+\longrightarrow 0.
+\end{aligned}
+\tag{$\text{Kü}_{\mathrm{coh}}^{2}$}
+\end{equation}
+
+Lorsque $A=\mathbb Z$ et qu'on ne fait aucune hypothèse sur $F$ et $G$, on a
+deux familles de suites exactes scindables :
+
+\VerdierSemanticAnchor{intro-5-kunneth-general-split}
+\begin{equation}
+\begin{aligned}
+0 &\longrightarrow
+\bigoplus_{p+q=n}\mathrm H^p(X,F)\otimes_A\mathrm H^q(Y,G)
+\longrightarrow \mathbb H^n \longrightarrow \\
+&\longrightarrow
+\bigoplus_{p+q=n+1}
+\operatorname{Tor}^{\mathbb Z}\bigl(\mathrm H^p(X,F),\mathrm H^q(Y,G)\bigr)
+\longrightarrow 0, \\
+0 &\longrightarrow
+\mathrm H^{n+1}\bigl(X\times Y,\mathcal T\!or^A(F,G)\bigr)
+\longrightarrow \mathbb H^n
+\longrightarrow \mathrm H^n(X\times Y,F\otimes_A G)
+\longrightarrow 0.
+\end{aligned}
+\tag{$\text{Kü}_{\mathrm{coh}}^{3}$}
+\end{equation}
+
+La formulation initiale $\text{(Kü)}_{\mathrm{coh}}^{1}$ se
+complique donc, mais reste accessible au calcul explicite. Quand l'anneau $A$
+est plus compliqué, par exemple lorsque
+$A=\mathbb Z/\ell^r\mathbb Z$, $\ell$ premier, $r>1$, anneau de dimension
+cohomologique globale infinie, on n'a plus, traditionnellement, que deux
+suites spectrales ayant même aboutissement dont les termes initiaux sont :
+
+\VerdierSemanticAnchor{intro-5-kunneth-spectral-sequences}
+\begin{equation}
+\begin{aligned}
+{}'K_2^{p,q}
+  &=\bigoplus_{r+s=q}
+    \operatorname{Tor}_{-p}^{A}
+    \bigl(\mathrm H^r(X,F),\mathrm H^s(Y,G)\bigr), \\
+{}''K_2^{p,q}
+  &=\mathrm H^p\bigl(X\times Y,\mathcal T\!or_{-q}^{A}(F,G)\bigr).
+\end{aligned}
+\tag{$\text{Kü}_{\mathrm{coh}}^{4}$}
+\end{equation}
+
+Cependant ces suites spectrales et l'isomorphie entre leurs aboutissements ne
+sont que la conséquence et la traduction imparfaite de la relation suivante
+dans la catégorie dérivée de la catégorie des $A$-modules :
+
+\VerdierSemanticAnchor{intro-5-kunneth-derived}
+\begin{equation}
+\mathrm{RH}(X,F)\overset{\mathrm L}{\otimes}_A\mathrm{RH}(Y,G)
+\xrightarrow{\sim}
+\mathrm{RH}\bigl(X\times Y,F\overset{\mathrm L}{\otimes}_A G\bigr),
+\tag{$\text{Kü}_{\mathrm{Der}}$}
+\end{equation}

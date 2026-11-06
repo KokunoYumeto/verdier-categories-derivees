@@ -1,0 +1,94 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0192}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-2-5-cont}
+若存在整数 $n$ 使得 $M\text{-}\dim(X)\leq n$，则对象 $X$ 的 $M$-维数
+（记作 $M\text{-}\dim(X)$）是满足下式的最小整数 $n$：
+$M\text{-}\dim(X)\leq n$。若不存在这样的整数，则规定
+$M\text{-}\dim(X)=+\infty$。
+
+\VerdierSemanticAnchor{ch3d-2-2-6}
+\medskip\noindent\textbf{引理 2.2.6.}\quad
+\textit{设
+$0\longrightarrow X\longrightarrow L\xrightarrow{u}Y\longrightarrow0$
+是 $\mathcal A$ 中的正合列，其中 $L\in M$ 且 $X,Y\in M'$。则}
+\[
+M\text{-}\dim(X)=\sup\{M\text{-}\dim(Y)-1,0\}.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-2-7}
+\medskip\noindent\textbf{命题 2.2.7.}\quad
+\textit{设
+$0\longrightarrow X\longrightarrow Y\longrightarrow Z\longrightarrow0$
+是正合列，且 $X,Y,Z\in M'$。}
+
+\noindent\textit{a) 若
+$M\text{-}\dim(Z)\leq
+\inf\{M\text{-}\dim(X),M\text{-}\dim(Y)\}$，则
+$M\text{-}\dim(X)=M\text{-}\dim(Y)$。}
+
+\noindent\textit{b) 若
+$M\text{-}\dim(Y)\leq
+\inf\{M\text{-}\dim(X),M\text{-}\dim(Z)\}$，则}
+\[
+M\text{-}\dim(X)=
+\sup\{M\text{-}\dim(Z)-1,M\text{-}\dim(Y)\}.
+\]
+
+\noindent\textit{c) 若
+$M\text{-}\dim(X)\leq
+\inf\{M\text{-}\dim(Y),M\text{-}\dim(Z)\}$，则
+$M\text{-}\dim(Z)=M\text{-}\dim(Y)$ 或
+$M\text{-}\dim(Z)=M\text{-}\dim(Y)+1$。}
+
+\VerdierSemanticAnchor{ch3d-2-2-7-proof}
+通过构造正合列之间的一个满态射，可用归纳法证明该命题：
+
+\VerdierSemanticAnchor{ch3d-2-2-7-epimorphism-diagram}
+\begin{center}
+\begin{tikzcd}[column sep=2.8em,row sep=2.4em]
+0 \arrow[r] & L_2 \arrow[r] \arrow[d] & L_1 \arrow[r] \arrow[d]
+  & L_0 \arrow[r] \arrow[d] & 0 \\
+0 \arrow[r] & X \arrow[r] & Y \arrow[r] & Z \arrow[r] & 0
+\end{tikzcd}
+\end{center}
+\[
+L_i\in M,\qquad 0\leq i\leq2,
+\]
+然后对核的正合列应用归纳假设；引理 (2.2.6) 提供了对此列的控制。因此只需证明该引理。
+
+\VerdierSemanticAnchor{ch3d-2-2-6-proof}
+首先，若 $M\text{-}\dim(Y)=+\infty$（分别地，$0$），则
+$M\text{-}\dim(X)=+\infty$（分别地，$0$）。因此可以假设
+$M\text{-}\dim(Y)$ 有限且非零；只需证明
+$M\text{-}\dim(X)=M\text{-}\dim(Y)-1$。设
+
+\VerdierSemanticAnchor{ch3d-2-2-6-resolution}
+\[
+0\longrightarrow L_n\longrightarrow L_{n-1}\longrightarrow\cdots
+\longrightarrow L_0\xrightarrow{u}Y\longrightarrow0,
+\qquad n\geq1,
+\]
+是 $Y$ 的一个 $M$-分解。令
+
+\VerdierSemanticAnchor{ch3d-2-2-6-v-complex}
+\[
+\begin{aligned}
+V^\bullet={}&0\longrightarrow0\longrightarrow\cdots\longrightarrow0
+\longrightarrow L_n\longrightarrow L_{n-1}\longrightarrow\cdots\\
+&\longrightarrow L_0\xrightarrow{u}Y\longrightarrow0
+\longrightarrow0\longrightarrow\cdots
+\end{aligned}
+\]
+（$L_i$ 是次数 $-i$ 的分量），并令
+
+\VerdierSemanticAnchor{ch3d-2-2-6-u0}
+\[
+U_0^\bullet=V^\bullet(u,1),
+\qquad
+p_0=p(u,1)\colon U_0^\bullet\longrightarrow V^\bullet.
+\]
+\endgroup

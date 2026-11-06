@@ -1,0 +1,58 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0159}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch3-3-2-5-2}
+fournit, en prenant les images des morphismes horizontaux, le diagramme
+\[
+V\xrightarrow{\alpha}V'\xrightarrow{\gamma}\operatorname{Im}(u'f').
+\tag{3.2.5.2}
+\]
+\VerdierSemanticAnchor{ch3-3-2-5-cokernel-proof}
+Tout d'abord, $\gamma$ est un épimorphisme : en effet, $V'$ et
+$\operatorname{Im}(u'f')$ sont des quotients de $h(X')$. Ensuite,
+$\gamma\alpha=0$ : le morphisme canonique $h(X)\to V$ est un épimorphisme,
+le morphisme canonique $\operatorname{Im}(u'f')\to h(Z')$ est un
+monomorphisme, et $h(u'g'f)$ est l'image par $h$ du composé de deux
+morphismes consécutifs d'un triangle distingué ; il est donc nul (1.2.2).
+Il reste à montrer que (3.2.5.2) est exacte en $V'$. D'après les propriétés
+des suites exactes dans $\mathcal D^\wedge$, il suffit de montrer que, pour
+tout objet $W$ de $\mathcal D$, la suite de groupes commutatifs
+\[
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),V)\longrightarrow
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),V')\longrightarrow
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),\operatorname{Im}(u'f'))
+\]
+est exacte. Soit donc $\sigma\colon h(W)\to V'$. En composant avec le
+morphisme canonique $V'\to h(Y')$, on obtient un morphisme de $h(W)$ dans
+$h(Y')$, c'est-à-dire un morphisme $m\colon W\to Y'$. On a
+$\gamma\sigma=0$ si et seulement si $u'm=0$, puisque
+$\operatorname{Im}(u'f')$ est un sous-objet de $h(Z')$. Par (1.2.1), il
+existe donc $n\colon W\to X$ tel que $g'fn=m$. En composant avec le morphisme
+canonique $h(X)\to V$, on obtient un morphisme $\sigma'\colon h(W)\to V$.
+Comme $V'$ est un sous-objet de $h(Y')$, on a $\alpha\sigma'=\sigma$. Ceci
+achève la preuve de (3.2.5).
+
+\VerdierSemanticAnchor{ch3-3-2-6}
+\medskip\noindent\textbf{3.2.6.}\quad
+Par (3.2.3), $\mathrm A(\mathcal D)$ est équivalente à la sous-catégorie
+pleine des objets admissibles de $\mathcal D^\wedge$. Par (3.2.5), celle-ci
+est une sous-catégorie abélienne. Ainsi $\mathrm A(\mathcal D)$ est abélienne.
+
+\VerdierSemanticAnchor{ch3-3-2-7}
+\medskip\noindent\textbf{Proposition 3.2.7.}\quad
+\textit{Toute suite exacte de $\mathrm A(\mathcal D)$}
+\[
+0\longrightarrow V_1\longrightarrow V_2\longrightarrow V_3
+\]
+\textit{est isomorphe à une suite de $\mathrm A(\mathcal D)$ déterminée par
+un diagramme commutatif de $\mathcal D$ :}
+\VerdierSemanticAnchor{ch3-3-2-7-diagram}
+\[
+\begin{tikzcd}[column sep=3.3em,row sep=2.4em]
+0\arrow[r]&X_1\arrow[r,"u_1"]\arrow[d,"f_1"']&X_2\arrow[r,"u_2"]\arrow[d,"f_2"']&X_3\arrow[d,"f_3"]\\
+0\arrow[r]&Y_1\arrow[r,"\operatorname{id}_{Y_1}"']&Y_2=Y_1\arrow[r]&Y_3
+\end{tikzcd}
+\qquad
+(X_i\xrightarrow{f_i}Y_i)\simeq V_i,\quad1\leq i\leq3.
+\]
+\endgroup

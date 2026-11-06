@@ -1,0 +1,86 @@
+\VerdierPhysicalPageAnchor{0059}%
+\VerdierSemanticAnchor{ch1-1-5-13}
+\noindent\textbf{1.5.13.}\quad
+The $\mathbb Z^n$-categories that we shall use in this work will be
+strict categories. We shall therefore not attempt to address the problem
+indicated in (1.5.12) in the general case. However, the example presented
+in (1.5.12) suggests that determining the structures of a
+$\mathbb Z$-category on a category $\mathcal C$ is particularly simple.
+This is indeed the case. Let $E\text{-}\operatorname{Cat}$ denote the
+$U$-category whose objects are the categories belonging to $U$ equipped
+with an equivalence:
+
+\VerdierSemanticAnchor{ch1-1-5-13-eq1}
+\begin{equation}
+  T\colon\mathcal C\longrightarrow\mathcal C
+  \tag{1.5.13.1}
+\end{equation}
+and whose morphisms are the functors
+$F\colon\mathcal C\to\mathcal C'$ equipped with an isomorphism:
+
+\VerdierSemanticAnchor{ch1-1-5-13-eq2}
+\begin{equation}
+  m\colon FT\longrightarrow T'F.
+  \tag{1.5.13.2}
+\end{equation}
+
+There is then evidently a functor from the $U$-category
+$\mathbb Z\text{-}\operatorname{Cat}$ to the $U$-category
+$E\text{-}\operatorname{Cat}$:
+
+\VerdierSemanticAnchor{ch1-1-5-13-eq3}
+\begin{equation}
+  R\colon \mathbb Z\text{-}\operatorname{Cat}
+  \longrightarrow E\text{-}\operatorname{Cat}.
+  \tag{1.5.13.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-5-13-action}
+The functor $R$ assigns to a $\mathbb Z$-category
+$(\mathcal C,\mathbb Z,T,c)$ the category $\mathcal C$ equipped with
+the equivalence $T(1)\colon\mathcal C\to\mathcal C$, and to every
+$\mathbb Z$-functor
+\[
+  (F,m)\colon(\mathcal C,\mathbb Z,T,c)
+  \longrightarrow(\mathcal C',\mathbb Z,T',c'),
+\]
+the functor $F$ equipped with the isomorphism
+$m(1)\colon FT(1)\to T'(1)F$.
+
+\VerdierSemanticAnchor{ch1-1-5-14}
+\VerdierSemanticAnchor{ch1-1-5-14-proposition}
+\noindent\textbf{Proposition 1.5.14.}\quad
+\emph{The functor $R$ is an equivalence of categories.}
+
+\VerdierSemanticAnchor{ch1-1-5-14-proof}
+We shall confine ourselves to giving indications for the proof.
+Proposition (1.5.2) and Remark (1.5.8) show that $R$ is fully faithful.
+It therefore suffices to show that $R$ is essentially surjective. Thus,
+let $(\mathcal C,T\colon\mathcal C\to\mathcal C)$ be a category
+equipped with an equivalence. Let
+$T^{-1}\colon\mathcal C\to\mathcal C$ be a quasi-inverse functor to
+$T$, and let
+
+\VerdierSemanticAnchor{ch1-1-5-14-eq1}
+\begin{equation}
+  \begin{aligned}
+    u&\colon\operatorname{id}_{\mathcal C}\longrightarrow TT^{-1},\\
+    v&\colon\operatorname{id}_{\mathcal C}\longrightarrow T^{-1}T
+  \end{aligned}
+  \tag{1.5.14.1}
+\end{equation}
+be the adjunction isomorphisms.
+
+For every integer $n>0$, the functors $T^n$ and $(T^{-1})^n$ are
+adjoint to one another, whence the adjunction isomorphisms
+
+\VerdierSemanticAnchor{ch1-1-5-14-eq2}
+\begin{equation}
+  \begin{aligned}
+    u^{(n)}&\colon\operatorname{id}_{\mathcal C}
+      \longrightarrow T^n(T^{-1})^n,\\
+    v^{(n)}&\colon\operatorname{id}_{\mathcal C}
+      \longrightarrow (T^{-1})^nT^n.
+  \end{aligned}
+  \tag{1.5.14.2}
+\end{equation}

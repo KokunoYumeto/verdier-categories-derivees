@@ -1,0 +1,74 @@
+\VerdierPhysicalPageAnchor{0045}%
+\VerdierSemanticAnchor{ch1-1-4-2}
+\noindent\textbf{1.4.2.}\quad
+Let $e\to K\xrightarrow{n}H\xrightarrow{f}G\to e$ be an exact
+sequence of groups, with $K$ identified by $n$ with a normal subgroup
+of $H$, and let $(\mathcal C,G,T,c)$ and
+$(\mathcal C',G,T',c')$ be two $G$-categories. Let
+$(\mathcal C,H,T_f,c_f)$ and $(\mathcal C',H,T'_f,c'_f)$ be the
+$H$-categories obtained by change of groups along
+$H\xrightarrow{f}G$. Finally, let
+
+\VerdierSemanticAnchor{ch1-1-4-2-eq1}
+\begin{equation}
+  (F,m)\colon(\mathcal C,H,T_f,c_f)
+  \longrightarrow(\mathcal C',H,T'_f,c'_f)
+  \tag{1.4.2.1}
+\end{equation}
+be an $H$-functor. The diagrams (1.2.3.2) then give, for every pair of
+elements $k,k'\in K$, a commutative diagram:
+
+\VerdierSemanticAnchor{ch1-1-4-2-eq2}
+\begin{center}
+  $\begin{tikzcd}[ampersand replacement=\&,column sep=5em,row sep=3.5em]
+    F \arrow[rr,"{m(kk')}"] \arrow[dr,"{m(k)}"']
+      \& \& F \\
+      \& F \arrow[ur,"{m(k')}"'] \&
+  \end{tikzcd}$,
+  \hfill\textup{(1.4.2.2)}
+\end{center}
+
+\VerdierSemanticAnchor{ch1-1-4-2-representation}
+and hence a representation of $K^\circ$ in the group of automorphisms
+of $F$. When the functor $(F,m)$ comes from a $G$-functor, this
+representation is trivial. Conversely, when this representation is
+trivial, it follows immediately from the diagrams (1.2.3.2) that, for
+every $h\in H$ and every $k\in K$, one has
+
+\VerdierSemanticAnchor{ch1-1-4-2-eq3}
+\begin{equation}
+  m(hk)=m(kh)=m(h)
+  \tag{1.4.2.3}
+\end{equation}
+and therefore the $H$-functor $(F,m)$ comes from a $G$-functor by the
+change of group $f^*$. In the remainder of this paragraph we propose to
+study, in a very special case, the $H$-functors $(F,m)$ that induce a
+preassigned representation of $K^\circ$ in the group of automorphisms
+of $F$.
+
+\VerdierSemanticAnchor{ch1-1-4-3}
+\noindent\textbf{1.4.3.}\quad
+We use the notation of (1.4.2). Suppose that the category $\mathcal C'$
+is additive and that $K=\mathbb Z/2\mathbb Z$. The group of signs
+$\{-1,+1\}\simeq\mathbb Z/2\mathbb Z$ then acts on the identity
+functor of the category $\mathcal C'$ by associating to every object
+$X$ of $\mathcal C'$ the morphism
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq1}
+\begin{equation}
+  \varepsilon(X)\colon
+  X\xrightarrow{\,\varepsilon\cdot\operatorname{id}_X\,}X,
+  \qquad \varepsilon\in\{-1,+1\}.
+  \tag{1.4.3.1}
+\end{equation}
+Consequently, the group of signs acts on every functor
+$F\colon\mathcal C\to\mathcal C'$ by associating to every object $Y$
+of $\mathcal C$ the morphism
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq2}
+\begin{equation}
+  \varepsilon(Y)\colon
+  F(Y)\xrightarrow{\,\varepsilon\cdot\operatorname{id}_{F(Y)}\,}F(Y),
+  \qquad \varepsilon\in\{-1,+1\}.
+  \tag{1.4.3.2}
+\end{equation}

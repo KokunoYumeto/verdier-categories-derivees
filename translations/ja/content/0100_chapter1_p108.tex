@@ -1,0 +1,73 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0108}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch1-app-signs}
+\section*{付録：符号の選択に関する注記}
+\addcontentsline{toc}{section}{付録：符号の選択に関する注記}
+
+\VerdierSemanticAnchor{ch1-app-signs-cone}
+写像錐関手は、その随伴性 (3.1.3) により一意な同型を除いて定まる。
+$\operatorname{tr}_1(C)$ の射に $\operatorname{comp}(C)$ の三角を容易に対応させる
+ため、シフト関手として「射 $X\longrightarrow 0$ の写像錐」を選んだ
+（(3.1.7) および (3.2.2.7)）。すなわち、次数をずらし、微分の符号を変える。
+
+\VerdierSemanticAnchor{ch1-app-signs-strict}
+$F\colon\prod_{i\in[n]}C_i\longrightarrow C$ を多加法的関手とする。圏
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$ は自然に $\mathbb Z[n]$-圏の構造をもつ。
+関手
+\[
+  F^{[n]}\colon\prod_{i\in[n]}\operatorname{comp}(C_i)
+  \longrightarrow\operatorname{comp}^{n}(C)
+\]
+を厳密な $\mathbb Z[n]$-関手にしようとすると、われわれが採用したシフトの
+規約、すなわち一つの方向に次数をずらし、対応する微分の符号を変えるという
+選択に導かれる。
+
+\VerdierSemanticAnchor{ch1-app-signs-simple-complex}
+付随する単純複体関手の選択には [1] の規約を採用した（ただし、われわれの
+多重複体では微分どうしは可換である）。これにより関手
+$K_{\Pi}F\colon\prod_i K(C_i)\longrightarrow K(C)$ を定義できる。このとき
+$K_{\Pi}F(X_1,\ldots,X_i[1],\ldots,X_n)$ は
+$K_{\Pi}F(X_1,\ldots,X_i,\ldots,X_n)[1]$ と異なる。それでも関手
+$K_{\Pi}F$ が完全三角を完全三角に送ると述べるために、同型
+
+\VerdierSemanticAnchor{ch1-app-signs-shift-isomorphism}
+\[
+  p_i\colon K_{\Pi}F(X_1,\ldots,X_i[1],\ldots,X_n)
+  \xrightarrow{\ \sim\ }
+  K_{\Pi}F(X_1,\ldots,X_i,\ldots,X_n)[1]
+\]
+を定義することになる（(3.4.3) の証明）。
+
+\VerdierSemanticAnchor{ch1-app-signs-anticommutativity}
+すると $i\ne j$ のとき、次の反可換図式が得られる。
+
+\VerdierSemanticAnchor{ch1-app-signs-diagram}
+\begin{center}
+  \resizebox{\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=3.2em,row sep=4.3em]
+      K_{\Pi}F(X_1,\ldots,X_i[1],\ldots,X_j[1],\ldots)
+        \arrow[r,"p_j"]
+        \arrow[d,"p_i"']
+        \& K_{\Pi}F(X_1,\ldots,X_i[1],\ldots,X_j,\ldots)[1]
+          \arrow[d,"p_i"] \\
+      K_{\Pi}F(X_1,\ldots,X_i,\ldots,X_j[1],\ldots)[1]
+        \arrow[r,"p_j"]
+        \& K_{\Pi}F(X_1,\ldots,X_i,\ldots,X_j,\ldots)[2].
+    \end{tikzcd}$%
+  }
+\end{center}
+
+\VerdierSemanticAnchor{ch1-app-signs-koszul-choice}
+続いて (1.5.2) では、これらの同型を同型 $p(\sigma)$ へ整合的に拡張する
+方法を示した。この同型は各 $\sigma\in\mathbb Z[n]$ に対して定義される。
+ここには一つの
+任意な選択が入る。それは、それ自身はよく定まったコホモロジー類、すなわち
+Koszul 類 (1.6.3) の中で余サイクルを選ぶことである。一般に受け入れられている
+規則（例えば [1]）に合わせるため、すべての場合に Koszul 余サイクル (1.6.6)
+を選んだ。
+\endgroup

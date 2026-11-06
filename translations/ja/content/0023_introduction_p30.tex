@@ -1,0 +1,57 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0030}
+\VerdierSemanticAnchor{intro-8-local-invariants}
+ここで $\chi_P(\Phi)$ は\emph{局所不変量}であり、点 $P$ の近傍における
+層 $F$ と自己準同型 $\Phi$ が分かれば決定できる。$X$ が位相多様体で、
+層 $F$ が階数 $1$ の定数自由層ならば、通常の Lefschetz 公式が得られる。
+
+\VerdierSemanticAnchor{intro-8-coherent-case}
+連接層のコホモロジーの枠組みにも類似の公式がある。$X$ を体 $k$ 上有限型
+かつ固有なスキーム、$F$ を有限 Tor 次元の連接層、またはより一般に完全
+複体とする。このとき現れる局所不変量は、いくつかの特殊な場合にしか
+研究されていない。体 $k$ が代数閉で、スキーム $X$ が $k$ 上滑らか、
+層 $F$ が局所自由、固定点 $P$ が横断的であるとき、
+\VerdierSemanticAnchor{intro-8-normal-crossing-formula}
+\[
+\chi_P(\Phi)
+=\frac{\operatorname{Tr}(\Phi_{F,P})}
+       {\det\bigl(1-d\Phi_{X,P}\bigr)}
+\]
+を得る。
+
+\VerdierSemanticAnchor{intro-8-normal-crossing-data}
+ここで $\Phi_{F,P}$ は $P$ における層 $F$ の還元ファイバー
+（有限次元 $k$-ベクトル空間）上に $\Phi$ が誘導する自己準同型を表し、
+$d\Phi_{X,P}$ は $P$ における射 $\Phi_X$ の微分を表す。
+
+\VerdierSemanticAnchor{intro-8-residue-extension}
+固定点 $P$ が横断的であること、すなわち自己準同型
+$1-d\Phi_{X,P}$ が可逆であることを仮定しなくても、局所不変量は [4] の
+意味での留数計算によってなお決定できる。
+
+\VerdierSemanticAnchor{intro-8-relative-lefschetz}
+代数幾何の文脈における Lefschetz 定理は相対的な状況にも一般化できる。
+\VerdierSemanticAnchor{intro-8-relative-setup}
+$X\xrightarrow{f}Y$ を局所 Noether スキーム $Y$ 上の固有かつ滑らかな
+$Y$-スキーム、$F$ を $X$ 上の有限 Tor 次元の連接層とする。このとき
+$Y$ 上の層の複体 $\mathrm{R}f_*(F)$ は\emph{完全複体}である。
+$\Phi\colon(X,F)\longrightarrow(X,F)$ を、層 $F$ を備えたスキーム $X$
+の $Y$-自己準同型とし、$\Phi$ の固定点スキーム $P$ が $Y$ 上有限である
+と仮定する。$\Phi$ は自己準同型
+\VerdierSemanticAnchor{intro-8-relative-rf-phi}
+\[
+\mathrm{R}f_*(\Phi)\colon
+\mathrm{R}f_*(F)\longrightarrow\mathrm{R}f_*(F)
+\]
+を誘導する。
+
+\VerdierSemanticAnchor{intro-8-relative-lefschetz-number}
+複体 $\mathrm{R}f_*(F)$ は\emph{完全}なので、ここでは $Y$ の構造層の
+切断である Lefschetz 数 $\chi(\mathrm{R}f_*(\Phi))$ を定義できる。
+このとき
+\VerdierSemanticAnchor{intro-8-relative-formula}
+\[
+\chi\bigl(\mathrm{R}f_*(\Phi)\bigr)=\chi_P(\Phi)
+\]
+が成り立つ。ここで $\chi_P(\Phi)$ は局所不変量であり、これも留数計算
+によって決定できる。

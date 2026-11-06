@@ -1,0 +1,82 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0149}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+\sloppy
+
+\VerdierSemanticAnchor{ch2-2-3-5-injectivity-p149-continuation}
+\noindent かつ $uf=0$ となる。a), i) を用いると、さらに可換図式
+\VerdierSemanticAnchor{ch2-2-3-5-injectivity-refinement-diagram}
+\begin{center}
+ \begin{tikzcd}[column sep=3.7em,row sep=2.3em]
+ && {} \\
+ & {} \arrow[ur,"v"] && {t'\in S_{\mathcal A}(\mathcal A\cap\mathcal B)} \\
+ X \arrow[ur,"f"] && Y \arrow[ul,"s"] \arrow[uu,"{t'}"'] &
+ \end{tikzcd}
+\end{center}
+\VerdierSemanticAnchor{ch2-2-3-5-injectivity-conclusion}
+\noindent が存在して $vf=0$ となる。したがって
+$m=Q_1(t')^{-1}Q_1(vf)=0$ である。
+\VerdierSemanticAnchor{ch2-2-3-5-surjectivity-map}
+次に準同型
+\[
+ \operatorname{Hom}_{\mathcal A/(\mathcal A\cap\mathcal B)}(X,Y)
+ \longrightarrow\operatorname{Hom}_{\mathcal D/\mathcal B}(X,Y)
+\]
+が全射であることを示す。
+\VerdierSemanticAnchor{ch2-2-3-5-surjectivity-roof}
+任意の元 $p\in\operatorname{Hom}_{\mathcal D/\mathcal B}(X,Y)$ は
+\[
+ p=Q_2(t)^{-1}Q_2(g),\qquad t\in S_{\mathcal D}(\mathcal B)
+  .
+\]
+と書ける。
+\VerdierSemanticAnchor{ch2-2-3-5-surjectivity-refinement}
+a), i) により、この元は常に
+\[
+ p=Q_2(s)^{-1}Q_2(g'),\qquad
+ s\in S_{\mathcal A}(\mathcal A\cap\mathcal B),
+\]
+と書ける。
+\VerdierSemanticAnchor{ch2-2-3-5-surjectivity-conclusion}
+したがって $\operatorname{Hom}_{\mathcal A/(\mathcal A\cap\mathcal B)}(X,Y)$
+の元から来る。
+\VerdierSemanticAnchor{ch2-2-3-5-c-proof-i-implies-ii}
+残る c) の同値性を示す。まず i) $\Rightarrow$ ii) を示す。
+\VerdierSemanticAnchor{ch2-2-3-5-iterated-quotient}
+(2.3.1) により $\mathcal D/\mathcal B$ は標準的に
+$(\mathcal D/(\mathcal A\cap\mathcal B))
+/(\mathcal B/(\mathcal A\cap\mathcal B))$ と同型であり、標準関手
+\VerdierSemanticAnchor{ch2-2-3-5-q-functor}
+\[
+ Q\colon\mathcal D/(\mathcal A\cap\mathcal B)\longrightarrow\mathcal D/\mathcal B
+\]
+は商関手である。
+\VerdierSemanticAnchor{ch2-2-3-5-q-free-reduction}
+よって命題 (2.3.3, a)) により、i) $\Rightarrow$ ii) を示すには、
+$\mathcal A$ の任意の対象 $X$ と
+$\mathcal B$ の任意の対象 $B$ に対して
+$\operatorname{Hom}_{\mathcal D/(\mathcal A\cap\mathcal B)}(B,X)=0$ を
+示せばよい。
+\VerdierSemanticAnchor{ch2-2-3-5-m-representation}
+$\operatorname{Hom}_{\mathcal D/(\mathcal A\cap\mathcal B)}(B,X)$ の任意の元
+$m$ は $Q_3(f)Q_3(s)^{-1}$ と書ける。ここで
+\VerdierSemanticAnchor{ch2-2-3-5-q3-functor}
+\[
+ Q_3\colon\mathcal D\longrightarrow\mathcal D/(\mathcal A\cap\mathcal B)
+\]
+は標準関手であり、$s$ は $S_{\mathcal D}(\mathcal A\cap\mathcal B)$ に属し、後者は
+$\mathcal A\cap\mathcal B$ に対応する $\mathcal D$ の乗法的系である
+(2.2.2)。よって $\mathcal D$ に次の図式がある：
+\VerdierSemanticAnchor{ch2-2-3-5-w-diagram}
+\begin{center}
+ \begin{tikzcd}[column sep=4em,row sep=2.4em]
+ & W \arrow[dl,"s"'] \arrow[dr,"f"] & \\
+ B && X
+ \end{tikzcd}\quad ,
+\end{center}
+\endgroup

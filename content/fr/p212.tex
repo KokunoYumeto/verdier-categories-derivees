@@ -1,0 +1,100 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0212}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-2-2-c}
+\noindent\textit{c) Lorsque $n=1$, $\delta^1$ est le morphisme défini par
+le $\delta$-foncteur canonique
+$\operatorname{comp}(\mathcal A)\longrightarrow D(\mathcal A)$ (1.3.2).}
+
+\VerdierSemanticAnchor{ch3d-3-2-2-proof}
+Cette proposition résulte de la proposition (3.1.3) formule (7). Nous
+laissons l'exercice au lecteur qui pourra consulter [3].
+
+\VerdierSemanticAnchor{ch3d-3-2-3}
+\medskip\noindent\textbf{3.2.3.}\quad
+Soit
+$S^n(X,Y)=0\longrightarrow Y\xrightarrow{u_n}Z_{n-1}
+\xrightarrow{u_{n-1}}Z_{n-2}\longrightarrow\cdots\longrightarrow Z_0
+\xrightarrow{u_0}X\longrightarrow0$
+un élément de $E_{\mathcal A}^{n}(X,Y)$. Pour tout entier $p$,
+$0\leq p\leq n$, donnons nous un élément $\epsilon_p$ de $\{-1,+1\}$.
+Désignons par $S_{\epsilon}^{n}(X,Y)$ la suite exacte :
+
+\VerdierSemanticAnchor{ch3d-3-2-3-1}
+\begin{equation}
+\resizebox{0.94\textwidth}{!}{$\displaystyle
+0\longrightarrow Y\xrightarrow{\epsilon_nu_n}Z_{n-1}
+\xrightarrow{\epsilon_{n-1}u_{n-1}}Z_{n-2}\longrightarrow\cdots
+\longrightarrow Z_0\xrightarrow{\epsilon_0u_0}X\longrightarrow0,
+$}
+\tag{3.2.3.1}
+\end{equation}
+qui est élément de $E_{\mathcal A}^{n}(X,Y)$. On a l'égalité :
+
+\VerdierSemanticAnchor{ch3d-3-2-3-2}
+\begin{equation}
+\delta^n(S_{\epsilon}^{n}(X,Y))=
+\left(\prod_{i=0}^{n}\epsilon_i\right)\delta^n(S^n(X,Y)).
+\tag{3.2.3.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-2-3-proof}
+La formule (3.2.3.2) se démontre immédiatement en utilisant la relation
+d'équivalence (3.2.2), b) et la définition de $\delta^n$ (3.2.1.1).
+
+\VerdierSemanticAnchor{ch3d-3-2-4}
+\medskip\noindent\textbf{3.2.4.}\quad
+Soient maintenant deux suites exactes :
+\[
+S^n(X,X')=0\longrightarrow X'\xrightarrow{u_n}Z_{n-1}
+\xrightarrow{u_{n-1}}\cdots\xrightarrow{u_1}Z_0
+\xrightarrow{u_0}X\longrightarrow0
+\]
+\[
+S^m(X',X'')=0\longrightarrow X''\xrightarrow{u'_m}Z'_{m-1}
+\xrightarrow{u'_{m-1}}\cdots\xrightarrow{u'_1}Z'_0
+\xrightarrow{u'_0}X'\longrightarrow0.
+\]
+Désignons par $S^m(X',X'')*S^n(X,X')$ la suite exacte :
+
+\VerdierSemanticAnchor{ch3d-3-2-4-1}
+\begin{equation}
+\begin{aligned}
+S^m(X',X'')*S^n(X,X')={}&
+0\longrightarrow X''\xrightarrow{u'_m}Z'_{m-1}
+\xrightarrow{u'_{m-1}}\cdots\longrightarrow Z'_0
+\xrightarrow{u_nu'_0}Z_{n-1}\\
+&\xrightarrow{u_{n-1}}\cdots\longrightarrow Z_0
+\xrightarrow{u_0}X\longrightarrow0.
+\end{aligned}
+\tag{3.2.4.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-2-5}
+\medskip\noindent\textbf{Proposition 3.2.5.}\quad
+\textit{On a l'égalité :}
+\[
+\delta^{m+n}\bigl(S^m(X',X'')*S^n(X,X')\bigr)=
+(-1)^{mn}\bigl(\delta^m(S^m(X',X''))\bigr)[n]
+\delta^n(S^n(X,X')).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-2-5-proof-start}
+Déterminons le morphisme
+$\bigl(\delta^m(S^m(X',X''))\bigr)[n]\delta^n(S^n(X,X'))$.
+Avec les notations de (3.2.1), on a deux diagrammes :
+
+\VerdierSemanticAnchor{ch3d-3-2-5-first-diagram}
+\[
+\begin{tikzcd}[column sep=4.5em]
+X' & {Z'}^\bullet
+  \arrow[l,"{u(S^m(X',X''))}"']
+  \arrow[r,"{v(S^m(X',X''))}"]
+& X''[m]
+\end{tikzcd}
+\quad,
+\]
+\endgroup

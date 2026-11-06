@@ -1,0 +1,86 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0199}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-2-exact-sequences}
+以及下列正合列：
+\[
+0\longrightarrow H^{-q}(X_{q-1})\longrightarrow
+\frac{Z^{-q}}{\operatorname{Im}(Y^{-q-1}\longrightarrow Z^{-q})}
+\longrightarrow
+\frac{Z^{-q}}{\operatorname{Ker}(Z^{-q}\longrightarrow L^{-q+1})}
+\longrightarrow0,
+\]
+\[
+0\longrightarrow
+\frac{Z^{-q}}{\operatorname{Ker}(Z^{-q}\longrightarrow L^{-q+1})}
+\longrightarrow L^{-q+1}\longrightarrow
+\frac{L^{-q+1}}{\operatorname{Im}(Z^{-q}\longrightarrow L^{-q+1})}
+\longrightarrow0,
+\]
+\[
+0\longrightarrow H^{-q+1}(X_{q-1})\longrightarrow
+\frac{L^{-q+1}}{\operatorname{Im}(Z^{-q}\longrightarrow L^{-q+1})}
+\longrightarrow
+\frac{L^{-q+1}}{\operatorname{Ker}(L^{-q+1}\longrightarrow L^{-q+2})}
+\longrightarrow0.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-2-mq-object}
+由于复形 $X_{q-1}$ 拟同构于 $Y$，对象 $H^i(X_{q-1})$ 属于 $M$。
+由上述正合列、归纳假设 2) 以及 $M^\wedge$ 的正合性质（2.2.4），可知对象
+\[
+Z^{-q}/\operatorname{Im}(Y^{-q-1}\longrightarrow Z^{-q})
+\]
+属于 $M^\wedge$。因此存在态射
+
+\VerdierSemanticAnchor{ch3d-2-3-2-v}
+\[
+v\colon L^{-q}\longrightarrow Z^{-q}
+\]
+使得 $L^{-q}$ 属于 $M$，且复合态射
+
+\VerdierSemanticAnchor{ch3d-2-3-2-composite}
+\[
+L^{-q}\xrightarrow{v}Z^{-q}\longrightarrow
+Z^{-q}/\operatorname{Im}(Y^{-q-1}\longrightarrow Z^{-q})
+\]
+是满态射。令
+
+\VerdierSemanticAnchor{ch3d-2-3-2-xq}
+\[
+X_q=X_{q-1}(v,-q),
+\qquad
+\dot u_q=p(v,-q)\quad(2.1.1).
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-2-verify}
+由 (2.1.2)，$u_q$ 是拟同构，故性质 3) 成立。还需验证性质 2)，即验证
+$L^{-q}\longrightarrow L^{-q+1}$ 的核与像均属于 $M^\wedge$；这立即由下列正合列推出：
+
+\VerdierSemanticAnchor{ch3d-2-3-2-exact-sequences-2}
+\[
+0\longrightarrow\operatorname{Im}(L^{-q}\longrightarrow L^{-q+1})
+\longrightarrow\operatorname{Ker}(L^{-q+1}\longrightarrow L^{-q+2})
+\longrightarrow H^{-q+1}(X_q)\longrightarrow0,
+\]
+\[
+0\longrightarrow\operatorname{Ker}(L^{-q}\longrightarrow L^{-q+1})
+\longrightarrow L^{-q}\longrightarrow
+\operatorname{Im}(L^{-q}\longrightarrow L^{-q+1})\longrightarrow0.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-2-conclusion}
+这就完成了命题的证明。
+
+\VerdierSemanticAnchor{ch3d-2-3-3}
+\medskip\noindent\textbf{命题 2.3.3.}
+\textit{设 $M\subset M'$ 是 $\mathcal A$ 的两个对象集合。假设 $M$ 满足性质
+$(E_4)$ 与 $(E_5)$，$M'$ 满足性质 $(E_1)$ 与 $(E_4)$，并且 $M'$ 的每个对象
+都是 $M$ 中某个对象的商对象。设
+$Y\in\operatorname{Ob}\operatorname{comp}(\mathcal A)$ 是满足下列条件的复形：}
+
+\noindent\textit{1) $Y$ 的分量 $Y^i$，$i\in\mathbf Z$，均属于 $M'$。}
+\endgroup

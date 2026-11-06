@@ -1,0 +1,52 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0156}%
+\begingroup\small
+\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+
+\VerdierSemanticAnchor{ch3-3-2-3-hom-map}
+设 $(X,Y,f)$ 与 $(X',Y',f')$ 为 $\mathrm A(\mathcal D)$ 的两个对象。为证明
+命题 (3.2.3)，只需证明由函子 $\operatorname{Im}$ 定义的同态
+\[
+\operatorname{Hom}_{\mathrm A(\mathcal D)}((X,Y,f),(X',Y',f'))
+\longrightarrow
+\operatorname{Hom}_{\mathcal D^\wedge}(\operatorname{Im}(f),\operatorname{Im}(f'))
+\tag{3.2.3.2}
+\]
+是同构。
+
+\VerdierSemanticAnchor{ch3-3-2-3-injectivity}
+先证单射性。若 $(g;g')\colon(X,Y,f)\to(X',Y',f')$ 是
+$\mathcal{F}\ell_1(\mathcal D)$ 中的态射，并满足
+$\operatorname{Im}((g;g'))=0$，则
+\[
+\operatorname{Im}((f';\operatorname{id}_{Y'}))\circ
+\operatorname{Im}((g;g'))\circ
+\operatorname{Im}((\operatorname{id}_X;f))=h(g'f)=0.
+\]
+因 $h$ 充分忠实，$g'f=0$，故 $(g;g')$ 可忽略。满射性归结为下述引理。
+
+\VerdierSemanticAnchor{ch3-3-2-4}
+\medskip\noindent\textbf{引理 3.2.4.}\quad
+\textit{设 $\alpha\colon\operatorname{Im}(f)\to\operatorname{Im}(f')$ 为
+$\mathcal D^\wedge$ 中的态射。存在 $\mathcal D$ 的两个态射 $g\colon X\to X'$ 与
+$g'\colon Y\to Y'$，使下列图式交换：}
+\VerdierSemanticAnchor{ch3-3-2-4-1}
+\[
+\begin{tikzcd}[column sep=6em,row sep=2.3em]
+h(X)\arrow[r,"\operatorname{Im}((\operatorname{id}_X;f))"]\arrow[d,"h(g)"']&
+\operatorname{Im}(f)\arrow[d,"\alpha"]\\
+h(X')\arrow[r,"\operatorname{Im}((\operatorname{id}_{X'};f'))"']&\operatorname{Im}(f')
+\end{tikzcd}\tag{3.2.4.1}
+\]
+\VerdierSemanticAnchor{ch3-3-2-4-2}
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.3em]
+h(X)\arrow[r,"h(f)"]\arrow[d,"h(g)"']&h(Y)\arrow[d,"h(g')"]\\
+h(X')\arrow[r,"h(f')"']&h(Y')
+\end{tikzcd}\tag{3.2.4.2}
+\]
+\VerdierSemanticAnchor{ch3-3-2-4-consequence}
+事实上，由 (3.2.3.1) 以及
+$\operatorname{Im}((\operatorname{id}_X;f))$ 是 $\mathcal D^\wedge$ 中的满态射，引理立即给出
+$\alpha=\operatorname{Im}((g;g'))$。
+\endgroup

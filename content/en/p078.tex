@@ -1,0 +1,87 @@
+\VerdierPhysicalPageAnchor{0078}%
+\VerdierSemanticAnchor{ch1-2-5-4}
+\noindent\textbf{2.5.4.}\quad
+The operations $\star$ and ``sum of homotopies'' have the following
+properties:
+
+\VerdierSemanticAnchor{ch1-2-5-4-eq1}
+\begin{equation}
+  \begin{aligned}
+    u\star(b+a) &= u\star b+u\star a,\\
+    (b+a)\star v &= b\star v+a\star v,\\
+    uu'\star a &= u\star(u'\star a),\\
+    a\star vv' &= (a\star v)\star v'.
+  \end{aligned}
+  \tag{2.5.4.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-5-5}
+\noindent\textbf{2.5.5.}\quad
+Two morphisms $f,g\colon X\rightrightarrows Y$ are said to be
+\emph{homotopic} if there exists a homotopy connecting them.
+
+\VerdierSemanticAnchor{ch1-2-5-5-difference-criterion}
+Two morphisms $f,g$ are homotopic if the morphism $f-g$ is homotopic to zero.
+
+\VerdierSemanticAnchor{ch1-2-5-5-shift-stability}
+Let $f\colon X\longrightarrow Y$ be a morphism homotopic to zero. For every
+$\sigma\in\mathbb Z[n]$, the morphism $T(\sigma)f$ is homotopic to zero.
+
+\VerdierSemanticAnchor{ch1-2-5-5-null-homotopic-ideal}
+The set of morphisms homotopic to zero forms an ideal of
+$\operatorname{comp}^{n}(C)$, i.e. the composite, in either order, of a
+morphism homotopic to zero with an arbitrary morphism is homotopic to zero,
+and the direct sum of two morphisms homotopic to zero is homotopic to zero.
+
+\VerdierSemanticAnchor{ch1-2-5-6}
+\noindent\textbf{2.5.6.}\quad
+Let $\varphi\colon[n]\longrightarrow[m]$ be a map.
+
+\VerdierSemanticAnchor{ch1-2-5-6-integration-preserves-homotopy}
+The functors $\int_\varphi^\Sigma$ and $\int_\varphi^\Pi$ send pairs of
+homotopic morphisms of $\operatorname{comp}^{n}(C)$ to pairs of homotopic
+morphisms of $\operatorname{comp}^{m}(C)$.
+
+\VerdierSemanticAnchor{ch1-2-5-6-multiadditive-setup}
+Likewise, let
+$F\colon\prod_{i\in[n]}C_i\longrightarrow C$ be a multiadditive functor,
+
+\VerdierSemanticAnchor{ch1-2-5-6-fn-functor}
+\begin{equation*}
+  F^{[n]}\colon
+  \prod_{i\in[n]}\operatorname{comp}(C_i)
+  \longrightarrow \operatorname{comp}^{n}(C)
+\end{equation*}
+the functor described in (2.4.2.4), let $X_i$ be objects of
+$\operatorname{comp}(C_i)$ $(i\ne j)$, and let
+$f,g\colon X\rightrightarrows Y$ be two homotopic morphisms of
+$\operatorname{comp}(C_j)$.
+
+\VerdierSemanticAnchor{ch1-2-5-6-fn-preserves-homotopy}
+The morphisms of $\operatorname{comp}^{n}(C)$
+\begin{equation*}
+  F^{[n]}(X_1,\ldots,f,\ldots,X_n)
+  \quad\text{and}\quad
+  F^{[n]}(X_1,\ldots,g,\ldots,X_n)
+\end{equation*}
+are homotopic.
+
+\VerdierSemanticAnchor{ch1-2-5-6-totalizations-preserve-homotopy}
+Consequently, the morphisms of $\operatorname{comp}(C)$
+\begin{equation*}
+  \operatorname{comp}_{\Pi}F(X_1,\ldots,f,\ldots,X_n)
+  \quad\text{and}\quad
+  \operatorname{comp}_{\Pi}F(X_1,\ldots,g,\ldots,X_n)
+\end{equation*}
+are homotopic (the same result holds for
+$\operatorname{comp}_{\Sigma}F$).
+
+\VerdierSemanticAnchor{ch1-2-5-6-reference}
+We leave it to the reader to verify all these assertions or to refer to [1].
+
+\VerdierSemanticAnchor{ch1-2-5-7}
+\noindent\textbf{2.5.7.}\quad
+Let $K(C)$ denote the following category:
+
+\VerdierSemanticAnchor{ch1-2-5-7-objects}
+\noindent\hspace*{2em}--\ The objects of $K(C)$ are the objects of $\operatorname{comp}(C)$.

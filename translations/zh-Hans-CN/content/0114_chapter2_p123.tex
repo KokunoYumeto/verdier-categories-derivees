@@ -1,0 +1,73 @@
+
+\clearpage
+\VerdierPhysicalPageAnchor{0123}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-14}
+\noindent\textbf{注 1.2.14.}\quad
+在 1.2 中研究的性质从未用到公理 TRIV。因此，这些性质对于任何装备了一族
+满足公理 TRI、TRII 与 TRIII 的三角的严格加法 $\mathbb Z$-范畴都成立。
+
+\VerdierSemanticAnchor{ch2-1-3}
+\medskip
+\noindent\textbf{1.3. 三角范畴的例子。}
+
+\VerdierSemanticAnchor{ch2-1-3-1}
+\medskip
+\noindent\textbf{1.3.1.}\quad
+设 $C$ 为一个加法范畴，$K(C)$ 为 $C$ 的复形同伦范畴（第一章，2.5.7）。
+范畴 $K(C)$ 是一个严格 $\mathbb Z$-范畴，并装备了一族三角，即特异三角
+（第一章，3.3.1）；这族三角满足性质 TRI、TRII 与 TRIII（第一章，3.3）。
+
+\VerdierSemanticAnchor{ch2-1-3-2}
+\medskip
+\noindent\textbf{命题 1.3.2.}\quad
+\textit{范畴 $K(C)$ 连同这族特异三角构成一个三角范畴。}
+
+\VerdierSemanticAnchor{ch2-1-3-2-triv-reduction}
+只需证明 $K(C)$ 的这族特异三角具有性质 TRIV。为此，设
+
+\VerdierSemanticAnchor{ch2-1-3-2-commutative-triangle}
+\[
+  \begin{tikzcd}[column sep=4.2em,row sep=2.6em]
+    & X_2 \arrow[dr,"u_1"] & \\
+    X_1 \arrow[ur,"u_3"] \arrow[rr,"u_2"'] && X_3
+  \end{tikzcd}
+\]
+\noindent 为一个交换图，并设
+
+\VerdierSemanticAnchor{ch2-1-3-2-input-triangles}
+\[
+  \begin{aligned}
+    X_1&\xrightarrow{u_3}X_2\xrightarrow{v_3}Z_3
+      \xrightarrow{w_3}X_1[1],\\
+    X_2&\xrightarrow{u_1}X_3\xrightarrow{v_1}Z_1
+      \xrightarrow{w_1}X_2[1],\\
+    X_1&\xrightarrow{u_2}X_3\xrightarrow{v_2}Z_2
+      \xrightarrow{w_2}X_1[1]
+  \end{aligned}
+\]
+\noindent 为三个特异三角。由（第一章，3.3.5），存在三个特异三角
+
+\VerdierSemanticAnchor{ch2-1-3-2-alternative-triangles}
+\[
+  \resizebox{0.98\linewidth}{!}{$
+    (X_1,X_2,Z'_3,u_3,v'_3,w'_3),\qquad
+    (X_2,X_3,Z'_1,u_1,v'_1,w'_1),\qquad
+    (X_1,X_3,Z'_2,u_2,v'_2,w'_2)
+  $}
+\]
+\noindent 以及两个态射
+
+\VerdierSemanticAnchor{ch2-1-3-2-morphisms-boundary}
+\[
+  m'_1\colon Z'_3\longrightarrow Z'_2,\qquad
+  m'_3\colon Z'_2\longrightarrow Z'_1,
+\]
+\endgroup
+
+

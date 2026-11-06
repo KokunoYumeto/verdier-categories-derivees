@@ -1,0 +1,87 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0121}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-11-iv-to-i-complete}
+$\mathrm{iv)}\Longrightarrow\mathrm{i)}$ を証明すればよい。
+そこで、$f\colon X\longrightarrow Y$ を分裂
+$g\colon Y\longrightarrow X$ を備えた射とする。射
+$f\colon X\longrightarrow Y$ の核関手は、$X$ の射影子
+$gf\colon X\longrightarrow X$（{\itshape すなわち} $gfgf=gf$）
+の核関手に等しい。
+
+\VerdierSemanticAnchor{ch2-1-2-11-projector-reduction}
+したがって、可算積が表現可能な三角圏では射影子が核をもつことを示せばよい。
+$e\colon X\longrightarrow X$ を $X$ の射影子とし、
+$X_i=X$、$i\in\mathbb N$ とおく。次の射
+
+\VerdierSemanticAnchor{ch2-1-2-11-phi}
+\[
+  \Phi\colon\prod_{i\in\mathbb N}X_i\longrightarrow
+  \prod_{i\in\mathbb N}X_i, ,
+\]
+を
+
+\VerdierSemanticAnchor{ch2-1-2-11-1}
+\begin{equation}
+  \Phi(x_0,x_1,x_2,\ldots)
+  =\bigl(ex_0+(1-e)x_1,ex_1+(1-e)x_2,\ldots\bigr)\,.
+  \tag{1.2.11.1}
+\end{equation}
+で定める。式 (1.2.11.1) は、記号 $x_0,x_1,\ldots$ を
+$\mathcal D$ の任意の対象から各 $X_i$ への射と解釈することで射を定める。
+同様に、射
+
+\VerdierSemanticAnchor{ch2-1-2-11-psi}
+\[
+  \Psi\colon\prod_{i\in\mathbb N}X_i\longrightarrow
+  \prod_{i\in\mathbb N}X_i, ,
+\]
+を
+
+\VerdierSemanticAnchor{ch2-1-2-11-2}
+\begin{equation}
+  \Psi(x_0,x_1,x_2,\ldots)
+  =\bigl(x_0,(1-e)x_0+ex_1,(1-e)x_1+ex_2,\ldots\bigr)\,.
+  \tag{1.2.11.2}
+\end{equation}
+で定める。
+
+\VerdierSemanticAnchor{ch2-1-2-11-kernel-conclusion}
+$\Phi\Psi=\operatorname{id}$ は明らかであり、したがって $\Phi$ はエピ射である。
+すでに証明した含意により、$\Phi$ は表現可能な核をもつ。一方、$\Phi$ の
+核関手は $e\colon X\longrightarrow X$ の核関手と標準的に同型である。
+よってこの関手は表現可能であり、射影子 $e$ は核をもつ。
+これで命題 (1.2.9) の証明が完了した。
+
+\VerdierSemanticAnchor{ch2-1-2-12}
+\medskip
+\noindent\textbf{1.2.12.}\quad
+系 (1.2.4) は、与えられた射を含む完全三角が、一意とは限らない同型を
+除いて一意であることを示す。
+
+\VerdierSemanticAnchor{ch2-1-2-12-functorial-question}
+さらに、公理 TRIII は、任意の射の射が三角の射へ拡張されることを要求する。
+そこで、圏の各射に完全三角を関手的に対応させることによって三角構造を
+定義できるかを問うことができる。これが可能ならば、ある追加の仮定の下で
+その圏が分解可能であることを示す。
+
+\VerdierSemanticAnchor{ch2-1-2-13}
+\medskip
+\noindent\textbf{命題 1.2.13.}\quad
+\textit{$\mathcal D$ を三角圏とし、$\operatorname{Tr}$ を
+$\mathrm{Fl}_1(\mathcal D)$（第 I 章、3.3.6）、すなわち
+$\mathcal D$ の射の圏から、完全三角の圏（$\mathcal D$ の三角の圏における、
+完全三角からなる充満部分圏）への関手とする。}
+
+\VerdierSemanticAnchor{ch2-1-2-13-tr-assignment}
+\[
+  \operatorname{Tr}\!\left(X\xrightarrow{f}Y\right)
+  =X\xrightarrow{f}Y\xrightarrow{a(f)}\tau(f)
+  \xrightarrow{b(f)}X[1], .
+\]
+\endgroup

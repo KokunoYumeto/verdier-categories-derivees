@@ -1,0 +1,69 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0210}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-1-4-proof}
+只须证明第三项断言。其余断言都是命题 (2.4.4) 的直接推论。断言 2) 立即
+表明，$\mathcal A$ 的上同调维数小于或等于 $\mathcal A$ 的对象的内射维数（相应地，
+投射维数）的上确界。设 $\mathcal A$ 的上同调维数等于 $n$，并设
+
+\VerdierSemanticAnchor{ch3d-3-1-4-proof-resolution}
+\[
+I^\bullet=\cdots\longrightarrow0\longrightarrow0\longrightarrow I^0
+\longrightarrow I^1\longrightarrow I^2\longrightarrow I^3
+\longrightarrow\cdots
+\]
+是 $\mathcal A$ 的一个对象 $Y$ 的内射型分解。对 $\mathcal A$ 的每个对象
+$X$，都有
+$\operatorname{Hom}_{K(\mathcal A)}(X[-n-1],I^\bullet)=0$。特别地，取
+$X=\operatorname{Ker}d_{I^\bullet}^{n+1}$，立即可知典范态射
+$\operatorname{Ker}d_{I^\bullet}^{n+1}\longrightarrow I^{n+1}$ 通过
+$I^n$ 分解：
+
+\VerdierSemanticAnchor{ch3d-3-1-4-proof-factorization}
+\[
+\begin{tikzcd}[column sep=4.8em,row sep=2.8em]
+{} & \operatorname{Ker}d_{I^\bullet}^{n+1}
+  \arrow[dl,dashed] \arrow[d] & {} \\
+I^n \arrow[r] & I^{n+1} \arrow[r] & \cdots
+\end{tikzcd}
+\]
+
+\VerdierSemanticAnchor{ch3d-3-1-4-proof-truncation}
+因此，$\operatorname{Ker}d_{I^\bullet}^{n+1}$ 与
+$\operatorname{Ker}d_{I^\bullet}^{n}$ 都是 $I^n$ 的直和项，因而都是
+内射对象。复形
+\[
+\cdots\longrightarrow0\longrightarrow I^0\longrightarrow I^1
+\longrightarrow\cdots\longrightarrow I^{n-1}
+\longrightarrow\operatorname{Ker}d_{I^\bullet}^{n}
+\longrightarrow0\longrightarrow\cdots
+\]
+是 $Y$ 的一个内射分解；这表明 $Y$ 的内射维数小于或等于 $n$。同理可证，
+$\mathcal A$ 的每个对象 $X$ 的投射维数小于或等于 $n$。
+
+\VerdierSemanticAnchor{ch3d-3-1-5}
+\medskip\noindent\textbf{3.1.5.}\quad
+设 $X$ 与 $Y$ 是 $\mathcal A$ 的两个对象。命题 (3.1.4) 表明，当范畴
+$\mathcal A$ 有足够多的内射对象或投射对象时，这里定义的群
+$\operatorname{Ext}_{\mathcal A}^{i}(X,Y)$ 与经典定义的群一致。
+
+\VerdierSemanticAnchor{ch3d-3-2}
+\subsection*{3.2. Yoneda 构造。}
+
+\VerdierSemanticAnchor{ch3d-3-2-1}
+\noindent\textbf{3.2.1.}\quad
+设 $X$ 与 $Y$ 是 $\mathcal A$ 的两个对象。以
+$E_{\mathcal A}^{n}(X,Y)$（$n\geq1$）表示正合列
+
+\VerdierSemanticAnchor{ch3d-3-2-1-sequence}
+\[
+S^n(X,Y)=0\longrightarrow Y\longrightarrow Z_{n-1}
+\longrightarrow Z_{n-2}\longrightarrow\cdots\longrightarrow Z_0
+\xrightarrow{u_0}X\longrightarrow0.
+\]
+所成的集合。整数 $n$ 称为正合列 $S^n(X,Y)$ 的长度。对
+$E_{\mathcal A}^{n}(X,Y)$ 的每个元素 $S^n(X,Y)$，关联如下三个复形：
+\endgroup

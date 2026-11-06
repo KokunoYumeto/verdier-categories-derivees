@@ -1,0 +1,78 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0220}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-3-4-b}
+\noindent\textit{b) When the category $\mathcal C$ is additive, a functor
+from $\mathcal A^{\operatorname{Ext}}$ to $\mathcal C$ is preadditive if
+and only if each functor in the associated connected sequence of functors
+is additive.}
+
+\VerdierSemanticAnchor{ch3d-3-3-4-proof}
+We shall confine ourselves to showing that $\Phi$ is essentially
+surjective. First, after replacing the categories in question by equivalent
+categories if necessary, we may suppose that $\mathcal A$ has a single
+zero object. One checks at once that
+$\mathcal A^{\operatorname{Ext}}$ then also has a single zero object. Let
+$(F^n,\delta_F^n)$ be a connected sequence of functors. Observe that, for
+every integer $n$, property SFL II) defines an isomorphism
+$F^n(0)\longrightarrow F^{n+1}(0)$. Replacing $(F^n,\delta_F^n)$ by an
+isomorphic sequence if necessary, we may therefore suppose that, for every
+$n$, $F^n(0)=F^{n+1}(0)$ and $\delta_F^n(0)=\operatorname{id}$.
+
+\VerdierSemanticAnchor{ch3d-3-3-4-object-definition}
+Every nonzero object $W$ of $\mathcal A^{\operatorname{Ext}}$ can be
+written uniquely in the form $X[n]$, where $X$ is an object of
+$\mathcal A$. For every nonzero object $W$ of
+$\mathcal A^{\operatorname{Ext}}$, set $F(W)=F^n(X)$, and also set
+$F(0)=F^0(0)$. We have thus defined a map from
+$\operatorname{Ob}(\mathcal A^{\operatorname{Ext}})$ to
+$\operatorname{Ob}(\mathcal C)$, which we shall now extend to a functor
+$F\colon\mathcal A^{\operatorname{Ext}}\longrightarrow\mathcal C$ inducing
+the connected sequence of functors $(F^n,\delta_F^n)$. Thus let
+$m\colon W\longrightarrow W'$ be a morphism of
+$\mathcal A^{\operatorname{Ext}}$. We first consider several cases:
+
+\VerdierSemanticAnchor{ch3d-3-3-4-morphism-cases-zero}
+\noindent 1) $W=W'=0$. Set $F(m)=\operatorname{id}_{F^0(0)}$.
+
+\noindent 2) $W=0$ and $W'=X[p]$, $X\neq0$. Set
+$F(m)=F^p(0\longrightarrow X)$.
+
+\noindent 3) $W=Y[p]$, $Y\neq0$, and $W'=0$. Set
+$F(m)=F^p(Y\longrightarrow0)$.
+
+\VerdierSemanticAnchor{ch3d-3-3-4-degree}
+Now suppose that $W$ and $W'$ are both different from the zero object.
+They can then be written uniquely in the form $W=X[p]$, $W'=Y[q]$, where
+$X$ and $Y$ are objects of $\mathcal A$. The integer $q-p$ is called the
+\emph{degree} of $m$.
+
+\VerdierSemanticAnchor{ch3d-3-3-4-morphism-cases-degree}
+\noindent 4) $m<0$, meaning that this morphism has degree less than 0. Set
+$F(m)=F^q(0\longrightarrow Y)\,F^p(X\longrightarrow0)$.
+
+\noindent 5) $m=0$, meaning that this morphism has degree 0. The morphism $m$ can then be
+written uniquely in the form $f[p]$, where $f$ is a morphism of
+$\mathcal A$. Set $F(m)=F^p(f)$.
+
+\noindent 6) $m=1$, meaning that this morphism has degree 1. There is an exact sequence in
+$\mathcal A$,
+\[
+S=0\longrightarrow Y\longrightarrow Z\longrightarrow X\longrightarrow0
+\]
+such that $m=\delta^1(S)[p]$ (3.3.1). Set $F(m)=\delta_F^p(S)$. The fact
+that the morphism $F(m)$ so defined does not depend on the chosen exact
+sequence follows from (3.2.2) and property SFL I).
+
+\VerdierSemanticAnchor{ch3d-3-3-4-fl-le-n}
+Denote by $\mathcal{F}\ell_{\leq n}(\mathcal A^{\operatorname{Ext}})$ the
+set of morphisms $m\colon W\longrightarrow W'$ such that $W$ or $W'$ is
+the zero object, or such that the degree of $m$ is less than or equal to
+$n$. The existence of a functor
+$F\colon\mathcal A^{\operatorname{Ext}}\longrightarrow\mathcal C$ inducing
+the connected sequence of functors $(F^n,\delta_F^n)$ then follows from
+the following lemma and proposition:
+\endgroup

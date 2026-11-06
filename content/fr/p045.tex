@@ -1,0 +1,76 @@
+\VerdierPhysicalPageAnchor{0045}%
+\VerdierSemanticAnchor{ch1-1-4-2}
+\noindent\textbf{1.4.2.}\quad
+Soient
+$e\to K\xrightarrow{n}H\xrightarrow{f}G\to e$ une suite exacte de
+groupes, le groupe $K$ étant identifié par $n$ à un sous-groupe
+distingué de $H$, et $(\mathcal C,G,T,c)$,
+$(\mathcal C',G,T',c')$ deux $G$-catégories. Soient
+$(\mathcal C,H,T_f,c_f)$, $(\mathcal C',H,T'_f,c'_f)$ les
+$H$-catégories obtenues par le changement de groupes
+$H\xrightarrow{f}G$. Soit enfin :
+
+\VerdierSemanticAnchor{ch1-1-4-2-eq1}
+\begin{equation}
+  (F,m)\colon(\mathcal C,H,T_f,c_f)
+  \longrightarrow(\mathcal C',H,T'_f,c'_f)
+  \tag{1.4.2.1}
+\end{equation}
+un $H$-foncteur. Les diagrammes (1.2.3.2) fournissent alors, pour tout
+couple d'éléments $k,k'\in K$, un diagramme commutatif :
+
+\VerdierSemanticAnchor{ch1-1-4-2-eq2}
+\begin{center}
+  $\begin{tikzcd}[ampersand replacement=\&,column sep=5em,row sep=3.5em]
+    F \arrow[rr,"{m(kk')}"] \arrow[dr,"{m(k)}"']
+      \& \& F \\
+      \& F \arrow[ur,"{m(k')}"'] \&
+  \end{tikzcd}$,
+  \hfill\textup{(1.4.2.2)}
+\end{center}
+
+\VerdierSemanticAnchor{ch1-1-4-2-representation}
+d'où une représentation de $K^\circ$ dans le groupe des
+automorphismes de $F$. Lorsque le foncteur $(F,m)$ provient d'un
+$G$-foncteur, cette représentation est triviale. Réciproquement,
+lorsque cette représentation est triviale, on déduit immédiatement des
+diagrammes (1.2.3.2) que, pour tout $h\in H$ et pour tout $k\in K$, on
+a :
+
+\VerdierSemanticAnchor{ch1-1-4-2-eq3}
+\begin{equation}
+  m(hk)=m(kh)=m(h)
+  \tag{1.4.2.3}
+\end{equation}
+et, par suite, le $H$-foncteur $(F,m)$ provient d'un $G$-foncteur par
+le changement de groupe $f^*$. On se propose dans la suite de ce numéro
+d'étudier, dans un cas très particulier, les $H$-foncteurs $(F,m)$ qui
+induisent une représentation donnée à l'avance de $K^\circ$ dans le
+groupe des automorphismes de $F$.
+
+\VerdierSemanticAnchor{ch1-1-4-3}
+\noindent\textbf{1.4.3.}\quad
+On utilise les notations de (1.4.2). On suppose que la catégorie
+$\mathcal C'$ est additive et que $K=\mathbb Z/2\mathbb Z$. Le groupe
+des signes $\{-1,+1\}\simeq\mathbb Z/2\mathbb Z$ opère alors sur le
+foncteur identique de la catégorie $\mathcal C'$ en associant à tout
+objet $X$ de $\mathcal C'$ le morphisme :
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq1}
+\begin{equation}
+  \varepsilon(X)\colon
+  X\xrightarrow{\,\varepsilon\cdot\operatorname{id}_X\,}X,
+  \qquad \varepsilon\in\{-1,+1\}.
+  \tag{1.4.3.1}
+\end{equation}
+Par suite, le groupe des signes opère sur tout foncteur
+$F\colon\mathcal C\to\mathcal C'$ en associant à tout objet $Y$ de
+$\mathcal C$ le morphisme :
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq2}
+\begin{equation}
+  \varepsilon(Y)\colon
+  F(Y)\xrightarrow{\,\varepsilon\cdot\operatorname{id}_{F(Y)}\,}F(Y),
+  \qquad \varepsilon\in\{-1,+1\}.
+  \tag{1.4.3.2}
+\end{equation}

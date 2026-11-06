@@ -1,0 +1,59 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0165}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch4-4-2-1-inclusions}
+On a ainsi défini deux foncteurs de $\mathcal{F}\ell_2(\mathcal J)$ dans
+$\mathcal A$. On a par définition des inclusions :
+\[
+B\!\left[\begin{smallmatrix}n\\f,g\end{smallmatrix}\right]\subset H^n(f),
+\qquad
+Z\!\left[\begin{smallmatrix}n\\f,g\end{smallmatrix}\right]\subset H^n(g).
+\]
+Soit
+$\omega_3=(\mathord\bullet\xrightarrow f\mathord\bullet\xrightarrow g
+\mathord\bullet\xrightarrow h\mathord\bullet)$ un objet de
+$\mathcal{F}\ell_3(\mathcal J)$.
+
+\VerdierSemanticAnchor{ch4-4-2-2}
+\medskip\noindent\textbf{Proposition 4.2.2.}\quad
+\textit{On a les inclusions :}
+\[
+B\!\left[\begin{smallmatrix}n\\g,h\end{smallmatrix}\right]
+\subset
+Z\!\left[\begin{smallmatrix}n\\f,g\end{smallmatrix}\right]
+\subset H^n(g).
+\]
+La deuxième inclusion est mise pour mémoire. Pour démontrer la première
+inclusion, il suffit de montrer que le composé des deux morphismes de la
+suite
+\VerdierSemanticAnchor{ch4-4-2-2-proof-sequence}
+\[
+H^{n-1}(h)\xrightarrow{\delta_1}H^n(g)
+\xrightarrow{\delta_2}H^{n+1}(f)
+\]
+est nul. Or l'objet
+$(\mathord\bullet\xrightarrow g\mathord\bullet\xrightarrow h\mathord\bullet)$
+de $\mathcal{F}\ell_2(\mathcal J)$ fournit la suite exacte
+\[
+H^{n-1}(h)\xrightarrow{\delta_1}H^n(g)
+\xrightarrow u H^n(hg),
+\]
+et le morphisme de $\mathcal{F}\ell_2(\mathcal J)$
+\VerdierSemanticAnchor{ch4-4-2-2-fl2-morphism}
+\[
+\begin{tikzcd}[column sep=4em,row sep=2.2em]
+{}\arrow[r,"f"]\arrow[d,"\operatorname{id}"']&{}
+ \arrow[r,"g"]\arrow[d,"\operatorname{id}"']&{}\arrow[d,"h"]\\
+{}\arrow[r,"f"']&{}\arrow[r,"hg"']&{}
+\end{tikzcd}
+\]
+fournit le diagramme commutatif
+\VerdierSemanticAnchor{ch4-4-2-2-commutative-triangle}
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.7em]
+H^n(g)\arrow[r,"\delta_2"]\arrow[d,"u"']&H^{n+1}(f)\\
+H^n(hg)\arrow[ur,"\delta_3"']&{}
+\end{tikzcd}
+\]
+D'où la proposition.
+\endgroup

@@ -1,0 +1,103 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0148}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-3-5-a-ii}
+\noindent\hspace{1.2em}ii) Tout morphisme $B\longrightarrow X$, avec
+$B\in\operatorname{Ob}(\mathcal B)$, $X\in\operatorname{Ob}(\mathcal A)$,
+s'insère dans un diagramme commutatif :
+
+\VerdierSemanticAnchor{ch2-2-3-5-a-ii-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=4.2em,row sep=2.6em]
+    B \arrow[r] \arrow[dr] & X &
+    {B'\in\operatorname{Ob}(\mathcal A\cap\mathcal B)} \\
+    & B' \arrow[u] &
+  \end{tikzcd}
+  \quad .
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-3-5-a-definition}
+Les sous-catégories triangulées pleines $\mathcal A$ de $\mathcal D$ qui
+possèdent les deux propriétés équivalentes ci-dessus sont appelées
+\emph{sous-catégories $\mathcal B$-localisantes à droite}.
+
+\VerdierSemanticAnchor{ch2-2-3-5-b}
+\par\noindent b) Si $\mathcal A$ est $\mathcal B$-localisante à droite, le
+foncteur canonique :
+
+\VerdierSemanticAnchor{ch2-2-3-5-b-functor}
+\[
+  \mathcal A/(\mathcal A\cap\mathcal B)
+  \longrightarrow\mathcal D/\mathcal B
+\]
+est pleinement fidèle et injectif sur les objets.
+
+\VerdierSemanticAnchor{ch2-2-3-5-c}
+\par\noindent c) Les conditions suivantes sont équivalentes :
+
+\VerdierSemanticAnchor{ch2-2-3-5-c-i}
+\par\noindent\hspace{1.2em}i) $\mathcal A$ est $\mathcal B$-localisante à
+droite.
+
+\VerdierSemanticAnchor{ch2-2-3-5-c-ii}
+\par\noindent\hspace{1.2em}ii) Soit
+$Q\colon\mathcal D/(\mathcal A\cap\mathcal B)\longrightarrow
+\mathcal D/\mathcal B$ le foncteur canonique. La sous-catégorie
+$\mathcal A/(\mathcal A\cap\mathcal B)\longrightarrow
+\mathcal D/(\mathcal A\cap\mathcal B)$ est formée d'objets $Q$-libres à
+droite.
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-3-5-proof-a}
+L'équivalence de a) résulte immédiatement de TRIII et des définitions des
+systèmes $S_{\mathcal D}(\mathcal B)$ et
+$S_{\mathcal A}(\mathcal A\cap\mathcal B)$ (2.1.7).
+
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-setup}
+Démontrons b). Soient $X$ et $Y$ deux objets de $\mathcal A$ (donc de
+$\mathcal A/(\mathcal A\cap\mathcal B)$).
+
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-injectivity}
+Montrons d'abord que l'homomorphisme :
+\[
+  \operatorname{Hom}_{\mathcal A/(\mathcal A\cap\mathcal B)}(X,Y)
+  \longrightarrow
+  \operatorname{Hom}_{\mathcal D/\mathcal B}(X,Y)
+\]
+est injectif.
+
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-quotient-functors}
+Désignons par
+$Q_1\colon\mathcal A\longrightarrow
+\mathcal A/(\mathcal A\cap\mathcal B)$ et
+$Q_2\colon\mathcal D\longrightarrow\mathcal D/\mathcal B$ les foncteurs
+canoniques de passage au quotient.
+
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-fraction}
+Un élément
+$m\in\operatorname{Hom}_{\mathcal A/(\mathcal A\cap\mathcal B)}(X,Y)$ peut
+toujours s'écrire sous la forme $m=Q_1(s)^{-1}Q_1(f)$,
+$s\in S_{\mathcal A}(\mathcal A\cap\mathcal B)$ (2.2.2). Son image dans
+$\operatorname{Hom}_{\mathcal D/\mathcal B}(X,Y)$ est alors
+$Q_2(s)^{-1}Q_2(f)$.
+
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-zero-criterion}
+D'après (2.2.4, a)), cette image est nulle si et seulement s'il existe un
+diagramme commutatif :
+
+\VerdierSemanticAnchor{ch2-2-3-5-proof-b-zero-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=3.7em,row sep=2.5em]
+    & {} \arrow[r,"u"] & {} \\
+    X \arrow[ur,"f"] && Y \arrow[ul,"s"] \arrow[u,"t"'] &
+    {t\in S_{\mathcal D}(\mathcal B)}
+  \end{tikzcd}
+\end{center}
+\endgroup

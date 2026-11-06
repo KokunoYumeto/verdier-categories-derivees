@@ -1,0 +1,76 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0120}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-9-opposite-category}
+$\mathrm{ii)}\Longrightarrow\mathrm{iii)}$ 在 $\mathcal D$ 的反范畴中成立。因此，对所有三角范畴成立的
+蕴含 $\mathrm{i)}\Longrightarrow\mathrm{iii)}$ 等价于对所有三角范畴成立的
+蕴含 $\mathrm{ii)}\Longrightarrow\mathrm{iii)}$。为证明蕴含关系
+
+\VerdierSemanticAnchor{ch2-1-2-9-reduction-implication}
+\[
+  \mathrm{i)}\Longleftrightarrow\mathrm{ii)}
+  \Longleftrightarrow\mathrm{iii)}\Longrightarrow\mathrm{iv)}\,,
+\]
+只需证明 $\mathrm{i)}\Longrightarrow\mathrm{iii)}$。
+
+\VerdierSemanticAnchor{ch2-1-2-10}
+\medskip
+\noindent\textbf{1.2.10. 命题 1.2.9 的证明（续）}\quad
+先证明单态射可分解。设 $f\colon X\longrightarrow Y$ 为单态射，并设
+$X\xrightarrow{f}Y\xrightarrow{v}Z\xrightarrow{w}X[1]$ 为包含 $f$
+的特异三角 (TRI)。
+
+\VerdierSemanticAnchor{ch2-1-2-10-monomorphism}
+由于 $f$ 是单态射，$f[1]$ 也是单态射。由 TRII 与 (1.2.2) 得 $w=0$；
+再由 (1.2.6) 得 $f$ 可分解。
+
+\VerdierSemanticAnchor{ch2-1-2-10-kernel-decomposition}
+现证明一般情形下 $\mathrm{i)}\Longrightarrow\mathrm{iii)}$。假设态射
+$f\colon X\longrightarrow Y$ 有核 $\operatorname{Ker}(f)\longrightarrow X$。
+态射 $\operatorname{Ker}(f)\longrightarrow X$ 是单态射，故可分解。
+因此 $f$ 同构于形如
+
+\VerdierSemanticAnchor{ch2-1-2-10-kernel-normal-form}
+\[
+  \operatorname{Ker}(f)\oplus X'
+  \xrightarrow{(0,g)}Y\,,
+\]
+的态射，其核为
+
+\VerdierSemanticAnchor{ch2-1-2-10-kernel-inclusion}
+\[
+  \operatorname{Ker}(f)
+  \xrightarrow{\left(\begin{smallmatrix}\operatorname{id}\\0\end{smallmatrix}\right)}
+  \operatorname{Ker}(f)\oplus X'.
+\]
+立即可知 $g$ 是单态射，因而可分解。因此 $f\colon X\longrightarrow Y$
+同构于形如
+
+\VerdierSemanticAnchor{ch2-1-2-10-final-matrix}
+\[
+  \operatorname{Ker}(f)\oplus X'
+  \xrightarrow{\left(\begin{smallmatrix}0&\operatorname{id}\\0&0\end{smallmatrix}\right)}
+  X'\oplus Y'.
+\]
+的态射，故可分解。
+
+\VerdierSemanticAnchor{ch2-1-2-11}
+\medskip
+\noindent\textbf{1.2.11. 命题 1.2.9 的证明（完）\footnote{这里采用
+Freyd 的一个论证。}}\quad
+在附加假设下，还需证明 $\mathrm{iv)}\Longrightarrow\mathrm{iii)}$。
+
+\VerdierSemanticAnchor{ch2-1-2-11-duality-reduction}
+先注意：可数直和在 $\mathcal D$ 中可表示，当且仅当可数积在
+$\mathcal D^{\circ}$ 中可表示。此外，范畴 $\mathcal D$ 中的蕴含
+$\mathrm{iv)}\Longrightarrow\mathrm{iii)}$ 等价于 $\mathcal D$ 的反范畴中的
+蕴含 $\mathrm{iv)}\Longrightarrow\mathrm{iii)}$。
+
+\VerdierSemanticAnchor{ch2-1-2-11-product-case-boundary}
+因此，只需在可数积在 $\mathcal D$ 中可表示时证明
+$\mathrm{iv)}\Longrightarrow\mathrm{iii)}$；换言之，由以上讨论，只需
+\endgroup

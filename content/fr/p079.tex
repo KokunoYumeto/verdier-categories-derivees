@@ -1,0 +1,86 @@
+\VerdierPhysicalPageAnchor{0079}%
+\VerdierSemanticAnchor{ch1-2-5-7-morphisms}
+\noindent\hspace*{2em}--\ Soient $X$ et $Y$ deux objets de $K(C)$,
+$f,g\colon X\rightrightarrows Y$ deux morphismes de
+$\operatorname{comp}(C)$. La relation ``$f$ et $g$ sont homotopes'' est une
+relation d'équivalence sur
+$\operatorname{Hom}_{\operatorname{comp}(C)}(X,Y)$, et on définit
+$\operatorname{Hom}_{K(C)}(X,Y)$ comme le quotient de
+$\operatorname{Hom}_{\operatorname{comp}(C)}(X,Y)$ par cette relation
+d'équivalence.
+
+\VerdierSemanticAnchor{ch1-2-5-7-composition}
+\noindent\hspace*{2em}--\ Il résulte immédiatement de (2.5.5) que la loi de
+composition sur les morphismes de $\operatorname{comp}(C)$ passe au quotient
+et définit une loi de composition sur les morphismes de $K(C)$.
+
+\VerdierSemanticAnchor{ch1-2-5-7-additive-category}
+Il résulte immédiatement de (2.5.5) qu'on a bien défini ainsi une catégorie et
+que cette catégorie est additive.
+
+\VerdierSemanticAnchor{ch1-2-5-7-quotient-functor}
+Le foncteur canonique
+$\operatorname{comp}(C)\xrightarrow{Q}K(C)$ qui est l'identité sur les objets
+et qui associe à tout morphisme $f$ de $\operatorname{comp}(C)$ sa classe
+d'équivalence $\dot f$ est additif.
+
+\VerdierSemanticAnchor{ch1-2-5-7-homotopy-class}
+Le morphisme $\dot f$ de $K(C)$ image du morphisme $f$ de
+$\operatorname{comp}(C)$ par le foncteur canonique est appelé la
+\emph{classe de $f$ modulo homotopie}.
+
+\VerdierSemanticAnchor{ch1-2-5-7-name}
+La catégorie $K(C)$ est appelée la \emph{catégorie des complexes de $C$ à
+homotopie près}.
+
+\VerdierSemanticAnchor{ch1-2-5-8}
+\noindent\textbf{2.5.8.}\quad
+Le foncteur canonique $\operatorname{comp}(C)\xrightarrow{Q}K(C)$ possède la
+propriété suivante : tout foncteur de $K(C)$ dans une catégorie $A$ fournit,
+par composition avec $Q$, un foncteur de $\operatorname{comp}(C)$ dans $A$,
+d'où, pour toute catégorie $A$, un foncteur :
+
+\VerdierSemanticAnchor{ch1-2-5-8-hom-functor}
+\begin{equation*}
+  \mathcal H\!om(Q,A)\colon
+  \mathcal H\!om(K(C),A)
+  \longrightarrow
+  \mathcal H\!om(\operatorname{comp}(C),A)
+\end{equation*}
+($\mathcal H\!om$ désigne la catégorie des foncteurs).
+
+\VerdierSemanticAnchor{ch1-2-5-8-fully-faithful}
+Ce foncteur est pleinement fidèle, injectif sur les objets et l'image est la
+sous-catégorie pleine de :
+
+\VerdierSemanticAnchor{ch1-2-5-8-essential-image}
+\begin{equation*}
+  \mathcal H\!om(\operatorname{comp}(C),A)
+\end{equation*}
+définie par les foncteurs de $\operatorname{comp}(C)$ dans $A$ qui
+transforment tout couple de morphismes homotopes de $\operatorname{comp}(C)$
+en morphismes égaux.
+
+\VerdierSemanticAnchor{ch1-2-5-8-uniqueness}
+La catégorie $K(C)$ munie du foncteur canonique
+$\operatorname{comp}(C)\xrightarrow{Q}K(C)$ est déterminée à isomorphisme
+unique près par cette propriété.
+
+\VerdierSemanticAnchor{ch1-2-5-9}
+\noindent\textbf{2.5.9.}\quad
+Il résulte immédiatement de (2.5.5) et de (2.5.8) qu'il existe un et un seul
+foncteur de translation sur $K(C)$ tel que le foncteur canonique :
+
+\VerdierSemanticAnchor{ch1-2-5-9-translation}
+\begin{equation*}
+  \operatorname{comp}(C)\longrightarrow K(C)
+\end{equation*}
+commute (strictement) aux translations.
+
+\VerdierSemanticAnchor{ch1-2-5-9-strict-z-category}
+Ce foncteur de translation est un automorphisme de $K(C)$ et par suite définit
+sur $K(C)$ une structure de $\mathbb Z$-catégorie stricte.
+
+\VerdierSemanticAnchor{ch1-2-5-9-strict-z-functor}
+Le foncteur canonique $\operatorname{comp}(C)\longrightarrow K(C)$ est un
+$\mathbb Z$-foncteur strict.

@@ -1,0 +1,51 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0159}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch3-3-2-5-2}
+在前页图式中取像，得到
+\[
+V\xrightarrow{\alpha}V'\xrightarrow{\gamma}\operatorname{Im}(u'f').
+\tag{3.2.5.2}
+\]
+\VerdierSemanticAnchor{ch3-3-2-5-cokernel-proof}
+首先，$\gamma$ 是满态射，因为 $V'$ 与 $\operatorname{Im}(u'f')$ 都是
+$h(X')$ 的商对象。其次，$\gamma\alpha=0$：典范态射 $h(X)\to V$ 是满态射，
+典范态射 $\operatorname{Im}(u'f')\to h(Z')$ 是单态射，而 $h(u'g'f)$ 是特异
+三角中两个相继态射之复合在 $h$ 下的像，故由 (1.2.2) 它为零。还需证明
+(3.2.5.2) 在 $V'$ 处正合。由 $\mathcal D^\wedge$ 中正合列的性质，只需对
+$\mathcal D$ 的每个对象 $W$ 证明下列序列正合：
+\[
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),V)\longrightarrow
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),V')\longrightarrow
+\operatorname{Hom}_{\mathcal D^\wedge}(h(W),\operatorname{Im}(u'f'))
+\]
+设 $\sigma\colon h(W)\to V'$。将它与典范态射 $V'\to h(Y')$ 复合，得到
+从 $h(W)$ 到 $h(Y')$ 的态射，即一个态射 $m\colon W\to Y'$。由于
+$\operatorname{Im}(u'f')$ 是 $h(Z')$ 的子对象，$\gamma\sigma=0$ 当且仅当
+$u'm=0$。因此由 (1.2.1)，存在 $n\colon W\to X$ 使 $g'fn=m$。再与典范态射
+$h(X)\to V$ 复合，得到 $\sigma'\colon h(W)\to V$。由于 $V'$ 是 $h(Y')$
+的子对象，有 $\alpha\sigma'=\sigma$。命题 (3.2.5) 得证。
+
+\VerdierSemanticAnchor{ch3-3-2-6}
+\medskip\noindent\textbf{3.2.6.}\quad
+由 (3.2.3)，$\mathrm A(\mathcal D)$ 等价于 $\mathcal D^\wedge$ 中可容许
+对象的满子范畴。由 (3.2.5)，该满子范畴是阿贝尔子范畴。因此
+$\mathrm A(\mathcal D)$ 是阿贝尔范畴。
+
+\VerdierSemanticAnchor{ch3-3-2-7}
+\medskip\noindent\textbf{命题 3.2.7.}\quad
+\textit{$\mathrm A(\mathcal D)$ 中的每个正合列}
+\[
+0\longrightarrow V_1\longrightarrow V_2\longrightarrow V_3
+\]
+\textit{都同构于 $\mathrm A(\mathcal D)$ 中由 $\mathcal D$ 的下列交换图决定的序列：}
+\VerdierSemanticAnchor{ch3-3-2-7-diagram}
+\[
+\begin{tikzcd}[column sep=3.3em,row sep=2.4em]
+0\arrow[r]&X_1\arrow[r,"u_1"]\arrow[d,"f_1"']&X_2\arrow[r,"u_2"]\arrow[d,"f_2"']&X_3\arrow[d,"f_3"]\\
+0\arrow[r]&Y_1\arrow[r,"\operatorname{id}_{Y_1}"']&Y_2=Y_1\arrow[r]&Y_3
+\end{tikzcd}
+\qquad
+(X_i\xrightarrow{f_i}Y_i)\simeq V_i,\quad1\leq i\leq3.
+\]
+\endgroup

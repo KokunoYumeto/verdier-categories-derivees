@@ -1,0 +1,69 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0029}
+\VerdierSemanticAnchor{intro-7-duality-D4}
+\noindent\textit{D4)} $X$ が $Y$ の閉部分集合で $f$ が標準的包含ならば、
+$f^!$ は「$X$ に台をもつ切断」関手の全導来関手である。
+
+\VerdierSemanticAnchor{intro-7-traditional-duality}
+この定理と、上で挙げた他の状況における変形は、双対性の伝統的な定式化を
+含む。すなわち、位相的な場合の Poincaré 双対定理、および滑らかな射影
+多様体上の代数的連接層に対する Serre 双対定理である。しかし導来圏の
+言葉は、単純な特殊例だけで関心をもっていた定理をより一般的に証明する
+ためだけのものではない。たとえば現在、代数閉体上の滑らかで固有だが
+非射影的な多様体上の代数的連接層について、伝統的な形（Serre 双対型）
+の双対定理を証明するには、一般双対定理を経由する方法しか知られていない。
+非特異射影多様体のエタール・コホモロジーにおける双対性についても同様
+である。
+
+\VerdierSemanticAnchor{intro-8}
+\noindent\textbf{8.}\quad
+1)、2)、4) の場合の双対定理から、特異性をもちうる層を含む非古典的な
+Lefschetz 固定点公式が導かれる [10], [11], [12]。$X$ を有限コホモロジー
+次元のコンパクト位相空間、$A$ を Noether 環、$F$ を $X$ 上の $A$-加群
+の層とし、次の性質を仮定する：
+
+\VerdierSemanticAnchor{intro-8-lefschetz-hypotheses}
+\begin{enumerate}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\VerdierSemanticAnchor{intro-8-hypothesis-a}
+\item $X$ の各点で、層 $F$ の茎は有限生成で有限射影次元をもつ $A$-加群
+である。
+
+\VerdierSemanticAnchor{intro-8-hypothesis-b}
+\item $X$ の各点の近傍で、Wilder [9] が記述した性質に類似する正則性を
+もつ。
+\end{enumerate}
+
+\VerdierSemanticAnchor{intro-8-endomorphism}
+$\Phi=(\Phi_X,\Phi_F)\colon(X,F)\longrightarrow(X,F)$ を、層 $F$ を備えた
+位相空間 $X$ の自己準同型とする。$\Phi$ は $A$-加群の複体の自己準同型
+\VerdierSemanticAnchor{intro-8-rh-phi}
+\[
+\mathrm{RH}(\Phi)\colon
+\mathrm{RH}(X,F)\longrightarrow\mathrm{RH}(X,F)
+\]
+を誘導する。
+
+\VerdierSemanticAnchor{intro-8-perfect-complex}
+仮定 a), b) のもとで、複体 $\mathrm{RH}(X,F)$ は $A$-加群の
+\emph{完全複体}、すなわち導来圏において、成分が有限生成射影 $A$-加群
+である有限複体に同型な複体である。
+
+\VerdierSemanticAnchor{intro-8-lefschetz-number}
+したがって Lefschetz 数 $\chi(\mathrm{RH}(\Phi))$ を、
+$\mathrm{RH}(\Phi)$ の各成分のトレースの交代和として定義できる。各成分
+は有限生成射影加群の自己準同型である。話を具体的にするため、$\Phi$ の
+固定点が孤立していると仮定する。このとき
+\VerdierSemanticAnchor{intro-8-lefschetz-formula}
+\begingroup
+\makeatletter
+\tagsleft@true
+\let\veqno\@@leqno
+\makeatother
+\begin{equation}
+\chi\bigl(\mathrm{RH}(\Phi)\bigr)
+=\sum_{P\ \text{固定点}}\chi_P(\Phi)
+\tag{Lef}
+\end{equation}
+\endgroup
+が成り立つ。

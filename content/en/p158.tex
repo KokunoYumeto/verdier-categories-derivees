@@ -1,0 +1,47 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0158}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch3-3-2-5-kernel-triangle}
+Let $(Z,X,Y',u,f'g,v)$ be a distinguished triangle in $\mathcal D$. The diagram
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.1em]
+h(Z)\arrow[r,"h(fu)"]\arrow[d,"h(u)"']&h(Y)\arrow[d,"\operatorname{id}_{h(Y)}"]\\
+h(X)\arrow[r,"h(f)"]\arrow[d,"h(g)"']&h(Y)\arrow[d,"h(g')"]\\
+h(X')\arrow[r,"h(f')"']&h(Y')
+\end{tikzcd}
+\]
+gives, on taking horizontal images,
+\VerdierSemanticAnchor{ch3-3-2-5-1}
+\[
+\operatorname{Im}(fu)\xrightarrow{\beta}V\xrightarrow{\alpha}V'.
+\tag{3.2.5.1}
+\]
+\VerdierSemanticAnchor{ch3-3-2-5-kernel-proof}
+We show that the morphism $\operatorname{Im}(fu)\to V$ is the kernel of
+$\alpha$. First, $\beta$ is a monomorphism: indeed,
+$\operatorname{Im}(fu)$ and $V$ are subobjects of $h(Y)$. Next,
+$\alpha\beta=0$: the canonical morphism
+$h(Z)\to\operatorname{Im}(fu)$ is an epimorphism, the canonical morphism
+$V'\to h(Y')$ is a monomorphism, and $h(f'gu)$ is the image under $h$ of the
+composite of two consecutive morphisms of a distinguished triangle; it is
+therefore zero (1.2.2). It remains to prove that the sequence (3.2.5.1) is
+exact at $V$. Let $W$ be an
+object of $\mathcal D$. Every morphism $\sigma\colon h(W)\to V$ comes from a
+morphism from $h(W)$ to $h(X)$, since $h(W)$ is projective in
+$\mathcal D^\wedge$, that is, from a morphism $m\colon W\to X$. Its composite
+with $\alpha$ is zero if and only if $f'gm=0$, since $V'$ is a subobject of
+$h(Y')$. By (1.2.1), there is then a morphism $n\colon W\to Z$ with $un=m$.
+Thus $\sigma$ factors through $\operatorname{Im}(fu)$.
+
+\VerdierSemanticAnchor{ch3-3-2-5-cokernel-setup}
+We now show that the cokernel of $\alpha$ in $\mathcal D^\wedge$ is an
+admissible object of $\mathcal D^\wedge$. Let
+$(X,Y',Z',g'f,u',v')$ be a distinguished triangle in $\mathcal D$. The diagram
+\[
+\begin{tikzcd}[column sep=5em,row sep=2em]
+h(X)\arrow[r,"h(f)"]\arrow[d,"h(g)"']&h(Y)\arrow[d,"h(g')"]\\
+h(X')\arrow[r,"h(f')"]\arrow[d,"\operatorname{id}_{h(X')}"']&h(Y')\arrow[d,"h(u')"]\\
+h(X')\arrow[r,"h(u'f')"']&h(Z')
+\end{tikzcd}
+\]
+\endgroup

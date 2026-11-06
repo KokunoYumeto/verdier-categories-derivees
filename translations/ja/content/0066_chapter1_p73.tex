@@ -1,0 +1,88 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0073}%
+\VerdierSemanticAnchor{ch1-2-3-4}
+\noindent\textbf{2.3.4.}\quad
+$\varphi$ を唯一の写像 $[n]\xrightarrow{\varphi}[1]$ とし、群
+$\mathbb Z[n]$ を
+$\varphi\colon\mathbb Z[n]\longrightarrow\mathbb Z$ を通じて
+$\operatorname{comp}(C)$ に作用させる。すると (1.5.2) により、Koszul
+コサイクルで捩れた唯一の $\mathbb Z[n]$-関手が存在する：
+
+\VerdierSemanticAnchor{ch1-2-3-4-eq1}
+\begin{equation}
+  \left(\int_n^\Sigma,p_n\right)\colon
+  \operatorname{comp}^{n}(C)\longrightarrow\operatorname{comp}(C)
+  \tag{2.3.4.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-3-4-characterization}
+ここで：
+\begin{equation*}
+  p_n(e_i)=p_{i,\varphi}.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-2-3-4-notation}
+以下、記号 $\int_n^\Sigma$ は、上記の捩れた
+$\mathbb Z[n]$-関手構造を備えた関手 $\int_n^\Sigma$ を表す。
+
+\VerdierSemanticAnchor{ch1-2-3-5}
+\noindent\textbf{2.3.5.}\quad
+(2.3.2)、(2.3.3)、(2.3.4) で展開した考察は、明らかな修正を加えることにより、
+関手 $\int_\varphi^\Pi$ にも適用される。
+
+\VerdierSemanticAnchor{ch1-2-3-5-summability-restriction}
+可算直和と可算直積が $C$ で必ずしも表現可能でない場合、適切な総和可能性を
+もつ複体に制限すれば、上記の結果は関手 $\int_\varphi$ に適用される。
+
+\VerdierSemanticAnchor{ch1-2-4}
+\subsection{関手の複体への拡張}
+
+\VerdierSemanticAnchor{ch1-2-4-1}
+\noindent\textbf{2.4.1.}\quad
+次の標準的な関手が存在する：
+
+\VerdierSemanticAnchor{ch1-2-4-1-eq1}
+\begin{equation}
+  \iota_n\colon
+  \operatorname{comp}^{n}(C)^\circ
+  \longrightarrow
+  \operatorname{comp}^{n}(C^\circ)
+  \tag{2.4.1.1}
+\end{equation}
+これは次の公式により定義される：
+
+\VerdierSemanticAnchor{ch1-2-4-1-object-formula}
+\begin{equation*}
+  (\iota_nX)^\sigma=X^{-\sigma},
+  \qquad X\in\operatorname{Ob}\bigl(\operatorname{comp}^{n}(C)\bigr),
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-2-4-1-eq2}
+\begin{equation}
+  d_{\iota_nX}^{\sigma,i}=d_X^{-\sigma-e_i,i},
+  \tag{2.4.1.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-1-morphism-formula}
+\begin{equation*}
+  (\iota_nf)^\sigma=f^{-\sigma},
+  \qquad f\in\operatorname{Fl}\bigl(\operatorname{comp}^{n}(C)\bigr).
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-2-4-1-graded-isomorphism}
+関手 $\iota_n$ は $\mathbb Z[n]$-圏の同型である
+（$\operatorname{comp}^{n}(C^\circ)$ の $\mathbb Z[n]$-圏構造は (2.3.1) で定義され、
+$\operatorname{comp}^{n}(C)^\circ$ の次数付き構造は (2.3.1) と (1.3.9) で定義される）。
+
+\VerdierSemanticAnchor{ch1-2-4-1-sigma-opposite-setup}
+可算直和が $C$ で表現可能であると仮定し、
+$\varphi\colon[n]\longrightarrow[m]$ を写像とする。次のように表す：
+
+\VerdierSemanticAnchor{ch1-2-4-1-eq3}
+\begin{equation}
+  \left(\int_{\varphi,C}^{\Sigma}\right)^\circ\colon
+  \operatorname{comp}^{n}(C)^\circ
+  \longrightarrow
+  \operatorname{comp}^{m}(C)^\circ,
+  \tag{2.4.1.3}
+\end{equation}

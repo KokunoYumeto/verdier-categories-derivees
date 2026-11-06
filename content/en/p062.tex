@@ -1,0 +1,96 @@
+\VerdierPhysicalPageAnchor{0062}%
+\VerdierSemanticAnchor{ch1-1-6-4}
+\VerdierSemanticAnchor{ch1-1-6-4-definition}
+\noindent\textbf{Definition 1.6.4.}\quad
+The \emph{Koszul cocycle relative to an ordered basis
+$e_1,\ldots,e_n$ of $\mathbb Z^n$} is the unique cocycle $\alpha$ in
+the Koszul class relative to the basis $e_1,\ldots,e_n$ satisfying:
+
+\VerdierSemanticAnchor{ch1-1-6-4-eq1}
+\begin{equation}
+  \alpha(\sigma_1,\sigma_2)=1
+  \quad
+  \forall\sigma_1\in\mathbb Z^n(\leq i),\quad
+  \forall\sigma_2\in\mathbb Z^n(\geq i),\quad
+  \forall i\in[1,n].
+  \tag{1.6.4.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-4-coordinate-intro}
+Let
+$\sigma_1=\sum_{i=1}^{n}p_i e_i$ and
+$\sigma_2=\sum_{i=1}^{n}q_i e_i$
+be two elements of $\mathbb Z^n$; then:
+
+\VerdierSemanticAnchor{ch1-1-6-4-eq2}
+\begin{equation}
+  \alpha(\sigma_1,\sigma_2)
+  =(-1)^{\left(\sum_{i<j}q_i p_j\right)}.
+  \tag{1.6.4.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-4-justification}
+This definition requires justification. The existence of a cocycle in
+the Koszul class satisfying (1.6.4.1) is clear: an immediate calculation
+shows that the cocycle (1.6.4.2) satisfies (1.6.4.1) and belongs to the
+Koszul class (1.6.2). To verify uniqueness, it suffices to observe that
+every cocycle cohomologous to the cocycle $\alpha$ is of the form
+
+\VerdierSemanticAnchor{ch1-1-6-4-cohomologous-form}
+\begin{equation*}
+  \alpha_1(\sigma_1,\sigma_2)
+  =\alpha(\sigma_1,\sigma_2)
+   \beta(\sigma_2)\beta(\sigma_1+\sigma_2)^{-1}\beta(\sigma_1)
+\end{equation*}
+and such a cocycle has property (1.6.4.1) if and only if
+
+\VerdierSemanticAnchor{ch1-1-6-4-condition}
+\begin{equation*}
+  \beta(\sigma_1+\sigma_2)=\beta(\sigma_1)\beta(\sigma_2)
+  \quad
+  \forall i,\quad
+  \forall\sigma_1\in\mathbb Z^n(\leq i),\quad
+  \forall\sigma_2\in\mathbb Z^n(\geq i).
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-1-6-4-uniqueness}
+It follows immediately that
+$\beta\colon\mathbb Z^n\longrightarrow\mathbb Z/2\mathbb Z$
+is a group homomorphism and consequently that
+$\alpha_1=\alpha$.
+
+\VerdierSemanticAnchor{ch1-1-6-5}
+\VerdierSemanticAnchor{ch1-1-6-5-order-dependence}
+\noindent\textbf{1.6.5.}\quad
+The definition of the Koszul cocycle depends essentially on the total
+order placed on the basis $e_1,\ldots,e_n$ of $\mathbb Z^n$. Let
+$\leq$ denote the natural order on $[1,n]$, and let $\leq_s$ be a total
+order on $[1,n]$. Let $s$ be the unique permutation of $[1,n]$ such
+that:
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq1}
+\begin{equation}
+  i\leq_s j\quad\Longleftrightarrow\quad s(i)\leq s(j).
+  \tag{1.6.5.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-5-cocycles}
+Let $\alpha$ and $\alpha_s$ be the Koszul cocycles relative,
+respectively, to the orders $\leq$ and $\leq_s$. Then:
+
+\VerdierSemanticAnchor{ch1-1-6-5-eq2}
+\VerdierSemanticAnchor{ch1-1-6-5-eq2-natural}
+\VerdierSemanticAnchor{ch1-1-6-5-eq2-coordinates}
+\VerdierSemanticAnchor{ch1-1-6-5-eq2-permuted}
+\begin{equation}
+  \begin{aligned}
+    \alpha(\sigma_1,\sigma_2)
+      &=(-1)^{\left(\sum_{i<j}q_i p_j\right)},\\
+    \sigma_1&=\sum_i p_i e_i,
+      \qquad \sigma_2=\sum_i q_i e_i,\\
+    \alpha_s(\sigma_1,\sigma_2)
+      &=(-1)^{\left(\sum_{s(i)<s(j)}q_i p_j\right)},
+  \end{aligned}
+  \tag{1.6.5.2}
+\end{equation}
+\VerdierSemanticAnchor{ch1-1-6-5-open}

@@ -1,0 +1,103 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0193}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-2-6-proof-cont}
+(2.1.1). Le morphisme $p_0$ est un morphisme élémentaire de hauteur $1$.
+Le complexe $U_0^\bullet$ est de la forme :
+
+\VerdierSemanticAnchor{ch3d-2-2-6-u0-complex}
+\[
+\begin{aligned}
+U_0^\bullet={}&0\longrightarrow0\longrightarrow\cdots\longrightarrow0
+\longrightarrow L_n\longrightarrow L_{n-1}\longrightarrow\cdots\\
+&\longrightarrow L_1\longrightarrow Z_0\longrightarrow L
+\longrightarrow0\longrightarrow0\longrightarrow\cdots.
+\end{aligned}
+\]
+D'après la propriété $(E_4)$, l'objet $Z_0$ est un élément de $M'$. Par
+suite, il existe un épimorphisme $u_0\colon L'_0\longrightarrow Z_0$,
+$L'_0\in M$. Posons alors (2.1.1)
+$U_1^\bullet=U_0^\bullet(u_0,0)$,
+$p_1=p(u_0,0)\colon U_1^\bullet\longrightarrow U_0^\bullet$.
+
+\VerdierSemanticAnchor{ch3d-2-2-6-iterated-elementary-morphisms}
+En poursuivant ainsi, on démontre par récurrence, qu'il existe une suite de
+morphismes :
+\[
+p_i\colon U_i^\bullet\longrightarrow U_{i-1}^\bullet,
+\qquad 1\leq i\leq n-1,
+\]
+\[
+p_0\colon U_0^\bullet\longrightarrow V^\bullet,
+\]
+où $p_i$ est un morphisme élémentaire de hauteur $-i+1$ et où
+$U_i^\bullet$ est de la forme :
+
+\VerdierSemanticAnchor{ch3d-2-2-6-ui-complex}
+\[
+\begin{aligned}
+U_i^\bullet={}&0\longrightarrow0\longrightarrow\cdots
+\longrightarrow L_n\longrightarrow L_{n-1}\longrightarrow\cdots
+\longrightarrow L_{i+1}\longrightarrow Z_i\\
+&\longrightarrow L'_{i-1}\longrightarrow\cdots\longrightarrow L'_0
+\longrightarrow L\longrightarrow0\longrightarrow\cdots ,
+\end{aligned}
+\]
+où $L'_j\in M$, $0\leq j\leq i-1$. On obtient donc, en composant ces
+différents morphismes $p_i$, un quasi-isomorphisme épimorphique :
+
+\VerdierSemanticAnchor{ch3d-2-2-6-composite}
+\[
+p\colon U_{n-1}^\bullet\longrightarrow V^\bullet.
+\]
+Remarquons alors que dans le complexe :
+
+\VerdierSemanticAnchor{ch3d-2-2-6-unminus1-complex}
+\[
+\begin{aligned}
+U_{n-1}^\bullet={}&0\longrightarrow0\longrightarrow\cdots
+\longrightarrow L_n\longrightarrow Z_{n-1}\longrightarrow L'_{n-2}
+\longrightarrow\cdots\\
+&\longrightarrow L'_0\longrightarrow L\longrightarrow0
+\longrightarrow\cdots ,
+\end{aligned}
+\]
+l'objet $Z_{n-1}$ apparaît, d'après la propriété $(E_4)$, comme une
+extension de deux éléments de $M$ et est par suite, d'après la propriété
+$(E_5)$, un élément de $M$. Posons alors :
+
+\VerdierSemanticAnchor{ch3d-2-2-6-l-complexes}
+\[
+L^\bullet=0\longrightarrow0\longrightarrow L_n\longrightarrow L_{n-1}
+\longrightarrow\cdots\longrightarrow L_0\longrightarrow0
+\longrightarrow0\longrightarrow\cdots ,
+\]
+\[
+\begin{aligned}
+{L'}^\bullet={}&0\longrightarrow0\longrightarrow L_n
+\longrightarrow Z_{n-1}\longrightarrow L'_{n-2}
+\longrightarrow\cdots\\
+&\longrightarrow L'_0\longrightarrow0\longrightarrow0
+\longrightarrow\cdots ,
+\end{aligned}
+\]
+et notons $m\colon {L'}^\bullet\longrightarrow L^\bullet$ le morphisme
+induit par $p$. Le seul objet de cohomologie non nul de $L^\bullet$ (resp.
+${L'}^\bullet$) est l'objet $Y$ en dimension $0$ (resp. $L$ en dimension
+$0$) et le morphisme $m$ induit sur ces objets le morphisme $u$.
+Considérons alors le cône $c(m)$ du morphisme $m$ :
+
+\VerdierSemanticAnchor{ch3d-2-2-6-cone}
+\[
+\begin{aligned}
+c(m)={}&\cdots\longrightarrow0\longrightarrow L_n
+\longrightarrow L_n\oplus Z_{n-1}
+\longrightarrow L_{n-1}\oplus L'_{n-2}\longrightarrow\cdots\\
+&\longrightarrow L_1\oplus L'_0\longrightarrow L_0
+\longrightarrow0\longrightarrow\cdots.
+\end{aligned}
+\]
+\endgroup

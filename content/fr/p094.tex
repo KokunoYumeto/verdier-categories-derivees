@@ -1,0 +1,105 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0094}%
+\begingroup
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+\VerdierSemanticAnchor{ch1-3-2-12}
+\noindent\textbf{Proposition 3.2.12.}\quad
+\VerdierSemanticAnchor{ch1-3-2-12-a}
+a) Le morphisme
+$c(I)\colon c(g)\longrightarrow c(c(D))$ est un homotopisme.
+
+\VerdierSemanticAnchor{ch1-3-2-12-b}
+b) Le diagramme :
+
+\VerdierSemanticAnchor{ch1-3-2-12-eq1}
+\begin{equation}
+  \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center),scale=0.74,
+    every node/.style={transform shape}]
+    \node (Ch) at (0,0) {$c(h)$};
+    \node (Cg) at (3.0,1.55) {$c(g)$};
+    \node (CcD) at (3.0,0) {$c(c(D))$};
+    \draw[->] (Ch) -- node[above left] {$c(D')$} (Cg);
+    \draw[->] (Cg) -- node[right] {$c(I)$} (CcD);
+    \draw[->] (Ch) -- node[above] {$p(c(D))$} (CcD);
+  \end{tikzpicture}
+  \tag{3.2.12.1}
+\end{equation}
+est commutatif à homotopie près.
+
+\VerdierSemanticAnchor{ch1-3-2-12-c}
+c) Le diagramme :
+
+\VerdierSemanticAnchor{ch1-3-2-12-eq2}
+\begin{equation}
+  \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center),scale=0.76,
+    every node/.style={transform shape}]
+    \node (Cg) at (0,1.45) {$c(g)$};
+    \node (Y) at (3.25,1.45) {$Y[1]$};
+    \node (CcD) at (0,0) {$c(c(D))$};
+    \node (Cf) at (3.25,0) {$c(f)[1]$};
+    \draw[->] (Cg) -- node[above] {$q(g)$} (Y);
+    \draw[->] (Cg) -- node[left] {$c(I)$} (CcD);
+    \draw[->] (Y) -- node[right] {$p(f)[1]$} (Cf);
+    \draw[->] (CcD) -- node[above] {$q(c(D))$} (Cf);
+  \end{tikzpicture}
+  \tag{3.2.12.2}
+\end{equation}
+est commutatif.
+
+\VerdierSemanticAnchor{ch1-3-2-12-component-calculation}
+En effet, un calcul immédiat montre que le $i$-ème composant du morphisme
+$c(I)$ est :
+
+\VerdierSemanticAnchor{ch1-3-2-12-eq3}
+\begin{equation}
+  c(I)^i=
+  \begin{pmatrix}
+    \operatorname{id}&0\\
+    0&0\\
+    0&\operatorname{id}\\
+    0&0
+  \end{pmatrix}
+  \colon Z^i\oplus Y^{i+1}\longrightarrow
+  Z^i\oplus X^{i+1}\oplus Y^{i+1}\oplus X^{i+2}.
+  \tag{3.2.12.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-12-inverse}
+Le morphisme $u\colon c(c(D))\longrightarrow c(g)$ de composants :
+
+\VerdierSemanticAnchor{ch1-3-2-12-eq4}
+\begin{equation}
+  u^i=
+  \begin{pmatrix}
+    \operatorname{id}&0&0&0\\
+    0&f^{i+1}&\operatorname{id}&0
+  \end{pmatrix}
+  \colon Z^i\oplus X^{i+1}\oplus Y^{i+1}\oplus X^{i+2}
+  \longrightarrow Z^i\oplus Y^{i+1}
+  \tag{3.2.12.4}
+\end{equation}
+est un inverse de $c(I)$ à homotopie près, ce qui démontre la première
+assertion. Pour démontrer la deuxième assertion, il suffit de vérifier que
+le diagramme :
+
+\VerdierSemanticAnchor{ch1-3-2-12-eq5}
+\begin{equation}
+  \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center),scale=0.74,
+    every node/.style={transform shape}]
+    \node (Ch) at (0,0) {$c(h)$};
+    \node (Cg) at (3.0,1.55) {$c(g)$};
+    \node (CcD) at (3.0,0) {$c(c(D))$};
+    \draw[->] (Ch) -- node[above left] {$c(D')$} (Cg);
+    \draw[->] (CcD) -- node[right] {$u$} (Cg);
+    \draw[->] (Ch) -- node[above] {$p(c(D))$} (CcD);
+  \end{tikzpicture}
+  \tag{3.2.12.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-12-conclusion}
+est commutatif, ce qui se fait en exhibant les composants. Enfin, d'après
+(3.2.2), les propriétés fonctorielles du morphisme $q(f)$ (3.2.2.2)
+impliquent que le carré (3.2.12.2) soit commutatif.
+\endgroup
+

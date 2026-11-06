@@ -1,0 +1,89 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0249}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-6-9-first-differentials}
+\noindent であり、第一微分は (4.1.9.1)
+\[
+\begin{aligned}
+d_1^{p,q}\colon(\mathrm{C.E.})_1^{p,q}
+  &\longrightarrow(\mathrm{C.E.})_1^{p+1,q},\\
+d_1^{p,q}&=F^q(-d_2^{\bullet,p}).
+\end{aligned}
+\]
+である。
+
+\VerdierSemanticAnchor{ch4d-4-6-9-column-decomposition}
+複体 $I^{\bullet,p}$ は Cartan--Eilenberg 入射複体であり (4.6.1)、したがって
+(4.6.3) により $D(\mathcal A)$ に標準同型
+\[
+I^{\bullet,p}\xrightarrow{\sim}
+\prod_{r\in\mathbb Z}H^r(I^{\bullet,p})[-r].
+\]
+がある。
+
+\VerdierSemanticAnchor{ch4d-4-6-9-h1-components}
+ここで (4.6.4.3) で導入した複体 $H_1^r(I^{\bullet\bullet})$ を用いる。
+任意の整数 $r$ に対して
+\[
+H_1^r(I^{\bullet\bullet})^p=H^r(I^{\bullet,p}),
+\]
+であり、したがって $D(\mathcal A)$ に標準同型
+
+\VerdierSemanticAnchor{ch4d-4-6-9-h1-decomposition}
+\[
+I^{\bullet,p}\xrightarrow{\sim}
+\prod_{r\in\mathbb Z}H_1^r(I^{\bullet\bullet})^p[-r],
+\]
+がある。また、この同型のもとで複体の射
+\[
+d_2^{\bullet,p}\colon
+I^{\bullet,p}\longrightarrow I^{\bullet,p+1}
+\]
+は射
+
+\VerdierSemanticAnchor{ch4d-4-6-9-d2-decomposition}
+\[
+\prod_{r\in\mathbb Z}
+d_{H_1^r(I^{\bullet\bullet})}^{p}[-r],
+\]
+と同型である。これにより初期項の最終的な表示
+
+\VerdierSemanticAnchor{ch4d-4-6-9-1}
+\[
+(\mathrm{C.E.})_1^{p,q}
+=F^q\left(
+\prod_{r\in\mathbb Z}H_1^r(I^{\bullet\bullet})^p[-r]
+\right),
+\tag{4.6.9.1}
+\]
+および第一微分の最終的な表示
+
+\VerdierSemanticAnchor{ch4d-4-6-9-2}
+\[
+d_1^{p,q}
+=-F^q\left(
+\prod_{r\in\mathbb Z}d_{H_1^r(I^{\bullet\bullet})}^{p}[-r]
+\right).
+\tag{4.6.9.2}
+\]
+を得る。
+
+\VerdierSemanticAnchor{ch4d-4-6-9-3-prelude}
+$F^{q,\bullet}(H_1^r(I^{\bullet\bullet}))$ を、複体
+$H_1^r(I^{\bullet\bullet})$ の成分と微分に関手 $F^q$ を適用して得られる
+$\mathcal B$ の対象の複体とする。公式 (4.6.9.1) と (4.6.9.2) は射
+
+\VerdierSemanticAnchor{ch4d-4-6-9-3}
+\[
+(\mathrm{C.E.})_2^{p,q}\longrightarrow
+\prod_{r\in\mathbb Z}
+H_{\mathcal B}^{p}\left(
+F^{q-r,\bullet}(H_1^r(I^{\bullet\bullet}))
+\right).
+\tag{4.6.9.3}
+\]
+を定める。
+\endgroup

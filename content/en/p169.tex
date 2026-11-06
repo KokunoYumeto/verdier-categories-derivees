@@ -1,0 +1,77 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0169}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{2.5em}
+\VerdierSemanticAnchor{ch4-4-2-6-third-exact-sequence}
+\[
+0\longrightarrow
+E\!\begin{bmatrix}n\\ f_2f_1,f_3,f_4\end{bmatrix}
+\longrightarrow
+E\!\begin{bmatrix}n\\ f_2,f_3,f_4\end{bmatrix}
+\longrightarrow
+Z\!\begin{bmatrix}n\\ f_2,f_3\end{bmatrix}
+ \Big/
+Z\!\begin{bmatrix}n\\ f_2f_1,f_3\end{bmatrix}
+\longrightarrow0.
+\]
+Now let $f_i$, $i\in\mathbb Z$, be an unbounded sequence of composable
+morphisms in $\mathcal J$. From the preceding discussion and the definition
+of the differentials, we obtain an unbounded exact sequence
+\VerdierSemanticAnchor{ch4-4-2-6-unbounded-exact-sequence}
+\[
+\begin{aligned}
+\cdots\longrightarrow
+E\!\begin{bmatrix}n-1\\ f_{i+3},f_{i+4},f_{i+5}\end{bmatrix}
+&\xrightarrow{d^{n-1}}
+E\!\begin{bmatrix}n\\ f_{i+1},f_{i+2},f_{i+3}\end{bmatrix}
+\longrightarrow
+E\!\begin{bmatrix}n\\ f_{i+1},f_{i+3}f_{i+2},f_{i+4}\end{bmatrix}
+\longrightarrow{}\\[-1pt]
+&\longrightarrow
+E\!\begin{bmatrix}n\\ f_{i+2},f_{i+3},f_{i+4}\end{bmatrix}
+\xrightarrow{d^n}
+E\!\begin{bmatrix}n+1\\ f_i,f_{i+1},f_{i+2}\end{bmatrix}
+\longrightarrow\cdots.
+\end{aligned}
+\]
+The curious reader will elucidate the relation between this exact sequence
+and the low-degree five-term exact sequence of classical spectral
+sequences.
+
+\VerdierSemanticAnchor{ch4-4-2-7}
+\medskip\noindent\textbf{4.2.7.}
+Every commutative diagram in $\mathcal A$
+\[
+\begin{tikzcd}[column sep=4em,row sep=2.7em]
+&Y\arrow[dl]\arrow[d,"\varphi"]\arrow[dr,"\psi"]&\\
+X'\arrow[r,"\varphi'"']&X\arrow[r,"\eta"']&X'',
+\end{tikzcd}
+\]
+in which the row is exact defines, by means of $\eta$, an isomorphism
+([1], p.~316, Lemma 1.1)
+\VerdierSemanticAnchor{ch4-4-2-7-image-isomorphism}
+\[
+\operatorname{Im}(\varphi)\big/\operatorname{Im}(\varphi')
+\simeq\operatorname{Im}(\psi).
+\]
+Let
+$\omega_3=(\mathord\bullet\xrightarrow{f_1}\mathord\bullet
+\xrightarrow{f_2}\mathord\bullet\xrightarrow{f_3}\mathord\bullet)$
+be an object of $\mathcal{F}\ell_3(\mathcal J)$. Applying the preceding
+observation to the diagram
+\VerdierSemanticAnchor{ch4-4-2-7-first-diagram}
+\[
+\begin{tikzcd}[column sep=4.6em,row sep=2.8em]
+&H^n(f_2f_1)\arrow[d]\arrow[dr]&\\
+H^{n-1}(f_3)\arrow[ur,"\delta"]\arrow[r,"\delta"']&
+H^n(f_2)\arrow[r]&H^n(f_3f_2),
+\end{tikzcd}
+\]
+gives an isomorphism
+\VerdierSemanticAnchor{ch4-4-2-7-1}
+\[
+E\!\begin{bmatrix}n\\ f_1,f_2,f_3\end{bmatrix}
+\xrightarrow{\ \sim\ }
+\operatorname{Im}\bigl(H^n(f_2f_1)\longrightarrow H^n(f_3f_2)\bigr).
+\tag{4.2.7.1}
+\]
+\endgroup

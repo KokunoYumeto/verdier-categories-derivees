@@ -1,0 +1,79 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0047}%
+\VerdierSemanticAnchor{ch1-1-4-3-compatibility}
+因此，由 (1.2.3.2)，对每一对 $(\varepsilon,\sigma)$，下图交换：
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq8}
+\begin{center}
+  $\begin{tikzcd}[ampersand replacement=\&,column sep=6em,row sep=3.5em]
+    FT(\sigma)
+      \arrow[rr,"{m((\varepsilon,\sigma))}"]
+      \arrow[dr,"{m((1,\sigma))}"']
+      \& \& T'(\sigma)F \\
+      \& T'(\sigma)F
+        \arrow[ur,"{T'(\sigma)*m(\varepsilon)}"'] \&
+  \end{tikzcd}$
+  \hfill\textup{(1.4.3.8)},
+\end{center}
+
+\noindent 即
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq9}
+\begin{equation}
+  m((\varepsilon,\sigma))=\varepsilon m((1,\sigma)).
+  \tag{1.4.3.9}
+\end{equation}
+于是置
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq10}
+\begin{equation}
+  m((1,\sigma))=p(\sigma)\colon
+  FT(\sigma)\longrightarrow T'(\sigma)F.
+  \tag{1.4.3.10}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-3-cocycle-compatibility}
+同构族 $p(\sigma)$（$\sigma\in G$）具有下述性质：对每一对
+$\sigma_1,\sigma_2\in G$，下图是
+$\alpha_s(\sigma_1,\sigma_2)$-交换的（即当
+$\alpha_s(\sigma_1,\sigma_2)=+1$ 时交换，而当其为 $-1$ 时反交换）：
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq11}
+\begin{center}
+  \resizebox{0.94\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=5em,row sep=3.5em]
+      FT(\sigma_1\sigma_2)
+        \arrow[rr,"{p(\sigma_1\sigma_2)}"]
+        \arrow[d,"{F*c(\sigma_2,\sigma_1)}"']
+        \& \& T'(\sigma_1\sigma_2)F
+          \arrow[dd,"{c'(\sigma_2,\sigma_1)*F}"'] \\
+      FT(\sigma_1)T(\sigma_2)
+        \arrow[d,"{p(\sigma_1)*T(\sigma_2)}"']
+        \& \& {} \\
+      T'(\sigma_1)FT(\sigma_2)
+        \arrow[rr,"{T'(\sigma_1)*p(\sigma_2)}"]
+        \& \& T'(\sigma_1)T'(\sigma_2)F\mathpunct{.}
+    \end{tikzcd}$%
+  }
+  \hfill\textup{(1.4.3.11)}
+\end{center}
+
+\VerdierSemanticAnchor{ch1-1-4-3-converse}
+反之，给定函子 $F\colon\mathcal C\to\mathcal C'$ 以及一族同构
+$p(\sigma)\colon FT(\sigma)\to T'(\sigma)F$（$\sigma\in G$），并且对每一对
+$(\sigma_1,\sigma_2)\in G\times G$，图 (1.4.3.11) 都是
+$\alpha_s(\sigma_1,\sigma_2)$-交换的，则可以唯一地重构一个 $H$-函子
+\[
+  (F,m)\colon(\mathcal C,H,T_f,c_f)
+  \longrightarrow(\mathcal C',H,T'_f,c'_f),
+\]
+它在 $F$ 上诱导符号群的典范作用；利用 $H$ 与 (1.4.3.6) 所述群的等同，置
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq12}
+\begin{equation}
+  m((\varepsilon,\sigma))=\varepsilon p(\sigma).
+  \tag{1.4.3.12}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-3-closure}
+这个直接的验证留给读者。

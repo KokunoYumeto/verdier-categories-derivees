@@ -1,0 +1,100 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0094}%
+\begingroup
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+\VerdierSemanticAnchor{ch1-3-2-12}
+\noindent\textbf{命题 3.2.12.}\quad
+\VerdierSemanticAnchor{ch1-3-2-12-a}
+a) 态射 $c(I)\colon c(g)\longrightarrow c(c(D))$ 是同伦等价。
+
+\VerdierSemanticAnchor{ch1-3-2-12-b}
+b) 图
+
+\VerdierSemanticAnchor{ch1-3-2-12-eq1}
+\begin{equation}
+  \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center),scale=0.74,
+    every node/.style={transform shape}]
+    \node (Ch) at (0,0) {$c(h)$};
+    \node (Cg) at (3.0,1.55) {$c(g)$};
+    \node (CcD) at (3.0,0) {$c(c(D))$};
+    \draw[->] (Ch) -- node[above left] {$c(D')$} (Cg);
+    \draw[->] (Cg) -- node[right] {$c(I)$} (CcD);
+    \draw[->] (Ch) -- node[above] {$p(c(D))$} (CcD);
+  \end{tikzpicture}
+  \tag{3.2.12.1}
+\end{equation}
+在同伦意义下交换。
+
+\VerdierSemanticAnchor{ch1-3-2-12-c}
+c) 图
+
+\VerdierSemanticAnchor{ch1-3-2-12-eq2}
+\begin{equation}
+  \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center),scale=0.76,
+    every node/.style={transform shape}]
+    \node (Cg) at (0,1.45) {$c(g)$};
+    \node (Y) at (3.25,1.45) {$Y[1]$};
+    \node (CcD) at (0,0) {$c(c(D))$};
+    \node (Cf) at (3.25,0) {$c(f)[1]$};
+    \draw[->] (Cg) -- node[above] {$q(g)$} (Y);
+    \draw[->] (Cg) -- node[left] {$c(I)$} (CcD);
+    \draw[->] (Y) -- node[right] {$p(f)[1]$} (Cf);
+    \draw[->] (CcD) -- node[above] {$q(c(D))$} (Cf);
+  \end{tikzpicture}
+  \tag{3.2.12.2}
+\end{equation}
+交换。
+
+\VerdierSemanticAnchor{ch1-3-2-12-component-calculation}
+事实上，直接计算表明，态射 $c(I)$ 的第 $i$ 个分量为
+
+\VerdierSemanticAnchor{ch1-3-2-12-eq3}
+\begin{equation}
+  c(I)^i=
+  \begin{pmatrix}
+    \operatorname{id}&0\\
+    0&0\\
+    0&\operatorname{id}\\
+    0&0
+  \end{pmatrix}
+  \colon Z^i\oplus Y^{i+1}\longrightarrow
+  Z^i\oplus X^{i+1}\oplus Y^{i+1}\oplus X^{i+2}.
+  \tag{3.2.12.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-12-inverse}
+态射 $u\colon c(c(D))\longrightarrow c(g)$ 的分量为
+
+\VerdierSemanticAnchor{ch1-3-2-12-eq4}
+\begin{equation}
+  u^i=
+  \begin{pmatrix}
+    \operatorname{id}&0&0&0\\
+    0&f^{i+1}&\operatorname{id}&0
+  \end{pmatrix}
+  \colon Z^i\oplus X^{i+1}\oplus Y^{i+1}\oplus X^{i+2}
+  \longrightarrow Z^i\oplus Y^{i+1}
+  \tag{3.2.12.4}
+\end{equation}
+它在同伦意义下是 $c(I)$ 的逆，从而证明了第一个断言。为证明第二个断言，
+只需验证图
+
+\VerdierSemanticAnchor{ch1-3-2-12-eq5}
+\begin{equation}
+  \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center),scale=0.74,
+    every node/.style={transform shape}]
+    \node (Ch) at (0,0) {$c(h)$};
+    \node (Cg) at (3.0,1.55) {$c(g)$};
+    \node (CcD) at (3.0,0) {$c(c(D))$};
+    \draw[->] (Ch) -- node[above left] {$c(D')$} (Cg);
+    \draw[->] (CcD) -- node[right] {$u$} (Cg);
+    \draw[->] (Ch) -- node[above] {$p(c(D))$} (CcD);
+  \end{tikzpicture}
+  \tag{3.2.12.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-12-conclusion}
+交换；写出各分量即可验证。最后，由 (3.2.2)，态射 $q(f)$ 的函子性质
+(3.2.2.2) 蕴含方形 (3.2.12.2) 交换。
+\endgroup

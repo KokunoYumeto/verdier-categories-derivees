@@ -1,0 +1,76 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0049}%
+对每个元素 $\sigma\in G$，下图
+
+\VerdierSemanticAnchor{ch1-1-4-5-eq4}
+\begin{center}
+  \resizebox{0.78\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=6em,row sep=4em]
+      F_1T(\sigma)
+        \arrow[r,"{p_1(\sigma)}"]
+        \arrow[d,"{u*T(\sigma)}"']
+        \& T'(\sigma)F_1
+          \arrow[d,"{T'(\sigma)*u}"] \\
+      F_2T(\sigma)
+        \arrow[r,"{p_2(\sigma)}"]
+        \& T'(\sigma)F_2
+    \end{tikzcd}$%
+  }
+  \hfill\textup{(1.4.5.4)}
+\end{center}
+是 $\beta(\sigma)$-交换的。
+
+\VerdierSemanticAnchor{ch1-1-4-6}
+\noindent\textbf{定义 1.4.6.}\quad
+设 $(\mathcal C,G,T,c)$ 为一个 $G$-范畴，
+$(\mathcal C',G,T',c')$ 为一个加性 $G$-范畴。设 $\alpha_1,\alpha_2$ 为
+$Z^2(G,\mathbb Z/2\mathbb Z)$ 中的两个正规化非齐次余循环，并设
+$\beta\colon G\to\mathbb Z/2\mathbb Z$ 为一个满足
+
+\VerdierSemanticAnchor{ch1-1-4-6-eq1}
+\begin{equation}
+  \alpha_2(\sigma_1,\sigma_2)\alpha_1^{-1}(\sigma_1,\sigma_2)
+  =\beta(\sigma_2)\beta(\sigma_1\sigma_2)^{-1}\beta(\sigma_1)
+  \tag{1.4.6.1}
+\end{equation}
+的映射。
+
+\VerdierSemanticAnchor{ch1-1-4-6-beta-morphism}
+最后，设
+$(F_1,p_1),(F_2,p_2)\colon(\mathcal C,G,T,c)
+\to(\mathcal C',G,T',c')$
+为分别由余循环 $\alpha_1,\alpha_2$ 扭曲的两个 $G$-函子。称函子态射
+$u\colon F_1\to F_2$ 为\emph{从函子 $(F_1,p_1)$ 到函子 $(F_2,p_2)$ 的
+$\beta$-态射}，如果对每个 $\sigma\in G$，图 (1.4.5.4) 都是
+$\beta(\sigma)$-交换的。
+
+\VerdierSemanticAnchor{ch1-1-4-7}
+\noindent\textbf{1.4.7.}\quad
+在 (1.4.5) 中我们已经证明：选择两个正规化截面，可以把一个诱导符号群典范
+作用的 $H$-函子态射对应到相应扭曲 $G$-函子之间的一个 $\beta$-态射。
+立即可验证，这个对应是双射。此外，给定三个诱导符号群典范作用的 $H$-函子
+$(F_1,m_1)$、$(F_2,m_2)$、$(F_3,m_3)$，三个正规化截面
+$s_1,s_2,s_3$，以及两个 $H$-函子态射 $u,v$ 与它们的复合 $vu$：
+
+\VerdierSemanticAnchor{ch1-1-4-7-eq1}
+\begin{equation}
+  \begin{aligned}
+    u&\colon(F_1,m_1)\longrightarrow(F_2,m_2),\\
+    v&\colon(F_2,m_2)\longrightarrow(F_3,m_3),\\
+    vu&\colon(F_1,m_1)\longrightarrow(F_3,m_3),
+  \end{aligned}
+  \tag{1.4.7.1}
+\end{equation}
+则态射
+
+\VerdierSemanticAnchor{ch1-1-4-7-eq2}
+\begin{equation}
+  \begin{aligned}
+    u&\colon(F_1,p_1)\longrightarrow(F_2,p_2),\\
+    v&\colon(F_2,p_2)\longrightarrow(F_3,p_3),\\
+    vu&\colon(F_1,p_1)\longrightarrow(F_3,p_3),
+  \end{aligned}
+  \tag{1.4.7.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-7-open-seam}

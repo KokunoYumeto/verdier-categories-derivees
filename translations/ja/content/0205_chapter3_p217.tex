@@ -1,0 +1,77 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0217}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-2-11}
+\medskip\noindent\textbf{3.2.11.}\quad
+$f=\delta^n(S^n(X,Y))$ と $g=\delta^n({S'}^n(X,Y))$ を
+$\operatorname{Ext}_{\mathcal A}^{n}(X,Y)$ の二つの元とする。定義により、
+射 $f+g\in\operatorname{Ext}_{\mathcal A}^{n}(X,Y)$ は次の合成射である：
+
+\VerdierSemanticAnchor{ch3d-3-2-11-sum-composite}
+\[
+X\xrightarrow{\binom{\operatorname{id}}{\operatorname{id}}}X\oplus X
+\xrightarrow{\begin{pmatrix}f&0\\0&g\end{pmatrix}}
+Y[n]\oplus Y[n]
+\xrightarrow{(\operatorname{id},\operatorname{id})}Y[n].
+\]
+
+\VerdierSemanticAnchor{ch3d-3-2-11-construction}
+(3.2.9) と (3.2.10) により、元 $S^n(X,Y)$ と ${S'}^n(X,Y)$ から、元
+${S''}^n(X,Y)\in E_{\mathcal A}^{n}(X,Y)$ で
+$\delta^n({S''}^n(X,Y))=f+g$ を満たすものを構成できる。この構成を
+明示することは読者に委ねる。
+
+\VerdierSemanticAnchor{ch3d-3-2-12}
+\medskip\noindent\textbf{3.2.12.}\quad
+以上により、この小節で、群 $\operatorname{Ext}_{\mathcal A}^{n}(X,Y)$
+（$X$ と $Y$ は $\mathcal A$ の対象）が、集合
+$E_{\mathcal A}^{n}(X,Y)$ の (3.2.2) で述べた同値関係による商として
+解釈できることを示した。さらに、拡張の合成とその和は、
+$E_{\mathcal A}^{n}(X,Y)$ の元に対する簡単な操作によって記述できる。
+こうして Yoneda [3] による記述が得られる。
+
+\VerdierSemanticAnchor{ch3d-3-3}
+\subsection*{3.3. 圏
+\texorpdfstring{$\mathcal A^{\operatorname{Ext}}$}{A Ext}。}
+
+\VerdierSemanticAnchor{ch3d-3-3-1}
+\medskip\noindent\textbf{補題 3.3.1.}\quad
+\textit{a) $X$ と $Y$ を $\mathcal A$ の二つの対象とし、
+$\xi\in\operatorname{Ext}_{\mathcal A}^{0}(X[p],Y[q])\simeq
+\operatorname{Ext}_{\mathcal A}^{q-p}(X,Y)$、$q>p$ とする。$q-p$ 個の
+長さ $1$ の完全列 $S_i^1$、$1\leq i\leq q-p$ が存在して、長さ $n$ の
+完全列 $S_{q-p}^1*S_{q-p-1}^1*\cdots*S_1^1$ が定義され (3.2.4)、
+次を満たす：}
+
+\VerdierSemanticAnchor{ch3d-3-3-1-1}
+\begin{equation}
+\delta^{q-p}\bigl(S_{q-p}^1*S_{q-p-1}^1*\cdots*S_1^1\bigr)[p]=\xi.
+\tag{3.3.1.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-3-1-b-factorizations}
+\noindent\textit{b) $S^n$ と ${S'}^n$ を
+$E_{\mathcal A}^{n}(X,Y)$ の二つの元とし、(3.2.6) の記法を用いて次のように
+書けるものとする：}
+\[
+S^n=S_n^1*S_{n-1}^1*\cdots*S_1^1,
+\]
+\[
+{S'}^n={S'}_n^1*{S'}_{n-1}^1*\cdots*{S'}_1^1,
+\]
+\noindent\textit{ここで $S_i^1$ と ${S'}_i^1$、$1\leq i\leq n$ は
+長さ $1$ の完全列である。}
+
+\VerdierSemanticAnchor{ch3d-3-3-1-b-equivalence}
+\noindent\textit{次の性質は同値である：}
+
+\noindent\textit{i) $\delta^n(S^n)=\delta^n({S'}^n)$。}
+
+\noindent\textit{ii) $n$ 個の長さ $1$ の完全列
+${S''}_i^1$、$1\leq i\leq n$ と、$2n-2$ 個の $\mathcal A$ の射
+$f_i$、$1\leq i\leq n-1$、および $g_i$、$1\leq i\leq n-1$ が存在し、
+次の列が}
+\endgroup

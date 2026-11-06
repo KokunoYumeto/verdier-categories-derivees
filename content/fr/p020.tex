@@ -1,0 +1,66 @@
+\VerdierPhysicalPageAnchor{0020}
+faisceaux dont les fibres sont des groupes commutatifs sans torsion
+(résolution \emph{plate}). On constate aisément les faits suivants :
+
+\VerdierSemanticAnchor{intro-1-flat-common-refinement}
+\noindent\emph{a)} Étant données deux résolutions plates
+$L_i^{\bullet}\xrightarrow{\varepsilon_i}G$, $i=1,2$, il en existe une
+troisième $L_3^{\bullet}\xrightarrow{\varepsilon_3}G$ et un diagramme
+commutatif à homotopie près de résolutions :
+
+\VerdierSemanticAnchor{intro-1-flat-common-refinement-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+  & L_1^{\bullet} \arrow[dr,"\varepsilon_1"] & \\
+L_3^{\bullet} \arrow[ur,"\rho_1"] \arrow[rr,"\varepsilon_3"]
+  \arrow[dr,"\rho_2"'] && G \\
+  & L_2^{\bullet} \arrow[ur,"\varepsilon_2"'] &
+\end{tikzcd}
+\qquad\text{.}
+\]
+
+\VerdierSemanticAnchor{intro-1-flat-homotopy-equalizer}
+\noindent\emph{b)} Étant donnés deux morphismes de résolutions plates :
+
+\VerdierSemanticAnchor{intro-1-flat-parallel-morphisms-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+L_1^{\bullet}
+  \arrow[d,bend right=12,"\rho"']
+  \arrow[d,bend left=12,"\rho'"]
+  \arrow[dr,"\varepsilon_1"] & \\
+L_2^{\bullet} \arrow[r,"\varepsilon_2"'] & G
+\end{tikzcd}
+\qquad\text{,}
+\]
+il existe une troisième résolution plate :
+
+\VerdierSemanticAnchor{intro-1-flat-third-resolution}
+\[
+L_3^{\bullet}\xrightarrow{\varepsilon_3}G
+\qquad\text{,}
+\]
+et un morphisme de résolutions :
+
+\VerdierSemanticAnchor{intro-1-flat-sigma-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+L_3^{\bullet} \arrow[d,"\sigma"'] \arrow[dr,"\varepsilon_3"] & \\
+L_1^{\bullet} \arrow[r,"\varepsilon_1"'] & G
+\end{tikzcd}
+\qquad\text{,}
+\]
+tel que les morphismes de complexes $\rho\sigma$ et $\rho'\sigma$ soient
+homotopes.
+
+\VerdierSemanticAnchor{intro-1-flat-morphism}
+\noindent\emph{c)} Pour tout morphisme de résolutions plates :
+
+\VerdierSemanticAnchor{intro-1-flat-morphism-diagram}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+L_1^{\bullet} \arrow[d,"\rho"'] \arrow[dr,"\varepsilon_1"] & \\
+L_2^{\bullet} \arrow[r,"\varepsilon_2"'] & G
+\end{tikzcd}
+\qquad\text{,}
+\]

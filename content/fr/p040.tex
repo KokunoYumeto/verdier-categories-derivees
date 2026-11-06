@@ -1,0 +1,97 @@
+\VerdierPhysicalPageAnchor{0040}%
+\VerdierSemanticAnchor{ch1-1-3-2-eq4}
+et l'isomorphisme $c(g',g)^{-1}$ définit une application :
+
+\begin{equation}
+  \operatorname{Hom}_{\mathcal C}
+    \bigl(T(g)Y,T(g)T(g')Z\bigr)
+  \longrightarrow
+  \operatorname{Hom}_{\mathcal C}
+    \bigl(T(g)Y,T(g'g)Z\bigr).
+  \tag{1.3.2.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-3-2-eq5}
+D'où, en prenant l'image de $v$, un élément
+$v'\in\operatorname{Hom}_{\mathcal C}(T(g)Y,T(g'g)Z)$. Le composé dans
+$\mathcal C$ de $u$ et de $v'$ est un élément :
+
+\begin{equation}
+  w=v'\mathbin{\circ_{\mathcal C}}u,
+  \qquad w\in\operatorname{Hom}^{g'g}(X,Z),
+  \tag{1.3.2.5}
+\end{equation}
+qui est, par définition, le composé de $u$ et de $v$ dans
+$\mathcal C[G]$. Le foncteur fibrant $\mathcal C[G]\to\mathcal G$ est
+alors le foncteur évident. La catégorie fibrée
+$\mathcal C[G]\to\mathcal G$ est munie d'un clivage normalisé canonique.
+
+\VerdierSemanticAnchor{ch1-1-3-3}
+\noindent\textbf{1.3.3.}\quad
+On a en fait un résultat plus précis. Soient $\mathcal C$ et
+$\mathcal C'$ deux catégories graduées de type $G$ munies de clivages
+normalisés. Le foncteur $\Psi$ définit une bijection :
+
+\VerdierSemanticAnchor{ch1-1-3-3-eq1}
+\begin{equation}
+  \Psi(\mathcal C,\mathcal C')\colon
+  \operatorname{Hom}_{\operatorname{Grad}(G)}(\mathcal C,\mathcal C')
+  \longrightarrow
+  \operatorname{Hom}_{G^\circ\text{-}\operatorname{Cat}}
+    \bigl(\Psi(\mathcal C),\Psi(\mathcal C')\bigr).
+  \tag{1.3.3.1}
+\end{equation}
+
+Or ces ensembles sont les ensembles d'objets des catégories :
+
+\VerdierSemanticAnchor{ch1-1-3-3-eq2}
+\begin{equation}
+  \mathcal{H}\!om_{\operatorname{Grad}(G)}(\mathcal C,\mathcal C'),
+  \qquad
+  \mathcal{H}\!om_{G^\circ\text{-}\operatorname{Cat}}
+    \bigl(\Psi(\mathcal C),\Psi(\mathcal C')\bigr),
+  \tag{1.3.3.2}
+\end{equation}
+dont les morphismes sont respectivement les morphismes de foncteurs de
+degré $e$ et les morphismes de foncteurs compatibles avec les opérations
+de $G^\circ$. De plus, il résulte immédiatement de (1.2.7) que
+l'application $\Psi(\mathcal C,\mathcal C')$ s'étend en un foncteur :
+
+\VerdierSemanticAnchor{ch1-1-3-3-eq3}
+\begin{equation}
+  \Psi(\mathcal C,\mathcal C')\colon
+  \mathcal{H}\!om_{\operatorname{Grad}(G)}(\mathcal C,\mathcal C')
+  \longrightarrow
+  \mathcal{H}\!om_{G^\circ\text{-}\operatorname{Cat}}
+    \bigl(\Psi(\mathcal C),\Psi(\mathcal C')\bigr)
+  \tag{1.3.3.3}
+\end{equation}
+et on vérifie aisément :
+
+\VerdierSemanticAnchor{ch1-1-3-4}
+\noindent\textbf{Proposition 1.3.4.}\quad
+\emph{Le foncteur $\Psi(\mathcal C,\mathcal C')$ est un isomorphisme de
+catégories.}
+
+\VerdierSemanticAnchor{ch1-1-3-5}
+\noindent\textbf{1.3.5.}\quad
+Enfin, pour être complet, il conviendrait de noter que le foncteur
+$\Psi$ (étendu aux morphismes de foncteurs) respecte les convolutions des
+foncteurs par les morphismes de foncteurs. La vérification en est laissée
+au lecteur.
+
+\VerdierSemanticAnchor{ch1-1-3-6}
+\noindent\textbf{1.3.6.}\quad
+Le plus souvent, nous utiliserons des $G^\circ$-catégories strictes
+(1.2.2). Soient $(\mathcal C,G^\circ,T)$ et
+$(\mathcal C',G^\circ,T')$ deux $G^\circ$-catégories strictes. Un
+$G^\circ$-foncteur $(F,m)$ est alors un foncteur
+$F\colon\mathcal C\to\mathcal C'$ muni d'isomorphismes :
+
+\VerdierSemanticAnchor{ch1-1-3-6-eq1}
+\begin{equation}
+  m(g)\colon FT(g)\longrightarrow T'(g)F,
+  \qquad g\in G,
+  \qquad m(e)=\text{identité}
+  \tag{1.3.6.1}
+\end{equation}

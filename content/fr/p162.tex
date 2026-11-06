@@ -1,0 +1,70 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0162}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch4}
+\section{Objets spectraux.}
+
+Nous reprenons, pour l'adapter aux catégories triangulées, l'exposition des
+suites spectrales de [1], chap. XV, \S 7.
+
+\VerdierSemanticAnchor{ch4-4-1}
+\subsection{Définition des objets spectraux.}
+
+\VerdierSemanticAnchor{ch4-4-1-1}
+\medskip\noindent\textbf{4.1.1.}\quad
+Soit $\mathcal J$ une catégorie et, pour tout $n\in\mathbb N$, soit
+$\mathcal{F}\ell_n(\mathcal J)$ la catégorie des suites de $n$ morphismes
+composables de $\mathcal J$ (chap. I, 3.3.6). Nous utiliserons trois
+foncteurs notés
+$s_i\colon\mathcal{F}\ell_2(\mathcal J)\to\mathcal{F}\ell_1(\mathcal J)$,
+$1\leq i\leq3$ :
+\VerdierSemanticAnchor{ch4-4-1-1-1}
+\[
+\left\{
+\begin{aligned}
+&\bigl(\mathord\bullet\xrightarrow f\mathord\bullet\xrightarrow g\mathord\bullet\bigr)
+   \in\operatorname{Ob}\mathcal{F}\ell_2(\mathcal J),\\
+&s_1\bigl(\mathord\bullet\xrightarrow f\mathord\bullet\xrightarrow g\mathord\bullet\bigr)
+   =\bigl(\mathord\bullet\xrightarrow f\mathord\bullet\bigr),\\
+&s_2\bigl(\mathord\bullet\xrightarrow f\mathord\bullet\xrightarrow g\mathord\bullet\bigr)
+   =\bigl(\mathord\bullet\xrightarrow{gf}\mathord\bullet\bigr),\\
+&s_3\bigl(\mathord\bullet\xrightarrow f\mathord\bullet\xrightarrow g\mathord\bullet\bigr)
+   =\bigl(\mathord\bullet\xrightarrow g\mathord\bullet\bigr).
+\end{aligned}
+\right.
+\tag{4.1.1.1}
+\]
+et deux morphismes de foncteurs :
+\VerdierSemanticAnchor{ch4-4-1-1-2}
+\[
+\left\{
+\begin{aligned}
+&u_1\colon s_1\longrightarrow s_2,
+&&u_1(f,g)=
+\begin{tikzcd}[ampersand replacement=\&,column sep=2.8em,row sep=1.9em,baseline=(current bounding box.center)]
+{}\arrow[r,"f"]\arrow[d,"\operatorname{id}"']\&{}\arrow[d,"g"]\\
+{}\arrow[r,"gf"']\&{}
+\end{tikzcd},\\[2pt]
+&u_2\colon s_2\longrightarrow s_3,
+&&u_2(f,g)=
+\begin{tikzcd}[ampersand replacement=\&,column sep=2.8em,row sep=1.9em,baseline=(current bounding box.center)]
+{}\arrow[r,"gf"]\arrow[d,"f"']\&{}\arrow[d,"\operatorname{id}"]\\
+{}\arrow[r,"g"']\&{}
+\end{tikzcd}.
+\end{aligned}
+\right.
+\tag{4.1.1.2}
+\]
+
+\VerdierSemanticAnchor{ch4-4-1-2}
+\medskip\noindent\textbf{4.1.2.}\quad
+Soient $\mathcal D$ une catégorie triangulée et $\mathcal J$ une catégorie.
+Un \emph{objet spectral de type $\mathcal J$ à valeurs dans $\mathcal D$}
+est un objet constitué par deux foncteurs :
+
+a) Un foncteur
+$X\colon\mathcal{F}\ell_1(\mathcal J)\longrightarrow\mathcal D$ :
+\[
+\bigl(\mathord\bullet\xrightarrow f\mathord\bullet\bigr)\longmapsto X_f.
+\]
+\endgroup

@@ -1,0 +1,84 @@
+\VerdierPhysicalPageAnchor{0076}%
+\VerdierSemanticAnchor{ch1-2-4-2-countable-products-sums}
+Supposons maintenant que les produits (resp. sommes directes) dénombrables
+soient représentables dans $C$. On pose alors :
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq6}
+\begin{equation}
+  \begin{aligned}
+    \operatorname{comp}_{\Pi}F
+      &=\int_n^{\Pi}F^{[n]},\\
+    \text{(resp. }\operatorname{comp}_{\Sigma}F
+      &=\int_n^{\Sigma}F^{[n]}\text{)}.
+  \end{aligned}
+  \tag{2.4.2.6}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-2-pi-sigma-extension}
+Le foncteur
+$\operatorname{comp}_{\Pi}F$ (resp. $\operatorname{comp}_{\Sigma}F$) :
+$\prod_{i\in[n]}\operatorname{comp}(C_i)\longrightarrow
+\operatorname{comp}(C)$ est appelé la $\Pi$-extension (resp. la
+$\Sigma$-extension) du foncteur $F$ aux complexes.
+
+\VerdierSemanticAnchor{ch1-2-4-2-koszul-twist}
+Le foncteur $F$ étant un $\mathbb Z[n]$-foncteur strict et le foncteur
+$\int_n^{\Pi}$ (resp. $\int_n^{\Sigma}$) étant un $\mathbb Z[n]$-foncteur
+tordu par le cocycle de Koszul relatif à la base ordonnée
+$e_1,\ldots,e_n$ de $\mathbb Z[n]$, le foncteur
+$\operatorname{comp}_{\Pi}F$ (resp. $\operatorname{comp}_{\Sigma}F$) est
+un $\mathbb Z[n]$-foncteur tordu par le cocycle de Koszul relatif à la base
+ordonnée $e_1,\ldots,e_n$ de $\mathbb Z[n]$, conformément à la règle des
+signes I (1.6.6). On a donc pour tout $i\in[n]$ des isomorphismes
+canoniques :
+
+\VerdierSemanticAnchor{ch1-2-4-2-eq7}
+\begin{equation}
+  \begin{aligned}
+    \operatorname{comp}_{\Pi}F(X_1,\ldots,X_i[1],\ldots,X_n)
+      &\xrightarrow{\sim}
+      \operatorname{comp}_{\Pi}F(X_1,\ldots,X_i,\ldots,X_n)[1],\\
+    \text{(resp. }\operatorname{comp}_{\Sigma}F(X_1,\ldots,X_i[1],\ldots,X_n)
+      &\xrightarrow{\sim}
+      \operatorname{comp}_{\Sigma}F(X_1,\ldots,X_i,\ldots,X_n)[1]\text{)}
+  \end{aligned}
+  \tag{2.4.2.7}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-2-canonical-pi}
+qui seront notés $p_i$.
+
+\VerdierSemanticAnchor{ch1-2-4-2-anticommutativity}
+Ces isomorphismes possèdent les propriétés d'anticommutativité décrites en
+(1.6.6.3).
+
+\VerdierSemanticAnchor{ch1-2-4-2-summable-restriction-equality}
+Les restrictions des foncteurs $\operatorname{comp}_{\Pi}F$ et
+$\operatorname{comp}_{\Sigma}F$ aux objets sommables de
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$ sont égales, et cette restriction
+peut toujours se définir, sans hypothèses sur la catégorie $C$.
+
+\VerdierSemanticAnchor{ch1-2-4-3}
+\subsection*{2.4.3.}
+Soient maintenant deux foncteurs multiadditifs
+$F,F'\colon\prod_{i\in[n]}C_i\longrightarrow C$ et
+$h\colon F\longrightarrow F'$ un morphisme de foncteurs. On en déduit un
+morphisme de foncteurs :
+
+\VerdierSemanticAnchor{ch1-2-4-3-induced-morphism}
+\begin{equation*}
+  h^{[n]}\colon F^{[n]}\longrightarrow F'^{[n]},
+\end{equation*}
+en posant :
+
+\VerdierSemanticAnchor{ch1-2-4-3-eq1}
+\begin{equation}
+  \begin{aligned}
+    h^{[n]}(X_1,\ldots,X_n)^{\sigma}
+      &=h(X_1^{l_1},\ldots,X_n^{l_n}),\\
+    \sigma&=\sum_{i\in[n]}l_i e_i\in\mathbb Z[n],\\
+    (X_1,\ldots,X_n)&\in
+      \operatorname{Ob}\!\left(\prod_{i\in[n]}\operatorname{comp}(C_i)\right).
+  \end{aligned}
+  \tag{2.4.3.1}
+\end{equation}

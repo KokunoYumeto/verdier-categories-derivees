@@ -1,0 +1,74 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0152}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+
+\VerdierSemanticAnchor{ch3}
+\section{三角圏のアーベル化。}
+
+\VerdierSemanticAnchor{ch3-3-1}
+\subsection{圏 \texorpdfstring{$\mathrm A(\mathcal D)$}{A(D)} の構成。}
+
+\VerdierSemanticAnchor{ch3-3-1-1}
+\noindent\textbf{3.1.1.}\quad
+$\mathcal D$ を加法圏とし、$\mathcal{F}\ell_1(\mathcal D)$ を
+$\mathcal D$ の射の圏とする（第 I 章，3.3.6）。次の可換図式を考える：
+
+\VerdierSemanticAnchor{ch3-3-1-1-square}
+\[
+\begin{tikzcd}[column sep=4.2em,row sep=2.5em]
+X \arrow[r,"f"] \arrow[d,"g"'] & Y \arrow[d,"h"] \\
+X' \arrow[r,"f'"'] & Y'
+\end{tikzcd}
+\]
+
+\VerdierSemanticAnchor{ch3-3-1-1-negligible-morphism}
+\noindent この $\mathcal{F}\ell_1(\mathcal D)$ の射が
+$f'g=hf=0$ を満たすとき、
+これを\emph{無視可能射}という。
+無視可能射と任意の射との合成は、いずれの順序でも無視可能であり、二つの
+無視可能射の直和も無視可能である。
+
+\VerdierSemanticAnchor{ch3-3-1-1-quotient-category}
+$\mathrm A(\mathcal D)$ を、対象が $\mathcal{F}\ell_1(\mathcal D)$ の対象で、
+射が $\mathcal{F}\ell_1(\mathcal D)$ の射を無視可能射で割ったものである圏と
+する。すなわち、$\mathrm A(\mathcal D)$ の対象 $U,V$ に対して
+$\operatorname{Hom}_{\mathrm A(\mathcal D)}(U,V)$ は
+$\operatorname{Hom}_{\mathcal{F}\ell_1(\mathcal D)}(U,V)$ を無視可能射の
+部分群で割った商群である。圏 $\mathrm A(\mathcal D)$ は加法圏である。
+
+\VerdierSemanticAnchor{ch3-3-1-1-canonical-quotient}
+$C$ を圏とする。標準関手
+\[
+\mathcal{F}\ell_1(\mathcal D)\longrightarrow\mathrm A(\mathcal D)
+\]
+との合成により関手
+
+\VerdierSemanticAnchor{ch3-3-1-1-1}
+\[
+\mathcal H\!om(\mathrm A(\mathcal D),C)
+\longrightarrow
+\mathcal H\!om(\mathcal{F}\ell_1(\mathcal D),C).
+\tag{3.1.1.1}
+\]
+が得られる。この関手は充満忠実であり、対象上単射である。その像は、
+無視可能射だけ異なる二つの射を同じ射に送る、
+$\mathcal{F}\ell_1(\mathcal D)$ から $C$ への関手からなる充満部分圏である。
+
+\VerdierSemanticAnchor{ch3-3-1-2}
+\medskip
+\noindent\textbf{3.1.2.}\quad
+$\mathcal D$ から $\mathcal{F}\ell_1(\mathcal D)$ への標準関手
+$X\longmapsto(X\xrightarrow{\operatorname{id}_X}X)$ と標準関手
+$\mathcal{F}\ell_1(\mathcal D)\longrightarrow\mathrm A(\mathcal D)$ の合成を
+
+\VerdierSemanticAnchor{ch3-3-1-2-1}
+\[
+\mathcal H\colon\mathcal D\longrightarrow\mathrm A(\mathcal D).
+\tag{3.1.2.1}
+\]
+と書く。関手 $\mathcal H$ は加法的で、充満忠実かつ対象上単射である。
+したがって $\mathcal D$ を $\mathrm A(\mathcal D)$ の充満部分圏として実現する。
+\endgroup

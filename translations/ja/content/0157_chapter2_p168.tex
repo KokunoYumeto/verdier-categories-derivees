@@ -1,0 +1,93 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0168}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{2.5em}
+\VerdierSemanticAnchor{ch4-4-2-4-sequence}
+\noindent\textit{射の合成}
+\[
+E\!\begin{bmatrix}n-1\\ f_5,f_6,f_7\end{bmatrix}
+\xrightarrow{d_1}
+E\!\begin{bmatrix}n\\ f_3,f_4,f_5\end{bmatrix}
+\xrightarrow{d_2}
+E\!\begin{bmatrix}n+1\\ f_1,f_2,f_3\end{bmatrix}
+\]
+\textit{は零である。また、次に掲げる標準同型がある：}
+\VerdierSemanticAnchor{ch4-4-2-4-1}
+\[
+\operatorname{Ker}(d_2)\big/\operatorname{Im}(d_1)
+\simeq
+E\!\begin{bmatrix}n\\ f_3f_2,f_4,f_6f_5\end{bmatrix}.
+\tag{4.2.4.1}
+\]
+これは (4.2.3.3) と (4.2.3.1) から直ちに従う。
+
+\VerdierSemanticAnchor{ch4-4-2-5}
+\medskip\noindent\textbf{4.2.5.}
+射 $d^n(\omega_5)$、
+$\omega_5\in\operatorname{Ob}\mathcal{F}\ell_5(\mathcal J)$ を、
+（考えているスペクトル対象に関する）\textit{微分}という。関手族 (4.2.3.1)
+\[
+\omega_3\longmapsto
+E\!\begin{bmatrix}n\\ \omega_3\end{bmatrix},
+\qquad
+\omega_3\in\operatorname{Ob}\mathcal{F}\ell_3(\mathcal J),
+\]
+に微分 (4.2.3.2) $d^n(\omega_5)$、
+$\omega_5\in\operatorname{Ob}\mathcal{F}\ell_5(\mathcal J)$ を備えたものを、
+スペクトル対象 $(H^n(f),\delta)$ に付随する\textit{スペクトル族}という。
+
+\VerdierSemanticAnchor{ch4-4-2-6}
+\medskip\noindent\textbf{4.2.6.}
+$\omega_4=(\mathord\bullet\xrightarrow{f_1}\mathord\bullet
+\xrightarrow{f_2}\mathord\bullet\xrightarrow{f_3}\mathord\bullet
+\xrightarrow{f_4}\mathord\bullet)$
+を $\mathcal{F}\ell_4(\mathcal J)$ の対象とする。これから
+$\mathcal{F}\ell_3(\mathcal J)$ の図式を得る：
+\VerdierSemanticAnchor{ch4-4-2-6-fl3-diagram}
+\[
+\begin{tikzcd}[column sep=2.6em,row sep=2.15em]
+{}\arrow[r,"\mathrm{id}"]\arrow[d,"f_1"']&
+{}\arrow[r,"\mathrm{id}"]\arrow[d,"f_1"']&
+{}\arrow[r,"\mathrm{id}"]\arrow[d,"f_1"']&
+{}\arrow[r,"f_1"]\arrow[d,"f_2f_1"']&
+{}\arrow[d,"f_2"]\\
+{}\arrow[r,"\mathrm{id}"]\arrow[d,"f_2"']&
+{}\arrow[r,"\mathrm{id}"]\arrow[d,"f_2"']&
+{}\arrow[r,"f_2"]\arrow[d,"f_3f_2"']&
+{}\arrow[r,"\mathrm{id}"]\arrow[d,"f_3"']&
+{}\arrow[d,"f_3"]\\
+{}\arrow[r,"\mathrm{id}"]\arrow[d,"f_3"']&
+{}\arrow[r,"f_3"]\arrow[d,"f_4f_3"']&
+{}\arrow[r,"\mathrm{id}"]\arrow[d,"f_4"']&
+{}\arrow[r,"\mathrm{id}"]\arrow[d,"f_4"']&
+{}\arrow[d,"f_4"]\\
+{}\arrow[r,"f_4"]&
+{}\arrow[r,"\mathrm{id}"]&
+{}\arrow[r,"\mathrm{id}"]&
+{}\arrow[r,"\mathrm{id}"]&{}
+\end{tikzcd}
+\]
+したがって、関手
+$E\!\begin{bmatrix}n\\ \omega_3\end{bmatrix}$ を適用することにより、
+$\mathcal A$ の三つの完全列を得る：
+\VerdierSemanticAnchor{ch4-4-2-6-exact-sequences}
+\[
+0\longrightarrow
+B\!\begin{bmatrix}n\\ f_2,f_4f_3\end{bmatrix}
+ \Big/
+B\!\begin{bmatrix}n\\ f_2,f_3\end{bmatrix}
+\longrightarrow
+E\!\begin{bmatrix}n\\ f_1,f_2,f_3\end{bmatrix}
+\longrightarrow
+E\!\begin{bmatrix}n\\ f_1,f_2,f_4f_3\end{bmatrix}
+\longrightarrow0,
+\]
+\[
+0\longrightarrow
+E\!\begin{bmatrix}n\\ f_1,f_2,f_4f_3\end{bmatrix}
+\longrightarrow
+E\!\begin{bmatrix}n\\ f_1,f_3f_2,f_4\end{bmatrix}
+\longrightarrow
+E\!\begin{bmatrix}n\\ f_2f_1,f_3,f_4\end{bmatrix}
+\longrightarrow0,
+\]
+\endgroup

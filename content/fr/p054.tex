@@ -1,0 +1,81 @@
+\VerdierPhysicalPageAnchor{0054}%
+\VerdierSemanticAnchor{ch1-1-5-4-eq1-condition}
+soient $\alpha(\lambda,\mu)$-commutatifs lorsque
+$\lambda,\mu\in\mathbb Z^{n-1}$ ou
+$\lambda,\mu\in\mathbb Z e_n$. Désignons alors par
+$Q(\sigma,\tau)$, $\sigma\in\mathbb Z^{n-1}$,
+$\tau\in\mathbb Z e_n$, la propriété :
+
+\VerdierSemanticAnchor{ch1-1-5-4-property-q}
+\begin{quote}
+  \noindent\textup{$(Q(\sigma,\tau))$}\quad
+  \emph{Le diagramme ci-après est
+  $\alpha(\sigma,\tau)\alpha^{-1}(\tau,\sigma)$-commutatif :}
+\end{quote}
+
+\VerdierSemanticAnchor{ch1-1-5-4-eq2}
+\begin{equation}
+  \resizebox{0.98\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=4.5em,row sep=3.2em]
+      FT(\sigma+\tau)
+        \arrow[r,"{F*c(\sigma,\tau)}"]
+        \arrow[d,"{F*c(\tau,\sigma)}"]
+        \& FT(\tau)T(\sigma)
+        \arrow[r,"{p(\tau)*T(\sigma)}"]
+        \& T'(\tau)FT(\sigma)
+        \arrow[d,"{T'(\tau)*p(\sigma)}"'] \\
+      FT(\sigma)T(\tau)
+        \arrow[d,"{p(\sigma)*T(\tau)}"]
+        \& {}
+        \& T'(\tau)T'(\sigma)F
+        \arrow[d,"{c'(\sigma,\tau)^{-1}*F}"'] \\
+      T'(\sigma)FT(\tau)
+        \arrow[r,"{T'(\sigma)*p(\tau)}"']
+        \& T'(\sigma)T'(\tau)F
+        \arrow[r,"{c'(\tau,\sigma)^{-1}*F}"']
+        \& T'(\sigma+\tau)F
+    \end{tikzcd}$%
+  }\;.
+  \tag*{\(\textup{(1.5.4.2)}_{\sigma,\tau}\)}
+\end{equation}
+
+Par hypothèse, les propriétés
+$Q(e_i,e_n)$, $Q(e_i,0)$, $1\leq i\leq n-1$, $Q(0,e_n)$,
+sont vraies. De plus, en utilisant les diagrammes
+$\alpha(\lambda,\mu)$-commutatifs
+$\textup{(1.5.4.1)}_{\lambda,\mu}$, on vérifie aisément
+(1.5.4.3) :
+
+\VerdierSemanticAnchor{ch1-1-5-4-eq3}
+\begin{quote}
+  \noindent\textup{(1.5.4.3)}\quad
+  \emph{Si deux des propriétés
+  $Q(\sigma,\tau+\tau')$, $Q(\sigma,\tau)$, $Q(\sigma,\tau')$,
+  $\sigma\in\mathbb Z^{n-1}$, $\tau,\tau'\in\mathbb Z e_n$
+  sont vérifiées, la troisième l'est aussi. De même, si deux des
+  propriétés $Q(\sigma+\sigma',\tau)$, $Q(\sigma,\tau)$,
+  $Q(\sigma',\tau)$, $\sigma,\sigma'\in\mathbb Z^{n-1}$,
+  $\tau\in\mathbb Z e_n$ sont vraies, la troisième l'est aussi.}
+\end{quote}
+
+\VerdierSemanticAnchor{ch1-1-5-4-q-conclusion}
+On en déduit que la propriété $Q(\sigma,\tau)$ est vérifiée pour tout
+$\sigma\in\mathbb Z^{n-1}$ et tout $\tau\in\mathbb Z e_n$.
+
+\VerdierSemanticAnchor{ch1-1-5-4-p-omega}
+Définissons alors, pour tout $\omega\in\mathbb Z^n$,
+$\omega=\sigma+\tau$, $\sigma\in\mathbb Z^{n-1}$,
+$\tau\in\mathbb Z e_n$, l'isomorphisme
+$p(\omega)\colon FT(\omega)\longrightarrow T'(\omega)F$, comme étant
+l'unique isomorphisme rendant le diagramme
+$\textup{(1.5.4.1)}_{\sigma,\tau}$
+$\alpha(\sigma,\tau)$-commutatif. Ceci nous permet d'écrire pour tout
+couple $\lambda,\mu\in\mathbb Z^n$ le diagramme
+$\textup{(1.5.4.1)}_{\lambda,\mu}$ et de considérer la propriété :
+
+\VerdierSemanticAnchor{ch1-1-5-4-property-p}
+\begin{quote}
+  \noindent\textup{$(P(\lambda,\mu))$}\quad
+  \emph{Le diagramme $\textup{(1.5.4.1)}_{\lambda,\mu}$ est
+  $\alpha(\lambda,\mu)$-commutatif.}
+\end{quote}

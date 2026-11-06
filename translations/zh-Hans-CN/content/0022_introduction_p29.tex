@@ -1,0 +1,61 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0029}
+\VerdierSemanticAnchor{intro-7-duality-D4}
+\noindent\textit{D4)} 若 $X$ 是 $Y$ 的闭子集，$f$ 是典范嵌入，则函子
+$f^!$ 是“支集在 $X$ 中的截面”函子的全导出函子。
+
+\VerdierSemanticAnchor{intro-7-traditional-duality}
+这一一定理及其在上述其他背景中的变体，包含对偶的传统表述：拓扑情形的
+Poincaré 对偶定理，以及光滑射影簇上凝聚代数层的 Serre 对偶定理。不过，
+使用导出范畴的语言，并不只是为了以更大的一般性证明原本可能只在简单特殊
+情形中关心的定理。例如，对代数闭域上的光滑完备非射影簇之凝聚代数层，
+目前只有借助一般对偶定理，才知道如何证明传统形式（Serre 对偶型）的对偶
+定理。对于非奇异射影簇的 étale 上同调对偶，情形亦然。
+
+\VerdierSemanticAnchor{intro-8}
+\noindent\textbf{8.}\quad
+情形 1)、2) 与 4) 中的对偶定理导出非经典型的 Lefschetz 不动点公式，
+其中会出现可能带有奇点的层 [10], [11], [12]。设 $X$ 是上同调维数有限的
+紧拓扑空间，$A$ 是 Noether 环，$F$ 是 $X$ 上的 $A$-模层，并满足：
+
+\VerdierSemanticAnchor{intro-8-lefschetz-hypotheses}
+\begin{enumerate}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\VerdierSemanticAnchor{intro-8-hypothesis-a}
+\item 在 $X$ 的每一点，层 $F$ 的茎都是有限生成且投射维数有限的 $A$-模。
+
+\VerdierSemanticAnchor{intro-8-hypothesis-b}
+\item 在 $X$ 每一点的邻域中满足一种正则性条件，类似于 Wilder [9] 所描述
+的性质。
+\end{enumerate}
+
+\VerdierSemanticAnchor{intro-8-endomorphism}
+设 $\Phi=(\Phi_X,\Phi_F)\colon(X,F)\longrightarrow(X,F)$ 是带层 $F$ 的
+拓扑空间 $X$ 的一个自同态。$\Phi$ 诱导 $A$-模复形的自同态：
+\VerdierSemanticAnchor{intro-8-rh-phi}
+\[
+\mathrm{RH}(\Phi)\colon
+\mathrm{RH}(X,F)\longrightarrow\mathrm{RH}(X,F).
+\]
+
+\VerdierSemanticAnchor{intro-8-perfect-complex}
+在假设 a) 与 b) 下，复形 $\mathrm{RH}(X,F)$ 是 $A$-模的
+\emph{完美复形}，也就是说，它在导出范畴中同构于一个有限复形，而后者的
+分量都是有限生成投射 $A$-模。
+
+\VerdierSemanticAnchor{intro-8-lefschetz-number}
+因此，可以把 Lefschetz 数 $\chi(\mathrm{RH}(\Phi))$ 定义为
+$\mathrm{RH}(\Phi)$ 各分量迹的交错和；这些分量是有限生成投射模的自同态。
+为明确起见，现假定 $\Phi$ 的不动点是孤立的。于是有等式：
+\VerdierSemanticAnchor{intro-8-lefschetz-formula}
+\begingroup
+\makeatletter
+\tagsleft@true
+\let\veqno\@@leqno
+\makeatother
+\begin{equation}
+\chi\bigl(\mathrm{RH}(\Phi)\bigr)
+=\sum_{P\ \text{为不动点}}\chi_P(\Phi)
+\tag{Lef}
+\end{equation}
+\endgroup

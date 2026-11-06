@@ -1,0 +1,103 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0100}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\jot}{2pt}%
+\VerdierSemanticAnchor{ch1-3-3-5-proof-completion}
+実際、第一の主張は (3.2.2) の直接の帰結であり、命題 (3.2.12) により、射
+$c(I)\colon c(g)\longrightarrow c(c(D))$ が存在して、図式
+
+\VerdierSemanticAnchor{ch1-3-3-5-isomorphism-diagram}
+\begin{center}
+  \begin{tikzpicture}[>=stealth,scale=0.52,every node/.style={transform shape}]
+    \node (cf1) at (0,1.55) {$c(f)$};
+    \node (ch1) at (2.45,1.55) {$c(h)$};
+    \node (cg1) at (4.90,1.55) {$c(g)$};
+    \node (cfs1) at (7.80,1.55) {$c(f)[1]$};
+    \node (cf2) at (0,0) {$c(f)$};
+    \node (ch2) at (2.45,0) {$c(h)$};
+    \node (ccd) at (4.90,0) {$c(c(D))$};
+    \node (cfs2) at (7.80,0) {$c(f)[1]$};
+    \draw[->] (cf1) -- node[above] {$\dot c(D)$} (ch1);
+    \draw[->] (ch1) -- node[above] {$\dot c(D')$} (cg1);
+    \draw[->] (cg1) -- node[above] {$\dot p(f)[1]\dot q(g)$} (cfs1);
+    \draw[->] (cf2) -- node[above] {$\dot c(D)$} (ch2);
+    \draw[->] (ch2) -- node[above] {$\dot p(c(D))$} (ccd);
+    \draw[->] (ccd) -- node[above] {$\dot q(c(D))$} (cfs2);
+    \draw[->] (cf1) -- node[left] {$\mathrm{id}$} (cf2);
+    \draw[->] (ch1) -- node[left] {$\mathrm{id}$} (ch2);
+    \draw[->] (cg1) -- node[left] {$\dot c(I)$} (ccd);
+    \draw[->] (cfs1) -- node[left] {$\mathrm{id}$} (cfs2);
+  \end{tikzpicture}
+\end{center}
+\VerdierSemanticAnchor{ch1-3-3-5-proof-complete}
+は三角の同型である。
+
+\VerdierSemanticAnchor{ch1-3-3-6}
+\noindent\textbf{3.3.6.} 関手
+$F\colon \mathcal{J}\longrightarrow\operatorname{comp}(C)$ をとる。
+$\mathcal{F}\ell_n(\mathcal{J})$ で、$\mathcal{J}$ における $n$ 個の合成可能な
+射の列からなる圏を表す。$\mathcal{F}\ell_n(\mathcal{J})$ の対象は、
+$\mathcal{J}$ における次の図式である。
+
+\VerdierSemanticAnchor{ch1-3-3-6-object-diagram}
+\[
+  i_1\xrightarrow{f_1}i_2\xrightarrow{f_2}i_3
+  \longrightarrow\cdots\xrightarrow{f_n}i_{n+1}.
+\]
+\VerdierSemanticAnchor{ch1-3-3-6-morphism}
+$(i_p,f_p)$ および $(j_p,g_p)$ を、$\mathcal{J}$ における $n$ 個の合成可能な射の
+二つの列とする。$\mathcal{F}\ell_n(\mathcal{J})$ における $(i_p,f_p)$ から
+$(j_p,g_p)$ への射とは、次の可換図式のことである。
+
+\VerdierSemanticAnchor{ch1-3-3-6-morphism-diagram}
+\begin{center}
+  \begin{tikzpicture}[>=stealth,scale=0.53,every node/.style={transform shape}]
+    \node (i1) at (0,1.55) {$i_1$};
+    \node (i2) at (2.05,1.55) {$i_2$};
+    \node (i3) at (4.10,1.55) {$i_3$};
+    \node (idots) at (6.05,1.55) {$\cdots$};
+    \node (in) at (8.35,1.55) {$i_{n+1}$};
+    \node (j1) at (0,0) {$j_1$};
+    \node (j2) at (2.05,0) {$j_2$};
+    \node (j3) at (4.10,0) {$j_3$};
+    \node (jdots) at (6.05,0) {$\cdots$};
+    \node (jn) at (8.35,0) {$j_{n+1}$};
+    \draw[->] (i1) -- node[above] {$f_1$} (i2);
+    \draw[->] (i2) -- node[above] {$f_2$} (i3);
+    \draw[->] (i3) -- node[above] {$f_3$} (idots);
+    \draw[->] (idots) -- node[above] {$f_n$} (in);
+    \draw[->] (j1) -- node[above] {$g_1$} (j2);
+    \draw[->] (j2) -- node[above] {$g_2$} (j3);
+    \draw[->] (j3) -- node[above] {$g_3$} (jdots);
+    \draw[->] (jdots) -- node[above] {$g_n$} (jn);
+    \draw[->] (i1) -- node[right] {$h_1$} (j1);
+    \draw[->] (i2) -- node[right] {$h_2$} (j2);
+    \draw[->] (i3) -- node[right] {$h_3$} (j3);
+    \draw[->] (in) -- node[right] {$h_{n+1}$} (jn);
+    \node at (9.25,0) {$.$};
+  \end{tikzpicture}
+\end{center}
+\VerdierSemanticAnchor{ch1-3-3-6-composition}
+射の合成は明らかな仕方で定義される。$\mathrm{Fl}_n(\mathcal{J})$ で
+$\mathcal{F}\ell_n(\mathcal{J})$ の対象全体の集合を表す。
+
+\VerdierSemanticAnchor{ch1-3-3-6-cone-functor}
+$i\xrightarrow{f}j$ を $\mathcal{F}\ell_1(\mathcal{J})$ の対象とする。関手 $F$ を
+適用すると、$\operatorname{comp}(C)$ における射
+\[
+  F(i)\xrightarrow{F(f)}F(j),
+\]
+が得られる。これは $\operatorname{Tr}_1(C)$ の対象とみなせるので、写像錐関手を
+適用することにより、関手
+$S\colon\mathcal{F}\ell_1(\mathcal{J})\longrightarrow\mathrm{K}(C)$ を得る。
+
+\VerdierSemanticAnchor{ch1-3-3-6-1}
+\begin{equation}
+  S(f)=S\bigl(i\xrightarrow{f}j\bigr)
+  =c\bigl(F(i)\xrightarrow{F(f)}F(j)\bigr).
+  \tag{3.3.6.1}
+\end{equation}
+\endgroup

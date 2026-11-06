@@ -1,0 +1,94 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0214}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-2-5-b}
+\noindent b) 在下图中：
+
+\VerdierSemanticAnchor{ch3d-3-2-5-4}
+\begin{equation}
+\resizebox{0.96\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=4.1em,row sep=3.0em]
+\&\& Z''^\bullet
+  \arrow[ddll,bend right=8,"{u(S^{m+n})}"']
+  \arrow[dl,"\rho"']
+  \arrow[dr,"\psi"]
+  \arrow[ddrr,bend left=8,"{v(S^{m+n})}"]
+\&\& \\
+\& Z^\bullet
+  \arrow[dl,"{u(S^n)}"']
+  \arrow[dr,"{v(S^n)}"]
+\&\& {Z'}^\bullet[n]
+  \arrow[dl,"{u(S^m)[n]}"']
+  \arrow[dr,"{v(S^m)[n]}"]
+\& \\
+X \&\& X'[n] \&\& X''[m+n]
+\end{tikzcd}$%
+}
+\tag{3.2.5.4}
+\end{equation}
+中央方形与两侧三角形在 $\operatorname{comp}(\mathcal A)$ 中都是交换的。
+
+\VerdierSemanticAnchor{ch3d-3-2-5-proof-conclusion}
+转到范畴 $D(\mathcal A)$ 后，图 (3.2.5.4) 给出等式：
+\[
+\bigl(\delta^m(S^m(X',X''))\bigr)[n]\,
+\delta^n(S^n(X,X'))
+=\delta^{m+n}(S^{m+n}(X,X'')).
+\]
+于是只须使用 (3.2.3.2) 即可完成证明。
+
+\VerdierSemanticAnchor{ch3d-3-2-6}
+\medskip\noindent\textbf{3.2.6.}\quad
+命题 (3.2.5) 的一个特别重要的应用如下。设：
+\[
+S^n(X,Y)=0\longrightarrow Y\xrightarrow{u_n}Z_{n-1}
+\xrightarrow{u_{n-1}}\cdots\xrightarrow{u_1}Z_0
+\xrightarrow{u_0}X\longrightarrow0
+\]
+是 $E_{\mathcal A}^{n}(X,Y)$ 的一个元素。对每个整数 $p$，
+$1\leq p\leq n$，置：
+
+\VerdierSemanticAnchor{ch3d-3-2-6-1}
+\begin{equation}
+S_p^1=0\longrightarrow\operatorname{Ker}(u_{p-1})
+\longrightarrow Z_{p-1}\longrightarrow\operatorname{Im}(u_{p-1})
+\longrightarrow0.
+\tag{3.2.6.1}
+\end{equation}
+则有等式：
+
+\VerdierSemanticAnchor{ch3d-3-2-6-2}
+\begin{equation}
+\delta^n(S^n(X,Y))=(-1)^{\frac{n(n-1)}2}
+\delta^1(S_n^1)[n-1]\delta^1(S_{n-1}^1)[n-2]\cdots
+\delta^1(S_1^1),
+\tag{3.2.6.2}
+\end{equation}
+这由命题 (3.2.5) 立即得到。
+
+\VerdierSemanticAnchor{ch3d-3-2-7}
+\medskip\noindent\textbf{3.2.7.}\quad
+让我们把这杯苦酒饮尽，并设 $X$ 与 $Y$ 是 $\mathcal A$ 的两个对象，
+因而也是 $\mathcal A^o$（即 $\mathcal A$ 的反范畴）的对象。集合
+$E_{\mathcal A}^{n}(X,Y)$ 与 $E_{\mathcal A^o}^{n}(Y,X)$ 相等，并且有
+两个映射：
+
+\VerdierSemanticAnchor{ch3d-3-2-7-1}
+\begin{equation}
+\resizebox{0.74\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=5.0em,row sep=2.8em]
+E_{\mathcal A}^{n}(X,Y)
+  \arrow[r,"{\delta_{\mathcal A}^{n}}"]
+  \arrow[d,equal]
+\& \operatorname{Ext}_{\mathcal A}^{n}(X,Y) \\
+E_{\mathcal A^o}^{n}(Y,X)
+  \arrow[r,"{\delta_{\mathcal A^o}^{n}}"']
+\& \operatorname{Ext}_{\mathcal A^o}^{n}(Y,X)
+\end{tikzcd}$%
+}
+\tag{3.2.7.1}
+\end{equation}
+\endgroup

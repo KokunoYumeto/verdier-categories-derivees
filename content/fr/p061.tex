@@ -1,0 +1,98 @@
+\VerdierPhysicalPageAnchor{0061}%
+\VerdierSemanticAnchor{ch1-1-6-2}
+\VerdierSemanticAnchor{ch1-1-6-2-proposition}
+\noindent\textbf{Proposition 1.6.2.}\quad
+
+\VerdierSemanticAnchor{ch1-1-6-2-part1}
+\noindent\emph{1) Soient
+$\alpha\in Z^2(\mathbb Z^n,\mathbb Z/2\mathbb Z)$ un cocycle normalisé
+non homogène, $\dot\alpha\in H^2(\mathbb Z^n,\mathbb Z/2\mathbb Z)$
+sa classe de cohomologie,
+$\dot\alpha_{i,j}\in H^2(\mathbb Z^n_{i,j},\mathbb Z/2\mathbb Z)$
+ses composantes. On a (utilisant (1.6.1.2)) :}
+
+\VerdierSemanticAnchor{ch1-1-6-2-eq1}
+\begin{equation}
+  \dot\alpha_{i,j}
+  =\alpha(e_i,e_j)^{-1}\alpha(e_j,e_i).
+  \tag{1.6.2.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-2-convention}
+\noindent\emph{(On écrit multiplicativement la loi de groupe de
+$\mathbb Z/2\mathbb Z$).}
+
+\VerdierSemanticAnchor{ch1-1-6-2-part2}
+\noindent\emph{2) Soient $\alpha_1$ et $\alpha_2$ deux éléments
+cohomologues de $Z^2(\mathbb Z^n,\mathbb Z/2\mathbb Z)$ et, pour tout
+$i\in[1,n]$, $\beta_i$ un élément de $\mathbb Z/2\mathbb Z$. Il existe
+une et une seule application}
+
+\VerdierSemanticAnchor{ch1-1-6-2-beta-map}
+\begin{equation*}
+  \beta\colon\mathbb Z^n\longrightarrow\mathbb Z/2\mathbb Z
+\end{equation*}
+\noindent\emph{telle que :}
+
+\VerdierSemanticAnchor{ch1-1-6-2-eq2}
+\begin{equation}
+  \begin{aligned}
+    \alpha_2(\sigma_1,\sigma_2)\alpha_1^{-1}(\sigma_1,\sigma_2)
+      &=\beta(\sigma_2)\beta(\sigma_1+\sigma_2)^{-1}\beta(\sigma_1),\\[-1mm]
+    &\hspace{7em}\text{pour }\sigma_1,\sigma_2\in\mathbb Z^n,
+  \end{aligned}
+  \tag{1.6.2.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-2-eq3}
+\begin{equation}
+  \beta(e_i)=\beta_i.
+  \tag{1.6.2.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-2-proof}
+\VerdierSemanticAnchor{ch1-1-6-2-proof-first}
+On se ramène, pour démontrer la première assertion, au cas $n=2$ et
+on vérifie immédiatement que la quantité
+$\alpha(e_i,e_j)^{-1}\alpha(e_j,e_i)$ ne change pas lorsqu'on modifie
+$\alpha$ par un cobord. Lorsque $\alpha$ est un cobord, il est
+symétrique et par suite la formule (1.6.2.1) est vraie dans ce cas.
+D'autre part, le cocycle :
+
+\VerdierSemanticAnchor{ch1-1-6-2-alpha0}
+\begin{equation*}
+  \alpha_0(p_1e_i+q_1e_j,p_2e_i+q_2e_j)=(-1)^{q_1p_2}
+\end{equation*}
+n'est pas cohomologue à $0$ puisqu'on a :
+
+\VerdierSemanticAnchor{ch1-1-6-2-alpha0-test}
+\begin{equation*}
+  \alpha_0(e_i,e_j)^{-1}\alpha_0(e_j,e_i)=-1
+\end{equation*}
+et tout cocycle non cohomologue à zéro est cohomologue à $\alpha_0$.
+
+\VerdierSemanticAnchor{ch1-1-6-2-proof-second}
+Pour démontrer la deuxième assertion, on remarque que deux solutions de
+(1.6.2.2) diffèrent par un homomorphisme de groupes ; par suite, on peut
+toujours modifier une solution de (1.6.2.2) d'une manière unique par un
+homomorphisme de groupes de façon à lui faire prendre sur les $e_i$ des
+valeurs données à l'avance.
+
+\VerdierSemanticAnchor{ch1-1-6-3}
+\VerdierSemanticAnchor{ch1-1-6-3-definition}
+\noindent\textbf{Définition 1.6.3.}\quad
+Soit $e_1,\ldots,e_n$ une base de $\mathbb Z^n$. On appelle
+\emph{classe de Koszul relative à la base $e_1,\ldots,e_n$} l'unique
+élément de $H^2(\mathbb Z^n,\mathbb Z/2\mathbb Z)$ dont les restrictions
+aux $H^2(\mathbb Z^n_{i,j},\mathbb Z/2\mathbb Z)$ soient non nulles.
+
+\VerdierSemanticAnchor{ch1-1-6-3-basis-dependence}
+On notera que la définition de la classe de Koszul fait intervenir le
+choix d'une base de $\mathbb Z^n$. Les classes de Koszul associées à deux
+bases distinctes sont en général distinctes.
+
+\VerdierSemanticAnchor{ch1-1-6-3-filtration}
+Soit $e_1,\ldots,e_n$ une base de $\mathbb Z^n$ qu'on ordonne suivant
+l'ordre naturel de $[1,n]$. Désignons alors par $\mathbb Z^n(\leq i)$
+(resp. $\mathbb Z^n(\geq i)$) le sous-groupe de $\mathbb Z^n$ engendré
+par les $e_j$, $j\leq i$ (resp. $j\geq i$).

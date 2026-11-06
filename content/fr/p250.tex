@@ -1,0 +1,84 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0250}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-6-9-3-isomorphism}
+\noindent Ce morphisme est un isomorphisme lorsque, par exemple, le
+complexe $Y$ est un objet de $\operatorname{comp}^{+}(\mathcal A)$ et
+lorsque le foncteur $F$ est stationnaire à droite, ou bien, sans hypothèse
+sur $Y$, lorsque le foncteur $F$ est stationnaire (4.5.1).
+
+\VerdierSemanticAnchor{ch4d-4-6-9-derived-functors}
+Le double complexe $I^{\bullet\bullet}$ étant une résolution injective de
+Cartan--Eilenberg de $Y$, le complexe
+$H_1^r(I^{\bullet\bullet})$ est une résolution injective de l'objet
+$H^r(Y)$ et, par suite, on a un isomorphisme :
+
+\VerdierSemanticAnchor{ch4d-4-6-9-4}
+\[
+H_{\mathcal B}^{p}\left(
+F^{q-r,\bullet}(H_1^r(I^{\bullet\bullet}))
+\right)
+\xrightarrow{\sim}
+R^pF^{q-r}(H^r(Y)),
+\tag{4.6.9.4}
+\]
+où $R^pF^{q-r}\colon\mathcal A\longrightarrow\mathcal B$ désigne le
+$p$-ième dérivé droit (au sens de [1]) du foncteur $F^{q-r}$ restreint à
+la catégorie $\mathcal A$. On a donc, lorsque le morphisme (4.6.9.3) est un
+isomorphisme, un isomorphisme :
+
+\VerdierSemanticAnchor{ch4d-4-6-9-5}
+\[
+(\mathrm{C.E.})_2^{p,q}\xrightarrow{\sim}
+\prod_{r\in\mathbb Z}R^pF^{q-r}(H^r(Y)).
+\tag{4.6.9.5}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-10}
+\medskip\noindent\textbf{4.6.10.}\quad
+Étudions le cas où la catégorie $\mathcal B$ est la catégorie
+$\mathbf{Ab}$ des groupes abéliens appartenant à un univers convenable et
+où le foncteur :
+
+\[
+F\colon D(\mathcal A)\longrightarrow\mathbf{Ab}
+\]
+est le foncteur :
+
+\VerdierSemanticAnchor{ch4d-4-6-10-ext0}
+\[
+Y\longmapsto F(Y)=\operatorname{Ext}^{0}(Z,Y),
+\]
+où $Z$ est un objet de $D(\mathcal A)$. Soient $Y$ un complexe de
+$\mathcal A$ et
+$\varepsilon\colon Y\longrightarrow I^{\bullet\bullet}$ une résolution
+injective de Cartan--Eilenberg. Le morphisme (4.6.9.3) est alors un
+isomorphisme (4.6.3) et, par suite, on a un isomorphisme :
+
+\VerdierSemanticAnchor{ch4d-4-6-10-1}
+\[
+(\mathrm{C.E.})_2^{p,q}\xrightarrow{\sim}
+\prod_{r\in\mathbb Z}
+\operatorname{Ext}^{p}\bigl(H^{r-q}(Z),H^r(Y)\bigr).
+\tag{4.6.10.1}
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-10-stationarity}
+Par ailleurs, la suite spectrale de Cartan--Eilenberg relative à $F$ est
+stationnaire lorsque $Y$ est un objet de
+$\operatorname{comp}^{+}(\mathcal A)$ et $Z$ un objet de
+$D^{-}(\mathcal A)$, ou bien lorsque la résolution injective de
+Cartan--Eilenberg est de longueur finie. De plus, sous ces hypothèses,
+l'aboutissement de cette suite spectrale est, en vertu de (4.6.8) :
+
+\VerdierSemanticAnchor{ch4d-4-6-10-abutment}
+\[
+\prod_{r\in\mathbb Z}
+\operatorname{Ext}^{p}\bigl(H^{r-q}(Z),H^r(Y)\bigr)
+\Longrightarrow
+\operatorname{Ext}^{p+q}(Z,Y).
+\]
+\endgroup

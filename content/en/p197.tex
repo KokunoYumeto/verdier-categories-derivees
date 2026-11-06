@@ -1,0 +1,73 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0197}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-step-conclusion}
+Now set $L_q^\bullet=L_{q-1}^\bullet(\alpha,-q)$,
+$w_q=\varphi$, and $v_q=p(\alpha,-q)$. The complexes $L_n^\bullet$ and the
+morphisms of complexes $w_n$ and $v_n$, for $n\leq q$, have properties 2)
+and 3). It remains to show that $L_q^\bullet$ has property 1) above. This
+follows from the fact that $M^\wedge$ is exact, $(E_6)$ (2.2.4).
+
+\VerdierSemanticAnchor{ch3d-2-3-1-proof-b}
+Let us prove b). Let $L$ belong to $M$, and let
+$\dot u\colon X\longrightarrow L$ be an epimorphism. Denote by $Y$ the
+kernel of $\dot u$. There is a quasi-isomorphism
+
+\VerdierSemanticAnchor{ch3d-2-3-1-kernel-quasi-isomorphism}
+\begin{center}
+\begin{tikzcd}[column sep=2.25em,row sep=2.6em]
+\cdots \arrow[r] & 0 \arrow[r] \arrow[d] & Y \arrow[r] \arrow[d]
+  & X \arrow[r] \arrow[d,"\dot u"] & 0 \arrow[r] \arrow[d] & \cdots \\
+\cdots \arrow[r] & 0 \arrow[r] & 0 \arrow[r] & L \arrow[r] & 0 \arrow[r]
+  & \cdots.
+\end{tikzcd}
+\end{center}
+Consequently, there is a quasi-isomorphism
+
+\VerdierSemanticAnchor{ch3d-2-3-1-resolution-quasi-isomorphism}
+\begin{center}
+\begin{tikzcd}[column sep=2.25em,row sep=2.6em]
+\cdots \arrow[r] & L^{-1} \arrow[r] \arrow[d] & L^0 \arrow[r] \arrow[d,"v"]
+  & L^1 \arrow[r] \arrow[d] & L^2 \arrow[r] \arrow[d] & \cdots \\
+\cdots \arrow[r] & Y \arrow[r] & X \arrow[r] & 0 \arrow[r] & 0 \arrow[r]
+  & \cdots,
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-2-3-1-e2}
+where the $L^i$ belong to $M$. Consequently, the morphism $\dot u v$ is an
+epimorphism, which proves property $(E_2)$. Now let
+
+\VerdierSemanticAnchor{ch3d-2-3-1-exact-resolution}
+\[
+0\longrightarrow X\xrightarrow{\dot u}L_n\longrightarrow L_{n-1}
+\longrightarrow\cdots\longrightarrow L_0\longrightarrow0
+\]
+be an exact sequence in which the $L_i$ belong to $M$. We then have a
+quasi-isomorphism
+\begin{center}
+\begin{tikzcd}[column sep=1.35em,row sep=2.6em]
+\cdots \arrow[r] & 0 \arrow[r] \arrow[d] & 0 \arrow[r] \arrow[d]
+  & X \arrow[r] \arrow[d,"\dot u"] & 0 \arrow[r] \arrow[d]
+  & \cdots \arrow[r] & 0 \arrow[r] \arrow[d] & 0 \arrow[r] \arrow[d]
+  & \cdots \\
+\cdots \arrow[r] & 0 \arrow[r] & 0 \arrow[r] & L_n \arrow[r]
+  & L_{n-1} \arrow[r] & \cdots \arrow[r] & L_0 \arrow[r] & 0 \arrow[r]
+  & \cdots.
+\end{tikzcd}
+\end{center}
+It follows that there is a quasi-isomorphism
+
+\VerdierSemanticAnchor{ch3d-2-3-1-e3-quasi-isomorphism}
+\begin{center}
+\begin{tikzcd}[column sep=2.7em,row sep=2.6em]
+\cdots \arrow[r] & L^{-n-1} \arrow[r] \arrow[d]
+  & L^{-n} \arrow[r] \arrow[d,"v"] & L^{-n+1} \arrow[r] \arrow[d]
+  & \cdots \\
+\cdots \arrow[r] & 0 \arrow[r] & X \arrow[r] & 0 \arrow[r] & \cdots
+\end{tikzcd}
+\end{center}
+\endgroup

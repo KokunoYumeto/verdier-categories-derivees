@@ -1,0 +1,76 @@
+\VerdierPhysicalPageAnchor{0058}%
+\VerdierSemanticAnchor{ch1-1-5-10-converse}
+\noindent\textbf{Conversely:}\par
+
+\VerdierSemanticAnchor{ch1-1-5-10}
+\VerdierSemanticAnchor{ch1-1-5-10-proposition}
+\noindent\textbf{Proposition 1.5.10.}\quad
+\emph{Every morphism $u\colon F_1\to F_2$ between the underlying
+functors such that, for every $i\in[1,n]$, diagram (1.5.9.2) is
+$\beta(e_i)$-commutative is a $\beta$-morphism of functors.}
+
+\VerdierSemanticAnchor{ch1-1-5-10-proof}
+Indeed, for every $\sigma\in\mathbb Z^n$, let $R(\sigma)$ denote the
+property:
+
+\VerdierSemanticAnchor{ch1-1-5-10-property}
+\noindent\emph{$(R(\sigma))$\qquad The following diagram is
+$\beta(\sigma)$-commutative:}
+
+\VerdierSemanticAnchor{ch1-1-5-10-eq1}
+\begin{equation}
+  \resizebox{0.78\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=6em,row sep=4em]
+      F_1T(\sigma)
+        \arrow[r,"{p_1(\sigma)}"]
+        \arrow[d,"{u*T(\sigma)}"']
+        \& T'(\sigma)F_1
+          \arrow[d,"{T'(\sigma)*u}"] \\
+      F_2T(\sigma)
+        \arrow[r,"{p_2(\sigma)}"]
+        \& T'(\sigma)F_2
+    \end{tikzcd}$%
+  }\;.
+  \tag*{\ensuremath{(1.5.10.1)_{\sigma}}}
+\end{equation}
+
+Inspection of the various diagrams
+$(1.5.10.1)_{\sigma_1}$, $(1.5.10.1)_{\sigma_2}$, and
+$(1.5.10.1)_{\sigma_1+\sigma_2}$ immediately shows that:
+
+\VerdierSemanticAnchor{ch1-1-5-10-closure}
+\noindent\emph{If two of the properties $R(\sigma_1)$,
+$R(\sigma_2)$, and $R(\sigma_1+\sigma_2)$ hold, then so does the
+third.}
+
+\VerdierSemanticAnchor{ch1-1-5-10-conclusion}
+Moreover, by hypothesis, the properties $R(e_i)$, $i\in[1,n]$, and
+$R(0)$ hold. It follows immediately that $R(\sigma)$ holds for every
+$\sigma\in\mathbb Z^n$.
+
+\VerdierSemanticAnchor{ch1-1-5-11}
+\noindent\textbf{1.5.11.}\quad
+A strict $\mathbb Z^n$-category is a category equipped with a
+representation of $\mathbb Z^n$ in its group of automorphisms. To define
+such a representation, it of course suffices to specify $n$
+automorphisms:
+$T(e_1),\ldots,T(e_n)$ which commute pairwise.
+
+\VerdierSemanticAnchor{ch1-1-5-12}
+\noindent\textbf{1.5.12.}\quad
+The problem of determining on a given category the structures of a
+$\mathbb Z^n$-category (not necessarily strict) is much less simple.
+Thus, if we restrict ourselves to determining, on a category
+$\mathcal C$, the $\mathbb Z^n$-category structures such that
+$T(\sigma)=\text{the identity on }\mathcal C$ for every
+$\sigma\in\mathbb Z^n$, we must then specify, for every pair
+$\sigma_1,\sigma_2$ of elements of $\mathbb Z^n$, an element
+$c(\sigma_1,\sigma_2)$ of the automorphism group of the identity
+functor of $\mathcal C$ (this group is commutative), this datum being
+required to satisfy identities (1.2.1.3). Consequently, to specify such
+a structure, one must specify a normalized inhomogeneous 2-cocycle on
+$\mathbb Z^n$ with values in the automorphism group of the identity
+functor of $\mathcal C$. One also verifies immediately that two such
+structures are isomorphic, by a $\mathbb Z^n$-functor $(F,m)$ such that
+$F=\text{the identity on }\mathcal C$, if and only if the corresponding
+cocycles lie in the same cohomology class.

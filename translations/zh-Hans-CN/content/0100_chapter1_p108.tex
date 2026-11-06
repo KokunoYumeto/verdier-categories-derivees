@@ -1,0 +1,69 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0108}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch1-app-signs}
+\section*{附录：关于符号选择的说明}
+\addcontentsline{toc}{section}{附录：关于符号选择的说明}
+
+\VerdierSemanticAnchor{ch1-app-signs-cone}
+映射锥函子由其伴随性质 (3.1.3) 在唯一同构的意义下所确定。为了便于把
+$\operatorname{tr}_1(C)$ 的一个态射关联到 $\operatorname{comp}(C)$ 的一个三角，
+我们选择“态射 $X\longrightarrow 0$ 的映射锥”作为平移函子（(3.1.7) 和
+(3.2.2.7)），也就是说，平移次数并改变微分的符号。
+
+\VerdierSemanticAnchor{ch1-app-signs-strict}
+设 $F\colon\prod_{i\in[n]}C_i\longrightarrow C$ 是一个多加法函子。范畴
+$\prod_{i\in[n]}\operatorname{comp}(C_i)$ 自然带有一个 $\mathbb Z[n]$-范畴结构。
+如果要求函子
+\[
+  F^{[n]}\colon\prod_{i\in[n]}\operatorname{comp}(C_i)
+  \longrightarrow\operatorname{comp}^{n}(C)
+\]
+是一个严格 $\mathbb Z[n]$-函子，就会得到我们所采用的平移约定：沿一个方向
+平移次数，并改变相应微分的符号。
+
+\VerdierSemanticAnchor{ch1-app-signs-simple-complex}
+关于关联单复形函子的选择，我们采用了 [1] 的约定（但在我们的多重复形中，
+各微分彼此交换）。这使得可以定义函子
+$K_{\Pi}F\colon\prod_i K(C_i)\longrightarrow K(C)$。此时
+$K_{\Pi}F(X_1,\ldots,X_i[1],\ldots,X_n)$ 与
+$K_{\Pi}F(X_1,\ldots,X_i,\ldots,X_n)[1]$ 不同。为了仍能断言函子
+$K_{\Pi}F$ 把特异三角送到特异三角，我们必须定义同构
+
+\VerdierSemanticAnchor{ch1-app-signs-shift-isomorphism}
+\[
+  p_i\colon K_{\Pi}F(X_1,\ldots,X_i[1],\ldots,X_n)
+  \xrightarrow{\ \sim\ }
+  K_{\Pi}F(X_1,\ldots,X_i,\ldots,X_n)[1]
+\]
+（见 (3.4.3) 的证明）。
+
+\VerdierSemanticAnchor{ch1-app-signs-anticommutativity}
+于是，当 $i\ne j$ 时，得到反交换图：
+
+\VerdierSemanticAnchor{ch1-app-signs-diagram}
+\begin{center}
+  \resizebox{\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=3.2em,row sep=4.3em]
+      K_{\Pi}F(X_1,\ldots,X_i[1],\ldots,X_j[1],\ldots)
+        \arrow[r,"p_j"]
+        \arrow[d,"p_i"']
+        \& K_{\Pi}F(X_1,\ldots,X_i[1],\ldots,X_j,\ldots)[1]
+          \arrow[d,"p_i"] \\
+      K_{\Pi}F(X_1,\ldots,X_i,\ldots,X_j[1],\ldots)[1]
+        \arrow[r,"p_j"]
+        \& K_{\Pi}F(X_1,\ldots,X_i,\ldots,X_j,\ldots)[2].
+    \end{tikzcd}$%
+  }
+\end{center}
+
+\VerdierSemanticAnchor{ch1-app-signs-koszul-choice}
+随后我们在 (1.5.2) 中说明了如何把这些同构相容地扩张为同构 $p(\sigma)$，
+它对每个 $\sigma\in\mathbb Z[n]$ 都有定义。这里包含一个任意选择：需要在
+一个本身已确定的上同调类，即 Koszul 类 (1.6.3) 中选择一个余循环。为了符合
+通常接受的规则（例如 [1]），我们在所有情形下都选择 Koszul 余循环 (1.6.6)。
+\endgroup

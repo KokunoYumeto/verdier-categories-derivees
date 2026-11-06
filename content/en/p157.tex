@@ -1,0 +1,55 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0157}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{3em}
+\VerdierSemanticAnchor{ch3-3-2-4-proof}
+To prove Lemma 3.2.4, note that
+$h(X')\xrightarrow{\operatorname{Im}((\operatorname{id}_{X'};f'))}
+\operatorname{Im}(f')$ is an epimorphism in $\mathcal D^\wedge$. Since representable functors are
+projective in $\mathcal D^\wedge$, there exists $g\colon X\to X'$ making
+(3.2.4.1) commute.
+
+We now turn to the construction of the morphism $g'\colon Y\to Y'$. It
+follows from axioms TRI and TRII for triangulated
+categories that there are two distinguished triangles
+$(Z,X,Y,u,f,v)$ and $(Z',X',Y',u',f',v')$. Since, for every object $W$ of
+$\mathcal D$, the functor
+$\operatorname{Hom}_{\mathcal D}(W,\mathord\cdot)$ is cohomological (1.2.1), the
+sequences
+\VerdierSemanticAnchor{ch3-3-2-4-exact-sequences}
+\[
+\begin{tikzcd}[column sep=3.7em]
+h(Z)\arrow[r,"h(u)"]&h(X)\arrow[r,"\operatorname{Im}((\operatorname{id}_X;f))"]&\operatorname{Im}(f)\arrow[r]&0\\
+h(Z')\arrow[r,"h(u')"']&h(X')\arrow[r,"\operatorname{Im}((\operatorname{id}_{X'};f'))"']&\operatorname{Im}(f')\arrow[r]&0
+\end{tikzcd}
+\]
+are exact. Since $h(Z)$ is projective in $\mathcal D^\wedge$, there is
+$g''\colon Z\to Z'$ such that
+\VerdierSemanticAnchor{ch3-3-2-4-triii-square}
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.3em]
+h(Z)\arrow[r,"h(u)"]\arrow[d,"h(g'')"']&h(X)\arrow[d,"h(g)"]\\
+h(Z')\arrow[r,"h(u')"']&h(X')
+\end{tikzcd}
+\]
+commutes. Axiom TRIII supplies $g'$ such that $(g'',g,g')$ is a morphism of
+triangles; thus (3.2.4.2) commutes. This proves Lemma (3.2.4) and completes the
+proof of Proposition (3.2.3).
+
+\VerdierSemanticAnchor{ch3-3-2-5}
+\medskip\noindent\textbf{Proposition 3.2.5.}\quad
+\textit{Let $V$ and $V'$ be two admissible objects of $\mathcal D^\wedge$ and
+let $\alpha\colon V\to V'$ be a morphism of $\mathcal D^\wedge$. The kernel
+of $\alpha$ in $\mathcal D^\wedge$ (respectively, the cokernel of $\alpha$ in
+$\mathcal D^\wedge$) is an admissible object of $\mathcal D^\wedge$.}
+
+\VerdierSemanticAnchor{ch3-3-2-5-setup}
+By (3.2.3), we may suppose that $V=\operatorname{Im}(f)$ and
+$V'=\operatorname{Im}(f')$, and that $\alpha$ is the morphism induced on the
+images of the morphisms $h(f)$ and $h(f')$ by the commutative diagram
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.4em]
+h(X)\arrow[r,"h(f)"]\arrow[d,"h(g)"']&h(Y)\arrow[d,"h(g')"]\\
+h(X')\arrow[r,"h(f')"']&h(Y').
+\end{tikzcd}
+\]
+\endgroup

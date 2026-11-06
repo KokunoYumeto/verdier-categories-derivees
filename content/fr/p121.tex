@@ -1,0 +1,92 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0121}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-11-iv-to-i-complete}
+démontrer l'implication $\mathrm{iv)}\Longrightarrow\mathrm{i)}$. Soit donc
+$f\colon X\longrightarrow Y$ un morphisme muni d'un scindage
+$g\colon Y\longrightarrow X$. Le foncteur noyau du morphisme
+$f\colon X\longrightarrow Y$ est alors égal au foncteur noyau du morphisme
+$gf\colon X\longrightarrow X$ qui est un projecteur de $X$
+({\itshape i.e.} $gfgf=gf$).
+
+\VerdierSemanticAnchor{ch2-1-2-11-projector-reduction}
+On est donc ramené à démontrer que, dans une catégorie triangulée, où les
+produits dénombrables sont représentables, les projecteurs admettent des
+noyaux. Soit donc $e\colon X\longrightarrow X$ un projecteur de $X$.
+Posons $X_i=X$, $i\in\mathbb N$, soient :
+
+\VerdierSemanticAnchor{ch2-1-2-11-phi}
+\[
+  \Phi\colon\prod_{i\in\mathbb N}X_i\longrightarrow
+  \prod_{i\in\mathbb N}X_i, ,
+\]
+le morphisme défini par :
+
+\VerdierSemanticAnchor{ch2-1-2-11-1}
+\begin{equation}
+  \Phi(x_0,x_1,x_2,\ldots)
+  =\bigl(ex_0+(1-e)x_1,ex_1+(1-e)x_2,\ldots\bigr)\,.
+  \tag{1.2.11.1}
+\end{equation}
+La formule (1.2.11.1) définit un morphisme en interprétant les symboles
+$x_0,x_1,\ldots$ comme des morphismes d'un objet quelconque de
+$\mathcal D$ dans les $X_i$. De même, soit :
+
+\VerdierSemanticAnchor{ch2-1-2-11-psi}
+\[
+  \Psi\colon\prod_{i\in\mathbb N}X_i\longrightarrow
+  \prod_{i\in\mathbb N}X_i, ,
+\]
+le morphisme défini par :
+
+\VerdierSemanticAnchor{ch2-1-2-11-2}
+\begin{equation}
+  \Psi(x_0,x_1,x_2,\ldots)
+  =\bigl(x_0,(1-e)x_0+ex_1,(1-e)x_1+ex_2,\ldots\bigr)\,.
+  \tag{1.2.11.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch2-1-2-11-kernel-conclusion}
+Il est clair que $\Phi\Psi=\operatorname{id}$ et, par suite, le morphisme
+$\Phi$ est un épimorphisme. Il admet donc, d'après les implications déjà
+démontrées, un noyau représentable. D'autre part, le foncteur noyau de
+$\Phi$ est canoniquement isomorphe au foncteur noyau de
+$e\colon X\longrightarrow X$. Ce foncteur est donc représentable et, par
+suite, le projecteur $e$ admet un noyau. Ceci achève la démonstration de la
+proposition (1.2.9).
+
+\VerdierSemanticAnchor{ch2-1-2-12}
+\medskip
+\noindent\textbf{1.2.12.}\quad
+Le corollaire (1.2.4) montre que les triangles distingués contenant un
+morphisme donné sont uniques à isomorphisme non unique près.
+
+\VerdierSemanticAnchor{ch2-1-2-12-functorial-question}
+De plus, l'axiome TRIII impose que tout morphisme de morphismes se prolonge
+en un morphisme de triangles. On peut donc se demander s'il est possible de
+définir la structure triangulée en associant fonctoriellement à tout
+morphisme de la catégorie un triangle distingué. Nous allons montrer que
+dans l'affirmative la catégorie est, sous certaines hypothèses
+supplémentaires, décomposable.
+
+\VerdierSemanticAnchor{ch2-1-2-13}
+\medskip
+\noindent\textbf{Proposition 1.2.13.}\quad
+\textit{Soient $\mathcal D$ une catégorie triangulée et $\operatorname{Tr}$
+un foncteur de $\mathrm{Fl}_1(\mathcal D)$ (chap.~I, 3.3.6), catégorie des
+morphismes de $\mathcal D$, dans la catégorie des triangles distingués
+(sous-catégorie pleine de la catégorie des triangles de $\mathcal D$
+définie par les triangles distingués) :}
+
+\VerdierSemanticAnchor{ch2-1-2-13-tr-assignment}
+\[
+  \operatorname{Tr}\!\left(X\xrightarrow{f}Y\right)
+  =X\xrightarrow{f}Y\xrightarrow{a(f)}\tau(f)
+  \xrightarrow{b(f)}X[1], .
+\]
+\endgroup

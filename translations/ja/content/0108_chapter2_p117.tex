@@ -1,0 +1,79 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0117}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-5-combined-diagram}
+したがって、次の図式は可換である。
+\begin{equation*}
+  \resizebox{0.98\linewidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=2.1em,row sep=3.1em]
+      X\oplus X' \arrow[r,"{u\oplus u'}"] \arrow[d,"{\operatorname{id}}"']
+        \& Y\oplus Y' \arrow[r,"{v\oplus v'}"] \arrow[d,"{\operatorname{id}}"']
+        \& Z\oplus Z' \arrow[r,"{w\oplus w'}"] \arrow[d,"{(f,f')}"']
+        \& (X\oplus X')[1] \arrow[d,"{\operatorname{id}}"] \\
+      X\oplus X' \arrow[r,"{u\oplus u'}"']
+        \& Y\oplus Y' \arrow[r,"m"']
+        \& L \arrow[r,"n"']
+        \& (X\oplus X')[1]
+    \end{tikzcd}$%
+  }\,.
+\end{equation*}
+
+\VerdierSemanticAnchor{ch2-1-2-5-sum-cone-map}
+系を証明するには、射
+\[
+  (f,f')\colon Z\oplus Z'\longrightarrow L
+\]
+が同型であることを示せばよい。したがって、任意の対象 $M$ に対して射
+
+\VerdierSemanticAnchor{ch2-1-2-5-hom-test}
+\[
+  \operatorname{Hom}_{\mathcal D}\bigl(M,(f,f')\bigr)
+\]
+がアーベル群の同型であることを示せば十分である。これは (1.2.1) と
+五項補題から直ちに従う。
+
+\VerdierSemanticAnchor{ch2-1-2-5-proof-complete}
+
+\VerdierSemanticAnchor{ch2-1-2-6}
+\medskip
+\noindent\textbf{系 1.2.6.}\quad
+$X\xrightarrow{u}Y\xrightarrow{v}Z\xrightarrow{w}X[1]$ を
+$w=0$ を満たす $\mathcal D$ の完全三角とする。このとき、射 $v$ の切断
+$s\colon Z\longrightarrow Y$ が存在する。任意の切断
+$s\colon Z\longrightarrow Y$ は同型
+
+\VerdierSemanticAnchor{ch2-1-2-6-split-isomorphism}
+\[
+  X\oplus Z\xrightarrow[\sim]{(u,s)}Y\,.
+\]
+
+\VerdierSemanticAnchor{ch2-1-2-6-converse}
+逆に、次の形の三角
+
+\VerdierSemanticAnchor{ch2-1-2-6-1}
+\begin{equation}
+  X\xrightarrow{\binom{\operatorname{id}}{0}}X\oplus Z
+  \xrightarrow{(0,\operatorname{id})}Z\xrightarrow{0}X[1]
+  \tag{1.2.6.1}
+\end{equation}
+はすべて完全三角である。
+
+\VerdierSemanticAnchor{ch2-1-2-6-third-assertion}
+第三の主張は TRI、TRII、および (1.2.5) から直ちに従う。
+
+\VerdierSemanticAnchor{ch2-1-2-6-first-assertion}
+第一の主張を証明しよう。(1.2.1) により、任意の $W$ に対して列
+
+\VerdierSemanticAnchor{ch2-1-2-6-2}
+\begin{equation}
+  0\longrightarrow\operatorname{Hom}_{\mathcal D}(W,X)
+  \longrightarrow\operatorname{Hom}_{\mathcal D}(W,Y)
+  \longrightarrow\operatorname{Hom}_{\mathcal D}(W,Z)
+  \longrightarrow0
+  \tag{1.2.6.2}
+\end{equation}
+\endgroup

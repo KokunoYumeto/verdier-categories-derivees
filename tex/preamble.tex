@@ -1,0 +1,32 @@
+\RequirePackage{iftex}
+\ifLuaTeX\else
+  \PackageError{verdier-reader}{LuaLaTeX is required}{Run the isolated build script, which selects LuaLaTeX.}
+\fi
+
+\ifdefined\VerdierReaderLayer\else
+  \PackageError{verdier-reader}{VerdierReaderLayer is not defined}{Define the reader layer before loading tex/preamble.tex.}
+\fi
+\ifdefined\VerdierReaderLanguage\else
+  \PackageError{verdier-reader}{VerdierReaderLanguage is not defined}{Define the reader language before loading tex/preamble.tex.}
+\fi
+
+\RequirePackage{fontspec}
+\RequirePackage[french,english]{babel}
+\RequirePackage{geometry}
+\RequirePackage{microtype}
+\RequirePackage{mathtools}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{booktabs}
+\RequirePackage{longtable}
+\RequirePackage{xcolor}
+\RequirePackage{fancyhdr}
+\RequirePackage{tikz-cd}
+\usetikzlibrary{babel,decorations.pathmorphing}
+\RequirePackage{hyperref}
+\RequirePackage{bookmark}
+
+\input{tex/metadata.tex}
+\input{tex/verdier-reader.sty}
+
+\endinput

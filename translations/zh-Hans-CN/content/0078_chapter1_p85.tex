@@ -1,0 +1,98 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0085}%
+\VerdierSemanticAnchor{ch1-3-1-4-homotopy-definition-continuation}
+是 $\operatorname{tr}_1(C)$ 的两个态射。连接 $(g,h,a)$ 与
+$(g',h',a')$ 的一个\emph{同伦}是三元组 $(b,b',\alpha)$，其中
+$b\colon g\rightsquigarrow g'$ 与 $b'\colon h\rightsquigarrow h'$ 是同伦，而
+
+\VerdierSemanticAnchor{ch1-3-1-4-second-order-condition}
+\begin{equation*}
+  \alpha\colon f'\star b+a'\rightsquigarrow b'\star f+a
+\end{equation*}
+是二阶同伦 (2.5.12)。
+
+\VerdierSemanticAnchor{ch1-3-1-4-homotopic-morphisms}
+若存在连接 $\operatorname{tr}_1(C)$ 中两个态射的同伦，则称它们\emph{同伦}。
+\VerdierSemanticAnchor{ch1-3-1-4-equivalence-relation}
+“$(g,h,a)$ 与 $(g',h',a')$ 同伦”是一个与态射的直和及复合相容的等价关系。
+\VerdierSemanticAnchor{ch1-3-1-4-tr1-homotopy-category}
+因此可引入范畴 $\operatorname{Tr}_1(C)$：其对象是
+$\operatorname{tr}_1(C)$ 的对象，其态射是 $\operatorname{tr}_1(C)$ 的态射模同伦。
+
+\VerdierSemanticAnchor{ch1-3-1-5}
+\noindent\textbf{命题 3.1.5.}\quad
+\emph{设
+$D,D'\colon (X\xrightarrow{f}Y)\rightrightarrows
+(X'\xrightarrow{f'}Y')$ 是 $\operatorname{tr}_1(C)$ 的两个态射。若
+$D$ 与 $D'$ 在 $\operatorname{tr}_1(C)$ 中同伦，则 $c(D)$ 与 $c(D')$
+在 $\operatorname{comp}(C)$ 中同伦。}
+
+\VerdierSemanticAnchor{ch1-3-1-5-proof-setup}
+令 $D=(g,h,a)$、$D'=(g',h',a')$。假定 $D$ 与 $D'$ 在
+$\operatorname{tr}_1(C)$ 中同伦。于是存在同伦 $b$ 与 $b'$，使得：
+
+\VerdierSemanticAnchor{ch1-3-1-5-eq1}
+\begin{equation}
+  \begin{aligned}
+    g'-g&=bd+db,\\
+    h'-h&=b'd+db'.
+  \end{aligned}
+  \tag{3.1.5.1}
+\end{equation}
+
+（为简化记号，此计算省略了表示各分量次数的上标。）
+\VerdierSemanticAnchor{ch1-3-1-5-second-order-homotopy}
+此外，存在二阶同伦 $\alpha$，使得
+\begin{equation*}
+  \alpha d-d\alpha=b'f+a-(f'b+a').
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-3-1-5-cone-homotopy}
+直接计算表明
+\begin{equation*}
+  \begin{pmatrix}
+    b' & \alpha\\
+    0  & -b
+  \end{pmatrix}
+\end{equation*}
+是连接 $c(D)$ 与 $c(D')$ 的同伦。
+
+\VerdierSemanticAnchor{ch1-3-1-6}
+\noindent\textbf{推论 3.1.6.}\quad
+\emph{函子}
+\begin{equation*}
+  c\colon\operatorname{tr}_1(C)\longrightarrow\operatorname{comp}(C)
+  \qquad\text{和}\qquad
+  s\colon\operatorname{comp}(C)\longrightarrow\operatorname{tr}_1(C)
+\end{equation*}
+\emph{与 $\operatorname{tr}_1(C)$ 和 $\operatorname{comp}(C)$ 中的同伦相容；
+取商后，它们定义仍记作}
+
+\VerdierSemanticAnchor{ch1-3-1-6-descended-functors}
+\begin{equation*}
+  c\colon\operatorname{Tr}_1(C)\longrightarrow K(C)
+  \qquad\text{和}\qquad
+  s\colon K(C)\longrightarrow\operatorname{Tr}_1(C)
+\end{equation*}
+\emph{的函子。}
+\VerdierSemanticAnchor{ch1-3-1-6-adjunction}
+\emph{函子 $c\colon\operatorname{Tr}_1(C)\longrightarrow K(C)$ 是函子
+$s\colon K(C)\longrightarrow\operatorname{Tr}_1(C)$ 的左伴随。}
+
+\VerdierSemanticAnchor{ch1-3-1-6-proof}
+这由 (3.1.5) 和 (3.1.3) 形式地推出。
+
+\VerdierSemanticAnchor{ch1-3-1-7}
+\noindent\textbf{3.1.7.}\quad
+\VerdierSemanticAnchor{ch1-3-1-7-s-prime}
+以 $s'\colon\operatorname{comp}(C)\longrightarrow\operatorname{tr}_1(C)$
+表示函子 $X\longmapsto(X\longrightarrow 0)$。
+\VerdierSemanticAnchor{ch1-3-1-7-comp-translation}
+函子 $cs'\colon\operatorname{comp}(C)\longrightarrow\operatorname{comp}(C)$
+等于 $\operatorname{comp}(C)$ 的平移函子。
+\VerdierSemanticAnchor{ch1-3-1-7-descended-s-prime}
+函子 $s'$ 将 $\operatorname{comp}(C)$ 的同伦态射映为
+$\operatorname{tr}_1(C)$ 的同伦态射，因而定义函子
+$s'\colon K(C)\longrightarrow\operatorname{Tr}_1(C)$，仍以 $s'$ 表示。
+\VerdierSemanticAnchor{ch1-3-1-7-k-translation}
+函子 $cs'\colon K(C)\longrightarrow K(C)$ 等于 $K(C)$ 的平移函子。

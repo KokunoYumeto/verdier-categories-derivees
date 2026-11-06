@@ -1,0 +1,66 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0164}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch4-4-1-6-triangulated-square}
+であって、各 $\omega_2=(\mathord\bullet\xrightarrow f\mathord\bullet\xrightarrow g\mathord\bullet)$
+（$\mathcal{F}\ell_2(\mathcal J)$ の対象）
+に対して次の図式が可換となるものである：
+\[
+\begin{tikzcd}[column sep=5.2em,row sep=2.7em]
+X_g\arrow[r,"{\delta(\omega_2)}"]\arrow[d,"{m_g}"']&X_f[1]\arrow[d,"{m_f[1]}"]\\
+Y_g\arrow[r,"{\delta'(\omega_2)}"']&Y_f[1].
+\end{tikzcd}
+\]
+
+\VerdierSemanticAnchor{ch4-4-1-6-abelian}
+$\mathcal A$ をアーベル圏とし、$(H^n(f),\delta)$、
+$(H'^{n}(f),\delta')$ を型 $\mathcal J$ で $\mathcal A$ に値をとる
+二つのスペクトル対象とする。\emph{スペクトル対象の射}とは関手の射の列
+\[
+m^n(f)\colon H^n(f)\longrightarrow H'^{n}(f),\qquad
+f\in\operatorname{Ob}\mathcal{F}\ell_1(\mathcal J),\quad n\in\mathbb Z,
+\]
+であって、各 $\omega_2=(\mathord\bullet\xrightarrow f\mathord\bullet\xrightarrow g\mathord\bullet)$
+（$\mathcal{F}\ell_2(\mathcal J)$ の対象）
+および各整数 $n$ に対して次の図式が可換となるものである：
+\[
+\begin{tikzcd}[column sep=5.2em,row sep=2.7em]
+H^n(g)\arrow[r,"{\delta^n(\omega_2)}"]\arrow[d,"{m^n(g)}"']&
+H^{n+1}(f)\arrow[d,"{m^{n+1}(f)}"]\\
+H'^{n}(g)\arrow[r,"{\delta'^{n}(\omega_2)}"']&H'^{n+1}(f).
+\end{tikzcd}
+\]
+型 $\mathcal J$ で $\mathcal D$（それぞれ $\mathcal A$）に値をとる
+スペクトル対象は圏をなす。
+
+\VerdierSemanticAnchor{ch4-4-2}
+\subsection*{4.2. スペクトル系列の機構。}
+
+\VerdierSemanticAnchor{ch4-4-2-1}
+\medskip\noindent\textbf{4.2.1.}\quad
+$\mathcal A$ をアーベル圏、$(H^n(f),\delta)$ を型 $\mathcal J$ の
+スペクトル対象とする。各
+$\omega_2=(\mathord\bullet\xrightarrow f\mathord\bullet\xrightarrow g\mathord\bullet)$
+（$\mathcal{F}\ell_2(\mathcal J)$ の対象）
+に対して、次のように置く：
+\VerdierSemanticAnchor{ch4-4-2-1-1}
+\[
+\left\{
+\begin{aligned}
+B\!\left[\begin{smallmatrix}n\\\omega_2\end{smallmatrix}\right]
+&=B\!\left[\begin{smallmatrix}n\\f,g\end{smallmatrix}\right]
+=\operatorname{Im}\bigl(H^{n-1}(g)
+  \xrightarrow{\delta^{n-1}(\omega_2)}H^n(f)\bigr)\\
+&\simeq\operatorname{Ker}\bigl(H^n(f)
+  \xrightarrow{H^n*u_1(\omega_2)}H^n(gf)\bigr),\\[2pt]
+Z\!\left[\begin{smallmatrix}n\\\omega_2\end{smallmatrix}\right]
+&=Z\!\left[\begin{smallmatrix}n\\f,g\end{smallmatrix}\right]
+=\operatorname{Ker}\bigl(H^n(g)
+  \xrightarrow{\delta^n(\omega_2)}H^{n+1}(f)\bigr)\\
+&\simeq\operatorname{Im}\bigl(H^n(gf)
+  \xrightarrow{H^n*u_2(\omega_2)}H^n(g)\bigr).
+\end{aligned}
+\right.
+\tag{4.2.1.1}
+\]
+\endgroup

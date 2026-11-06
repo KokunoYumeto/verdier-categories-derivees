@@ -1,0 +1,72 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0105}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\jot}{2pt}%
+
+\VerdierSemanticAnchor{ch1-3-4-3-cone-of-hf}
+一方、写像錐関手の定義から次を得る。
+\[
+  c(H(f))^l=H(Y)^l\oplus(H(X)[1])^l,
+\]
+
+\VerdierSemanticAnchor{ch1-3-4-3-4}
+\begin{equation}
+  d_{c(H(f))}^{,l}=
+  \begin{pmatrix}
+    d_{H(Y)}^{,l} & H(f)^{l+1}\\
+    0 & d_{H(X)[1]}^{,l}
+  \end{pmatrix},
+  \tag{3.4.3.4}
+\end{equation}
+ここで射 $H(f)$ は (2.4.2.6)、(2.4.2.3)、(2.2.2.6) により定義される。
+
+\VerdierSemanticAnchor{ch1-3-4-3-5}
+\begin{equation}
+  H(f)^{l+1}=
+  \prod_{\substack{\sigma=\sum_i l_i e_i\\ \sum_i l_i=l}}
+  F(X_1^{l_1},\ldots,f^{l_j+1},\ldots,X_n^{l_n}).
+  \tag{3.4.3.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-4-3-j-map}
+ここで次のようにおく。
+\[
+  J^l\colon H(Y)^l\oplus H(X[1])^l
+  \longrightarrow H(Y)^l\oplus(H(X)[1])^l,
+\]
+
+\VerdierSemanticAnchor{ch1-3-4-3-6}
+\begin{equation}
+  J^l=
+  \begin{pmatrix}
+    \operatorname{id}_{H(Y)^l} & 0\\
+    0 & \Psi^l
+  \end{pmatrix},
+  \qquad
+  \Psi^l=
+  \prod_{\substack{\sigma=\sum_i l_i e_i\\ \sum_i l_i=l}}
+  \varepsilon(\sigma,j)
+  \operatorname{id}_{F(X_1^{l_1},\ldots,X^{l_j+1},\ldots,X_n^{l_n})}.
+  \tag{3.4.3.6}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-4-3-7}
+各 $J^l$ が複体の射の成分であることを確かめるには、次を確かめれば十分で
+ある。
+\begin{equation}
+  \Phi^l=H(f)^{l+1}\Psi^l,
+  \qquad
+  \Psi^{l+1}d_{H(X[1])}^{l}=d_{H(X)[1]}^{l}\Psi^l.
+  \tag{3.4.3.7}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-4-3-8}
+図式 (3.4.3.1) が可換であることを確かめるには、次を確かめれば十分である。
+\begin{equation}
+  \Psi^l=m^l.
+  \tag{3.4.3.8}
+\end{equation}
+\endgroup

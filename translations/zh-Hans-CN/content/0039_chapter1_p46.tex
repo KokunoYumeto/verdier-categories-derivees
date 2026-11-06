@@ -1,0 +1,77 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0046}%
+\VerdierSemanticAnchor{ch1-1-4-3-canonical}
+这个作用称为\emph{典范作用}。我们要研究那些 $H$-函子
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq3}
+\begin{equation}
+  (F,m)\colon(\mathcal C,H,T_f,c_f)
+  \longrightarrow(\mathcal C',H,T'_f,c'_f)
+  \tag{1.4.3.3}
+\end{equation}
+它们在函子 $F$ 上诱导群 $\mathbb Z/2\mathbb Z$ 的典范作用。
+
+\VerdierSemanticAnchor{ch1-1-4-3-extension}
+设 $\dot\alpha\in H^2(G,\mathbb Z/2\mathbb Z)$ 为描述扩张
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq4}
+\begin{equation}
+  1\longrightarrow\mathbb Z/2\mathbb Z
+  \xrightarrow{n}H\xrightarrow{f}G\longrightarrow e
+  \tag{1.4.3.4}
+\end{equation}
+的元素。
+
+\VerdierSemanticAnchor{ch1-1-4-3-cocycle}
+设 $\alpha_s\in Z^2(G,\mathbb Z/2\mathbb Z)$ 为类 $\dot\alpha$ 中的一个
+正规化非齐次余循环，它由 $f$ 的一个正规化截面 $s$ 定义。于是
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq5}
+\begin{equation}
+  \begin{aligned}
+    \alpha_s(\sigma_1,\sigma_2)
+      &=s(\sigma_2)s(\sigma_1\sigma_2)^{-1}s(\sigma_1),
+      & \sigma_1,\sigma_2&\in G,\\
+    s(e)&=H\text{ 的单位元},\\
+    \alpha_s(\sigma_1,e)&=\alpha_s(e,\sigma_1)=1,\\
+    \delta\alpha_s(\sigma_1,\sigma_2,\sigma_3)
+      &=\alpha_s(\sigma_2,\sigma_3)
+        \alpha_s(\sigma_1\sigma_2,\sigma_3)^{-1}\\
+      &\quad{}\alpha_s(\sigma_1,\sigma_2\sigma_3)
+        \alpha_s(\sigma_1,\sigma_2)^{-1}=1,
+      & \sigma_1,\sigma_2,\sigma_3&\in G.
+  \end{aligned}
+  \tag{1.4.3.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-3-bijection}
+截面 $s\colon G\to H$ 定义集合的一个同构
+\[
+  H\xrightarrow{\sim}\mathbb Z/2\mathbb Z\times G.
+\]
+通过这个同构把 $H$ 的群律搬到 $\mathbb Z/2\mathbb Z\times G$ 上，得到群律
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq6}
+\begin{equation}
+  (\varepsilon_1,\sigma_1)(\varepsilon_2,\sigma_2)
+  =\bigl(\varepsilon_1\varepsilon_2
+    \alpha_s(\sigma_1,\sigma_2),\sigma_1\sigma_2\bigr).
+  \tag{1.4.3.6}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-4-3-identification}
+现在把 $H$ 与 (1.4.3.6) 所描述的群等同。对任意
+$(\varepsilon_1,\sigma_1),(\varepsilon_2,\sigma_2)\in H$，有
+
+\VerdierSemanticAnchor{ch1-1-4-3-eq7}
+\begin{equation}
+  \begin{aligned}
+    T_f(\varepsilon_1,\sigma_1)&=T(\sigma_1),\\
+    T'_f(\varepsilon_1,\sigma_1)&=T'(\sigma_1),\\
+    c_f\bigl((\varepsilon_1,\sigma_1),(\varepsilon_2,\sigma_2)\bigr)
+      &=c(\sigma_1,\sigma_2),\\
+    c'_f\bigl((\varepsilon_1,\sigma_1),(\varepsilon_2,\sigma_2)\bigr)
+      &=c'(\sigma_1,\sigma_2).
+  \end{aligned}
+  \tag{1.4.3.7}
+\end{equation}

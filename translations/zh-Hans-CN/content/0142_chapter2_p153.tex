@@ -1,0 +1,85 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0153}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+
+\VerdierSemanticAnchor{ch3-3-1-3}
+\noindent\textbf{3.1.3.}\quad
+假设 $\mathcal D$ 是严格 $\mathbb Z$-范畴。$\mathcal D$ 的平移函子
+$X\longmapsto X[n]$（$n\in\mathbb Z$）扩张为
+$\mathcal{F}\ell_1(\mathcal D)$ 的自同构：
+
+\VerdierSemanticAnchor{ch3-3-1-3-translation-extension}
+\[
+\bigl(X\xrightarrow{f}Y\bigr)
+\longmapsto
+\bigl(X[n]\xrightarrow{f[n]}Y[n]\bigr).
+\]
+由 $\mathrm A(\mathcal D)$ 的泛性质 (3.1.1.1)，这些自同构立即下降到商上，
+并在 $\mathrm A(\mathcal D)$ 上定义严格 $\mathbb Z$-范畴结构。函子
+$\mathcal H\colon\mathcal D\to\mathrm A(\mathcal D)$ 是严格
+$\mathbb Z$-函子。
+
+\VerdierSemanticAnchor{ch3-3-1-4}
+\medskip
+\noindent\textbf{3.1.4.}\quad
+设 $\mathcal D$ 与 $\mathcal D'$ 为两个加法严格 $\mathbb Z$-范畴，
+$F\colon\mathcal D\to\mathcal D'$ 为加法 $\mathbb Z$-函子（由平凡余循环
+扭曲）。以 $\mathcal{F}\ell_1(F)$ 表示 $F$ 在态射范畴上的扩张：
+\[
+\mathcal{F}\ell_1(F)\bigl(X\xrightarrow{f}Y\bigr)
+=\bigl(FX\xrightarrow{Ff}FY\bigr).
+\]
+函子 $\mathcal{F}\ell_1(F)$ 把 $\mathcal{F}\ell_1(\mathcal D)$ 的可忽略
+态射送到 $\mathcal{F}\ell_1(\mathcal D')$ 的可忽略态射。因此它定义函子
+
+\VerdierSemanticAnchor{ch3-3-1-4-1}
+\[
+\mathrm A(F)\colon\mathrm A(\mathcal D)\longrightarrow\mathrm A(\mathcal D').
+\tag{3.1.4.1}
+\]
+函子 $\mathrm A(F)$ 是加法函子。由 $\mathrm A(\mathcal D)$ 与
+$\mathrm A(\mathcal D')$ 的泛性质，它典范地带有 $\mathbb Z$-函子结构。
+
+\VerdierSemanticAnchor{ch3-3-1-4-composition}
+设 $F'\colon\mathcal D'\to\mathcal D''$ 为加法严格 $\mathbb Z$-范畴之间的
+加法 $\mathbb Z$-函子。则
+
+\VerdierSemanticAnchor{ch3-3-1-4-2}
+\[
+\mathrm A(F')\mathrm A(F)=\mathrm A(F'F).
+\tag{3.1.4.2}
+\]
+
+\VerdierSemanticAnchor{ch3-3-1-4-3}
+下图交换：
+\[
+\begin{tikzcd}[column sep=5em,row sep=2.5em]
+\mathcal D \arrow[r,"F"] \arrow[d,"\mathcal H"'] &
+\mathcal D' \arrow[d,"\mathcal H'"] \\
+\mathrm A(\mathcal D) \arrow[r,"\mathrm A(F)"'] &
+\mathrm A(\mathcal D')
+\end{tikzcd}
+\tag{3.1.4.3}
+\]
+（函子 $\mathcal H$ 与 $\mathcal H'$ 定义于 (3.1.2)）。
+
+\VerdierSemanticAnchor{ch3-3-1-4-natural-transformation}
+同样，设 $m\colon F\to F''$ 是 $\mathcal D$ 与 $\mathcal D'$ 之间加法
+$\mathbb Z$-函子的态射。由同样的论证得到 $\mathbb Z$-函子的态射
+
+\VerdierSemanticAnchor{ch3-3-1-4-4}
+\[
+\mathrm A(m)\colon\mathrm A(F)\longrightarrow\mathrm A(F'').
+\tag{3.1.4.4}
+\]
+若 $m$ 与 $m'$ 是两个可复合的加法 $\mathbb Z$-函子态射，则
+
+\VerdierSemanticAnchor{ch3-3-1-4-5}
+\[
+\mathrm A(m')\mathrm A(m)=\mathrm A(m'm).
+\tag{3.1.4.5}
+\]
+\endgroup

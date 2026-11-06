@@ -1,0 +1,90 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0245}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-6-3-b}
+\noindent\textit{b) Let
+$Q\colon K(\mathcal A)\longrightarrow D(\mathcal A)$ be the quotient
+functor. The complex $I^\bullet$ is $Q$-free on the right (Chapter~II,
+2.3.3); i.e.\ for every complex $Y$, the canonical morphism}
+\[
+\operatorname{Hom}_{K(\mathcal A)}(Y,I^\bullet)
+\longrightarrow\operatorname{Hom}_{D(\mathcal A)}(Y,I^\bullet)
+\]
+\textit{is an isomorphism.}
+
+\VerdierSemanticAnchor{ch4d-4-6-3-c}
+\noindent\textit{c) Let}
+\[
+H^*(I^\bullet)\colon\cdots\longrightarrow H^p(I^\bullet)
+\longrightarrow H^{p+1}(I^\bullet)\longrightarrow\cdots
+\]
+\textit{be the complex whose components are the $H^p(I^\bullet)$,
+$p\in\mathbb Z$, and whose differentials are zero. There is a unique
+isomorphism in $K(\mathcal A)$
+$I^\bullet\longrightarrow H^*(I^\bullet)$ inducing the identity on the
+cohomology objects.}
+
+\VerdierSemanticAnchor{ch4d-4-6-3-d}
+\noindent\textit{d) The canonical morphisms
+$H^*(I^\bullet)\longrightarrow H^p(I^\bullet)[-p]$ define isomorphisms in
+$K(\mathcal A)$ and in $D(\mathcal A)$:}
+\[
+H^*(I^\bullet)\xrightarrow{\sim}
+\prod_{p\in\mathbb Z}H^p(I^\bullet)[-p].
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-3-proof-abcd}
+We show that a) implies b). Indeed, it suffices (Chapter~II, 2.3.3) to show
+that for every acyclic complex $Y$,
+$\operatorname{Hom}_{K(\mathcal A)}(Y,I^\bullet)=0$, which follows from a).
+We show that a) implies c). Indeed, it suffices to replace, in the
+isomorphism of a), the complex $Y$ by $I^\bullet$ and the complex
+$I^\bullet$ by $H^*(I^\bullet)$. One sees likewise that a) implies d) by
+replacing, in the isomorphism of a), the complex $I^\bullet$ by the complex
+$H^*(I^\bullet)$. We prove a). It follows immediately from the definitions
+that the complex $I^\bullet$ is isomorphic to a complex of the form
+
+\VerdierSemanticAnchor{ch4d-4-6-3-proof-a-decomposition}
+\[
+\resizebox{0.98\linewidth}{!}{$
+\displaystyle
+\cdots\longrightarrow
+J^{n-2}\oplus H^{n-1}\oplus J^{n-1}
+\xrightarrow{\left(\begin{smallmatrix}
+0&0&\mathrm{id}\\0&0&0\\0&0&0
+\end{smallmatrix}\right)}
+J^{n-1}\oplus H^n\oplus J^n
+\xrightarrow{\left(\begin{smallmatrix}
+0&0&\mathrm{id}\\0&0&0\\0&0&0
+\end{smallmatrix}\right)}
+J^n\oplus H^{n+1}\oplus J^{n+1}
+\longrightarrow\cdots
+$}.
+\]
+
+\VerdierSemanticAnchor{ch4d-4-6-3-proof-a-homotopy}
+Consequently, there is a homotopy equivalence between $I^\bullet$ and the
+complex $H^*(I^\bullet)$. To prove a), we may therefore suppose that
+$I^\bullet=H^*(I^\bullet)$. It is then clear that there is an isomorphism
+
+\VerdierSemanticAnchor{ch4d-4-6-3-proof-a-hom}
+\[
+\operatorname{Hom}_{K(\mathcal A)}\bigl(Y,H^*(I^\bullet)\bigr)
+\xrightarrow{\sim}
+\prod_{p\in\mathbb Z}
+\operatorname{Hom}_{K(\mathcal A)}
+\bigl(Y,H^p(I^\bullet)[-p]\bigr).
+\]
+Moreover, since the objects $H^p(I^\bullet)$ are injective, the canonical
+morphism
+\[
+\operatorname{Hom}_{K(\mathcal A)}
+\bigl(Y,H^p(I^\bullet)[-p]\bigr)
+\longrightarrow
+\operatorname{Hom}_{\mathcal A}\bigl(H^p(Y),H^p(I^\bullet)\bigr)
+\]
+is an isomorphism.
+\endgroup

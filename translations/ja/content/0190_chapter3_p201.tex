@@ -1,0 +1,76 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0201}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-n0-epimorphism}
+ここで $Z^{-q}$ は $M'$ に属し、$L^j$、$-q+1\leq j\leq n_0$ は
+$M$ に属する。したがって、次のエピ射が存在する：
+\[
+\alpha\colon L^{-q}\longrightarrow Z^{-q},
+\qquad\text{ここで }L^{-q}\in M.
+\]
+次をおく：
+\[
+X_{n_0,q}=X_{n_0,q-1}(\alpha,-q),
+\qquad
+v_{n_0,q}=p(\alpha,-q)\quad\text{(2.1.1)}.
+\]
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-n0-completion}
+構成から、性質 $I)_{n_0,q}$ と $III)_{n_0,q}$ が成り立つことは明らかである。
+性質 $II)_{n_0,q}$ は、集合 $M'$ が性質 $(E_1)$ と $(E_4)$ をもつことから従う。
+したがって、$X_{n_0,i}$ の構成を続けることができる。
+$X_{n_0}=\varprojlim_i X_{n_0,i}$ とおき、
+$u_{n_0}\colon X_{n_0}\longrightarrow Y$ として標準射をとれば、
+性質 $1)_{n_0}$、$2)_{n_0}$、$3)_{n_0}$、$4)_{n_0}$ をもつ複体と射が得られる。
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-outer-induction}
+次に、複体 $X_i$ と射 $u_i\colon X_i\longrightarrow X_{i-1}$ を帰納法で構成する。
+$n_0\leq i<q$ を満たすすべての整数 $i$ に対して、性質
+$1)_i$、$2)_i$、$3)_i$、$4)_i$、$5)_i$ をもつ複体 $X_i$ と射
+$u_i\colon X_i\longrightarrow X_{i-1}$ が構成されたと仮定する。
+ここで $n_0\leq i<q$ である。
+性質 $1)_q$、$2)_q$、$3)_q$、$4)_q$、$5)_q$ をもつ複体 $X_q$ と射
+$u_q\colon X_q\longrightarrow X_{q-1}$ を構成しなければならない。
+まず $Y^q\in M$ なら、$X_q=X_{q-1}$、$u_q=\operatorname{id}$ とおく。
+$Y^q$ が $M$ に属さない、すなわち $M\text{-}\dim(Y^q)>0$ であると仮定する。
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-q-inner-induction}
+複体 $X_q$ と射 $u_q\colon X_q\longrightarrow X_{q-1}$ を構成するため、
+もう一度帰納法を用いる。$r$ を次を満たす整数とする：
+\[
+-q<r\leq -q+M\text{-}\dim(Y^q).
+\]
+複体の列 $X_{q,l}$、$-q<l<r$ と射
+$v_{q,l}\colon X_{q,l}\longrightarrow X_{q,l-1}$
+（$X_{q,-q}=X_{q-1}$ とおく）が定まり、次を満たすと仮定する：
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-q-r-conditions}
+\noindent$I')_l$
+すべての $j\neq-l,-l+1$ に対して
+$(X_{q,l})^j=(X_{q,l-1})^j$ である。
+
+\noindent$II')_l$
+$(X_{q,l})^{-l}\in M'$ であり、
+$M\text{-}\dim((X_{q,l})^{-l})=M\text{-}\dim(Y^q)-l-q$ である。
+
+\noindent$III')_l$
+$(X_{q,l})^{-l+1}\in M$ である。
+
+\noindent$IV')_l$
+$v_{q,l}$ は高さ $-l+1$ の初等射であり、$j\neq-l,-l+1$ に対して
+$(v_{q,l})^j=\operatorname{id}$ である。
+
+\VerdierSemanticAnchor{ch3d-2-3-3-proof-q-rminus1-complex}
+このとき複体 $X_{q,r-1}$ は次の形をする：
+\[
+\cdots\longrightarrow L^{-r}\longrightarrow Z^{-r+1}
+\longrightarrow L^{-r+2}\longrightarrow\cdots\longrightarrow L^q
+\longrightarrow Y^{q+1}\longrightarrow Y^{q+2}\longrightarrow\cdots,
+\]
+ここで各 $L^i$ は $M$ に属し、$Z^{-r+1}$ は $M'$ に属して
+$M\text{-}\dim(Z^{-r+1})=M\text{-}\dim(Y^q)-r+1-q$ を満たす。
+したがって、次のエピ射が存在する
+\endgroup

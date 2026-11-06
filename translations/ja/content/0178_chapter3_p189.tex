@@ -1,0 +1,72 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0189}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-1-4-proof-cont}
+ここで $v$ はホモトピー同値である。
+
+実際、射 $m$ の写像錐を構成する：
+
+\VerdierSemanticAnchor{ch3d-2-1-4-cone-m}
+\[
+X\xrightarrow{m}Y\xrightarrow{p(m)}c(m)\longrightarrow X[1],
+\]
+次に射 $p(m)$ の写像錐を構成する：
+
+\VerdierSemanticAnchor{ch3d-2-1-4-cone-pm}
+\[
+Y\xrightarrow{p(m)}c(m)\longrightarrow c(p(m))
+\xrightarrow{q}Y[1].
+\]
+射 $c(p(m))\xrightarrow{q}Y[1]$ はエピ射である（第 I 章，3.2.2）。完全三角の
+性質（性質 TRII）から、ホモトピー同値
+
+\VerdierSemanticAnchor{ch3d-2-1-4-homotopy-equivalence}
+\[
+X\xrightarrow{v}c(p(m))[-1]
+\]
+で、三角
+
+\VerdierSemanticAnchor{ch3d-2-1-4-triangle}
+\begin{center}
+\begin{tikzcd}[column sep=3.5em,row sep=3.2em]
+X \arrow[rr,"v"] \arrow[dr,"m"']
+  && c(p(m))[-1] \arrow[dl,"{q[-1]}"] \\
+& Y &
+\end{tikzcd}
+\end{center}
+がホモトピーを除いて可換となるものが存在する。
+
+したがって射 $m$ は $\operatorname{comp}(\mathcal A)$ のエピ射であると
+仮定してよい。次の複体
+
+\VerdierSemanticAnchor{ch3d-2-1-4-kernel}
+\[
+N=\cdots\longrightarrow N^i\xrightarrow{d_N^i}N^{i+1}
+\xrightarrow{d_N^{i+1}}N^{i+2}\longrightarrow\cdots
+\]
+を $m$ の核とする。次のようにおく：
+
+\VerdierSemanticAnchor{ch3d-2-1-4-truncation}
+\[
+N_{-n}=\cdots\longrightarrow N^{n-3}\longrightarrow N^{n-2}
+\longrightarrow\operatorname{Im}(d_N^{n-2})
+\longrightarrow0\longrightarrow0\longrightarrow\cdots.
+\]
+$N_{-n}$ は $N$ の非輪状部分複体の減少列をなす。そこで
+$X_n=X/N_n$ とおけば、列
+
+\VerdierSemanticAnchor{ch3d-2-1-4-quotients}
+\[
+u_n\colon X_n\longrightarrow X_{n-1},\qquad n\in\mathbb Z
+\]
+を得る。各 $u_n$ は高さ $-n$ の初等射であり、
+
+\[
+\varprojlim_n X_n=X,
+\qquad
+\varinjlim_n X_n=Y.
+\]
+\endgroup

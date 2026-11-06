@@ -1,0 +1,52 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0030}
+\VerdierSemanticAnchor{intro-8-local-invariants}
+其中 $\chi_P(\Phi)$ 是\emph{局部不变量}；若知道点 $P$ 邻域中的层 $F$ 与
+自同态 $\Phi$，就可以确定它。当 $X$ 是拓扑流形，而层 $F$ 是秩为 $1$ 的
+常自由层时，便恢复通常的 Lefschetz 公式。
+
+\VerdierSemanticAnchor{intro-8-coherent-case}
+在凝聚层上同调的框架中有类似公式。此时 $X$ 应取为域 $k$ 上有限型且完备
+的概形，$F$ 应为有限 Tor 维数的凝聚层，或更一般地为完美复形。由此出现
+的局部不变量目前只在某些特殊情形下得到研究。若域 $k$ 代数闭，概形 $X$
+在 $k$ 上光滑，层 $F$ 局部自由，并且不动点 $P$ 横截，则有
+\VerdierSemanticAnchor{intro-8-normal-crossing-formula}
+\[
+\chi_P(\Phi)
+=\frac{\operatorname{Tr}(\Phi_{F,P})}
+       {\det\bigl(1-d\Phi_{X,P}\bigr)}
+\]
+
+\VerdierSemanticAnchor{intro-8-normal-crossing-data}
+这里 $\Phi_{F,P}$ 表示 $\Phi$ 在 $P$ 处层 $F$ 的约化纤维上诱导的自同态
+（该纤维是有限维 $k$-向量空间），而 $d\Phi_{X,P}$ 表示态射 $\Phi_X$
+在 $P$ 处的微分。
+
+\VerdierSemanticAnchor{intro-8-residue-extension}
+若不再假定不动点 $P$ 横截，也就是说不再假定自同态
+$1-d\Phi_{X,P}$ 可逆，则仍可用 [4] 意义下的留数计算确定这些局部不变量。
+
+\VerdierSemanticAnchor{intro-8-relative-lefschetz}
+代数几何背景中的 Lefschetz 定理还可推广到相对情形。
+\VerdierSemanticAnchor{intro-8-relative-setup}
+设 $X\xrightarrow{f}Y$ 是局部 Noether 概形 $Y$ 上的真光滑 $Y$-概形，
+$F$ 是 $X$ 上有限 Tor 维数的凝聚层。此时 $Y$ 上的层复形
+$\mathrm{R}f_*(F)$ 是\emph{完美复形}。设
+$\Phi\colon(X,F)\longrightarrow(X,F)$ 是带层 $F$ 的概形 $X$ 的
+$Y$-自同态，并假定 $\Phi$ 的不动点概形 $P$ 在 $Y$ 上有限。自同态
+$\Phi$ 诱导自同态：
+\VerdierSemanticAnchor{intro-8-relative-rf-phi}
+\[
+\mathrm{R}f_*(\Phi)\colon
+\mathrm{R}f_*(F)\longrightarrow\mathrm{R}f_*(F),
+\]
+
+\VerdierSemanticAnchor{intro-8-relative-lefschetz-number}
+由于复形 $\mathrm{R}f_*(F)$ 是\emph{完美的}，可以定义 Lefschetz 数
+$\chi(\mathrm{R}f_*(\Phi))$；这里它是 $Y$ 的结构层的一个截面。在这些
+约定下，有等式：
+\VerdierSemanticAnchor{intro-8-relative-formula}
+\[
+\chi\bigl(\mathrm{R}f_*(\Phi)\bigr)=\chi_P(\Phi),
+\]
+其中 $\chi_P(\Phi)$ 是一个局部不变量，仍可由留数计算确定。

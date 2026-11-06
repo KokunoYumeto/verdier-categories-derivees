@@ -1,0 +1,110 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0085}%
+\VerdierSemanticAnchor{ch1-3-1-4-homotopy-definition-continuation}
+deux morphismes de $\operatorname{tr}_1(C)$. Une \emph{homotopie} reliant
+$(g,h,a)$ à $(g',h',a')$ est un triplet $(b,b',\alpha)$, où
+$b\colon g\rightsquigarrow g'$ et $b'\colon h\rightsquigarrow h'$ sont des
+homotopies et où
+
+\VerdierSemanticAnchor{ch1-3-1-4-second-order-condition}
+\begin{equation*}
+  \alpha\colon f'\star b+a'\rightsquigarrow b'\star f+a
+\end{equation*}
+est une homotopie du deuxième ordre (2.5.12).
+
+\VerdierSemanticAnchor{ch1-3-1-4-homotopic-morphisms}
+Deux morphismes de $\operatorname{tr}_1(C)$ seront dits \emph{homotopes} s'il
+existe une homotopie les reliant.
+\VerdierSemanticAnchor{ch1-3-1-4-equivalence-relation}
+La relation : ``$(g,h,a)$ et $(g',h',a')$ sont homotopes'' est une relation
+d'équivalence compatible avec la somme directe et la composition des
+morphismes.
+\VerdierSemanticAnchor{ch1-3-1-4-tr1-homotopy-category}
+On peut donc introduire la catégorie $\operatorname{Tr}_1(C)$ dont les objets
+sont les objets de $\operatorname{tr}_1(C)$ et les morphismes les morphismes de
+$\operatorname{tr}_1(C)$ à homotopie près.
+
+\VerdierSemanticAnchor{ch1-3-1-5}
+\noindent\textbf{Proposition 3.1.5.}\quad
+\emph{Soient
+$D,D'\colon (X\xrightarrow{f}Y)\rightrightarrows
+(X'\xrightarrow{f'}Y')$ deux morphismes de $\operatorname{tr}_1(C)$. Si les
+morphismes $D$ et $D'$ sont homotopes dans $\operatorname{tr}_1(C)$, alors les
+morphismes $c(D)$ et $c(D')$ sont homotopes dans $\operatorname{comp}(C)$.}
+
+\VerdierSemanticAnchor{ch1-3-1-5-proof-setup}
+Soient $D=(g,h,a)$ et $D'=(g',h',a')$. Supposons que $D$ et $D'$ soient
+homotopes dans $\operatorname{tr}_1(C)$. Il existe donc des homotopies $b$ et
+$b'$ telles que :
+
+\VerdierSemanticAnchor{ch1-3-1-5-eq1}
+\begin{equation}
+  \begin{aligned}
+    g'-g&=bd+db,\\
+    h'-h&=b'd+db'.
+  \end{aligned}
+  \tag{3.1.5.1}
+\end{equation}
+
+(Pour alléger la notation, nous avons omis dans ce calcul les exposants
+indiquant le degré des composants.)
+\VerdierSemanticAnchor{ch1-3-1-5-second-order-homotopy}
+Il existe de plus une homotopie du deuxième ordre $\alpha$ telle que :
+\begin{equation*}
+  \alpha d-d\alpha=b'f+a-(f'b+a').
+\end{equation*}
+
+\VerdierSemanticAnchor{ch1-3-1-5-cone-homotopy}
+Un calcul immédiat montre alors que
+\begin{equation*}
+  \begin{pmatrix}
+    b' & \alpha\\
+    0  & -b
+  \end{pmatrix}
+\end{equation*}
+est une homotopie qui relie $c(D)$ à $c(D')$.
+
+\VerdierSemanticAnchor{ch1-3-1-6}
+\noindent\textbf{Corollaire 3.1.6.}\quad
+\emph{Les foncteurs :}
+\begin{equation*}
+  c\colon\operatorname{tr}_1(C)\longrightarrow\operatorname{comp}(C)
+  \qquad\text{et}\qquad
+  s\colon\operatorname{comp}(C)\longrightarrow\operatorname{tr}_1(C)
+\end{equation*}
+\emph{sont compatibles avec les homotopies de $\operatorname{tr}_1(C)$ et de
+$\operatorname{comp}(C)$ et définissent, en passant au quotient, des foncteurs
+encore notés}
+
+\VerdierSemanticAnchor{ch1-3-1-6-descended-functors}
+\begin{equation*}
+  c\colon\operatorname{Tr}_1(C)\longrightarrow K(C)
+  \qquad\text{et}\qquad
+  s\colon K(C)\longrightarrow\operatorname{Tr}_1(C).
+\end{equation*}
+\VerdierSemanticAnchor{ch1-3-1-6-adjunction}
+\emph{Le foncteur $c\colon\operatorname{Tr}_1(C)\longrightarrow K(C)$ est
+adjoint à gauche du foncteur
+$s\colon K(C)\longrightarrow\operatorname{Tr}_1(C)$.}
+
+\VerdierSemanticAnchor{ch1-3-1-6-proof}
+Ceci résulte formellement de (3.1.5) et de (3.1.3).
+
+\VerdierSemanticAnchor{ch1-3-1-7}
+\noindent\textbf{3.1.7.}\quad
+\VerdierSemanticAnchor{ch1-3-1-7-s-prime}
+Désignons par
+$s'\colon\operatorname{comp}(C)\longrightarrow\operatorname{tr}_1(C)$ le
+foncteur $X\longmapsto(X\longrightarrow 0)$.
+\VerdierSemanticAnchor{ch1-3-1-7-comp-translation}
+Le foncteur
+$cs'\colon\operatorname{comp}(C)\longrightarrow\operatorname{comp}(C)$ est
+égal au foncteur de translation de $\operatorname{comp}(C)$.
+\VerdierSemanticAnchor{ch1-3-1-7-descended-s-prime}
+Le foncteur $s'$ transforme deux morphismes homotopes de
+$\operatorname{comp}(C)$ en morphismes homotopes de $\operatorname{tr}_1(C)$ et
+par suite définit un foncteur que nous noterons encore
+$s'\colon K(C)\longrightarrow\operatorname{Tr}_1(C)$.
+\VerdierSemanticAnchor{ch1-3-1-7-k-translation}
+Le foncteur $cs'\colon K(C)\longrightarrow K(C)$ est égal au foncteur de
+translation de $K(C)$.

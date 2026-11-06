@@ -1,0 +1,89 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0204}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-4-4-b}
+\noindent\textit{b) 以 $P$ 表示 $\mathcal A$ 的投射对象集合。三角范畴
+$K^{-}(P)$ 是 $Q$-左自由对象所成范畴的一个子范畴。自然函子}
+\[
+K^{-}(P)\longrightarrow D(\mathcal A)
+\]
+\noindent\textit{是充分忠实的。}
+
+\VerdierSemanticAnchor{ch3d-2-4-4-c}
+\noindent\textit{c) 若 $\mathcal A$ 的每个对象都是投射对象的商对象
+（相应地，并且还存在整数 $n\in\mathbb N$，它是 $\mathcal A$ 中所有对象的
+投射维数的上界），则：}
+
+\noindent\textit{1) 自然函子
+$K^{-}(P)\longrightarrow D^{-}(\mathcal A)$（相应地，
+$K^{*}(P)\longrightarrow D^{*}(\mathcal A)$）是范畴等价。以
+$L^{-}\colon D^{-}(\mathcal A)\longrightarrow K^{-}(P)$（相应地，
+$L^{*}\colon D^{*}(\mathcal A)\longrightarrow K^{*}(P)$）表示一个拟逆函子。}
+
+\noindent\textit{2) 函子
+$L^{-}Q^{-}\colon K^{-}(\mathcal A)\longrightarrow K^{-}(P)$（相应地，
+$L^{*}Q^{*}\colon K^{*}(\mathcal A)\longrightarrow K^{*}(P)$）是下列包含函子的右伴随：}
+\[
+K^{-}(P)\longrightarrow K^{-}(\mathcal A)
+\qquad
+(\text{相应地，}K^{*}(P)\longrightarrow K^{*}(\mathcal A)).
+\]
+\noindent\textit{伴随态射
+$\operatorname{id}_{K^{-}(\mathcal A)}\longrightarrow L^{-}Q^{-}$
+（相应地，
+$\operatorname{id}_{K^{*}(\mathcal A)}\longrightarrow L^{*}Q^{*}$）是一个
+``拟同构''。}
+
+\noindent\textit{3) 函子 $L^{-}$（相应地，$L^{*}$）是函子 $Q^{-}$
+（相应地，$Q^{*}$）的左伴随。}
+
+\noindent\textit{4) $K^{-}(\mathcal A)$ 的对象（相应地，
+$K^{*}(\mathcal A)$ 的对象）是 $Q$-左自由的，当且仅当它同构于
+$K^{-}(P)$ 的对象（相应地，$K^{*}(P)$ 的对象）。}
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-a}
+证明 a)。对 $\mathcal A$ 的每个对象 $Y$，有
+\[
+\operatorname{Hom}_{K(\mathcal A)}(X,Y[n])=0,
+\qquad\text{当 }n\neq0,
+\]
+而由于 $X$ 是 $Q$-左自由的（第二章，2.3.3），因而有
+\[
+\operatorname{Hom}_{D(\mathcal A)}(X,Y[n])=0,
+\qquad\text{当 }n\neq0.
+\]
+另一方面，
+$\operatorname{Hom}_{D(\mathcal A)}(X,Y)
+=\operatorname{Hom}_{\mathcal A}(X,Y)$（1.2.9）。现设
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-a-short-exact}
+\[
+S=0\longrightarrow Y'\xrightarrow{u}Y\xrightarrow{v}Y''
+\longrightarrow0
+\]
+是 $\mathcal A$ 中的正合列。典范上同调函子
+$\operatorname{comp}(\mathcal A)\longrightarrow D(\mathcal A)$（1.3.2）给出
+特异三角 $(Y',Y,Y'',[u],[v],\delta(S))$。因此得到正合列
+（第二章，1.2.1）：
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-a-hom-exact}
+\[
+\cdots\longrightarrow0\longrightarrow
+\operatorname{Hom}_{D(\mathcal A)}(X,Y')\longrightarrow
+\operatorname{Hom}_{D(\mathcal A)}(X,Y)\longrightarrow
+\operatorname{Hom}_{D(\mathcal A)}(X,Y'')\longrightarrow0
+\longrightarrow\cdots,
+\]
+即正合列
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-a-hom-a-exact}
+\[
+0\longrightarrow\operatorname{Hom}_{\mathcal A}(X,Y')
+\longrightarrow\operatorname{Hom}_{\mathcal A}(X,Y)
+\longrightarrow\operatorname{Hom}_{\mathcal A}(X,Y'')
+\longrightarrow0,
+\]
+\endgroup

@@ -1,0 +1,73 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0210}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-1-4-proof}
+証明すべきものは第三の主張だけである。他の主張は命題 (2.4.4) から直ちに
+従う帰結である。主張 2) から、$\mathcal A$ のコホモロジー次元が、
+$\mathcal A$ の対象の入射次元（それぞれ射影次元）の
+上限以下であることが直ちに分かる。
+$\mathcal A$ のコホモロジー次元が $n$ に等しいとし、
+
+\VerdierSemanticAnchor{ch3d-3-1-4-proof-resolution}
+\[
+I^\bullet=\cdots\longrightarrow0\longrightarrow0\longrightarrow I^0
+\longrightarrow I^1\longrightarrow I^2\longrightarrow I^3
+\longrightarrow\cdots
+\]
+を $\mathcal A$ の対象 $Y$ の入射型分解とする。$\mathcal A$ の任意の対象
+$X$ に対し、
+$\operatorname{Hom}_{K(\mathcal A)}(X[-n-1],I^\bullet)=0$ である。
+とくに $X=\operatorname{Ker}d_{I^\bullet}^{n+1}$ とすれば、標準射
+$\operatorname{Ker}d_{I^\bullet}^{n+1}\longrightarrow I^{n+1}$ が
+$I^n$ を経由して分解することが直ちに分かる：
+
+\VerdierSemanticAnchor{ch3d-3-1-4-proof-factorization}
+\[
+\begin{tikzcd}[column sep=4.8em,row sep=2.8em]
+{} & \operatorname{Ker}d_{I^\bullet}^{n+1}
+  \arrow[dl,dashed] \arrow[d] & {} \\
+I^n \arrow[r] & I^{n+1} \arrow[r] & \cdots
+\end{tikzcd}
+\]
+
+\VerdierSemanticAnchor{ch3d-3-1-4-proof-truncation}
+したがって $\operatorname{Ker}d_{I^\bullet}^{n+1}$ と
+$\operatorname{Ker}d_{I^\bullet}^{n}$ は $I^n$ の直和因子であり、それゆえ
+入射対象である。複体
+\[
+\cdots\longrightarrow0\longrightarrow I^0\longrightarrow I^1
+\longrightarrow\cdots\longrightarrow I^{n-1}
+\longrightarrow\operatorname{Ker}d_{I^\bullet}^{n}
+\longrightarrow0\longrightarrow\cdots
+\]
+は $Y$ の入射分解である。したがって $Y$ の入射次元は $n$ 以下である。
+同様に、$\mathcal A$ の任意の対象 $X$ の射影次元が $n$ 以下であることが
+示される。
+
+\VerdierSemanticAnchor{ch3d-3-1-5}
+\medskip\noindent\textbf{3.1.5.}\quad
+$X$ と $Y$ を $\mathcal A$ の二つの対象とする。命題 (3.1.4) は、圏
+$\mathcal A$ が十分な入射対象または射影対象をもつとき、ここで定義した群
+$\operatorname{Ext}_{\mathcal A}^{i}(X,Y)$ が古典的に定義される群と
+一致することを示している。
+
+\VerdierSemanticAnchor{ch3d-3-2}
+\subsection*{3.2. Yoneda 構成。}
+
+\VerdierSemanticAnchor{ch3d-3-2-1}
+\noindent\textbf{3.2.1.}\quad
+$X$ と $Y$ を $\mathcal A$ の二つの対象とする。
+$E_{\mathcal A}^{n}(X,Y)$（$n\geq1$）を、完全列
+
+\VerdierSemanticAnchor{ch3d-3-2-1-sequence}
+\[
+S^n(X,Y)=0\longrightarrow Y\longrightarrow Z_{n-1}
+\longrightarrow Z_{n-2}\longrightarrow\cdots\longrightarrow Z_0
+\xrightarrow{u_0}X\longrightarrow0.
+\]
+全体の集合とする。整数 $n$ を完全列 $S^n(X,Y)$ の長さという。
+$E_{\mathcal A}^{n}(X,Y)$ の各元 $S^n(X,Y)$ に三つの複体を対応させる：
+\endgroup

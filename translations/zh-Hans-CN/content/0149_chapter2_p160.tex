@@ -1,0 +1,47 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0160}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch3-3-2-7-condition}
+\noindent\textit{并使图式}
+\[
+X_1\xrightarrow{u_1}X_2\xrightarrow{f_3u_2}Y_3
+\]
+\textit{能嵌入特异三角 $(X_1,X_2,Y_3,u_1,f_3u_2,u_3)$。}
+这立即由命题 (3.2.5) 的证明得到。
+
+\VerdierSemanticAnchor{ch3-3-2-8}
+\medskip\noindent\textbf{3.2.8. 定理 3.2.1 中 a)、b) 的证明。}\quad
+我们已在 (3.2.6) 证明 $\mathrm A(\mathcal D)$ 是阿贝尔范畴。设
+$F\colon\mathcal D\to\mathcal D'$ 为正合函子。由命题 (3.2.7)，函子
+$\mathrm A(F)$ 立即左正合。另一方面，由 $\mathrm A(\mathcal D)$ 的构造显然可知，
+$\mathrm A(\mathcal D^\circ)^\circ$ 与 $\mathrm A(\mathcal D)$ 典范同构，且
+$\mathrm A(F^\circ)^\circ$ 与 $\mathrm A(F)$ 典范同构。函子 $F^\circ$ 正合
+(1.1.7)，故 $\mathrm A(F^\circ)$ 左正合，因而 $\mathrm A(F)$ 也右正合，
+所以它正合。
+
+$\mathcal D^\wedge$ 的可容许对象同构于可表示函子的子对象和商对象。因此由
+(3.2.3)，$\mathrm A(\mathcal D)$ 的每个对象分别同构于 $\mathcal D$ 中对象的
+一个子对象与一个商对象。可表示函子是 $\mathcal D^\wedge$ 中的投射对象；
+所以由 (3.2.5)，它们在 $\mathcal D^\wedge$ 的可容许对象所成的满子范畴中
+也是投射对象。再由
+(3.2.3)，$\mathcal D$ 的对象是 $\mathrm A(\mathcal D)$ 中的投射对象。
+于是 $\mathcal D^\circ$ 的对象是 $\mathrm A(\mathcal D^\circ)$ 中的投射对象；
+取反范畴便知，$\mathcal D$ 的对象是 $\mathrm A(\mathcal D)$ 中的内射对象。
+关于 $\mathrm A_{\mathcal D,\mathcal D'}$ 充分忠实的完整证明可以放心留给读者：
+正合函子之间的态射，一旦知道它在足够多投射对象上的取值，便被唯一确定。
+
+\VerdierSemanticAnchor{ch3-3-2-9}
+\medskip\noindent\textbf{3.2.9. 定理 3.2.1 证明的结尾。}
+先证函子 $\mathcal H\colon\mathcal D\to\mathrm A(\mathcal D)$ 为上同调函子。
+设 $(X,Y,Z,f,g,h)$ 为 $\mathcal D$ 中的特异三角，需证序列
+\[
+\mathcal H(X)\xrightarrow{\mathcal H(f)}\mathcal H(Y)
+\xrightarrow{\mathcal H(g)}\mathcal H(Z).
+\]
+正合。由 (3.2.3)、(3.2.5)，只需证明序列
+\VerdierSemanticAnchor{ch3-3-2-9-1}
+\[
+h(X)\xrightarrow{h(f)}h(Y)\xrightarrow{h(g)}h(Z)
+\tag{3.2.9.1}
+\]
+\endgroup

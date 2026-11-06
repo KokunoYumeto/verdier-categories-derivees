@@ -1,0 +1,72 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0236}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-2-4}
+\noindent\textbf{4.2.4.}\quad
+$\operatorname{comp}(\mathcal A)$ 中 $\widetilde{\mathbb Z}$ 型滤过对象的态射，
+以显然的方式诱导命题 (4.2.3) a) 所述的相应谱对象之间的态射。因此，命题
+(4.2.3) 定义了从 $\operatorname{comp}(\mathcal A)$ 的滤过对象范畴到
+取值于 $D(\mathcal A)$ 的谱对象范畴的函子。
+
+\VerdierSemanticAnchor{ch4d-4-2-4-first-canonical}
+设 $X$ 是 $\operatorname{comp}(\mathcal A)$ 的对象，并设
+$X(q)\subset X$，$q\in\mathbb Z$，是它的第一典范滤过。
+在这种情形下，命题 (4.2.3) 关联给滤过对象
+$\bigl(X,X(q),q\in\mathbb Z\bigr)$ 的谱对象，正是与复形 $X$ 相联系的、
+取值于 $D(\mathcal A)$ 的第一谱对象 (4.1.5)。
+
+\VerdierSemanticAnchor{ch4d-4-2-4-nfold}
+同样，设 $X$ 是 $\mathcal A$ 中的 $n$-重复形，$\int_n X=Y$ 是其关联单复形，
+$m$ 是整数，$1\leq m\leq n$，并设
+\[
+0={}^{m}\!Y(-\infty)\subset\cdots\subset{}^{m}\!Y(q)
+\subset\cdots\subset{}^{m}\!Y(+\infty)=Y
+\]
+是由 $X$ 的第 $m$ 个次数所定义的滤过 (4.1.6.9)。在这种情形下，命题
+(4.2.3) 关联给滤过对象
+$\bigl(Y,{}^{m}\!Y(q),q\in\mathbb Z\bigr)$ 的谱对象，正是由按第 $m$ 个次数
+滤过的 $X$ 所定义的、取值于 $D(\mathcal A)$ 的谱对象 (4.1.8)。
+
+\VerdierSemanticAnchor{ch4d-4-3}
+\medskip\noindent\textbf{4.3. 第二典范谱对象。}
+
+\VerdierSemanticAnchor{ch4d-4-3-1}
+\noindent\textbf{4.3.1.}\quad
+设 $X$ 是 $\operatorname{comp}(\mathcal A)$ 的对象。令：
+
+\VerdierSemanticAnchor{ch4d-4-3-1-1}
+\begin{equation}
+\begin{aligned}
+X(-\infty)&=0,\qquad X(+\infty)=X,\\
+X(q)&=\cdots\longrightarrow X^{q-3}\longrightarrow X^{q-2}
+\longrightarrow\operatorname{Ker}(d_X^{q-1})
+\longrightarrow0\longrightarrow0\longrightarrow\cdots,
+\qquad q\in\mathbb Z,
+\end{aligned}
+\tag{4.3.1.1}
+\end{equation}
+后一个复形的微分由 $X$ 的微分诱导。存在典范单态射：
+
+\VerdierSemanticAnchor{ch4d-4-3-1-2}
+\begin{equation}
+0=X(-\infty)\subset\cdots\subset X(q)\subset X(q+1)
+\subset\cdots\subset X(+\infty)=X
+\tag{4.3.1.2}
+\end{equation}
+它们在 $X$ 上定义了一个 $\widetilde{\mathbb Z}$ 型滤过，称为 $X$ 的
+\emph{第二典范滤过}。由命题 (4.2.3) 得到一个谱对象
+$\bigl(X(p,q),\delta(p,q,r)\bigr)$，称为与复形 $X$ 相联系的、取值于
+$D(\mathcal A)$ 的\emph{第二谱对象}。
+
+\VerdierSemanticAnchor{ch4d-4-3-1-associated-functor}
+$\operatorname{comp}(\mathcal A)$ 中的态射 $X\longrightarrow Y$ 保持第二典范滤过，
+因而函子
+\[
+X\longmapsto\bigl(X(p,q),\delta(p,q,r)\bigr)
+\]
+是从 $\operatorname{comp}(\mathcal A)$ 到取值于 $D(\mathcal A)$ 的谱对象
+范畴的函子。这个函子称为\emph{第二典范谱对象函子}。
+\endgroup

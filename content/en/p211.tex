@@ -1,0 +1,92 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0211}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-2-1-complex-x}
+\noindent a) The complex $X$ whose only nonzero component is the object $X$
+in degree zero.
+
+\VerdierSemanticAnchor{ch3d-3-2-1-complex-z}
+\noindent b) The complex
+\[
+Z^\bullet=\cdots\longrightarrow0\longrightarrow Y
+\longrightarrow Z_{n-1}\longrightarrow\cdots\longrightarrow Z_0
+\longrightarrow0\longrightarrow0\longrightarrow\cdots
+\]
+($Y$ is the component of degree $-n$, and the $Z_i$ are the components of
+degree $-i$).
+
+\VerdierSemanticAnchor{ch3d-3-2-1-complex-y-shift}
+\noindent c) The complex $Y[n]$ whose only nonzero component is the object
+$Y$ in degree $-n$.
+
+\VerdierSemanticAnchor{ch3d-3-2-1-morphisms}
+Let $u(S^n(X,Y))\colon Z^\bullet\longrightarrow X$ denote the morphism whose
+only nonzero component is $u_0$ in degree $0$, and let
+$v(S^n(X,Y))\colon Z^\bullet\longrightarrow Y[n]$ denote the morphism whose
+only nonzero component is $\operatorname{id}_Y$ in degree $-n$. The morphism
+$u(S^n(X,Y))$ is a quasi-isomorphism, and hence gives a morphism in
+$D(\mathcal A)$ (with the notation of (1.3.2)):
+
+\VerdierSemanticAnchor{ch3d-3-2-1-1}
+\begin{equation}
+\delta_{\mathcal A}^{n}(S^n(X,Y))=
+[v(S^n(X,Y))][u(S^n(X,Y))]^{-1}\colon X\longrightarrow Y[n].
+\tag{3.2.1.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-2-1-2}
+This defines a map
+\begin{equation}
+\delta_{\mathcal A}^{n}\colon E_{\mathcal A}^{n}(X,Y)
+\longrightarrow\operatorname{Ext}_{\mathcal A}^{n}(X,Y),
+\tag{3.2.1.2}
+\end{equation}
+which we denote simply by $\delta^n$ when no confusion can result.
+
+\VerdierSemanticAnchor{ch3d-3-2-2}
+\medskip\noindent\textbf{Proposition 3.2.2.}\quad
+\textit{a) The map $\delta^n$ is surjective.}
+
+\VerdierSemanticAnchor{ch3d-3-2-2-b-sequences}
+\noindent\textit{b) Two elements}
+\[
+S^n(X,Y)=0\longrightarrow Y\longrightarrow Z_{n-1}
+\longrightarrow\cdots\longrightarrow Z_0\longrightarrow X
+\longrightarrow0
+\]
+\noindent\textit{and}
+\[
+{S'}^n(X,Y)=0\longrightarrow Y\longrightarrow Z'_{n-1}
+\longrightarrow\cdots\longrightarrow Z'_0\longrightarrow X
+\longrightarrow0
+\]
+\noindent\textit{have the same image under $\delta^n$ if and only if there
+exists an element}
+\[
+{S''}^n(X,Y)=0\longrightarrow Y\longrightarrow Z''_{n-1}
+\longrightarrow\cdots\longrightarrow Z''_0\longrightarrow X
+\longrightarrow0
+\]
+\noindent\textit{and a commutative diagram}
+
+\VerdierSemanticAnchor{ch3d-3-2-2-b-diagram}
+\begin{center}
+\resizebox{\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=2.25em,row sep=2.5em]
+0 \arrow[r] \& Y \arrow[r] \& Z_{n-1} \arrow[r] \& \cdots
+  \arrow[r] \& Z_0 \arrow[r] \& X \arrow[r] \& 0 \\
+0 \arrow[r] \& Y \arrow[r] \arrow[u,"{\operatorname{id}}"]
+  \arrow[d,"{\operatorname{id}}"']
+\& Z''_{n-1} \arrow[r] \arrow[u] \arrow[d]
+\& \cdots \arrow[r]
+\& Z''_0 \arrow[r] \arrow[u] \arrow[d]
+\& X \arrow[r] \arrow[u,"{\operatorname{id}}"']
+  \arrow[d,"{\operatorname{id}}"] \& 0 \\
+0 \arrow[r] \& Y \arrow[r] \& Z'_{n-1} \arrow[r] \& \cdots
+  \arrow[r] \& Z'_0 \arrow[r] \& X \arrow[r] \& 0
+\end{tikzcd}$}
+\end{center}
+\endgroup

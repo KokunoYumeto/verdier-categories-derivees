@@ -1,0 +1,71 @@
+\VerdierPhysicalPageAnchor{0053}%
+\VerdierSemanticAnchor{ch1-1-5-3-eq4}
+Soit par définition, soit par vérification immédiate, la propriété
+$P(q,q')$ est vraie dans les cas suivants :
+
+\begin{equation}
+  \begin{gathered}
+    q=0,\\
+    q'=0,\\
+    q\leq 0\ \text{et}\ q'=-1,\\
+    q\geq 0\ \text{et}\ q'=1,\\
+    q=1\ \text{et}\ q'=-1,\\
+    q=-1\ \text{et}\ q'=1.
+  \end{gathered}
+  \tag{1.5.3.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-5-3-eq5}
+De plus, l'examen des différents diagrammes $D(q,q')$ qu'on peut
+former avec trois entiers $q,q',q''$ montre immédiatement (1.5.3.5) :
+
+\begin{quote}
+  \noindent\textup{(1.5.3.5)}\quad
+  \emph{Si trois des quatre propriétés
+  $P(q',q'')$, $P(q+q',q'')$, $P(q,q'+q'')$, $P(q,q')$ sont vraies,
+  la quatrième l'est aussi.}
+\end{quote}
+
+\VerdierSemanticAnchor{ch1-1-5-3-conclusion}
+On déduit alors de (1.5.3.4) que la propriété $P(q,q')$ est vraie
+pour tout couple d'entiers $q,q'$, ce qui achève la démonstration dans
+le cas $n=1$.
+
+\VerdierSemanticAnchor{ch1-1-5-4}
+\noindent\textbf{1.5.4. Existence dans le cas général.}\quad
+Désignons par $\mathbb Z^{n-1}\hookrightarrow\mathbb Z^n$ le
+sous-groupe engendré par les $n-1$ premiers éléments de la base de
+$\mathbb Z^n$ ; on a alors
+$\mathbb Z^n=\mathbb Z^{n-1}\oplus\mathbb Z e_n$.
+Utilisant l'hypothèse de récurrence, il existe des isomorphismes :
+
+\VerdierSemanticAnchor{ch1-1-5-4-initial-isomorphisms}
+\[
+  \begin{aligned}
+    p(\sigma)&\colon FT(\sigma)\longrightarrow T'(\sigma)F,
+      &\sigma&\in\mathbb Z^{n-1},\\
+    p(\tau)&\colon FT(\tau)\longrightarrow T'(\tau)F,
+      &\tau&\in\mathbb Z e_n,
+  \end{aligned}
+\]
+tels que les diagrammes :
+
+\VerdierSemanticAnchor{ch1-1-5-4-eq1}
+\begin{equation}
+  \resizebox{0.76\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=7.0em,row sep=3.8em]
+      FT(\lambda+\mu)
+        \arrow[r,"{p(\lambda+\mu)}"]
+        \arrow[d,"{F*c(\mu,\lambda)}"']
+        \& T'(\lambda+\mu)F
+        \arrow[dd,"{c'(\mu,\lambda)*F}"] \\
+      FT(\lambda)T(\mu)
+        \arrow[d,"{p(\lambda)*T(\mu)}"']
+        \& {} \\
+      T'(\lambda)FT(\mu)
+        \arrow[r,"{T'(\lambda)*p(\mu)}"']
+        \& T'(\lambda)T'(\mu)F
+    \end{tikzcd}$%
+  }
+  \tag*{\(\textup{(1.5.4.1)}_{\lambda,\mu}\)}
+\end{equation}

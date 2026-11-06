@@ -1,0 +1,88 @@
+\VerdierPhysicalPageAnchor{0078}%
+\VerdierSemanticAnchor{ch1-2-5-4}
+\noindent\textbf{2.5.4.}\quad
+Les opérations $\star$ et ``somme des homotopies'' possèdent les propriétés
+suivantes :
+
+\VerdierSemanticAnchor{ch1-2-5-4-eq1}
+\begin{equation}
+  \begin{aligned}
+    u\star(b+a) &= u\star b+u\star a,\\
+    (b+a)\star v &= b\star v+a\star v,\\
+    uu'\star a &= u\star(u'\star a),\\
+    a\star vv' &= (a\star v)\star v'.
+  \end{aligned}
+  \tag{2.5.4.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-5-5}
+\noindent\textbf{2.5.5.}\quad
+Deux morphismes $f,g\colon X\rightrightarrows Y$ sont dits
+\emph{homotopes} s'il existe une homotopie qui les relie.
+
+\VerdierSemanticAnchor{ch1-2-5-5-difference-criterion}
+Deux morphismes $f,g$ sont homotopes si le morphisme $f-g$ est homotope à
+zéro.
+
+\VerdierSemanticAnchor{ch1-2-5-5-shift-stability}
+Soit $f\colon X\longrightarrow Y$ un morphisme homotope à zéro. Pour tout
+$\sigma\in\mathbb Z[n]$, le morphisme $T(\sigma)f$ est homotope à zéro.
+
+\VerdierSemanticAnchor{ch1-2-5-5-null-homotopic-ideal}
+L'ensemble des morphismes homotopes à zéro forme un idéal de
+$\operatorname{comp}^{n}(C)$, \emph{i.e.} le composé dans les deux sens d'un
+morphisme homotope à zéro avec un morphisme quelconque est homotope à zéro et
+la somme directe de deux morphismes homotopes à zéro est homotope à zéro.
+
+\VerdierSemanticAnchor{ch1-2-5-6}
+\noindent\textbf{2.5.6.}\quad
+Soit $\varphi\colon[n]\longrightarrow[m]$ une application.
+
+\VerdierSemanticAnchor{ch1-2-5-6-integration-preserves-homotopy}
+Les foncteurs $\int_\varphi^\Sigma$ et $\int_\varphi^\Pi$ transforment les
+couples de morphismes homotopes de $\operatorname{comp}^{n}(C)$ en couples de
+morphismes homotopes de $\operatorname{comp}^{m}(C)$.
+
+\VerdierSemanticAnchor{ch1-2-5-6-multiadditive-setup}
+Soient de même
+$F\colon\prod_{i\in[n]}C_i\longrightarrow C$ un foncteur multiadditif,
+
+\VerdierSemanticAnchor{ch1-2-5-6-fn-functor}
+\begin{equation*}
+  F^{[n]}\colon
+  \prod_{i\in[n]}\operatorname{comp}(C_i)
+  \longrightarrow \operatorname{comp}^{n}(C)
+\end{equation*}
+le foncteur décrit en (2.4.2.4), $X_i$ des objets de
+$\operatorname{comp}(C_i)$ $(i\ne j)$ et
+$f,g\colon X\rightrightarrows Y$ deux morphismes homotopes de
+$\operatorname{comp}(C_j)$.
+
+\VerdierSemanticAnchor{ch1-2-5-6-fn-preserves-homotopy}
+Les morphismes de $\operatorname{comp}^{n}(C)$ :
+\begin{equation*}
+  F^{[n]}(X_1,\ldots,f,\ldots,X_n)
+  \quad\text{et}\quad
+  F^{[n]}(X_1,\ldots,g,\ldots,X_n)
+\end{equation*}
+sont homotopes.
+
+\VerdierSemanticAnchor{ch1-2-5-6-totalizations-preserve-homotopy}
+Par suite, les morphismes de $\operatorname{comp}(C)$ :
+\begin{equation*}
+  \operatorname{comp}_{\Pi}F(X_1,\ldots,f,\ldots,X_n)
+  \quad\text{et}\quad
+  \operatorname{comp}_{\Pi}F(X_1,\ldots,g,\ldots,X_n)
+\end{equation*}
+sont homotopes (même résultat pour $\operatorname{comp}_{\Sigma}F$).
+
+\VerdierSemanticAnchor{ch1-2-5-6-reference}
+Nous laissons au lecteur le soin de vérifier toutes ces assertions ou de se
+reporter à [1].
+
+\VerdierSemanticAnchor{ch1-2-5-7}
+\noindent\textbf{2.5.7.}\quad
+Désignons par $K(C)$ la catégorie suivante :
+
+\VerdierSemanticAnchor{ch1-2-5-7-objects}
+\noindent\hspace*{2em}--\ Les objets de $K(C)$ sont les objets de $\operatorname{comp}(C)$.

@@ -1,0 +1,72 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0104}%
+\begingroup
+\small
+\setlength{\abovedisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{3pt plus 2pt minus 2pt}%
+\setlength{\jot}{2pt}%
+
+\VerdierSemanticAnchor{ch1-3-4-3-zero-differential-complex}
+各複体 $X$ に対し、$X$ の成分を保ち、微分を零とした複体を
+$\overline{X}$ で表す。$H$ の定義から直ちに
+$\overline{H(X)}=H(\overline{X})$ を得る。同様に、各複体の射
+$f\colon X\longrightarrow Y$ に対し、$f$ の成分を保って得られる射を
+$\overline{f}\colon\overline{X}\longrightarrow\overline{Y}$ で表す。写像錐関手の
+定義から、$c(\overline{f})=\overline{Y}\oplus\overline{X[1]}$ であり、
+$p(\overline{f})\colon\overline{Y}\longrightarrow c(\overline{f})$ は第一成分への
+標準的包含射、
+$q(\overline{f})\colon c(\overline{f})\longrightarrow\overline{X[1]}$ は第二成分への
+標準的射影である。
+
+\VerdierSemanticAnchor{ch1-3-4-3-cone-graded-splitting}
+関手 $H$ と関手「$\overline{\phantom{X}}$」は加法的なので、
+$\overline{H(c(f))}=\overline{H(Y)}\oplus\overline{H(X[1])}$ となり、
+$\overline{H(p(f))}\colon\overline{H(Y)}\longrightarrow\overline{H(c(f))}$ は第一
+成分への標準的包含射、
+$\overline{H(q(f))}\colon\overline{H(c(f))}\longrightarrow\overline{H(X[1])}$ は
+第二成分への標準的射影となる。したがって、
+\[
+  H(c(f))^l=H(Y)^l\oplus H(X[1])^l,
+\]
+
+\VerdierSemanticAnchor{ch1-3-4-3-2}
+\begin{equation}
+  d_{H(c(f))}^{,l}=
+  \begin{pmatrix}
+    d_{H(Y)}^{,l} & \Phi^l\\
+    0 & d_{H(X[1])}^{,l}
+  \end{pmatrix},
+  \tag{3.4.3.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-4-3-phi-map}
+\[
+  \Phi^l\colon H(X[1])^l\longrightarrow H(Y)^{l+1}.
+\]
+$H(c(f))$ の微分がこの形になるのは、単に $H(p(f))$ と $H(q(f))$ が複体の
+射であることを表したからである。$\Phi^l$ を計算するには、関手 $H$ の定義、
+したがって付随する単純複体の関手の定義 (2.2.2.5) に戻る必要がある。次を得る。
+
+\VerdierSemanticAnchor{ch1-3-4-3-x-shift-components}
+\[
+  H(X[1])^l=
+  \prod_{\substack{\sigma=\sum_i l_i e_i\\ \sum_i l_i=l}}
+  F(X_1^{l_1},\ldots,X^{l_j+1},\ldots,X_n^{l_n}),
+\]
+
+\VerdierSemanticAnchor{ch1-3-4-3-3}
+\begin{equation}
+  H(Y)^{l+1}=
+  \prod_{\substack{\sigma=\sum_i l_i e_i\\ \sum_i l_i=l}}
+  F(X_1^{l_1},\ldots,Y^{l_j+1},\ldots,X_n^{l_n}),
+  \tag{3.4.3.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-4-3-phi-components}
+\[
+  \Phi^l=
+  \prod_{\substack{\sigma=\sum_i l_i e_i\\ \sum_i l_i=l}}
+  \varepsilon(\sigma,j)
+  F(X_1^{l_1},\ldots,f^{l_j+1},\ldots,X_n^{l_n}).
+\]
+\endgroup

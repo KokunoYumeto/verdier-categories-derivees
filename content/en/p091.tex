@@ -1,0 +1,119 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0091}%
+\VerdierSemanticAnchor{ch1-3-2-8-j-induced-functorial-map}
+The homomorphism $J\colon c(p(f))\longrightarrow X[1]$ corresponds, as one
+verifies immediately, to the functorial morphism:
+
+\VerdierSemanticAnchor{ch1-3-2-8-eq3}
+\begin{equation}
+  \begin{gathered}
+    D=
+    \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center),
+      scale=0.78,every node/.style={transform shape}]
+      \node (X)  at (0,1.45) {$X$};
+      \node (Z1) at (2.9,1.45) {$0$};
+      \node (Z2) at (0,0) {$0$};
+      \node (W)  at (2.9,0) {$W$};
+      \draw[->] (X) -- (Z1);
+      \draw[->] (X) -- (Z2);
+      \draw[->] (Z1) -- (W);
+      \draw[->] (Z2) -- (W);
+      \draw[decorate,decoration={snake,amplitude=0.8pt,segment length=3.3pt}]
+        (1.25,0.13) -- (1.70,0.40);
+      \draw[->] (1.70,0.40) -- node[above left] {$\alpha$} (2.68,0.82);
+    \end{tikzpicture}
+    \quad\longmapsto\quad
+    JD=\bigl(0\colon Y\longrightarrow W,\;
+      0\colon0\rightsquigarrow0,\;
+      \alpha\colon0\rightsquigarrow0\bigr).
+  \end{gathered}
+  \tag{3.2.8.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-8-h-induced-functorial-map}
+The morphism $H\colon X[1]\longrightarrow c(p(f))$ corresponds by
+definition (3.2.7) to the functorial morphism:
+
+\VerdierSemanticAnchor{ch1-3-2-8-eq4}
+\begin{equation}
+  \begin{aligned}
+    t={}&\bigl(m\colon Y\longrightarrow W,\;
+      a\colon0\rightsquigarrow m,\;
+      b\colon0\rightsquigarrow mf\bigr)\\[-0.2em]
+    &\longmapsto\quad Ht=
+    \begin{tikzpicture}[>=stealth,baseline=(current bounding box.center),
+      scale=0.78,every node/.style={transform shape}]
+      \node (X)  at (0,1.45) {$X$};
+      \node (Z1) at (2.9,1.45) {$0$};
+      \node (Z2) at (0,0) {$0$};
+      \node (W)  at (2.9,0) {$W$};
+      \draw[->] (X) -- (Z1);
+      \draw[->] (X) -- (Z2);
+      \draw[->] (Z1) -- (W);
+      \draw[->] (Z2) -- (W);
+      \draw[decorate,decoration={snake,amplitude=0.8pt,segment length=3.3pt}]
+        (1.25,0.13) -- (1.70,0.40);
+      \draw[->] (1.70,0.40) -- node[above left] {$\alpha$} (2.68,0.82);
+    \end{tikzpicture}
+    ,\qquad \alpha=b-a\star f.
+  \end{aligned}
+  \tag{3.2.8.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-8-composite-identity}
+The composite of these two functorial morphisms is indeed the identity,
+which proves assertion (3.2.7.2).
+
+\VerdierSemanticAnchor{ch1-3-2-9}
+\noindent\textbf{3.2.9. Proof of assertion (3.2.7.3).}\quad
+\VerdierSemanticAnchor{ch1-3-2-9-hj-functorial-map}
+By (3.2.8), the morphism
+$HJ\colon c(p(f))\longrightarrow c(p(f))$ corresponds to the functorial
+morphism:
+
+\VerdierSemanticAnchor{ch1-3-2-9-eq1}
+\begin{equation}
+  \begin{aligned}
+    t={}&\bigl(m\colon Y\longrightarrow W,\;
+      a\colon0\rightsquigarrow m,\;
+      b\colon0\rightsquigarrow mf\bigr)
+      \longmapsto HJt\\
+    ={}&\bigl(0\colon Y\longrightarrow W,\;
+      0\colon0\rightsquigarrow0,\;
+      b-a\star f\colon0\rightsquigarrow0\bigr)
+  \end{aligned}
+  \tag{3.2.9.1}
+\end{equation}
+and hence:
+
+\VerdierSemanticAnchor{ch1-3-2-9-eq2}
+\begin{equation}
+  t-HJt=\bigl(m\colon Y\longrightarrow W,\;
+    a\colon0\rightsquigarrow m,\;
+    a\star f\colon0\rightsquigarrow mf\bigr).
+  \tag{3.2.9.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-3-2-9-null-homotopy-reduction}
+To prove assertion (3.2.7.3), it suffices to show that every triple of the
+form
+$\bigl(m\colon Y\longrightarrow W,\;a\colon0\rightsquigarrow m,\;
+a\star f\colon0\rightsquigarrow mf\bigr)$ corresponds to a morphism from
+$c(p(f))$ to $W$ that is homotopic to zero. Now, using (3.1.3), such a
+triple defines a morphism:
+
+\VerdierSemanticAnchor{ch1-3-2-9-eq3}
+\begin{equation}
+  v\colon c(f)\longrightarrow W,
+  \qquad
+  v=\bigl(m\colon Y\longrightarrow W,\;
+    a\star f\colon0\rightsquigarrow mf\bigr)
+  \tag{3.2.9.3}
+\end{equation}
+and a homotopy:
+
+\VerdierSemanticAnchor{ch1-3-2-9-eq4}
+\begin{equation}
+  a\colon0\rightsquigarrow vp(f)=m,
+  \tag{3.2.9.4}
+\end{equation}

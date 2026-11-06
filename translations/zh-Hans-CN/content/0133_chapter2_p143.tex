@@ -1,0 +1,95 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0143}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-3-1-continuation}%
+对于每个满足
+$\mathcal B\subset\mathcal A\subset\mathcal D$ 的满三角子范畴
+$\mathcal A$，记 $S_{\mathcal D}(\mathcal B)$（分别地，
+$S_{\mathcal A}(\mathcal B)$）为 $\mathcal D$（分别地，$\mathcal A$）中
+与 $\mathcal B$ 关联的乘法系 (2.1.7)。
+
+\VerdierSemanticAnchor{ch2-2-3-1-a-intersection}
+\par\noindent a) 有
+$S_{\mathcal D}(\mathcal B)\cap\operatorname{Fl}(\mathcal A)
+=S_{\mathcal A}(\mathcal B)$。
+
+\VerdierSemanticAnchor{ch2-2-3-1-b-fully-faithful}
+\par\noindent b) 典范函子
+$\mathcal A/\mathcal B\longrightarrow\mathcal D/\mathcal B$ 充分忠实，
+并且在对象上单射。这个函子的像是 $Q(\mathcal A)$，其中
+$Q\colon\mathcal D\longrightarrow\mathcal D/\mathcal B$ 是典范函子。
+
+\VerdierSemanticAnchor{ch2-2-3-1-c-quotient-transitivity}
+\par\noindent c) 典范函子
+$\mathcal D/\mathcal A\longrightarrow
+(\mathcal D/\mathcal B)/(\mathcal A/\mathcal B)$ 是范畴同构。
+
+\VerdierSemanticAnchor{ch2-2-3-1-d-saturation}
+\par\noindent d) 若范畴 $\mathcal A$ 是饱和的 (2.1.6)，则子范畴
+$Q(\mathcal A)$ 是饱和的。
+
+\VerdierSemanticAnchor{ch2-2-3-1-inverse-image-setup}
+对于 $\mathcal D/\mathcal B$ 的每个满三角子范畴 $\mathcal C$，记
+$Q^{-1}(\mathcal C)$ 为 $\mathcal D$ 的如下满子范畴：其对象是
+$\mathcal D$ 中满足 $Q(X)$ 同构于范畴 $\mathcal C$ 的某个对象的对象
+$X$。
+
+\VerdierSemanticAnchor{ch2-2-3-1-a-bis}
+\par\noindent a)$^{\mathrm{bis}}$ 范畴 $Q^{-1}(\mathcal C)$ 是
+$\mathcal D$ 的严格满三角子范畴。
+
+\VerdierSemanticAnchor{ch2-2-3-1-b-bis}
+\par\noindent b)$^{\mathrm{bis}}$ 乘法系
+$S_{\mathcal D}(Q^{-1}(\mathcal C))$ 由 $\mathcal D$ 中经 $Q$ 的像属于
+$S_{\mathcal D/\mathcal B}(\mathcal C)$ 的态射组成。
+
+\VerdierSemanticAnchor{ch2-2-3-1-c-bis}
+\par\noindent c)$^{\mathrm{bis}}$ 子范畴 $Q^{-1}(\mathcal C)$ 是饱和的，
+当且仅当子范畴 $\mathcal C$ 是饱和的。
+
+\VerdierSemanticAnchor{ch2-2-3-1-d-bis}
+\par\noindent d)$^{\mathrm{bis}}$ 映射
+$\mathcal A\longmapsto Q(\mathcal A)$ 给出一个有序集同构：它把按包含关系
+排序的、包含 $\widehat{\mathcal B}$（函子 $Q$ 的核）的 $\mathcal D$ 的严格
+满三角子范畴所成的集合，映到按包含关系排序的 $\mathcal D/\mathcal B$ 的
+严格满三角子范畴所成的集合。逆映射为
+$\mathcal C\longmapsto Q^{-1}(\mathcal C)$。
+\endgroup
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-ab}
+第一个断言是显然的。第二个断言立即由范畴
+$\mathcal A/\mathcal B$ 与 $\mathcal D/\mathcal B$ 中态射的描述 (2.2.1)
+得到。
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-c}
+为证明 c)，只需引用商范畴的泛性质 (2.2.11)。
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-d}
+来证明 d)。把 $\mathcal A$ 替换为它的严格满闭包只会在等价意义下改变
+$Q(\mathcal A)$，因此可假设 $\mathcal A$ 严格满。这时函子
+$\mathcal D\longrightarrow\mathcal D/\mathcal A$ 的核是范畴 $\mathcal A$
+(2.2.11)。该函子分解为
+$\mathcal D\longrightarrow\mathcal D/\mathcal B
+\longrightarrow\mathcal D/\mathcal A$。由此可知，典范函子
+$\mathcal D/\mathcal B\longrightarrow\mathcal D/\mathcal A$ 的核是
+$Q(\mathcal A)$。因而 $Q(\mathcal A)$ 是饱和的 (2.1.16)。
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-a-bis-b-bis}
+断言 a)$^{\mathrm{bis}}$ 是显然的，断言 b)$^{\mathrm{bis}}$ 也是如此。
+
+\VerdierSemanticAnchor{ch2-2-3-1-proof-c-bis-forward}
+假设 $\mathcal C$ 是饱和的。还可假设 $\mathcal C$ 严格满，因为若以
+$\widehat{\mathcal C}$ 表示 $\mathcal C$ 的严格满闭包，则范畴
+$\widehat{\mathcal C}$ 严格满且饱和，并且
+$Q^{-1}(\widehat{\mathcal C})=Q^{-1}(\mathcal C)$。于是范畴
+$\mathcal C$ 是某个正合函子的核 (2.2.11)。因此，
+$Q^{-1}(\mathcal C)$ 是某个正合函子的核，从而是饱和的 (2.1.16)。
+
+\VerdierSemanticAnchor{ch2-2-3-1-p144-boundary}
+假设 $Q^{-1}(\mathcal C)$ 是
+\endgroup

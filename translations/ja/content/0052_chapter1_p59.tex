@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0059}%
+\VerdierSemanticAnchor{ch1-1-5-13}
+\noindent\textbf{1.5.13.}\quad
+本書で用いる $\mathbb Z^n$-圏は厳密な圏である。したがって、(1.5.12) で
+指摘した問題を一般の場合に扱うことはしない。しかし (1.5.12) の例は、
+圏 $\mathcal C$ 上の $\mathbb Z$-圏構造の決定が特に簡単であることを示唆する。
+実際その通りである。$E\text{-}\operatorname{Cat}$ を次の $U$-圏とする。
+その対象は $U$ に属し、同値
+
+\VerdierSemanticAnchor{ch1-1-5-13-eq1}
+\begin{equation}
+  T\colon\mathcal C\longrightarrow\mathcal C
+  \tag{1.5.13.1}
+\end{equation}
+を備えた圏であり、その射は同型
+
+\VerdierSemanticAnchor{ch1-1-5-13-eq2}
+\begin{equation}
+  m\colon FT\longrightarrow T'F
+  \tag{1.5.13.2}
+\end{equation}
+を備えた関手 $F\colon\mathcal C\to\mathcal C'$ である。
+
+すると $U$-圏 $\mathbb Z\text{-}\operatorname{Cat}$ から $U$-圏
+$E\text{-}\operatorname{Cat}$ への関手
+
+\VerdierSemanticAnchor{ch1-1-5-13-eq3}
+\begin{equation}
+  R\colon \mathbb Z\text{-}\operatorname{Cat}
+  \longrightarrow E\text{-}\operatorname{Cat}
+  \tag{1.5.13.3}
+\end{equation}
+が明らかに存在する。
+
+\VerdierSemanticAnchor{ch1-1-5-13-action}
+関手 $R$ は、$\mathbb Z$-圏 $(\mathcal C,\mathbb Z,T,c)$ に、同値
+$T(1)\colon\mathcal C\to\mathcal C$ を備えた圏 $\mathcal C$ を対応させ、
+各 $\mathbb Z$-関手
+\[
+  (F,m)\colon(\mathcal C,\mathbb Z,T,c)
+  \longrightarrow(\mathcal C',\mathbb Z,T',c')
+\]
+に、同型 $m(1)\colon FT(1)\to T'(1)F$ を備えた関手 $F$ を対応させる。
+
+\VerdierSemanticAnchor{ch1-1-5-14}
+\VerdierSemanticAnchor{ch1-1-5-14-proposition}
+\noindent\textbf{命題 1.5.14.}\quad
+\emph{関手 $R$ は圏同値である。}
+
+\VerdierSemanticAnchor{ch1-1-5-14-proof}
+証明の指針だけを与える。命題 (1.5.2) と注意 (1.5.8) により $R$ は
+充満忠実である。したがって、$R$ が本質的全射であることを示せばよい。
+そこで、同値を備えた圏
+$(\mathcal C,T\colon\mathcal C\to\mathcal C)$ をとる。
+$T$ の擬逆関手 $T^{-1}\colon\mathcal C\to\mathcal C$ と、随伴同型
+
+\VerdierSemanticAnchor{ch1-1-5-14-eq1}
+\begin{equation}
+  \begin{aligned}
+    u&\colon\operatorname{id}_{\mathcal C}\longrightarrow TT^{-1},\\
+    v&\colon\operatorname{id}_{\mathcal C}\longrightarrow T^{-1}T
+  \end{aligned}
+  \tag{1.5.14.1}
+\end{equation}
+をとる。
+
+各整数 $n>0$ について、関手 $T^n$ と $(T^{-1})^n$ は互いに随伴である。
+したがって随伴同型
+
+\VerdierSemanticAnchor{ch1-1-5-14-eq2}
+\begin{equation}
+  \begin{aligned}
+    u^{(n)}&\colon\operatorname{id}_{\mathcal C}
+      \longrightarrow T^n(T^{-1})^n,\\
+    v^{(n)}&\colon\operatorname{id}_{\mathcal C}
+      \longrightarrow (T^{-1})^nT^n
+  \end{aligned}
+  \tag{1.5.14.2}
+\end{equation}
+が得られる。

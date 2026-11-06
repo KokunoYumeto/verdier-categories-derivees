@@ -1,0 +1,69 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0053}%
+\VerdierSemanticAnchor{ch1-1-5-3-eq4}
+定義または直ちに確認できることにより、性質 $P(q,q')$ は次の場合に成り立つ：
+
+\begin{equation}
+  \begin{gathered}
+    q=0,\\
+    q'=0,\\
+    q\leq 0\ \text{かつ}\ q'=-1,\\
+    q\geq 0\ \text{かつ}\ q'=1,\\
+    q=1\ \text{かつ}\ q'=-1,\\
+    q=-1\ \text{かつ}\ q'=1.
+  \end{gathered}
+  \tag{1.5.3.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-5-3-eq5}
+さらに、三つの整数 $q,q',q''$ から作られる各図式 $D(q,q')$ を調べれば、
+直ちに (1.5.3.5) が分かる：
+
+\begin{quote}
+  \noindent\textup{(1.5.3.5)}\quad
+  \emph{四つの性質
+  $P(q',q'')$、$P(q+q',q'')$、$P(q,q'+q'')$、$P(q,q')$
+  のうち三つが成り立てば、残る一つも成り立つ。}
+\end{quote}
+
+\VerdierSemanticAnchor{ch1-1-5-3-conclusion}
+したがって (1.5.3.4) より、性質 $P(q,q')$ は任意の整数対 $q,q'$ に対して
+成り立つ。これで $n=1$ の場合の証明が完了する。
+
+\VerdierSemanticAnchor{ch1-1-5-4}
+\noindent\textbf{1.5.4. 一般の場合の存在。}\quad
+$\mathbb Z^n$ の基底の最初の $n-1$ 個の元が生成する部分群を
+$\mathbb Z^{n-1}\hookrightarrow\mathbb Z^n$ と書く。このとき
+$\mathbb Z^n=\mathbb Z^{n-1}\oplus\mathbb Z e_n$ である。
+帰納法の仮定により、同型
+
+\VerdierSemanticAnchor{ch1-1-5-4-initial-isomorphisms}
+\[
+  \begin{aligned}
+    p(\sigma)&\colon FT(\sigma)\longrightarrow T'(\sigma)F,
+      &\sigma&\in\mathbb Z^{n-1},\\
+    p(\tau)&\colon FT(\tau)\longrightarrow T'(\tau)F,
+      &\tau&\in\mathbb Z e_n
+  \end{aligned}
+\]
+が存在し、図式
+
+\VerdierSemanticAnchor{ch1-1-5-4-eq1}
+\begin{equation}
+  \resizebox{0.76\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=7.0em,row sep=3.8em]
+      FT(\lambda+\mu)
+        \arrow[r,"{p(\lambda+\mu)}"]
+        \arrow[d,"{F*c(\mu,\lambda)}"']
+        \& T'(\lambda+\mu)F
+        \arrow[dd,"{c'(\mu,\lambda)*F}"] \\
+      FT(\lambda)T(\mu)
+        \arrow[d,"{p(\lambda)*T(\mu)}"']
+        \& {} \\
+      T'(\lambda)FT(\mu)
+        \arrow[r,"{T'(\lambda)*p(\mu)}"']
+        \& T'(\lambda)T'(\mu)F
+    \end{tikzcd}$%
+  }
+  \tag*{\(\textup{(1.5.4.1)}_{\lambda,\mu}\)}
+\end{equation}

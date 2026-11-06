@@ -1,0 +1,62 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0166}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch4-4-2-3}
+\medskip\noindent\textbf{4.2.3.}\quad 令：
+\VerdierSemanticAnchor{ch4-4-2-3-1}
+\[
+E\!\left[\begin{smallmatrix}n\\\omega_3\end{smallmatrix}\right]
+=E\!\left[\begin{smallmatrix}n\\f,g,h\end{smallmatrix}\right]
+=Z\!\left[\begin{smallmatrix}n\\f,g\end{smallmatrix}\right]
+\big/
+B\!\left[\begin{smallmatrix}n\\g,h\end{smallmatrix}\right].
+\tag{4.2.3.1}
+\]
+这样便定义了从 $\mathcal{F}\ell_3(\mathcal J)$ 到 $\mathcal A$ 的一个函子。
+
+现在设
+$\omega_3=(\mathord\bullet\xrightarrow{f_2}\mathord\bullet
+\xrightarrow{f_3}\mathord\bullet\xrightarrow{f_4}\mathord\bullet)$
+为 $\mathcal{F}\ell_3(\mathcal J)$ 的一个对象。
+对象
+$(\mathord\bullet\xrightarrow{f_3}\mathord\bullet\xrightarrow{f_4}\mathord\bullet)$
+属于 $\mathcal{F}\ell_2(\mathcal J)$，并给出正合列：
+\[
+H^n(f_3)\xrightarrow u H^n(f_4f_3)\longrightarrow H^n(f_4)
+\xrightarrow\delta H^{n+1}(f_3).
+\]
+此外，$\mathcal{F}\ell_2(\mathcal J)$ 中的态射：
+\VerdierSemanticAnchor{ch4-4-2-3-psi-source}
+\[
+\begin{tikzcd}[column sep=4em,row sep=2.2em]
+{}\arrow[r,"f_2"]\arrow[d,"\operatorname{id}"']&{}
+ \arrow[r,"f_3"]\arrow[d,"\operatorname{id}"']&{}\arrow[d,"f_4"]\\
+{}\arrow[r,"f_2"']&{}\arrow[r,"f_4f_3"']&{}
+\end{tikzcd}
+\]
+给出交换图：
+\[
+\begin{tikzcd}[column sep=5.5em,row sep=2.7em]
+H^n(f_4f_3)\arrow[r,"\delta"]&H^{n+1}(f_2)\\
+H^n(f_3)\arrow[u,"u"]\arrow[ur,"\delta"']&{}
+\end{tikzcd}
+\]
+因此，下图：
+\VerdierSemanticAnchor{ch4-4-2-3-psi-diagrams}
+\[
+\begin{tikzcd}[column sep=4.5em,row sep=2.7em]
+H^n(f_4f_3)\arrow[r]\arrow[dr,"\delta"']&
+H^n(f_4)\arrow[r,"\delta"]&H^{n+1}(f_3)\\
+H^n(f_3)\arrow[u,"u"]\arrow[r,"\delta"']&H^{n+1}(f_2)&{}
+\end{tikzcd}
+\]
+定义了一个态射：
+\VerdierSemanticAnchor{ch4-4-2-3-psi}
+\[
+\Psi^n(\omega_3)\colon
+Z\!\left[\begin{smallmatrix}n\\f_3,f_4\end{smallmatrix}\right]
+\longrightarrow
+H^{n+1}(f_2)\big/
+B\!\left[\begin{smallmatrix}n+1\\f_2,f_3\end{smallmatrix}\right].
+\]
+\endgroup

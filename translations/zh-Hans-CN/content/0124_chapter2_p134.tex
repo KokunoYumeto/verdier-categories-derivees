@@ -1,0 +1,100 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0134}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{1pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{1pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-1-15}
+\noindent\textbf{2.1.15.}\quad
+\VerdierSemanticAnchor{ch2-2-1-15-associated-system}%
+设 $\mathcal D'$ 为三角范畴 $\mathcal D$ 的满三角子范畴。乘法系
+$S(\mathcal D')$ (2.1.7) 称为\emph{与子范畴 $\mathcal D'$ 关联的
+乘法系}。
+
+\VerdierSemanticAnchor{ch2-2-1-16}
+\smallskip
+\noindent\textbf{命题 2.1.16.}\quad
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-1-16-setup}%
+设 $F\colon\mathcal D_1\to\mathcal D_2$ 为两个三角范畴之间的正合
+函子 (1.1.3)。以 $S(F)$ 表示 $\mathcal D_1$ 中被 $F$ 送到
+$\mathcal D_2$ 的同构的态射集合。
+\VerdierSemanticAnchor{ch2-2-1-16-kernel-subcategory}%
+以 $\mathcal D'(F)$ 表示 $\mathcal D_1$ 的满子范畴，其对象是被
+$F$ 送到 $\mathcal D_2$ 的零对象的那些 $\mathcal D_1$ 的对象。
+
+\VerdierSemanticAnchor{ch2-2-1-16-a}
+\par\noindent\hspace*{2em}a)\enspace 子范畴 $\mathcal D'(F)$ 是严格满
+且饱和的三角子范畴（$\mathcal D_1$ 中每个同构于 $\mathcal D'(F)$
+的某个对象的对象，都是 $\mathcal D'(F)$ 的对象）。
+
+\VerdierSemanticAnchor{ch2-2-1-16-b}
+\par\noindent\hspace*{2em}b)\enspace 集合 $S(F)$ 是 $\mathcal D_1$
+的饱和乘法系。
+
+\VerdierSemanticAnchor{ch2-2-1-16-c}
+\par\noindent\hspace*{2em}c)\enspace 集合 $S(F)$ 是与子范畴
+$\mathcal D'(F)$ 关联的乘法系 (2.1.15)。
+\par\endgroup
+
+\VerdierSemanticAnchor{ch2-2-1-16-proof-omitted}
+\noindent 证明很容易，留给读者；读者也可用同样的方法证明下列命题：
+
+\VerdierSemanticAnchor{ch2-2-1-17}
+\smallskip
+\noindent\textbf{命题 2.1.17.}\quad
+\begingroup\itshape
+\VerdierSemanticAnchor{ch2-2-1-17-setup}%
+设 $H\colon\mathcal D\to\mathcal A$ 为从三角范畴到阿贝尔范畴的
+上同调函子。以 $S(H)$ 表示 $\mathcal D$ 中连同其所有平移的像都为
+$\mathcal A$ 的同构的态射集合。
+\VerdierSemanticAnchor{ch2-2-1-17-kernel-subcategory}%
+以 $\mathcal D'(H)$ 表示 $\mathcal D$ 的满子范畴，其对象是连同
+其所有平移的像都为 $\mathcal A$ 的零对象的那些
+$\mathcal D$ 的对象。
+
+\VerdierSemanticAnchor{ch2-2-1-17-a}
+\par\noindent\hspace*{2em}a)\enspace 子范畴 $\mathcal D'(H)$ 是严格满
+且饱和的三角子范畴。
+
+\VerdierSemanticAnchor{ch2-2-1-17-b}
+\par\noindent\hspace*{2em}b)\enspace 集合 $S(H)$ 是 $\mathcal D$
+的饱和乘法系。
+
+\VerdierSemanticAnchor{ch2-2-1-17-c}
+\par\noindent\hspace*{2em}c)\enspace 集合 $S(H)$ 是与子范畴
+$\mathcal D'(H)$ 关联的乘法系 (2.1.15)。
+\par\endgroup
+
+\VerdierSemanticAnchor{ch2-2-2}
+\medskip
+\noindent\textbf{2.2.\quad 局部化范畴的构造。}
+
+\VerdierSemanticAnchor{ch2-2-2-1}
+\smallskip
+\noindent\textbf{2.2.1.}\quad
+\VerdierSemanticAnchor{ch2-2-2-1-slice-categories}%
+设 $\mathcal C$ 为一个范畴（不必加性），$S$ 为 $\mathcal C$ 的乘法系。
+对于 $\mathcal C$ 的每个对象 $X$，以 $S/X$（分别地，$X\backslash S$）
+表示如下范畴：其对象为 $S$ 中靶为 $X$（分别地，源为 $X$）的态射，
+\VerdierSemanticAnchor{ch2-2-2-1-morphism-diagrams}%
+其态射为下列交换图：
+
+\VerdierSemanticAnchor{ch2-2-2-1-s-over-x-diagram}
+\begin{center}
+  \begin{tikzpicture}[>=stealth,line width=.38pt,scale=.90,transform shape]
+    \node (Y)  at (-1.55,1.05) {$Y$};
+    \node (Yp) at ( 1.55,1.05) {$Y'$};
+    \node (X)  at ( 0,-.95) {$X$};
+    \draw[->] (Y) -- node[above=1pt] {$u$} (Yp);
+    \draw[->] (Y) -- node[left=2pt] {$s$} (X);
+    \draw[->] (Yp) -- node[right=2pt] {$t$} (X);
+    \node at (3.15,.05) {$s,t\in S$};
+  \end{tikzpicture}
+  \quad ,
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-2-1-p135-boundary}
+\endgroup

@@ -1,0 +1,75 @@
+
+\clearpage
+\VerdierPhysicalPageAnchor{0123}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-14}
+\noindent\textbf{注 1.2.14.}\quad
+1.2 で調べた諸性質は、いずれの箇所でも公理 TRIV を用いていない。
+したがって、これらは公理 TRI、TRII、TRIII を満たす三角の族を備えた
+任意の厳密な加法的 $\mathbb Z$-圏で成り立つ。
+
+\VerdierSemanticAnchor{ch2-1-3}
+\medskip
+\noindent\textbf{1.3. 三角圏の例。}
+
+\VerdierSemanticAnchor{ch2-1-3-1}
+\medskip
+\noindent\textbf{1.3.1.}\quad
+$C$ を加法圏とし、$K(C)$ を $C$ の複体のホモトピー圏（第 I 章、2.5.7）
+とする。圏 $K(C)$ は厳密な $\mathbb Z$-圏であり、完全三角
+（第 I 章、3.3.1）という三角の族を備える。この族は性質 TRI、TRII、TRIII
+（第 I 章、3.3）を満たす。
+
+\VerdierSemanticAnchor{ch2-1-3-2}
+\medskip
+\noindent\textbf{命題 1.3.2.}\quad
+\textit{完全三角の族を備えた圏 $K(C)$ は三角圏である。}
+
+\VerdierSemanticAnchor{ch2-1-3-2-triv-reduction}
+$K(C)$ の完全三角の族が性質 TRIV をもつことを示せばよい。そこで
+
+\VerdierSemanticAnchor{ch2-1-3-2-commutative-triangle}
+\[
+  \begin{tikzcd}[column sep=4.2em,row sep=2.6em]
+    & X_2 \arrow[dr,"u_1"] & \\
+    X_1 \arrow[ur,"u_3"] \arrow[rr,"u_2"'] && X_3
+  \end{tikzcd}
+\]
+\noindent を可換図式とし、
+
+\VerdierSemanticAnchor{ch2-1-3-2-input-triangles}
+\[
+  \begin{aligned}
+    X_1&\xrightarrow{u_3}X_2\xrightarrow{v_3}Z_3
+      \xrightarrow{w_3}X_1[1],\\
+    X_2&\xrightarrow{u_1}X_3\xrightarrow{v_1}Z_1
+      \xrightarrow{w_1}X_2[1],\\
+    X_1&\xrightarrow{u_2}X_3\xrightarrow{v_2}Z_2
+      \xrightarrow{w_2}X_1[1]
+  \end{aligned}
+\]
+\noindent を三つの完全三角とする。（第 I 章、3.3.5）により、三つの完全三角
+
+\VerdierSemanticAnchor{ch2-1-3-2-alternative-triangles}
+\[
+  \resizebox{0.98\linewidth}{!}{$
+    (X_1,X_2,Z'_3,u_3,v'_3,w'_3),\qquad
+    (X_2,X_3,Z'_1,u_1,v'_1,w'_1),\qquad
+    (X_1,X_3,Z'_2,u_2,v'_2,w'_2)
+  $}
+\]
+\noindent と二つの射
+
+\VerdierSemanticAnchor{ch2-1-3-2-morphisms-boundary}
+\[
+  m'_1\colon Z'_3\longrightarrow Z'_2,\qquad
+  m'_3\colon Z'_2\longrightarrow Z'_1,
+\]
+\endgroup
+
+

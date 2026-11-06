@@ -1,0 +1,71 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0219}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-3-2-sfl-i-induced-square}
+若各行为正合列，则对每个整数 $n$ 给出交换图：
+\begin{center}
+\begin{tikzcd}[column sep=5.2em,row sep=3.0em]
+F^n(Z) \arrow[r,"{\delta_F^n(S)}"] \arrow[d,"{F^n(g)}"']
+  & F^{n+1}(X) \arrow[d,"{F^{n+1}(f)}"] \\
+F^n(Z') \arrow[r,"{\delta_F^n(S')}"']
+  & F^{n+1}(X')
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-3-3-2-sfl-ii}
+\noindent\textbf{SFL II)} 当
+$S=0\longrightarrow0\longrightarrow0\longrightarrow0\longrightarrow0$ 时，
+态射 $\delta_F^n(S)$ 对每个整数 $n$ 都是同构。
+
+\VerdierSemanticAnchor{ch3d-3-3-2-msfl}
+现在设 $m\colon F\longrightarrow F'$ 是函子
+$F,F'\colon\mathcal A^{\operatorname{Ext}}\longrightarrow\mathcal C$ 的态射。
+显然由此得到一列函子态射
+$m^n\colon F^n\longrightarrow {F'}^n$。这列态射具有性质：
+
+\noindent\textbf{MSFL)} 对每条正合列
+$S=0\longrightarrow X\longrightarrow Y\longrightarrow Z\longrightarrow0$
+以及每个整数 $n$，下图交换：
+
+\VerdierSemanticAnchor{ch3d-3-3-2-msfl-square}
+\begin{center}
+\begin{tikzcd}[column sep=5.2em,row sep=3.0em]
+F^n(Z) \arrow[r,"{\delta_F^n(S)}"] \arrow[d,"{m^n(Z)}"']
+  & F^{n+1}(X) \arrow[d,"{m^{n+1}(X)}"] \\
+{F'}^n(Z) \arrow[r,"{\delta_{F'}^n(S)}"']
+  & {F'}^{n+1}(X)
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-3-3-3}
+\medskip\noindent\textbf{定义 3.3.3.}\quad
+一列函子 $F^n\colon\mathcal A\longrightarrow\mathcal C$，若对每条正合列
+$S=0\longrightarrow X\longrightarrow Y\longrightarrow Z\longrightarrow0$，
+均给定一个态射
+$\delta_F^n(S)\colon F^n(Z)\longrightarrow F^{n+1}(X)$，并且这些态射满足
+性质 SFL I) 与 SFL II)，则称其为一个\emph{相联系的函子列}。设
+$(F^n,\delta_F^n)$ 与 $({F'}^n,\delta_{F'}^n)$ 是两个相联系的函子列。
+一列函子态射 $m^n\colon F^n\longrightarrow {F'}^n$，若满足性质 MSFL)，
+则称为\emph{相联系函子列的态射}。
+
+\VerdierSemanticAnchor{ch3d-3-3-4}
+\medskip\noindent\textbf{命题 3.3.4.}\quad
+\textit{设
+$\mathcal H\!om(\mathcal A^{\operatorname{Ext}},\mathcal C)$ 是从
+$\mathcal A^{\operatorname{Ext}}$ 到 $\mathcal C$ 的函子所成的范畴，
+$\mathcal{SFL}(\mathcal A,\mathcal C)$ 是以相联系的函子列为对象、以相联系
+函子列的态射为态射的范畴。前述构造定义函子：}
+
+\VerdierSemanticAnchor{ch3d-3-3-4-functor}
+\[
+\Phi\colon
+\mathcal H\!om(\mathcal A^{\operatorname{Ext}},\mathcal C)
+\longrightarrow\mathcal{SFL}(\mathcal A,\mathcal C).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-3-4-a}
+\noindent\textit{a) 该函子是范畴等价。}
+\endgroup

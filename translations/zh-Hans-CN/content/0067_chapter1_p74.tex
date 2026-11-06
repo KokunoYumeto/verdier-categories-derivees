@@ -1,0 +1,82 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0074}%
+\VerdierSemanticAnchor{ch1-2-4-1-pi-opposite}
+它是 (2.2.3) 和 (2.2.4) 中所定义函子的反函子。同样，记：
+
+\VerdierSemanticAnchor{ch1-2-4-1-eq4}
+\begin{equation}
+  \int_{\varphi,C^\circ}^{\Pi}\colon
+  \operatorname{comp}^{n}(C^\circ)
+  \longrightarrow
+  \operatorname{comp}^{m}(C^\circ),
+  \tag{2.4.1.4}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-1-pi-definition}
+为 (2.2.3) 和 (2.2.4) 中所定义的函子。直接验证可知，图式：
+
+\VerdierSemanticAnchor{ch1-2-4-1-eq5}
+\begin{equation}
+  \resizebox{0.82\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=6.5em,row sep=5.2em]
+      \operatorname{comp}^{n}(C)^\circ
+        \arrow[r,"\iota_n"]
+        \arrow[d,"{\left(\int_{\varphi,C}^{\Sigma}\right)^\circ}"']
+        \& \operatorname{comp}^{n}(C^\circ)
+          \arrow[d,"{\int_{\varphi,C^\circ}^{\Pi}}"] \\
+      \operatorname{comp}^{m}(C)^\circ
+        \arrow[r,"\iota_m"]
+        \& \operatorname{comp}^{m}(C^\circ)
+    \end{tikzcd}$%
+  }
+  \tag{2.4.1.5}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-1-eq5-commutative}
+是交换的。特别地，当 $\varphi$ 是唯一的映射
+$[n]\longrightarrow[1]$ 时，有交换图式：
+
+\VerdierSemanticAnchor{ch1-2-4-1-eq6}
+\begin{equation}
+  \resizebox{0.82\textwidth}{!}{%
+    $\begin{tikzcd}[ampersand replacement=\&,column sep=6.5em,row sep=5.2em]
+      \operatorname{comp}^{n}(C)^\circ
+        \arrow[r,"\iota_n"]
+        \arrow[d,"{\left(\int_{n,C}^{\Sigma}\right)^\circ}"']
+        \& \operatorname{comp}^{n}(C^\circ)
+          \arrow[d,"{\int_{n,C^\circ}^{\Pi}}"] \\
+      \operatorname{comp}(C)^\circ
+        \arrow[r,"\iota_1"]
+        \& \operatorname{comp}(C^\circ)
+    \end{tikzcd}$%
+  }
+  \tag{2.4.1.6}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-2-4-1-twisted-isomorphism}
+并且可立即验证，同构对 $(\iota_1,\iota_n)$ 是扭曲
+$\mathbb Z[n]$-函子 $\left(\int_{n,C}^{\Sigma}\right)^\circ$ 到扭曲
+$\mathbb Z[n]$-函子 $\int_{n,C^\circ}^{\Pi}$ 的一个同构
+（$\int_{n,C^\circ}^{\Pi}$ 的分次结构在 (2.3.4) 中描述；
+$\left(\int_{n,C}^{\Sigma}\right)^\circ$ 的分次结构在 (2.3.4) 和
+(1.4.8) 中描述）。
+
+\VerdierSemanticAnchor{ch1-2-4-1-identification}
+今后，我们通过同构 $\iota_n$ 将范畴
+$\operatorname{comp}^{n}(C)^\circ$ 与
+$\operatorname{comp}^{n}(C^\circ)$，以及函子
+$\left(\int_{\varphi,C}^{\Sigma}\right)^\circ$ 与
+$\int_{\varphi,C^\circ}^{\Pi}$ 相互识别。
+
+\VerdierSemanticAnchor{ch1-2-4-2}
+\noindent\textbf{2.4.2.}\quad
+设 $C_i$（$i\in[n]$）为一族加法范畴，
+$\prod_{i\in[n]}C_i$ 为它们的积。以 $(X_1,X_2,\ldots,X_n)$ 表示
+$\prod_{i\in[n]}C_i$ 的对象，并使用记号
+$(X_1,X_2,\ldots,f_i,\ldots,X_n)$ 表示态射：
+
+\VerdierSemanticAnchor{ch1-2-4-2-component-morphism}
+\begin{equation*}
+  (\operatorname{id}_{X_1},\operatorname{id}_{X_2},\ldots,
+  f_i,\ldots,\operatorname{id}_{X_n}).
+\end{equation*}

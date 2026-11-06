@@ -1,0 +1,100 @@
+\VerdierPhysicalPageAnchor{0061}%
+\VerdierSemanticAnchor{ch1-1-6-2}
+\VerdierSemanticAnchor{ch1-1-6-2-proposition}
+\noindent\textbf{Proposition 1.6.2.}\quad
+
+\VerdierSemanticAnchor{ch1-1-6-2-part1}
+\noindent\emph{1) Let
+$\alpha\in Z^2(\mathbb Z^n,\mathbb Z/2\mathbb Z)$ be a normalized
+inhomogeneous cocycle, let
+$\dot\alpha\in H^2(\mathbb Z^n,\mathbb Z/2\mathbb Z)$ be its cohomology
+class, and let
+$\dot\alpha_{i,j}\in H^2(\mathbb Z^n_{i,j},\mathbb Z/2\mathbb Z)$ be
+its components. Then (using (1.6.1.2)):}
+
+\VerdierSemanticAnchor{ch1-1-6-2-eq1}
+\begin{equation}
+  \dot\alpha_{i,j}
+  =\alpha(e_i,e_j)^{-1}\alpha(e_j,e_i).
+  \tag{1.6.2.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-2-convention}
+\noindent\emph{(The group law on $\mathbb Z/2\mathbb Z$ is written
+multiplicatively.)}
+
+\VerdierSemanticAnchor{ch1-1-6-2-part2}
+\noindent\emph{2) Let $\alpha_1$ and $\alpha_2$ be two cohomologous
+elements of $Z^2(\mathbb Z^n,\mathbb Z/2\mathbb Z)$ and, for every
+$i\in[1,n]$, let $\beta_i$ be an element of $\mathbb Z/2\mathbb Z$.
+There exists a unique map}
+
+\VerdierSemanticAnchor{ch1-1-6-2-beta-map}
+\begin{equation*}
+  \beta\colon\mathbb Z^n\longrightarrow\mathbb Z/2\mathbb Z
+\end{equation*}
+\noindent\emph{such that:}
+
+\VerdierSemanticAnchor{ch1-1-6-2-eq2}
+\begin{equation}
+  \begin{aligned}
+    \alpha_2(\sigma_1,\sigma_2)\alpha_1^{-1}(\sigma_1,\sigma_2)
+      &=\beta(\sigma_2)\beta(\sigma_1+\sigma_2)^{-1}\beta(\sigma_1),\\[-1mm]
+    &\hspace{7em}\text{for }\sigma_1,\sigma_2\in\mathbb Z^n,
+  \end{aligned}
+  \tag{1.6.2.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-2-eq3}
+\begin{equation}
+  \beta(e_i)=\beta_i.
+  \tag{1.6.2.3}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-6-2-proof}
+\VerdierSemanticAnchor{ch1-1-6-2-proof-first}
+To prove the first assertion, we reduce to the case $n=2$ and
+immediately verify that the quantity
+$\alpha(e_i,e_j)^{-1}\alpha(e_j,e_i)$ does not change when $\alpha$ is
+modified by a coboundary. When $\alpha$ is a coboundary, it is
+symmetric, and consequently formula (1.6.2.1) holds in this case. On
+the other hand, the cocycle
+
+\VerdierSemanticAnchor{ch1-1-6-2-alpha0}
+\begin{equation*}
+  \alpha_0(p_1e_i+q_1e_j,p_2e_i+q_2e_j)=(-1)^{q_1p_2}
+\end{equation*}
+is not cohomologous to $0$, since
+
+\VerdierSemanticAnchor{ch1-1-6-2-alpha0-test}
+\begin{equation*}
+  \alpha_0(e_i,e_j)^{-1}\alpha_0(e_j,e_i)=-1,
+\end{equation*}
+and every cocycle not cohomologous to zero is cohomologous to
+$\alpha_0$.
+
+\VerdierSemanticAnchor{ch1-1-6-2-proof-second}
+To prove the second assertion, observe that two solutions of (1.6.2.2)
+differ by a group homomorphism; consequently, one can always modify a
+solution of (1.6.2.2), uniquely by a group homomorphism, so that it
+takes prescribed values on the $e_i$.
+
+\VerdierSemanticAnchor{ch1-1-6-3}
+\VerdierSemanticAnchor{ch1-1-6-3-definition}
+\noindent\textbf{Definition 1.6.3.}\quad
+Let $e_1,\ldots,e_n$ be a basis of $\mathbb Z^n$. The
+\emph{Koszul class relative to the basis $e_1,\ldots,e_n$} is the
+unique element of $H^2(\mathbb Z^n,\mathbb Z/2\mathbb Z)$ whose
+restrictions to the groups
+$H^2(\mathbb Z^n_{i,j},\mathbb Z/2\mathbb Z)$ are nonzero.
+
+\VerdierSemanticAnchor{ch1-1-6-3-basis-dependence}
+Note that the definition of the Koszul class involves the choice of a
+basis of $\mathbb Z^n$. The Koszul classes associated with two distinct
+bases are distinct in general.
+
+\VerdierSemanticAnchor{ch1-1-6-3-filtration}
+Let $e_1,\ldots,e_n$ be a basis of $\mathbb Z^n$ ordered according to
+the natural order on $[1,n]$. Let $\mathbb Z^n(\leq i)$ (respectively,
+$\mathbb Z^n(\geq i)$) denote the subgroup of $\mathbb Z^n$ generated
+by the $e_j$ with $j\leq i$ (respectively, $j\geq i$).

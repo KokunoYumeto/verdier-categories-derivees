@@ -1,0 +1,50 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0160}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\VerdierSemanticAnchor{ch3-3-2-7-condition}
+\noindent\textit{かつ図式}
+\[
+X_1\xrightarrow{u_1}X_2\xrightarrow{f_3u_2}Y_3
+\]
+\textit{が完全三角 $(X_1,X_2,Y_3,u_1,f_3u_2,u_3)$ に埋め込めるもの。}
+これは命題 (3.2.5) の証明から直ちに従う。
+
+\VerdierSemanticAnchor{ch3-3-2-8}
+\medskip\noindent\textbf{3.2.8. 定理 3.2.1 の a)、b) の証明。}\quad
+(3.2.6) で $\mathrm A(\mathcal D)$ がアーベル圏であることはすでに示した。
+$F\colon\mathcal D\to\mathcal D'$ を完全関手とする。命題 (3.2.7) から、
+$\mathrm A(F)$ は直ちに左完全である。一方、$\mathrm A(\mathcal D)$ の構成から、
+$\mathrm A(\mathcal D^\circ)^\circ$ は $\mathrm A(\mathcal D)$ と標準的に同型であり、
+$\mathrm A(F^\circ)^\circ$ は $\mathrm A(F)$ と標準的に同型であることは明らかである。
+$F^\circ$ は完全なので (1.1.7)、$\mathrm A(F^\circ)$ は左完全であり、従って
+$\mathrm A(F)$ は右完全でもある。ゆえにこの関手は完全である。
+
+$\mathcal D^\wedge$ の許容対象は、表現可能関手の部分対象および商対象と同型である。
+従って (3.2.3) により、$\mathrm A(\mathcal D)$ の各対象は、それぞれ
+$\mathcal D$ の対象の部分対象および商対象と同型である。表現可能関手は
+$\mathcal D^\wedge$ の射影対象であるから、(3.2.5) により、
+$\mathcal D^\wedge$ の許容対象からなる充満部分圏においても射影対象である。
+従って (3.2.3) により、$\mathcal D$ の
+対象は $\mathrm A(\mathcal D)$ の射影対象である。これより $\mathcal D^\circ$ の
+対象は $\mathrm A(\mathcal D^\circ)$ の射影対象であり、反対圏を取れば、
+$\mathcal D$ の対象は $\mathrm A(\mathcal D)$ の入射対象である。
+$\mathrm A_{\mathcal D,\mathcal D'}$ が充満忠実であることの形式的な証明は、
+安心して読者に委ねられる。完全関手間の射は、十分多くの射影対象上での値を
+知れば一意に定まるからである。
+
+\VerdierSemanticAnchor{ch3-3-2-9}
+\medskip\noindent\textbf{3.2.9. 定理 3.2.1 の証明の終結。}
+まず関手 $\mathcal H\colon\mathcal D\to\mathrm A(\mathcal D)$ が
+コホモロジー的関手であることを示す。$(X,Y,Z,f,g,h)$ を
+$\mathcal D$ の完全三角とする。次の列
+\[
+\mathcal H(X)\xrightarrow{\mathcal H(f)}\mathcal H(Y)
+\xrightarrow{\mathcal H(g)}\mathcal H(Z).
+\]
+が完全であることを示せばよい。(3.2.3)、(3.2.5) により、次の列
+\VerdierSemanticAnchor{ch3-3-2-9-1}
+\[
+h(X)\xrightarrow{h(f)}h(Y)\xrightarrow{h(g)}h(Z)
+\tag{3.2.9.1}
+\]
+\endgroup

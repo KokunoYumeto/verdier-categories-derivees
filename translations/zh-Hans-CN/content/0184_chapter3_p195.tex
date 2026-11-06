@@ -1,0 +1,56 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0195}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-3-1-proof-cont}
+其中 $X_n$ 是 $\operatorname{comp}^{-}(\mathcal A)$ 的对象，$u_n$ 是高度为
+$-n$ 的初等态射，并且下图在同伦意义下交换：
+
+\VerdierSemanticAnchor{ch3d-2-3-1-limits-square}
+\begin{center}
+\begin{tikzcd}[column sep=5.5em,row sep=3.0em]
+\displaystyle\varprojlim_n X_n \arrow[r] \arrow[d]
+  & X \arrow[d,"m"] \\
+\displaystyle\varinjlim_n X_n \arrow[r,"\sim"'] & Y
+\end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch3d-2-3-1-normalization}
+因此，为证明该命题，可以假设 $X=\varprojlim_n X_n$，而且对所有充分小的 $n$，
+$X_n=Y$ 且 $u_n=\operatorname{id}$。我们将对 $n$ 归纳构造：
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-data}
+\noindent a) 一列初等态射
+\[
+v_n\colon L_n^\bullet\longrightarrow L_{n-1}^\bullet,
+\qquad n\in\mathbf Z,\qquad
+v_n\text{ 这一初等态射的高度为 }-n.
+\]
+
+\noindent b) 一列态射
+\[
+w_n\colon L_n^\bullet\longrightarrow X_n
+\]
+使得：
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-condition-1}
+\noindent 1) 对每个 $n\in\mathbf Z$，$L_n^\bullet$ 在次数 $i$ 的分量若满足
+$i\geq -n$ 则属于 $M$，而在次数 $i$ 的分量若满足 $i<-n$ 则属于 $M^\wedge$。
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-square}
+\noindent 2) 下列图交换：
+\begin{center}
+\begin{tikzcd}[column sep=5.0em,row sep=2.8em]
+L_n^\bullet \arrow[r,"w_n"] \arrow[d,"v_n"']
+  & X_n \arrow[d,"u_n"] \\
+L_{n-1}^\bullet \arrow[r,"w_{n-1}"'] & X_{n-1}
+\end{tikzcd}
+\end{center}
+对每个 $n\in\mathbf Z$ 均成立。
+
+\VerdierSemanticAnchor{ch3d-2-3-1-induction-condition-3}
+\noindent 3) 对象 $L_n^\bullet$ 等于 $Y$，态射 $v_n$ 与 $w_n$ 都是恒等态射，
+只要 $n$ 充分小。
+\endgroup

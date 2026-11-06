@@ -1,0 +1,81 @@
+\VerdierPhysicalPageAnchor{0039}%
+\VerdierSemanticAnchor{ch1-1-2-8}
+\noindent\textbf{Definition 1.2.8.}\quad
+Let $(\mathcal C_e,G^\circ,T,c)$ and
+$(\mathcal C'_e,G^\circ,T',c')$ be two $G^\circ$-categories, and let
+$(F_e,m)$ and $(F'_e,m')\colon\mathcal C_e\to\mathcal C'_e$ be two
+$G^\circ$-functors. A morphism of functors
+$u_e\colon F_e\to F'_e$ is said to be \emph{compatible with the actions
+of $G^\circ$} if, for every $g\in G$, diagram (1.2.7.2) commutes.
+
+\VerdierSemanticAnchor{ch1-1-2-additive}
+Finally, we shall say that a $G^\circ$-category is \emph{additive} if
+its underlying category is additive. By (1.1.3), the
+$G^\circ$-category associated with an additive graded category is an
+additive $G^\circ$-category.
+
+\VerdierSemanticAnchor{ch1-1-3}
+\subsection{Equivalence of Two Languages}
+
+\VerdierSemanticAnchor{ch1-1-3-1}
+\noindent\textbf{1.3.1.}\quad
+Fix a universe $U$. Let $\operatorname{Grad}(G)$ denote the
+$U$-category whose objects are the $G$-graded categories belonging to
+$U$ and whose morphisms are graded functors. Likewise, let
+$G^\circ\text{-}\operatorname{Cat}$ denote the $U$-category whose
+objects are the $G^\circ$-categories belonging to $U$ and whose
+morphisms are $G^\circ$-functors. It follows immediately from (1.2.1),
+(1.2.3), and (1.2.5) that choosing a normalized cleavage for every
+$G$-graded category defines a functor
+
+\VerdierSemanticAnchor{ch1-1-3-1-eq1}
+\begin{equation}
+  \Psi\colon \operatorname{Grad}(G)
+  \longrightarrow G^\circ\text{-}\operatorname{Cat}.
+  \tag{1.3.1.1}
+\end{equation}
+
+The result of [18] can be interpreted as follows.
+
+\VerdierSemanticAnchor{ch1-1-3-2}
+\noindent\textbf{Proposition 1.3.2.}\quad
+\emph{The functor $\Psi$ is an equivalence of categories.}
+
+\VerdierSemanticAnchor{ch1-1-3-2-quasi-inverse}
+A description of a quasi-inverse functor to $\Psi$ may be found in
+[18]. Here we shall only give a rapid description of the graded
+category $\mathcal C[G]$ associated with a $G^\circ$-category
+$(\mathcal C,G^\circ,T,c)$. First, the set of objects of
+$\mathcal C[G]$ is the set of objects of $\mathcal C$. Let $X$ and $Y$
+be two objects of $\mathcal C$. Set
+
+\VerdierSemanticAnchor{ch1-1-3-2-eq1}
+\begin{equation}
+  \operatorname{Hom}^{g}(X,Y)
+  =\operatorname{Hom}_{\mathcal C}(X,T(g)Y),
+  \qquad g\in G,
+  \tag{1.3.2.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-3-2-eq2}
+\begin{equation}
+  \operatorname{Hom}_{\mathcal C[G]}(X,Y)
+  =\coprod_{g\in G}\operatorname{Hom}^{g}(X,Y).
+  \tag{1.3.2.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch1-1-3-2-composition}
+We now describe the composition of morphisms in $\mathcal C[G]$.
+Let $X$, $Y$, and $Z$ be three objects of $\mathcal C$, and let
+$u\in\operatorname{Hom}^{g}(X,Y)$ and
+$v\in\operatorname{Hom}^{g'}(Y,Z)$, where $g,g'\in G$. The functor
+$T(g)$ defines a map
+
+\VerdierSemanticAnchor{ch1-1-3-2-eq3}
+\begin{equation}
+  \operatorname{Hom}^{g'}(Y,Z)
+  \longrightarrow
+  \operatorname{Hom}_{\mathcal C}
+    \bigl(T(g)Y,T(g)T(g')Z\bigr)
+  \tag{1.3.2.3}
+\end{equation}

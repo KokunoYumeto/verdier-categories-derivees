@@ -1,0 +1,79 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0221}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-3-5}
+\medskip\noindent\textbf{引理 3.3.5.}\quad
+\textit{设 $m\colon W\longrightarrow W'$、$m'\colon W'\longrightarrow W''$、
+$m''=m'm$ 是 $\mathcal A^{\operatorname{Ext}}$ 的三个态射，且均属于
+$\mathcal F\ell_{\leq 1}(\mathcal A^{\operatorname{Ext}})$。态射
+$F(m)$、$F(m')$ 与 $F(m'')$ 已在上面的情形 1)、2)、3)、4)、5)、6) 中
+定义，并且有：}
+
+\VerdierSemanticAnchor{ch3d-3-3-5-1}
+\begin{equation}
+F(m'')=F(m')F(m).
+\tag{3.3.5.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-3-6}
+\medskip\noindent\textbf{命题 3.3.6.}\quad
+（用生成元与关系定义范畴 $\mathcal A^{\operatorname{Ext}}$）。
+\textit{设 $\mathcal C$ 是一个范畴，并设}
+
+\VerdierSemanticAnchor{ch3d-3-3-6-object-map}
+\[
+\operatorname{Ob}(F)\colon
+\operatorname{Ob}(\mathcal A^{\operatorname{Ext}})
+\longrightarrow \operatorname{Ob}(\mathcal C),
+\]
+
+\VerdierSemanticAnchor{ch3d-3-3-6-arrow-map}
+\[
+\mathcal F\ell_{\leq 1}(F)\colon
+\mathcal F\ell_{\leq 1}(\mathcal A^{\operatorname{Ext}})
+\longrightarrow \mathcal F\ell(\mathcal C)
+\]
+\textit{是两个映射，它们与范畴 $\mathcal A^{\operatorname{Ext}}$ 和
+$\mathcal C$ 的源映射及靶映射相容，并且对每个态射三元组
+$m\colon W\longrightarrow W'$、$m'\colon W'\longrightarrow W''$、
+$m''=m'm$，若
+$m,m',m''\in\mathcal F\ell_{\leq 1}(\mathcal A^{\operatorname{Ext}})$，
+则有：}
+
+\VerdierSemanticAnchor{ch3d-3-3-6-relation}
+\[
+\mathcal F\ell_{\leq 1}(F)(m')\,
+\mathcal F\ell_{\leq 1}(F)(m)
+=\mathcal F\ell_{\leq 1}(F)(m'').
+\]
+
+\VerdierSemanticAnchor{ch3d-3-3-6-extension}
+\textit{则存在函子
+$F\colon\mathcal A^{\operatorname{Ext}}\longrightarrow\mathcal C$，且仅有一个，
+使得 $F$ 在对象集上诱导映射 $\operatorname{Ob}(F)$，并且对每个
+$m\in\mathcal F\ell_{\leq 1}(\mathcal A^{\operatorname{Ext}})$，均有：}
+\[
+F(m)=\mathcal F\ell_{\leq 1}(F)(m).
+\]
+
+事实上，容易验证，与 (3.3.5) 和 (3.3.6) 所给函子相联系的函子列，
+正是我们最初的列 $(F^n,\delta_F^n)$。
+
+\VerdierSemanticAnchor{ch3d-3-3-7}
+\medskip\noindent\textbf{3.3.7. 引理 3.3.5 的证明。}\quad
+证明通过考察各个可能情形来进行。首先，当对象 $W$、$W'$、$W''$ 中至少
+有两个是零对象时，有四种情形需要考察。此时态射 $F(m)$、$F(m')$ 与
+$F(m'')$ 是在情形 1)、2) 或 3) 之一中定义的。(3.3.5.1) 的验证是立即的，
+留给读者。其次，当对象 $W$、$W'$、$W''$ 中有一个是零对象时，有九种情形
+需要考察。态射 $m$、$m'$、$m''$ 中的两个由 1)、2)、3) 定义，第三个则由
+4)、5)、6) 定义。这里的验证同样是立即的，留给读者。还须考察
+$W$、$W'$、$W''$ 均非零的情形。这样的情形共有八种：
+
+\VerdierSemanticAnchor{ch3d-3-3-7-cases-start}
+\noindent$c_1)$ $m$ 的次数小于 0，且 $m'<0$ 也表示后一态射的次数小于 0；
+
+\noindent$c_2)$ $m<0$ 表示前一态射的次数小于 0，而 $m'=0$ 表示后一态射的次数为 0；
+\endgroup

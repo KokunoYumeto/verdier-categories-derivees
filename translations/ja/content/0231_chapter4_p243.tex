@@ -1,0 +1,66 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0243}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-a-bcd}
+\noindent $D^b(\mathcal A)$ の対象とする。射 $m$ は、複体 $X$ に関する関手
+$F_1$ と $F_2$ の第二標準スペクトル系列の間の射を誘導する。初期項の間に
+誘導される射
+\[
+m_2^{p,q}(X)\colon F_1^p\bigl(H^q(X)\bigr)
+\longrightarrow F_2^p\bigl(H^q(X)\bigr)
+\]
+は仮定により同型である。さらに、二つのスペクトル系列は定常である
+(4.5.3)。したがって（第 II 章、4.4.5）、射 $m$ は二つのスペクトル系列の
+収束先の間の同型を誘導し、ゆえに $m(X)$ は同型である。主張 b)、c)、d) も
+同様に示される。実際、置かれた仮定のもとで第二標準スペクトル系列が定常で
+あることに注意すればよい (4.5.3)。
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e}
+e) を示す。c) により、$\mathcal A$ のすべての対象が
+$\operatorname{Is}(m)$ の対象であることを示せば十分である。$X$ を
+$\mathcal A$ の対象、$p$ を整数とし、射
+\[
+m(X[p])\colon F_1^p(X)\longrightarrow F_2^p(X)
+\]
+が同型であることを示す。関手 $F_1$ と $F_2$ は左定常だから、ある整数
+$r$ が存在し、$i=1,2$、$\mathcal A$ の任意の対象 $Y$、および任意の整数
+$q\geq p+r-1$ に対して $F_i^q(Y)=0$ となる。性質 $\alpha$) により、$X$ は
+複体
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-complex-w}
+\[
+W^\bullet=
+\cdots\longrightarrow0\longrightarrow Y\longrightarrow L^{-r+1}
+\longrightarrow L^{-r+2}\longrightarrow\cdots\longrightarrow L^{-1}
+\longrightarrow L^0\longrightarrow0\longrightarrow\cdots,
+\]
+と擬同型である。ここで成分 $L^i$、$-r+1\leq i\leq0$ は $M$ の元である。
+$L^\bullet$ を複体
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-complex-l}
+\[
+\cdots\longrightarrow0\longrightarrow L^{-r+1}
+\longrightarrow L^{-r+2}\longrightarrow\cdots\longrightarrow L^{-1}
+\longrightarrow L^0\longrightarrow0\longrightarrow\cdots.
+\]
+とする。複体の完全列
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-exact-sequence}
+\[
+0\longrightarrow L^\bullet\longrightarrow W^\bullet
+\longrightarrow Y[r]\longrightarrow0,
+\]
+があり、したがって (1.3.2) により $D^*(\mathcal A)$ の完全三角
+
+\VerdierSemanticAnchor{ch4d-4-5-4-proof-e-triangle}
+\[
+\begin{tikzcd}[column sep=5.2em,row sep=2.8em]
+{} & Y[r] \arrow[dl] \\
+L^\bullet \arrow[r] & X \arrow[u]
+\end{tikzcd}
+\]
+が得られる。
+\endgroup

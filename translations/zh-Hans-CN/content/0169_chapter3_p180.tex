@@ -1,0 +1,63 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0180}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-1-2-8-duality-cont}
+此后，除非另有说明，我们将借助同构 $i$ 把范畴 $D(\mathcal A)^o$ 与
+$D(\mathcal A^o)$ 视为同一个范畴。注意，这一等同把范畴
+$D^b(\mathcal A)^o$ 与范畴 $D^b(\mathcal A^o)$ 等同，把范畴
+$D^+(\mathcal A)^o$ 与范畴 $D^-(\mathcal A^o)$ 等同，并把范畴
+$D^-(\mathcal A)^o$ 与范畴 $D^+(\mathcal A^o)$ 等同。
+
+\VerdierSemanticAnchor{ch3d-1-2-9}
+\medskip\noindent\textbf{1.2.9.}\quad
+典范函子 $\mathcal A\longrightarrow K(\mathcal A)$（第二章，1.3.3）与函子
+$Q\colon K(\mathcal A)\longrightarrow D(\mathcal A)$ 的复合给出一个充分忠实
+函子 $\mathcal A\longrightarrow D(\mathcal A)$。事实上，设 $X$ 和 $Y$ 是
+$\mathcal A$ 的两个对象。$D(\mathcal A)$ 中从 $X$ 到 $Y$ 的一个态射是
+（第二章，2.2.2）$K(\mathcal A)$ 中一个图式的类 $\overline D$：
+
+\VerdierSemanticAnchor{ch3d-1-2-9-roof}
+\[
+\overline D=X\xleftarrow{\ s\ }Z^\bullet\xrightarrow{\ m\ }Y,
+\]
+其中 $s$ 是 $K(\mathcal A)$ 中的一个拟同构。因此，
+$s\colon Z^\bullet\longrightarrow X$ 诱导同构
+$H^0(s)\colon H^0(Z^\bullet)\xrightarrow{\sim}H(X)=X$，并且立即验证
+$\overline D=Q\bigl(H^0(m)H^0(s)^{-1}\bigr)$。这表明同态
+\[
+\operatorname{Hom}_{\mathcal A}(X,Y)\longrightarrow
+\operatorname{Hom}_{D(\mathcal A)}(X,Y)
+\]
+是满射。下面证明它是单射。$\mathcal A$ 中的态射
+$f\colon X\longrightarrow Y$ 在范畴 $D(\mathcal A)$ 中定义零态射，当且仅当
+存在 $K(\mathcal A)$ 中的拟同构 $s\colon Z^\bullet\longrightarrow X$，使得
+$fs=0$。由此得到 $H^0(f)H^0(s)=0$。由于 $H^0(s)$ 是同构，遂有
+$H^0(f)=f=0$。
+
+还要注意，函子 $\mathcal A\longrightarrow D(\mathcal A)$ 在对象集上也是
+单射，因而将 $\mathcal A$ 实现为 $D(\mathcal A)$ 的满子范畴。此后，始终
+通过这一函子把范畴 $\mathcal A$ 看作其导出范畴的一个子范畴。典范上同调函子
+$D(\mathcal A)\xrightarrow{H}\mathcal A$ 限制在子范畴 $\mathcal A$ 上就是
+恒等函子。
+
+\VerdierSemanticAnchor{ch3d-1-2-10}
+\medskip\noindent\textbf{命题 1.2.10.}\quad
+\textit{a) $D(\mathcal A)$ 的对象 $X$ 同构于 $\mathcal A$ 的一个对象，
+当且仅当对每个 $i\neq0$ 都有 $H^i(X)=0$。此时它典范同构于 $H^0(X)$。}
+
+\noindent\textit{b) 设 $X$ 和 $Y$ 是 $\mathcal A$ 的两个对象。则有：}
+\[
+\operatorname{Ext}_{\mathcal A}^{n}(X,Y)=0\quad\text{当 }n<0,
+\qquad
+\operatorname{Ext}_{\mathcal A}^{0}(X,Y)
+=\operatorname{Hom}_{\mathcal A}(X,Y).
+\]
+
+\VerdierSemanticAnchor{ch3d-1-2-10-proof}
+证明 a)。当 $X$ 是 $\mathcal A$ 的一个对象时，对 $i\neq0$ 有
+$H^i(X)=0$ 是显然的。设 $X$ 是 $D(\mathcal A)$ 的一个对象，并且当
+$i\neq0$ 时，$H^i(X)$ 为零。
+\endgroup

@@ -1,0 +1,84 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0221}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-3-5}
+\medskip\noindent\textbf{補題 3.3.5.}\quad
+\textit{$m\colon W\longrightarrow W'$、$m'\colon W'\longrightarrow W''$、
+$m''=m'm$ を $\mathcal A^{\operatorname{Ext}}$ の三つの射であって、
+$\mathcal F\ell_{\leq 1}(\mathcal A^{\operatorname{Ext}})$ に属するものと
+する。射 $F(m)$、$F(m')$、
+$F(m'')$ は上の 1)、2)、3)、4)、5)、6) の場合に定義されており、次が
+成り立つ：}
+
+\VerdierSemanticAnchor{ch3d-3-3-5-1}
+\begin{equation}
+F(m'')=F(m')F(m).
+\tag{3.3.5.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-3-6}
+\medskip\noindent\textbf{命題 3.3.6.}\quad
+（生成元と関係による圏 $\mathcal A^{\operatorname{Ext}}$ の定義）。
+\textit{$\mathcal C$ を圏とし、}
+
+\VerdierSemanticAnchor{ch3d-3-3-6-object-map}
+\[
+\operatorname{Ob}(F)\colon
+\operatorname{Ob}(\mathcal A^{\operatorname{Ext}})
+\longrightarrow \operatorname{Ob}(\mathcal C),
+\]
+
+\VerdierSemanticAnchor{ch3d-3-3-6-arrow-map}
+\[
+\mathcal F\ell_{\leq 1}(F)\colon
+\mathcal F\ell_{\leq 1}(\mathcal A^{\operatorname{Ext}})
+\longrightarrow \mathcal F\ell(\mathcal C)
+\]
+\textit{を、圏 $\mathcal A^{\operatorname{Ext}}$ と $\mathcal C$ の始域写像
+および終域写像と両立する二つの写像とする。任意の射の三つ組
+$m\colon W\longrightarrow W'$、$m'\colon W'\longrightarrow W''$、
+$m''=m'm$ が
+$m,m',m''\in\mathcal F\ell_{\leq 1}(\mathcal A^{\operatorname{Ext}})$
+を満たすとき、次が成り立つとする：}
+
+\VerdierSemanticAnchor{ch3d-3-3-6-relation}
+\[
+\mathcal F\ell_{\leq 1}(F)(m')\,
+\mathcal F\ell_{\leq 1}(F)(m)
+=\mathcal F\ell_{\leq 1}(F)(m'').
+\]
+
+\VerdierSemanticAnchor{ch3d-3-3-6-extension}
+\textit{このとき関手
+$F\colon\mathcal A^{\operatorname{Ext}}\longrightarrow\mathcal C$ がただ一つ
+存在し、$F$ は対象の集合上で写像 $\operatorname{Ob}(F)$ を誘導し、任意の
+$m\in\mathcal F\ell_{\leq 1}(\mathcal A^{\operatorname{Ext}})$ に対して
+次を満たす：}
+\[
+F(m)=\mathcal F\ell_{\leq 1}(F)(m).
+\]
+
+実際、(3.3.5) と (3.3.6) によって得られる関手に付随する連結関手列が、
+最初に与えられた列 $(F^n,\delta_F^n)$ にほかならないことは容易に確かめ
+られる。
+
+\VerdierSemanticAnchor{ch3d-3-3-7}
+\medskip\noindent\textbf{3.3.7. 補題 3.3.5 の証明。}\quad
+証明は可能な場合を順に調べることによって行う。まず、対象 $W$、$W'$、
+$W''$ のうち少なくとも二つが零対象である場合には、四つの場合を調べる
+必要がある。このとき射 $F(m)$、$F(m')$、$F(m'')$ は 1)、2)、3) の
+いずれかの場合によって定義されている。(3.3.5.1) の確認は直ちにできる
+ので、読者に委ねる。次に、対象 $W$、$W'$、$W''$ のうち一つが零対象で
+ある場合には、九つの場合を調べる必要がある。射 $m$、$m'$、$m''$ のうち
+二つは 1)、2)、3) によって定義され、残る一つは 4)、5)、6) によって
+定義される。ここでも確認は直ちにできるので、読者に委ねる。残るのは
+$W$、$W'$、$W''$ がすべて非零の場合である。これは次の八つである：
+
+\VerdierSemanticAnchor{ch3d-3-3-7-cases-start}
+\noindent$c_1)$ $m$ の次数は 0 より小さく、$m'<0$ も後者の射の次数が 0 より小さいことを表す；
+
+\noindent$c_2)$ $m<0$ は前者の射の次数が 0 より小さいことを、$m'=0$ は後者の射の次数が 0 であることを表す；
+\endgroup

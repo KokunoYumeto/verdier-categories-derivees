@@ -1,0 +1,79 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0152}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+
+\VerdierSemanticAnchor{ch3}
+\section{Abélianisation des catégories triangulées.}
+
+\VerdierSemanticAnchor{ch3-3-1}
+\subsection{Construction de la catégorie
+\texorpdfstring{$\mathrm A(\mathcal D)$}{A(D)}.}
+
+\VerdierSemanticAnchor{ch3-3-1-1}
+\noindent\textbf{3.1.1.}\quad
+Soient $\mathcal D$ une catégorie additive et
+$\mathcal{F}\ell_1(\mathcal D)$ la catégorie des morphismes de $\mathcal D$
+(chap. I, 3.3.6). Un morphisme
+
+\VerdierSemanticAnchor{ch3-3-1-1-square}
+\[
+\begin{tikzcd}[column sep=4.2em,row sep=2.5em]
+X \arrow[r,"f"] \arrow[d,"g"'] & Y \arrow[d,"h"] \\
+X' \arrow[r,"f'"'] & Y'
+\end{tikzcd}
+\]
+
+\VerdierSemanticAnchor{ch3-3-1-1-negligible-morphism}
+\noindent de $\mathcal{F}\ell_1(\mathcal D)$ est dit \emph{négligeable} si
+$f'g=hf=0$. Le composé, dans les deux sens, d'un morphisme négligeable et
+d'un morphisme quelconque est un morphisme négligeable ; la somme directe de
+deux morphismes négligeables est un morphisme négligeable.
+
+\VerdierSemanticAnchor{ch3-3-1-1-quotient-category}
+Désignons par $\mathrm A(\mathcal D)$ la catégorie dont les objets sont ceux de
+$\mathcal{F}\ell_1(\mathcal D)$ et dont les morphismes sont ceux de
+$\mathcal{F}\ell_1(\mathcal D)$ à morphismes négligeables près ; autrement
+dit, pour tous objets $U,V$ de $\mathrm A(\mathcal D)$, le groupe
+$\operatorname{Hom}_{\mathrm A(\mathcal D)}(U,V)$ est le quotient de
+$\operatorname{Hom}_{\mathcal{F}\ell_1(\mathcal D)}(U,V)$ par le sous-groupe
+des morphismes négligeables. La catégorie $\mathrm A(\mathcal D)$ est additive.
+
+\VerdierSemanticAnchor{ch3-3-1-1-canonical-quotient}
+Soit $C$ une catégorie ; la composition avec le foncteur canonique
+\[
+\mathcal{F}\ell_1(\mathcal D)\longrightarrow\mathrm A(\mathcal D)
+\]
+fournit un foncteur
+
+\VerdierSemanticAnchor{ch3-3-1-1-1}
+\[
+\mathcal H\!om(\mathrm A(\mathcal D),C)
+\longrightarrow
+\mathcal H\!om(\mathcal{F}\ell_1(\mathcal D),C).
+\tag{3.1.1.1}
+\]
+Ce foncteur est pleinement fidèle et injectif sur les objets. Son image est la
+sous-catégorie pleine définie par les foncteurs de
+$\mathcal{F}\ell_1(\mathcal D)$ dans $C$ qui transforment en morphismes égaux
+les morphismes qui diffèrent par un morphisme négligeable.
+
+\VerdierSemanticAnchor{ch3-3-1-2}
+\medskip
+\noindent\textbf{3.1.2.}\quad
+Le foncteur canonique de $\mathcal D$ dans $\mathcal{F}\ell_1(\mathcal D)$,
+$X\longmapsto(X\xrightarrow{\operatorname{id}_X}X)$, composé avec le foncteur
+canonique $\mathcal{F}\ell_1(\mathcal D)\longrightarrow\mathrm A(\mathcal D)$,
+est un foncteur qu'on note
+
+\VerdierSemanticAnchor{ch3-3-1-2-1}
+\[
+\mathcal H\colon\mathcal D\longrightarrow\mathrm A(\mathcal D).
+\tag{3.1.2.1}
+\]
+Le foncteur $\mathcal H$ est additif. Il est pleinement fidèle et injectif sur
+les objets. Il réalise donc $\mathcal D$ comme sous-catégorie pleine de
+$\mathrm A(\mathcal D)$.
+\endgroup

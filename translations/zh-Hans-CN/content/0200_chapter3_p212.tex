@@ -1,0 +1,99 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0212}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-2-2-c}
+\noindent\textit{c) 当 $n=1$ 时，$\delta^1$ 是由典范 $\delta$-函子
+$\operatorname{comp}(\mathcal A)\longrightarrow D(\mathcal A)$
+所定义的态射 (1.3.2)。}
+
+\VerdierSemanticAnchor{ch3d-3-2-2-proof}
+本命题由命题 (3.1.3) 的公式 (7) 得到。我们把练习留给读者，读者可参阅 [3]。
+
+\VerdierSemanticAnchor{ch3d-3-2-3}
+\medskip\noindent\textbf{3.2.3.}\quad
+设
+$S^n(X,Y)=0\longrightarrow Y\xrightarrow{u_n}Z_{n-1}
+\xrightarrow{u_{n-1}}Z_{n-2}\longrightarrow\cdots\longrightarrow Z_0
+\xrightarrow{u_0}X\longrightarrow0$
+是 $E_{\mathcal A}^{n}(X,Y)$ 的一个元素。对每个满足
+$0\leq p\leq n$ 的整数 $p$，给定 $\{-1,+1\}$ 的一个元素
+$\epsilon_p$。以 $S_{\epsilon}^{n}(X,Y)$ 表示正合列
+
+\VerdierSemanticAnchor{ch3d-3-2-3-1}
+\begin{equation}
+\resizebox{0.94\textwidth}{!}{$\displaystyle
+0\longrightarrow Y\xrightarrow{\epsilon_nu_n}Z_{n-1}
+\xrightarrow{\epsilon_{n-1}u_{n-1}}Z_{n-2}\longrightarrow\cdots
+\longrightarrow Z_0\xrightarrow{\epsilon_0u_0}X\longrightarrow0,
+$}
+\tag{3.2.3.1}
+\end{equation}
+它是 $E_{\mathcal A}^{n}(X,Y)$ 的一个元素。于是有等式
+
+\VerdierSemanticAnchor{ch3d-3-2-3-2}
+\begin{equation}
+\delta^n(S_{\epsilon}^{n}(X,Y))=
+\left(\prod_{i=0}^{n}\epsilon_i\right)\delta^n(S^n(X,Y)).
+\tag{3.2.3.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-2-3-proof}
+利用等价关系 (3.2.2), b) 与 $\delta^n$ 的定义 (3.2.1.1)，立即得到公式
+(3.2.3.2)。
+
+\VerdierSemanticAnchor{ch3d-3-2-4}
+\medskip\noindent\textbf{3.2.4.}\quad
+现在设有两个正合列：
+\[
+S^n(X,X')=0\longrightarrow X'\xrightarrow{u_n}Z_{n-1}
+\xrightarrow{u_{n-1}}\cdots\xrightarrow{u_1}Z_0
+\xrightarrow{u_0}X\longrightarrow0
+\]
+\[
+S^m(X',X'')=0\longrightarrow X''\xrightarrow{u'_m}Z'_{m-1}
+\xrightarrow{u'_{m-1}}\cdots\xrightarrow{u'_1}Z'_0
+\xrightarrow{u'_0}X'\longrightarrow0.
+\]
+以 $S^m(X',X'')*S^n(X,X')$ 表示正合列
+
+\VerdierSemanticAnchor{ch3d-3-2-4-1}
+\begin{equation}
+\begin{aligned}
+S^m(X',X'')*S^n(X,X')={}&
+0\longrightarrow X''\xrightarrow{u'_m}Z'_{m-1}
+\xrightarrow{u'_{m-1}}\cdots\longrightarrow Z'_0
+\xrightarrow{u_nu'_0}Z_{n-1}\\
+&\xrightarrow{u_{n-1}}\cdots\longrightarrow Z_0
+\xrightarrow{u_0}X\longrightarrow0.
+\end{aligned}
+\tag{3.2.4.1}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-2-5}
+\medskip\noindent\textbf{命题 3.2.5.}\quad
+\textit{有等式}
+\[
+\delta^{m+n}\bigl(S^m(X',X'')*S^n(X,X')\bigr)=
+(-1)^{mn}\bigl(\delta^m(S^m(X',X''))\bigr)[n]
+\delta^n(S^n(X,X')).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-2-5-proof-start}
+来确定态射
+$\bigl(\delta^m(S^m(X',X''))\bigr)[n]\delta^n(S^n(X,X'))$。
+采用 (3.2.1) 的记号，有两个图式：
+
+\VerdierSemanticAnchor{ch3d-3-2-5-first-diagram}
+\[
+\begin{tikzcd}[column sep=4.5em]
+X' & {Z'}^\bullet
+  \arrow[l,"{u(S^m(X',X''))}"']
+  \arrow[r,"{v(S^m(X',X''))}"]
+& X''[m]
+\end{tikzcd}
+\quad,
+\]
+\endgroup

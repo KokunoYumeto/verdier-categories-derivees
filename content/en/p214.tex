@@ -1,0 +1,97 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0214}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-2-5-b}
+\noindent b) In the following diagram:
+
+\VerdierSemanticAnchor{ch3d-3-2-5-4}
+\begin{equation}
+\resizebox{0.96\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=4.1em,row sep=3.0em]
+\&\& Z''^\bullet
+  \arrow[ddll,bend right=8,"{u(S^{m+n})}"']
+  \arrow[dl,"\rho"']
+  \arrow[dr,"\psi"]
+  \arrow[ddrr,bend left=8,"{v(S^{m+n})}"]
+\&\& \\
+\& Z^\bullet
+  \arrow[dl,"{u(S^n)}"']
+  \arrow[dr,"{v(S^n)}"]
+\&\& {Z'}^\bullet[n]
+  \arrow[dl,"{u(S^m)[n]}"']
+  \arrow[dr,"{v(S^m)[n]}"]
+\& \\
+X \&\& X'[n] \&\& X''[m+n]
+\end{tikzcd}$%
+}
+\tag{3.2.5.4}
+\end{equation}
+the central square and the lateral triangles commute in
+$\operatorname{comp}(\mathcal A)$.
+
+\VerdierSemanticAnchor{ch3d-3-2-5-proof-conclusion}
+Passing to the category $D(\mathcal A)$, diagram (3.2.5.4) gives the
+equality
+\[
+\bigl(\delta^m(S^m(X',X''))\bigr)[n]\,
+\delta^n(S^n(X,X'))
+=\delta^{m+n}(S^{m+n}(X,X'')).
+\]
+It then suffices to use (3.2.3.2) to complete the proof.
+
+\VerdierSemanticAnchor{ch3d-3-2-6}
+\medskip\noindent\textbf{3.2.6.}\quad
+A particularly important application of Proposition (3.2.5) is the
+following. Let
+\[
+S^n(X,Y)=0\longrightarrow Y\xrightarrow{u_n}Z_{n-1}
+\xrightarrow{u_{n-1}}\cdots\xrightarrow{u_1}Z_0
+\xrightarrow{u_0}X\longrightarrow0
+\]
+be an element of $E_{\mathcal A}^{n}(X,Y)$. For every integer $p$ with
+$1\leq p\leq n$, set
+
+\VerdierSemanticAnchor{ch3d-3-2-6-1}
+\begin{equation}
+S_p^1=0\longrightarrow\operatorname{Ker}(u_{p-1})
+\longrightarrow Z_{p-1}\longrightarrow\operatorname{Im}(u_{p-1})
+\longrightarrow0.
+\tag{3.2.6.1}
+\end{equation}
+Then
+
+\VerdierSemanticAnchor{ch3d-3-2-6-2}
+\begin{equation}
+\delta^n(S^n(X,Y))=(-1)^{\frac{n(n-1)}2}
+\delta^1(S_n^1)[n-1]\delta^1(S_{n-1}^1)[n-2]\cdots
+\delta^1(S_1^1),
+\tag{3.2.6.2}
+\end{equation}
+as follows immediately from Proposition (3.2.5).
+
+\VerdierSemanticAnchor{ch3d-3-2-7}
+\medskip\noindent\textbf{3.2.7.}\quad
+Let us drink the cup to the dregs, and let $X$ and $Y$ be two objects of
+$\mathcal A$, and hence of $\mathcal A^o$, the category opposite to
+$\mathcal A$. The sets $E_{\mathcal A}^{n}(X,Y)$ and
+$E_{\mathcal A^o}^{n}(Y,X)$ are equal, and we have two maps:
+
+\VerdierSemanticAnchor{ch3d-3-2-7-1}
+\begin{equation}
+\resizebox{0.74\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=5.0em,row sep=2.8em]
+E_{\mathcal A}^{n}(X,Y)
+  \arrow[r,"{\delta_{\mathcal A}^{n}}"]
+  \arrow[d,equal]
+\& \operatorname{Ext}_{\mathcal A}^{n}(X,Y) \\
+E_{\mathcal A^o}^{n}(Y,X)
+  \arrow[r,"{\delta_{\mathcal A^o}^{n}}"']
+\& \operatorname{Ext}_{\mathcal A^o}^{n}(Y,X)
+\end{tikzcd}$%
+}
+\tag{3.2.7.1}
+\end{equation}
+\endgroup

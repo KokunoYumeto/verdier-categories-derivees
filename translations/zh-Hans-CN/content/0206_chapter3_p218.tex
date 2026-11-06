@@ -1,0 +1,81 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0218}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-3-3-1-2}
+\noindent\textit{$S_i^1*f_{i-1}$，$1<i\leq n$，
+$f_i*{S''}_i^1$，$1\leq i<n$，${S'}_i^1*g_{i-1}$，$1<i\leq n$，
+$g_i*{S''}_i^1$，$1\leq i<n$，均有定义（(3.2.8.1) 与 (3.2.8.2)），
+并且满足：}
+
+\begin{equation}
+\left\{
+\begin{aligned}
+\delta^1({S''}_n^1)
+  &=\delta^1(S_n^1*f_{n-1}),\\
+\delta^1({S''}_n^1)
+  &=\delta^1({S'}_n^1*g_{n-1}),\\
+\delta^1(f_i*{S''}_i^1)
+  &=\delta^1(S_i^1*f_{i-1}),&&1<i\leq n-1,\\
+\delta^1(g_i*{S''}_i^1)
+  &=\delta^1({S'}_i^1*g_{i-1}),&&1<i\leq n-1,\\
+\delta^1(f_1*{S''}_1^1)
+  &=\delta^1(S_1^1),\\
+\delta^1(g_1*{S''}_1^1)
+  &=\delta^1({S'}_1^1).
+\end{aligned}
+\right.
+\tag{3.3.1.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch3d-3-3-1-proof}
+事实上，断言 a) 由 (3.2.2) 与 (3.2.5) 立即得到，而断言 b) 由映射
+$E_{\mathcal A}^{n}(X,Y)\longrightarrow
+\operatorname{Ext}_{\mathcal A}^{n}(X,Y)$ 所诱导的等价关系之描述得到
+（(3.2.2) 与 (3.2.9)）。
+
+\VerdierSemanticAnchor{ch3d-3-3-2}
+\medskip\noindent\textbf{3.3.2.}\quad
+回忆 (1.2.11)，范畴 $\mathcal A^{\operatorname{Ext}}$ 是
+$D(\mathcal A)$ 的满子范畴，它由 $\mathcal A$ 的对象的各个平移定义。
+设 $F\colon\mathcal A^{\operatorname{Ext}}\longrightarrow\mathcal C$ 是一个
+函子（取值于一个不必为加法范畴的范畴）。对每个整数 $n$，以
+$F^n\colon\mathcal A\longrightarrow\mathcal C$ 表示函子
+$X\longmapsto F(X[n])$。同样，对 $\mathcal A$ 的每条正合列
+$S^1=0\longrightarrow X\longrightarrow Y\longrightarrow Z
+\longrightarrow0$，以
+$\delta_F^n(S^1)\colon F^n(Z)\longrightarrow F^{n+1}(X)$ 表示态射
+
+\VerdierSemanticAnchor{ch3d-3-3-2-delta-definition}
+\[
+F\bigl(\delta^1(S^1)[n]\bigr)
+\colon F(Z[n])\longrightarrow F(X[n+1]).
+\]
+
+\VerdierSemanticAnchor{ch3d-3-3-2-sfl}
+函子列 $F^n$，$n\in\mathbb Z$，连同态射 $\delta_F^\ast$，具有下列性质
+(3.2.9)：
+
+\noindent\textbf{SFL I)} 每个交换图：
+
+\VerdierSemanticAnchor{ch3d-3-3-2-sfl-i-source-diagram}
+\begin{center}
+\resizebox{0.86\textwidth}{!}{%
+$\begin{tikzcd}[ampersand replacement=\&,column sep=3.0em,row sep=2.8em]
+S=0 \arrow[r]
+  \& X \arrow[r] \arrow[d,"f"']
+  \& Y \arrow[r] \arrow[d]
+  \& Z \arrow[r] \arrow[d,"g"]
+  \& 0 \\
+{S'}=0 \arrow[r]
+  \& X' \arrow[r]
+  \& Y' \arrow[r]
+  \& Z' \arrow[r]
+  \& 0
+\end{tikzcd}$%
+}
+\end{center}
+\endgroup
+

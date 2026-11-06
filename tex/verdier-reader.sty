@@ -1,0 +1,96 @@
+\ProvidesFile{verdier-reader.sty}[2026/08/04 Verdier canonical reader style]
+
+\geometry{
+  paper=a4paper,
+  inner=30mm,
+  outer=24mm,
+  top=26mm,
+  bottom=30mm,
+  headheight=14pt
+}
+
+\defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\setmainfont{Latin Modern Roman}[
+  SmallCapsFont={Latin Modern Roman Caps}
+]
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}
+
+\definecolor{VerdierLink}{HTML}{1F4E79}
+\hypersetup{
+  hypertexnames=false,
+  colorlinks=true,
+  linkcolor=VerdierLink,
+  citecolor=VerdierLink,
+  urlcolor=VerdierLink,
+  pdfauthor={\VerdierWorkAuthor},
+  pdftitle={\VerdierWorkTitle},
+  pdfsubject={\VerdierLayerLabel; \VerdierPublication}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\small\thepage}
+\fancyhead[LO,RE]{\small\VerdierPublication}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\parindent}{1.25em}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\setlength{\columnsep}{1.6em}
+
+% Verdier numbers chapters with Roman numerals, sections independently within
+% each chapter, and lower levels cumulatively (1, 1.1, 1.1.1, ...).
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+
+\newcommand{\VerdierSelectReaderLanguage}{%
+  \expandafter\selectlanguage\expandafter{\VerdierReaderLanguage}%
+}
+
+\newcommand{\VerdierMakeFrontMatter}{%
+  \frontmatter
+  \VerdierSelectReaderLanguage
+  \begin{titlepage}
+    \centering
+    \vspace*{0.12\textheight}
+    {\Large \VerdierWorkAuthor\par}
+    \vspace{2.2em}
+    {\Huge\bfseries \foreignlanguage{french}{\VerdierWorkTitle}\par}
+    \vspace{2em}
+    {\Large \VerdierLayerLabel\par}
+    \vfill
+    {\large \VerdierEditorLabel\ \VerdierWorkEditor\par}
+    \vspace{1.2em}
+    {\large \VerdierPublication\par}
+    \vspace{2em}
+    \begin{minipage}{0.78\textwidth}
+      \centering\small\VerdierUnfinishedNotice
+    \end{minipage}
+    \vspace*{0.08\textheight}
+  \end{titlepage}
+  \tableofcontents
+  \cleardoublepage
+}
+
+\newcommand{\VerdierBeginMainMatter}{%
+  \mainmatter
+  \VerdierSelectReaderLanguage
+}
+
+\newcommand{\VerdierFinishReader}{%
+  \clearpage
+}
+
+\newcommand{\VerdierSemanticAnchor}[1]{%
+  \phantomsection\label{verdier-semantic:#1}%
+}
+
+\newcommand{\VerdierPhysicalPageAnchor}[1]{%
+  \phantomsection\label{verdier-physical-page:#1}%
+}
+
+\endinput

@@ -1,0 +1,100 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0149}%
+\begingroup
+\small
+\setlength{\parskip}{0pt}%
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}%
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}%
+
+\VerdierSemanticAnchor{ch2-2-3-5-injectivity-p149-continuation}
+\noindent such that $uf=0$. Using a), i), we then see that there exists a
+commutative diagram:
+
+\VerdierSemanticAnchor{ch2-2-3-5-injectivity-refinement-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=3.7em,row sep=2.3em]
+    && {} \\
+    & {} \arrow[ur,"v"] && {t'\in S_{\mathcal A}(\mathcal A\cap\mathcal B)} \\
+    X \arrow[ur,"f"] && Y \arrow[ul,"s"] \arrow[uu,"{t'}"'] &
+  \end{tikzcd}
+\end{center}
+
+\VerdierSemanticAnchor{ch2-2-3-5-injectivity-conclusion}
+\noindent such that $vf=0$. It follows that
+$m=Q_1(t')^{-1}Q_1(vf)=0$.
+
+\VerdierSemanticAnchor{ch2-2-3-5-surjectivity-map}
+Let us now show that the homomorphism
+\[
+  \operatorname{Hom}_{\mathcal A/(\mathcal A\cap\mathcal B)}(X,Y)
+  \longrightarrow
+  \operatorname{Hom}_{\mathcal D/\mathcal B}(X,Y)
+\]
+is surjective.
+
+\VerdierSemanticAnchor{ch2-2-3-5-surjectivity-roof}
+An element $p\in\operatorname{Hom}_{\mathcal D/\mathcal B}(X,Y)$ may be
+written in the form
+\[
+  p=Q_2(t)^{-1}Q_2(g),\qquad t\in S_{\mathcal D}(\mathcal B).
+\]
+
+\VerdierSemanticAnchor{ch2-2-3-5-surjectivity-refinement}
+Using a), i), we see that such an element may always be written in the form
+\[
+  p=Q_2(s)^{-1}Q_2(g'),\qquad
+  s\in S_{\mathcal A}(\mathcal A\cap\mathcal B),
+\]
+
+\VerdierSemanticAnchor{ch2-2-3-5-surjectivity-conclusion}
+\noindent and hence comes from an element of
+$\operatorname{Hom}_{\mathcal A/(\mathcal A\cap\mathcal B)}(X,Y)$.
+
+\VerdierSemanticAnchor{ch2-2-3-5-c-proof-i-implies-ii}
+It remains to prove the equivalence in c). Let us first prove i)
+$\Rightarrow$ ii).
+
+\VerdierSemanticAnchor{ch2-2-3-5-iterated-quotient}
+By (2.3.1), the category $\mathcal D/\mathcal B$ is canonically isomorphic
+to the category
+$(\mathcal D/(\mathcal A\cap\mathcal B))
+/(\mathcal B/(\mathcal A\cap\mathcal B))$, and the canonical functor
+
+\VerdierSemanticAnchor{ch2-2-3-5-q-functor}
+\[
+  Q\colon\mathcal D/(\mathcal A\cap\mathcal B)
+  \longrightarrow\mathcal D/\mathcal B
+\]
+is the quotient functor.
+
+\VerdierSemanticAnchor{ch2-2-3-5-q-free-reduction}
+Hence, by Proposition (2.3.3, a)), to prove the implication i)
+$\Rightarrow$ ii), it suffices to show that for every object $X$ of
+$\mathcal A$ and every object $B$ of $\mathcal B$,
+$\operatorname{Hom}_{\mathcal D/(\mathcal A\cap\mathcal B)}(B,X)=0$.
+
+\VerdierSemanticAnchor{ch2-2-3-5-m-representation}
+An element $m$ of
+$\operatorname{Hom}_{\mathcal D/(\mathcal A\cap\mathcal B)}(B,X)$ may be
+written in the form $Q_3(f)Q_3(s)^{-1}$, where
+
+\VerdierSemanticAnchor{ch2-2-3-5-q3-functor}
+\[
+  Q_3\colon\mathcal D\longrightarrow
+  \mathcal D/(\mathcal A\cap\mathcal B)
+\]
+is the canonical functor, and where $s$ is an element of
+$S_{\mathcal D}(\mathcal A\cap\mathcal B)$, the multiplicative system of
+$\mathcal D$ associated with $\mathcal A\cap\mathcal B$ (2.2.2). We then
+have a diagram in $\mathcal D$:
+
+\VerdierSemanticAnchor{ch2-2-3-5-w-diagram}
+\begin{center}
+  \begin{tikzcd}[column sep=4em,row sep=2.4em]
+    & W \arrow[dl,"s"'] \arrow[dr,"f"] & \\
+    B && X
+  \end{tikzcd}
+  \quad ,
+\end{center}
+\endgroup

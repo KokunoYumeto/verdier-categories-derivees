@@ -1,0 +1,74 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0205}%
+\begingroup\small\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1.5em}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-a-conclusion}
+ce qui montre que $X$ est un objet projectif de $\mathcal A$.
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-b}
+Démontrons b). Soient $L^\bullet$ un complexe de type projectif objet de
+$K^{-}(\mathcal A)$ et $u\colon L^\bullet\longrightarrow Y$ un morphisme
+dans un complexe acyclique. Supposons qu'on ait construit pour tout entier
+$i>n$, un morphisme $s^i\colon L^i\longrightarrow Y^{i-1}$ tel que
+$u^i=d_Y^{i-1}s^i+s^{i+1}d_{L^\bullet}^{i}$ (une telle construction est
+toujours possible pour $n$ suffisamment grand
+car $L^\bullet$ est un objet de $K^{-}(\mathcal A)$). On en déduit que
+$d_Y^n\bigl(u^n-s^{n+1}d_{L^\bullet}^{n}\bigr)=0$ et, par suite, le morphisme
+$u^n-s^{n+1}d_{L^\bullet}^{n}$ se factorise par
+$\operatorname{Ker}(d_Y^n)$. Le complexe $Y$ étant acyclique, le morphisme
+$Y^{n-1}\longrightarrow\operatorname{Ker}(d_Y^n)$ est un épimorphisme et
+l'objet $L^n$ étant projectif, il existe un morphisme
+$s^n\colon L^n\longrightarrow Y^{n-1}$ tel que
+$d_Y^{n-1}s^n=u^n-s^{n+1}d_{L^\bullet}^{n}$.
+On démontre ainsi par récurrence qu'il existe, pour tout entier $i$, un
+morphisme $s^i$ tel que
+$u^i=d_Y^{i-1}s^i+s^{i+1}d_{L^\bullet}^{i}$. Le morphisme $u$ est donc
+homotope à zéro. On en déduit par (chap. II, 2.3.3) que l'objet $L^\bullet$
+est un objet $Q$-libre à gauche. La dernière assertion de b) résulte alors
+de (chap. II, 2.3.3).
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-c-projective-complexes}
+Démontrons c). L'assertion 1) résulte immédiatement de b) et de (2.3.1).
+Pour démontrer l'assertion 1) sous la forme resp{.}, montrons d'abord que tout
+complexe de type projectif est $Q$-libre à gauche. Soit $L^\bullet$ un
+complexe de type projectif et
+$u\colon X\longrightarrow L^\bullet$ un quasi-isomorphisme. Il
+suffit de montrer que $u$ admet une section (chap. II, 2.3.3). Il
+suffit donc de montrer qu'il existe un complexe de type projectif
+${L'}^\bullet$ et un quasi-isomorphisme
+$v\colon {L'}^\bullet\longrightarrow X$ tel que le morphisme composé
+$uv\colon {L'}^\bullet\longrightarrow L^\bullet$ soit un
+isomorphisme de $K(\mathcal A)$. D'après (2.3.3), il existe toujours un
+complexe ${L'}^\bullet$ de type projectif et un quasi-isomorphisme
+$v\colon {L'}^\bullet\longrightarrow X$. Tout revient donc à montrer qu'un
+quasi-isomorphisme
+$uv\colon {L'}^\bullet\longrightarrow L^\bullet$ est un
+isomorphisme. Or il existe un triangle distingué
+$({L'}^\bullet,L^\bullet,{L''}^\bullet,uv,w,m)$, où
+${L''}^\bullet$ est un complexe de type projectif acyclique.
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-c-acyclic-projective-complexes}
+Tout revient donc à montrer que les complexes acycliques de type projectif
+sont homotopes à zéro. Soit donc ${L''}^\bullet$ un complexe acyclique de
+type projectif. Comme la dimension projective des objets de $\mathcal A$
+est majorée, les noyaux des différentielles de ${L''}^\bullet$ sont des
+projectifs (2.2.6). On en déduit que toutes les différentielles de
+${L''}^\bullet$ sont des morphismes décomposables (chap. II, 1.2.8) et,
+par suite, que ${L''}^\bullet$ est homotope à zéro.
+
+\VerdierSemanticAnchor{ch3d-2-4-4-proof-c-conclusion}
+Il résulte alors de (chap. II, 2.3.3) que le foncteur naturel
+$K^{*}(P)\longrightarrow D(\mathcal A)$ est pleinement fidèle. Par suite,
+le foncteur $K^{*}(P)\longrightarrow D^{*}(\mathcal A)$ est pleinement
+fidèle. D'après (2.3.3), ce foncteur est aussi essentiellement surjectif ;
+il est par suite une équivalence de catégories. Les assertions 2) et 3) ne
+sont alors que des applications directes de (chap. II, 2.3.3).
+L'assertion 4) est alors évidente : un objet $Q$-libre à gauche de
+$K^{-}(\mathcal A)$ (resp.\ de $K^{*}(\mathcal A)$) admet, d'après (2.3.1)
+(resp.\ (2.3.3)), une résolution à gauche par un complexe de type projectif
+de $K^{-}(\mathcal A)$ (resp.\ $K^{*}(\mathcal A)$), et un
+quasi-isomorphisme entre objets $Q$-libres à gauche est un isomorphisme de
+$K(\mathcal A)$.
+\endgroup

@@ -1,0 +1,92 @@
+\clearpage
+\VerdierPhysicalPageAnchor{0121}%
+\begingroup
+\small
+\setlength{\emergencystretch}{1.5em}%
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 2pt}%
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 2pt}%
+
+\VerdierSemanticAnchor{ch2-1-2-11-iv-to-i-complete}
+prove the implication $\mathrm{iv)}\Longrightarrow\mathrm{i)}$. Thus let
+$f\colon X\longrightarrow Y$ be a morphism equipped with a splitting
+$g\colon Y\longrightarrow X$. The kernel functor of the morphism
+$f\colon X\longrightarrow Y$ is then equal to the kernel functor of the
+morphism $gf\colon X\longrightarrow X$, which is a projector of $X$
+({\itshape i.e.} $gfgf=gf$).
+
+\VerdierSemanticAnchor{ch2-1-2-11-projector-reduction}
+We are therefore reduced to proving that, in a triangulated category in
+which countable products are representable, projectors have kernels. Thus
+let $e\colon X\longrightarrow X$ be a projector of $X$. Put $X_i=X$,
+$i\in\mathbb N$, and let
+
+\VerdierSemanticAnchor{ch2-1-2-11-phi}
+\[
+  \Phi\colon\prod_{i\in\mathbb N}X_i\longrightarrow
+  \prod_{i\in\mathbb N}X_i, ,
+\]
+be the morphism defined by
+
+\VerdierSemanticAnchor{ch2-1-2-11-1}
+\begin{equation}
+  \Phi(x_0,x_1,x_2,\ldots)
+  =\bigl(ex_0+(1-e)x_1,ex_1+(1-e)x_2,\ldots\bigr)\,.
+  \tag{1.2.11.1}
+\end{equation}
+Formula (1.2.11.1) defines a morphism by interpreting the symbols
+$x_0,x_1,\ldots$ as morphisms from an arbitrary object of $\mathcal D$ to
+the $X_i$. Likewise, let
+
+\VerdierSemanticAnchor{ch2-1-2-11-psi}
+\[
+  \Psi\colon\prod_{i\in\mathbb N}X_i\longrightarrow
+  \prod_{i\in\mathbb N}X_i, ,
+\]
+be the morphism defined by
+
+\VerdierSemanticAnchor{ch2-1-2-11-2}
+\begin{equation}
+  \Psi(x_0,x_1,x_2,\ldots)
+  =\bigl(x_0,(1-e)x_0+ex_1,(1-e)x_1+ex_2,\ldots\bigr)\,.
+  \tag{1.2.11.2}
+\end{equation}
+
+\VerdierSemanticAnchor{ch2-1-2-11-kernel-conclusion}
+It is clear that $\Phi\Psi=\operatorname{id}$ and hence that the morphism
+$\Phi$ is an epimorphism. Therefore, by the implications already proved,
+it has a representable kernel. On the other hand, the kernel functor of
+$\Phi$ is canonically isomorphic to the kernel functor of
+$e\colon X\longrightarrow X$. This functor is therefore representable and,
+consequently, the projector $e$ has a kernel. This completes the proof of
+Proposition (1.2.9).
+
+\VerdierSemanticAnchor{ch2-1-2-12}
+\medskip
+\noindent\textbf{1.2.12.}\quad
+Corollary (1.2.4) shows that the distinguished triangles containing a given
+morphism are unique up to nonunique isomorphism.
+
+\VerdierSemanticAnchor{ch2-1-2-12-functorial-question}
+Moreover, axiom TRIII requires every morphism of morphisms to extend to a
+morphism of triangles. One may therefore ask whether it is possible to
+define the triangulated structure by functorially associating a
+distinguished triangle with every morphism of the category. We shall show
+that, if so, the category is decomposable under certain additional
+hypotheses.
+
+\VerdierSemanticAnchor{ch2-1-2-13}
+\medskip
+\noindent\textbf{Proposition 1.2.13.}\quad
+\textit{Let $\mathcal D$ be a triangulated category and let
+$\operatorname{Tr}$ be a functor from $\mathrm{Fl}_1(\mathcal D)$
+(Chap.~I, 3.3.6), the category of morphisms of $\mathcal D$, to the
+category of distinguished triangles (the full subcategory of the category
+of triangles in $\mathcal D$ defined by the distinguished triangles):}
+
+\VerdierSemanticAnchor{ch2-1-2-13-tr-assignment}
+\[
+  \operatorname{Tr}\!\left(X\xrightarrow{f}Y\right)
+  =X\xrightarrow{f}Y\xrightarrow{a(f)}\tau(f)
+  \xrightarrow{b(f)}X[1], .
+\]
+\endgroup
